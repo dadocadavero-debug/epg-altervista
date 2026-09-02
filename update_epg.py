@@ -13,20 +13,24 @@ replacements = {
     "TV8.HD.it": "Tv8.it",
 }
 
-urllib.request.urlretrieve(SOURCE, "source.xml.gz")
+req = urllib.request.Request(
+    SOURCE,
+    headers={
+        "User-Agent": "Mozilla/5.0",
+        "Accept": "*/*",
+        "Referer": "https://epgshare01.online/"
+    }
+)
 
-with gzip.open("source.xml.gz", "rt", encoding="utf-8-sig") as f:
-    xml = f.read()
+with urllib.request.urlopen(req, timeout=60) as response:
+    compressed = response.read()
 
-for epg_id, altervista_id in replacements.items():
-    xml = xml.replace(
-        f'id="{epg_id}"',
-        f'id="{altervista_id}"'
-    )
-    xml = xml.replace(
-        f'channel="{epg_id}"',
-        f'channel="{altervista_id}"'
-    )
+xml = gzip.decompress(compressed).decode("utf-8-sig")
+
+for source_id, target_id in replacements.items():
+    xml = xml.replace(f'id="{source_id}"', f'id="{target_id}"')
+    xml = xml.replace(f'channel="{source_id}"', f'channel="{target_id}"')
 
 Path("epg.xml").write_text(xml, encoding="utf-8")
+
 print("EPG Altervista generato correttamente")
