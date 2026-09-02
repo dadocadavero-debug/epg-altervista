@@ -1,0 +1,33 @@
+name: Aggiorna EPG Altervista
+
+on:
+  schedule:
+    - cron: "17 */4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Scarica repository
+        uses: actions/checkout@v4
+
+      - name: Installa Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Genera EPG
+        run: python update_epg.py
+
+      - name: Salva EPG aggiornato
+        run: |
+          git config user.name "EPG Bot"
+          git config user.email "actions@github.com"
+          git add epg.xml
+          git diff --cached --quiet || git commit -m "Aggiornamento automatico EPG"
+          git push
