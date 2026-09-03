@@ -74,57 +74,27 @@ TECH_WORDS = {
 # Loghi manuali per canali/varianti che spesso arrivano senza tvg-logo.
 # Gli URL sono centralizzati qui per poterli aggiornare facilmente.
 LOGO_MAP = {
-    # Rai
-    "rai 1": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Rai_1_-_Logo_2016.svg",
-    "rai1": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Rai_1_-_Logo_2016.svg",
-    "rai 2": "https://upload.wikimedia.org/wikipedia/commons/9/99/Rai_2_-_Logo_2016.svg",
-    "rai2": "https://upload.wikimedia.org/wikipedia/commons/9/99/Rai_2_-_Logo_2016.svg",
-    "rai 3": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Rai_3_-_Logo_2016.svg",
-    "rai3": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Rai_3_-_Logo_2016.svg",
-    "rai 4": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Rai_4_-_Logo_2016.svg",
-    "rai4": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Rai_4_-_Logo_2016.svg",
-    "rai 5": "https://upload.wikimedia.org/wikipedia/commons/8/86/Rai_5_-_Logo_2016.svg",
-    "rai5": "https://upload.wikimedia.org/wikipedia/commons/8/86/Rai_5_-_Logo_2016.svg",
-    "rai movie": "https://upload.wikimedia.org/wikipedia/commons/7/75/Rai_Movie_-_Logo_2016.svg",
-    "rai premium": "https://upload.wikimedia.org/wikipedia/commons/1/14/Rai_Premium_-_Logo_2016.svg",
-    "rai yoyo": "https://upload.wikimedia.org/wikipedia/commons/9/95/Rai_Yoyo_-_Logo_2017.svg",
-    "rai gulp": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Rai_Gulp_-_Logo_2017.svg",
-    "rai scuola": "https://upload.wikimedia.org/wikipedia/commons/6/69/Rai_Scuola_-_Logo_2017.svg",
-    "rai storia": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Rai_Storia_-_Logo_2017.svg",
-    "rai sport": "https://upload.wikimedia.org/wikipedia/commons/8/81/Rai_Sport_-_Logo_2022.svg",
-    "rai news 24": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Rai_News_24_-_Logo_2022.svg",
-
-    # Discovery / Warner Bros. Discovery
-    "nove": "https://upload.wikimedia.org/wikipedia/commons/4/43/Nove_-_Logo_2016.svg",
-    "real time": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Real_Time_-_Logo_2017.svg",
-    "realtime": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Real_Time_-_Logo_2017.svg",
-    "food network": "https://upload.wikimedia.org/wikipedia/commons/0/06/Food_Network_logo.svg",
-    "dmax": "https://upload.wikimedia.org/wikipedia/commons/8/8a/DMAX_logo.svg",
-    "hgtv": "https://upload.wikimedia.org/wikipedia/commons/1/14/HGTV_logo.svg",
-    "discovery": "https://upload.wikimedia.org/wikipedia/commons/2/27/Discovery_Channel_-_Logo_2019.svg",
-    "giallo": "https://upload.wikimedia.org/wikipedia/commons/1/13/Giallo_logo.svg",
-
-    # Mediaset / generalisti
-    "rete 4": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Rete_4_-_Logo_2018.svg",
-    "rete4": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Rete_4_-_Logo_2018.svg",
-    "canale 5": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Canale_5_-_Logo_2018.svg",
-    "canale5": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Canale_5_-_Logo_2018.svg",
-    "italia 1": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Italia_1_-_Logo_2018.svg",
-    "italia1": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Italia_1_-_Logo_2018.svg",
-    "20 mediaset": "https://upload.wikimedia.org/wikipedia/commons/2/22/20_Mediaset_logo.svg",
-    "la5": "https://upload.wikimedia.org/wikipedia/commons/9/92/La5_logo.svg",
-    "cine34": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Cine34_logo.svg",
-    "top crime": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Top_Crime_logo.svg",
-    "italia 2": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Italia_2_logo.svg",
-    "mediaset extra": "https://upload.wikimedia.org/wikipedia/commons/4/42/Mediaset_Extra_logo.svg",
-
-    # Altri nazionali / sport
-    "la7": "https://upload.wikimedia.org/wikipedia/commons/0/0f/LA7_-_Logo_2011.svg",
-    "tv8": "https://upload.wikimedia.org/wikipedia/commons/9/9f/TV8_Logo_2016.svg",
-    "cielo": "https://upload.wikimedia.org/wikipedia/commons/8/85/Cielo_TV_logo.svg",
-    "super tennis": "https://upload.wikimedia.org/wikipedia/commons/5/55/SuperTennis_logo.svg",
-    "supertennis": "https://upload.wikimedia.org/wikipedia/commons/5/55/SuperTennis_logo.svg",
-    "inter tv": "https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg",
+    "rai 1": "https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png",
+    "rai 2": "https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png",
+    "rai 3": "https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png",
+    "rai 4": "https://www.raiplay.it/dl/img/2016/09/1473662992107Logo-Rai4.png",
+    "rai 5": "https://www.raiplay.it/dl/img/2021/11/19/1637322377457_logo-rai5.png",
+    "rai movie": "https://www.raiplay.it/dl/img/2021/11/19/1637309933509_1579882457761_rai-movie.png",
+    "rai premium": "https://www.raiplay.it/dl/img/2021/11/19/1637309566388_1579882215002_rai-premium.png",
+    "rai gulp": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raigulp.png",
+    "rai yoyo": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raiyoyo.png",
+    "nove": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png",
+    "real time": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/realtime.png",
+    "realtime": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/realtime.png",
+    "food network": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/foodnetwork.png",
+    "foodnetwork": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/foodnetwork.png",
+    "giallo": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/giallo.png",
+    "k2": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/k2.png",
+    "frisbee": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/frisbee.png",
+    "dmax": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/dmax.png",
+    "hgtv": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/homegardentv.png",
+    "motor trend": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/motortrend.png",
+    "discovery": "https://i.imgur.com/5IxIFJ0.png",
 }
 
 def set_tvg_logo(extinf: str, logo_url: str) -> str:
@@ -293,13 +263,18 @@ def main():
             changed += 1
             report.append(f"{name} | {old_id or '(vuoto)'} -> {new_id} | {reason}")
 
-        # Aggiunge un logo SOLO se la riga non ne ha già uno.
-        if not get_tvg_logo(line):
-            logo = best_logo_for_name(name, learned_logos)
-            if logo:
-                line = set_tvg_logo(line, logo)
-                logos_added += 1
-                report.append(f"{name} | logo aggiunto -> {logo}")
+        # Aggiunge i loghi mancanti e sostituisce i vecchi URL
+        # disco-api.com che Fermata XTream non visualizza.
+        current_logo = get_tvg_logo(line)
+        bad_logo = "eu1-prod-images.disco-api.com" in current_logo
+        explicit_logo = LOGO_MAP.get(logo_key(name)) or LOGO_MAP.get(norm(name))
+        mapped_logo = best_logo_for_name(name, learned_logos)
+        wanted_logo = explicit_logo or mapped_logo
+
+        if wanted_logo and (not current_logo or bad_logo):
+            line = set_tvg_logo(line, wanted_logo)
+            logos_added += 1
+            report.append(f"{name} | logo {'sostituito' if bad_logo else 'aggiunto'} -> {wanted_logo}")
 
         out.append(line)
 
