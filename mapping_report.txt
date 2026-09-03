@@ -56,14 +56,14 @@ Supertennis+ 2 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Itali
 Supertennis+ 3 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
 Supertennis+ 4 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
 Inter TV | (vuoto) -> Inter.TV.it | nome-verificato
-Lazio Style TV | logo aggiunto -> https://www.sslazio.it/images/logo_lazio.png
+Lazio Style TV | logo aggiunto -> https://www.tvdream.net/img/lazio-style-tv.png
 F1 TV | logo aggiunto -> https://statics.quattroruote.it/content/dam/quattroruote/it/news/sport/2018/03/02/formula_1_liberty_media_lancia_lo_streaming_online_nasce_f1_tv_/gallery/rsmall/f1-tv-formula-1-3.jpg
 ACI Sport TV | AciSportTV.it -> ACI.Sport.Tv.it | id:AciSportTV.it
 ACI Sport TV | logo aggiunto -> https://i.imgur.com/U8cHMOt.png
 ACI Sport LIVE 01 (non sempre attivo) | logo aggiunto -> https://i.imgur.com/U8cHMOt.png
 Rally TV | logo aggiunto -> https://i.postimg.cc/WtLq2C7c/logo-Rally-Tv1.png
 TOP Calcio 24 | logo aggiunto -> https://i.imgur.com/DnVPKPE.png
-RedBull TV | logo aggiunto -> https://www.clipartmax.com/png/middle/46-462953_red-bull-tv-logo-red-bull-tv-logo.png
+RedBull TV | logo aggiunto -> https://www.redbull.com/cs/RedBull2/images/branding/redbull-tv-logo-2x.png
 BIKE | bikesmartmobility -> BIKE.it | id:bikesmartmobility
 Solocalcio (25fps) | ITBC4700002CO -> Solocalcio.it.it | id:ITBC4700002CO
 Rai Sport jolly 1 (attivo raramente) | raisport -> RaiSport.it | id:raisport
