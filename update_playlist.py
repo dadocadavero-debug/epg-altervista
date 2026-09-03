@@ -99,6 +99,43 @@ def set_tvg_id(extinf: str, new_id: str) -> str:
     return extinf
 
 
+
+# Flussi verificati dall'utente in Fermata XTream.
+# Manteniamo nome, logo e tvg-id delle voci principali Rai, cambiando solo lo stream.
+RAI_WORKING_STREAMS = {
+    "Rai 1": "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8",
+    "Rai 2": "https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8",
+    "Rai 3": "https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8",
+}
+
+
+def fix_primary_rai_streams(lines):
+    """Sostituisce solo Rai 1/2/3 del gruppo Rai con stream verificati.
+    Rimuove le opzioni player del vecchio relinker; tutte le altre voci restano intatte.
+    """
+    out = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if line.startswith("#EXTINF"):
+            name = line.rsplit(",", 1)[-1].strip() if "," in line else ""
+            group = re.search(r'group-title="([^"]*)"', line)
+            group_name = group.group(1) if group else ""
+            if group_name == "Rai" and name in RAI_WORKING_STREAMS:
+                out.append(line)
+                i += 1
+                # Salta opzioni/commenti e il vecchio URL fino alla prossima EXTINF.
+                while i < len(lines) and not lines[i].startswith("#EXTINF"):
+                    if lines[i].strip() and not lines[i].startswith("#"):
+                        i += 1
+                        break
+                    i += 1
+                out.append(RAI_WORKING_STREAMS[name])
+                continue
+        out.append(line)
+        i += 1
+    return out
+
 def main():
     m3u = fetch(M3U_URL).decode("utf-8", errors="replace")
     epg_raw = fetch(EPG_URL)
@@ -126,6 +163,7 @@ def main():
                 stripped_to_ids.setdefault(sn, set()).add(cid)
 
     lines = m3u.splitlines()
+    lines = fix_primary_rai_streams(lines)
     out = []
     report = []
     changed = 0
