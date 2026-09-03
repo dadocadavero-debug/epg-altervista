@@ -478,7 +478,7 @@ https://amg27604-amg27604c3-amgplt0148.playout.now3.amagi.tv/ts-eu-w1-n2/playlis
 https://d3k8wzt41aflvx.cloudfront.net/INTERTV/Live.m3u8
 #EXTINF:-1 group-title="Sport" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork-negative/bb49ed71-bf84-480e-9336-4cfaba55d253-width200-quality90.png",INTER 24/7
 https://amg27604-amg27604c2-amgplt0148.playout.now3.amagi.tv/playlist/amg27604-amg27604c2-amgplt0148/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://www.tvlogo.org/logo/lazio-style-channel-it.png" group-title="Sport",Lazio Style TV
+#EXTINF:-1 tvg-logo="https://www.sslazio.it/images/logo_lazio.png" group-title="Sport",Lazio Style TV
 https://livesg.sslazio.hiway.media/restreamer/sslazio_client/gpu-a-c0-7/restreamer/outgest/a4bacde5-20de-4555-9664-939a1794b963/manifest.m3u8
 #EXTINF:-1 tvg-name="Italian Fishing TV" tvg-id="" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork_negative/8488cf6a-bb6a-4df1-adf4-d66ff4b621ca-italian-fishing-tv-1643371244-quality100.png" group-title="Sport",Italian Fishing TV
 https://d2n1ucuifwse4q.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5nki8b8udz6dm/index.m3u8?ads.device_did=%7BPSID%7D&ads.device_dnt=0&ads.app_domain=0&ads.app_name=0&ads.consent=0&ads.ssai_vendor=SSSLIVE
@@ -494,15 +494,15 @@ https://stream.mariatvcdn.com/teledolomiti/a66b8b8ac2baee06f136e87b9805774d.sdp/
 https://jr7yvkmwda4v-hls-live.mariatvcdn.it/liveu/9aa7fdc4068e56587206b298b423cb82.sdp/chunks.m3u8
 #EXTINF:-1 tvg-name="Plus TV Motori" tvg-id="MsMotor.it" tvg-logo="https://channels.zappr.stream/logos/plustvmotori.png" group-title="Sport", Plus TV Motori
 https://6zklxkbbdw9b-hls-live.mariatvcdn.it/msmotor/2f759512164fc6fe4acbed6a5648993a.sdp/chunks.m3u8
-#EXTINF:-1 tvg-name="ACI Sport TV" tvg-id="ACI.Sport.Tv.it" tvg-logo="" group-title="Sport" bck="https://webstream.multistream.it/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8", ACI Sport TV
+#EXTINF:-1 tvg-name="ACI Sport TV" tvg-id="ACI.Sport.Tv.it" tvg-logo="https://i.imgur.com/U8cHMOt.png" group-title="Sport" bck="https://webstream.multistream.it/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8", ACI Sport TV
 https://live-acisport-tv.acisport.tv/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8
-#EXTINF:-1 tvg-name="ACI Sport LIVE 01" tvg-id="" tvg-logo="" group-title="Sport", ACI Sport LIVE 01 (non sempre attivo)
+#EXTINF:-1 tvg-name="ACI Sport LIVE 01" tvg-id="" tvg-logo="https://i.imgur.com/U8cHMOt.png" group-title="Sport", ACI Sport LIVE 01 (non sempre attivo)
 https://webstream.multistream.it/memfs/10d16cc8-251a-413f-afe7-550b5bf8e87d.m3u8
-#EXTINF:-1 group-title="Sport" tvg-logo="",Rally TV
+#EXTINF:-1 group-title="Sport" tvg-logo="https://i.postimg.cc/WtLq2C7c/logo-Rally-Tv1.png",Rally TV
 https://rally-tv-live.akamaized.net/hls/live/2117704/RallyTV-Pri/master.m3u8
-#EXTINF:-1 group-title="Sport" tvg-logo="",TOP Calcio 24
+#EXTINF:-1 group-title="Sport" tvg-logo="https://i.imgur.com/DnVPKPE.png",TOP Calcio 24
 https://vercel-api.zappr.stream/api?https://telelombardia.video/video/viewlivestreaming?rel=2497&cntr=0
-#EXTINF:-1 group-title="Sport",RedBull TV
+#EXTINF:-1 tvg-logo="https://www.clipartmax.com/png/middle/46-462953_red-bull-tv-logo-red-bull-tv-logo.png" group-title="Sport",RedBull TV
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 #EXTINF:-1 tvg-name="BIKE" tvg-id="BIKE.it" tvg-logo="" group-title="Sport", BIKE
 https://edge-004.streamup.eu/origin/bike_abr/playlist.m3u8
