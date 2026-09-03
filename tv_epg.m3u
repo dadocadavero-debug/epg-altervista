@@ -1,17 +1,11 @@
 #EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
 ﻿#EXTM3U x-tvg-url="http://epg-guide.com/wltv.gz, https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/it.xml.gz" url-tvg="http://epg-guide.com/wltv.gz, https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/it.xml.gz" billed-msg="☕Supportami:https://ko-fi.com/gtvit/tip" max-conn="6"
 #EXTINF:-1 tvg-id="Rai1.it" tvg-name="Rai 1" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-chno="1" channel-number="1" group-title="Rai",Rai 1
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=23&forceUserAgent=raiplayappletv
+https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8
 #EXTINF:-1 tvg-name="Rai 2" tvg-id="Rai2.it" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png" tvg-chno="2" channel-number="2" group-title="Rai" mediapolis="308718",Rai 2
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=16&forceUserAgent=raiplayappletv
+https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8
 #EXTINF:-1 tvg-name="Rai 3" tvg-id="Rai3.it" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png" tvg-chno="3" channel-number="3" group-title="Rai" mediapolis="308709",Rai 3
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709&output=7&forceUserAgent=raiplayappletv
+https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8
 #EXTINF:-1 tvg-name="Rete 4" tvg-id="Rete.4.it" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/171446419-0fbcd8b0-aa93-43ad-9122-11eab918a692.png" tvg-chno="4" channel-number="4" group-title="Mediaset",Rete 4
 https://live03-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest_hd.mpd
 #EXTINF:-1 tvg-name="Canale 5" tvg-id="Canale.5.it" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/165459358-6ae4bdad-08da-4b42-8628-e49156a0af7e.png" tvg-chno="5" channel-number="5" group-title="Mediaset",Canale 5
