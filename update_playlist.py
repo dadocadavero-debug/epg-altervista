@@ -65,6 +65,12 @@ NAME_MAP = {
     "rai sport hbbtv raiway": "RaiSport.it",
 }
 
+RAI_WORKING_STREAMS = {
+    "Rai 1": "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8",
+    "Rai 2": "https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8",
+    "Rai 3": "https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8",
+}
+
 TECH_WORDS = {
     "hd", "sd", "hls", "dash", "hbbtv", "raiway", "akamai", "backup", "fps", "europa",
     "900p", "720p", "1080p", "4k", "uhd", "tv", "italia", "🔐",
@@ -95,6 +101,16 @@ LOGO_MAP = {
     "hgtv": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/homegardentv.png",
     "motor trend": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/motortrend.png",
     "discovery": "https://i.imgur.com/5IxIFJ0.png",
+    "lazio style": "https://www.tvlogo.org/logo/lazio-style-channel-it.png",
+    "lazio style tv": "https://www.tvlogo.org/logo/lazio-style-channel-it.png",
+    "lazio style channel": "https://www.tvlogo.org/logo/lazio-style-channel-it.png",
+    "f1 tv": "https://statics.quattroruote.it/content/dam/quattroruote/it/news/sport/2018/03/02/formula_1_liberty_media_lancia_lo_streaming_online_nasce_f1_tv_/gallery/rsmall/f1-tv-formula-1-3.jpg",
+    "super tennis": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
+    "supertennis": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
+    "supertennis+ 1": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
+    "supertennis+ 2": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
+    "supertennis+ 3": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
+    "supertennis+ 4": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
 }
 
 def set_tvg_logo(extinf: str, logo_url: str) -> str:
@@ -161,6 +177,29 @@ def set_tvg_id(extinf: str, new_id: str) -> str:
     return extinf
 
 
+
+def fix_primary_rai_streams(lines):
+    out = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if line.startswith("#EXTINF") and 'group-title="Rai"' in line:
+            name = line.rsplit(",", 1)[-1].strip() if "," in line else ""
+            if name in RAI_WORKING_STREAMS:
+                out.append(line)
+                i += 1
+                # Salta opzioni/URL originali fino alla prossima EXTINF,
+                # mantenendo commenti globali solo se necessari.
+                while i < len(lines) and not lines[i].startswith("#EXTINF"):
+                    if lines[i].startswith("#EXTM3U"):
+                        out.append(lines[i])
+                    i += 1
+                out.append(RAI_WORKING_STREAMS[name])
+                continue
+        out.append(line)
+        i += 1
+    return out
+
 def main():
     m3u = fetch(M3U_URL).decode("utf-8", errors="replace")
     epg_raw = fetch(EPG_URL)
@@ -188,6 +227,7 @@ def main():
                 stripped_to_ids.setdefault(sn, set()).add(cid)
 
     lines = m3u.splitlines()
+    lines = fix_primary_rai_streams(lines)
 
     # Impara i loghi già presenti nella playlist Altervista per riusarli
     # automaticamente sui duplicati/backup dello stesso canale.
@@ -268,6 +308,9 @@ def main():
         current_logo = get_tvg_logo(line)
         bad_logo = "eu1-prod-images.disco-api.com" in current_logo
         explicit_logo = LOGO_MAP.get(logo_key(name)) or LOGO_MAP.get(norm(name))
+        # Tutti i feed Supertennis+ usano il logo ufficiale di SuperTennis.
+        if norm(name).startswith("supertennis+"):
+            explicit_logo = LOGO_MAP["supertennis"]
         mapped_logo = best_logo_for_name(name, learned_logos)
         wanted_logo = explicit_logo or mapped_logo
 
