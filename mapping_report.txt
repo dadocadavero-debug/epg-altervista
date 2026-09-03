@@ -1,7 +1,7 @@
 Canali/righe EXTINF modificate: 104
 Match automatici univoci: 0
 ID già validi preservati: 34
-Loghi aggiunti: 72
+Loghi aggiunti: 78
 
 Rete 4 | Rete4.it -> Rete.4.it | id:Rete4.it
 Canale 5 | Canale5.it -> Canale.5.it | id:Canale5.it
@@ -51,7 +51,13 @@ Radio Italia TV | radioitaliatv -> Radio.Italia.TV.HD.it | id:radioitaliatv
 Fashion TV | RakutenFashionTv.it -> Fashion.TV.it | id:RakutenFashionTv.it
 QVC Italia | qvcitalia -> QVC.it | id:qvcitalia
 Class CNBC | (vuoto) -> Class.CNBC.it | nome-verificato
+Supertennis+ 1 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
+Supertennis+ 2 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
+Supertennis+ 3 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
+Supertennis+ 4 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
 Inter TV | (vuoto) -> Inter.TV.it | nome-verificato
+Lazio Style TV | logo aggiunto -> https://www.tvlogo.org/logo/lazio-style-channel-it.png
+F1 TV | logo aggiunto -> https://statics.quattroruote.it/content/dam/quattroruote/it/news/sport/2018/03/02/formula_1_liberty_media_lancia_lo_streaming_online_nasce_f1_tv_/gallery/rsmall/f1-tv-formula-1-3.jpg
 ACI Sport TV | AciSportTV.it -> ACI.Sport.Tv.it | id:AciSportTV.it
 BIKE | bikesmartmobility -> BIKE.it | id:bikesmartmobility
 Solocalcio (25fps) | ITBC4700002CO -> Solocalcio.it.it | id:ITBC4700002CO
