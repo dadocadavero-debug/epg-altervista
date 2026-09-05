@@ -843,17 +843,16 @@ https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8
 https://d3k8wzt41aflvx.cloudfront.net/RAI3/Live.m3u8
 #EXTINF:-1 tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/171446419-0fbcd8b0-aa93-43ad-9122-11eab918a692.png" tvg-id="Rete.4.it" group-title="Estero",Rete 4 HD Europa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.file_type=mpd
-https://link.api.eu.theplatform.com/s/PR1GhC/Ol99_RE1iROi
+#EXTVLCOPT:http-referrer=https://mediasetinfinity.mediaset.it/
+https://live03t-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest_hd.mpd
 #EXTINF:-1 tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/165459358-6ae4bdad-08da-4b42-8628-e49156a0af7e.png" tvg-id="Canale.5.it" group-title="Estero",Canale 5 HD Europa
+#EXTVLCOPT:http-referrer=https://mediasetinfinity.mediaset.it/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://link.api.eu.theplatform.com/s/PR1GhC/vNKkQE0fSrYM
+https://live03t-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/manifest_hd.mpd
 #EXTINF:-1 tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/165022887-1333663d-c4c2-4115-a7d0-13cc16eee6c8.png" tvg-id="Italia.1.it" group-title="Estero",Italia 1 HD Europa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-https://link.api.eu.theplatform.com/s/PR1GhC/Ex0NbXKB8Y17
+#EXTVLCOPT:http-referrer=https://mediasetinfinity.mediaset.it/
+https://live03t-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/manifest_hd.mpd
 #EXTINF:-1 tvg-logo="https://www.la7.it/sites/default/themes/la7/newcss/assets/img/la7_logo.png" tvg-id="LA7.HD.it" group-title="Estero" tvg_logo="",LA7 HD
 https://d3k8wzt41aflvx.cloudfront.net/LA7HD/Live.m3u8
 #EXTINF:-1 tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/170100285-6e222810-ae86-45c1-ad6d-8804b2f87963.png" tvg-id="20.it" group-title="Estero",Mediaset 20 HD Europa
