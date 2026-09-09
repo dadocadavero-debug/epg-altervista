@@ -237,11 +237,11 @@ def main():
     lines = m3u.splitlines()
     lines = fix_primary_rai_streams(lines)
 
-# Rimuove eventuali intestazioni EXT M3U duplicate
-lines = [
-    line for line in lines
-    if not line.lstrip("\ufeff").startswith("#EXTM3U")
-]
+    # Rimuove eventuali intestazioni EXT M3U duplicate
+    lines = [
+        line for line in lines
+        if not line.lstrip("\ufeff").startswith("#EXTM3U")
+    ]
     
     # Impara i loghi già presenti nella playlist Altervista per riusarli
     # automaticamente sui duplicati/backup dello stesso canale.
