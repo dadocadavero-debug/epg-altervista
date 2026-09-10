@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 M3U_URL = "https://inthemix.altervista.org/tv.m3u"
-EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
+EPG_URL = "https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml"
 OUT_M3U = Path("tv_epg.m3u")
 OUT_REPORT = Path("mapping_report.txt")
 
