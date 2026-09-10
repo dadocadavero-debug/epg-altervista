@@ -1,53 +1,21 @@
-Canali/righe EXTINF modificate: 103
+Canali/righe EXTINF modificate: 54
 Match automatici univoci: 0
-ID già validi preservati: 34
+ID già validi preservati: 83
 Loghi aggiunti: 81
 
-Rete 4 | Rete4.it -> Rete.4.it | id:Rete4.it
-Canale 5 | Canale5.it -> Canale.5.it | id:Canale5.it
-Italia 1 | Italia1.it -> Italia.1.it | id:Italia1.it
-LA7 | la7 -> LA7.HD.it | id:la7
-TV8 SD | Tv8.it -> TV8.HD.it | id:Tv8.it
 NOVE | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png
 EuroNews Italia | PlutoEuronews.it -> Euronews.it | id:PlutoEuronews.it
-Mediaset 20 | 20Mediaset.it -> 20.it | id:20Mediaset.it
-Rai 4 | rai4.it -> Rai4.it | id:rai4.it
-Iris | iris.it -> Iris.it | id:iris.it
-Rai 5 | rai5.it -> Rai5.it | id:rai5.it
-Rai Movie | raimovie.it -> RaiMovie.it | id:raimovie.it
-Rai Premium | raipremium.it -> RaiPremium.it | id:raipremium.it
-TwentySeven | Twentyseven.it -> 27.Twentyseven.it | id:Twentyseven.it
-LA7 Cinema | la7d -> LA7.CINEMA.it | id:la7d
-LA5 | la5 -> La.5.it | id:la5
-Real Time | RealTime.it -> Real.Time.it | id:RealTime.it
 Real Time | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/realtime.png
-Gambero Rosso | GamberoRosso.it -> Gambero.Rosso.HD.it | id:GamberoRosso.it
-Food Network | foodnetwork.it -> Food.Network.it | id:foodnetwork.it
 Food Network | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/foodnetwork.png
-Cine 34 | cine34.it -> Cine34.it | id:cine34.it
-RTL 102.5 TV | rtl102.5tv -> RTL.102.5.HD.it | id:rtl102.5tv
-Discovery | discovery -> Discovery.Channel.it | id:discovery
 Discovery | logo sostituito -> https://i.imgur.com/5IxIFJ0.png
-Giallo | Giallo.it -> Giallo.TV.it | id:Giallo.it
 Giallo | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/giallo.png
-Top Crime | TopCrime.it -> Top.Crime.it | id:TopCrime.it
 K2 🔐 | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/k2.png
 Frisbee 🔐 | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/frisbee.png
-Super! | super -> Super!.it | id:super
-RaiNews 24 | rai news 24 -> RaiNews24.it | id:rai news 24
-Italia 2 | Italia2.it -> Italia.2.it | id:Italia2.it
 Sky TG24 SD | (vuoto) -> Sky.TG24.it | nome-verificato
-TGCOM 24 | TGCom24.it -> TGCom.it | id:TGCom24.it
 DMAX | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/dmax.png
-Mediaset Extra | MediasetExtra.it -> Mediaset.Extra.it | id:MediasetExtra.it
 HGTV | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/homegardentv.png
-Rai Sport | raisport -> RaiSport.it | id:raisport
 Solocalcio | ITBC4700002CO -> Solocalcio.it.it | id:ITBC4700002CO
-Super Tennis | SuperTennis.it -> SuperTennis.HD.it | id:SuperTennis.it
 Radio 105 TV | (vuoto) -> Radio.105.it | nome-verificato
-R101 TV | R101TV -> R101tv.it | id:R101TV
-Deejay TV | DeejayTV.it -> Deejay.TV.it | id:DeejayTV.it
-Radio Italia TV | radioitaliatv -> Radio.Italia.TV.HD.it | id:radioitaliatv
 Fashion TV | RakutenFashionTv.it -> Fashion.TV.it | id:RakutenFashionTv.it
 QVC Italia | qvcitalia -> QVC.it | id:qvcitalia
 Class CNBC | (vuoto) -> Class.CNBC.it | nome-verificato
@@ -66,11 +34,6 @@ TOP Calcio 24 | logo aggiunto -> https://i.imgur.com/DnVPKPE.png
 RedBull TV | logo aggiunto -> https://www.redbull.com/cs/RedBull2/images/branding/redbull-tv-logo-2x.png
 BIKE | bikesmartmobility -> BIKE.it | id:bikesmartmobility
 Solocalcio (25fps) | ITBC4700002CO -> Solocalcio.it.it | id:ITBC4700002CO
-Rai Sport jolly 1 (attivo raramente) | raisport -> RaiSport.it | id:raisport
-Rai Sport jolly 2 (attivo raramente) | raisport -> RaiSport.it | id:raisport
-Virgin Radio TV | VirginRadioTV.it -> Virgin.Radio.it | id:VirginRadioTV.it
-Radio Montecarlo TV | radiomontecarlotv -> RMC.it | id:radiomontecarlotv
-Rai Radio 2 | rairadio2 -> RaiRadio2.it | id:rairadio2
 Radio Freccia | (vuoto) -> RADIOFRECCIA.HD.it | nome-verificato
 Radio Norba | (vuoto) -> RADIONORBA.TV.it | nome-verificato
 Rai 1 900p | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png
@@ -82,7 +45,6 @@ Canale 5 (hls) | canale5 -> Canale.5.it | id:canale5
 Canale 5 (hls) | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/165459358-6ae4bdad-08da-4b42-8628-e49156a0af7e.png
 Italia 1 (hls) | italia1 -> Italia.1.it | id:italia1
 Italia 1 (hls) | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/165022887-1333663d-c4c2-4115-a7d0-13cc16eee6c8.png
-Mediaset 20 (hls) | 20Mediaset.it -> 20.it | id:20Mediaset.it
 Mediaset 20 (hls) | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/170100285-6e222810-ae86-45c1-ad6d-8804b2f87963.png
 Rai 1 HbbTV | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png
 Rai 1 mdp | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png
@@ -94,7 +56,6 @@ Rai 3 (hls) | rai3 -> Rai3.it | id:rai3
 Rai 3 (hls) | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png
 rai premium HbbTV akamai | (vuoto) -> RaiPremium.it | nome-verificato
 rai premium HbbTV akamai | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637309566388_1579882215002_rai-premium.png
-Rai Premium hls | raipremium.it -> RaiPremium.it | id:raipremium.it
 rai movie HbbTV raiway | (vuoto) -> RaiMovie.it | nome-verificato
 rai movie HbbTV raiway | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637309933509_1579882457761_rai-movie.png
 rai 5 HbbTV raiway | (vuoto) -> Rai5.it | nome-verificato
@@ -123,16 +84,12 @@ Canale 5 | canale 5 -> Canale.5.it | id:canale 5
 Canale 5 | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/165459358-6ae4bdad-08da-4b42-8628-e49156a0af7e.png
 Italia 1 | italia 1 -> Italia.1.it | id:italia 1
 Italia 1 | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/165022887-1333663d-c4c2-4115-a7d0-13cc16eee6c8.png
-TV8 SD | Tv8.it -> TV8.HD.it | id:Tv8.it
 TV8 SD | logo aggiunto -> https://api.superguidatv.it/v1/channels/237/logo?width=300
-Mediaset 20 | 20Mediaset.it -> 20.it | id:20Mediaset.it
 Mediaset 20 | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/170100285-6e222810-ae86-45c1-ad6d-8804b2f87963.png
 Rai 4 | rai4 -> Rai4.it | id:rai4
 Rai 4 | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662992107Logo-Rai4.png
-Cielo SD | Cielo.it -> cielo.it | id:Cielo.it
 Cielo SD | logo aggiunto -> https://api.superguidatv.it/v1/channels/239/logo?width=300
 Rai Gulp SD | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raigulp.png
-Rai YoYo SD | RaiYoYo.it -> RaiYoyo.it | id:RaiYoYo.it
 Rai YoYo SD | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raiyoyo.png
 Rai 1 Europa | (vuoto) -> Rai1.it | nome-verificato
 Rai 1 Europa | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png
@@ -144,18 +101,13 @@ Rai 3 | (vuoto) -> Rai3.it | nome-verificato
 Rai 3 | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png
 Rai 3 Europa | (vuoto) -> Rai3.it | nome-verificato
 Rai 3 Europa | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png
-Rete 4 HD Europa | Rete4.it -> Rete.4.it | id:Rete4.it
 Rete 4 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/171446419-0fbcd8b0-aa93-43ad-9122-11eab918a692.png
-Canale 5 HD Europa | Canale5.it -> Canale.5.it | id:Canale5.it
 Canale 5 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/165459358-6ae4bdad-08da-4b42-8628-e49156a0af7e.png
-Italia 1 HD Europa | Italia1.it -> Italia.1.it | id:Italia1.it
 Italia 1 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/165022887-1333663d-c4c2-4115-a7d0-13cc16eee6c8.png
 LA7 HD | (vuoto) -> LA7.HD.it | nome-verificato
 LA7 HD | logo aggiunto -> https://www.la7.it/sites/default/themes/la7/newcss/assets/img/la7_logo.png
-Mediaset 20 HD Europa | 20Mediaset.it -> 20.it | id:20Mediaset.it
 Mediaset 20 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/170100285-6e222810-ae86-45c1-ad6d-8804b2f87963.png
 Iris HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/172013080-6fa2f27a-2a1f-43e9-86d0-ebe24e093ffe.png
-Italia 2 HD Europa | Italia2.it -> Italia.2.it | id:Italia2.it
 Italia 2 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/170519488-02d50d65-cc5f-432e-acf5-83288c3a93ae.png
 La5 HD Europa | LA5.it -> La.5.it | id:LA5.it
 La5 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/170626282-d8fef159-5edc-49cb-a463-1489d44d6639.png
@@ -168,7 +120,6 @@ Rai Scuola Europa | (vuoto) -> RaiScuola.it | nome-verificato
 Rai Scuola Europa | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637322361853_logo-raiscuola.png
 Rai Storia Europa | (vuoto) -> RaiStoria.it | nome-verificato
 Rai Storia Europa | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637309830740_1579882284354_rai-storia.png
-Mediaset Extra HD Europa | MediasetExtra.it -> Mediaset.Extra.it | id:MediasetExtra.it
 Mediaset Extra HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/mam/2021/03/30/171152455-cd94ebc1-6ff6-468b-987b-87f6b3e41325.png
 TGCOM24 | (vuoto) -> TGCom.it | nome-verificato
 TGCOM24 HD Europa | (vuoto) -> TGCom.it | nome-verificato
