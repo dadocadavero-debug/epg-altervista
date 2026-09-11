@@ -88,7 +88,7 @@ https://live03-col.msf.cdn.mediaset.net/live/ch-lt/lt-clr.isml/manifest_hd.mpd
 https://live03-col.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/manifest_hd.mpd
 #EXTINF:-1 video-track="10" tvg-name="K2" tvg-id="K2.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/k2.png" tvg-chno="41" group-title="Discovery",K2 🔐
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=9cc95a9dc1164242924ade049d8478c4:6e9b70fa313337917df2e08b961bf8b8
+#KODIPROP:inputstream.adaptive.license_key=a03e33a2fca847af9f3dba42be1fddd0:8f39a9339f889751703b8c99c9f69bb2
 https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(k2)/manifest.mpd
 #EXTINF:-1 tvg-name="Rai Gulp" tvg-id="RaiGulp.it" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637310352874_1579882960255_rai-gulp.png" tvg-chno="42" group-title="Bambini e ragazzi" mediapolis="",Rai Gulp
 https://raigulp1-dash-live.akamaized.net/dash/live/663985/raigulp1/manifest.mpd
@@ -96,7 +96,7 @@ https://raigulp1-dash-live.akamaized.net/dash/live/663985/raigulp1/manifest.mpd
 https://raiyoyo1-dash-live.akamaized.net/dash/live/663949/raiyoyo1/manifest.mpd
 #EXTINF:-1 video-track="10" tvg-name="Frisbee" tvg-id="Frisbee.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/frisbee.png" tvg-chno="44" group-title="Discovery",Frisbee 🔐
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d877a8dee5a4dd5bb063fa7cdb91c62:2746d275d025c480b00cd929c951fb15
+#KODIPROP:inputstream.adaptive.license_key=d5ce25d00a88442eb00991749d3191fc:aa1f60638ab3bb4fde86188666f350c0
 https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(frisbee)/manifest.mpd
 #EXTINF:-1 tvg-id="IT3800010K1" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3800010K1_20260120T044614SQUARE.png" tvg-chno="45" group-title="Bambini e ragazzi" ,Masha e Orso
 https://amg01954-amg01954c4-samsung-it-10210.playouts.now.amagi.tv/playlist.m3u8
@@ -384,7 +384,7 @@ https://jmp2.uk/plu-686cfdf894a028da3aac4252.m3u8
 #EXTINF:-1 tvg-id="PlutoIPuffi.it" tvg-logo="https://images.pluto.tv/channels/68adb5853efb41cd97ce413d/colorLogoPNG.png" group-title="Bambini e ragazzi",I Puffi
 https://jmp2.uk/plu-68adb5853efb41cd97ce413d.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/2f3db495-660f-48f8-805c-2bd5f35ee8c4-width200-quality90.jpeg" group-title="Bambini e ragazzi",Pingu
-https://pingu-rakuten-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-7627/master.m3u8
+https://pingu-rakuten-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-rtv-7627-playout/master.m3u8
 #EXTINF:-1 tvg-name="Teletubbies" tvg-id="RakutenWbTeletubbies.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT480000143_20250819T032309SQUARE.png" group-title="Bambini e ragazzi", Teletubbies
 https://d2np8lwyhxd27p.cloudfront.net/5.m3u8
 #EXTINF:-1 tvg-name="duckTV" tvg-id="ducktv.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC4700001E6_20221214T045010SQUARE.png_20221214045011.png" group-title="Bambini e ragazzi", duckTV
