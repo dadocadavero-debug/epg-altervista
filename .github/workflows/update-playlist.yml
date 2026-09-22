@@ -11,26 +11,40 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
+      - name: Sincronizza repository
+        run: git pull --rebase origin main
+
       - name: Genera playlist aggiornata
         run: python update_playlist.py
+
+      - name: Correggi automaticamente gli ID EPG
+        run: python fix_epg_ids.py
 
       - name: Pubblica se cambia
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tv_epg.m3u mapping_report.txt
+
+          git add tv_epg.m3u mapping_report.txt epg_id_report.txt
+
           if git diff --cached --quiet; then
             echo "Nessuna modifica"
-          else
-            git commit -m "Aggiorna playlist Altervista con EPG"
-            git push
+            exit 0
           fi
+
+          git commit -m "Aggiorna playlist Altervista con EPG"
+          git pull --rebase origin main
+          git push origin HEAD:main
