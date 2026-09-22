@@ -1,6 +1,6 @@
 Canali/righe EXTINF modificate: 54
 Match automatici univoci: 0
-ID già validi preservati: 83
+ID già validi preservati: 84
 Loghi aggiunti: 81
 
 NOVE | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png
