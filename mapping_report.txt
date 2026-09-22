@@ -1,4 +1,4 @@
-Canali/righe EXTINF modificate: 54
+Canali/righe EXTINF modificate: 60
 Match automatici univoci: 0
 ID già validi preservati: 84
 Loghi aggiunti: 81
@@ -72,6 +72,9 @@ rai sport HbbTV raiway | (vuoto) -> RaiSport.it | nome-verificato
 rai sport HbbTV raiway | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637310367694_1579883330343_rai-sport.png
 Rai Sport 900p | (vuoto) -> RaiSport.it | nome-verificato
 Rai Sport 900p | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637310367694_1579883330343_rai-sport.png
+GFVIP Regia 1 | (vuoto) -> GF.VIP.-.Regia.1.it | nome-verificato
+GFVIP Regia 2 | (vuoto) -> GF.VIP.-.Regia.2.it | nome-verificato
+GFVIP Un'ora fa | (vuoto) -> GF.VIP.-.Un’ora.fa.it | nome-verificato
 Rai 1 | rai 1 -> Rai1.it | id:rai 1
 Rai 1 | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png
 Rai 2 | rai 2 -> Rai2.it | id:rai 2
@@ -127,7 +130,9 @@ RAI News 24 Europa HD | (vuoto) -> RaiNews24.it | nome-verificato
 TG Norba 24 | tg norba 24 -> TG.NORBA.24.it | id:tg norba 24
 NOVE backup 🔐 | (vuoto) -> Nove.it | nome-verificato
 NOVE backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png
+RealTime backup 🔐 | (vuoto) -> Real.Time.it | nome-verificato
 RealTime backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/realtime.png
+FoodNetwork backup 🔐 | (vuoto) -> Food.Network.it | nome-verificato
 FoodNetwork backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/foodnetwork.png
 Discovery backup 🔐 | (vuoto) -> Discovery.Channel.it | nome-verificato
 Discovery backup 🔐 | logo aggiunto -> https://i.imgur.com/5IxIFJ0.png
@@ -137,4 +142,5 @@ DMAX backup 🔐 | (vuoto) -> DMAX.it | nome-verificato
 DMAX backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/dmax.png
 HGTV backup 🔐 | (vuoto) -> HGTV.it | nome-verificato
 HGTV backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/homegardentv.png
+Turbo backup 🔐 | (vuoto) -> Motor.Trend.it | nome-verificato
 Turbo backup 🔐 | logo aggiunto -> https://api.superguidatv.it/v1/channels/444/logo?width=300

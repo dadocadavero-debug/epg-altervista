@@ -731,11 +731,11 @@ https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/test1/hls/playlist_mo.m3u8
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/test2/hls/playlist_mo.m3u8
 #EXTINF:-1 tvg-name="Rai test3" tvg-id="" tvg-logo="" group-title="Rai",Rai test3
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/test3/hls/playlist_mo.m3u8
-#EXTINF:-1 tvg-name="LIVE 1" tvg-id="" tvg-logo="https://img-prod-api2.mediasetplay.mediaset.it/api/images/cu/v3/aHR0cHM6Ly9zdGF0aWMyLm1lZGlhc2V0cGxheS5tZWRpYXNldC5pdC9tYW0vMjAyMy8wOS8wOC8xMzIxMjQ3MzgtNWNkNzY1NWQtOWNlZi00YzI3LTg5YTctMTYyYThkNmYxNzk2LnBuZw/editorial_image_channel_logo/80/80?r=2" tvg-chno="" group-title="Mediaset",GFVIP Regia 1
+#EXTINF:-1 tvg-name="LIVE 1" tvg-id="GF.VIP.-.Regia.1.it" tvg-logo="https://img-prod-api2.mediasetplay.mediaset.it/api/images/cu/v3/aHR0cHM6Ly9zdGF0aWMyLm1lZGlhc2V0cGxheS5tZWRpYXNldC5pdC9tYW0vMjAyMy8wOS8wOC8xMzIxMjQ3MzgtNWNkNzY1NWQtOWNlZi00YzI3LTg5YTctMTYyYThkNmYxNzk2LnBuZw/editorial_image_channel_logo/80/80?r=2" tvg-chno="" group-title="Mediaset",GFVIP Regia 1
 https://live02-col.msf.cdn.mediaset.net/live/ch-b7/b7-clr.isml/index.m3u8
-#EXTINF:-1 tvg-name="LIVE 2" tvg-id="" tvg-logo="https://img-prod-api2.mediasetplay.mediaset.it/api/images/cu/v3/aHR0cHM6Ly9zdGF0aWMyLm1lZGlhc2V0cGxheS5tZWRpYXNldC5pdC9tYW0vMjAyMy8wOS8wOC8xMzIwNDUwNTAtMDU3NDA4ZmUtODI5YS00ZDQ3LWJkYzktYWRhODBhNjg1ZGI5LnBuZw/editorial_image_channel_logo/80/80?r=2" tvg-chno="" group-title="Mediaset",GFVIP Regia 2
+#EXTINF:-1 tvg-name="LIVE 2" tvg-id="GF.VIP.-.Regia.2.it" tvg-logo="https://img-prod-api2.mediasetplay.mediaset.it/api/images/cu/v3/aHR0cHM6Ly9zdGF0aWMyLm1lZGlhc2V0cGxheS5tZWRpYXNldC5pdC9tYW0vMjAyMy8wOS8wOC8xMzIwNDUwNTAtMDU3NDA4ZmUtODI5YS00ZDQ3LWJkYzktYWRhODBhNjg1ZGI5LnBuZw/editorial_image_channel_logo/80/80?r=2" tvg-chno="" group-title="Mediaset",GFVIP Regia 2
 https://live02-col.msf.cdn.mediaset.net/live/ch-b8/b8-clr.isml/index.m3u8
-#EXTINF:-1 tvg-name="Un'ora fa" tvg-id="" tvg-logo="https://img-prod-api2.mediasetplay.mediaset.it/api/images/cu/v3/aHR0cHM6Ly9zdGF0aWMyLm1lZGlhc2V0cGxheS5tZWRpYXNldC5pdC9tYW0vMjAyMy8wOS8wOC8xMzIwMTEwOTgtYzQ3YmJiNzQtZDU2Zi00MGJiLTkzOWEtZjZjZjc2YzhjNjFlLnBuZw/editorial_image_channel_logo/80/80?r=2" tvg-chno="" group-title="Mediaset",GFVIP Un'ora fa
+#EXTINF:-1 tvg-name="Un'ora fa" tvg-id="GF.VIP.-.Un’ora.fa.it" tvg-logo="https://img-prod-api2.mediasetplay.mediaset.it/api/images/cu/v3/aHR0cHM6Ly9zdGF0aWMyLm1lZGlhc2V0cGxheS5tZWRpYXNldC5pdC9tYW0vMjAyMy8wOS8wOC8xMzIwMTEwOTgtYzQ3YmJiNzQtZDU2Zi00MGJiLTkzOWEtZjZjZjc2YzhjNjFlLnBuZw/editorial_image_channel_logo/80/80?r=2" tvg-chno="" group-title="Mediaset",GFVIP Un'ora fa
 https://live02-col.msf.cdn.mediaset.net/live/ch-b9/b9-clr.isml/index.m3u8
 #EXTINF:-1 tvg-name="GFVIP - Open House" tvg-id="" tvg-logo="https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/ita/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMzU2MjAxMGU3YmIzMWIzNS9vcmlnaW5hbC9HRlZJUC1sb2dvLWNhbmFsZS1vcGVuLWhvdXNlLnBuZw/single/80/80@2?r=" tvg-chno="" group-title="Mediaset",GFVIP - Open House
 https://live02-col.msf.cdn.mediaset.net/live/ch-b1/b1-clr.isml/index.m3u8
@@ -1084,11 +1084,11 @@ https://streamcdng10-db142859fd5541b09de25d6507f1f2d3.msvdn.net/live/S17501676/o
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=68b6ba1e6373339b9b2e8ed930f7e3ee:ddbeebe1601da5a71e82c3eeeaaddf7b
 https://pb-o0zu14lv7kvp9.akamaized.net/index.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/realtime.png" group-title="Discovery",RealTime backup 🔐
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/realtime.png" tvg-id="Real.Time.it" group-title="Discovery",RealTime backup 🔐
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=64144d4fd45734f8b196d157a983aa51:e6e0b229e3eb3b180b5a95bb799d8fae
 https://pb-96zvdrcpxomf6.akamaized.net/index.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/foodnetwork.png" group-title="Discovery",FoodNetwork backup 🔐
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/foodnetwork.png" tvg-id="Food.Network.it" group-title="Discovery",FoodNetwork backup 🔐
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5c79e43baeab341ea7f0bcb88800315b:b699bf3b417d1ea211cd3e421bb97f94
 https://pb-ikxuqadisnhot.akamaized.net/index.m3u8
@@ -1108,7 +1108,7 @@ https://pb-lkmzny7qo98vp.akamaized.net/index.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=f16b82552b7339ff831af7b7c6f0083c:2f9dc2c68113fe16c03b853ef5a3269c
 https://pb-06u3v3mpztvam.akamaized.net/index.m3u8
-#EXTINF:-1 tvg-logo="https://api.superguidatv.it/v1/channels/444/logo?width=300" group-title="Discovery",Turbo backup 🔐
+#EXTINF:-1 tvg-logo="https://api.superguidatv.it/v1/channels/444/logo?width=300" tvg-id="Motor.Trend.it" group-title="Discovery",Turbo backup 🔐
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=baf19782749335f996e967915a6d0c7c:731737766d9bedf0c7a7a51ce2c2c69d
 https://pb-i5a8gbryxtlqs.akamaized.net/index.m3u8
