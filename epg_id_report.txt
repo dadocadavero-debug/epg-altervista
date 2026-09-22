@@ -1,0 +1,56 @@
+CORREZIONI TVG-ID AUTOMATICHE
+
+Rete 4: Rete4.it -> Rete.4.it
+Canale 5: Canale5.it -> Canale.5.it
+Italia 1: Italia1.it -> Italia.1.it
+TV8 SD: Tv8.it -> TV8.HD.it
+Mediaset 20: 20Mediaset.it -> 20.it
+Rai 4: rai4.it -> Rai4.it
+Iris: iris.it -> Iris.it
+Rai 5: rai5.it -> Rai5.it
+Rai Movie: raimovie.it -> RaiMovie.it
+Rai Premium: raipremium.it -> RaiPremium.it
+TwentySeven: Twentyseven.it -> 27.Twentyseven.it
+LA5: la5 -> La.5.it
+Real Time: RealTime.it -> Real.Time.it
+Gambero Rosso: GamberoRosso.it -> Gambero.Rosso.HD.it
+Food Network: foodnetwork.it -> Food.Network.it
+Cine 34: cine34.it -> Cine34.it
+Discovery: discovery -> Discovery.Channel.it
+Giallo: Giallo.it -> Giallo.TV.it
+Top Crime: TopCrime.it -> Top.Crime.it
+Italia 2: Italia2.it -> Italia.2.it
+Mediaset Extra: MediasetExtra.it -> Mediaset.Extra.it
+Rai Sport: raisport -> RaiSport.it
+Turbo: turbo -> Motor.Trend.it
+Rai Radio 2: rairadio2 -> RaiRadio2.it
+Mediaset 20 (hls): 20Mediaset.it -> 20.it
+Rai Premium hls: raipremium.it -> RaiPremium.it
+GFVIP Regia 1: (vuoto) -> GFVIPRegia1
+GFVIP Regia 2: (vuoto) -> GFVIPRegia2
+GFVIP Un'ora fa: (vuoto) -> GFVIPUnOraFa
+TV8 SD: Tv8.it -> TV8.HD.it
+Mediaset 20: 20Mediaset.it -> 20.it
+RealTime backup 🔐: (vuoto) -> Real.Time.it
+FoodNetwork backup 🔐: (vuoto) -> Food.Network.it
+Turbo backup 🔐: (vuoto) -> Motor.Trend.it
+
+FEED TECNICI/EVENTO SENZA EPG LINEARE IT1
+
+Diretta
+GFVIP - Open House
+LA7 agenzie?
+LA7 eventi live
+Mediaset b2
+Mediaset b3
+Rai generic1
+Rai generic3
+Rai test1
+Rai test2
+Rai test3
+RaiPlay (eventi)
+RaiPlay 2 (eventi)
+RaiPlay 3 (eventi)
+RaiPlaySport 1
+RaiPlaySport 2
+RaiPlaySport 3
