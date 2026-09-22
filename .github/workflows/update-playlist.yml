@@ -30,15 +30,12 @@ jobs:
       - name: Genera playlist aggiornata
         run: python update_playlist.py
 
-      - name: Correggi automaticamente gli ID EPG
-        run: python fix_epg_ids.py
-
       - name: Pubblica se cambia
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add tv_epg.m3u mapping_report.txt epg_id_report.txt
+          git add tv_epg.m3u mapping_report.txt
 
           if git diff --cached --quiet; then
             echo "Nessuna modifica"
