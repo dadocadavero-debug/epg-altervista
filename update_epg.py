@@ -5,6 +5,7 @@ import xml.etree.ElementTree as ET
 
 SOURCE = "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
 
+# ID della sorgente EPGShare -> ID usato nella tua M3U
 replacements = {
     "20.it": "20Mediaset.it",
     "RaiSport.it": "raisport",
@@ -50,8 +51,8 @@ req = urllib.request.Request(
     headers={
         "User-Agent": "Mozilla/5.0",
         "Accept": "*/*",
-        "Referer": "https://epgshare01.online/"
-    }
+        "Referer": "https://epgshare01.online/",
+    },
 )
 
 with urllib.request.urlopen(req, timeout=60) as response:
@@ -60,32 +61,90 @@ with urllib.request.urlopen(req, timeout=60) as response:
 xml = gzip.decompress(data).decode("utf-8-sig")
 root = ET.fromstring(xml)
 
-channels = {c.get("id"): c for c in root.findall("channel")}
-programmes = {}
+channels = list(root.findall("channel"))
+programmes = list(root.findall("programme"))
 
-for p in root.findall("programme"):
-    programmes.setdefault(p.get("channel"), []).append(p)
+channel_by_id = {c.get("id"): c for c in channels}
+programmes_by_id = {}
 
-existing = {c.get("id") for c in root.findall("channel")}
+for p in programmes:
+    programmes_by_id.setdefault(p.get("channel"), []).append(p)
+
+# Gli ID target sono alias della stessa emittente.
+# Li rigeneriamo SEMPRE dalla sorgente corretta, anche se il target
+# è già presente nell'XML ma non ha programmi (era il problema principale).
+target_ids = set(replacements.values())
+
+# Rimuove dall'output i programmi preesistenti degli alias target.
+# Verranno ricopiati dalla sorgente canonica, evitando doppioni.
+final_programmes = [
+    p for p in programmes
+    if p.get("channel") not in target_ids
+]
+
+added_channels = []
+warnings = []
 
 for source_id, target_id in replacements.items():
-    if source_id not in channels or target_id in existing:
+    source_channel = channel_by_id.get(source_id)
+
+    if source_channel is None:
+        warnings.append(f"SORGENTE NON TROVATA: {source_id} -> {target_id}")
         continue
 
-    channel = copy.deepcopy(channels[source_id])
-    channel.set("id", target_id)
-    root.append(channel)
-    existing.add(target_id)
+    # Se il canale alias non esiste, crealo.
+    if target_id not in channel_by_id:
+        alias_channel = copy.deepcopy(source_channel)
+        alias_channel.set("id", target_id)
+        channels.append(alias_channel)
+        channel_by_id[target_id] = alias_channel
+        added_channels.append(target_id)
 
-    for programme in programmes.get(source_id, []):
-        new_programme = copy.deepcopy(programme)
-        new_programme.set("channel", target_id)
-        root.append(new_programme)
+    source_programmes = programmes_by_id.get(source_id, [])
 
-ET.ElementTree(root).write(
+    if not source_programmes:
+        warnings.append(f"NESSUN PROGRAMMA: {source_id} -> {target_id}")
+        continue
+
+    # Copia SEMPRE la programmazione della sorgente canonica sull'alias.
+    for programme in source_programmes:
+        alias_programme = copy.deepcopy(programme)
+        alias_programme.set("channel", target_id)
+        final_programmes.append(alias_programme)
+
+    print(
+        f"OK {source_id} -> {target_id}: "
+        f"{len(source_programmes)} programmi"
+    )
+
+# Ricostruisce un XMLTV ordinato correttamente:
+# prima tutti i <channel>, poi tutti i <programme>.
+new_root = ET.Element(root.tag, root.attrib)
+
+for child in list(root):
+    if child.tag not in ("channel", "programme"):
+        new_root.append(copy.deepcopy(child))
+
+for channel in channels:
+    new_root.append(channel)
+
+for programme in final_programmes:
+    new_root.append(programme)
+
+ET.ElementTree(new_root).write(
     "epg.xml",
     encoding="utf-8",
-    xml_declaration=True
+    xml_declaration=True,
 )
+
+print()
+print(f"Canali alias aggiunti: {len(added_channels)}")
+print(f"Programmi totali scritti: {len(final_programmes)}")
+
+if warnings:
+    print()
+    print("AVVISI:")
+    for warning in warnings:
+        print("-", warning)
 
 print("EPG Altervista completo generato")
