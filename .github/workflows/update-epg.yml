@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: aggiorna-epg
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -15,11 +19,18 @@ jobs:
     steps:
       - name: Scarica repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Installa Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+
+      - name: Sincronizza repository
+        run: |
+          git pull --rebase origin main
 
       - name: Genera EPG
         run: python update_epg.py
@@ -28,6 +39,14 @@ jobs:
         run: |
           git config user.name "EPG Bot"
           git config user.email "actions@github.com"
+
           git add epg.xml
-          git diff --cached --quiet || git commit -m "Aggiornamento automatico EPG"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica EPG da salvare"
+            exit 0
+          fi
+
+          git commit -m "Aggiornamento automatico EPG"
+          git pull --rebase origin main
+          git push origin HEAD:main
