@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<tv generator-info-name="none" generator-info-url="none">
-  <channel id="Sky.Uno.it">
+<tv generator-info-name="none" generator-info-url="none"><channel id="Sky.Uno.it">
     <display-name lang="it">Sky Uno</display-name>
     <icon src="https://guidatv.sky.it/logo/477skyuno_Light_Fit.png?checksum=cd37fd56-01f7-443e-a62d-ff99bf4c1b1c?tr=n-logo_80" />
     <icon src="https://guidatv.sky.it/logo/477skyuno_Light_Fit.png?checksum=cd37fd56-01f7-443e-a62d-ff99bf4c1b1c?tr=n-logo_80" />
@@ -1030,6 +1029,208 @@
     <icon src="https://guidatv.sky.it/logo/421super_Light_Fit.png?checksum=306fe7e2-fe34-43a1-9fd5-5967814574eb?tr=n-logo_80" />
     <icon src="https://guidatv.sky.it/logo/421super_Light_Fit.png?checksum=306fe7e2-fe34-43a1-9fd5-5967814574eb?tr=n-logo_80" />
     <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="20Mediaset.it">
+    <display-name lang="it">20</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="raisport">
+    <display-name lang="it">RaiSport</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Rete4.it">
+    <display-name lang="it">Rete 4</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/r4.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/r4.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Canale5.it">
+    <display-name lang="it">Canale 5</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Italia1.it">
+    <display-name lang="it">Italia 1</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i1.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i1.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Tv8.it">
+    <display-name lang="it">TV8 HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/260tv8hd_Light_Fit.png?checksum=938addc1e1adaac5be9fdf942d4c7f25?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/260tv8hd_Light_Fit.png?checksum=938addc1e1adaac5be9fdf942d4c7f25?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="raipremium.it">
+    <display-name lang="it">RaiPremium</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Italia2.it">
+    <display-name lang="it">Italia 2</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i2.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i2.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="MediasetExtra.it">
+    <display-name lang="it">Mediaset Extra</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/extra.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/extra.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="la7">
+    <display-name lang="it">LA7 HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/407la7hd_Light_Fit.png?checksum=d9bcc8bf-703c-4d33-823d-5171697fe8a5?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/407la7hd_Light_Fit.png?checksum=d9bcc8bf-703c-4d33-823d-5171697fe8a5?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="rai4.it">
+    <display-name lang="it">Rai4</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="iris.it">
+    <display-name lang="it">Iris</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/iris.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/iris.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="rai5.it">
+    <display-name lang="it">Rai5</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="raimovie.it">
+    <display-name lang="it">RaiMovie</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Twentyseven.it">
+    <display-name lang="it">27 Twentyseven</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ts.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ts.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="la7d">
+    <display-name lang="it">LA7 CINEMA</display-name>
+    <icon src="https://guidatv.sky.it/logo/9024la7cinema_Light_Fit.png?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/9024la7cinema_Light_Fit.png?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="la5">
+    <display-name lang="it">La 5</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la5.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la5.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="RealTime.it">
+    <display-name lang="it">Real Time</display-name>
+    <url>http://www.warnertv.it</url>
+  </channel>
+  <channel id="GamberoRosso.it">
+    <display-name lang="it">Gambero Rosso HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/229gamberorossohd_Light_Fit.png?checksum=8a41e8b81f56528923c0997396d75be5?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/229gamberorossohd_Light_Fit.png?checksum=8a41e8b81f56528923c0997396d75be5?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="foodnetwork.it">
+    <display-name lang="it">Food Network</display-name>
+    <url>http://www.warnertv.it</url>
+  </channel>
+  <channel id="cine34.it">
+    <display-name lang="it">Cine34</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b6.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b6.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="rtl102.5tv">
+    <display-name lang="it">RTL 102.5 HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/812rtl1025hd_Light_Fit.png?checksum=abbc96b26d53d6eadc8fc7d148e7c3d7?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/812rtl1025hd_Light_Fit.png?checksum=abbc96b26d53d6eadc8fc7d148e7c3d7?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="discovery">
+    <display-name lang="it">Discovery Channel</display-name>
+    <icon src="https://www.tivu.tv/_common/images/loghi_epg/logo_15212.png" />
+    <icon src="https://www.tivu.tv/_common/images/loghi_epg/logo_15212.png" />
+    <url>http://www.tivu.tv</url>
+  </channel>
+  <channel id="Giallo.it">
+    <display-name lang="it">Giallo TV</display-name>
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/giallo-image-12834c8c-1d28-4def-ac91-e86d0d3a16b5.png" />
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/giallo-image-12834c8c-1d28-4def-ac91-e86d0d3a16b5.png" />
+    <url>http://www.warnertv.it</url>
+  </channel>
+  <channel id="TopCrime.it">
+    <display-name lang="it">Top Crime</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="super">
+    <display-name lang="it">Super!</display-name>
+    <icon src="https://guidatv.sky.it/logo/421super_Light_Fit.png?checksum=306fe7e2-fe34-43a1-9fd5-5967814574eb?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/421super_Light_Fit.png?checksum=306fe7e2-fe34-43a1-9fd5-5967814574eb?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="rai news 24">
+    <display-name lang="it">RaiNews24</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="TGCom24.it">
+    <display-name lang="it">TGCom</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/tgcom.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/tgcom.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="SuperTennis.it">
+    <display-name lang="it">SuperTennis HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/5246supertennishd_Light_Fit.png?checksum=13f5cbb1646d848fde3af6fccba8dd4c?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5246supertennishd_Light_Fit.png?checksum=13f5cbb1646d848fde3af6fccba8dd4c?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="R101TV">
+    <display-name lang="it">R101tv</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/er.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/er.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="DeejayTV.it">
+    <display-name lang="it">Deejay TV</display-name>
+    <icon src="https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="radioitaliatv">
+    <display-name lang="it">Radio Italia TV HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/5454radioitaliatvhd_Light_Fit.png?checksum=9cc02777-f1a0-44f1-a432-a1de036be5b7?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5454radioitaliatvhd_Light_Fit.png?checksum=9cc02777-f1a0-44f1-a432-a1de036be5b7?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="VirginRadioTV.it">
+    <display-name lang="it">Virgin Radio</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ew.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ew.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="radiomontecarlotv">
+    <display-name lang="it">RMC</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/bb.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/bb.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="rairadio2">
+    <display-name lang="it">RaiRadio2</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Cielo.it">
+    <display-name lang="it">cielo</display-name>
+    <icon src="https://guidatv.sky.it/logo/120cielo_Light_Fit.png?checksum=0e2ccaf0-752f-44f6-b273-9aad1e4edadf?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/120cielo_Light_Fit.png?checksum=0e2ccaf0-752f-44f6-b273-9aad1e4edadf?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="RaiYoYo.it">
+    <display-name lang="it">RaiYoyo</display-name>
+    <url>http://www.raiplay.it</url>
   </channel>
   <programme start="20260921060500 +0000" stop="20260921084000 +0000" channel="Sky.Uno.it">
     <title lang="it">X Factor</title>
@@ -197966,13 +198167,7 @@
     <country lang="it">FRA</country>
     <episode-num system="onscreen">S3 E20</episode-num>
   </programme>
-<channel id="20Mediaset.it">
-    <display-name lang="it">20</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <programme start="20260921040000 +0000" stop="20260921041200 +0000" channel="20Mediaset.it">
+<programme start="20260921040000 +0000" stop="20260921041200 +0000" channel="20Mediaset.it">
     <title lang="it">Show Reel</title>
     <desc lang="it">Show reel '26.</desc>
   </programme>
@@ -198981,10 +199176,6 @@
     <category lang="it">Commedia</category>
     <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F306260301000102/media/14/14/924f7b99-c9b7-43f1-866b-a52bf195ccb5/26181600-4a9c-4ef8-86ef-917e95759dca.jpg" />
   </programme>
-  <channel id="raisport">
-    <display-name lang="it">RaiSport</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
   <programme start="20260921020000 +0200" stop="20260921042000 +0200" channel="raisport">
     <title lang="it">Mondiali di Ciclismo</title>
     <sub-title lang="it">Cronometro Donne Élite</sub-title>
@@ -199405,12 +199596,6 @@
     <date>2019</date>
     <icon src="https://www.raiplay.it/dl/img/2023/10/13/1697181308162_Reparto-Corse-assets2048x1152.jpg" />
   </programme>
-  <channel id="Rete4.it">
-    <display-name lang="it">Rete 4</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/r4.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/r4.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921034900 +0000" stop="20260921041100 +0000" channel="Rete4.it">
     <title lang="it">Ultim'ora Del 21 Settembre, Ore 06.00</title>
     <desc lang="it">Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.</desc>
@@ -200046,12 +200231,6 @@
       <value>R</value>
     </rating>
   </programme>
-  <channel id="Canale5.it">
-    <display-name lang="it">Canale 5</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921040000 +0000" stop="20260921041500 +0000" channel="Canale5.it">
     <title lang="it">Prima Pagina 21 Settembre</title>
     <desc lang="it">Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.</desc>
@@ -200793,12 +200972,6 @@
     <desc lang="it">L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.</desc>
     <category lang="it">Reality show</category>
   </programme>
-  <channel id="Italia1.it">
-    <display-name lang="it">Italia 1</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i1.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i1.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921031000 +0000" stop="20260921040500 +0000" channel="Italia1.it">
     <title lang="it">Cheope Le Rivelazioni Sulle Camere Segrete</title>
     <sub-title lang="it">Cheope</sub-title>
@@ -201748,12 +201921,6 @@
     <title lang="it">Studio Aperto La Giornata</title>
     <desc lang="it">I principali fatti e notizie della giornata a cura della redazione giornalistica di Studio Aperto.</desc>
   </programme>
-  <channel id="Tv8.it">
-    <display-name lang="it">TV8 HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/260tv8hd_Light_Fit.png?checksum=938addc1e1adaac5be9fdf942d4c7f25?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/260tv8hd_Light_Fit.png?checksum=938addc1e1adaac5be9fdf942d4c7f25?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
   <programme start="20260921050000 +0000" stop="20260921052000 +0000" channel="Tv8.it">
     <title lang="it">TG24 Buongiorno</title>
     <desc lang="it">Le notizie in primo piano, dall'Italia e dal mondo. Approfondimenti, giornali, web, meteo, traffico: tutto live.</desc>
@@ -203110,10 +203277,6 @@
     <country lang="it">ITA</country>
     <premiere />
   </programme>
-  <channel id="raipremium.it">
-    <display-name lang="it">RaiPremium</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
   <programme start="20260921003000 +0200" stop="20260921011000 +0200" channel="raipremium.it">
     <title lang="it">Il paradiso delle signore</title>
     <desc lang="it">Elisa è preoccupata per l'assunzione di Valter al Paradiso come aiuto magazziniere mentre per le Veneri il ragazzo è motivo di attrazione. Irene vince una scommessa con le amiche, che si trasforma in una serata particolare. Anita si prepara per il torneo di scacchi al Circolo dove anche Mimmo dovrà affrontare la serata in veste di cuoco, sotto l'occhio vigile di Rebecca, organizzatrice molto esigente. Elisa è preoccupata per l'assunzione di Valter al Paradiso come aiuto magazziniere mentre per le Veneri il ragazzo è motivo di attrazione. Irene vince una scommessa con le amiche, che si trasforma in una serata particolare. Anita si prepara per il torneo di scacchi al Circolo dove anche Mimmo dovrà affrontare la serata in veste di cuoco, sotto l'occhio vigile di Rebecca, organizzatrice molto esigente...</desc>
@@ -204699,12 +204862,6 @@
     <country lang="it">Regno Unito</country>
     <episode-num system="onscreen">S2 E5</episode-num>
   </programme>
-  <channel id="Italia2.it">
-    <display-name lang="it">Italia 2</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i2.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i2.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921033900 +0000" stop="20260921040400 +0000" channel="Italia2.it">
     <title lang="it">L'imperatore Nero</title>
     <sub-title lang="it">L' Imperatore Nero</sub-title>
@@ -206707,12 +206864,6 @@
       <value>PG</value>
     </rating>
   </programme>
-  <channel id="MediasetExtra.it">
-    <display-name lang="it">Mediaset Extra</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/extra.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/extra.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921040200 +0000" stop="20260921070000 +0000" channel="MediasetExtra.it">
     <title lang="it">Grande Fratello Vip Live</title>
     <desc lang="it">Grande Fratello Vip Live.</desc>
@@ -206897,12 +207048,6 @@
     <desc lang="it">Appuntamento quotidiano con la casa del Grande Fratello.</desc>
     <category lang="it">Reality show</category>
   </programme>
-  <channel id="la7">
-    <display-name lang="it">LA7 HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/407la7hd_Light_Fit.png?checksum=d9bcc8bf-703c-4d33-823d-5171697fe8a5?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/407la7hd_Light_Fit.png?checksum=d9bcc8bf-703c-4d33-823d-5171697fe8a5?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
   <programme start="20260921050000 +0000" stop="20260921054000 +0000" channel="la7">
     <title lang="it">Omnibus News</title>
     <desc lang="it">Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico e previsioni meteo.</desc>
@@ -208060,10 +208205,6 @@
     <icon src="https://guidatv.sky.it/uuid/c7b1a901-c4d9-4cbd-a2d7-a622b3032396/cover?territory=IT&amp;md5ChecksumParam=2bb1997db384da92401c2112b2ff3521" />
     <country lang="it">ITA</country>
   </programme>
-  <channel id="rai4.it">
-    <display-name lang="it">Rai4</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
   <programme start="20260921002400 +0200" stop="20260921002700 +0200" channel="rai4.it">
     <title lang="it">Appuntamento al cinema</title>
     <desc lang="it">Rubrica per la promozione della cultura cinematografica in Italia. Rubrica per la promozione della cultura cinematografica in Italia.</desc>
@@ -209240,12 +209381,6 @@
     <date>2019</date>
     <icon src="https://www.raiplay.it/dl/img/2026/09/19/1789806719658_2048x1152.jpg" />
   </programme>
-  <channel id="iris.it">
-    <display-name lang="it">Iris</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/iris.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/iris.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921021200 +0000" stop="20260921041200 +0000" channel="iris.it">
     <title lang="it">La Signora Dello Zoo Di Varsavia</title>
     <desc lang="it">Polonia 1939. Dopo l'invasione nazista, Antonina e Jan Zabinski, custodi dello zoo di Varsavia, decidono di sfruttare il loro zoo come copertura per salvare dalle persecuzioni il maggior numero possibile di ebrei, seppur mettendo a rischio la loro stessa vita. Una storia vera di coraggio e umanità, una pagina inedita della resistenza polacca.</desc>
@@ -209887,10 +210022,6 @@
       <value>PG</value>
     </rating>
   </programme>
-  <channel id="rai5.it">
-    <display-name lang="it">Rai5</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
   <programme start="20260921002800 +0200" stop="20260921003000 +0200" channel="rai5.it">
     <title lang="it">RaiNews</title>
     <desc lang="it">Cronaca, politica, economia, cultura, spettacolo e sport dall'Italia e dal mondo. I fatti del giorno in tre minuti a cura di Rai News, il canale all news della Rai. Cronaca, politica, economia, cultura, spettacolo e sport dall'Italia e dal mondo. I fatti del giorno in tre minuti a cura di Rai News, il canale all news della Rai.</desc>
@@ -211079,10 +211210,6 @@
     <date>2019</date>
     <icon src="https://www.raiplay.it/dl/img/2023/10/03/1696351193701_RAI5-2048x1152.jpg" />
   </programme>
-  <channel id="raimovie.it">
-    <display-name lang="it">RaiMovie</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
   <programme start="20260921001500 +0200" stop="20260921030000 +0200" channel="raimovie.it">
     <title lang="it">Vi presento Toni Erdmann</title>
     <desc lang="it">Winfried Conradi, eccentrico insegnante di musica in pensione, decide di raggiungere a Bucarest la figlia Ines, manager perennemente assorbita dal lavoro. Per riavvicinarsi a lei assume l'identità dell'imprevedibile Toni Erdmann, dando vita a una serie di situazioni tanto assurde quanto rivelatrici. Disponibile anche in lingua originale. Winfried Conradi, eccentrico insegnante di musica in pensione, decide di raggiungere a Bucarest la figlia Ines, manager perennemente assorbita dal lavoro. Per riavvicinarsi a lei assume l'identità dell'imprevedibile Toni Erdmann, dando vita a una serie di situazioni tanto assurde quanto rivelatrici. Disponibile anche in lingua originale.</desc>
@@ -211707,12 +211834,6 @@
     <date>2019</date>
     <icon src="https://www.raiplay.it/dl/img/2022/01/10/1641813861844_2048x1152.jpg" />
   </programme>
-  <channel id="Twentyseven.it">
-    <display-name lang="it">27 Twentyseven</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ts.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ts.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921040000 +0000" stop="20260921040300 +0000" channel="Twentyseven.it">
     <title lang="it">Camera Cafe'</title>
     <desc lang="it">Le vicende degli impiegati di un'azienda si intrecciano intorno alla macchinetta del caffe'. Con Luca Bizzarri, Paolo Kessisoglu.</desc>
@@ -212527,12 +212648,6 @@
       <value>G</value>
     </rating>
   </programme>
-  <channel id="la7d">
-    <display-name lang="it">LA7 CINEMA</display-name>
-    <icon src="https://guidatv.sky.it/logo/9024la7cinema_Light_Fit.png?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/9024la7cinema_Light_Fit.png?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
   <programme start="20260921050000 +0000" stop="20260921064500 +0000" channel="la7d">
     <title lang="it">Josephine, ange gardien</title>
     <sub-title lang="it">Leggende bretoni</sub-title>
@@ -213673,12 +213788,6 @@
     <icon src="https://guidatv.sky.it/uuid/9746f404-e911-432d-b5de-6aa9b54f6c76/cover?territory=IT&amp;md5ChecksumParam=b22d7d1d07ae1f8d98fafcfd3520e0be" />
     <country lang="it">ITA</country>
   </programme>
-  <channel id="la5">
-    <display-name lang="it">La 5</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la5.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la5.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921040000 +0000" stop="20260921045300 +0000" channel="la5">
     <title lang="it">Martedì 16 Aprile</title>
     <desc lang="it">Shirin è disperata perchè teme di aver perso per sempre la vista. Leon non vuole interrompere gli allenamenti per accompagnare Josie in ospedale, così Paul le da un passaggio e fra i due sembra nascere di nuovo qualcosa.</desc>
@@ -214497,10 +214606,6 @@
     <title lang="it">Grande Fratello Vip Live</title>
     <desc lang="it">Le telecamere di Grande Fratello si accendono per seguire la vita quotidiana degli inquilini della casa piu' spiata d'Italia.</desc>
   </programme>
-  <channel id="RealTime.it">
-    <display-name lang="it">Real Time</display-name>
-    <url>http://www.warnertv.it</url>
-  </channel>
   <programme start="20260921004500 +0200" stop="20260921014000 +0200" channel="RealTime.it">
     <title lang="it">La clinica della pelle</title>
     <sub-title lang="it">So esattamente cos'e'</sub-title>
@@ -215071,12 +215176,6 @@
     <desc lang="it">Non sono piu' io - Stuart ha un naso talmente gonfio che ha difficolta' a respirare. Cio' gli crea imbarazzo.</desc>
     <episode-num system="onscreen">S8 E2</episode-num>
   </programme>
-  <channel id="GamberoRosso.it">
-    <display-name lang="it">Gambero Rosso HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/229gamberorossohd_Light_Fit.png?checksum=8a41e8b81f56528923c0997396d75be5?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/229gamberorossohd_Light_Fit.png?checksum=8a41e8b81f56528923c0997396d75be5?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
   <programme start="20260921052000 +0000" stop="20260921053000 +0000" channel="GamberoRosso.it">
     <title lang="it">Petra - Stag. 1 Ep. 2 - Buns</title>
     <sub-title lang="it">Buns</sub-title>
@@ -217338,10 +217437,6 @@
     <category lang="it">Cucina</category>
     <icon src="https://guidatv.sky.it/uuid/Intrattenimento_Cover_aS6G29F8N9.png" />
   </programme>
-  <channel id="foodnetwork.it">
-    <display-name lang="it">Food Network</display-name>
-    <url>http://www.warnertv.it</url>
-  </channel>
   <programme start="20260921000500 +0200" stop="20260921004000 +0200" channel="foodnetwork.it">
     <title lang="it">La cucina delle monache</title>
     <sub-title lang="it">St.3 Ep.9</sub-title>
@@ -218254,12 +218349,6 @@
     <desc lang="it">Arancina - Giusina e Paolo assaggiano le migliori arancine di Palermo.</desc>
     <episode-num system="onscreen">S1 E4</episode-num>
   </programme>
-  <channel id="cine34.it">
-    <display-name lang="it">Cine34</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b6.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b6.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921033100 +0000" stop="20260921064200 +0000" channel="cine34.it">
     <title lang="it">La Ciociara</title>
     <desc lang="it">Remake del film diretto da Vittorio De Sica nel 1960, Premio Oscar e Palma d'oro a Cannes. Sofia Loren, come trent'anni prima, nel ruolo della madre. ITA 1988.</desc>
@@ -218875,12 +218964,6 @@
       <value>PG</value>
     </rating>
   </programme>
-  <channel id="rtl102.5tv">
-    <display-name lang="it">RTL 102.5 HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/812rtl1025hd_Light_Fit.png?checksum=abbc96b26d53d6eadc8fc7d148e7c3d7?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/812rtl1025hd_Light_Fit.png?checksum=abbc96b26d53d6eadc8fc7d148e7c3d7?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
   <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="rtl102.5tv">
     <title lang="it">La Famiglia Giu' Al Nord</title>
     <desc lang="it">La famiglia giu' al nord e' la famiglia piu' allargata della radiofonia italiana: humor, simpatia e la migliore musica di RTL 102.5 per iniziare al meglio la giornata!</desc>
@@ -219154,12 +219237,6 @@
     <category lang="it">Musica</category>
     <icon src="https://guidatv.sky.it/uuid/Musica_Cover_Ein_MY0UX.png" />
   </programme>
-  <channel id="discovery">
-    <display-name lang="it">Discovery Channel</display-name>
-    <icon src="https://www.tivu.tv/_common/images/loghi_epg/logo_15212.png" />
-    <icon src="https://www.tivu.tv/_common/images/loghi_epg/logo_15212.png" />
-    <url>http://www.tivu.tv</url>
-  </channel>
   <programme start="20260921000000 +0200" stop="20260921003000 +0200" channel="discovery">
     <title lang="it">Marchio di fabbrica</title>
     <desc lang="it">11' Stagione Ep.8 - Come si trasformano i petali di rosa in deliziosi dolci della tradizione turca? Come si forgia un cucchiaio d'argento? Come riesce la crema solare a proteggerci dai dannosi raggi UV.</desc>
@@ -219604,12 +219681,6 @@
     <title lang="it">Indagini paranormali con Josh Gates</title>
     <desc lang="it">4' Stagione Ep.15 - UFO - Dopo il disastro nucleare di Fukushima, alcuni racconti parlano di incontri con gli UFO.</desc>
   </programme>
-  <channel id="Giallo.it">
-    <display-name lang="it">Giallo TV</display-name>
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/giallo-image-12834c8c-1d28-4def-ac91-e86d0d3a16b5.png" />
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/giallo-image-12834c8c-1d28-4def-ac91-e86d0d3a16b5.png" />
-    <url>http://www.warnertv.it</url>
-  </channel>
   <programme start="20260921011000 +0200" stop="20260921031500 +0200" channel="Giallo.it">
     <title lang="it">L'ispettore Barnaby</title>
     <sub-title lang="it">Il Maid in Splendour</sub-title>
@@ -220060,12 +220131,6 @@
     <desc lang="it">Delitto all'Aether - Mentre la zia di Max viene rapinata, la polizia trova un cadavere sotto il Chelsea Bridge.</desc>
     <episode-num system="onscreen">S4 E1</episode-num>
   </programme>
-  <channel id="TopCrime.it">
-    <display-name lang="it">Top Crime</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921035900 +0000" stop="20260921045100 +0000" channel="TopCrime.it">
     <title lang="it">Caccia All'uomo</title>
     <sub-title lang="it">Caccia All'uomo</sub-title>
@@ -221091,12 +221156,6 @@
       <value>PG</value>
     </rating>
   </programme>
-  <channel id="super">
-    <display-name lang="it">Super!</display-name>
-    <icon src="https://guidatv.sky.it/logo/421super_Light_Fit.png?checksum=306fe7e2-fe34-43a1-9fd5-5967814574eb?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/421super_Light_Fit.png?checksum=306fe7e2-fe34-43a1-9fd5-5967814574eb?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
   <programme start="20260921051000 +0000" stop="20260921053200 +0000" channel="super">
     <title lang="it">Henry Danger</title>
     <desc lang="it">La fidanzata estiva di Jasper arriva in città e diventa gelosa credendo che Charlotte sia innamorata di lui.</desc>
@@ -224194,11 +224253,7 @@
     <country lang="it">FRA</country>
     <episode-num system="onscreen">S3 E20</episode-num>
   </programme>
-<channel id="rai news 24">
-    <display-name lang="it">RaiNews24</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <programme start="20260921000000 +0200" stop="20260921003000 +0200" channel="rai news 24">
+<programme start="20260921000000 +0200" stop="20260921003000 +0200" channel="rai news 24">
     <title lang="it">RaiNews</title>
     <date>2019</date>
     <icon src="https://www.raiplay.it/dl/img/2025/12/16/1765898348700_2048x1152.jpg" />
@@ -225833,12 +225888,6 @@
     <date>2019</date>
     <icon src="https://www.raiplay.it/dl/img/2023/01/19/1674083156682_1.jpg" />
   </programme>
-  <channel id="TGCom24.it">
-    <display-name lang="it">TGCom</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/tgcom.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/tgcom.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921035900 +0000" stop="20260921064200 +0000" channel="TGCom24.it">
     <title lang="it">Simulcast Canale 5</title>
     <desc lang="it">Simulcast Canale 5.</desc>
@@ -226753,12 +226802,6 @@
     <desc lang="it">Tgcom24 diretta roma 2026.</desc>
     <date>2026</date>
   </programme>
-  <channel id="SuperTennis.it">
-    <display-name lang="it">SuperTennis HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/5246supertennishd_Light_Fit.png?checksum=13f5cbb1646d848fde3af6fccba8dd4c?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5246supertennishd_Light_Fit.png?checksum=13f5cbb1646d848fde3af6fccba8dd4c?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
   <programme start="20260921050500 +0000" stop="20260921070000 +0000" channel="SuperTennis.it">
     <title lang="it">LIVE WTA 500 SINGAPORE</title>
     <desc lang="it">WTA 500 Singapore. In diretta dalla OCBC Arena, ha inizio l'Asian Swing e le migliori giocatrici del circuito si contendono il titolo.</desc>
@@ -227088,12 +227131,6 @@
     <category lang="it">Sport</category>
     <icon src="https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png" />
   </programme>
-  <channel id="R101TV">
-    <display-name lang="it">R101tv</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/er.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/er.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921040000 +0000" stop="20260921040100 +0000" channel="R101TV">
     <title lang="it">Tgcom24 Breaking News</title>
     <desc lang="it">TGCOM24 BREAKING NEWS.</desc>
@@ -229957,12 +229994,6 @@
     <date>2009</date>
     <category lang="it">Know You Want Me (calle Ocho)</category>
   </programme>
-  <channel id="DeejayTV.it">
-    <display-name lang="it">Deejay TV</display-name>
-    <icon src="https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
   <programme start="20260921070000 +0000" stop="20260921080000 +0000" channel="DeejayTV.it">
     <title lang="it">Playlist Radio Linetti</title>
     <desc lang="it">Playlist Radio Linetti.</desc>
@@ -230292,12 +230323,6 @@
     <category lang="it">Musica</category>
     <icon src="https://guidatv.sky.it/uuid/Musica_Cover_Ein_MY0UX.png" />
   </programme>
-  <channel id="radioitaliatv">
-    <display-name lang="it">Radio Italia TV HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/5454radioitaliatvhd_Light_Fit.png?checksum=9cc02777-f1a0-44f1-a432-a1de036be5b7?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5454radioitaliatvhd_Light_Fit.png?checksum=9cc02777-f1a0-44f1-a432-a1de036be5b7?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
   <programme start="20260921100000 +0000" stop="20260921102000 +0000" channel="radioitaliatv">
     <title lang="it">La classifica italiana</title>
     <desc lang="it">La classifica ufficiale dei singoli di Radio Italia, conduce Mario Volanti.</desc>
@@ -230536,12 +230561,6 @@
     <category lang="it">Musica</category>
     <icon src="https://guidatv.sky.it/uuid/Musica_Cover_Ein_MY0UX.png" />
   </programme>
-  <channel id="VirginRadioTV.it">
-    <display-name lang="it">Virgin Radio</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ew.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ew.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921040000 +0000" stop="20260921042800 +0000" channel="VirginRadioTV.it">
     <title lang="it">All Night Rock '26</title>
     <desc lang="it">All night rock '26.</desc>
@@ -232879,12 +232898,6 @@
     <category lang="it">Smells Like Teen Spirit</category>
     <country lang="it">VIDEOCLIP 3</country>
   </programme>
-  <channel id="radiomontecarlotv">
-    <display-name lang="it">RMC</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/bb.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/bb.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <programme start="20260921040000 +0000" stop="20260921100000 +0000" channel="radiomontecarlotv">
     <title lang="it">Radio Monte Carlo Morning</title>
     <desc lang="it">È la playlist perfetta per iniziare un nuovo giorno con la musica di Gran Classe di Radio Monte Carlo.</desc>
@@ -232949,10 +232962,6 @@
     <title lang="it">Radio Monte Carlo Night</title>
     <desc lang="it">È un itinerario alla scoperta di universi musicali ricercati e artisti capaci di regalare emozioni uniche.</desc>
   </programme>
-  <channel id="rairadio2">
-    <display-name lang="it">RaiRadio2</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
   <programme start="20260921000000 +0200" stop="20260921020000 +0200" channel="rairadio2">
     <title lang="it">Le Lunatiche</title>
     <desc lang="it">Con Jodie Alivernini e Barbara Venditti. Regia di Giovanna Romano. A cura di Pietro Luchetti.</desc>
@@ -233409,12 +233418,6 @@
     <date>2019</date>
     <icon src="https://www.raiplay.it/dl/img/2026/09/14/1789386619568_al-centro-della-musica-2048x1152.jpg" />
   </programme>
-  <channel id="Cielo.it">
-    <display-name lang="it">cielo</display-name>
-    <icon src="https://guidatv.sky.it/logo/120cielo_Light_Fit.png?checksum=0e2ccaf0-752f-44f6-b273-9aad1e4edadf?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/120cielo_Light_Fit.png?checksum=0e2ccaf0-752f-44f6-b273-9aad1e4edadf?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
   <programme start="20260921050000 +0000" stop="20260921052000 +0000" channel="Cielo.it">
     <title lang="it">Affari di famiglia</title>
     <sub-title lang="it">Il cannone</sub-title>
@@ -235201,10 +235204,6 @@
     <country lang="it">ITA</country>
     <premiere />
   </programme>
-  <channel id="RaiYoYo.it">
-    <display-name lang="it">RaiYoyo</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
   <programme start="20260921000000 +0200" stop="20260921000500 +0200" channel="RaiYoYo.it">
     <title lang="it">Molang</title>
     <sub-title lang="it">Buckingham</sub-title>
