@@ -1232,6 +1232,28 @@
     <display-name lang="it">RaiYoyo</display-name>
     <url>http://www.raiplay.it</url>
   </channel>
+  <channel id="turbo">
+    <display-name lang="it">Motor Trend</display-name>
+    <url>http://www.warnertv.it</url>
+  </channel>
+  <channel id="GFVIPRegia1">
+    <display-name lang="it">GF VIP - Regia 1</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b7.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b7.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="GFVIPRegia2">
+    <display-name lang="it">GF VIP - Regia 2</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b8.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b8.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="GFVIPUnOraFa">
+    <display-name lang="it">GF VIP - Un’ora fa</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b9.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b9.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
   <programme start="20260921060500 +0000" stop="20260921084000 +0000" channel="Sky.Uno.it">
     <title lang="it">X Factor</title>
     <sub-title lang="it">Audizioni. 2a parte</sub-title>
@@ -243396,5 +243418,737 @@
     <icon src="https://www.raiplay.it/dl/img/2024/03/18/1710791724517_NINA__OLGA_s02_e222_Il_grande_freddo.png" />
     <country lang="it">Italia</country>
     <episode-num system="onscreen">S2 E22</episode-num>
+  </programme>
+  <programme start="20260921000000 +0200" stop="20260921011000 +0200" channel="turbo">
+    <title lang="it">I giganti dell'asfalto</title>
+    <sub-title lang="it">St.9 Ep.2</sub-title>
+    <desc lang="it">St.9 Ep.2 - Seguiamo il lavoro di alcuni intrepidi camionisti.</desc>
+    <episode-num system="onscreen">S9 E2</episode-num>
+  </programme>
+  <programme start="20260921011000 +0200" stop="20260921021500 +0200" channel="turbo">
+    <title lang="it">I giganti dell'asfalto</title>
+    <sub-title lang="it">St.9 Ep.3</sub-title>
+    <desc lang="it">St.9 Ep.3 - Seguiamo il lavoro di alcuni intrepidi camionisti.</desc>
+    <episode-num system="onscreen">S9 E3</episode-num>
+  </programme>
+  <programme start="20260921021500 +0200" stop="20260921032000 +0200" channel="turbo">
+    <title lang="it">I giganti dell'asfalto</title>
+    <sub-title lang="it">St.9 Ep.4</sub-title>
+    <desc lang="it">St.9 Ep.4 - Seguiamo il lavoro di alcuni intrepidi camionisti.</desc>
+    <episode-num system="onscreen">S9 E4</episode-num>
+  </programme>
+  <programme start="20260921032000 +0200" stop="20260921042000 +0200" channel="turbo">
+    <title lang="it">I giganti dell'asfalto</title>
+    <sub-title lang="it">St.9 Ep.5</sub-title>
+    <desc lang="it">St.9 Ep.5 - Seguiamo il lavoro di alcuni intrepidi camionisti.</desc>
+    <episode-num system="onscreen">S9 E5</episode-num>
+  </programme>
+  <programme start="20260921042000 +0200" stop="20260921044500 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.6 Ep.11</sub-title>
+    <desc lang="it">St.6 Ep.11 - Transporter individuali, orologi pubblici, pelli di tamburo e tamburi: esaminiamo minuziosamente altri oggetti quotidiani per scoprire come sono stati fatti.</desc>
+    <episode-num system="onscreen">S6 E11</episode-num>
+  </programme>
+  <programme start="20260921044500 +0200" stop="20260921051000 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.6 Ep.12</sub-title>
+    <desc lang="it">St.6 Ep.12 - Airbag, gelatine alla frutta e scaldabagno: esaminiamo minuziosamente altri oggetti quotidiani per scoprire come sono stati fatti.</desc>
+    <episode-num system="onscreen">S6 E12</episode-num>
+  </programme>
+  <programme start="20260921051000 +0200" stop="20260921053500 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.6 Ep.13</sub-title>
+    <desc lang="it">St.6 Ep.13 - Pastelli colorati, modellini di navi e veicoli anfibi: alcuni oggetti vengono esaminati attentamente per scoprire come sono fatti.</desc>
+    <episode-num system="onscreen">S6 E13</episode-num>
+  </programme>
+  <programme start="20260921053500 +0200" stop="20260921060000 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.7 Ep.1</sub-title>
+    <desc lang="it">St.7 Ep.1 - Palloni, amplificatori per chitarra, biglie ed eliche di aerei: da dove provengono e come sono fatti? Progettisti ed artigiani ce lo spiegano.</desc>
+    <episode-num system="onscreen">S7 E1</episode-num>
+  </programme>
+  <programme start="20260921060000 +0200" stop="20260921063000 +0200" channel="turbo">
+    <title lang="it">Marchio di fabbrica</title>
+    <sub-title lang="it">St.11 Ep.1</sub-title>
+    <desc lang="it">St.11 Ep.1 - Come viene prodotto il re dei formaggi, il parmigiano? Come viene gestito il funzionamento degli aeroporti piu' affollati del mondo? E come vengono fabbricati i sedili reclinabili?</desc>
+    <episode-num system="onscreen">S11 E1</episode-num>
+  </programme>
+  <programme start="20260921063000 +0200" stop="20260921081000 +0200" channel="turbo">
+    <title lang="it">Reperti d'assalto</title>
+    <sub-title lang="it">St.11 Ep.11</sub-title>
+    <desc lang="it">St.11 Ep.11 - Michael e il suo team cercano mezzi militari dismessi da rimettere a nuovo.</desc>
+    <episode-num system="onscreen">S11 E11</episode-num>
+  </programme>
+  <programme start="20260921081000 +0200" stop="20260921091000 +0200" channel="turbo">
+    <title lang="it">I re dell'asfalto</title>
+    <sub-title lang="it">St.2 Ep.9</sub-title>
+    <desc lang="it">St.2 Ep.9 - Essere un camionista non e' facile: tante ore di lavoro, enormi carichi e strade trafficate. I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.</desc>
+    <episode-num system="onscreen">S2 E9</episode-num>
+  </programme>
+  <programme start="20260921091000 +0200" stop="20260921101000 +0200" channel="turbo">
+    <title lang="it">I re dell'asfalto</title>
+    <sub-title lang="it">St.2 Ep.10</sub-title>
+    <desc lang="it">St.2 Ep.10 - Essere un camionista non e' facile: tante ore di lavoro, enormi carichi e strade trafficate. I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.</desc>
+    <episode-num system="onscreen">S2 E10</episode-num>
+  </programme>
+  <programme start="20260921101000 +0200" stop="20260921112000 +0200" channel="turbo">
+    <title lang="it">Vintage Garage</title>
+    <sub-title lang="it">St.6 Ep.9</sub-title>
+    <desc lang="it">St.6 Ep.9 - FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.</desc>
+    <episode-num system="onscreen">S6 E9</episode-num>
+  </programme>
+  <programme start="20260921112000 +0200" stop="20260921124000 +0200" channel="turbo">
+    <title lang="it">Vintage Garage</title>
+    <sub-title lang="it">St.6 Ep.10</sub-title>
+    <desc lang="it">St.6 Ep.10 - FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.</desc>
+    <episode-num system="onscreen">S6 E10</episode-num>
+  </programme>
+  <programme start="20260921124000 +0200" stop="20260921135500 +0200" channel="turbo">
+    <title lang="it">Vintage Garage</title>
+    <sub-title lang="it">St.6 Ep.11</sub-title>
+    <desc lang="it">St.6 Ep.11 - FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.</desc>
+    <episode-num system="onscreen">S6 E11</episode-num>
+  </programme>
+  <programme start="20260921135500 +0200" stop="20260921150000 +0200" channel="turbo">
+    <title lang="it">Iron Garage</title>
+    <sub-title lang="it">Step Van. 2a parte</sub-title>
+    <desc lang="it">Step Van. 2a parte - Joe Martin riporta in vita e rivende vecchie automobili.</desc>
+    <episode-num system="onscreen">S7 E5</episode-num>
+  </programme>
+  <programme start="20260921150000 +0200" stop="20260921155500 +0200" channel="turbo">
+    <title lang="it">Iron Garage</title>
+    <sub-title lang="it">Step Van. 3a parte</sub-title>
+    <desc lang="it">Step Van. 3a parte - Joe Martin riporta in vita e rivende vecchie automobili.</desc>
+    <episode-num system="onscreen">S7 E6</episode-num>
+  </programme>
+  <programme start="20260921155500 +0200" stop="20260921170500 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote Francia</title>
+    <sub-title lang="it">St.3 Ep.5</sub-title>
+    <desc lang="it">St.3 Ep.5 - Prosegue l'avventura in Francia di \.</desc>
+    <episode-num system="onscreen">S3 E5</episode-num>
+  </programme>
+  <programme start="20260921170500 +0200" stop="20260921182500 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote Francia</title>
+    <sub-title lang="it">St.3 Ep.6</sub-title>
+    <desc lang="it">St.3 Ep.6 - Prosegue l'avventura in Francia di \.</desc>
+    <episode-num system="onscreen">S3 E6</episode-num>
+  </programme>
+  <programme start="20260921182500 +0200" stop="20260921202000 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.17 Ep.1</sub-title>
+    <desc lang="it">St.17 Ep.1 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S17 E1</episode-num>
+  </programme>
+  <programme start="20260921202000 +0200" stop="20260921221500 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.16 Ep.8</sub-title>
+    <desc lang="it">St.16 Ep.8 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S16 E8</episode-num>
+  </programme>
+  <programme start="20260921221500 +0200" stop="20260921231500 +0200" channel="turbo">
+    <title lang="it">Meccanici allo sbando con i Carmagheddon</title>
+    <sub-title lang="it">Scooter Camperizzato</sub-title>
+    <desc lang="it">Scooter Camperizzato - I Carmagheddon provano a camperizzare uno scooter, rendendo un mezzo su due ruote sia guidabile che abitabile.</desc>
+    <episode-num system="onscreen">S1 E2</episode-num>
+  </programme>
+  <programme start="20260921231500 +0200" stop="20260922000000 +0200" channel="turbo">
+    <title lang="it">Meccanici allo sbando con i Carmagheddon</title>
+    <sub-title lang="it">Panda bassa</sub-title>
+    <desc lang="it">Panda bassa - I Carmagheddon, in veste di folli meccanici, realizzano una Panda record, portando su strada l'auto guidabile piu' bassa del mondo.</desc>
+    <episode-num system="onscreen">S1 E1</episode-num>
+  </programme>
+  <programme start="20260922000000 +0200" stop="20260922001000 +0200" channel="turbo">
+    <title lang="it">Meccanici allo sbando con i Carmagheddon</title>
+    <sub-title lang="it">Panda bassa</sub-title>
+    <desc lang="it">Panda bassa - I Carmagheddon, in veste di folli meccanici, realizzano una Panda record, portando su strada l'auto guidabile piu' bassa del mondo.</desc>
+    <episode-num system="onscreen">S1 E1</episode-num>
+  </programme>
+  <programme start="20260922001000 +0200" stop="20260922020500 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.16 Ep.2</sub-title>
+    <desc lang="it">St.16 Ep.2 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S16 E2</episode-num>
+  </programme>
+  <programme start="20260922020500 +0200" stop="20260922040000 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.16 Ep.3</sub-title>
+    <desc lang="it">St.16 Ep.3 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S16 E3</episode-num>
+  </programme>
+  <programme start="20260922040000 +0200" stop="20260922042000 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.18 Ep.8</sub-title>
+    <desc lang="it">St.18 Ep.8 - Vi siete mai chiesti come sono fatti gli oggetti di uso quotidiano? In questo episodio: budini di tapioca, spazzaneve, pedalo' e rivestimenti in vetrocemento.</desc>
+    <episode-num system="onscreen">S18 E8</episode-num>
+  </programme>
+  <programme start="20260922042000 +0200" stop="20260922044500 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.18 Ep.9</sub-title>
+    <desc lang="it">St.18 Ep.9 - Vi siete mai chiesti come sono fatti gli oggetti di uso quotidiano? In questo episodio: auto da rally, pasticci di carne, fontane galleggianti e ornamenti in pietra artificiale.</desc>
+    <episode-num system="onscreen">S18 E9</episode-num>
+  </programme>
+  <programme start="20260922044500 +0200" stop="20260922051000 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.18 Ep.10</sub-title>
+    <desc lang="it">St.18 Ep.10 - Vi siete mai chiesti come sono fatti gli oggetti di uso quotidiano? In questo episodio: gemelli da polsino, pasticcini ai mirtilli, cruscotti e vasi in terracotta.</desc>
+    <episode-num system="onscreen">S18 E10</episode-num>
+  </programme>
+  <programme start="20260922051000 +0200" stop="20260922053000 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.18 Ep.11</sub-title>
+    <desc lang="it">St.18 Ep.11 - Vi siete mai chiesti come sono fatti gli oggetti di uso quotidiano? In questo episodio scopriamo come nascono le confezioni dei medicinali, le affettatrici e i segnavento.</desc>
+    <episode-num system="onscreen">S18 E11</episode-num>
+  </programme>
+  <programme start="20260922053000 +0200" stop="20260922060000 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.18 Ep.12</sub-title>
+    <desc lang="it">St.18 Ep.12 - Vi siete mai chiesti come sono fatti gli oggetti di uso quotidiano? In questo episodio: cappelli, boiler a energia solare, ciambelle e altoparlanti elettrostatici.</desc>
+    <episode-num system="onscreen">S18 E12</episode-num>
+  </programme>
+  <programme start="20260922060000 +0200" stop="20260922063500 +0200" channel="turbo">
+    <title lang="it">Marchio di fabbrica</title>
+    <sub-title lang="it">St.11 Ep.2</sub-title>
+    <desc lang="it">St.11 Ep.2 - Scopriamo come viene realizzato un tradizionale tappeto turco e come viene utilizzata la tecnologia degli elicotteri per l'elisci. Inoltre, come vengono 'accese e spente' le acque delle Cascate del Niagara?</desc>
+    <episode-num system="onscreen">S11 E2</episode-num>
+  </programme>
+  <programme start="20260922063500 +0200" stop="20260922083500 +0200" channel="turbo">
+    <title lang="it">Reperti d'assalto</title>
+    <sub-title lang="it">St.11 Ep.12</sub-title>
+    <desc lang="it">St.11 Ep.12 - Michael e il suo team cercano mezzi militari dismessi da rimettere a nuovo.</desc>
+    <episode-num system="onscreen">S11 E12</episode-num>
+  </programme>
+  <programme start="20260922083500 +0200" stop="20260922093500 +0200" channel="turbo">
+    <title lang="it">I re dell'asfalto</title>
+    <sub-title lang="it">St.3 Ep.1</sub-title>
+    <desc lang="it">St.3 Ep.1 - I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.</desc>
+    <episode-num system="onscreen">S3 E1</episode-num>
+  </programme>
+  <programme start="20260922093500 +0200" stop="20260922103500 +0200" channel="turbo">
+    <title lang="it">I re dell'asfalto</title>
+    <sub-title lang="it">St.3 Ep.2</sub-title>
+    <desc lang="it">St.3 Ep.2 - I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.</desc>
+    <episode-num system="onscreen">S3 E2</episode-num>
+  </programme>
+  <programme start="20260922103500 +0200" stop="20260922120500 +0200" channel="turbo">
+    <title lang="it">Vintage Garage</title>
+    <sub-title lang="it">St.6 Ep.12</sub-title>
+    <desc lang="it">St.6 Ep.12 - FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.</desc>
+    <episode-num system="onscreen">S6 E12</episode-num>
+  </programme>
+  <programme start="20260922120500 +0200" stop="20260922132500 +0200" channel="turbo">
+    <title lang="it">Vintage Garage</title>
+    <sub-title lang="it">St.6 Ep.13</sub-title>
+    <desc lang="it">St.6 Ep.13 - FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.</desc>
+    <episode-num system="onscreen">S6 E13</episode-num>
+  </programme>
+  <programme start="20260922132500 +0200" stop="20260922144500 +0200" channel="turbo">
+    <title lang="it">Vintage Garage</title>
+    <sub-title lang="it">St.6 Ep.14</sub-title>
+    <desc lang="it">St.6 Ep.14 - FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.</desc>
+    <episode-num system="onscreen">S6 E14</episode-num>
+  </programme>
+  <programme start="20260922144500 +0200" stop="20260922153500 +0200" channel="turbo">
+    <title lang="it">Iron Garage</title>
+    <sub-title lang="it">36 Ford Coupe. 1a parte</sub-title>
+    <desc lang="it">36 Ford Coupe. 1a parte - Joe Martin riporta in vita e rivende vecchie automobili.</desc>
+    <episode-num system="onscreen">S7 E7</episode-num>
+  </programme>
+  <programme start="20260922153500 +0200" stop="20260922163000 +0200" channel="turbo">
+    <title lang="it">Iron Garage</title>
+    <sub-title lang="it">37 Ford Coupe. 2a parte</sub-title>
+    <desc lang="it">37 Ford Coupe. 2a parte - Joe Martin riporta in vita e rivende vecchie automobili.</desc>
+    <episode-num system="onscreen">S7 E8</episode-num>
+  </programme>
+  <programme start="20260922163000 +0200" stop="20260922174000 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote Francia</title>
+    <sub-title lang="it">St.3 Ep.7</sub-title>
+    <desc lang="it">St.3 Ep.7 - Prosegue l'avventura in Francia di \.</desc>
+    <episode-num system="onscreen">S3 E7</episode-num>
+  </programme>
+  <programme start="20260922174000 +0200" stop="20260922185000 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote Francia</title>
+    <sub-title lang="it">St.3 Ep.8</sub-title>
+    <desc lang="it">St.3 Ep.8 - Prosegue l'avventura in Francia di \.</desc>
+    <episode-num system="onscreen">S3 E8</episode-num>
+  </programme>
+  <programme start="20260922185000 +0200" stop="20260922203500 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.17 Ep.2</sub-title>
+    <desc lang="it">St.17 Ep.2 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S17 E2</episode-num>
+  </programme>
+  <programme start="20260922203500 +0200" stop="20260922221500 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.17 Ep.1</sub-title>
+    <desc lang="it">St.17 Ep.1 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S17 E1</episode-num>
+  </programme>
+  <programme start="20260922221500 +0200" stop="20260922231500 +0200" channel="turbo">
+    <title lang="it">Ruggine a quattro ruote - 1^TV</title>
+    <sub-title lang="it">Auto da trial</sub-title>
+    <desc lang="it">Auto da trial - Henry e Fuzz trovano una rara IRIS Sporting Trials Car. Riusciranno a sistemarla?</desc>
+    <episode-num system="onscreen">S2 E8</episode-num>
+  </programme>
+  <programme start="20260922231500 +0200" stop="20260923000000 +0200" channel="turbo">
+    <title lang="it">Ruggine a quattro ruote</title>
+    <sub-title lang="it">Standard Teignmouth</sub-title>
+    <desc lang="it">Standard Teignmouth - Henry e Fuzz scovano un raro Standard Teignmouth Pick-up del 1929.</desc>
+    <episode-num system="onscreen">S2 E7</episode-num>
+  </programme>
+  <programme start="20260923000000 +0200" stop="20260923001500 +0200" channel="turbo">
+    <title lang="it">Ruggine a quattro ruote</title>
+    <sub-title lang="it">Standard Teignmouth</sub-title>
+    <desc lang="it">Standard Teignmouth - Henry e Fuzz scovano un raro Standard Teignmouth Pick-up del 1929.</desc>
+    <episode-num system="onscreen">S2 E7</episode-num>
+  </programme>
+  <programme start="20260923001500 +0200" stop="20260923015500 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.16 Ep.4</sub-title>
+    <desc lang="it">St.16 Ep.4 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S16 E4</episode-num>
+  </programme>
+  <programme start="20260923015500 +0200" stop="20260923035000 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.16 Ep.5</sub-title>
+    <desc lang="it">St.16 Ep.5 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S16 E5</episode-num>
+  </programme>
+  <programme start="20260923035000 +0200" stop="20260923042000 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.18 Ep.13</sub-title>
+    <desc lang="it">St.18 Ep.13 - Passiamo al vaglio altri oggetti di uso quotidiano e scopriamo come nascono i piatti dei giradischi, i motori a vapore, le attrezzature per parchi giochi e le pentole antiaderenti.</desc>
+    <episode-num system="onscreen">S18 E13</episode-num>
+  </programme>
+  <programme start="20260923042000 +0200" stop="20260923044500 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.19 Ep.1</sub-title>
+    <desc lang="it">St.19 Ep.1 - Come sono fatte le forche da giardinaggio, le caramelle toffee, le tessere plastificate con microchip e gli stampi per le ciambelle? Scopriamolo insieme.</desc>
+    <episode-num system="onscreen">S19 E1</episode-num>
+  </programme>
+  <programme start="20260923044500 +0200" stop="20260923051000 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.19 Ep.2</sub-title>
+    <desc lang="it">St.19 Ep.2 - Come sono fatte le borracce in peltro, l'insalata di patate, le pile a combustibile e i rivestimenti esterni in compensato? Scopriamolo insieme.</desc>
+    <episode-num system="onscreen">S19 E2</episode-num>
+  </programme>
+  <programme start="20260923051000 +0200" stop="20260923053500 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.19 Ep.3</sub-title>
+    <desc lang="it">St.19 Ep.3 - Passiamo al vaglio altri oggetti quotidiani e scopriamo come vengono realizzate le tende da campeggio, le pipe della pace e i cannoni.</desc>
+    <episode-num system="onscreen">S19 E3</episode-num>
+  </programme>
+  <programme start="20260923053500 +0200" stop="20260923060000 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.19 Ep.4</sub-title>
+    <desc lang="it">St.19 Ep.4 - Come sono fatti gli uccelli robotizzati per la caccia, i pelati, i tabelloni segnapunti e i lassos? Scopriamolo insieme.</desc>
+    <episode-num system="onscreen">S19 E4</episode-num>
+  </programme>
+  <programme start="20260923060000 +0200" stop="20260923063500 +0200" channel="turbo">
+    <title lang="it">Marchio di fabbrica</title>
+    <sub-title lang="it">St.11 Ep.3</sub-title>
+    <desc lang="it">St.11 Ep.3 - Scopriamo come vengono trattate le alghe per il sushi e come vengono costruite le bottiglie di birra che durano 15 anni. E come fanno i surfisti a difendersi dagli squali?</desc>
+    <episode-num system="onscreen">S11 E3</episode-num>
+  </programme>
+  <programme start="20260923063500 +0200" stop="20260923083500 +0200" channel="turbo">
+    <title lang="it">Reperti d'assalto</title>
+    <sub-title lang="it">St.11 Ep.26</sub-title>
+    <desc lang="it">St.11 Ep.26 - Michael e il suo team cercano mezzi militari dismessi da rimettere a nuovo.</desc>
+    <episode-num system="onscreen">S11 E26</episode-num>
+  </programme>
+  <programme start="20260923083500 +0200" stop="20260923093500 +0200" channel="turbo">
+    <title lang="it">I re dell'asfalto</title>
+    <sub-title lang="it">St.3 Ep.3</sub-title>
+    <desc lang="it">St.3 Ep.3 - I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.</desc>
+    <episode-num system="onscreen">S3 E3</episode-num>
+  </programme>
+  <programme start="20260923093500 +0200" stop="20260923103500 +0200" channel="turbo">
+    <title lang="it">I re dell'asfalto</title>
+    <sub-title lang="it">St.3 Ep.4</sub-title>
+    <desc lang="it">St.3 Ep.4 - I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.</desc>
+    <episode-num system="onscreen">S3 E4</episode-num>
+  </programme>
+  <programme start="20260923103500 +0200" stop="20260923120500 +0200" channel="turbo">
+    <title lang="it">Vintage Garage</title>
+    <sub-title lang="it">St.7 Ep.1</sub-title>
+    <desc lang="it">St.7 Ep.1 - FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.</desc>
+    <episode-num system="onscreen">S7 E1</episode-num>
+  </programme>
+  <programme start="20260923120500 +0200" stop="20260923132500 +0200" channel="turbo">
+    <title lang="it">Vintage Garage</title>
+    <sub-title lang="it">St.7 Ep.2</sub-title>
+    <desc lang="it">St.7 Ep.2 - FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.</desc>
+    <episode-num system="onscreen">S7 E2</episode-num>
+  </programme>
+  <programme start="20260923132500 +0200" stop="20260923144500 +0200" channel="turbo">
+    <title lang="it">Vintage Garage</title>
+    <sub-title lang="it">St.7 Ep.3</sub-title>
+    <desc lang="it">St.7 Ep.3 - FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.</desc>
+    <episode-num system="onscreen">S7 E3</episode-num>
+  </programme>
+  <programme start="20260923144500 +0200" stop="20260923153500 +0200" channel="turbo">
+    <title lang="it">Iron Garage</title>
+    <sub-title lang="it">Sorpresa. 1a parte</sub-title>
+    <desc lang="it">Sorpresa. 1a parte - Joe Martin riporta in vita e rivende vecchie automobili.</desc>
+    <episode-num system="onscreen">S7 E9</episode-num>
+  </programme>
+  <programme start="20260923153500 +0200" stop="20260923163000 +0200" channel="turbo">
+    <title lang="it">Iron Garage</title>
+    <sub-title lang="it">Sorpresa. 2a parte</sub-title>
+    <desc lang="it">Sorpresa. 2a parte - Joe Martin riporta in vita e rivende vecchie automobili.</desc>
+    <episode-num system="onscreen">S7 E10</episode-num>
+  </programme>
+  <programme start="20260923163000 +0200" stop="20260923174000 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote Francia</title>
+    <sub-title lang="it">St.3 Ep.9</sub-title>
+    <desc lang="it">St.3 Ep.9 - Prosegue l'avventura in Francia di \.</desc>
+    <episode-num system="onscreen">S3 E9</episode-num>
+  </programme>
+  <programme start="20260923174000 +0200" stop="20260923185000 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote Francia</title>
+    <sub-title lang="it">St.3 Ep.10</sub-title>
+    <desc lang="it">St.3 Ep.10 - Prosegue l'avventura in Francia di \.</desc>
+    <episode-num system="onscreen">S3 E10</episode-num>
+  </programme>
+  <programme start="20260923185000 +0200" stop="20260923203500 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.17 Ep.3</sub-title>
+    <desc lang="it">St.17 Ep.3 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S17 E3</episode-num>
+  </programme>
+  <programme start="20260923203500 +0200" stop="20260923221500 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.17 Ep.2</sub-title>
+    <desc lang="it">St.17 Ep.2 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S17 E2</episode-num>
+  </programme>
+  <programme start="20260923221500 +0200" stop="20260923231500 +0200" channel="turbo">
+    <title lang="it">Top Gear</title>
+    <sub-title lang="it">Dodge Viper ACR</sub-title>
+    <desc lang="it">Dodge Viper ACR - Chris porta una Dodge Viper in Nevada. In Marocco, Matt e' a bordo di una Ariel Nomad.</desc>
+    <episode-num system="onscreen">S23 E1</episode-num>
+  </programme>
+  <programme start="20260923231500 +0200" stop="20260924000000 +0200" channel="turbo">
+    <title lang="it">Top Gear</title>
+    <sub-title lang="it">SUV in Sudafrica</sub-title>
+    <desc lang="it">SUV in Sudafrica - Matt, Chris ed Eddie Jordan portano alcuni musicisti in SUV tra le strade del Sudafrica.</desc>
+    <episode-num system="onscreen">S23 E2</episode-num>
+  </programme>
+  <programme start="20260924000000 +0200" stop="20260924001500 +0200" channel="turbo">
+    <title lang="it">Top Gear</title>
+    <sub-title lang="it">SUV in Sudafrica</sub-title>
+    <desc lang="it">SUV in Sudafrica - Matt, Chris ed Eddie Jordan portano alcuni musicisti in SUV tra le strade del Sudafrica.</desc>
+    <episode-num system="onscreen">S23 E2</episode-num>
+  </programme>
+  <programme start="20260924001500 +0200" stop="20260924015500 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.16 Ep.6</sub-title>
+    <desc lang="it">St.16 Ep.6 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S16 E6</episode-num>
+  </programme>
+  <programme start="20260924015500 +0200" stop="20260924035000 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.16 Ep.7</sub-title>
+    <desc lang="it">St.16 Ep.7 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S16 E7</episode-num>
+  </programme>
+  <programme start="20260924035000 +0200" stop="20260924042000 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.19 Ep.5</sub-title>
+    <desc lang="it">St.19 Ep.5 - Come sono fatte le zolle erbose, la carne di manzo essiccata, le sminuzzatrici per il legno e i birilli da bowling? Scopriamolo insieme.</desc>
+    <episode-num system="onscreen">S19 E5</episode-num>
+  </programme>
+  <programme start="20260924042000 +0200" stop="20260924044500 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.19 Ep.6</sub-title>
+    <desc lang="it">St.19 Ep.6 - Come sono fatti gli strumenti multiuso della Leatherman, l'olio di jojoba e i vari tipi di marionette? Scopriamolo insieme.</desc>
+    <episode-num system="onscreen">S19 E6</episode-num>
+  </programme>
+  <programme start="20260924044500 +0200" stop="20260924051000 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.19 Ep.7</sub-title>
+    <desc lang="it">St.19 Ep.7 - Analizziamo come vengono prodotte le esche per catturare i pesci. Inoltre, scopriamo come vengono realizzati i fornelli a cilindro e i film digitalizzati.</desc>
+    <episode-num system="onscreen">S19 E7</episode-num>
+  </programme>
+  <programme start="20260924051000 +0200" stop="20260924053500 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.19 Ep.8</sub-title>
+    <desc lang="it">St.19 Ep.8 - Passiamo al vaglio altri oggetti di uso quotidiano e scopriamo come vengono realizzate le biciclette di bambu', le mentine e come creare delle sculture usando la motosega.</desc>
+    <episode-num system="onscreen">S19 E8</episode-num>
+  </programme>
+  <programme start="20260924053500 +0200" stop="20260924060000 +0200" channel="turbo">
+    <title lang="it">Come e' fatto</title>
+    <sub-title lang="it">St.19 Ep.9</sub-title>
+    <desc lang="it">St.19 Ep.9 - Analizziamo come vengono realizzati alcuni prodotti di uso quotidiano, tra cui le stoviglie per il pranzo, i freni ad aria e i cereali per la prima colazione.</desc>
+    <episode-num system="onscreen">S19 E9</episode-num>
+  </programme>
+  <programme start="20260924060000 +0200" stop="20260924063500 +0200" channel="turbo">
+    <title lang="it">Marchio di fabbrica</title>
+    <sub-title lang="it">St.11 Ep.4</sub-title>
+    <desc lang="it">St.11 Ep.4 - Scopriamo come vengono illuminate le strade di Venezia. Inoltre, come si previene un altro disastro come il Titanic? E come si coltivano gli alberi secondo l'antica arte cinese del penjing?</desc>
+    <episode-num system="onscreen">S11 E4</episode-num>
+  </programme>
+  <programme start="20260924063500 +0200" stop="20260924083500 +0200" channel="turbo">
+    <title lang="it">Reperti d'assalto</title>
+    <sub-title lang="it">St.1 Ep.1</sub-title>
+    <desc lang="it">St.1 Ep.1 - Michael Manousakis sta esaurendo lo spazio nel cortile di \.</desc>
+    <episode-num system="onscreen">S1 E1</episode-num>
+  </programme>
+  <programme start="20260924083500 +0200" stop="20260924093500 +0200" channel="turbo">
+    <title lang="it">I re dell'asfalto</title>
+    <sub-title lang="it">St.3 Ep.5</sub-title>
+    <desc lang="it">St.3 Ep.5 - I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.</desc>
+    <episode-num system="onscreen">S3 E5</episode-num>
+  </programme>
+  <programme start="20260924093500 +0200" stop="20260924103500 +0200" channel="turbo">
+    <title lang="it">I re dell'asfalto</title>
+    <sub-title lang="it">St.3 Ep.6</sub-title>
+    <desc lang="it">St.3 Ep.6 - I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.</desc>
+    <episode-num system="onscreen">S3 E6</episode-num>
+  </programme>
+  <programme start="20260924103500 +0200" stop="20260924120500 +0200" channel="turbo">
+    <title lang="it">Vintage Garage</title>
+    <sub-title lang="it">St.7 Ep.4</sub-title>
+    <desc lang="it">St.7 Ep.4 - FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.</desc>
+    <episode-num system="onscreen">S7 E4</episode-num>
+  </programme>
+  <programme start="20260924120500 +0200" stop="20260924132500 +0200" channel="turbo">
+    <title lang="it">Vintage Garage</title>
+    <sub-title lang="it">St.7 Ep.5</sub-title>
+    <desc lang="it">St.7 Ep.5 - FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.</desc>
+    <episode-num system="onscreen">S7 E5</episode-num>
+  </programme>
+  <programme start="20260924132500 +0200" stop="20260924144500 +0200" channel="turbo">
+    <title lang="it">Vintage Garage</title>
+    <sub-title lang="it">St.7 Ep.6</sub-title>
+    <desc lang="it">St.7 Ep.6 - FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.</desc>
+    <episode-num system="onscreen">S7 E6</episode-num>
+  </programme>
+  <programme start="20260924144500 +0200" stop="20260924153500 +0200" channel="turbo">
+    <title lang="it">Iron Garage</title>
+    <sub-title lang="it">Texas</sub-title>
+    <desc lang="it">Texas - La squadra della Iron Resurrection lavora su una Chevy Truck del '62. Joe Martin vuole creare una Lowrider su misura che faccia un figurone su strada.</desc>
+    <episode-num system="onscreen">S1 E1</episode-num>
+  </programme>
+  <programme start="20260924153500 +0200" stop="20260924163000 +0200" channel="turbo">
+    <title lang="it">Iron Garage</title>
+    <sub-title lang="it">La Ford Ranch</sub-title>
+    <desc lang="it">La Ford Ranch - Joe e la sua squadra lavorano su di un veicolo in voga nella costa ovest, riportando alla luce una Ford Ranch Wagon del 1953. Ma un terribile incidente potrebbe trasformare il loro sogno in un incubo.</desc>
+    <episode-num system="onscreen">S1 E2</episode-num>
+  </programme>
+  <programme start="20260924163000 +0200" stop="20260924174000 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote Francia</title>
+    <sub-title lang="it">St.3 Ep.11</sub-title>
+    <desc lang="it">St.3 Ep.11 - Prosegue l'avventura in Francia di \.</desc>
+    <episode-num system="onscreen">S3 E11</episode-num>
+  </programme>
+  <programme start="20260924174000 +0200" stop="20260924185000 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote Francia</title>
+    <sub-title lang="it">St.3 Ep.12</sub-title>
+    <desc lang="it">St.3 Ep.12 - Prosegue l'avventura in Francia di \.</desc>
+    <episode-num system="onscreen">S3 E12</episode-num>
+  </programme>
+  <programme start="20260924185000 +0200" stop="20260924203500 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.17 Ep.4</sub-title>
+    <desc lang="it">St.17 Ep.4 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S17 E4</episode-num>
+  </programme>
+  <programme start="20260924203500 +0200" stop="20260924221500 +0200" channel="turbo">
+    <title lang="it">Affari a quattro ruote</title>
+    <sub-title lang="it">St.17 Ep.3</sub-title>
+    <desc lang="it">St.17 Ep.3 - Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.</desc>
+    <episode-num system="onscreen">S17 E3</episode-num>
+  </programme>
+  <programme start="20260924221500 +0200" stop="20260924231500 +0200" channel="turbo">
+    <title lang="it">I vichinghi dell'asfalto - 1^TV</title>
+    <sub-title lang="it">St.1 Ep.1</sub-title>
+    <desc lang="it">St.1 Ep.1 - La Viking Assistance previene incidenti e ingorghi sulle strade danesi.</desc>
+    <episode-num system="onscreen">S1 E1</episode-num>
+  </programme>
+  <programme start="20260924231500 +0200" stop="20260925000000 +0200" channel="turbo">
+    <title lang="it">I vichinghi dell'asfalto - 1^TV</title>
+    <sub-title lang="it">St.1 Ep.2</sub-title>
+    <desc lang="it">St.1 Ep.2 - La Viking Assistance previene incidenti e ingorghi sulle strade danesi.</desc>
+    <episode-num system="onscreen">S1 E2</episode-num>
+  </programme>
+  <programme start="20260921070000 +0000" stop="20260921100000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Mattina</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260921100000 +0000" stop="20260921160000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Pomeriggio</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260921160000 +0000" stop="20260921220000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Sera</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260921220000 +0000" stop="20260922070000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Notte</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260922070000 +0000" stop="20260922100000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Mattina</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260922100000 +0000" stop="20260922160000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Pomeriggio</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260922160000 +0000" stop="20260922220000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Sera</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260922220000 +0000" stop="20260923070000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Notte</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260923070000 +0000" stop="20260923100000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Mattina</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260923100000 +0000" stop="20260923160000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Pomeriggio</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260923160000 +0000" stop="20260923220000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Sera</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260923220000 +0000" stop="20260924070000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Notte</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260924070000 +0000" stop="20260924100000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Mattina</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260924100000 +0000" stop="20260924160000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Pomeriggio</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260924160000 +0000" stop="20260924220000 +0000" channel="GFVIPRegia1">
+    <title lang="it">Gfvip Regia 1 Sera</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260921070000 +0000" stop="20260921100000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Mattina</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260921100000 +0000" stop="20260921160000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Pomeriggio</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260921160000 +0000" stop="20260921220000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Sera</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260921220000 +0000" stop="20260922070000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Notte</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260922070000 +0000" stop="20260922100000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Mattina</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260922100000 +0000" stop="20260922160000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Pomeriggio</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260922160000 +0000" stop="20260922220000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Sera</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260922220000 +0000" stop="20260923070000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Notte</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260923070000 +0000" stop="20260923100000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Mattina</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260923100000 +0000" stop="20260923160000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Pomeriggio</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260923160000 +0000" stop="20260923220000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Sera</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260923220000 +0000" stop="20260924070000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Notte</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260924070000 +0000" stop="20260924100000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Mattina</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260924100000 +0000" stop="20260924160000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Pomeriggio</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260924160000 +0000" stop="20260924220000 +0000" channel="GFVIPRegia2">
+    <title lang="it">Gfvip Regia 2 Sera</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260921070000 +0000" stop="20260921100000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Mattina</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260921100000 +0000" stop="20260921160000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Pomeriggio</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260921160000 +0000" stop="20260921220000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Sera</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260921220000 +0000" stop="20260922070000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Notte</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260922070000 +0000" stop="20260922100000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Mattina</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260922100000 +0000" stop="20260922160000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Pomeriggio</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260922160000 +0000" stop="20260922220000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Sera</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260922220000 +0000" stop="20260923070000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Notte</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260923070000 +0000" stop="20260923100000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Mattina</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260923100000 +0000" stop="20260923160000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Pomeriggio</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260923160000 +0000" stop="20260923220000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Sera</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260923220000 +0000" stop="20260924070000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Notte</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260924070000 +0000" stop="20260924100000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Mattina</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260924100000 +0000" stop="20260924160000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Pomeriggio</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
+  </programme>
+  <programme start="20260924160000 +0000" stop="20260924220000 +0000" channel="GFVIPUnOraFa">
+    <title lang="it">Gfvip Un'ora Fa Sera</title>
+    <desc lang="it">Tre canali in streaming per non perderti neanche un minuto del Grande Fratello VIP. Collegati quando vuoi dal tuo PC, scarica l’app per Smartphone, Tablet e Smart TV.</desc>
   </programme>
   </tv>
