@@ -54,6 +54,19 @@ NAME_MAP = {
     "tgcom24": "TGCom.it", "tgcom24 hd europa": "TGCom.it", "rai news 24 europa hd": "RaiNews24.it",
     "nove backup": "Nove.it", "nove 720p 50fps": "Nove.it", "discovery backup": "Discovery.Channel.it",
     "giallo backup": "Giallo.TV.it", "dmax backup": "DMAX.it", "hgtv backup": "HGTV.it",
+
+    # Discovery: varianti/backup rimaste senza EPG
+    "realtime backup": "Real.Time.it",
+    "foodnetwork backup": "Food.Network.it",
+    "turbo": "Motor.Trend.it",
+    "turbo backup": "Motor.Trend.it",
+    "k2": "K2.it",
+    "frisbee": "Frisbee.it",
+
+    # Grande Fratello: feed con EPG disponibile in EPGShare
+    "gfvip regia 1": "GF.VIP.-.Regia.1.it",
+    "gfvip regia 2": "GF.VIP.-.Regia.2.it",
+    "gfvip un ora fa": "GF.VIP.-.Un’ora.fa.it",
     # HbbTV Rai: stessa programmazione del canale lineare.
     "rai premium hbbtv akamai": "RaiPremium.it",
     "rai movie hbbtv raiway": "RaiMovie.it",
