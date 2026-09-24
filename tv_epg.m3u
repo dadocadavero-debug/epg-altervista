@@ -87,13 +87,13 @@ https://live03-col.msf.cdn.mediaset.net/live/ch-lt/lt-clr.isml/manifest_hd.mpd
 #EXTINF:-1 tvg-name="Boing" tvg-id="Boing.it" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/172218792-af5ce3a2-0253-415e-830d-4c3286328ff2.png" tvg-chno="40" group-title="Bambini e ragazzi",Boing
 https://live03-col.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/manifest_hd.mpd
 #EXTINF:-1 video-track="10" tvg-name="K2" tvg-id="K2.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/k2.png" tvg-chno="41" group-title="Discovery",K2
-https://amg16146-wbdi-amg16146c6-samsung-it-1839.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-k2-samsungit/playlist.m3u8
+https://d1pmpe0hs35ka5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-39hsskpppgf72/K2_IT.m3u8
 #EXTINF:-1 tvg-name="Rai Gulp" tvg-id="RaiGulp.it" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637310352874_1579882960255_rai-gulp.png" tvg-chno="42" group-title="Bambini e ragazzi" mediapolis="",Rai Gulp
 https://raigulp1-dash-live.akamaized.net/dash/live/663985/raigulp1/manifest.mpd
 #EXTINF:-1 tvg-name="Rai Yoyo" tvg-id="RaiYoyo.it" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637309909658_1579882398754_rai-yoyo.png" tvg-chno="43" group-title="Bambini e ragazzi" mediapolis="",Rai YoYo
 https://raiyoyo1-dash-live.akamaized.net/dash/live/663949/raiyoyo1/manifest.mpd
 #EXTINF:-1 video-track="10" tvg-name="Frisbee" tvg-id="Frisbee.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/frisbee.png" tvg-chno="44" group-title="Discovery",Frisbee
-https://amg16146-wbdi-amg16146c7-samsung-it-1840.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-frisbee-samsungit/playlist.m3u8
+https://d6m7lubks416z.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zmbstsedxme9s/Frisbee_IT.m3u8
 #EXTINF:-1 tvg-id="IT3800010K1" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3800010K1_20260120T044614SQUARE.png" tvg-chno="45" group-title="Bambini e ragazzi" ,Masha e Orso
 https://amg01954-amg01954c4-samsung-it-10210.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Cartoonito" tvg-id="Cartoonito.it" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2022/06/15/131147655-eae61260-e523-46fb-ba51-bb0277e3b06b.png" tvg-chno="46" group-title="Bambini e ragazzi",Cartoonito
