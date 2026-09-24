@@ -8,6 +8,8 @@ from pathlib import Path
 
 M3U_URL = "https://inthemix.altervista.org/tv.m3u"
 EPG_URL = "https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml"
+LOGO_SOURCE_URL = "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u"
+FALLBACK_LOGO_URL = "https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg"
 OUT_M3U = Path("tv_epg.m3u")
 OUT_REPORT = Path("mapping_report.txt")
 
@@ -83,6 +85,13 @@ RAI_WORKING_STREAMS = {
     "Rai 1": "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8",
     "Rai 2": "https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8",
     "Rai 3": "https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8",
+}
+
+# Stream pubblici alternativi per canali che nella sorgente Altervista
+# possono comparire solo come feed contrassegnati con 🔐.
+LOCKED_STREAM_REPLACEMENTS = {
+    "k2": "https://amg16146-wbdi-amg16146c6-samsung-it-1839.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-k2-samsungit/playlist.m3u8",
+    "frisbee": "https://amg16146-wbdi-amg16146c7-samsung-it-1840.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-frisbee-samsungit/playlist.m3u8",
 }
 
 TECH_WORDS = {
@@ -232,6 +241,152 @@ def fix_primary_rai_streams(lines):
     return out
 
 
+
+def channel_name_from_extinf(extinf: str) -> str:
+    return extinf.rsplit(",", 1)[-1].strip() if "," in extinf else ""
+
+
+def remove_lock_from_extinf(extinf: str) -> str:
+    # Rimuove solo il simbolo grafico dal nome/metadata lasciando intatto il resto.
+    extinf = extinf.replace("🔐", "")
+    extinf = re.sub(r"\s{2,}", " ", extinf)
+    return extinf.strip()
+
+
+def locked_base_name(name: str) -> str:
+    """
+    Nome logico usato per capire se esiste già la versione normale
+    dello stesso canale. Rimuove 🔐 e la parola 'backup'.
+    """
+    n = name.replace("🔐", " ")
+    n = re.sub(r"\bbackup\b", " ", n, flags=re.IGNORECASE)
+    return norm(n)
+
+
+def split_channel_blocks(lines):
+    """
+    Divide la playlist in blocchi:
+      #EXTINF
+      eventuali #EXTVLCOPT / opzioni
+      URL
+    Le righe globali fuori da un blocco vengono mantenute separatamente.
+    """
+    blocks = []
+    prefix = []
+    current = None
+
+    for line in lines:
+        if line.startswith("#EXTINF"):
+            if current is not None:
+                blocks.append(current)
+            current = [line]
+        elif current is not None:
+            current.append(line)
+        else:
+            prefix.append(line)
+
+    if current is not None:
+        blocks.append(current)
+
+    return prefix, blocks
+
+
+def clean_locked_channels(lines):
+    """
+    Gestisce automaticamente i feed 🔐:
+
+    - se è un backup 🔐 e c'è già una versione normale dello stesso canale:
+      rimuove il backup;
+    - se è K2 o Frisbee 🔐:
+      sostituisce il feed con lo stream pubblico noto e rimuove il lucchetto;
+    - se è un altro feed 🔐 ma esiste già una versione normale equivalente:
+      rimuove il duplicato bloccato;
+    - se è l'unica versione disponibile e non abbiamo un'alternativa verificata:
+      lo mantiene, per non perdere accidentalmente un canale.
+    """
+    prefix, blocks = split_channel_blocks(lines)
+
+    unlocked_bases = set()
+    for block in blocks:
+        extinf = block[0]
+        name = channel_name_from_extinf(extinf)
+        if "🔐" not in extinf and "🔐" not in name:
+            unlocked_bases.add(locked_base_name(name))
+
+    cleaned = []
+    removed = []
+    replaced = []
+
+    for block in blocks:
+        extinf = block[0]
+        name = channel_name_from_extinf(extinf)
+        is_locked = "🔐" in extinf or "🔐" in name
+
+        if not is_locked:
+            cleaned.extend(block)
+            continue
+
+        base = locked_base_name(name)
+        is_backup = "backup" in norm(name)
+
+        # K2 / Frisbee: sostituiamo il feed bloccato con uno pubblico noto.
+        replacement_url = LOCKED_STREAM_REPLACEMENTS.get(base)
+        if replacement_url:
+            new_extinf = remove_lock_from_extinf(extinf)
+            cleaned.append(new_extinf)
+            cleaned.append(replacement_url)
+            replaced.append(f"{name} -> stream pubblico alternativo")
+            continue
+
+        # Backup bloccato o altro duplicato bloccato con equivalente normale:
+        # non serve nella playlist finale.
+        if is_backup or base in unlocked_bases:
+            removed.append(name)
+            continue
+
+        # Caso prudente: unico feed disponibile e nessuna alternativa verificata.
+        cleaned.extend(block)
+
+    return prefix + cleaned, removed, replaced
+
+
+
+def load_external_logo_index():
+    """
+    Scarica una seconda playlist pubblica usata SOLO come catalogo loghi.
+    Se non è disponibile, lo script continua normalmente.
+    """
+    by_name = {}
+    by_stripped = {}
+
+    try:
+        raw = fetch(LOGO_SOURCE_URL).decode("utf-8", errors="replace")
+    except Exception:
+        return by_name, by_stripped
+
+    for line in raw.splitlines():
+        if not line.startswith("#EXTINF"):
+            continue
+
+        name = channel_name_from_extinf(line)
+        logo = get_tvg_logo(line)
+
+        if not name or not logo:
+            continue
+        if "eu1-prod-images.disco-api.com" in logo:
+            continue
+
+        n = norm(name)
+        sn = stripped_norm(name)
+
+        if n:
+            by_name.setdefault(n, logo)
+        if sn:
+            by_stripped.setdefault(sn, logo)
+
+    return by_name, by_stripped
+
+
 def main():
     # =========================================================
     # 1. SCARICA E CONTROLLA LA PLAYLIST SORGENTE
@@ -276,6 +431,9 @@ def main():
     epg_ids = set()
     names_to_ids = {}
     stripped_to_ids = {}
+    epg_icons_by_id = {}
+    epg_icons_by_name = {}
+    epg_icons_by_stripped = {}
 
     for ch in root.findall("channel"):
         cid = ch.get("id") or ""
@@ -283,6 +441,13 @@ def main():
             continue
 
         epg_ids.add(cid)
+
+        icon = ch.find("icon")
+        icon_url = ""
+        if icon is not None:
+            icon_url = (icon.get("src") or "").strip()
+            if icon_url:
+                epg_icons_by_id[cid] = icon_url
 
         for dn in ch.findall("display-name"):
             if not dn.text:
@@ -296,11 +461,23 @@ def main():
             if sn:
                 stripped_to_ids.setdefault(sn, set()).add(cid)
 
+            if icon_url:
+                epg_icons_by_name.setdefault(n, set()).add(icon_url)
+                if sn:
+                    epg_icons_by_stripped.setdefault(sn, set()).add(icon_url)
+
+    # Catalogo loghi supplementare: usato solo se il logo non arriva
+    # già dalla playlist, dal mapping manuale o dall'EPG.
+    external_logos, external_logos_stripped = load_external_logo_index()
+
     # =========================================================
     # 4. PREPARA LA PLAYLIST
     # =========================================================
     lines = m3u.splitlines()
     lines = fix_primary_rai_streams(lines)
+
+    # Pulisce automaticamente i feed contrassegnati con 🔐.
+    lines, locked_removed, locked_replaced = clean_locked_channels(lines)
 
     # Rimuove tutte le intestazioni #EXTM3U della sorgente.
     # Ne generiamo una nostra unica e consistente più sotto.
@@ -333,6 +510,7 @@ def main():
     auto = 0
     preserved = 0
     logos_added = 0
+    generic_logos = 0
 
     # =========================================================
     # 5. HEADER M3U CON EPG AUTOMATICO
@@ -399,8 +577,14 @@ def main():
                 f"{name} | {old_id or '(vuoto)'} -> {new_id} | {reason}"
             )
 
-        # Aggiunge i loghi mancanti e sostituisce i vecchi URL
-        # disco-api.com che Fermata XTream non visualizza.
+        # Aggiunge un logo a OGNI canale.
+        # Priorità:
+        # 1) mapping manuale
+        # 2) logo dell'EPG per il tvg-id effettivo
+        # 3) logo già imparato da un duplicato/variante
+        # 4) catalogo loghi supplementare
+        # 5) logo EPG ricavato dal nome
+        # 6) icona TV generica come ultima risorsa
         current_logo = get_tvg_logo(line)
         bad_logo = "eu1-prod-images.disco-api.com" in current_logo
 
@@ -413,15 +597,51 @@ def main():
         if norm(name).startswith("supertennis+"):
             explicit_logo = LOGO_MAP["supertennis"]
 
-        mapped_logo = best_logo_for_name(name, learned_logos)
-        wanted_logo = explicit_logo or mapped_logo
+        effective_id_match = re.search(r'tvg-id="([^"]*)"', line)
+        effective_id = effective_id_match.group(1).strip() if effective_id_match else ""
 
-        if wanted_logo and (not current_logo or bad_logo):
+        epg_id_logo = epg_icons_by_id.get(effective_id, "")
+        learned_logo = best_logo_for_name(name, learned_logos)
+
+        nname = norm(name)
+        sname = stripped_norm(name)
+
+        external_logo = (
+            external_logos.get(nname)
+            or external_logos_stripped.get(sname, "")
+        )
+
+        epg_name_logo = ""
+        exact_epg_logos = epg_icons_by_name.get(nname, set())
+        if len(exact_epg_logos) == 1:
+            epg_name_logo = next(iter(exact_epg_logos))
+        elif sname:
+            stripped_epg_logos = epg_icons_by_stripped.get(sname, set())
+            if len(stripped_epg_logos) == 1:
+                epg_name_logo = next(iter(stripped_epg_logos))
+
+        wanted_logo = (
+            explicit_logo
+            or epg_id_logo
+            or learned_logo
+            or external_logo
+            or epg_name_logo
+            or FALLBACK_LOGO_URL
+        )
+
+        if not current_logo or bad_logo:
             line = set_tvg_logo(line, wanted_logo)
             logos_added += 1
-            report.append(
-                f"{name} | logo {'sostituito' if bad_logo else 'aggiunto'} -> {wanted_logo}"
-            )
+
+            if wanted_logo == FALLBACK_LOGO_URL:
+                generic_logos += 1
+                report.append(
+                    f"{name} | logo generico aggiunto -> {wanted_logo}"
+                )
+            else:
+                report.append(
+                    f"{name} | logo {'sostituito' if bad_logo else 'aggiunto'} -> {wanted_logo}"
+                )
 
         out.append(line)
 
@@ -433,14 +653,28 @@ def main():
         encoding="utf-8"
     )
 
+    lock_report = []
+    if locked_replaced:
+        lock_report.append("FEED 🔐 SOSTITUITI:")
+        lock_report.extend(f"- {item}" for item in locked_replaced)
+        lock_report.append("")
+    if locked_removed:
+        lock_report.append("FEED 🔐 RIMOSSI:")
+        lock_report.extend(f"- {item}" for item in locked_removed)
+        lock_report.append("")
+
     OUT_REPORT.write_text(
         f"Canali sorgente Altervista: {source_channels}\n"
         f"Canali disponibili nell'EPG: {channel_count}\n"
         f"Programmi disponibili nell'EPG: {programme_count}\n"
+        f"Feed 🔐 sostituiti: {len(locked_replaced)}\n"
+        f"Feed 🔐 rimossi: {len(locked_removed)}\n"
         f"Canali/righe EXTINF modificate: {changed}\n"
         f"Match automatici univoci: {auto}\n"
         f"ID già validi preservati: {preserved}\n"
-        f"Loghi aggiunti: {logos_added}\n\n"
+        f"Loghi aggiunti/sostituiti: {logos_added}\n"
+        f"Loghi generici usati come ultima risorsa: {generic_logos}\n\n"
+        + "\n".join(lock_report)
         + "\n".join(report)
         + "\n",
         encoding="utf-8",
@@ -449,10 +683,15 @@ def main():
     print(
         f"Creato {OUT_M3U} - "
         f"{changed} tvg-id aggiunti/corretti, "
-        f"{logos_added} loghi aggiunti"
+        f"{logos_added} loghi aggiunti/sostituiti "
+        f"({generic_logos} generici)"
     )
     print(
         f"EPG: {channel_count} canali, {programme_count} programmi"
+    )
+    print(
+        f"Feed 🔐: {len(locked_replaced)} sostituiti, "
+        f"{len(locked_removed)} rimossi"
     )
     print(f"Report: {OUT_REPORT}")
 
