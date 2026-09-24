@@ -4,7 +4,7 @@ Programmi disponibili nell'EPG: 26491
 Canali/righe EXTINF modificate: 60
 Match automatici univoci: 0
 ID già validi preservati: 84
-Loghi aggiunti/sostituiti: 170
+Loghi aggiunti/sostituiti: 177
 Loghi generici usati come ultima risorsa: 62
 
 NOVE | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png
@@ -14,12 +14,17 @@ Food Network | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Itali
 Discovery | logo sostituito -> https://i.imgur.com/5IxIFJ0.png
 Giallo | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/giallo.png
 K2 🔐 | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/k2.png
+Rai Gulp | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raigulp.png
+Rai YoYo | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raiyoyo.png
 Frisbee 🔐 | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/frisbee.png
 Sky TG24 SD | (vuoto) -> Sky.TG24.it | nome-verificato
 Sky TG24 SD | logo aggiunto -> https://guidatv.sky.it/logo/521skytg24_Light_Fit.png?checksum=da35dbfe-8079-4ba1-adcb-fa9e2cfe3392?tr=n-logo_80
 DMAX | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/dmax.png
 HGTV | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/homegardentv.png
+Rai Sport | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png
 Solocalcio | ITBC4700002CO -> Solocalcio.it.it | id:ITBC4700002CO
+Primavera TV | logo aggiunto -> https://i.imgur.com/0CJGGgd.png
+Super Tennis | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
 Radio 105 TV | (vuoto) -> Radio.105.it | nome-verificato
 Deejay TV | logo aggiunto -> https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80
 Radio Italia TV | logo aggiunto -> https://guidatv.sky.it/logo/5454radioitaliatvhd_Light_Fit.png?checksum=9cc02777-f1a0-44f1-a432-a1de036be5b7?tr=n-logo_80
@@ -55,6 +60,8 @@ RedBull TV | logo aggiunto -> https://www.redbull.com/cs/RedBull2/images/brandin
 BIKE | bikesmartmobility -> BIKE.it | id:bikesmartmobility
 BIKE | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=BIKE
 Solocalcio (25fps) | ITBC4700002CO -> Solocalcio.it.it | id:ITBC4700002CO
+Tennis Channel | logo aggiunto -> https://i.imgur.com/tsljAnY.png
+Tennis channel 2 | logo aggiunto -> https://i.imgur.com/tsljAnY.png
 UNBEATEN | logo aggiunto -> https://i.imgur.com/LmkNt3v.png
 FUBO Sports | logo aggiunto -> https://i.imgur.com/qFNRJLb.png
 FF Motorsport | logo aggiunto -> https://www.google.com/s2/favicons?domain=ffmotorsport.it&sz=256
