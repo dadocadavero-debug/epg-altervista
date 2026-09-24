@@ -86,14 +86,18 @@ https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out
 https://live03-col.msf.cdn.mediaset.net/live/ch-lt/lt-clr.isml/manifest_hd.mpd
 #EXTINF:-1 tvg-name="Boing" tvg-id="Boing.it" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/172218792-af5ce3a2-0253-415e-830d-4c3286328ff2.png" tvg-chno="40" group-title="Bambini e ragazzi",Boing
 https://live03-col.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/manifest_hd.mpd
-#EXTINF:-1 video-track="10" tvg-name="K2" tvg-id="K2.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/k2.png" tvg-chno="41" group-title="Discovery",K2
-https://d1pmpe0hs35ka5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-39hsskpppgf72/K2_IT.m3u8
+#EXTINF:-1 video-track="10" tvg-name="K2" tvg-id="K2.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/k2.png" tvg-chno="41" group-title="Discovery",K2 🔐
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=a03e33a2fca847af9f3dba42be1fddd0:8f39a9339f889751703b8c99c9f69bb2
+https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(k2)/manifest.mpd
 #EXTINF:-1 tvg-name="Rai Gulp" tvg-id="RaiGulp.it" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637310352874_1579882960255_rai-gulp.png" tvg-chno="42" group-title="Bambini e ragazzi" mediapolis="",Rai Gulp
 https://raigulp1-dash-live.akamaized.net/dash/live/663985/raigulp1/manifest.mpd
 #EXTINF:-1 tvg-name="Rai Yoyo" tvg-id="RaiYoyo.it" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637309909658_1579882398754_rai-yoyo.png" tvg-chno="43" group-title="Bambini e ragazzi" mediapolis="",Rai YoYo
 https://raiyoyo1-dash-live.akamaized.net/dash/live/663949/raiyoyo1/manifest.mpd
-#EXTINF:-1 video-track="10" tvg-name="Frisbee" tvg-id="Frisbee.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/frisbee.png" tvg-chno="44" group-title="Discovery",Frisbee
-https://d6m7lubks416z.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zmbstsedxme9s/Frisbee_IT.m3u8
+#EXTINF:-1 video-track="10" tvg-name="Frisbee" tvg-id="Frisbee.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/frisbee.png" tvg-chno="44" group-title="Discovery",Frisbee 🔐
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=d5ce25d00a88442eb00991749d3191fc:aa1f60638ab3bb4fde86188666f350c0
+https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(frisbee)/manifest.mpd
 #EXTINF:-1 tvg-id="IT3800010K1" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3800010K1_20260120T044614SQUARE.png" tvg-chno="45" group-title="Bambini e ragazzi" ,Masha e Orso
 https://amg01954-amg01954c4-samsung-it-10210.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="Cartoonito" tvg-id="Cartoonito.it" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2022/06/15/131147655-eae61260-e523-46fb-ba51-bb0277e3b06b.png" tvg-chno="46" group-title="Bambini e ragazzi",Cartoonito
@@ -295,7 +299,7 @@ https://jmp2.uk/plu-6602acadb2abe500081cf28a.m3u8
 https://jmp2.uk/plu-60a2837f8154ab0007c4dcdf.m3u8
 #EXTINF:-1 tvg-id="PlutoSquadraSpecialeCobra11.it" tvg-logo="https://images.pluto.tv/channels/625e6cc905e09f00073addee/colorLogoPNG.png" group-title="Serie",Squadra Speciale Cobra 11 - Pluto
 https://jmp2.uk/plu-625e6cc905e09f00073addee.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Serie",Elisa di Rivombrosa
+#EXTINF:-1 tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Elisa%20di%20Rivombrosa" group-title="Serie",Elisa di Rivombrosa
 https://amg02512-nexodigital-amg02512c4-samsung-it-1164.playouts.now.amagi.tv/playlist/amg02512-nexodigital-eastiseast-samsungit/playlist.m3u8
 #EXTINF:-1 tvg-id="PlutoBbcSeries.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2900001B5_20240924T051154SQUARE.png" group-title="Serie", BBC Series
 https://amg00793-amg00793c29-samsung-it-4958.playouts.now.amagi.tv/playlist/amg00793-bbcstudios-bbcdramaitalysamsungit-samsungit/playlist.m3u8
@@ -426,21 +430,21 @@ https://streaming.softwarecreation.it/AlmaTv/AlmaTv/playlist.m3u8
 https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8
 #EXTINF:-1 tvg-name="Donna tv" tvg-id="DonnaTV.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/donnatv.png"  group-title="Altre tv",Donna tv
 https://streaming.softwarecreation.it/DonnaTv/DonnaTv/playlist.m3u8
-#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Altre tv",LA7 eventi live
+#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=LA7%20eventi%20live" group-title="Altre tv",LA7 eventi live
 https://d15umi5iaezxgx.cloudfront.net/HBBTV/LA7FEED01/DASH/Live.mpd
-#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Altre tv",LA7 agenzie?
+#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=LA7%20agenzie%3F" group-title="Altre tv",LA7 agenzie?
 https://d15umi5iaezxgx.cloudfront.net/AGENZIE/HLS/Live.m3u8
 #EXTINF:-1 tvg-name="il61" tvg-id="il61" tvg-logo="https://www.grupposciscione.it/wp-content/uploads/2025/07/IL-61-CANALE.png"  group-title="Altre tv",il61
 https://5a1178b42cc03.streamlock.net/travel/travel/playlist.m3u8
-#EXTINF:-1 tvg-name="Iunior TV" tvg-id="iuniortv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Bambini e ragazzi",Iunior TV
+#EXTINF:-1 tvg-name="Iunior TV" tvg-id="iuniortv" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Iunior%20TV" group-title="Bambini e ragazzi",Iunior TV
 https://5f22d76e220e1.streamlock.net/iuniortv/iuniortv/playlist.m3u8
 #EXTINF:-1 tvg-name="Man-Ga" tvg-id="manga" tvg-logo="https://cdn-0.tvprofil.com/img/kanali-logo/man_ga_logo.png" group-title="Bambini e ragazzi",MAN-GA
 https://c65b9e710bde44819015af98e72cd7ab.msvdn.net/live/S93572876/aILSQPYFY3pF/master.m3u8
 #EXTINF:-1 tvg-name="Anime Channel" tvg-id="" tvg-logo="https://youhbbtv.com/images/chnl/ANIME%20CHANNEL.jpg" group-title="Bambini e ragazzi",Anime Channel (Coming soon)
 https://host1.momentotv.live:28443/hls/animechannel/index.m3u8
-#EXTINF:-1 tvg-name="EURO TV" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Altre tv",EURO TV
+#EXTINF:-1 tvg-name="EURO TV" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=EURO%20TV" group-title="Altre tv",EURO TV
 https://5f22d76e220e1.streamlock.net/eurotv/eurotv/playlist.m3u8
-#EXTINF:-1 tvg-name="SuperSIX" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Altre tv",SuperSIX
+#EXTINF:-1 tvg-name="SuperSIX" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=SuperSIX" group-title="Altre tv",SuperSIX
 https://5f22d76e220e1.streamlock.net/supersixnew/supersixnew/playlist.m3u8
 #EXTINF:-1 tvg-name="Vintage TV" tvg-id="" tvg-logo="https://www.adnplay.it/wp-content/uploads/2026/01/72dd9127-105d-475a-b561-99eb346ef301-1.png" group-title="Altre tv",Vintage TV
 https://64b16f23efbee.streamlock.net/hit24tv/hit24tv/playlist.m3u8
@@ -454,7 +458,7 @@ https://604e46ac2bdee.streamlock.net:1936/marcorenzi/marcorenzi/playlist.m3u8
 https://stream10.xdevel.com/video4s978704-3076/stream/playlist.m3u8
 #EXTINF:-1 tvg-name="Class CNBC" tvg-id="Class.CNBC.it" tvg-logo="https://guidatv.sky.it/logo/433classcnbc_Light_Fit.png?checksum=5d79825c-e37a-4e81-8e9a-69ea5593279e?tr=n-logo_80" group-title="Notizie",Class CNBC
 https://www.dailymotion.com/cdn/live/video/x91c8ww.m3u8?sec=D9OwEfHs-e7O6pQ-qlnROg
-#EXTINF:-1 tvg-name="Zerouno Tv News" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Notizie",Zerouno Tv News
+#EXTINF:-1 tvg-name="Zerouno Tv News" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Zerouno%20Tv%20News" group-title="Notizie",Zerouno Tv News
 https://64b16f23efbee.streamlock.net/01news/01news/playlist.m3u8
 
 #EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png" group-title="Sport",Supertennis+ 1
@@ -469,7 +473,7 @@ https://streamcdng1-421b2081187a40368f24e4fb496bfc26.msvdn.net/channel4/manifest
 https://9b7788ca.wurl.com/U2Ftc3VuZy1pdF9TcG9ydEZhY2VfSExT/playlist.m3u8
 #EXTINF:-1 group-title="Sport" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork-negative/e17ab6db-7f70-4523-8c8c-4f7f919f04e7-width300-quality90.png",Juventus Play
 https://amg27604-amg27604c3-amgplt0148.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg27604-amg27604c3-amgplt0148/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-id="Inter.TV.it" group-title="Sport",Inter TV
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/inter-tv-it.png" tvg-id="Inter.TV.it" group-title="Sport",Inter TV
 https://d3k8wzt41aflvx.cloudfront.net/INTERTV/Live.m3u8
 #EXTINF:-1 group-title="Sport" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork-negative/bb49ed71-bf84-480e-9336-4cfaba55d253-width200-quality90.png",INTER 24/7
 https://amg27604-amg27604c2-amgplt0148.playout.now3.amagi.tv/playlist/amg27604-amg27604c2-amgplt0148/playlist.m3u8
@@ -477,7 +481,7 @@ https://amg27604-amg27604c2-amgplt0148.playout.now3.amagi.tv/playlist/amg27604-a
 https://livesg.sslazio.hiway.media/restreamer/sslazio_client/gpu-a-c0-7/restreamer/outgest/a4bacde5-20de-4555-9664-939a1794b963/manifest.m3u8
 #EXTINF:-1 tvg-name="Italian Fishing TV" tvg-id="" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork_negative/8488cf6a-bb6a-4df1-adf4-d66ff4b621ca-italian-fishing-tv-1643371244-quality100.png" group-title="Sport",Italian Fishing TV
 https://d2n1ucuifwse4q.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5nki8b8udz6dm/index.m3u8?ads.device_did=%7BPSID%7D&ads.device_dnt=0&ads.app_domain=0&ads.app_name=0&ads.consent=0&ads.ssai_vendor=SSSLIVE
-#EXTINF:-1 tvg-name="SportOutdoor.tv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Sport",SportOutdoor.Tv
+#EXTINF:-1 tvg-name="SportOutdoor.tv" tvg-logo="https://www.google.com/s2/favicons?domain=sportoutdoor.tv&sz=256" group-title="Sport",SportOutdoor.Tv
 https://gto2000-sportoutdoortv-1-eu.rlaxxtv.wurl.tv/4300.m3u8
 #EXTINF:-1 tvg-name="FIFA+" tvgid="RakutenFifaPlus.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1000002HF_20230712T021218SQUARE.png_20230712021219.png" group-title="Sport",FIFA+
 https://5d95f7d7.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWl0X0ZJRkFQbHVzSXRhbGlhbl9ITFM/playlist.m3u8
@@ -499,7 +503,7 @@ https://rally-tv-live.akamaized.net/hls/live/2117704/RallyTV-Pri/master.m3u8
 https://vercel-api.zappr.stream/api?https://telelombardia.video/video/viewlivestreaming?rel=2497&cntr=0
 #EXTINF:-1 tvg-logo="https://www.redbull.com/cs/RedBull2/images/branding/redbull-tv-logo-2x.png" group-title="Sport",RedBull TV
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
-#EXTINF:-1 tvg-name="BIKE" tvg-id="BIKE.it" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Sport", BIKE
+#EXTINF:-1 tvg-name="BIKE" tvg-id="BIKE.it" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=BIKE" group-title="Sport", BIKE
 https://edge-004.streamup.eu/origin/bike_abr/playlist.m3u8
 #EXTINF:-1 tvg-name="Sportitalia" channel-id="ITBA2200010O1" tvg-id="sportitalia" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA2200010O1_20230412T042536SQUARE.png_20230412042536.png" group-title="Sport",Sportitalia (25fps)
 https://sportsitalia-samsungitaly.amagi.tv/playlist1080p.m3u8
@@ -515,9 +519,9 @@ https://amg01444-tennischannelth-tennischde-samsungch-jp1l8.amagi.tv/playlist/am
 https://amg01444-tennischannel-amg01444c2-lg-us-959.playouts.now.amagi.tv/playlist/amg01444-tennischannelfast-tennischannelus-lgus/playlist.m3u8
 #EXTINF:-1 group-title="Sport" tvg-logo="https://images.plex.tv/photo?url=https%3A%2F%2Fprovider-static.plex.tv%2Fepg%2Fcms%2Fproduction%2Fd8dd29ce-8968-4a90-a21c-37af62c48e54%2F5_Tennis_Plus__Horizontal_Default_Art__3840x2160px_v4.jpg", Tennis+
 https://amg01935-amg01935c1-amgplt0020.playout.now3.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Sport",UNBEATEN
+#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://i.imgur.com/LmkNt3v.png" group-title="Sport",UNBEATEN
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00721-inverleigh-unbeaten-lges/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Sport",FUBO Sports
+#EXTINF:-1 tvg-logo="https://i.imgur.com/qFNRJLb.png" group-title="Sport",FUBO Sports
 https://wurlfubo.global.transmit.live/hls/67f42332d3dd98936978f581/v1/fubotv_fubo_sports_network_1/lg_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 tvg-id="CBSSports.us" tvg-logo="https://www.groundedreason.com/wp-content/uploads/2020/02/cbs_sports_network.png" group-title="Sport",CBS Sports Network
 https://jmp2.uk/plu-5e9f2c05172a0f0007db4786.m3u8
@@ -525,13 +529,13 @@ https://jmp2.uk/plu-5e9f2c05172a0f0007db4786.m3u8
 https://amg00614-amg00614c1-amgplt0007.playout.now3.amagi.tv/playlist/amg00614-amg00614c1-amgplt0007/playlist.m3u8
 #EXTINF:-1 channel-id="IT800002CE" tvg-name="Motoretrò" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT800002CE_20250520T045026SQUARE.png" group-title="Sport", Motoretrò
 https://amg14891-amg14891c2-amgplt0165.playout.now3.amagi.tv/playlist/amg14891-amg14891c2-amgplt0165/playlist.m3u8
-#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Sport",FF Motorsport
+#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://www.google.com/s2/favicons?domain=ffmotorsport.it&sz=256" group-title="Sport",FF Motorsport
 https://host1.momentotv.live:28443/cmaf/ffmotorsport/playlist.m3u8
-#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Sport",EQU TV
+#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://www.google.com/s2/favicons?domain=eqtv.it&sz=256" group-title="Sport",EQU TV
 https://livestream-epiqa.akamaized.net/hls/live/2039453/EQUTV/master.m3u8
-#EXTINF:-1 tvg-name="Rai Sport jolly" tvg-id="raisport" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Sport" mediapolis="22590",Rai Sport jolly 1 (attivo raramente)
+#EXTINF:-1 tvg-name="Rai Sport jolly" tvg-id="raisport" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" group-title="Sport" mediapolis="22590",Rai Sport jolly 1 (attivo raramente)
 https://raisportjolly1-live.akamaized.net/hls/live/2034072/raisportjolly1/raisportjolly1/raisportjolly1_2400/chunklist.m3u8
-#EXTINF:-1 tvg-name="Rai Sport jolly" tvg-id="raisport" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Sport" mediapolis="35259",Rai Sport jolly 2 (attivo raramente)
+#EXTINF:-1 tvg-name="Rai Sport jolly" tvg-id="raisport" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" group-title="Sport" mediapolis="35259",Rai Sport jolly 2 (attivo raramente)
 https://raisportjolly2-live.akamaized.net/hls/live/2034073/raisportjolly2/raisportjolly2/raisportjolly2_2400/chunklist.m3u8
 #EXTINF:-1 tvg-id="ITBC2100001G9" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC2100001G9_20230412T042542SQUARE.png_20230412042543.png" group-title="Musica" ,Vevo Pop
 https://d3lljkiqez7zii.cloudfront.net/playlist.m3u8
@@ -539,7 +543,7 @@ https://d3lljkiqez7zii.cloudfront.net/playlist.m3u8
 https://d1ncbjs1sfvd8z.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://d3bd0tgyk368z1.cloudfront.net/lightning/thats90s00s/Thats%2090s00s%20white%20logo%20transpararent%20bg%20400x200.png" group-title="Musica",That's 90s00s
 https://amg01076-amg01076c19-lg-it-10329.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01076-lightning-now90s00s-lgit/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica",Vevo 2K
+#EXTINF:-1 tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Vevo%202K" group-title="Musica",Vevo 2K
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00056-vevotv-vevo2kau-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1900010JL_20241022T043922SQUARE.png" group-title="Musica",Vevo '70s & '80s
 https://d1n329euzmul63.cloudfront.net/Vevo70sand80s_IT.m3u8
@@ -553,17 +557,17 @@ https://live02-col.msr.cdn.mediaset.net/live/ch-ew/ew-clr.isml/index.m3u8
 https://live02-col.msr.cdn.mediaset.net/live/ch-bb/bb-clr.isml/index.m3u8
 #EXTINF:-1 tvg-name="Radio Italia Live" tvg-id="" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA2200008IM_20251111T012413SQUARE.png" group-title="Musica", Radio Italia Live
 https://radioitalia-samsungitaly.amagi.tv/playlist720p.m3u8
-#EXTINF:-1 tvg-name="RadioWOW" tvg-id=""tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica", RadioWOW
+#EXTINF:-1 tvg-name="RadioWOW" tvg-id=""tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=RadioWOW" group-title="Musica", RadioWOW
 https://str38.fluid.stream/RadioWOW/livestream/playlist.m3u8
 #EXTINF:-1 tvg-name="Radio Kiss Kiss TV" tvg-id="" tvg-logo="https://kisskiss.it/wp-content/uploads/2026/01/logo_radio.png" group-title="Musica", Radio Kiss Kiss TV
 https://59253971be783.streamlock.net/KissKissTV/KissKissTV.stream/playlist.m3u8
-#EXTINF:-1 tvg-name="DJOssoTV" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica",DJOssoTV
+#EXTINF:-1 tvg-name="DJOssoTV" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=DJOssoTV" group-title="Musica",DJOssoTV
 https://djosso.fluid.stream/DJOssoTV/livestream/playlist.m3u8
-#EXTINF:-1 tvg-name="PiterPan TV" tvg-id="radiopiterpantv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica", PiterPan TV
+#EXTINF:-1 tvg-name="PiterPan TV" tvg-id="radiopiterpantv" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=PiterPan%20TV" group-title="Musica", PiterPan TV
 https://58d921499d3d3.streamlock.net/RadioPiterpanTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-name="Rai Radio 2" tvg-id="rairadio2" tvg-logo="https://www.raiplay.it/dl/img/2020/09/25/1601019883430_radio-23x.png" group-title="Rai", Rai Radio 2
 https://visualradiodue3-live.akamaized.net/hls/live/2034078/visualradiodue3/visualradiodue3/playlist.m3u8
-#EXTINF:-1 tvg-name="Radio Studiopiù" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica", Radio Studiopiù
+#EXTINF:-1 tvg-name="Radio Studiopiù" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Studiopi%C3%B9" group-title="Musica", Radio Studiopiù
 https://5a1178b42cc03.streamlock.net/studiopiutv/studiopiutv/playlist.m3u8
 #EXTINF:-1 tvg-name="RDS Social TV" tvg-id="" tvg-logo="https://images.contentstack.io/v3/assets/blt6cd554d763453d19/blt7657f330b83210d9/6874f9024af1afaecece9e2a/rds-social-tv.jpg" group-title="Musica", RDS Social TV
 https://stream.rdstv.radio/index_9.m3u8
@@ -579,7 +583,7 @@ https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S35394734/Z6U2wGoDYANk/p
 https://router.xdevel.com/video0s975758-473/stream/playlist.m3u8
 #EXTINF:-1 tvg-name="Radio Lombardia TV" tvg-id="" tvg-logo="https://www.radiolombardia.it/wp-content/uploads/2024/05/LOGO_bianco-1024x1024.png" group-title="Musica", Radio Lombardia TV
 https://stream9.xdevel.com/video0s976574-1330/stream/playlist.m3u8
-#EXTINF:-1 tvg-name="Radio Number ONE" tvg-id="RadioNumberOne.it" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica", Radio Number ONE
+#EXTINF:-1 tvg-name="Radio Number ONE" tvg-id="RadioNumberOne.it" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Number%20ONE" group-title="Musica", Radio Number ONE
 https://56b50ada2d659.streamlock.net/RN1TV/livestream/chunklist_w1133430333.m3u8
 #EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://cloud.rtl.it/assets/play.rtl.it/2.1.5/img/broadcaster/TV/2.svg" group-title="Musica", RTL 102.5 BEST
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S76960628/OEPHRUIctA0M/playlist_video.m3u8
@@ -603,7 +607,7 @@ https://stream1.xdevel.com/video0s975770-326/stream/manifest.mpd
 https://5929b138b139d.streamlock.net/CompanyTV/smil:CompanyTV.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Radio 51" tvg-id="" tvg-logo="https://www.radio51.net/logo.png" group-title="Musica", Radio 51
 https://59d7d6f47d7fc.streamlock.net/canale51/canale51/playlist.m3u8
-#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica",Demo 4K
+#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Demo%204K" group-title="Musica",Demo 4K
 https://host1.momentotv.live:28443/cmaf/demo4k/manifest.mpd
 #EXTINF:-1 channel-id="ITBC11000108G" tvg-id="ITBC11000108G" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC11000108G_20230208T013154SQUARE.png_20230208013155.png" group-title="Musica", Hip Hop TV
 https://chili-hiphop-tv-1-it.xiaomi.wurl.tv/4300.m3u8
@@ -613,7 +617,7 @@ https://amg01131-tracetv-tracelatinait-samsungit-n0o7t.amagi.tv/playlist/amg0113
 https://amg01131-tracetv-traceurbanit-samsungit-80rxc.amagi.tv/playlist/amg01131-tracetv-traceurbanit-samsungit/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBD19000026B_20230614T010133SQUARE.png_20230614010134.png" bak="https://d2u040elo6umri.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-w91uvsddx3yti/trace_urban_gb.m3u8" group-title="Musica", Trace UK
 https://amg01131-tracetv-amg01131c5-plex-us-4388.playouts.now.amagi.tv/playlist1080p.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica",Xite
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Xite" group-title="Musica",Xite
 https://xite-germany-lg.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEBA2200007V6_20220323T075230SQUARE.png_20220323075233.png" group-title="Musica",XITE Hits
 https://xite-hitsuk-lg.amagi.tv/playlist.m3u8
@@ -621,21 +625,21 @@ https://xite-hitsuk-lg.amagi.tv/playlist.m3u8
 https://d3mza6qljp67l5.cloudfront.net/csts.m3u8
 #EXTINF:-1 tvg-id="ITBC1100011RK" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100011RK_20230208T013201SQUARE.png_20230208013201.png" group-title="Musica",Rock TV
 https://chili-rock-tv-1-it.xiaomi.wurl.tv/4300.m3u8
-#EXTINF:-1 tvg-name="ZeroUno Tv" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica",ZeroUno Tv
+#EXTINF:-1 tvg-name="ZeroUno Tv" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=ZeroUno%20Tv" group-title="Musica",ZeroUno Tv
 https://64b16f23efbee.streamlock.net/zerounotvmusic/zerounotvmusic/playlist.m3u8
-#EXTINF:-1 tvg-name="RSO Radio" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica",RSO Radio
+#EXTINF:-1 tvg-name="RSO Radio" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=RSO%20Radio" group-title="Musica",RSO Radio
 https://585b674743bbb.streamlock.net/9056/9056/playlist.m3u8
-#EXTINF:-1 tvg-name="Radio PoPizz" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica", Radio Popizz
+#EXTINF:-1 tvg-name="Radio PoPizz" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Popizz" group-title="Musica", Radio Popizz
 https://stream.mdworks.xyz/hls/live/radiopopizz/index.m3u8
-#EXTINF:-1 tvg-name="Radio Marte Tv" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica", Radio Marte Tv
+#EXTINF:-1 tvg-name="Radio Marte Tv" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Marte%20Tv" group-title="Musica", Radio Marte Tv
 https://router.xdevel.com/video0s975753-750/stream/playlist.m3u8
-#EXTINF:-1 tvg-name="Studiopiù 60/70/80" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica", Studiopiù 60/70/80
+#EXTINF:-1 tvg-name="Studiopiù 60/70/80" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Studiopi%C3%B9%2060%2F70%2F80" group-title="Musica", Studiopiù 60/70/80
 https://5a1178b42cc03.streamlock.net/607080stream/607080stream/playlist.m3u8
-#EXTINF:-1 tvg-name="Radio 80" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica", Radio 80
+#EXTINF:-1 tvg-name="Radio 80" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%2080" group-title="Musica", Radio 80
 https://585b674743bbb.streamlock.net/9076/9076/playlist.m3u8
-#EXTINF:-1 tvg-id="bellla e monella tv" tvg-name="Bellla e Monella TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Musica",Radio Bellla e Monella TV
+#EXTINF:-1 tvg-id="bellla e monella tv" tvg-name="Bellla e Monella TV" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Bellla%20e%20Monella%20T" group-title="Musica",Radio Bellla e Monella TV
 https://58d921499d3d3.streamlock.net/RadioBelllaemonellaTV/livestream/playlist.m3u8
-#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Altre tv",CasaSanremo
+#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=CasaSanremo" group-title="Altre tv",CasaSanremo
 https://router.xdevel.com/video0s975911-633/stream/playlist_dvr.m3u8
 
 
@@ -695,23 +699,23 @@ https://raigulp1-push.cdn.netrw.it/rai/dash/live/raigulp/manifest.mpd
 https://raiscuola1-push.cdn.netrw.it/rai/dash/live/raiscuola/manifest.mpd
 #EXTINF:-1 tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637309830740_1579882284354_rai-storia.png" tvg-id="RaiStoria.it" group-title="Rai",rai storia HbbTV raiway
 https://raistoria1-push.cdn.netrw.it/rai/dash/live/raistoria/manifest.mpd
-#EXTINF:-1 tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637310367694_1579883330343_rai-sport.png" tvg-id="RaiSport.it" group-title="Rai",rai sport HbbTV raiway
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" tvg-id="RaiSport.it" group-title="Rai",rai sport HbbTV raiway
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=dafa5c04201f59fa9a022dae97b0af7e:8bfa33d706bca7135d150bb3d4fa4388
 https://raisport1-push.cdn.netrw.it/rai/dash/live/raisport/manifest.mpd
-#EXTINF:-1 tvg-name="RaiPlay (eventi)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Rai" mediapolis="4761838",RaiPlay (eventi)
+#EXTINF:-1 tvg-name="RaiPlay (eventi)" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=RaiPlay%20%28eventi%29" group-title="Rai" mediapolis="4761838",RaiPlay (eventi)
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay/hls/playlist_mo.m3u8
-#EXTINF:-1 tvg-name="RaiPlay 2 (eventi)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Rai" mediapolis="4752979",RaiPlay 2 (eventi)
+#EXTINF:-1 tvg-name="RaiPlay 2 (eventi)" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=RaiPlay%202%20%28eventi%29" group-title="Rai" mediapolis="4752979",RaiPlay 2 (eventi)
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay2/hls/playlist_mo.m3u8
-#EXTINF:-1 tvg-name="RaiPlay 3 (eventi)" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Rai" mediapolis="4761993",RaiPlay 3 (eventi)
+#EXTINF:-1 tvg-name="RaiPlay 3 (eventi)" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=RaiPlay%203%20%28eventi%29" group-title="Rai" mediapolis="4761993",RaiPlay 3 (eventi)
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay3/hls/playlist_mo.m3u8
-#EXTINF:-1 tvg-name="Rai generico" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Rai" medapolis="4118",Rai generic1
+#EXTINF:-1 tvg-name="Rai generico" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Rai%20generic1" group-title="Rai" medapolis="4118",Rai generic1
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raigeneric1/hls/playlist_mo.m3u8
-#EXTINF:-1 tvg-name="Rai generico" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Rai",Rai generic3
+#EXTINF:-1 tvg-name="Rai generico" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Rai%20generic3" group-title="Rai",Rai generic3
 #EXTVLCOPT:http-user-agent=rainet/4.0.8 (Linux;Android 14) ExoPlayerLib/2.18.0 #https://raigeneric3-dash-live.akamaized.net/dash/live/663989/raigeneric3/manifest.mpd
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raigeneric3/hls/playlist_mo.m3u8
-#EXTINF:-1 tvg-name="Rai Sport" tvg-id="RaiSport.it" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637310367694_1579883330343_rai-sport.png" tvg-chno="" channel-number="" group-title="Rai",Rai Sport 900p
+#EXTINF:-1 tvg-name="Rai Sport" tvg-id="RaiSport.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" tvg-chno="" channel-number="" group-title="Rai",Rai Sport 900p
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=7&forceUserAgent=tizen
@@ -721,11 +725,11 @@ https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay4/hls/raiplay4_2400/ch
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay5/hls/raiplay5_2400/chunklist.m3u8
 #EXTINF:-1 tvg-name="RaiPlaySport 3" tvg-id="" tvg-logo="https://www.raiplay.it/dl/img/2024/04/30/1714492239159_Canale3x.png" group-title="Rai",RaiPlaySport 3
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay6/hls/raiplay6_2400/chunklist.m3u8
-#EXTINF:-1 tvg-name="Rai test1" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Rai",Rai test1
+#EXTINF:-1 tvg-name="Rai test1" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Rai%20test1" group-title="Rai",Rai test1
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/test1/hls/playlist_mo.m3u8
-#EXTINF:-1 tvg-name="Rai test2" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Rai" mediapolis="24268",Rai test2
+#EXTINF:-1 tvg-name="Rai test2" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Rai%20test2" group-title="Rai" mediapolis="24268",Rai test2
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/test2/hls/playlist_mo.m3u8
-#EXTINF:-1 tvg-name="Rai test3" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Rai",Rai test3
+#EXTINF:-1 tvg-name="Rai test3" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Rai%20test3" group-title="Rai",Rai test3
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/test3/hls/playlist_mo.m3u8
 #EXTINF:-1 tvg-name="LIVE 1" tvg-id="GF.VIP.-.Regia.1.it" tvg-logo="https://img-prod-api2.mediasetplay.mediaset.it/api/images/cu/v3/aHR0cHM6Ly9zdGF0aWMyLm1lZGlhc2V0cGxheS5tZWRpYXNldC5pdC9tYW0vMjAyMy8wOS8wOC8xMzIxMjQ3MzgtNWNkNzY1NWQtOWNlZi00YzI3LTg5YTctMTYyYThkNmYxNzk2LnBuZw/editorial_image_channel_logo/80/80?r=2" tvg-chno="" group-title="Mediaset",GFVIP Regia 1
 https://live02-col.msf.cdn.mediaset.net/live/ch-b7/b7-clr.isml/index.m3u8
@@ -735,11 +739,11 @@ https://live02-col.msf.cdn.mediaset.net/live/ch-b8/b8-clr.isml/index.m3u8
 https://live02-col.msf.cdn.mediaset.net/live/ch-b9/b9-clr.isml/index.m3u8
 #EXTINF:-1 tvg-name="GFVIP - Open House" tvg-id="" tvg-logo="https://img-prod-api2.mediasetplay.mediaset.it/api/images/by/v5/ita/aHR0cHM6Ly9kYW0uY2xvdWQubWVkaWFzZXQubmV0L20vMzU2MjAxMGU3YmIzMWIzNS9vcmlnaW5hbC9HRlZJUC1sb2dvLWNhbmFsZS1vcGVuLWhvdXNlLnBuZw/single/80/80@2?r=" tvg-chno="" group-title="Mediaset",GFVIP - Open House
 https://live02-col.msf.cdn.mediaset.net/live/ch-b1/b1-clr.isml/index.m3u8
-#EXTINF:-1 tvg-name="Mediaset b2" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-chno="" group-title="Mediaset",Mediaset b2
+#EXTINF:-1 tvg-name="Mediaset b2" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Mediaset%20b2" tvg-chno="" group-title="Mediaset",Mediaset b2
 https://live02-col.msf.cdn.mediaset.net/live/ch-b2/b2-clr.isml/index.m3u8
-#EXTINF:-1 tvg-name="Mediaset b3" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-chno="" group-title="Mediaset",Mediaset b3
+#EXTINF:-1 tvg-name="Mediaset b3" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Mediaset%20b3" tvg-chno="" group-title="Mediaset",Mediaset b3
 https://live02-col.msf.cdn.mediaset.net/live/ch-b3/b3-clr.isml/index.m3u8
-#EXTINF:-1 tvg-name="Diretta" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Mediaset",Diretta
+#EXTINF:-1 tvg-name="Diretta" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Diretta" group-title="Mediaset",Diretta
 https://live02-col.msf.cdn.mediaset.net/live/ch-b4/b4-clr.isml/index.m3u8
 
 
@@ -769,58 +773,58 @@ https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8
 https://raigulp2-dash-live.akamaized.net/dash/live/663984/raigulp2/manifest.mpd
 #EXTINF:-1 tvg-name="Rai YoYo" tvg-id="RaiYoYo.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raiyoyo.png" tvg-chno="543" group-title="Connessioni a giga", Rai YoYo SD
 https://raiyoyo2-dash-live.akamaized.net/dash/live/663946/raiyoyo2/manifest.mpd
-#EXTINF:-1 tvg-name="TT-TELETUTTO BS" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-chno="" group-title="Altre tv", TT-TELETUTTO BS
+#EXTINF:-1 tvg-name="TT-TELETUTTO BS" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TELETUTTO%20BS" tvg-chno="" group-title="Altre tv", TT-TELETUTTO BS
 https://streamcdng10-3177cee185284d2990021eccc8b06ae6.msvdn.net/live/S55287570/tq6PELOcQoAf/playlist.m3u8
-#EXTINF:-1 tvg-name="Radiodueindie" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Radio", Radiodueindie
+#EXTINF:-1 tvg-name="Radiodueindie" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Radiodueindie" group-title="Radio", Radiodueindie
 https://radiodueindie-live.akamaized.net/hls/live/2032593/radiodueindie/radiodueindie/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-name="Radio OneDance" group-title="Radio", Radio OneDance
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20OneDance" tvg-name="Radio OneDance" group-title="Radio", Radio OneDance
 https://ice04.fluidstream.net/rn1_2.aac
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-name="Radio 906" group-title="Radio", Radio 906
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20906" tvg-name="Radio 906" group-title="Radio", Radio 906
 https://stream.rcs.revma.com/w231bbg39yuvv
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-name="Radio 906 italia" group-title="Radio", Radio 906 Italia
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20906%20Italia" tvg-name="Radio 906 italia" group-title="Radio", Radio 906 Italia
 https://stream.rcs.revma.com/8v44n4fqk2uvv
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-name="Radio Sunbeat" group-title="Radio", Radio Sunbeat
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Sunbeat" tvg-name="Radio Sunbeat" group-title="Radio", Radio Sunbeat
 https://stream.rcs.revma.com/2vke97f39yuvv
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-name="Radio 906 90/00" group-title="Radio", Radio 906 90/00
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20906%2090%2F00" tvg-name="Radio 906 90/00" group-title="Radio", Radio 906 90/00
 https://stream.rcs.revma.com/f29yes56dwuvv
 
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-chno="" channel-number="" group-title="RESTART Mediaset", Restart Rete 4
+#EXTINF:-1 tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20Rete%204" tvg-chno="" channel-number="" group-title="RESTART Mediaset", Restart Rete 4
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15
 https://www.mytivu.it/Application/Restart/Rete4-Restart.php
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart Italia 2
+#EXTINF:-1 tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20Italia%202" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart Italia 2
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15
 https://www.mytivu.it/Application/Restart/Italia2-Restart.php
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart La5
+#EXTINF:-1 tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20La5" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart La5
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15
 https://www.mytivu.it/Application/Restart/La5-Restart.php
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart Cine34
+#EXTINF:-1 tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20Cine34" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart Cine34
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15
 https://www.mytivu.it/Application/Restart/Cine34-Restart.php
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart Mediaset Extra
+#EXTINF:-1 tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20Mediaset%20Extra" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart Mediaset Extra
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15
 https://www.mytivu.it/Application/Restart/MediasetExtra-Restart.php
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart Focus
+#EXTINF:-1 tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20Focus" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart Focus
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15
 https://www.mytivu.it/Application/Restart/Focus-Restart.php
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart Iris
+#EXTINF:-1 tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20Iris" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart Iris
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15
 https://www.mytivu.it/Application/Restart/Iris-Restart.php
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart TOPCrime
+#EXTINF:-1 tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20TOPCrime" tvg-chno="" channel-number="" group-title="RESTART Mediaset",Restart TOPCrime
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15
@@ -907,11 +911,11 @@ https://d3k8wzt41aflvx.cloudfront.net/Mediaset_AU/Live.m3u8
 https://d3k8wzt41aflvx.cloudfront.net/MediasetEU/Live.m3u8
 #EXTINF:-1 tvg-logo="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/mw.png" group-title="Estero" tvg-id="Mediaset.Italia.-.America.it",Mediaset Italia - America
 https://d3k8wzt41aflvx.cloudfront.net/MediasetUSA/Live.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Estero",Rete Italia
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Rete%20Italia" group-title="Estero",Rete Italia
 https://d3k8wzt41aflvx.cloudfront.net/RETEITALIATV/Live.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Estero",RSI LA1 (VPN Svizzera)
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=RSI%20LA1%20%28VPN%20Svizzera%29" group-title="Estero",RSI LA1 (VPN Svizzera)
 https://viamotionhsi.netplus.ch/live/eds/rsila1hd/browser-HLS8/rsila1hd.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Estero",RSI LA2 (VPN Svizzera)
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=RSI%20LA2%20%28VPN%20Svizzera%29" group-title="Estero",RSI LA2 (VPN Svizzera)
 https://viamotionhsi.netplus.ch/live/eds/rsila2hd/browser-HLS8/rsila2hd.m3u8
 
 
@@ -959,25 +963,25 @@ https://tgrveneto-dash-live.akamaized.net/dash/live/2025616/tgrveneto/manifest.m
 https://tgrvaldaosta-dash-live.akamaized.net/dash/live/2025615/tgrvaldaosta/manifest.mpd
 
 
-#EXTINF:-1 group-title="Regionali" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg",TT-TTELETUTTO
+#EXTINF:-1 group-title="Regionali" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TTELETUTTO",TT-TTELETUTTO
 https://streamcdnf29-3177cee185284d2990021eccc8b06ae6.msvdn.net/live/S55287570/tq6PELOcQoAf/playlist.m3u8
-#EXTINF:-1 group-title="Regionali" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg",TT-TTELETUTTO 2
+#EXTINF:-1 group-title="Regionali" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TTELETUTTO%202",TT-TTELETUTTO 2
 https://streamcdnf33-3177cee185284d2990021eccc8b06ae6.msvdn.net/live/S75141837/T3wd5WoxAo4B/playlist.m3u8
-#EXTINF:-1 group-title="Regionali" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg",TT-TTELETUTTO 24
+#EXTINF:-1 group-title="Regionali" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TTELETUTTO%2024",TT-TTELETUTTO 24
 https://streamcdnf31-3177cee185284d2990021eccc8b06ae6.msvdn.net/live/S64637685/c2e0XXmwILE9/playlist.m3u8
-#EXTINF:-1 group-title="Regionali" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg",Più Valli TV
+#EXTINF:-1 group-title="Regionali" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Pi%C3%B9%20Valli%20TV",Più Valli TV
 https://5db313b643fd8.streamlock.net/piuvallitv/piuvallitv/playlist.m3u8
-#EXTINF:-1 group-title="Regionali" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg",Teleboario
+#EXTINF:-1 group-title="Regionali" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Teleboario",Teleboario
 https://router.xdevel.com/video0s976425-1205/stream/playlist_dvr.m3u8
-#EXTINF:-1 group-title="Regionali" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg",TeleTicino
+#EXTINF:-1 group-title="Regionali" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=TeleTicino",TeleTicino
 https://vstream-cdn.ch/hls/teleticino.m3u8
 #EXTINF:-1 tvg-logo="http://odmsto.com/uploads/tv_image/sm/gs-channel-95-retereggio.png" group-title="Regionali",GS Channel - TMC
 https://rst2.saiuzwebnetwork.it:8081/retereggio/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 group-title="Regionali" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg",Azzurra TV Italia
+#EXTINF:-1 group-title="Regionali" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Azzurra%20TV%20Italia",Azzurra TV Italia
 https://stream4.xdevel.com/video5s975955-1727/stream/chunks.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Regionali",Sicilia 242
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Sicilia%20242" group-title="Regionali",Sicilia 242
 https://5f22d76e220e1.streamlock.net/sicilia24/sicilia24/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg" group-title="Regionali",Retemia
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Retemia" group-title="Regionali",Retemia
 https://5db313b643fd8.streamlock.net/rete/rete/playlist.m3u8
 #EXTINF:-1 tvg-id="teleuniverso" tvg-name="TeleUniverso" tvg-logo="http://odmsto.com/uploads/tv_image/sm/teleuniverso.png" group-title="Regionali",TeleUniverso
 https://stream.ets-sistemi.it:19360/teleuniverso/teleuniverso.m3u8
@@ -1076,3 +1080,35 @@ https://videonola.aswifi.it/videonolaabr/live_hi/index.m3u8
 #EXTINF:-1 tvg-logo="https://www.opq.it/wp-content/uploads/BergamoTV.png" group-title="Regionali",Bergamo Tv
 https://streamcdng10-db142859fd5541b09de25d6507f1f2d3.msvdn.net/live/S17501676/oIxAsgEEA46M/chunklist_DVR.m3u8
 
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png" tvg-id="Nove.it" group-title="Discovery",NOVE backup 🔐
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=68b6ba1e6373339b9b2e8ed930f7e3ee:ddbeebe1601da5a71e82c3eeeaaddf7b
+https://pb-o0zu14lv7kvp9.akamaized.net/index.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/realtime.png" tvg-id="Real.Time.it" group-title="Discovery",RealTime backup 🔐
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=64144d4fd45734f8b196d157a983aa51:e6e0b229e3eb3b180b5a95bb799d8fae
+https://pb-96zvdrcpxomf6.akamaized.net/index.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/foodnetwork.png" tvg-id="Food.Network.it" group-title="Discovery",FoodNetwork backup 🔐
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5c79e43baeab341ea7f0bcb88800315b:b699bf3b417d1ea211cd3e421bb97f94
+https://pb-ikxuqadisnhot.akamaized.net/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/5IxIFJ0.png" tvg-id="Discovery.Channel.it" group-title="Discovery",Discovery backup 🔐
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=d86dca52a4ea3b48abfc3465f5a8f598:44d14af16a29ac4e6752cae7a3b80de1
+https://pb-n9406rwl5wx1t.akamaized.net/index.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/giallo.png" tvg-id="Giallo.TV.it" group-title="Discovery",Giallo backup 🔐
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=85859c74205a3deba0ff4dea73c30668:bdcef65a02400fabc1c5094df116d04a
+https://pb-vi6d4mucmrwpo.akamaized.net/index.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/dmax.png" tvg-id="DMAX.it" group-title="Discovery",DMAX backup 🔐
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=440f4a195636310bb77323685cffb487:7f6b97804e5ad4d41537f8db33bfbb57
+https://pb-lkmzny7qo98vp.akamaized.net/index.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/homegardentv.png" tvg-id="HGTV.it" group-title="Discovery",HGTV backup 🔐
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=f16b82552b7339ff831af7b7c6f0083c:2f9dc2c68113fe16c03b853ef5a3269c
+https://pb-06u3v3mpztvam.akamaized.net/index.m3u8
+#EXTINF:-1 tvg-logo="https://api.superguidatv.it/v1/channels/444/logo?width=300" tvg-id="Motor.Trend.it" group-title="Discovery",Turbo backup 🔐
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=baf19782749335f996e967915a6d0c7c:731737766d9bedf0c7a7a51ce2c2c69d
+https://pb-i5a8gbryxtlqs.akamaized.net/index.m3u8

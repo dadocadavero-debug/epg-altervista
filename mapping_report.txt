@@ -1,35 +1,20 @@
 Canali sorgente Altervista: 498
 Canali disponibili nell'EPG: 241
 Programmi disponibili nell'EPG: 26491
-Feed 🔐 sostituiti: 2
-Feed 🔐 rimossi: 8
-Canali/righe EXTINF modificate: 52
+Canali/righe EXTINF modificate: 60
 Match automatici univoci: 0
 ID già validi preservati: 84
-Loghi aggiunti/sostituiti: 162
-Loghi generici usati come ultima risorsa: 70
+Loghi aggiunti/sostituiti: 170
+Loghi generici usati come ultima risorsa: 62
 
-FEED 🔐 SOSTITUITI:
-- K2 🔐 -> stream pubblico alternativo
-- Frisbee 🔐 -> stream pubblico alternativo
-
-FEED 🔐 RIMOSSI:
-- NOVE backup 🔐
-- RealTime backup 🔐
-- FoodNetwork backup 🔐
-- Discovery backup 🔐
-- Giallo backup 🔐
-- DMAX backup 🔐
-- HGTV backup 🔐
-- Turbo backup 🔐
 NOVE | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png
 EuroNews Italia | PlutoEuronews.it -> Euronews.it | id:PlutoEuronews.it
 Real Time | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/realtime.png
 Food Network | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/foodnetwork.png
 Discovery | logo sostituito -> https://i.imgur.com/5IxIFJ0.png
 Giallo | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/giallo.png
-K2 | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/k2.png
-Frisbee | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/frisbee.png
+K2 🔐 | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/k2.png
+Frisbee 🔐 | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/frisbee.png
 Sky TG24 SD | (vuoto) -> Sky.TG24.it | nome-verificato
 Sky TG24 SD | logo aggiunto -> https://guidatv.sky.it/logo/521skytg24_Light_Fit.png?checksum=da35dbfe-8079-4ba1-adcb-fa9e2cfe3392?tr=n-logo_80
 DMAX | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/dmax.png
@@ -38,28 +23,28 @@ Solocalcio | ITBC4700002CO -> Solocalcio.it.it | id:ITBC4700002CO
 Radio 105 TV | (vuoto) -> Radio.105.it | nome-verificato
 Deejay TV | logo aggiunto -> https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80
 Radio Italia TV | logo aggiunto -> https://guidatv.sky.it/logo/5454radioitaliatvhd_Light_Fit.png?checksum=9cc02777-f1a0-44f1-a432-a1de036be5b7?tr=n-logo_80
-Elisa di Rivombrosa | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+Elisa di Rivombrosa | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Elisa%20di%20Rivombrosa
 Fashion TV | RakutenFashionTv.it -> Fashion.TV.it | id:RakutenFashionTv.it
 Donna tv | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/donnatv.png
-LA7 eventi live | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-LA7 agenzie? | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Iunior TV | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-EURO TV | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-SuperSIX | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+LA7 eventi live | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=LA7%20eventi%20live
+LA7 agenzie? | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=LA7%20agenzie%3F
+Iunior TV | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Iunior%20TV
+EURO TV | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=EURO%20TV
+SuperSIX | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=SuperSIX
 BOM CHANNEL | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/bomchannel.png
 QVC Italia | qvcitalia -> QVC.it | id:qvcitalia
 QVC Italia | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/qvc.png
 Class CNBC | (vuoto) -> Class.CNBC.it | nome-verificato
 Class CNBC | logo aggiunto -> https://guidatv.sky.it/logo/433classcnbc_Light_Fit.png?checksum=5d79825c-e37a-4e81-8e9a-69ea5593279e?tr=n-logo_80
-Zerouno Tv News | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+Zerouno Tv News | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Zerouno%20Tv%20News
 Supertennis+ 1 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
 Supertennis+ 2 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
 Supertennis+ 3 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
 Supertennis+ 4 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
 Inter TV | (vuoto) -> Inter.TV.it | nome-verificato
-Inter TV | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+Inter TV | logo aggiunto -> https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/inter-tv-it.png
 Lazio Style TV | logo aggiunto -> https://www.tvdream.net/img/lazio-style-tv.png
-SportOutdoor.Tv | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+SportOutdoor.Tv | logo aggiunto -> https://www.google.com/s2/favicons?domain=sportoutdoor.tv&sz=256
 F1 TV | logo aggiunto -> https://statics.quattroruote.it/content/dam/quattroruote/it/news/sport/2018/03/02/formula_1_liberty_media_lancia_lo_streaming_online_nasce_f1_tv_/gallery/rsmall/f1-tv-formula-1-3.jpg
 ACI Sport TV | AciSportTV.it -> ACI.Sport.Tv.it | id:AciSportTV.it
 ACI Sport TV | logo aggiunto -> https://i.imgur.com/U8cHMOt.png
@@ -68,35 +53,35 @@ Rally TV | logo aggiunto -> https://i.postimg.cc/WtLq2C7c/logo-Rally-Tv1.png
 TOP Calcio 24 | logo aggiunto -> https://i.imgur.com/DnVPKPE.png
 RedBull TV | logo aggiunto -> https://www.redbull.com/cs/RedBull2/images/branding/redbull-tv-logo-2x.png
 BIKE | bikesmartmobility -> BIKE.it | id:bikesmartmobility
-BIKE | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+BIKE | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=BIKE
 Solocalcio (25fps) | ITBC4700002CO -> Solocalcio.it.it | id:ITBC4700002CO
-UNBEATEN | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-FUBO Sports | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-FF Motorsport | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-EQU TV | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Rai Sport jolly 1 (attivo raramente) | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Rai Sport jolly 2 (attivo raramente) | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Vevo 2K | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-RadioWOW | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-DJOssoTV | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-PiterPan TV | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Radio Studiopiù | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+UNBEATEN | logo aggiunto -> https://i.imgur.com/LmkNt3v.png
+FUBO Sports | logo aggiunto -> https://i.imgur.com/qFNRJLb.png
+FF Motorsport | logo aggiunto -> https://www.google.com/s2/favicons?domain=ffmotorsport.it&sz=256
+EQU TV | logo aggiunto -> https://www.google.com/s2/favicons?domain=eqtv.it&sz=256
+Rai Sport jolly 1 (attivo raramente) | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png
+Rai Sport jolly 2 (attivo raramente) | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png
+Vevo 2K | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Vevo%202K
+RadioWOW | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=RadioWOW
+DJOssoTV | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=DJOssoTV
+PiterPan TV | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=PiterPan%20TV
+Radio Studiopiù | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Studiopi%C3%B9
 Radio Zeta TV | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/radiozetatv.png
 Radio Freccia | (vuoto) -> RADIOFRECCIA.HD.it | nome-verificato
 Radio Freccia | logo aggiunto -> https://guidatv.sky.it/logo/5465radiofrecciahd_Light_Fit.png?checksum=a2e0135c4b8958cb151b619397abb6a0?tr=n-logo_80
 Radio Capital TV | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/radiocapitaltv.png
-Radio Number ONE | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+Radio Number ONE | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Number%20ONE
 Radio Norba | (vuoto) -> RADIONORBA.TV.it | nome-verificato
-Demo 4K | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Xite | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-ZeroUno Tv | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-RSO Radio | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Radio Popizz | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Radio Marte Tv | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Studiopiù 60/70/80 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Radio 80 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Radio Bellla e Monella TV | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-CasaSanremo | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+Demo 4K | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Demo%204K
+Xite | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Xite
+ZeroUno Tv | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=ZeroUno%20Tv
+RSO Radio | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=RSO%20Radio
+Radio Popizz | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Popizz
+Radio Marte Tv | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Marte%20Tv
+Studiopiù 60/70/80 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Studiopi%C3%B9%2060%2F70%2F80
+Radio 80 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%2080
+Radio Bellla e Monella TV | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Bellla%20e%20Monella%20T
+CasaSanremo | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=CasaSanremo
 Rai 1 900p | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png
 Rai 2 (hls) | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png
 Rai 3 (900 dash) | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png
@@ -130,23 +115,23 @@ rai scuola HbbTV raiway | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11
 rai storia HbbTV raiway | (vuoto) -> RaiStoria.it | nome-verificato
 rai storia HbbTV raiway | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637309830740_1579882284354_rai-storia.png
 rai sport HbbTV raiway | (vuoto) -> RaiSport.it | nome-verificato
-rai sport HbbTV raiway | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637310367694_1579883330343_rai-sport.png
-RaiPlay (eventi) | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-RaiPlay 2 (eventi) | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-RaiPlay 3 (eventi) | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Rai generic1 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Rai generic3 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+rai sport HbbTV raiway | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png
+RaiPlay (eventi) | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=RaiPlay%20%28eventi%29
+RaiPlay 2 (eventi) | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=RaiPlay%202%20%28eventi%29
+RaiPlay 3 (eventi) | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=RaiPlay%203%20%28eventi%29
+Rai generic1 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Rai%20generic1
+Rai generic3 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Rai%20generic3
 Rai Sport 900p | (vuoto) -> RaiSport.it | nome-verificato
-Rai Sport 900p | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637310367694_1579883330343_rai-sport.png
-Rai test1 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Rai test2 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Rai test3 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+Rai Sport 900p | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png
+Rai test1 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Rai%20test1
+Rai test2 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Rai%20test2
+Rai test3 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Rai%20test3
 GFVIP Regia 1 | (vuoto) -> GF.VIP.-.Regia.1.it | nome-verificato
 GFVIP Regia 2 | (vuoto) -> GF.VIP.-.Regia.2.it | nome-verificato
 GFVIP Un'ora fa | (vuoto) -> GF.VIP.-.Un’ora.fa.it | nome-verificato
-Mediaset b2 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Mediaset b3 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Diretta | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+Mediaset b2 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Mediaset%20b2
+Mediaset b3 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Mediaset%20b3
+Diretta | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Diretta
 Rai 1 | rai 1 -> Rai1.it | id:rai 1
 Rai 1 | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png
 Rai 2 | rai 2 -> Rai2.it | id:rai 2
@@ -166,21 +151,21 @@ Rai 4 | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662992107Logo
 Cielo SD | logo aggiunto -> https://guidatv.sky.it/logo/120cielo_Light_Fit.png?checksum=0e2ccaf0-752f-44f6-b273-9aad1e4edadf?tr=n-logo_80
 Rai Gulp SD | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raigulp.png
 Rai YoYo SD | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raiyoyo.png
-TT-TELETUTTO BS | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Radiodueindie | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Radio OneDance | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Radio 906 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Radio 906 Italia | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Radio Sunbeat | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Radio 906 90/00 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Restart Rete 4 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Restart Italia 2 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Restart La5 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Restart Cine34 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Restart Mediaset Extra | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Restart Focus | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Restart Iris | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Restart TOPCrime | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+TT-TELETUTTO BS | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TELETUTTO%20BS
+Radiodueindie | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radiodueindie
+Radio OneDance | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20OneDance
+Radio 906 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20906
+Radio 906 Italia | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20906%20Italia
+Radio Sunbeat | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Sunbeat
+Radio 906 90/00 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20906%2090%2F00
+Restart Rete 4 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20Rete%204
+Restart Italia 2 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20Italia%202
+Restart La5 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20La5
+Restart Cine34 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20Cine34
+Restart Mediaset Extra | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20Mediaset%20Extra
+Restart Focus | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20Focus
+Restart Iris | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20Iris
+Restart TOPCrime | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Restart%20TOPCrime
 Rai 1 Europa | (vuoto) -> Rai1.it | nome-verificato
 Rai 1 Europa | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png
 Rai 1 | (vuoto) -> Rai1.it | nome-verificato
@@ -223,16 +208,32 @@ RAI News 24 Europa HD | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPT
 Mediaset Italia - Australia e Asia | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/mg.png
 Mediaset Italia - Europa e Africa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/my.png
 Mediaset Italia - America | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/mw.png
-Rete Italia | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-RSI LA1 (VPN Svizzera) | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-RSI LA2 (VPN Svizzera) | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-TT-TTELETUTTO | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-TT-TTELETUTTO 2 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-TT-TTELETUTTO 24 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Più Valli TV | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Teleboario | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-TeleTicino | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Azzurra TV Italia | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Sicilia 242 | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
-Retemia | logo generico aggiunto -> https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg
+Rete Italia | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Rete%20Italia
+RSI LA1 (VPN Svizzera) | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=RSI%20LA1%20%28VPN%20Svizzera%29
+RSI LA2 (VPN Svizzera) | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=RSI%20LA2%20%28VPN%20Svizzera%29
+TT-TTELETUTTO | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TTELETUTTO
+TT-TTELETUTTO 2 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TTELETUTTO%202
+TT-TTELETUTTO 24 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TTELETUTTO%2024
+Più Valli TV | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Pi%C3%B9%20Valli%20TV
+Teleboario | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Teleboario
+TeleTicino | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=TeleTicino
+Azzurra TV Italia | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Azzurra%20TV%20Italia
+Sicilia 242 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Sicilia%20242
+Retemia | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Retemia
 TG Norba 24 | tg norba 24 -> TG.NORBA.24.it | id:tg norba 24
+NOVE backup 🔐 | (vuoto) -> Nove.it | nome-verificato
+NOVE backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png
+RealTime backup 🔐 | (vuoto) -> Real.Time.it | nome-verificato
+RealTime backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/realtime.png
+FoodNetwork backup 🔐 | (vuoto) -> Food.Network.it | nome-verificato
+FoodNetwork backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/foodnetwork.png
+Discovery backup 🔐 | (vuoto) -> Discovery.Channel.it | nome-verificato
+Discovery backup 🔐 | logo aggiunto -> https://i.imgur.com/5IxIFJ0.png
+Giallo backup 🔐 | (vuoto) -> Giallo.TV.it | nome-verificato
+Giallo backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/giallo.png
+DMAX backup 🔐 | (vuoto) -> DMAX.it | nome-verificato
+DMAX backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/dmax.png
+HGTV backup 🔐 | (vuoto) -> HGTV.it | nome-verificato
+HGTV backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/homegardentv.png
+Turbo backup 🔐 | (vuoto) -> Motor.Trend.it | nome-verificato
+Turbo backup 🔐 | logo aggiunto -> https://api.superguidatv.it/v1/channels/444/logo?width=300
