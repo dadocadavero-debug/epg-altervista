@@ -3,6 +3,7 @@ import gzip
 import re
 import unicodedata
 import urllib.request
+from urllib.parse import quote
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -87,12 +88,6 @@ RAI_WORKING_STREAMS = {
     "Rai 3": "https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8",
 }
 
-# Stream pubblici alternativi per canali che nella sorgente Altervista
-# possono comparire solo come feed contrassegnati con 🔐.
-LOCKED_STREAM_REPLACEMENTS = {
-    "k2": "https://d1pmpe0hs35ka5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-39hsskpppgf72/K2_IT.m3u8",
-    "frisbee": "https://d6m7lubks416z.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zmbstsedxme9s/Frisbee_IT.m3u8",
-}
 
 TECH_WORDS = {
     "hd", "sd", "hls", "dash", "hbbtv", "raiway", "akamai", "backup", "fps", "europa",
@@ -141,6 +136,20 @@ LOGO_MAP = {
     "supertennis+ 2": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
     "supertennis+ 3": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
     "supertennis+ 4": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
+
+    "inter tv": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/inter-tv-it.png",
+    "tennis channel": "https://i.imgur.com/tsljAnY.png",
+    "tennis channel 2": "https://i.imgur.com/tsljAnY.png",
+    "unbeaten": "https://i.imgur.com/LmkNt3v.png",
+    "fubo sports": "https://i.imgur.com/qFNRJLb.png",
+    "fubo sports network": "https://i.imgur.com/qFNRJLb.png",
+    "rai sport": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png",
+    "rai sport jolly 1": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png",
+    "rai sport jolly 2": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png",
+    "sportoutdoor": "https://www.google.com/s2/favicons?domain=sportoutdoor.tv&sz=256",
+    "sportoutdoor tv": "https://www.google.com/s2/favicons?domain=sportoutdoor.tv&sz=256",
+    "ff motorsport": "https://www.google.com/s2/favicons?domain=ffmotorsport.it&sz=256",
+    "equ tv": "https://www.google.com/s2/favicons?domain=eqtv.it&sz=256",
 }
 
 
@@ -165,21 +174,74 @@ def logo_key(name: str) -> str:
     return " ".join(toks)
 
 
+
+def logo_lookup_name(name: str) -> str:
+    """
+    Normalizzazione SOLO per cercare il logo.
+    Non modifica mai il nome visualizzato del canale nella M3U.
+    """
+    n = norm(name)
+
+    # Elimina solo qualificatori informativi/tecnici dalla chiave di ricerca.
+    # Esempi:
+    # "Sky Sport (non sempre attivo)" -> "sky sport"
+    # "Sport Italia (25fps)" -> "sport italia"
+    # "Rai Sport jolly 1 (attivo raramente)" -> "rai sport jolly 1"
+    phrases = [
+        "non sempre attivo",
+        "attivo raramente",
+        "25fps",
+        "50fps",
+    ]
+    for phrase in phrases:
+        n = re.sub(rf"\b{re.escape(phrase)}\b", " ", n)
+
+    n = re.sub(r"\s+", " ", n).strip()
+    return n
+
+
+def channel_specific_fallback_logo(name: str) -> str:
+    """
+    Ultima risorsa: crea un'immagine PNG diversa per ogni canale
+    con il nome del canale. Così nessun canale resta senza immagine
+    e non appare più la stessa icona TV generica per tutti.
+    """
+    label = name.strip() or "TV"
+    return (
+        "https://placehold.co/256x256/202020/FFFFFF.png?text="
+        + quote(label[:24], safe="")
+    )
+
+
 def best_logo_for_name(name: str, learned: dict) -> str:
     n = norm(name)
     k = logo_key(name)
-    if k in learned:
-        return learned[k]
-    if n in learned:
-        return learned[n]
-    if k in LOGO_MAP:
-        return LOGO_MAP[k]
-    if n in LOGO_MAP:
-        return LOGO_MAP[n]
-    # fallback per varianti tipo "nove backup", "rai 1 hbbtv", ecc.
+    lookup = logo_lookup_name(name)
+    lookup_key = logo_key(lookup)
+
+    # Prima prova le chiavi ripulite, ma senza cambiare il nome reale del canale.
+    for candidate in (lookup, lookup_key, k, n):
+        if candidate and candidate in learned:
+            return learned[candidate]
+        if candidate and candidate in LOGO_MAP:
+            return LOGO_MAP[candidate]
+
+    # Varianti numerate che devono condividere il logo principale.
+    if lookup.startswith("tennis channel "):
+        return LOGO_MAP.get("tennis channel", "")
+    if lookup.startswith("rai sport jolly "):
+        return LOGO_MAP.get("rai sport", "")
+
+    # Fallback per varianti tipo "nove backup", "rai 1 hbbtv", ecc.
     for base, url in LOGO_MAP.items():
-        if k == base or k.startswith(base + " "):
+        if (
+            lookup == base
+            or lookup.startswith(base + " ")
+            or lookup_key == base
+            or lookup_key.startswith(base + " ")
+        ):
             return url
+
     return ""
 
 
@@ -242,113 +304,9 @@ def fix_primary_rai_streams(lines):
 
 
 
+
 def channel_name_from_extinf(extinf: str) -> str:
     return extinf.rsplit(",", 1)[-1].strip() if "," in extinf else ""
-
-
-def remove_lock_from_extinf(extinf: str) -> str:
-    # Rimuove solo il simbolo grafico dal nome/metadata lasciando intatto il resto.
-    extinf = extinf.replace("🔐", "")
-    extinf = re.sub(r"\s{2,}", " ", extinf)
-    return extinf.strip()
-
-
-def locked_base_name(name: str) -> str:
-    """
-    Nome logico usato per capire se esiste già la versione normale
-    dello stesso canale. Rimuove 🔐 e la parola 'backup'.
-    """
-    n = name.replace("🔐", " ")
-    n = re.sub(r"\bbackup\b", " ", n, flags=re.IGNORECASE)
-    return norm(n)
-
-
-def split_channel_blocks(lines):
-    """
-    Divide la playlist in blocchi:
-      #EXTINF
-      eventuali #EXTVLCOPT / opzioni
-      URL
-    Le righe globali fuori da un blocco vengono mantenute separatamente.
-    """
-    blocks = []
-    prefix = []
-    current = None
-
-    for line in lines:
-        if line.startswith("#EXTINF"):
-            if current is not None:
-                blocks.append(current)
-            current = [line]
-        elif current is not None:
-            current.append(line)
-        else:
-            prefix.append(line)
-
-    if current is not None:
-        blocks.append(current)
-
-    return prefix, blocks
-
-
-def clean_locked_channels(lines):
-    """
-    Gestisce automaticamente i feed 🔐:
-
-    - se è un backup 🔐 e c'è già una versione normale dello stesso canale:
-      rimuove il backup;
-    - se è K2 o Frisbee 🔐:
-      sostituisce il feed con lo stream pubblico noto e rimuove il lucchetto;
-    - se è un altro feed 🔐 ma esiste già una versione normale equivalente:
-      rimuove il duplicato bloccato;
-    - se è l'unica versione disponibile e non abbiamo un'alternativa verificata:
-      lo mantiene, per non perdere accidentalmente un canale.
-    """
-    prefix, blocks = split_channel_blocks(lines)
-
-    unlocked_bases = set()
-    for block in blocks:
-        extinf = block[0]
-        name = channel_name_from_extinf(extinf)
-        if "🔐" not in extinf and "🔐" not in name:
-            unlocked_bases.add(locked_base_name(name))
-
-    cleaned = []
-    removed = []
-    replaced = []
-
-    for block in blocks:
-        extinf = block[0]
-        name = channel_name_from_extinf(extinf)
-        is_locked = "🔐" in extinf or "🔐" in name
-
-        if not is_locked:
-            cleaned.extend(block)
-            continue
-
-        base = locked_base_name(name)
-        is_backup = "backup" in norm(name)
-
-        # K2 / Frisbee: sostituiamo il feed bloccato con uno pubblico noto.
-        replacement_url = LOCKED_STREAM_REPLACEMENTS.get(base)
-        if replacement_url:
-            new_extinf = remove_lock_from_extinf(extinf)
-            cleaned.append(new_extinf)
-            cleaned.append(replacement_url)
-            replaced.append(f"{name} -> stream pubblico alternativo")
-            continue
-
-        # Backup bloccato o altro duplicato bloccato con equivalente normale:
-        # non serve nella playlist finale.
-        if is_backup or base in unlocked_bases:
-            removed.append(name)
-            continue
-
-        # Caso prudente: unico feed disponibile e nessuna alternativa verificata.
-        cleaned.extend(block)
-
-    return prefix + cleaned, removed, replaced
-
 
 
 def load_external_logo_index():
@@ -476,9 +434,6 @@ def main():
     lines = m3u.splitlines()
     lines = fix_primary_rai_streams(lines)
 
-    # Pulisce automaticamente i feed contrassegnati con 🔐.
-    lines, locked_removed, locked_replaced = clean_locked_channels(lines)
-
     # Rimuove tutte le intestazioni #EXTM3U della sorgente.
     # Ne generiamo una nostra unica e consistente più sotto.
     lines = [
@@ -522,7 +477,7 @@ def main():
     )
 
     # =========================================================
-    # 6. ELABORA I CANALI
+    # 6. ELABORA I CANALI (backup e feed 🔐 originali vengono mantenuti)
     # =========================================================
     for line in lines:
         if not line.startswith("#EXTINF"):
@@ -584,9 +539,10 @@ def main():
         # 3) logo già imparato da un duplicato/variante
         # 4) catalogo loghi supplementare
         # 5) logo EPG ricavato dal nome
-        # 6) icona TV generica come ultima risorsa
+        # 6) immagine personalizzata col nome del canale come ultima risorsa
         current_logo = get_tvg_logo(line)
         bad_logo = "eu1-prod-images.disco-api.com" in current_logo
+        old_generic_logo = current_logo == FALLBACK_LOGO_URL
 
         explicit_logo = (
             LOGO_MAP.get(logo_key(name))
@@ -626,14 +582,14 @@ def main():
             or learned_logo
             or external_logo
             or epg_name_logo
-            or FALLBACK_LOGO_URL
+            or channel_specific_fallback_logo(name)
         )
 
-        if not current_logo or bad_logo:
+        if not current_logo or bad_logo or old_generic_logo:
             line = set_tvg_logo(line, wanted_logo)
             logos_added += 1
 
-            if wanted_logo == FALLBACK_LOGO_URL:
+            if wanted_logo.startswith("https://placehold.co/"):
                 generic_logos += 1
                 report.append(
                     f"{name} | logo generico aggiunto -> {wanted_logo}"
@@ -653,28 +609,16 @@ def main():
         encoding="utf-8"
     )
 
-    lock_report = []
-    if locked_replaced:
-        lock_report.append("FEED 🔐 SOSTITUITI:")
-        lock_report.extend(f"- {item}" for item in locked_replaced)
-        lock_report.append("")
-    if locked_removed:
-        lock_report.append("FEED 🔐 RIMOSSI:")
-        lock_report.extend(f"- {item}" for item in locked_removed)
-        lock_report.append("")
 
     OUT_REPORT.write_text(
         f"Canali sorgente Altervista: {source_channels}\n"
         f"Canali disponibili nell'EPG: {channel_count}\n"
         f"Programmi disponibili nell'EPG: {programme_count}\n"
-        f"Feed 🔐 sostituiti: {len(locked_replaced)}\n"
-        f"Feed 🔐 rimossi: {len(locked_removed)}\n"
         f"Canali/righe EXTINF modificate: {changed}\n"
         f"Match automatici univoci: {auto}\n"
         f"ID già validi preservati: {preserved}\n"
         f"Loghi aggiunti/sostituiti: {logos_added}\n"
         f"Loghi generici usati come ultima risorsa: {generic_logos}\n\n"
-        + "\n".join(lock_report)
         + "\n".join(report)
         + "\n",
         encoding="utf-8",
@@ -688,10 +632,6 @@ def main():
     )
     print(
         f"EPG: {channel_count} canali, {programme_count} programmi"
-    )
-    print(
-        f"Feed 🔐: {len(locked_replaced)} sostituiti, "
-        f"{len(locked_removed)} rimossi"
     )
     print(f"Report: {OUT_REPORT}")
 
