@@ -136,6 +136,11 @@ LOGO_MAP = {
     "supertennis+ 2": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
     "supertennis+ 3": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
     "supertennis+ 4": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
+    "supertennis plus 1": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
+    "supertennis plus 2": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
+    "supertennis plus 3": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
+    "supertennis plus 4": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
+    "supertennis plus": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
 
     "inter tv": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/inter-tv-it.png",
     "tennis channel": "https://i.imgur.com/tsljAnY.png",
@@ -542,7 +547,10 @@ def main():
         # 6) immagine personalizzata col nome del canale come ultima risorsa
         current_logo = get_tvg_logo(line)
         bad_logo = "eu1-prod-images.disco-api.com" in current_logo
-        old_generic_logo = current_logo == FALLBACK_LOGO_URL
+        old_generic_logo = (
+            current_logo == FALLBACK_LOGO_URL
+            or current_logo.startswith("https://placehold.co/")
+        )
 
         explicit_logo = (
             LOGO_MAP.get(logo_key(name))
@@ -550,7 +558,12 @@ def main():
         )
 
         # Tutti i feed Supertennis+ usano il logo ufficiale di SuperTennis.
-        if norm(name).startswith("supertennis+"):
+        normalized_name = norm(name)
+        if (
+            normalized_name.startswith("supertennis plus")
+            or normalized_name.startswith("supertennis ")
+            or normalized_name == "super tennis"
+        ):
             explicit_logo = LOGO_MAP["supertennis"]
 
         effective_id_match = re.search(r'tvg-id="([^"]*)"', line)
@@ -585,7 +598,14 @@ def main():
             or channel_specific_fallback_logo(name)
         )
 
-        if not current_logo or bad_logo or old_generic_logo:
+        should_replace_logo = (
+            not current_logo
+            or bad_logo
+            or old_generic_logo
+            or (explicit_logo and current_logo != explicit_logo)
+        )
+
+        if should_replace_logo:
             line = set_tvg_logo(line, wanted_logo)
             logos_added += 1
 
