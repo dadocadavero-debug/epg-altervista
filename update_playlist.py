@@ -90,8 +90,8 @@ RAI_WORKING_STREAMS = {
 # Stream pubblici alternativi per canali che nella sorgente Altervista
 # possono comparire solo come feed contrassegnati con 🔐.
 LOCKED_STREAM_REPLACEMENTS = {
-    "k2": "https://amg16146-wbdi-amg16146c6-samsung-it-1839.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-k2-samsungit/playlist.m3u8",
-    "frisbee": "https://amg16146-wbdi-amg16146c7-samsung-it-1840.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-frisbee-samsungit/playlist.m3u8",
+    "k2": "https://d1pmpe0hs35ka5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-39hsskpppgf72/K2_IT.m3u8",
+    "frisbee": "https://d6m7lubks416z.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zmbstsedxme9s/Frisbee_IT.m3u8",
 }
 
 TECH_WORDS = {
