@@ -67,6 +67,7 @@ NAME_MAP = {
     "gfvip regia 1": "GF.VIP.-.Regia.1.it",
     "gfvip regia 2": "GF.VIP.-.Regia.2.it",
     "gfvip un ora fa": "GF.VIP.-.Un’ora.fa.it",
+
     # HbbTV Rai: stessa programmazione del canale lineare.
     "rai premium hbbtv akamai": "RaiPremium.it",
     "rai movie hbbtv raiway": "RaiMovie.it",
@@ -88,7 +89,6 @@ TECH_WORDS = {
     "hd", "sd", "hls", "dash", "hbbtv", "raiway", "akamai", "backup", "fps", "europa",
     "900p", "720p", "1080p", "4k", "uhd", "tv", "italia", "🔐",
 }
-
 
 # Loghi manuali per canali/varianti che spesso arrivano senza tvg-logo.
 # Gli URL sono centralizzati qui per poterli aggiornare facilmente.
@@ -134,23 +134,27 @@ LOGO_MAP = {
     "supertennis+ 4": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png",
 }
 
+
 def set_tvg_logo(extinf: str, logo_url: str) -> str:
     if re.search(r'tvg-logo="[^"]*"', extinf):
         return re.sub(r'tvg-logo="[^"]*"', f'tvg-logo="{logo_url}"', extinf, count=1)
     pos = extinf.find(" ")
     if pos != -1:
-        return extinf[:pos+1] + f'tvg-logo="{logo_url}" ' + extinf[pos+1:]
+        return extinf[:pos + 1] + f'tvg-logo="{logo_url}" ' + extinf[pos + 1:]
     return extinf
+
 
 def get_tvg_logo(extinf: str) -> str:
     m = re.search(r'tvg-logo="([^"]*)"', extinf)
     return m.group(1).strip() if m else ""
+
 
 def logo_key(name: str) -> str:
     n = norm(name)
     # rimuove qualificatori tecnici ma preserva il nome base
     toks = [t for t in n.split() if t not in TECH_WORDS and not re.fullmatch(r"\d+p", t)]
     return " ".join(toks)
+
 
 def best_logo_for_name(name: str, learned: dict) -> str:
     n = norm(name)
@@ -191,81 +195,134 @@ def stripped_norm(s: str) -> str:
 def set_tvg_id(extinf: str, new_id: str) -> str:
     if re.search(r'tvg-id="[^"]*"', extinf):
         return re.sub(r'tvg-id="[^"]*"', f'tvg-id="{new_id}"', extinf, count=1)
-    # inserisce subito dopo #EXTINF durata
-    comma = extinf.find(" ")
-    if comma != -1:
-        return extinf[:comma+1] + f'tvg-id="{new_id}" ' + extinf[comma+1:]
-    return extinf
 
+    # inserisce subito dopo #EXTINF durata
+    pos = extinf.find(" ")
+    if pos != -1:
+        return extinf[:pos + 1] + f'tvg-id="{new_id}" ' + extinf[pos + 1:]
+    return extinf
 
 
 def fix_primary_rai_streams(lines):
     out = []
     i = 0
+
     while i < len(lines):
         line = lines[i]
+
         if line.startswith("#EXTINF") and 'group-title="Rai"' in line:
             name = line.rsplit(",", 1)[-1].strip() if "," in line else ""
+
             if name in RAI_WORKING_STREAMS:
                 out.append(line)
                 i += 1
-                # Salta opzioni/URL originali fino alla prossima EXTINF,
-                # mantenendo commenti globali solo se necessari.
+
+                # Salta opzioni/URL originali fino alla prossima EXTINF.
                 while i < len(lines) and not lines[i].startswith("#EXTINF"):
                     if lines[i].startswith("#EXTM3U"):
                         out.append(lines[i])
                     i += 1
+
                 out.append(RAI_WORKING_STREAMS[name])
                 continue
+
         out.append(line)
         i += 1
+
     return out
 
+
 def main():
+    # =========================================================
+    # 1. SCARICA E CONTROLLA LA PLAYLIST SORGENTE
+    # =========================================================
     m3u = fetch(M3U_URL).decode("utf-8", errors="replace")
+
+    # Protezione: se Altervista restituisce temporaneamente una
+    # playlist vuota/incompleta, NON generiamo una tv_epg.m3u vuota.
+    source_channels = m3u.count("#EXTINF")
+    if source_channels < 50:
+        raise RuntimeError(
+            f"Playlist Altervista incompleta: trovati solo {source_channels} canali. "
+            "Aggiornamento annullato; viene mantenuta la tv_epg.m3u precedente."
+        )
+
+    # =========================================================
+    # 2. SCARICA E CONTROLLA L'EPG
+    # =========================================================
     epg_raw = fetch(EPG_URL)
+
     try:
         epg_xml = gzip.decompress(epg_raw)
     except OSError:
         epg_xml = epg_raw
+
     root = ET.fromstring(epg_xml)
 
+    channel_count = len(root.findall("channel"))
+    programme_count = len(root.findall("programme"))
+
+    # Protezione: evita di lavorare con un EPG accidentalmente
+    # vuoto o gravemente incompleto.
+    if channel_count < 20 or programme_count < 1000:
+        raise RuntimeError(
+            f"EPG incompleto: {channel_count} canali, {programme_count} programmi. "
+            "Aggiornamento annullato; viene mantenuta la playlist precedente."
+        )
+
+    # =========================================================
+    # 3. INDICIZZA GLI ID E I NOMI PRESENTI NELL'EPG
+    # =========================================================
     epg_ids = set()
     names_to_ids = {}
     stripped_to_ids = {}
+
     for ch in root.findall("channel"):
         cid = ch.get("id") or ""
         if not cid:
             continue
+
         epg_ids.add(cid)
+
         for dn in ch.findall("display-name"):
             if not dn.text:
                 continue
+
             n = norm(dn.text)
             sn = stripped_norm(dn.text)
+
             names_to_ids.setdefault(n, set()).add(cid)
+
             if sn:
                 stripped_to_ids.setdefault(sn, set()).add(cid)
 
+    # =========================================================
+    # 4. PREPARA LA PLAYLIST
+    # =========================================================
     lines = m3u.splitlines()
     lines = fix_primary_rai_streams(lines)
 
-    # Rimuove eventuali intestazioni EXT M3U duplicate
+    # Rimuove tutte le intestazioni #EXTM3U della sorgente.
+    # Ne generiamo una nostra unica e consistente più sotto.
     lines = [
         line for line in lines
         if not line.lstrip("\ufeff").startswith("#EXTM3U")
     ]
-    
+
     # Impara i loghi già presenti nella playlist Altervista per riusarli
     # automaticamente sui duplicati/backup dello stesso canale.
     learned_logos = {}
+
     for src_line in lines:
         if not src_line.startswith("#EXTINF"):
             continue
+
         src_name = src_line.rsplit(",", 1)[-1].strip() if "," in src_line else ""
         src_logo = get_tvg_logo(src_line)
+
         if src_logo:
             learned_logos.setdefault(norm(src_name), src_logo)
+
             lk = logo_key(src_name)
             if lk:
                 learned_logos.setdefault(lk, src_logo)
@@ -277,49 +334,59 @@ def main():
     preserved = 0
     logos_added = 0
 
-    # Imposta EPGShare direttamente nell'header senza toccare altre opzioni.
-    if lines and lines[0].startswith("#EXTM3U"):
-        header = re.sub(r'\s+x-tvg-url="[^"]*"', '', lines[0])
-        header += f' x-tvg-url="{EPG_URL}"'
-        out.append(header)
-        start = 1
-    else:
-        out.append(f'#EXTM3U x-tvg-url="{EPG_URL}"')
-        start = 0
+    # =========================================================
+    # 5. HEADER M3U CON EPG AUTOMATICO
+    # =========================================================
+    # x-tvg-url e url-tvg puntano allo stesso epg.xml.
+    # In questo modo basta inserire SOLO tv_epg.m3u nel player.
+    out.append(
+        f'#EXTM3U x-tvg-url="{EPG_URL}" url-tvg="{EPG_URL}"'
+    )
 
-    for line in lines[start:]:
+    # =========================================================
+    # 6. ELABORA I CANALI
+    # =========================================================
+    for line in lines:
         if not line.startswith("#EXTINF"):
             out.append(line)
             continue
 
         name = line.rsplit(",", 1)[-1].strip() if "," in line else ""
+
         m = re.search(r'tvg-id="([^"]*)"', line)
         old_id = m.group(1) if m else ""
+
         new_id = None
         reason = ""
 
         # 1) ID già valido EPGShare: lascialo.
         if old_id and old_id in epg_ids:
             preserved += 1
+
         # 2) Mappa ID verificata.
         elif old_id and old_id in ID_MAP and ID_MAP[old_id] in epg_ids:
             new_id = ID_MAP[old_id]
             reason = f"id:{old_id}"
+
         # 3) Mappa nome verificata (soprattutto ID vuoti/HbbTV).
         elif norm(name) in NAME_MAP and NAME_MAP[norm(name)] in epg_ids:
             new_id = NAME_MAP[norm(name)]
             reason = "nome-verificato"
+
         # 4) Match automatico SOLO se univoco: nome esatto normalizzato.
         else:
             candidates = names_to_ids.get(norm(name), set())
+
             if len(candidates) == 1:
                 new_id = next(iter(candidates))
                 reason = "nome-esatto"
                 auto += 1
+
             else:
                 # Match tecnico ripulito solo se univoco e nome base non troppo corto.
                 sn = stripped_norm(name)
                 candidates = stripped_to_ids.get(sn, set()) if len(sn) >= 4 else set()
+
                 if len(candidates) == 1:
                     new_id = next(iter(candidates))
                     reason = "nome-ripulito"
@@ -328,35 +395,65 @@ def main():
         if new_id and new_id != old_id:
             line = set_tvg_id(line, new_id)
             changed += 1
-            report.append(f"{name} | {old_id or '(vuoto)'} -> {new_id} | {reason}")
+            report.append(
+                f"{name} | {old_id or '(vuoto)'} -> {new_id} | {reason}"
+            )
 
         # Aggiunge i loghi mancanti e sostituisce i vecchi URL
         # disco-api.com che Fermata XTream non visualizza.
         current_logo = get_tvg_logo(line)
         bad_logo = "eu1-prod-images.disco-api.com" in current_logo
-        explicit_logo = LOGO_MAP.get(logo_key(name)) or LOGO_MAP.get(norm(name))
+
+        explicit_logo = (
+            LOGO_MAP.get(logo_key(name))
+            or LOGO_MAP.get(norm(name))
+        )
+
         # Tutti i feed Supertennis+ usano il logo ufficiale di SuperTennis.
         if norm(name).startswith("supertennis+"):
             explicit_logo = LOGO_MAP["supertennis"]
+
         mapped_logo = best_logo_for_name(name, learned_logos)
         wanted_logo = explicit_logo or mapped_logo
 
         if wanted_logo and (not current_logo or bad_logo):
             line = set_tvg_logo(line, wanted_logo)
             logos_added += 1
-            report.append(f"{name} | logo {'sostituito' if bad_logo else 'aggiunto'} -> {wanted_logo}")
+            report.append(
+                f"{name} | logo {'sostituito' if bad_logo else 'aggiunto'} -> {wanted_logo}"
+            )
 
         out.append(line)
 
-    OUT_M3U.write_text("\n".join(out) + "\n", encoding="utf-8")
+    # =========================================================
+    # 7. SCRIVE I FILE FINALI
+    # =========================================================
+    OUT_M3U.write_text(
+        "\n".join(out) + "\n",
+        encoding="utf-8"
+    )
+
     OUT_REPORT.write_text(
+        f"Canali sorgente Altervista: {source_channels}\n"
+        f"Canali disponibili nell'EPG: {channel_count}\n"
+        f"Programmi disponibili nell'EPG: {programme_count}\n"
         f"Canali/righe EXTINF modificate: {changed}\n"
         f"Match automatici univoci: {auto}\n"
         f"ID già validi preservati: {preserved}\n"
-        f"Loghi aggiunti: {logos_added}\n\n" + "\n".join(report) + "\n",
+        f"Loghi aggiunti: {logos_added}\n\n"
+        + "\n".join(report)
+        + "\n",
         encoding="utf-8",
     )
-    print(f"Creato {OUT_M3U} - {changed} tvg-id aggiunti/corretti, {logos_added} loghi aggiunti")
+
+    print(
+        f"Creato {OUT_M3U} - "
+        f"{changed} tvg-id aggiunti/corretti, "
+        f"{logos_added} loghi aggiunti"
+    )
+    print(
+        f"EPG: {channel_count} canali, {programme_count} programmi"
+    )
     print(f"Report: {OUT_REPORT}")
 
 
