@@ -3,8 +3,9 @@ import gzip
 import re
 import unicodedata
 import urllib.request
-from urllib.parse import quote
+from urllib.parse import quote, urljoin
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 M3U_URL = "https://inthemix.altervista.org/tv.m3u"
@@ -13,6 +14,14 @@ LOGO_SOURCE_URL = "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/ip
 FALLBACK_LOGO_URL = "https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg"
 OUT_M3U = Path("tv_epg.m3u")
 OUT_REPORT = Path("mapping_report.txt")
+STREAM_AUDIT_REPORT = Path("stream_audit.txt")
+STREAM_TEST_TIMEOUT = 10
+STREAM_TEST_WORKERS = 12
+FALLBACK_PLAYLISTS = [
+    ("Tundrak IPTV-Italia", "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u"),
+    ("Free-TV Italy", "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_italy.m3u8"),
+    ("Davide Fulgione", "https://davidefulgione.com/tv.m3u"),
+]
 
 UA = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36",
@@ -350,6 +359,402 @@ def load_external_logo_index():
     return by_name, by_stripped
 
 
+
+def parse_m3u_blocks(lines):
+    """
+    Restituisce:
+      prefix: righe prima del primo #EXTINF
+      blocks: blocchi canale [#EXTINF, opzioni..., URL]
+    """
+    prefix = []
+    blocks = []
+    current = None
+
+    for raw in lines:
+        line = raw.rstrip("\n")
+
+        if line.startswith("#EXTINF"):
+            if current is not None:
+                blocks.append(current)
+            current = [line]
+        elif current is not None:
+            current.append(line)
+        else:
+            prefix.append(line)
+
+    if current is not None:
+        blocks.append(current)
+
+    return prefix, blocks
+
+
+def block_name(block):
+    extinf = block[0] if block else ""
+    return extinf.rsplit(",", 1)[-1].strip() if "," in extinf else ""
+
+
+def block_tvg_id(block):
+    if not block:
+        return ""
+    m = re.search(r'tvg-id="([^"]*)"', block[0])
+    return m.group(1).strip() if m else ""
+
+
+def block_stream_url(block):
+    # Prende l'ultima riga non-commento come URL stream.
+    for line in reversed(block[1:]):
+        s = line.strip()
+        if s and not s.startswith("#"):
+            return s
+    return ""
+
+
+def block_option_lines(block):
+    # Righe opzione/commento interne al blocco, escluso #EXTINF.
+    opts = []
+    for line in block[1:]:
+        s = line.strip()
+        if s.startswith("#") and not s.startswith("#EXTINF"):
+            opts.append(line)
+    return opts
+
+
+def normalized_channel_keys(name):
+    """
+    Chiavi SOLO per matching interno.
+    Non cambia mai il nome visualizzato della playlist.
+    """
+    n = norm(name)
+    s = stripped_norm(name)
+
+    # Qualificatori che non cambiano l'identità del canale.
+    cleaned = re.sub(
+        r"\b(non sempre attivo|attivo raramente|25fps|50fps|900p|720p|1080p|hls|dash|backup)\b",
+        " ",
+        n,
+    )
+    cleaned = " ".join(cleaned.split())
+
+    keys = []
+    for k in (n, s, cleaned, stripped_norm(cleaned)):
+        if k and k not in keys:
+            keys.append(k)
+    return keys
+
+
+def build_fallback_index():
+    """
+    Scarica playlist pubbliche di canali in chiaro e costruisce un indice
+    tvg-id/nome -> stream alternativi. Un errore di una fonte non blocca il run.
+    """
+    by_id = {}
+    by_name = {}
+    source_errors = []
+
+    for source_name, url in FALLBACK_PLAYLISTS:
+        try:
+            raw = fetch(url).decode("utf-8", errors="replace")
+        except Exception as exc:
+            source_errors.append(f"{source_name}: {type(exc).__name__}: {exc}")
+            continue
+
+        _, blocks = parse_m3u_blocks(raw.splitlines())
+
+        for block in blocks:
+            stream = block_stream_url(block)
+            if not stream:
+                continue
+
+            candidate = {
+                "source": source_name,
+                "url": stream,
+                "options": block_option_lines(block),
+                "name": block_name(block),
+                "tvg_id": block_tvg_id(block),
+            }
+
+            cid = candidate["tvg_id"]
+            if cid:
+                by_id.setdefault(cid, []).append(candidate)
+
+            for key in normalized_channel_keys(candidate["name"]):
+                by_name.setdefault(key, []).append(candidate)
+
+    return by_id, by_name, source_errors
+
+
+def _request_sample(url, headers=None, max_bytes=131072):
+    req_headers = dict(UA)
+    if headers:
+        req_headers.update(headers)
+
+    req = urllib.request.Request(url, headers=req_headers)
+
+    with urllib.request.urlopen(req, timeout=STREAM_TEST_TIMEOUT) as response:
+        status = getattr(response, "status", 200) or 200
+        final_url = response.geturl()
+        content_type = (response.headers.get("Content-Type") or "").lower()
+        data = response.read(max_bytes)
+
+    return status, final_url, content_type, data
+
+
+def _extract_hls_next_url(base_url, text):
+    """
+    Da un manifest HLS prende:
+    - prima variante .m3u8 se è un master;
+    - altrimenti il primo segmento media.
+    """
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        return urljoin(base_url, line)
+    return ""
+
+
+def probe_stream(url):
+    """
+    Controllo pratico:
+    - endpoint raggiungibile;
+    - se HLS, prova anche manifest/segmento successivo;
+    - se DASH/XML, verifica che contenga un manifest;
+    - per altri stream, verifica che arrivino dati.
+    Restituisce (ok, dettaglio).
+    """
+    if not url:
+        return False, "URL mancante"
+
+    try:
+        status, final_url, content_type, data = _request_sample(url)
+    except Exception as exc:
+        return False, f"{type(exc).__name__}: {exc}"
+
+    if status >= 400:
+        return False, f"HTTP {status}"
+
+    if not data:
+        return False, "risposta vuota"
+
+    text = data.decode("utf-8", errors="ignore")
+    lower = text.lower()
+
+    # HLS
+    if "#extm3u" in lower or "mpegurl" in content_type or final_url.lower().endswith(".m3u8"):
+        next_url = _extract_hls_next_url(final_url, text)
+
+        # Manifest valido anche se non riusciamo a trovare un URI (caso raro).
+        if not next_url:
+            return True, "HLS manifest OK"
+
+        try:
+            status2, final2, ctype2, data2 = _request_sample(next_url, max_bytes=65536)
+        except Exception as exc:
+            return False, f"HLS child non raggiungibile: {type(exc).__name__}: {exc}"
+
+        if status2 >= 400 or not data2:
+            return False, f"HLS child HTTP {status2}"
+
+        child_text = data2.decode("utf-8", errors="ignore").lower()
+
+        # Se il child è ancora un manifest, prova il primo segmento.
+        if "#extm3u" in child_text or "mpegurl" in ctype2 or final2.lower().endswith(".m3u8"):
+            segment_url = _extract_hls_next_url(final2, data2.decode("utf-8", errors="ignore"))
+            if segment_url:
+                try:
+                    status3, _, _, data3 = _request_sample(segment_url, max_bytes=32768)
+                except Exception as exc:
+                    return False, f"segmento HLS non raggiungibile: {type(exc).__name__}: {exc}"
+                if status3 >= 400 or not data3:
+                    return False, f"segmento HLS HTTP {status3}"
+
+        return True, "HLS OK"
+
+    # DASH / Smooth Streaming / XML manifest
+    if (
+        "<mpd" in lower
+        or "dash+xml" in content_type
+        or "<smoothstreamingmedia" in lower
+        or "application/xml" in content_type
+        or "text/xml" in content_type
+    ):
+        if "<mpd" in lower or "<smoothstreamingmedia" in lower:
+            return True, "manifest DASH/Smooth OK"
+        # XML generico: non basta da solo a dire che è uno stream.
+        return False, "XML non riconosciuto come manifest video"
+
+    # Direct MPEG-TS / media bytes.
+    if (
+        content_type.startswith("video/")
+        or "octet-stream" in content_type
+        or "mp2t" in content_type
+        or len(data) >= 4096
+    ):
+        return True, f"stream dati OK ({content_type or 'content-type assente'})"
+
+    return False, f"risposta non riconosciuta ({content_type or 'senza content-type'})"
+
+
+def candidate_key(candidate):
+    return (candidate.get("source", ""), candidate.get("url", ""))
+
+
+def candidates_for_block(block, by_id, by_name):
+    candidates = []
+    seen = set()
+
+    cid = block_tvg_id(block)
+    if cid:
+        for candidate in by_id.get(cid, []):
+            key = candidate_key(candidate)
+            if key not in seen:
+                seen.add(key)
+                candidates.append(candidate)
+
+    for name_key in normalized_channel_keys(block_name(block)):
+        for candidate in by_name.get(name_key, []):
+            key = candidate_key(candidate)
+            if key not in seen:
+                seen.add(key)
+                candidates.append(candidate)
+
+    return candidates
+
+
+def replace_block_stream(block, candidate):
+    """
+    Mantiene SEMPRE il nostro #EXTINF (nome, EPG, logo, gruppo, note).
+    Cambia solo opzioni necessarie e URL dello stream.
+    """
+    extinf = block[0]
+    old_opts = block_option_lines(block)
+
+    # Mantiene opzioni originali + eventuali opzioni del fallback, senza duplicati.
+    opts = []
+    for line in old_opts + candidate.get("options", []):
+        if line not in opts:
+            opts.append(line)
+
+    return [extinf] + opts + [candidate["url"]]
+
+
+def audit_and_repair_streams(lines):
+    """
+    Controlla TUTTI i canali della playlist finale.
+
+    Se uno stream non risponde:
+      1. cerca un'alternativa con stesso tvg-id;
+      2. poi stesso nome normalizzato;
+      3. usa la prima alternativa che supera il probe.
+
+    Se non trova una soluzione, NON elimina il canale: lo mantiene e lo
+    segnala nel report, così non perdiamo feed "non sempre attivi".
+    """
+    prefix, blocks = parse_m3u_blocks(lines)
+
+    by_id, by_name, fallback_source_errors = build_fallback_index()
+
+    # Prima passata: testa tutti gli URL in parallelo.
+    urls = {}
+    for idx, block in enumerate(blocks):
+        url = block_stream_url(block)
+        urls.setdefault(url, []).append(idx)
+
+    probe_results = {}
+
+    with ThreadPoolExecutor(max_workers=STREAM_TEST_WORKERS) as pool:
+        future_map = {
+            pool.submit(probe_stream, url): url
+            for url in urls
+            if url
+        }
+
+        for future in as_completed(future_map):
+            url = future_map[future]
+            try:
+                probe_results[url] = future.result()
+            except Exception as exc:
+                probe_results[url] = (False, f"probe crash: {type(exc).__name__}: {exc}")
+
+    repaired = []
+    audit_lines = []
+    ok_count = 0
+    repaired_count = 0
+    unresolved_count = 0
+
+    # Cache dei probe fallback per evitare di ritestarli.
+    fallback_probe_cache = {}
+
+    for block in blocks:
+        name = block_name(block)
+        original_url = block_stream_url(block)
+        ok, detail = probe_results.get(original_url, (False, "non testato"))
+
+        if ok:
+            ok_count += 1
+            repaired.extend(block)
+            audit_lines.append(f"OK | {name} | {detail} | {original_url}")
+            continue
+
+        chosen = None
+        chosen_detail = ""
+
+        for candidate in candidates_for_block(block, by_id, by_name):
+            candidate_url = candidate["url"]
+
+            # Non riprovare lo stesso URL già fallito.
+            if candidate_url == original_url:
+                continue
+
+            if candidate_url not in fallback_probe_cache:
+                fallback_probe_cache[candidate_url] = probe_stream(candidate_url)
+
+            candidate_ok, candidate_detail = fallback_probe_cache[candidate_url]
+
+            if candidate_ok:
+                chosen = candidate
+                chosen_detail = candidate_detail
+                break
+
+        if chosen:
+            repaired_block = replace_block_stream(block, chosen)
+            repaired.extend(repaired_block)
+            repaired_count += 1
+            audit_lines.append(
+                f"RIPARATO | {name} | {chosen['source']} | "
+                f"{detail} -> {chosen_detail} | {original_url} -> {chosen['url']}"
+            )
+        else:
+            # Mantiene il canale originale: può essere un feed evento/temporaneo.
+            repaired.extend(block)
+            unresolved_count += 1
+            audit_lines.append(
+                f"NON RISOLTO | {name} | {detail} | {original_url}"
+            )
+
+    report = (
+        f"Canali totali: {len(blocks)}\n"
+        f"Stream OK originali: {ok_count}\n"
+        f"Stream riparati automaticamente: {repaired_count}\n"
+        f"Stream non risolti: {unresolved_count}\n"
+        f"Fonti fallback con errore: {len(fallback_source_errors)}\n\n"
+    )
+
+    if fallback_source_errors:
+        report += "ERRORI FONTI FALLBACK:\n"
+        report += "\n".join(f"- {x}" for x in fallback_source_errors)
+        report += "\n\n"
+
+    report += "\n".join(audit_lines) + "\n"
+
+    return prefix + repaired, report, {
+        "total": len(blocks),
+        "ok": ok_count,
+        "repaired": repaired_count,
+        "unresolved": unresolved_count,
+    }
+
+
 def main():
     # =========================================================
     # 1. SCARICA E CONTROLLA LA PLAYLIST SORGENTE
@@ -622,7 +1027,13 @@ def main():
         out.append(line)
 
     # =========================================================
-    # 7. SCRIVE I FILE FINALI
+    # 7. CONTROLLA TUTTI GLI STREAM E RIPARA QUELLI GUASTI
+    # =========================================================
+    out, stream_audit_text, stream_stats = audit_and_repair_streams(out)
+    STREAM_AUDIT_REPORT.write_text(stream_audit_text, encoding="utf-8")
+
+    # =========================================================
+    # 8. SCRIVE I FILE FINALI
     # =========================================================
     OUT_M3U.write_text(
         "\n".join(out) + "\n",
@@ -638,8 +1049,14 @@ def main():
         f"Match automatici univoci: {auto}\n"
         f"ID già validi preservati: {preserved}\n"
         f"Loghi aggiunti/sostituiti: {logos_added}\n"
-        f"Loghi generici usati come ultima risorsa: {generic_logos}\n\n"
+        f"Loghi generici usati come ultima risorsa: {generic_logos}\n"
+        f"Stream controllati: {stream_stats['total']}\n"
+        f"Stream OK originali: {stream_stats['ok']}\n"
+        f"Stream riparati automaticamente: {stream_stats['repaired']}\n"
+        f"Stream non risolti: {stream_stats['unresolved']}\n\n"
         + "\n".join(report)
+        + "\n\n===== CONTROLLO STREAM COMPLETO =====\n"
+        + stream_audit_text
         + "\n",
         encoding="utf-8",
     )
@@ -653,7 +1070,13 @@ def main():
     print(
         f"EPG: {channel_count} canali, {programme_count} programmi"
     )
-    print(f"Report: {OUT_REPORT}")
+    print(
+        f"Stream: {stream_stats['ok']} OK, "
+        f"{stream_stats['repaired']} riparati, "
+        f"{stream_stats['unresolved']} non risolti"
+    )
+    print(f"Report mapping: {OUT_REPORT}")
+    print(f"Report stream: {STREAM_AUDIT_REPORT}")
 
 
 if __name__ == "__main__":
