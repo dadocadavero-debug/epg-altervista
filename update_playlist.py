@@ -135,7 +135,7 @@ LOGO_MAP = {
     "lazio style tv": "https://www.tvdream.net/img/lazio-style-tv.png",
     "lazio style channel": "https://www.tvdream.net/img/lazio-style-tv.png",
     "f1 tv": "https://statics.quattroruote.it/content/dam/quattroruote/it/news/sport/2018/03/02/formula_1_liberty_media_lancia_lo_streaming_online_nasce_f1_tv_/gallery/rsmall/f1-tv-formula-1-3.jpg",
-    "primavera tv": "https://i.imgur.com/0CJGGgd.png",
+    "primavera tv": "https://www.tvdream.net/img/primavera-tv-cover.jpg",
     "aci sport tv": "https://i.imgur.com/U8cHMOt.png",
     "aci sport live 01(non sempre attivo)": "https://i.imgur.com/U8cHMOt.png",
     "aci sport live 01": "https://i.imgur.com/U8cHMOt.png",
