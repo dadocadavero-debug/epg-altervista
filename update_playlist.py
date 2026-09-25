@@ -8,7 +8,8 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 M3U_URL = "https://inthemix.altervista.org/tv.m3u"
-EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
+EPG_SOURCE_URL = "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
+EPG_PLAYER_URL = "https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml"
 LOGO_SOURCE_URL = "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u"
 FALLBACK_LOGO_URL = "https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg"
 OUT_M3U = Path("tv_epg.m3u")
@@ -322,7 +323,8 @@ def apply_rai_overrides(lines):
       - Rai 2 principale usa il CDN già verificato.
       - Rai 3 principale preferisce il payload di "Rai 3 Europa" dalla stessa playlist Altervista.
         Se manca, usa "Rai 3 (900 dash)" come fallback.
-      - elimina soltanto il doppione Rai 1 Europa e i Rai 1 4K hls/dash.
+      - elimina soltanto il doppione Rai 1 Europa.
+      - lascia Rai 1 4K hls/dash esattamente come arrivano da Altervista.
       - lascia SEMPRE "Rai 3 (900 dash)" nella playlist come alternativa.
       - NON modifica nessun altro canale Rai o non-Rai.
 
@@ -355,12 +357,12 @@ def apply_rai_overrides(lines):
         raise RuntimeError('La sorgente scelta per Rai 3 non contiene uno stream; aggiornamento annullato.')
 
     out_blocks = []
-    removed = {"rai 1 europa", "rai 1 4k hls", "rai 1 4k dash"}
+    removed = {"rai 1 europa"}
 
     for block in blocks:
         name = norm(_block_name(block))
 
-        # Elimina soltanto i doppioni tecnici esplicitamente richiesti.
+        # Elimina solo Rai 1 Europa, perché il suo stream viene riusato da Rai 1 principale.
         if name in removed:
             continue
 
@@ -435,7 +437,7 @@ def main():
     # =========================================================
     # 2. SCARICA E CONTROLLA L'EPG
     # =========================================================
-    epg_raw = fetch(EPG_URL)
+    epg_raw = fetch(EPG_SOURCE_URL)
 
     try:
         epg_xml = gzip.decompress(epg_raw)
@@ -542,10 +544,11 @@ def main():
     # =========================================================
     # 5. HEADER M3U CON EPG AUTOMATICO
     # =========================================================
-    # x-tvg-url e url-tvg puntano direttamente a EPGShare IT1.
-    # In questo modo basta inserire SOLO tv_epg.m3u nel player.
+    # EPGShare viene usato internamente per validare/correggere i tvg-id.
+    # Il player invece usa l'XML non compresso pubblicato nel repository epg-altervista,
+    # compatibile con la configurazione che mostrava correttamente la guida.
     out.append(
-        f'#EXTM3U x-tvg-url="{EPG_URL}" url-tvg="{EPG_URL}"'
+        f'#EXTM3U x-tvg-url="{EPG_PLAYER_URL}" url-tvg="{EPG_PLAYER_URL}"'
     )
 
     # =========================================================
@@ -699,6 +702,8 @@ def main():
 
     OUT_REPORT.write_text(
         f"Canali sorgente Altervista: {source_channels}\n"
+        f"EPG sorgente mapping: {EPG_SOURCE_URL}\n"
+        f"EPG pubblicato al player: {EPG_PLAYER_URL}\n"
         f"Canali disponibili nell'EPG: {channel_count}\n"
         f"Programmi disponibili nell'EPG: {programme_count}\n"
         f"Canali/righe EXTINF modificate: {changed}\n"
