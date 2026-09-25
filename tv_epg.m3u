@@ -1,11 +1,10 @@
 #EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz" url-tvg="https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
 #EXTINF:-1 tvg-id="Rai1.it" tvg-name="Rai 1" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-chno="1" channel-number="1" group-title="Rai",Rai 1
-#EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
-https://raievent10-elem-live.akamaized.net/hls/live/619189/raievent10/raievent10/playlist.m3u8
+https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
 #EXTINF:-1 tvg-name="Rai 2" tvg-id="Rai2.it" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png" tvg-chno="2" channel-number="2" group-title="Rai" mediapolis="308718",Rai 2
 https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8
 #EXTINF:-1 tvg-name="Rai 3" tvg-id="Rai3.it" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png" tvg-chno="3" channel-number="3" group-title="Rai" mediapolis="308709",Rai 3
-https://raitre2-dash-live.akamaized.net/dash/live/663956/raitre2/manifest.mpd
+https://d3k8wzt41aflvx.cloudfront.net/RAI3/Live.m3u8
 #EXTINF:-1 tvg-name="Rete 4" tvg-id="Rete.4.it" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/171446419-0fbcd8b0-aa93-43ad-9122-11eab918a692.png" tvg-chno="4" channel-number="4" group-title="Mediaset",Rete 4
 https://live03-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest_hd.mpd
 #EXTINF:-1 tvg-name="Canale 5" tvg-id="Canale.5.it" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/165459358-6ae4bdad-08da-4b42-8628-e49156a0af7e.png" tvg-chno="5" channel-number="5" group-title="Mediaset",Canale 5
@@ -86,9 +85,9 @@ https://live03-col.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/manifest_hd.mpd
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=a03e33a2fca847af9f3dba42be1fddd0:8f39a9339f889751703b8c99c9f69bb2
 https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(k2)/manifest.mpd
-#EXTINF:-1 tvg-name="Rai Gulp" tvg-id="RaiGulp.it" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637310352874_1579882960255_rai-gulp.png" tvg-chno="42" group-title="Bambini e ragazzi" mediapolis="",Rai Gulp
+#EXTINF:-1 tvg-name="Rai Gulp" tvg-id="RaiGulp.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raigulp.png" tvg-chno="42" group-title="Bambini e ragazzi" mediapolis="",Rai Gulp
 https://raigulp1-dash-live.akamaized.net/dash/live/663985/raigulp1/manifest.mpd
-#EXTINF:-1 tvg-name="Rai Yoyo" tvg-id="RaiYoyo.it" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637309909658_1579882398754_rai-yoyo.png" tvg-chno="43" group-title="Bambini e ragazzi" mediapolis="",Rai YoYo
+#EXTINF:-1 tvg-name="Rai Yoyo" tvg-id="RaiYoyo.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raiyoyo.png" tvg-chno="43" group-title="Bambini e ragazzi" mediapolis="",Rai YoYo
 https://raiyoyo1-dash-live.akamaized.net/dash/live/663949/raiyoyo1/manifest.mpd
 #EXTINF:-1 video-track="10" tvg-name="Frisbee" tvg-id="Frisbee.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/frisbee.png" tvg-chno="44" group-title="Discovery",Frisbee 🔐
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -124,7 +123,7 @@ https://live03-col.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/manifest_hd.mpd
 https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/HGTV/CMAF/index.m3u8
 #EXTINF:-1 tvg-name="Rai Scuola" tvg-id="RaiScuola.it" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637322361853_logo-raiscuola.png" tvg-chno="57" group-title="Rai" mediapolis="",Rai Scuola
 https://d3k8wzt41aflvx.cloudfront.net/RAIScuola/Live.m3u8
-#EXTINF:-1 tvg-name="Rai Sport" tvg-id="RaiSport.it" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637310367694_1579883330343_rai-sport.png" tvg-chno="58" group-title="Sport" mediapolis="358025",Rai Sport
+#EXTINF:-1 tvg-name="Rai Sport" tvg-id="RaiSport.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" tvg-chno="58" group-title="Sport" mediapolis="358025",Rai Sport
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=16&forceUserAgent=raiplayappletv
@@ -135,11 +134,11 @@ https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out
 https://distribution.sportitalialive.it/sportitalia/sihd_abr2/playlist.m3u8
 #EXTINF:-1 channel-id="ITBC4700002CO" tvg-id="Solocalcio.it.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC4700002CO_20230412T042559SQUARE.png_20230412042559.png" tvg-chno="61" group-title="Sport",Solocalcio
 https://distribution.sportitalialive.it/sportitalia/sisolocalcio_abr/playlist.m3u8
-#EXTINF:-1 tvg-name="Primavera TV" tvg-id="sportitalia24live" tvg-logo="https://sportitaliadd.akamaized.net/video_0/Sportitalia/logo/11_logo_Untitled.jpg" tvg-chno="62"  group-title="Sport",Primavera TV
+#EXTINF:-1 tvg-name="Primavera TV" tvg-id="sportitalia24live" tvg-logo="https://i.imgur.com/0CJGGgd.png" tvg-chno="62"  group-title="Sport",Primavera TV
 https://distribution.sportitalialive.it/sportitalia/silive24_abr/playlist.m3u8
 #EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://provider-static.plex.tv/epg/cms/production/81e4bfb2-79b6-433f-9501-7e93698aa587/251113_IlSole24OreTV_logoKWHT_REALLYRDX.png" group-title="Notizie" tvg-chno="63" channel-number="63",IL Sole 24 Ore TV
 https://amg14891-amg14891c8-amgplt0395.playout.now3.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="Super Tennis" tvg-id="SuperTennis.HD.it" tvg-logo="https://www.supertennis.tv/Areas/Supertennis2025/images/svg/logo_supertennis.svg" tvg-chno="64" group-title="Sport", Super Tennis
+#EXTINF:-1 tvg-name="Super Tennis" tvg-id="SuperTennis.HD.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png" tvg-chno="64" group-title="Sport", Super Tennis
 https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
 #EXTINF:-1 tvg-logo="https://nokeptv.it/wp-content/uploads/2022/03/LOGONOKEPPP@4x.png" tvg-chno="65" group-title="Musica",Nokep TV
 https://streamer2.premio.link/nokep_hd/playlist.m3u8
@@ -509,9 +508,9 @@ https://italiansport-solocalcio-samsung.amagi.tv/playlist1080p.m3u8
 https://d1g94345moskj7.cloudfront.net/master.m3u8?stoken=legabasket-samsungit-Okd7nvrsthOcSbIHffrVdrn6
 #EXTINF:-1 tvg-name="TV Sport" tvg-id="PlutoTvSport.it" tvg-logo="https://images.pluto.tv/channels/608030eff4b6f70007e1684c/colorLogoPNG.png" group-title="Sport",Sport - Pluto
 https://jmp2.uk/plu-608030eff4b6f70007e1684c.m3u8
-#EXTINF:-1 tvg-id="Tennis Channel" tvg-logo="https://pc.orangetv.orange.es/pc/api/rtv/v1/images/attachments_new/TENNIS_CHANNEL_176x122.png" group-title="Sport",Tennis Channel
+#EXTINF:-1 tvg-id="Tennis Channel" tvg-logo="https://i.imgur.com/tsljAnY.png" group-title="Sport",Tennis Channel
 https://amg01444-tennischannelth-tennischde-samsungch-jp1l8.amagi.tv/playlist/amg01444-tennischannelth-tennischde-samsungch/playlist.m3u8
-#EXTINF:-1 tvg-id="t2 tennis" tvg-name="T2 Tennis Channel" tvg-logo="https://images.tennis.com/image/private/t_16-9_768/f_png/tenniscom-prd/ikebrhr6qoaxbzfyxvct.png" group-title="Sport",Tennis channel 2
+#EXTINF:-1 tvg-id="t2 tennis" tvg-name="T2 Tennis Channel" tvg-logo="https://i.imgur.com/tsljAnY.png" group-title="Sport",Tennis channel 2
 https://amg01444-tennischannel-amg01444c2-lg-us-959.playouts.now.amagi.tv/playlist/amg01444-tennischannelfast-tennischannelus-lgus/playlist.m3u8
 #EXTINF:-1 group-title="Sport" tvg-logo="https://images.plex.tv/photo?url=https%3A%2F%2Fprovider-static.plex.tv%2Fepg%2Fcms%2Fproduction%2Fd8dd29ce-8968-4a90-a21c-37af62c48e54%2F5_Tennis_Plus__Horizontal_Default_Art__3840x2160px_v4.jpg", Tennis+
 https://amg01935-amg01935c1-amgplt0020.playout.now3.amagi.tv/playlist.m3u8
@@ -647,6 +646,8 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7&for
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7&forceUserAgent=raiplayandroidtv
+#EXTINF:-1 tvg-name="Rai 3" tvg-id="Rai3.it" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png" tvg-chno="503" channel-number="503" group-title="Rai",Rai 3 (900 dash)
+https://raitre2-dash-live.akamaized.net/dash/live/663956/raitre2/manifest.mpd
 #EXTINF:-1 tvg-name="Rete 4" tvg-id="Rete.4.it" tvg-logo="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/r4.png" tvg-chno="504" channel-number="504" group-title="Mediaset",Rete 4 (hls)
 https://live02-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/index.m3u8
 #EXTINF:-1 tvg-name="Canale 5" tvg-id="Canale.5.it" tvg-logo="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png" tvg-chno="505" channel-number="505" group-title="Mediaset",Canale 5 (hls)
@@ -742,12 +743,13 @@ https://live02-col.msf.cdn.mediaset.net/live/ch-b4/b4-clr.isml/index.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-name="Rai 1 720p" tvg-id="Rai1.it" group-title="Connessioni a giga", Rai 1
-#EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
-https://raievent10-elem-live.akamaized.net/hls/live/619189/raievent10/raievent10/playlist.m3u8
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7
 #EXTINF:-1 tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png" tvg-name="Rai 2 720p" tvg-id="Rai2.it" group-title="Connessioni a giga", Rai 2
-https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7
 #EXTINF:-1 tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png" tvg-name="Rai 3 720p" tvg-id="Rai3.it" group-title="Connessioni a giga", Rai 3
-https://raitre2-dash-live.akamaized.net/dash/live/663956/raitre2/manifest.mpd
+https://raisportdue3-live.akamaized.net/hls/live/2018009/raisportdue3/raisportdue3/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/r4.png" tvg-name="Rete 4" tvg-id="Rete.4.it" group-title="Connessioni a giga", Rete 4
 https://live03-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest_sd.mpd
 #EXTINF:-1 tvg-logo="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png" tvg-name="Canale 5" tvg-id="Canale.5.it" group-title="Connessioni a giga", Canale 5
@@ -823,15 +825,12 @@ https://www.mytivu.it/Application/Restart/Iris-Restart.php
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15
 https://www.mytivu.it/Application/Restart/TopCrime-Restart.php
 
-#EXTINF:-1 tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-id="Rai1.it" group-title="Estero",Rai 1 Europa
-https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
 #EXTINF:-1 tvg-name="Rai 1" tvg-id="Rai1.it" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" group-title="Estero", Rai 1
-#EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
-https://raievent10-elem-live.akamaized.net/hls/live/619189/raievent10/raievent10/playlist.m3u8
+https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png" tvg-id="Rai2.it" group-title="Estero",Rai 2 Europa
 https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8
 #EXTINF:-1 tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png" tvg-id="Rai3.it" group-title="Estero",Rai 3
-https://raitre2-dash-live.akamaized.net/dash/live/663956/raitre2/manifest.mpd
+https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png" tvg-id="Rai3.it" group-title="Estero",Rai 3 Europa
 https://d3k8wzt41aflvx.cloudfront.net/RAI3/Live.m3u8
 #EXTINF:-1 tvg-logo="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/r4.png" tvg-id="Rete.4.it" group-title="Estero",Rete 4 HD Europa
