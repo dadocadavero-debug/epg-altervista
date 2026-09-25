@@ -2,12 +2,13 @@ Canali sorgente Altervista: 498
 EPG sorgente mapping: https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz
 EPG pubblicato al player: https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml
 Canali disponibili nell'EPG: 193
-Programmi disponibili nell'EPG: 20424
-Canali/righe EXTINF modificate: 109
+Programmi disponibili nell'EPG: 20533
+Canali/righe EXTINF modificate: 110
 Match automatici univoci: 0
 ID già validi preservati: 34
 Loghi aggiunti/sostituiti: 176
 Loghi generici usati come ultima risorsa: 62
+Canali senza EPG abbinabile: 353
 
 Rete 4 | Rete4.it -> Rete.4.it | id:Rete4.it
 Canale 5 | Canale5.it -> Canale.5.it | id:Canale5.it
@@ -100,6 +101,7 @@ Tennis channel 2 | logo aggiunto -> https://i.imgur.com/tsljAnY.png
 UNBEATEN | logo aggiunto -> https://i.imgur.com/LmkNt3v.png
 FUBO Sports | logo aggiunto -> https://i.imgur.com/qFNRJLb.png
 FF Motorsport | logo aggiunto -> https://www.google.com/s2/favicons?domain=ffmotorsport.it&sz=256
+EQU TV | (vuoto) -> EQUtv.it | nome-verificato
 EQU TV | logo aggiunto -> https://www.google.com/s2/favicons?domain=eqtv.it&sz=256
 Rai Sport jolly 1 (attivo raramente) | raisport -> RaiSport.it | id:raisport
 Rai Sport jolly 1 (attivo raramente) | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png
@@ -294,3 +296,358 @@ HGTV backup 🔐 | (vuoto) -> HGTV.it | nome-verificato
 HGTV backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/homegardentv.png
 Turbo backup 🔐 | (vuoto) -> Motor.Trend.it | nome-verificato
 Turbo backup 🔐 | logo aggiunto -> https://api.superguidatv.it/v1/channels/444/logo?width=300
+
+CANALI SENZA EPG ABBINABILE
+Telelombardia | tvg-id=(vuoto) | group=Regionali
+RSI LA2 | tvg-id=rsila2 | group=Altre tv
+Sky Sport (non sempre attivo) | tvg-id=(vuoto) | group=Sport
+Golazo Network (Serie A) | tvg-id=(vuoto) | group=Sport
+Trailers | tvg-id=ITBA3300048YJ | group=Altre tv
+TMC Telemontecarlo | tvg-id=(vuoto) | group=Altre tv
+Giornale Radio Tv | tvg-id=ITBB5000002N0 | group=Notizie
+TV2000 | tvg-id=TV2000.it | group=Altre tv
+Masha e Orso | tvg-id=IT3800010K1 | group=Bambini e ragazzi
+BBC Earth | tvg-id=(vuoto) | group=Documentari
+Sport Italia | tvg-id=sportitalia | group=Sport
+Primavera TV | tvg-id=sportitalia24live | group=Sport
+IL Sole 24 Ore TV | tvg-id=(vuoto) | group=Notizie
+Nokep TV | tvg-id=(vuoto) | group=Musica
+M2O TV | tvg-id=m2otv | group=Musica
+Film Top - Rakuten TV | tvg-id=(vuoto) | group=Film
+Film d'azione - Rakuten TV | tvg-id=(vuoto) | group=Film
+Sony One Film d’azione | tvg-id=(vuoto) | group=Film
+Sony One Film divertenti | tvg-id=(vuoto) | group=Film
+Dramma - Rakuten TV | tvg-id=(vuoto) | group=Film
+Fantascienza - Rakuten TV | tvg-id=(vuoto) | group=Film
+Romance - Rakuten TV | tvg-id=(vuoto) | group=Film
+Commedia - Rakuten TV | tvg-id=(vuoto) | group=Film
+Family - Rakuten TV | tvg-id=(vuoto) | group=Film
+Film - Pluto | tvg-id=PlutoTvFilm.it | group=Film
+Film Azione - Pluto | tvg-id=PlutoTvFilmAzione.it | group=Film
+Film Romantici - Pluto | tvg-id=PlutoTvFilmRomantici.it | group=Film
+Film Thriller - Pluto | tvg-id=PlutoTvFilmThriller.it | group=Film
+Film Commedia - Pluto | tvg-id=PlutoTvFilmCommedia.it | group=Film
+Cine Thriller | tvg-id=RakutenLeViteDegliAltri.it | group=Film
+Adrenaline Movies | tvg-id=(vuoto) | group=Film
+Alta Tensione | tvg-id=(vuoto) | group=Film
+Smile | tvg-id=(vuoto) | group=Film
+Grandi Nomi | tvg-id=(vuoto) | group=Film
+Velvet | tvg-id=(vuoto) | group=Film
+Duri a morire | tvg-id=(vuoto) | group=Film
+Crime Time | tvg-id=(vuoto) | group=Film
+Brividy Cinema | tvg-id=(vuoto) | group=Film
+Cinemalizia | tvg-id=(vuoto) | group=Film
+Film Al Femminile - Wedo Movies | tvg-id=ITBC4700004EQ | group=Film
+Cinemadame | tvg-id=(vuoto) | group=Film
+Romantica | tvg-id=(vuoto) | group=Film
+Legami Letali - Pluto | tvg-id=PlutoTvLegamiLetali.it | group=Film
+Christmas tutto l'anno - Pluto | tvg-id=PlutoTvChristmas.it | group=Film
+Cine Amore | tvg-id=IT3800001XM | group=Film
+Film Ancora Più Romantici - Pluto | tvg-id=699d87093d5dba980705cca8 | group=Film
+Supercinema | tvg-id=(vuoto) | group=Film
+Cinema italiano | tvg-id=ITBA33000238E | group=Film
+Cinema Italiano - Pluto | tvg-id=PlutoTvCinemaItaliano.it | group=Film
+Cinema Orientale - Pluto | tvg-id=6786235bd648bf0008c2780a | group=Film
+CG - TV | tvg-id=RakutenCgCinemaDAutore.it | group=Film
+Alberto Sordi & Co | tvg-id=(vuoto) | group=Film
+CG Cine Mania | tvg-id=(vuoto) | group=Film
+Plus Cinema | tvg-id=(vuoto) | group=Film
+Il grande cinema | tvg-id=(vuoto) | group=Film
+Tutto Bruce Willis | tvg-id=(vuoto) | group=Film
+Totò - Pluto | tvg-id=65253f9881f942000833ccd5 | group=Film
+Horror - Pluto | tvg-id=PlutoTvHorror.it | group=Film
+Horror Club | tvg-id=PlutoTvHorrorClub.it | group=Film
+Cine Paura | tvg-id=(vuoto) | group=Film
+Bizzarro Movies | tvg-id=RakutenBizzarroMovies.it | group=Film
+Action Movie Channel | tvg-id=RakutenDarkMatterItNew.it | group=Film
+The Asylum - Pluto | tvg-id=PlutoTheAsylum.it | group=Film
+Cine Peplum | tvg-id=RakutenWesternEPeplum.it | group=Film
+Western Time | tvg-id=(vuoto) | group=Film
+Western - Pluto | tvg-id=PlutoTvWestern.it | group=Film
+Sony One Serie Thriller | tvg-id=(vuoto) | group=Serie
+Sony One Serie da Ridere | tvg-id=(vuoto) | group=Serie
+Sony One Gli imperdibili | tvg-id=(vuoto) | group=Serie
+Vita da Strega | tvg-id=(vuoto) | group=Serie
+Xena warrior princess | tvg-id=(vuoto) | group=Serie
+Hercules | tvg-id=(vuoto) | group=Serie
+Un medico in famiglia | tvg-id=IT4000061Q | group=Serie
+Serie - Pluto | tvg-id=PlutoTvSerie.it | group=Serie
+True Crime | tvg-id=ITBD1000006RD | group=Serie
+Serie Crime - Rakuten TV | tvg-id=RakutenCrimeSeriesItRakutenTv.it | group=Serie
+Crime - Pluto | tvg-id=PlutoTvCrime.it | group=Serie
+True Crime - Pluto | tvg-id=PlutoTrueCrime.it | group=Serie
+Storie Criminali | tvg-id=(vuoto) | group=Documentari
+Forensic Files - Pluto | tvg-id=PlutoForensicFiles.it | group=Serie
+Settimo Cielo - Pluto | tvg-id=PlutoSettimoCielo.it | group=Serie
+Carabinieri - Pluto | tvg-id=Carabinieri.it | group=Serie
+I soliti idioti - Pluto | tvg-id=ISolitiIdioti.it | group=Serie
+Le sorelle McLeod - Pluto | tvg-id=PlutoLeSorelleMcLeod.it | group=Serie
+Squadra Speciale Cobra 11 - Pluto | tvg-id=PlutoSquadraSpecialeCobra11.it | group=Serie
+Elisa di Rivombrosa | tvg-id=(vuoto) | group=Serie
+BBC Series | tvg-id=PlutoBbcSeries.it | group=Serie
+Gli immortali – Van Damme vs Lundgren | tvg-id=ITBD1100001B7 | group=Serie
+Il Testimone - Pluto | tvg-id=PlutoIlTestimone.it | group=Serie
+Catfish - Pluto | tvg-id=PlutoCatfish.it | group=Serie
+Il Banco dei Pugni - Pluto | tvg-id=PlutoIlBancoDeiPugni.it | group=Serie
+Affare Fatto - Pluto | tvg-id=PlutoAffareFatto.it | group=Serie
+Top Gear | tvg-id=(vuoto) | group=Serie
+Hell's kitchen | tvg-id=(vuoto) | group=Serie
+Sanctuary - Pluto | tvg-id=PlutoSanctuary.it | group=Serie
+Sci-Fi - Pluto | tvg-id=PlutoTvSciFi.it | group=Serie
+Autostop per il cielo - Pluto | tvg-id=PlutoAutostopPerIlcielo.it | group=Serie
+Mai dire sì - Pluto | tvg-id=PlutomaiDireSi.it | group=Serie
+Dynasty - Pluto | tvg-id=PlutoDynasty.it | group=Serie
+Andromeda - Pluto | tvg-id=PlutoAndromeda.it | group=Serie
+Renegade - Pluto | tvg-id=PlutoRenegade.it | group=Serie
+Natura - Pluto | tvg-id=PlutoTvNatura.it | group=Documentari
+NatureTime | tvg-id=(vuoto) | group=Documentari
+Documentari - Pluto | tvg-id=PlutoTvDocumentari.it | group=Documentari
+Move - Sportivi in viaggio | tvg-id=(vuoto) | group=Documentari
+Grandi Documentari - Wedo Big Stories | tvg-id=RakutenWedoBigStories.it | group=Documentari
+Love the Planet | tvg-id=(vuoto) | group=Documentari
+Viaggi & Sapori | tvg-id=(vuoto) | group=Documentari
+Storia - Pluto | tvg-id=PlutoTvStoria.it | group=Documentari
+Viaggi - Pluto | tvg-id=PlutoTvViaggi.it | group=Documentari
+La grande arte | tvg-id=(vuoto) | group=Documentari
+House of docs | tvg-id=(vuoto) | group=Documentari
+I misteri della fede | tvg-id=(vuoto) | group=Documentari
+Tutto musica | tvg-id=(vuoto) | group=Documentari
+STARS Film & Secrets | tvg-id=(vuoto) | group=Documentari
+Opera legends | tvg-id=(vuoto) | group=Documentari
+5-Minuti Creativi | tvg-id=ITBA33000374G | group=Altre tv
+CAR CITY ADVENTURES | tvg-id=(vuoto) | group=Bambini e ragazzi
+Mr Bean Animated | tvg-id=(vuoto) | group=Bambini e ragazzi
+Pocoyo | tvg-id=(vuoto) | group=Bambini e ragazzi
+Mattel Junior | tvg-id=PlutoJunior.it | group=Bambini e ragazzi
+Cartoni Animati - Pluto | tvg-id=PlutoSuperStar.it | group=Bambini e ragazzi
+Barbie & Friends | tvg-id=PlutoBarbie.it | group=Bambini e ragazzi
+I Puffi | tvg-id=PlutoIPuffi.it | group=Bambini e ragazzi
+Pingu | tvg-id=(vuoto) | group=Bambini e ragazzi
+Teletubbies | tvg-id=RakutenWbTeletubbies.it | group=Bambini e ragazzi
+duckTV | tvg-id=ducktv.it | group=Bambini e ragazzi
+Baby Shark TV | tvg-id=RakutenBabySharkTv.it | group=Bambini e ragazzi
+SuperToons TV | tvg-id=SupertoonsTV.it | group=Bambini e ragazzi
+Bejoy.kids | tvg-id=(vuoto) | group=Bambini e ragazzi
+SpongeBob - Pluto | tvg-id=PlutoSuperSpongebob.it | group=Bambini e ragazzi
+Teen Club - Pluto | tvg-id=PlutoSuperPop.it | group=Bambini e ragazzi
+Gormiti | tvg-id=PlutoGormiti.it | group=Bambini e ragazzi
+Kids Classics - Pluto | tvg-id=Pluto.it | group=Bambini e ragazzi
+Teen - Pluto | tvg-id=PlutoTeen.it | group=Bambini e ragazzi
+Teenage Mutant Ninja Turtles - Pluto | tvg-id=PlutoTeenageMutantNinjaTurtles.it | group=Bambini e ragazzi
+Yu-Gi-Oh! - Pluto | tvg-id=63eb82e24e83e70008ab735f | group=Bambini e ragazzi
+South Park - Pluto | tvg-id=PlutoSouthPark.it | group=Serie
+Anime - Pluto | tvg-id=65b90daed77d450008a43345 | group=Bambini e ragazzi
+One Piece | tvg-id=69affcad8940750a23a7231a | group=Bambini e ragazzi
+iCarly | tvg-id=609401db8cf51c00084b592e | group=Bambini e ragazzi
+DeAPlaneta Kids | tvg-id=(vuoto) | group=Bambini e ragazzi
+Inuyasha | tvg-id=IT800001SW | group=Bambini e ragazzi
+Inazuma Eleven Collection | tvg-id=612375086abc84000738fc03 | group=Bambini e ragazzi
+ALMA TV | tvg-id=AlmaTV.it | group=Altre tv
+MarcoPolo Travel TV | tvg-id=TravelTV.it | group=Altre tv
+Donna tv | tvg-id=DonnaTV.it | group=Altre tv
+LA7 eventi live | tvg-id=(vuoto) | group=Altre tv
+LA7 agenzie? | tvg-id=(vuoto) | group=Altre tv
+il61 | tvg-id=il61 | group=Altre tv
+Iunior TV | tvg-id=iuniortv | group=Bambini e ragazzi
+MAN-GA | tvg-id=manga | group=Bambini e ragazzi
+Anime Channel (Coming soon) | tvg-id=(vuoto) | group=Bambini e ragazzi
+EURO TV | tvg-id=(vuoto) | group=Altre tv
+SuperSIX | tvg-id=(vuoto) | group=Altre tv
+Vintage TV | tvg-id=(vuoto) | group=Altre tv
+BOM CHANNEL | tvg-id=(vuoto) | group=Altre tv
+Wedding TV | tvg-id=(vuoto) | group=Altre tv
+Sposi TV | tvg-id=(vuoto) | group=Altre tv
+Zerouno Tv News | tvg-id=(vuoto) | group=Notizie
+Supertennis+ 1 | tvg-id=(vuoto) | group=Sport
+Supertennis+ 2 | tvg-id=(vuoto) | group=Sport
+Supertennis+ 3 | tvg-id=(vuoto) | group=Sport
+Supertennis+ 4 | tvg-id=(vuoto) | group=Sport
+Sportface | tvg-id=IT16000070D | group=Sport
+Juventus Play | tvg-id=(vuoto) | group=Sport
+INTER 24/7 | tvg-id=(vuoto) | group=Sport
+Lazio Style TV | tvg-id=(vuoto) | group=Sport
+Italian Fishing TV | tvg-id=(vuoto) | group=Sport
+SportOutdoor.Tv | tvg-id=(vuoto) | group=Sport
+FIFA+ | tvg-id=(vuoto) | group=Sport
+F1 TV | tvg-id=(vuoto) | group=Sport
+Dolomiti Life TV | tvg-id=(vuoto) | group=Documentari
+Plus TV Sport | tvg-id=MsChannel.it | group=Sport
+Plus TV Motori | tvg-id=MsMotor.it | group=Sport
+ACI Sport LIVE 01 (non sempre attivo) | tvg-id=(vuoto) | group=Sport
+Rally TV | tvg-id=(vuoto) | group=Sport
+TOP Calcio 24 | tvg-id=(vuoto) | group=Sport
+RedBull TV | tvg-id=(vuoto) | group=Sport
+Sportitalia (25fps) | tvg-id=sportitalia | group=Sport
+LBA Classics | tvg-id=IT4000089R | group=Sport
+Sport - Pluto | tvg-id=PlutoTvSport.it | group=Sport
+Tennis Channel | tvg-id=Tennis Channel | group=Sport
+Tennis channel 2 | tvg-id=t2 tennis | group=Sport
+Tennis+ | tvg-id=(vuoto) | group=Sport
+UNBEATEN | tvg-id=(vuoto) | group=Sport
+FUBO Sports | tvg-id=(vuoto) | group=Sport
+CBS Sports Network | tvg-id=CBSSports.us | group=Sport
+Motor1 | tvg-id=(vuoto) | group=Sport
+Motoretrò | tvg-id=(vuoto) | group=Sport
+FF Motorsport | tvg-id=(vuoto) | group=Sport
+Vevo Pop | tvg-id=ITBC2100001G9 | group=Musica
+Vevo '90s & '00s | tvg-id=ITBC210000200 | group=Musica
+That's 90s00s | tvg-id=(vuoto) | group=Musica
+Vevo 2K | tvg-id=(vuoto) | group=Musica
+Vevo '70s & '80s | tvg-id=(vuoto) | group=Musica
+That's 70s | tvg-id=(vuoto) | group=Musica
+That's 80s | tvg-id=(vuoto) | group=Musica
+Radio Italia Live | tvg-id=(vuoto) | group=Musica
+RadioWOW | tvg-id=(vuoto) | group=Musica
+Radio Kiss Kiss TV | tvg-id=(vuoto) | group=Musica
+DJOssoTV | tvg-id=(vuoto) | group=Musica
+PiterPan TV | tvg-id=radiopiterpantv | group=Musica
+Radio Studiopiù | tvg-id=(vuoto) | group=Musica
+RDS Social TV | tvg-id=(vuoto) | group=Musica
+Radio Zeta TV | tvg-id=(vuoto) | group=Musica
+Radio Ibiza TV | tvg-id=ibizatv | group=Musica
+Radio Capital TV | tvg-id=(vuoto) | group=Musica
+Radio Bruno TV | tvg-id=(vuoto) | group=Musica
+Radio Lombardia TV | tvg-id=(vuoto) | group=Musica
+Radio Number ONE | tvg-id=RadioNumberOne.it | group=Musica
+RTL 102.5 BEST | tvg-id=(vuoto) | group=Musica
+RTL 102.5 DISCO | tvg-id=(vuoto) | group=Musica
+RTL 102.5 CALIENTE | tvg-id=(vuoto) | group=Musica
+RTL 102.5 BRO&SIS | tvg-id=(vuoto) | group=Musica
+RTL 102.5 NAPULÈ | tvg-id=(vuoto) | group=Musica
+RTL 102.5 TRAFFIC | tvg-id=(vuoto) | group=Musica
+Match Music TV | tvg-id=(vuoto) | group=Musica
+Babayaga TV | tvg-id=(vuoto) | group=Musica
+Radio Company TV | tvg-id=(vuoto) | group=Musica
+Radio 51 | tvg-id=(vuoto) | group=Musica
+Demo 4K | tvg-id=(vuoto) | group=Musica
+Hip Hop TV | tvg-id=ITBC11000108G | group=Musica
+Trace Latina | tvg-id=ITBA3300042HE | group=Musica
+Trace Urban | tvg-id=ITBA3300041LY | group=Musica
+Trace UK | tvg-id=(vuoto) | group=Musica
+Xite | tvg-id=(vuoto) | group=Musica
+XITE Hits | tvg-id=(vuoto) | group=Musica
+Cool Summer Channel | tvg-id=IT2500001IF | group=Musica
+Rock TV | tvg-id=ITBC1100011RK | group=Musica
+ZeroUno Tv | tvg-id=(vuoto) | group=Musica
+RSO Radio | tvg-id=(vuoto) | group=Musica
+Radio Popizz | tvg-id=(vuoto) | group=Musica
+Radio Marte Tv | tvg-id=(vuoto) | group=Musica
+Studiopiù 60/70/80 | tvg-id=(vuoto) | group=Musica
+Radio 80 | tvg-id=(vuoto) | group=Musica
+Radio Bellla e Monella TV | tvg-id=bellla e monella tv | group=Musica
+CasaSanremo | tvg-id=(vuoto) | group=Altre tv
+RaiPlay (eventi) | tvg-id=(vuoto) | group=Rai
+RaiPlay 2 (eventi) | tvg-id=(vuoto) | group=Rai
+RaiPlay 3 (eventi) | tvg-id=(vuoto) | group=Rai
+Rai generic1 | tvg-id=(vuoto) | group=Rai
+Rai generic3 | tvg-id=(vuoto) | group=Rai
+RaiPlaySport 1 | tvg-id=(vuoto) | group=Rai
+RaiPlaySport 2 | tvg-id=(vuoto) | group=Rai
+RaiPlaySport 3 | tvg-id=(vuoto) | group=Rai
+Rai test1 | tvg-id=(vuoto) | group=Rai
+Rai test2 | tvg-id=(vuoto) | group=Rai
+Rai test3 | tvg-id=(vuoto) | group=Rai
+GFVIP - Open House | tvg-id=(vuoto) | group=Mediaset
+Mediaset b2 | tvg-id=(vuoto) | group=Mediaset
+Mediaset b3 | tvg-id=(vuoto) | group=Mediaset
+Diretta | tvg-id=(vuoto) | group=Mediaset
+TT-TELETUTTO BS | tvg-id=(vuoto) | group=Altre tv
+Radiodueindie | tvg-id=(vuoto) | group=Radio
+Radio OneDance | tvg-id=(vuoto) | group=Radio
+Radio 906 | tvg-id=(vuoto) | group=Radio
+Radio 906 Italia | tvg-id=(vuoto) | group=Radio
+Radio Sunbeat | tvg-id=(vuoto) | group=Radio
+Radio 906 90/00 | tvg-id=(vuoto) | group=Radio
+Restart Rete 4 | tvg-id=(vuoto) | group=RESTART Mediaset
+Restart Italia 2 | tvg-id=(vuoto) | group=RESTART Mediaset
+Restart La5 | tvg-id=(vuoto) | group=RESTART Mediaset
+Restart Cine34 | tvg-id=(vuoto) | group=RESTART Mediaset
+Restart Mediaset Extra | tvg-id=(vuoto) | group=RESTART Mediaset
+Restart Focus | tvg-id=(vuoto) | group=RESTART Mediaset
+Restart Iris | tvg-id=(vuoto) | group=RESTART Mediaset
+Restart TOPCrime | tvg-id=(vuoto) | group=RESTART Mediaset
+RAI World Premium | tvg-id=RaiWorldPremium.it | group=Estero
+Rai Italia Australia | tvg-id=(vuoto) | group=Estero
+Rai Italia Europa | tvg-id=(vuoto) | group=Estero
+Rai Italia America | tvg-id=(vuoto) | group=Estero
+Rete Italia | tvg-id=(vuoto) | group=Estero
+RSI LA1 (VPN Svizzera) | tvg-id=(vuoto) | group=Estero
+RSI LA2 (VPN Svizzera) | tvg-id=(vuoto) | group=Estero
+TGR Abruzzo | tvg-id=(vuoto) | group=Regionali
+TGR Basilicata | tvg-id=(vuoto) | group=Regionali
+TGR Calabria | tvg-id=(vuoto) | group=Regionali
+TGR Campania | tvg-id=(vuoto) | group=Regionali
+TGR Emilia Romagna | tvg-id=(vuoto) | group=Regionali
+TGR Friuli Venezia Giulia | tvg-id=(vuoto) | group=Regionali
+TGR Lazio | tvg-id=(vuoto) | group=Regionali
+TGR Liguria | tvg-id=(vuoto) | group=Regionali
+TGR Lombarida | tvg-id=(vuoto) | group=Regionali
+TGR Marche | tvg-id=(vuoto) | group=Regionali
+TGR Molise | tvg-id=(vuoto) | group=Regionali
+TGR Piemonte | tvg-id=(vuoto) | group=Regionali
+TGR Puglia | tvg-id=(vuoto) | group=Regionali
+TGR Sardegna | tvg-id=(vuoto) | group=Regionali
+TGR Sicilia | tvg-id=(vuoto) | group=Regionali
+TGR Toscana | tvg-id=(vuoto) | group=Regionali
+TGR Trento | tvg-id=(vuoto) | group=Regionali
+TGR Bolzano | tvg-id=(vuoto) | group=Regionali
+TGR Umbria | tvg-id=(vuoto) | group=Regionali
+TGR Veneto | tvg-id=(vuoto) | group=Regionali
+TGR Valle d'Aosta | tvg-id=(vuoto) | group=Regionali
+TT-TTELETUTTO | tvg-id=(vuoto) | group=Regionali
+TT-TTELETUTTO 2 | tvg-id=(vuoto) | group=Regionali
+TT-TTELETUTTO 24 | tvg-id=(vuoto) | group=Regionali
+Più Valli TV | tvg-id=(vuoto) | group=Regionali
+Teleboario | tvg-id=(vuoto) | group=Regionali
+TeleTicino | tvg-id=(vuoto) | group=Regionali
+GS Channel - TMC | tvg-id=(vuoto) | group=Regionali
+Azzurra TV Italia | tvg-id=(vuoto) | group=Regionali
+Sicilia 242 | tvg-id=(vuoto) | group=Regionali
+Retemia | tvg-id=(vuoto) | group=Regionali
+TeleUniverso | tvg-id=teleuniverso | group=Regionali
+Tu Day | tvg-id=(vuoto) | group=Regionali
+Tele A1 | tvg-id=(vuoto) | group=Regionali
+Radio Caserta Tv | tvg-id=(vuoto) | group=Regionali
+PrimAntenna | tvg-id=(vuoto) | group=Regionali
+Canale 10 Lazio | tvg-id=canale 10 | group=Regionali
+Enjoy Tv | tvg-id=enjoy tv | group=Regionali
+Italia2 Tv | tvg-id=italia2 tv | group=Regionali
+E'Tv Rete7 | tvg-id=(vuoto) | group=Regionali
+Extra Tv | tvg-id=extra tv | group=Regionali
+Fm Tv 75 Marche | tvg-id=fm tv 75 marche | group=Regionali
+La C Tv Calabria | tvg-id=la c tv calabria | group=Regionali
+Esperia TV | tvg-id=(vuoto) | group=Regionali
+Icaro Tv | tvg-id=icaro tv | group=Regionali
+Lazio Tv | tvg-id=lazio tv | group=Regionali
+Cronache Lucane Tv | tvg-id=cronache lucane tv | group=Regionali
+La3 Marsala | tvg-id=la3 marsala | group=Regionali
+L'Altro Corriere Tv | tvg-id=l'altro corriere tv | group=Regionali
+RTI Calabria | tvg-id=(vuoto) | group=Regionali
+Minformo Tv | tvg-id=minformo tv | group=Regionali
+Fascino Tv 168 | tvg-id=(vuoto) | group=Regionali
+Fascino Tv 169 | tvg-id=(vuoto) | group=Regionali
+Nuova Tv1 | tvg-id=nuova tv1 | group=Regionali
+Nuova Tv2 | tvg-id=nuova tv2 | group=Regionali
+Canale Uno Tivù | tvg-id=(vuoto) | group=Regionali
+Rieti Channel | tvg-id=(vuoto) | group=Regionali
+Reggio Tv | tvg-id=reggio tv | group=Regionali
+Rete55 Varese | tvg-id=rete55 | group=Regionali
+Rete Mia | tvg-id=rete mia | group=Regionali
+Rtp Sicilia | tvg-id=rtp sicilia | group=Regionali
+Stile Tv | tvg-id=stile tv | group=Regionali
+Nora TV | tvg-id=(vuoto) | group=Regionali
+Tele A Campania | tvg-id=(vuoto) | group=Regionali
+Tele  Norba | tvg-id=telenorba | group=Regionali
+Tele Bari | tvg-id=tele bari | group=Regionali
+Telequattro Nordest | tvg-id=telequattro nordest | group=Regionali
+Telestense | tvg-id=telestense | group=Regionali
+Telemantova | tvg-id=telemantova | group=Regionali
+Telemolise | tvg-id=telemolise | group=Regionali
+Tlt Molise | tvg-id=tlt molise | group=Regionali
+TelegranducatoTv | tvg-id=telegranducatotv | group=Regionali
+Tele Pavia | tvg-id=tele pavia | group=Regionali
+TR 118 | tvg-id=tr 118 | group=Regionali
+TVA Vicenza | tvg-id=tva vicenza | group=Regionali
+Tv1 Sulmona | tvg-id=tv1 sulmona | group=Regionali
+VideoNola | tvg-id=videonola | group=Regionali
+Bergamo Tv | tvg-id=(vuoto) | group=Regionali

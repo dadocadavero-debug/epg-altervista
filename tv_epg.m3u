@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=1790375238" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=1790375238"
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=1790376070" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=1790376070"
 #EXTINF:-1 tvg-id="Rai1.it" tvg-name="Rai 1" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-chno="1" channel-number="1" group-title="Rai",Rai 1
 https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
 #EXTINF:-1 tvg-name="Rai 2" tvg-id="Rai2.it" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png" tvg-chno="2" channel-number="2" group-title="Rai" mediapolis="308718",Rai 2
@@ -531,7 +531,7 @@ https://amg00614-amg00614c1-amgplt0007.playout.now3.amagi.tv/playlist/amg00614-a
 https://amg14891-amg14891c2-amgplt0165.playout.now3.amagi.tv/playlist/amg14891-amg14891c2-amgplt0165/playlist.m3u8
 #EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://www.google.com/s2/favicons?domain=ffmotorsport.it&sz=256" group-title="Sport",FF Motorsport
 https://host1.momentotv.live:28443/cmaf/ffmotorsport/playlist.m3u8
-#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://www.google.com/s2/favicons?domain=eqtv.it&sz=256" group-title="Sport",EQU TV
+#EXTINF:-1 tvg-name="" tvg-id="EQUtv.it" tvg-logo="https://www.google.com/s2/favicons?domain=eqtv.it&sz=256" group-title="Sport",EQU TV
 https://livestream-epiqa.akamaized.net/hls/live/2039453/EQUTV/master.m3u8
 #EXTINF:-1 tvg-name="Rai Sport jolly" tvg-id="RaiSport.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" group-title="Sport" mediapolis="22590",Rai Sport jolly 1 (attivo raramente)
 https://raisportjolly1-live.akamaized.net/hls/live/2034072/raisportjolly1/raisportjolly1/raisportjolly1_2400/chunklist.m3u8
