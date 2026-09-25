@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 M3U_URL = "https://inthemix.altervista.org/tv.m3u"
-EPG_URL = "https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml"
+EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
 LOGO_SOURCE_URL = "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u"
 FALLBACK_LOGO_URL = "https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg"
 OUT_M3U = Path("tv_epg.m3u")
@@ -81,13 +81,6 @@ NAME_MAP = {
     "rai storia hbbtv raiway": "RaiStoria.it",
     "rai sport hbbtv raiway": "RaiSport.it",
 }
-
-RAI_WORKING_STREAMS = {
-    "Rai 1": "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8",
-    "Rai 2": "https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8",
-    "Rai 3": "https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8",
-}
-
 
 TECH_WORDS = {
     "hd", "sd", "hls", "dash", "hbbtv", "raiway", "akamai", "backup", "fps", "europa",
@@ -274,28 +267,61 @@ def set_tvg_id(extinf: str, new_id: str) -> str:
     return extinf
 
 
-def fix_primary_rai_streams(lines):
+def channel_exists(lines, channel_name: str) -> bool:
+    target_key = norm(channel_name)
+    for line in lines:
+        if line.startswith("#EXTINF") and norm(channel_name_from_extinf(line)) == target_key:
+            return True
+    return False
+
+
+def copy_channel_stream(lines, source_name: str, target_name: str):
+    """
+    Copia SOLO il payload di stream (URL e opzioni) dal canale sorgente
+    al canale destinazione. I metadati #EXTINF del canale destinazione
+    restano invariati. Se il canale sorgente non viene trovato, non cambia nulla.
+    """
+    source_key = norm(source_name)
+    target_key = norm(target_name)
+    source_payload = None
+
+    # Prima passata: trova il blocco dello stream sorgente.
+    i = 0
+    while i < len(lines):
+        if lines[i].startswith("#EXTINF"):
+            name = channel_name_from_extinf(lines[i])
+            j = i + 1
+            while j < len(lines) and not lines[j].startswith("#EXTINF"):
+                j += 1
+
+            if norm(name) == source_key:
+                source_payload = [x for x in lines[i + 1:j] if not x.lstrip("\ufeff").startswith("#EXTM3U")]
+                break
+            i = j
+        else:
+            i += 1
+
+    if not source_payload:
+        return lines
+
+    # Seconda passata: sostituisce SOLO il payload del target.
     out = []
     i = 0
-
     while i < len(lines):
         line = lines[i]
+        if line.startswith("#EXTINF"):
+            name = channel_name_from_extinf(line)
+            j = i + 1
+            while j < len(lines) and not lines[j].startswith("#EXTINF"):
+                j += 1
 
-        if line.startswith("#EXTINF") and 'group-title="Rai"' in line:
-            name = line.rsplit(",", 1)[-1].strip() if "," in line else ""
-
-            if name in RAI_WORKING_STREAMS:
-                out.append(line)
-                i += 1
-
-                # Salta opzioni/URL originali fino alla prossima EXTINF.
-                while i < len(lines) and not lines[i].startswith("#EXTINF"):
-                    if lines[i].startswith("#EXTM3U"):
-                        out.append(lines[i])
-                    i += 1
-
-                out.append(RAI_WORKING_STREAMS[name])
-                continue
+            out.append(line)
+            if norm(name) == target_key:
+                out.extend(source_payload)
+            else:
+                out.extend(lines[i + 1:j])
+            i = j
+            continue
 
         out.append(line)
         i += 1
@@ -304,6 +330,66 @@ def fix_primary_rai_streams(lines):
 
 
 
+def remove_channel(lines, channel_name: str):
+    """
+    Rimuove l'intero blocco di un canale (#EXTINF + opzioni + URL).
+    Utile per eliminare il feed sorgente dopo averne copiato lo stream
+    sul canale principale, evitando doppioni nella playlist finale.
+    """
+    target_key = norm(channel_name)
+    out = []
+    i = 0
+
+    while i < len(lines):
+        line = lines[i]
+        if line.startswith("#EXTINF"):
+            name = channel_name_from_extinf(line)
+            j = i + 1
+            while j < len(lines) and not lines[j].startswith("#EXTINF"):
+                j += 1
+
+            if norm(name) != target_key:
+                out.extend(lines[i:j])
+            i = j
+            continue
+
+        out.append(line)
+        i += 1
+
+    return out
+
+
+def replace_channel_stream(lines, target_name: str, stream_url: str, extra_options=None):
+    """
+    Sostituisce SOLO il payload di stream del canale indicato.
+    Non modifica #EXTINF, tvg-id, logo, nome o altri canali.
+    """
+    target_key = norm(target_name)
+    extra_options = list(extra_options or [])
+    out = []
+    i = 0
+
+    while i < len(lines):
+        line = lines[i]
+        if line.startswith("#EXTINF"):
+            name = channel_name_from_extinf(line)
+            j = i + 1
+            while j < len(lines) and not lines[j].startswith("#EXTINF"):
+                j += 1
+
+            out.append(line)
+            if norm(name) == target_key:
+                out.extend(extra_options)
+                out.append(stream_url)
+            else:
+                out.extend(lines[i + 1:j])
+            i = j
+            continue
+
+        out.append(line)
+        i += 1
+
+    return out
 
 def channel_name_from_extinf(extinf: str) -> str:
     return extinf.rsplit(",", 1)[-1].strip() if "," in extinf else ""
@@ -432,7 +518,55 @@ def main():
     # 4. PREPARA LA PLAYLIST
     # =========================================================
     lines = m3u.splitlines()
-    lines = fix_primary_rai_streams(lines)
+
+    # Il gruppo Rai resta quello originale della playlist Altervista.
+    # Modifichiamo SOLO Rai 1, Rai 2 e Rai 3 come richiesto.
+    # Tutti gli altri Rai (4, 5, Movie, Premium, Storia, Scuola, News, Sport, ecc.)
+    # restano ESATTAMENTE come arrivano dalla sorgente.
+
+    # Protezione: devono esistere almeno i tre canali principali.
+    # Per Rai 1 4K accettiamo i nomi reali della playlist Altervista:
+    # "Rai 1 4K hls" e "Rai 1 4K dash".
+    required_rai = ("Rai 1", "Rai 2", "Rai 3", "Rai 3 900 DASH")
+    missing_rai = [name for name in required_rai if not channel_exists(lines, name)]
+
+    rai1_4k_source = None
+    # Preferiamo HLS perché è generalmente più compatibile con i player;
+    # se non c'è, usiamo automaticamente il feed DASH.
+    for candidate in ("Rai 1 4K hls", "Rai 1 4K dash"):
+        if channel_exists(lines, candidate):
+            rai1_4k_source = candidate
+            break
+
+    if rai1_4k_source is None:
+        missing_rai.append("Rai 1 4K hls/dash")
+
+    if missing_rai:
+        raise RuntimeError(
+            "Feed Rai necessari non trovati nella playlist Altervista: "
+            + ", ".join(missing_rai)
+            + ". Aggiornamento annullato; viene mantenuta la tv_epg.m3u precedente."
+        )
+
+    # Rai 1: mantiene metadati/EPG di Rai 1 ma usa il payload del feed 4K.
+    # Copiamo HLS se disponibile, altrimenti DASH.
+    lines = copy_channel_stream(lines, rai1_4k_source, "Rai 1")
+
+    # Elimina ENTRAMBI i doppioni 4K se presenti.
+    lines = remove_channel(lines, "Rai 1 4K hls")
+    lines = remove_channel(lines, "Rai 1 4K dash")
+
+    # Rai 2: NON usa lo stream Altervista. Manteniamo quello già verificato.
+    lines = replace_channel_stream(
+        lines,
+        "Rai 2",
+        "https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8",
+    )
+
+    # Rai 3: "Rai 3 (900 dash)" viene normalizzato automaticamente
+    # a "rai 3 900 dash", quindi questo match copre il nome reale Altervista.
+    lines = copy_channel_stream(lines, "Rai 3 900 DASH", "Rai 3")
+    lines = remove_channel(lines, "Rai 3 900 DASH")
 
     # Rimuove tutte le intestazioni #EXTM3U della sorgente.
     # Ne generiamo una nostra unica e consistente più sotto.
