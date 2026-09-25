@@ -34,7 +34,8 @@ ID_MAP = {
     "discovery": "Discovery.Channel.it", "Giallo.it": "Giallo.TV.it", "TopCrime.it": "Top.Crime.it",
     "TOPCrime.it": "Top.Crime.it", "super": "Super!.it", "rai news 24": "RaiNews24.it",
     "Italia2.it": "Italia.2.it", "TGCom24.it": "TGCom.it", "MediasetExtra.it": "Mediaset.Extra.it",
-    "raisport": "RaiSport.it", "ITBC4700002CO": "Solocalcio.it.it", "SuperTennis.it": "SuperTennis.HD.it",
+    "raisport": "RaiSport.it", "sportitalia": "Sportitalia.it",
+    "ITBC4700002CO": "Solocalcio.it.it", "SuperTennis.it": "SuperTennis.HD.it",
     "R101TV": "R101tv.it", "DeejayTV.it": "Deejay.TV.it", "radioitaliatv": "Radio.Italia.TV.HD.it",
     "RakutenFashionTv.it": "Fashion.TV.it", "qvcitalia": "QVC.it", "AciSportTV.it": "ACI.Sport.Tv.it",
     "bikesmartmobility": "BIKE.it", "VirginRadioTV.it": "Virgin.Radio.it", "radiomontecarlotv": "RMC.it",
@@ -72,6 +73,18 @@ NAME_MAP = {
     "gfvip regia 1": "GF.VIP.-.Regia.1.it",
     "gfvip regia 2": "GF.VIP.-.Regia.2.it",
     "gfvip un ora fa": "GF.VIP.-.Un’ora.fa.it",
+
+    # Sport: questi ID sono già inclusi dal workflow EPG Altervista.
+    "sport italia": "Sportitalia.it",
+    "equ tv": "EQUtv.it",
+    "fifa plus": "IT:.FIFA+.be",
+    "inter 24 7": "IT:.INTER.24/7.be",
+    "juventus play": "IT:.Juventus.Play.be",
+    "motoretro": "IT:.Motoretrò.be",
+    "rally tv": "IT:.Rally.TV.FAST+.be",
+    "redbull tv": "IT:.Red.Bull.TV.be",
+    "red bull tv": "IT:.Red.Bull.TV.be",
+    "tennis plus": "IT:.Tennis+.be",
 
     # HbbTV Rai: stessa programmazione del canale lineare.
     "rai premium hbbtv akamai": "RaiPremium.it",
@@ -279,6 +292,42 @@ def set_tvg_id(extinf: str, new_id: str) -> str:
     if pos != -1:
         return extinf[:pos + 1] + f'tvg-id="{new_id}" ' + extinf[pos + 1:]
     return extinf
+
+
+def get_attr(extinf: str, key: str) -> str:
+    m = re.search(rf'{re.escape(key)}="([^"]*)"', extinf)
+    return m.group(1).strip() if m else ""
+
+
+def valid_epg_id(candidate: str, epg_ids: set) -> str:
+    """
+    Restituisce un ID EPG valido:
+    - direttamente, se esiste nell'EPG;
+    - tramite ID_MAP, se la sorgente usa un alias noto.
+    """
+    candidate = (candidate or "").strip()
+    if not candidate:
+        return ""
+    if candidate in epg_ids:
+        return candidate
+    mapped = ID_MAP.get(candidate, "")
+    if mapped and mapped in epg_ids:
+        return mapped
+    return ""
+
+
+def alternate_epg_id(extinf: str, epg_ids: set):
+    """
+    Alcune righe Altervista usano attributi non standard come tvgid=, vg-id=
+    o channel-id= invece di tvg-id=. Li usiamo SOLO se il valore esiste davvero
+    nell'EPG, così non inventiamo associazioni.
+    """
+    for key in ("tvgid", "vg-id", "channel-id", "channel id"):
+        raw = get_attr(extinf, key)
+        cid = valid_epg_id(raw, epg_ids)
+        if cid:
+            return cid, key
+    return "", ""
 
 
 def _channel_blocks(lines):
@@ -541,6 +590,7 @@ def main():
     preserved = 0
     logos_added = 0
     generic_logos = 0
+    unmatched_epg = []
 
     # =========================================================
     # 5. HEADER M3U CON EPG AUTOMATICO
@@ -566,27 +616,55 @@ def main():
         name = line.rsplit(",", 1)[-1].strip() if "," in line else ""
 
         m = re.search(r'tvg-id="([^"]*)"', line)
-        old_id = m.group(1) if m else ""
+        old_id = m.group(1).strip() if m else ""
+        tvg_name = get_attr(line, "tvg-name")
 
         new_id = None
         reason = ""
 
-        # 1) ID già valido EPGShare: lascialo.
+        # 1) ID già valido nell'EPG: lascialo.
         if old_id and old_id in epg_ids:
             preserved += 1
 
-        # 2) Mappa ID verificata.
-        elif old_id and old_id in ID_MAP and ID_MAP[old_id] in epg_ids:
-            new_id = ID_MAP[old_id]
-            reason = f"id:{old_id}"
+        # 2) Alias ID verificato.
+        elif old_id:
+            mapped_old = valid_epg_id(old_id, epg_ids)
+            if mapped_old:
+                new_id = mapped_old
+                reason = f"id:{old_id}"
 
-        # 3) Mappa nome verificata (soprattutto ID vuoti/HbbTV).
-        elif norm(name) in NAME_MAP and NAME_MAP[norm(name)] in epg_ids:
-            new_id = NAME_MAP[norm(name)]
-            reason = "nome-verificato"
+        # 3) Recupera attributi alternativi/malformati della sorgente
+        #    (tvgid=, vg-id=, channel-id=...), ma SOLO se validi nell'EPG.
+        if not new_id and not (old_id and old_id in epg_ids):
+            alt_id, alt_key = alternate_epg_id(line, epg_ids)
+            if alt_id:
+                new_id = alt_id
+                reason = f"{alt_key}-verificato"
 
-        # 4) Match automatico SOLO se univoco: nome esatto normalizzato.
-        else:
+        # 4) Mappa nome verificata (soprattutto ID vuoti/HbbTV).
+        if not new_id and not (old_id and old_id in epg_ids):
+            mapped_name = NAME_MAP.get(norm(name), "")
+            if mapped_name and mapped_name in epg_ids:
+                new_id = mapped_name
+                reason = "nome-verificato"
+
+        # 5) Prova anche tvg-name se presente.
+        if not new_id and not (old_id and old_id in epg_ids) and tvg_name:
+            candidates = names_to_ids.get(norm(tvg_name), set())
+            if len(candidates) == 1:
+                new_id = next(iter(candidates))
+                reason = "tvg-name-esatto"
+                auto += 1
+            else:
+                sn_tvg = stripped_norm(tvg_name)
+                candidates = stripped_to_ids.get(sn_tvg, set()) if len(sn_tvg) >= 4 else set()
+                if len(candidates) == 1:
+                    new_id = next(iter(candidates))
+                    reason = "tvg-name-ripulito"
+                    auto += 1
+
+        # 6) Match automatico SOLO se univoco sul nome visualizzato.
+        if not new_id and not (old_id and old_id in epg_ids):
             candidates = names_to_ids.get(norm(name), set())
 
             if len(candidates) == 1:
@@ -642,6 +720,11 @@ def main():
 
         effective_id_match = re.search(r'tvg-id="([^"]*)"', line)
         effective_id = effective_id_match.group(1).strip() if effective_id_match else ""
+
+        if not effective_id or effective_id not in epg_ids:
+            unmatched_epg.append(
+                f"{name} | tvg-id={effective_id or '(vuoto)'} | group={get_attr(line, 'group-title') or '(vuoto)'}"
+            )
 
         epg_id_logo = epg_icons_by_id.get(effective_id, "")
         learned_logo = best_logo_for_name(name, learned_logos)
@@ -714,8 +797,10 @@ def main():
         f"Match automatici univoci: {auto}\n"
         f"ID già validi preservati: {preserved}\n"
         f"Loghi aggiunti/sostituiti: {logos_added}\n"
-        f"Loghi generici usati come ultima risorsa: {generic_logos}\n\n"
+        f"Loghi generici usati come ultima risorsa: {generic_logos}\n"
+        f"Canali senza EPG abbinabile: {len(unmatched_epg)}\n\n"
         + "\n".join(report)
+        + ("\n\nCANALI SENZA EPG ABBINABILE\n" + "\n".join(unmatched_epg) if unmatched_epg else "")
         + "\n",
         encoding="utf-8",
     )
