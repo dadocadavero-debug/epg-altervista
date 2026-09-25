@@ -7,9 +7,10 @@ ID già validi preservati: 84
 Loghi aggiunti/sostituiti: 177
 Loghi generici usati come ultima risorsa: 62
 Stream controllati: 498
-Stream OK originali: 334
-Stream riparati automaticamente: 42
-Stream non risolti: 122
+Stream OK originali: 338
+Stream riparati automaticamente: 0
+Stream mantenuti/non risolti: 160
+Modalità riparazione: SICURA (nessuna sostituzione su timeout/403/5xx/rete)
 
 NOVE | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png
 EuroNews Italia | PlutoEuronews.it -> Euronews.it | id:PlutoEuronews.it
@@ -251,75 +252,75 @@ Turbo backup 🔐 | logo aggiunto -> https://api.superguidatv.it/v1/channels/444
 
 ===== CONTROLLO STREAM COMPLETO =====
 Canali totali: 498
-Stream OK originali: 334
-Stream riparati automaticamente: 42
-Stream non risolti: 122
+Stream OK originali: 338
+Stream riparati automaticamente (solo fallimenti definitivi): 0
+Stream mantenuti/non risolti: 160
 Fonti fallback con errore: 0
 
-RIPARATO | Rai 1 | Free-TV Italy | HTTPError: HTTP Error 404: Not Found -> HLS OK | https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8 -> https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
-OK | Rai 2 | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8
-RIPARATO | Rai 3 | Free-TV Italy | HTTPError: HTTP Error 404: Not Found -> HLS OK | https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8 -> https://d3k8wzt41aflvx.cloudfront.net/RAI3/Live.m3u8
-NON RISOLTO | Rete 4 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest_hd.mpd
-NON RISOLTO | Canale 5 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/manifest_hd.mpd
-NON RISOLTO | Italia 1 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/manifest_hd.mpd
+PINNED NON SOSTITUITO | Rai 1 | HTTPError: HTTP Error 404: Not Found | https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8
+PINNED OK | Rai 2 | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8
+PINNED NON SOSTITUITO | Rai 3 | HTTPError: HTTP Error 404: Not Found | https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Rete 4 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | Canale 5 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | Italia 1 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/manifest_hd.mpd
 OK | LA7 | HLS OK | https://d1chghleocc9sm.cloudfront.net/Live_1280x720_.m3u8
-NON RISOLTO | TV8 SD | HTTPError: HTTP Error 403: Forbidden | https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
+MANTENUTO (fallimento non definitivo) | TV8 SD | HTTPError: HTTP Error 403: Forbidden | https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
 OK | NOVE | HLS OK | https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/NOVE/CMAF/index.m3u8
 OK | Telelombardia | HLS OK | https://vercel-api.zappr.stream/api?https://telelombardia.video/video/viewlivestreaming?rel=66074&cntr=0
-NON RISOLTO | RSI LA2 | HLS child non raggiungibile: HTTPError: HTTP Error 403: Forbidden | https://rsila2-proxy.zappr.stream/index.m3u8
-NON RISOLTO | Sky Sport (non sempre attivo) | HTTPError: HTTP Error 403: Forbidden | https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11222/skysportweb/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
+MANTENUTO (fallimento non definitivo) | RSI LA2 | HLS child non raggiungibile: HTTPError: HTTP Error 403: Forbidden | https://rsila2-proxy.zappr.stream/index.m3u8
+MANTENUTO (fallimento non definitivo) | Sky Sport (non sempre attivo) | HTTPError: HTTP Error 403: Forbidden | https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11222/skysportweb/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
 OK | Golazo Network (Serie A) | HLS OK | https://jmp2.uk/plu-63a0e33a45264d000850ed7e.m3u8
-RIPARATO | Rai 1 4K hls | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://raievent10-elem-live.akamaized.net/hls/live/619189/raievent10/raievent10/playlist.m3u8 -> https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
-RIPARATO | Rai 1 4K dash | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://raievent10-dash-live.akamaized.net/dash/live/664000/raievent10/manifest.mpd -> https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
+MANTENUTO (fallimento non definitivo) | Rai 1 4K hls | HTTPError: HTTP Error 403: Forbidden | https://raievent10-elem-live.akamaized.net/hls/live/619189/raievent10/raievent10/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Rai 1 4K dash | HTTPError: HTTP Error 403: Forbidden | https://raievent10-dash-live.akamaized.net/dash/live/664000/raievent10/manifest.mpd
 OK | Trailers | HLS OK | https://amg01821-amg01821c3-plex-italy-5433.playouts.now.amagi.tv/playlist.m3u8
 OK | TMC Telemontecarlo | HLS OK | https://stream10.xdevel.com/video17s975955-2173/stream/playlist.m3u8
-NON RISOLTO | EuroNews Italia | HTTPError: HTTP Error 403: Forbidden | https://amg00882-amg00882c4-wedotv-eu-4536.playouts.now.amagi.tv/playlist1080p.m3u8
+MANTENUTO (fallimento non definitivo) | EuroNews Italia | HTTPError: HTTP Error 403: Forbidden | https://amg00882-amg00882c4-wedotv-eu-4536.playouts.now.amagi.tv/playlist1080p.m3u8
 OK | Giornale Radio Tv | HLS OK | https://5f204aff97bee.streamlock.net/GR_tv/livestream/chunklist_w1819045153.m3u8
-NON RISOLTO | Mediaset 20 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/manifest_hd.mpd
-RIPARATO | Rai 4 | Davide Fulgione | HTTPError: HTTP Error 403: Forbidden -> stream dati OK (video/mp4) | https://raiquattro1-dash-live.akamaized.net/dash/live/663977/raiquattro1/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forceUserAgent=rainet/4.0.5
-NON RISOLTO | Iris | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-ki/ki-clr.isml/manifest_hd.mpd
-RIPARATO | Rai 5 | Davide Fulgione | HTTPError: HTTP Error 403: Forbidden -> stream dati OK (video/mp4) | https://raicinque1-dash-live.akamaized.net/dash/live/664003/raicinque1/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276&output=7&forceUserAgent=raiplayappletv
-RIPARATO | Rai Movie | Davide Fulgione | HTTPError: HTTP Error 403: Forbidden -> stream dati OK (video/mp4) | https://raimovie1-dash-live.akamaized.net/dash/live/663983/raimovie1/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002&output=7&forceUserAgent=raiplayappletv
-RIPARATO | Rai Premium | Davide Fulgione | HTTPError: HTTP Error 403:  -> stream dati OK (video/mp4) | https://raipremium1-push.cdn.netrw.it/rai/dash/live/raipremium/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746992&output=7&forceUserAgent=raiplayappletv
-NON RISOLTO | Cielo SD | HTTPError: HTTP Error 403: Forbidden | https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
-NON RISOLTO | TwentySeven | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-ts/ts-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | Mediaset 20 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/manifest_hd.mpd
+PINNED OK | Rai 4 | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forceUserAgent=raiplayappletv
+MANTENUTO (fallimento non definitivo) | Iris | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-ki/ki-clr.isml/manifest_hd.mpd
+PINNED OK | Rai 5 | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276&output=7&forceUserAgent=raiplayappletv
+PINNED OK | Rai Movie | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002&output=7&forceUserAgent=raiplayappletv
+PINNED OK | Rai Premium | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746992&output=7&forceUserAgent=raiplayappletv
+MANTENUTO (fallimento non definitivo) | Cielo SD | HTTPError: HTTP Error 403: Forbidden | https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
+MANTENUTO (fallimento non definitivo) | TwentySeven | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-ts/ts-clr.isml/manifest_hd.mpd
 OK | TV2000 | HLS OK | https://hls-live-tv2000.akamaized.net/hls/live/2028510/tv2000/master.m3u8
 OK | LA7 Cinema | manifest DASH/Smooth OK | https://d15umi5iaezxgx.cloudfront.net/HBBTV/LA7D/DASH-B/Live.mpd
-NON RISOLTO | LA5 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-ka/ka-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | LA5 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-ka/ka-clr.isml/manifest_hd.mpd
 OK | Real Time | HLS OK | https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/REALTIME/CMAF/index.m3u8
 OK | Gambero Rosso | manifest DASH/Smooth OK | https://www.dailymotion.com/cdn/live/video/x9u215s.mpd?sec=3FE6qHnAR5mSywqiY3XmMw
 OK | Food Network | HLS OK | https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/FOODNETWORK/CMAF/index.m3u8
-NON RISOLTO | Cine 34 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-b6/b6-clr.isml/manifest_hd.mpd
-NON RISOLTO | Focus | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-fu/fu-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | Cine 34 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-b6/b6-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | Focus | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-fu/fu-clr.isml/manifest_hd.mpd
 OK | RTL 102.5 TV | HLS OK | https://pb-xr8iccrw35yso.akamaized.net/chunklist_b5692000.m3u8
 OK | Discovery | HLS OK | https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/DISCOVERYCHANNEL/CMAF/index.m3u8
 OK | Giallo | HLS OK | https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/GIALLO/CMAF/index.m3u8
-NON RISOLTO | Top Crime | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-lt/lt-clr.isml/manifest_hd.mpd
-NON RISOLTO | Boing | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/manifest_hd.mpd
-NON RISOLTO | K2 🔐 | HTTPError: HTTP Error 403:  | https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(k2)/manifest.mpd
-RIPARATO | Rai Gulp | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> stream dati OK (video/mp4) | https://raigulp1-dash-live.akamaized.net/dash/live/663985/raigulp1/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953&output=7&forceUserAgent=rainet/4.0.5
-RIPARATO | Rai YoYo | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> stream dati OK (video/mp4) | https://raiyoyo1-dash-live.akamaized.net/dash/live/663949/raiyoyo1/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746899&output=7&forceUserAgent=rainet/4.0.5
-NON RISOLTO | Frisbee 🔐 | HTTPError: HTTP Error 403:  | https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(frisbee)/manifest.mpd
-NON RISOLTO | Masha e Orso | HTTPError: HTTP Error 403: Forbidden | https://amg01954-amg01954c4-samsung-it-10210.playouts.now.amagi.tv/playlist.m3u8
-NON RISOLTO | Cartoonito | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-la/la-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | Top Crime | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-lt/lt-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | Boing | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | K2 🔐 | HTTPError: HTTP Error 403:  | https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(k2)/manifest.mpd
+MANTENUTO (fallimento non definitivo) | Rai Gulp | HTTPError: HTTP Error 403: Forbidden | https://raigulp1-dash-live.akamaized.net/dash/live/663985/raigulp1/manifest.mpd
+MANTENUTO (fallimento non definitivo) | Rai YoYo | HTTPError: HTTP Error 403: Forbidden | https://raiyoyo1-dash-live.akamaized.net/dash/live/663949/raiyoyo1/manifest.mpd
+MANTENUTO (fallimento non definitivo) | Frisbee 🔐 | HTTPError: HTTP Error 403:  | https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(frisbee)/manifest.mpd
+MANTENUTO (fallimento non definitivo) | Masha e Orso | HTTPError: HTTP Error 403: Forbidden | https://amg01954-amg01954c4-samsung-it-10210.playouts.now.amagi.tv/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Cartoonito | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-la/la-clr.isml/manifest_hd.mpd
 OK | Super! | manifest DASH/Smooth OK | https://495c5a85d9074f29acffeaea9e0215eb.msvdn.net/super/super_main/super_main_hbbtv/manifest_dvr.mpd
 OK | RaiNews 24 | HLS OK | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1&output=23
-RIPARATO | Italia 2 | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://live03-col.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/manifest_hd.mpd -> https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8
-NON RISOLTO | Sky TG24 SD | HTTPError: HTTP Error 403: Forbidden | https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/12221/web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
-RIPARATO | TGCOM 24 | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://live03-col.msf.cdn.mediaset.net/live/ch-kf/kf-clr.isml/manifest_hd.mpd -> https://d3k8wzt41aflvx.cloudfront.net/TGCOM24/Live.m3u8
+MANTENUTO (fallimento non definitivo) | Italia 2 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | Sky TG24 SD | HTTPError: HTTP Error 403: Forbidden | https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/12221/web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
+MANTENUTO (fallimento non definitivo) | TGCOM 24 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-kf/kf-clr.isml/manifest_hd.mpd
 OK | DMAX | HLS OK | https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/DMAX/CMAF/index.m3u8
 OK | BBC Earth | HLS OK | https://amg00793-amg00793c23-samsung-it-4780.playouts.now.amagi.tv/playlist/amg00793-bbcstudios-bbcearthitaly-samsungit/playlist.m3u8
-RIPARATO | Rai Storia | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://raistoria1-dash-live.akamaized.net/dash/live/663959/raistoria1/manifest.mpd -> https://d3k8wzt41aflvx.cloudfront.net/RAIStoria/Live.m3u8
-NON RISOLTO | Mediaset Extra | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/manifest_hd.mpd
+PINNED OK | Rai Storia | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746990&output=7&forceUserAgent=raiplayappletv
+MANTENUTO (fallimento non definitivo) | Mediaset Extra | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/manifest_hd.mpd
 OK | HGTV | HLS OK | https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/HGTV/CMAF/index.m3u8
 OK | Rai Scuola | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAIScuola/Live.m3u8
 OK | Rai Sport | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=16&forceUserAgent=raiplayappletv
 OK | Turbo | HLS OK | https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/TURBO/CMAF/index.m3u8
-NON RISOLTO | Sport Italia | HTTPError: HTTP Error 403: Forbidden | https://distribution.sportitalialive.it/sportitalia/sihd_abr2/playlist.m3u8
-NON RISOLTO | Solocalcio | HTTPError: HTTP Error 403: Forbidden | https://distribution.sportitalialive.it/sportitalia/sisolocalcio_abr/playlist.m3u8
-NON RISOLTO | Primavera TV | HTTPError: HTTP Error 403: Forbidden | https://distribution.sportitalialive.it/sportitalia/silive24_abr/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Sport Italia | HTTPError: HTTP Error 403: Forbidden | https://distribution.sportitalialive.it/sportitalia/sihd_abr2/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Solocalcio | HTTPError: HTTP Error 403: Forbidden | https://distribution.sportitalialive.it/sportitalia/sisolocalcio_abr/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Primavera TV | HTTPError: HTTP Error 403: Forbidden | https://distribution.sportitalialive.it/sportitalia/silive24_abr/playlist.m3u8
 OK | IL Sole 24 Ore TV | HLS OK | https://amg14891-amg14891c8-amgplt0395.playout.now3.amagi.tv/playlist.m3u8
-NON RISOLTO | Super Tennis | HTTPError: HTTP Error 403: Forbidden | https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
+MANTENUTO (fallimento non definitivo) | Super Tennis | HTTPError: HTTP Error 403: Forbidden | https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
 OK | Nokep TV | HLS OK | https://streamer2.premio.link/nokep_hd/playlist.m3u8
 OK | Radio 105 TV | HLS OK | https://live02-col.msr.cdn.mediaset.net/live/ch-ec/ec-clr.isml/index.m3u8
 OK | R101 TV | HLS OK | https://live02-col.msr.cdn.mediaset.net/live/ch-er/er-clr.isml/index.m3u8
@@ -362,22 +363,22 @@ OK | Cinema italiano | HLS OK | https://c4d2cd4a.wurl.com/4300.m3u8
 OK | Cinema Italiano - Pluto | HLS OK | https://jmp2.uk/plu-608aa7d8359b270007861489.m3u8
 OK | Cinema Orientale - Pluto | HLS OK | https://jmp2.uk/plu-6786235bd648bf0008c2780a.m3u8
 OK | CG - TV | HLS OK | https://cgentertainment-cgtv-1-it.xiaomi.wurl.tv/4300.m3u8
-NON RISOLTO | Alberto Sordi & Co | URLError: <urlopen error [Errno -2] Name or service not known> | https://4d598d5f.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/VmlkYWEtaXRfUmlzYXRlYWxsaXRhbGlhbmFfSExT/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Alberto Sordi & Co | URLError: <urlopen error [Errno -2] Name or service not known> | https://4d598d5f.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/VmlkYWEtaXRfUmlzYXRlYWxsaXRhbGlhbmFfSExT/playlist.m3u8
 OK | CG Cine Mania | HLS OK | https://chili-film-sorrisi-1-it.xiaomi.wurl.tv/4300.m3u8
-NON RISOLTO | Plus Cinema | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)> | https://j78dpbnelq5r-hls-live.mariatvcdn.it/plus/50059bd08562eba8f09669ae8d37d28e.sdp/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Plus Cinema | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)> | https://j78dpbnelq5r-hls-live.mariatvcdn.it/plus/50059bd08562eba8f09669ae8d37d28e.sdp/playlist.m3u8
 OK | Il grande cinema | HLS OK | https://nexoapp.d-dr.com/api/live/il-grande-cinema/live.m3u8
 OK | Tutto Bruce Willis | HLS OK | https://nexoapp.d-dr.com/api/live/bruce-willis/live.m3u8
 OK | Totò - Pluto | HLS OK | https://jmp2.uk/plu-65253f9881f942000833ccd5.m3u8
 OK | Horror - Pluto | HLS OK | https://jmp2.uk/plu-61c09e3ac210ed0007606620.m3u8
 OK | Horror Club | HLS OK | https://mnp-hor.otteravision.com/mnp/hor/hor_720.m3u8
 OK | Cine Paura | HLS OK | https://amg02512-amg02512c7-samsung-it-5138.playouts.now.amagi.tv/playlist/amg02512-nexodigital-comedytime-samsungit/playlist.m3u8
-NON RISOLTO | Bizzarro Movies | HTTPError: HTTP Error 404: Not Found | https://55b36922.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9CaXp6YXJyb01vdmllc19ITFM/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Bizzarro Movies | HTTPError: HTTP Error 404: Not Found | https://55b36922.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9CaXp6YXJyb01vdmllc19ITFM/playlist.m3u8
 OK | Action Movie Channel | HLS OK | https://d29h829bjuxghm.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992210
 OK | The Asylum - Pluto | HLS OK | https://jmp2.uk/plu-62e8d5369e48940007fc1dc1.m3u8
 OK | Cine Peplum | HLS OK | https://5c8d7c58.wurl.com/4300.m3u8
 OK | Western Time | HLS OK | https://amg02512-amg02512c8-samsung-it-5139.playouts.now.amagi.tv/playlist.m3u8
 OK | Western - Pluto | HLS OK | https://jmp2.uk/plu-62e7fb67478a5b0007e6c50c.m3u8
-NON RISOLTO | Sony One Serie Thriller | URLError: <urlopen error [Errno -5] No address associated with hostname> | https://d3sqawcmplf89l.cloudfront.net/playlist_1.m3u8
+MANTENUTO (fallimento non definitivo) | Sony One Serie Thriller | URLError: <urlopen error [Errno -5] No address associated with hostname> | https://d3sqawcmplf89l.cloudfront.net/playlist_1.m3u8
 OK | Sony One Serie da Ridere | HLS OK | https://d31z6rt9j0idgz.cloudfront.net/playlist_1.m3u8
 OK | Sony One Gli imperdibili | HLS OK | https://d112rgcjjnn6rd.cloudfront.net/playlist_1.m3u8
 OK | Vita da Strega | HLS OK | https://d2f01y6xj9g6n4.cloudfront.net/playlist_1.m3u8
@@ -395,7 +396,7 @@ OK | Settimo Cielo - Pluto | HLS OK | https://jmp2.uk/plu-6245d3792792150007e206
 OK | Carabinieri - Pluto | HLS OK | https://jmp2.uk/plu-66a0eea88561260008b1c5d0.m3u8
 OK | I soliti idioti - Pluto | HLS OK | https://jmp2.uk/plu-6602acadb2abe500081cf28a.m3u8
 OK | Le sorelle McLeod - Pluto | HLS OK | https://jmp2.uk/plu-60a2837f8154ab0007c4dcdf.m3u8
-NON RISOLTO | Squadra Speciale Cobra 11 - Pluto | HTTPError: HTTP Error 404: Not Found | https://jmp2.uk/plu-625e6cc905e09f00073addee.m3u8
+MANTENUTO (fallimento non definitivo) | Squadra Speciale Cobra 11 - Pluto | HTTPError: HTTP Error 404: Not Found | https://jmp2.uk/plu-625e6cc905e09f00073addee.m3u8
 OK | Elisa di Rivombrosa | HLS OK | https://amg02512-nexodigital-amg02512c4-samsung-it-1164.playouts.now.amagi.tv/playlist/amg02512-nexodigital-eastiseast-samsungit/playlist.m3u8
 OK | BBC Series | HLS OK | https://amg00793-amg00793c29-samsung-it-4958.playouts.now.amagi.tv/playlist/amg00793-bbcstudios-bbcdramaitalysamsungit-samsungit/playlist.m3u8
 OK | Gli immortali – Van Damme vs Lundgren | HLS OK | https://amg02512-nexodigital-amg02512c1-samsung-it-422.playouts.now.amagi.tv/playlist/amg02512-nexodigital-houseofdocs-samsungit/playlist.m3u8
@@ -403,13 +404,13 @@ OK | Il Testimone - Pluto | HLS OK | https://jmp2.uk/plu-61fbd3f0733df400076c9a2
 OK | Catfish - Pluto | HLS OK | https://jmp2.uk/plu-6093f9ed2c75660007322bb7.m3u8
 OK | Il Banco dei Pugni - Pluto | HLS OK | https://jmp2.uk/plu-60e4507a06171800072339a3.m3u8
 OK | Affare Fatto - Pluto | HLS OK | https://jmp2.uk/plu-64ec5c6644fe100009d114ae.m3u8
-NON RISOLTO | Top Gear | HLS child non raggiungibile: HTTPError: HTTP Error 403: Forbidden | https://amg00793-amg00793c12-samsung-it-4051.playouts.now.amagi.tv/playlist1080P.m3u8
+MANTENUTO (fallimento non definitivo) | Top Gear | HLS child non raggiungibile: HTTPError: HTTP Error 403: Forbidden | https://amg00793-amg00793c12-samsung-it-4051.playouts.now.amagi.tv/playlist1080P.m3u8
 OK | Hell's kitchen | HLS OK | https://amg00654-itv-amg00654c20-rakuten-it-3615.playouts.now.amagi.tv/1080p-cc/index.m3u8
 OK | Sanctuary - Pluto | HLS OK | https://jmp2.uk/plu-63eb57d6c111bc0008fe2658.m3u8
 OK | Sci-Fi - Pluto | HLS OK | https://jmp2.uk/plu-61728bb9ee3773000840c1fa.m3u8
 OK | Autostop per il cielo - Pluto | HLS OK | https://jmp2.uk/plu-638f286445264d00084ec6dc.m3u8
 OK | Mai dire sì - Pluto | HLS OK | https://jmp2.uk/plu-6349279ed5023700078f2bc2.m3u8
-NON RISOLTO | Dynasty - Pluto | HTTPError: HTTP Error 404: Not Found | https://jmp2.uk/plu-65cb76ea11ced70008206b66.m3u8
+MANTENUTO (fallimento non definitivo) | Dynasty - Pluto | HTTPError: HTTP Error 404: Not Found | https://jmp2.uk/plu-65cb76ea11ced70008206b66.m3u8
 OK | Andromeda - Pluto | HLS OK | https://jmp2.uk/plu-60802d37ee238e0007c94e64.m3u8
 OK | Renegade - Pluto | HLS OK | https://jmp2.uk/plu-634926e4b51d2d00077819a2.m3u8
 OK | Natura - Pluto | HLS OK | https://jmp2.uk/plu-60802b37709d6b0007b0c549.m3u8
@@ -453,25 +454,25 @@ OK | South Park - Pluto | HLS OK | https://jmp2.uk/plu-62bc1f502b70e3000706298e.
 OK | Anime - Pluto | HLS OK | https://jmp2.uk/plu-65b90daed77d450008a43345.m3u8
 OK | One Piece | HLS OK | https://jmp2.uk/plu-69affcad8940750a23a7231a.m3u8
 OK | iCarly | HLS OK | https://jmp2.uk/plu-609401db8cf51c00084b592e.m3u8
-NON RISOLTO | DeAPlaneta Kids | segmento HLS non raggiungibile: HTTPError: HTTP Error 403: Forbidden!!! | https://daiconnect.com/live/hls/tvup/rk-planetajuniorit/index.m3u8
-NON RISOLTO | Inuyasha | HTTPError: HTTP Error 403: Forbidden | https://amg17293-dynit-amg17293c1-rlaxx-gb-9740.playouts.now.amagi.tv/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | DeAPlaneta Kids | segmento HLS non raggiungibile: HTTPError: HTTP Error 403: Forbidden!!! | https://daiconnect.com/live/hls/tvup/rk-planetajuniorit/index.m3u8
+MANTENUTO (fallimento non definitivo) | Inuyasha | HTTPError: HTTP Error 403: Forbidden | https://amg17293-dynit-amg17293c1-rlaxx-gb-9740.playouts.now.amagi.tv/playlist.m3u8
 OK | Inazuma Eleven Collection | HLS OK | https://minerva-pictures-inazumaelevengo-1-it.plex.wurl.tv/4300.m3u8
-RIPARATO | ALMA TV | Free-TV Italy | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> -> HLS OK | https://streaming.softwarecreation.it/AlmaTv/AlmaTv/playlist.m3u8 -> https://5f11919dca3bd.streamlock.net/almatv/almatv/playlist.m3u8
-RIPARATO | MarcoPolo Travel TV | Free-TV Italy | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> -> HLS OK | https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8 -> https://5a1178b42cc03.streamlock.net/travel/travel/playlist.m3u8
-NON RISOLTO | Donna tv | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> | https://streaming.softwarecreation.it/DonnaTv/DonnaTv/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | ALMA TV | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> | https://streaming.softwarecreation.it/AlmaTv/AlmaTv/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | MarcoPolo Travel TV | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> | https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Donna tv | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> | https://streaming.softwarecreation.it/DonnaTv/DonnaTv/playlist.m3u8
 OK | LA7 eventi live | manifest DASH/Smooth OK | https://d15umi5iaezxgx.cloudfront.net/HBBTV/LA7FEED01/DASH/Live.mpd
 OK | LA7 agenzie? | HLS OK | https://d15umi5iaezxgx.cloudfront.net/AGENZIE/HLS/Live.m3u8
 OK | il61 | HLS OK | https://5a1178b42cc03.streamlock.net/travel/travel/playlist.m3u8
 OK | Iunior TV | HLS OK | https://5f22d76e220e1.streamlock.net/iuniortv/iuniortv/playlist.m3u8
 OK | MAN-GA | HLS OK | https://c65b9e710bde44819015af98e72cd7ab.msvdn.net/live/S93572876/aILSQPYFY3pF/master.m3u8
 OK | Anime Channel (Coming soon) | HLS OK | https://host1.momentotv.live:28443/hls/animechannel/index.m3u8
-NON RISOLTO | EURO TV | segmento HLS non raggiungibile: URLError: <urlopen error timed out> | https://5f22d76e220e1.streamlock.net/eurotv/eurotv/playlist.m3u8
-NON RISOLTO | SuperSIX | segmento HLS non raggiungibile: URLError: <urlopen error timed out> | https://5f22d76e220e1.streamlock.net/supersixnew/supersixnew/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | EURO TV | segmento HLS non raggiungibile: URLError: <urlopen error timed out> | https://5f22d76e220e1.streamlock.net/eurotv/eurotv/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | SuperSIX | segmento HLS non raggiungibile: URLError: <urlopen error timed out> | https://5f22d76e220e1.streamlock.net/supersixnew/supersixnew/playlist.m3u8
 OK | Vintage TV | HLS OK | https://64b16f23efbee.streamlock.net/hit24tv/hit24tv/playlist.m3u8
-NON RISOLTO | BOM CHANNEL | segmento HLS non raggiungibile: URLError: <urlopen error timed out> | https://5f22d76e220e1.streamlock.net/canale6/canale6/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | BOM CHANNEL | segmento HLS non raggiungibile: URLError: <urlopen error timed out> | https://5f22d76e220e1.streamlock.net/canale6/canale6/playlist.m3u8
 OK | QVC Italia | HLS OK | https://qrg.akamaized.net/hls/live/2017383/lsqvc1itcln/master.m3u8
 OK | Wedding TV | HLS OK | https://604e46ac2bdee.streamlock.net:1936/marcorenzi/marcorenzi/playlist.m3u8
-NON RISOLTO | Sposi TV | HTTPError: HTTP Error 404: Not Found | https://stream10.xdevel.com/video4s978704-3076/stream/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Sposi TV | HTTPError: HTTP Error 404: Not Found | https://stream10.xdevel.com/video4s978704-3076/stream/playlist.m3u8
 OK | Class CNBC | HLS OK | https://www.dailymotion.com/cdn/live/video/x91c8ww.m3u8?sec=D9OwEfHs-e7O6pQ-qlnROg
 OK | Zerouno Tv News | HLS OK | https://64b16f23efbee.streamlock.net/01news/01news/playlist.m3u8
 OK | Supertennis+ 1 | manifest DASH/Smooth OK | https://streamcdng1-421b2081187a40368f24e4fb496bfc26.msvdn.net/channel1/manifest.mpd
@@ -481,21 +482,21 @@ OK | Supertennis+ 4 | manifest DASH/Smooth OK | https://streamcdng1-421b2081187a
 OK | Sportface | HLS OK | https://9b7788ca.wurl.com/U2Ftc3VuZy1pdF9TcG9ydEZhY2VfSExT/playlist.m3u8
 OK | Juventus Play | HLS OK | https://amg27604-amg27604c3-amgplt0148.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg27604-amg27604c3-amgplt0148/playlist.m3u8
 OK | Inter TV | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/INTERTV/Live.m3u8
-NON RISOLTO | INTER 24/7 | HTTPError: HTTP Error 403: Forbidden | https://amg27604-amg27604c2-amgplt0148.playout.now3.amagi.tv/playlist/amg27604-amg27604c2-amgplt0148/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | INTER 24/7 | HTTPError: HTTP Error 403: Forbidden | https://amg27604-amg27604c2-amgplt0148.playout.now3.amagi.tv/playlist/amg27604-amg27604c2-amgplt0148/playlist.m3u8
 OK | Lazio Style TV | HLS OK | https://livesg.sslazio.hiway.media/restreamer/sslazio_client/gpu-a-c0-7/restreamer/outgest/a4bacde5-20de-4555-9664-939a1794b963/manifest.m3u8
 OK | Italian Fishing TV | HLS OK | https://d2n1ucuifwse4q.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5nki8b8udz6dm/index.m3u8?ads.device_did=%7BPSID%7D&ads.device_dnt=0&ads.app_domain=0&ads.app_name=0&ads.consent=0&ads.ssai_vendor=SSSLIVE
 OK | SportOutdoor.Tv | HLS OK | https://gto2000-sportoutdoortv-1-eu.rlaxxtv.wurl.tv/4300.m3u8
 OK | FIFA+ | HLS OK | https://5d95f7d7.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWl0X0ZJRkFQbHVzSXRhbGlhbl9ITFM/playlist.m3u8
-NON RISOLTO | F1 TV | HTTPError: HTTP Error 404: Not Found | https://jmp2.uk/plu-65c69ee3d77d450008c80438.m3u8
+MANTENUTO (fallimento non definitivo) | F1 TV | HTTPError: HTTP Error 404: Not Found | https://jmp2.uk/plu-65c69ee3d77d450008c80438.m3u8
 OK | Dolomiti Life TV | HLS OK | https://stream.mariatvcdn.com/teledolomiti/a66b8b8ac2baee06f136e87b9805774d.sdp/playlist.m3u8
-NON RISOLTO | Plus TV Sport | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)> | https://jr7yvkmwda4v-hls-live.mariatvcdn.it/liveu/9aa7fdc4068e56587206b298b423cb82.sdp/chunks.m3u8
-NON RISOLTO | Plus TV Motori | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)> | https://6zklxkbbdw9b-hls-live.mariatvcdn.it/msmotor/2f759512164fc6fe4acbed6a5648993a.sdp/chunks.m3u8
+MANTENUTO (fallimento non definitivo) | Plus TV Sport | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)> | https://jr7yvkmwda4v-hls-live.mariatvcdn.it/liveu/9aa7fdc4068e56587206b298b423cb82.sdp/chunks.m3u8
+MANTENUTO (fallimento non definitivo) | Plus TV Motori | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)> | https://6zklxkbbdw9b-hls-live.mariatvcdn.it/msmotor/2f759512164fc6fe4acbed6a5648993a.sdp/chunks.m3u8
 OK | ACI Sport TV | HLS OK | https://live-acisport-tv.acisport.tv/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8
-NON RISOLTO | ACI Sport LIVE 01 (non sempre attivo) | HTTPError: HTTP Error 404: Not Found | https://webstream.multistream.it/memfs/10d16cc8-251a-413f-afe7-550b5bf8e87d.m3u8
+MANTENUTO (fallimento non definitivo) | ACI Sport LIVE 01 (non sempre attivo) | HTTPError: HTTP Error 404: Not Found | https://webstream.multistream.it/memfs/10d16cc8-251a-413f-afe7-550b5bf8e87d.m3u8
 OK | Rally TV | HLS OK | https://rally-tv-live.akamaized.net/hls/live/2117704/RallyTV-Pri/master.m3u8
 OK | TOP Calcio 24 | HLS OK | https://vercel-api.zappr.stream/api?https://telelombardia.video/video/viewlivestreaming?rel=2497&cntr=0
 OK | RedBull TV | HLS OK | https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
-NON RISOLTO | BIKE | URLError: <urlopen error timed out> | https://edge-004.streamup.eu/origin/bike_abr/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | BIKE | URLError: <urlopen error timed out> | https://edge-004.streamup.eu/origin/bike_abr/playlist.m3u8
 OK | Sportitalia (25fps) | HLS OK | https://sportsitalia-samsungitaly.amagi.tv/playlist1080p.m3u8
 OK | Solocalcio (25fps) | HLS OK | https://italiansport-solocalcio-samsung.amagi.tv/playlist1080p.m3u8
 OK | LBA Classics | HLS OK | https://d1g94345moskj7.cloudfront.net/master.m3u8?stoken=legabasket-samsungit-Okd7nvrsthOcSbIHffrVdrn6
@@ -506,16 +507,16 @@ OK | Tennis+ | HLS OK | https://amg01935-amg01935c1-amgplt0020.playout.now3.amag
 OK | UNBEATEN | HLS OK | https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00721-inverleigh-unbeaten-lges/playlist.m3u8
 OK | FUBO Sports | HLS OK | https://wurlfubo.global.transmit.live/hls/67f42332d3dd98936978f581/v1/fubotv_fubo_sports_network_1/lg_us/latest/main/hls/playlist.m3u8
 OK | CBS Sports Network | HLS OK | https://jmp2.uk/plu-5e9f2c05172a0f0007db4786.m3u8
-NON RISOLTO | Motor1 | HTTPError: HTTP Error 403: Forbidden | https://amg00614-amg00614c1-amgplt0007.playout.now3.amagi.tv/playlist/amg00614-amg00614c1-amgplt0007/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Motor1 | HTTPError: HTTP Error 403: Forbidden | https://amg00614-amg00614c1-amgplt0007.playout.now3.amagi.tv/playlist/amg00614-amg00614c1-amgplt0007/playlist.m3u8
 OK | Motoretrò | HLS OK | https://amg14891-amg14891c2-amgplt0165.playout.now3.amagi.tv/playlist/amg14891-amg14891c2-amgplt0165/playlist.m3u8
 OK | FF Motorsport | HLS OK | https://host1.momentotv.live:28443/cmaf/ffmotorsport/playlist.m3u8
-NON RISOLTO | EQU TV | HTTPError: HTTP Error 403: Forbidden | https://livestream-epiqa.akamaized.net/hls/live/2039453/EQUTV/master.m3u8
-NON RISOLTO | Rai Sport jolly 1 (attivo raramente) | HTTPError: HTTP Error 403: Forbidden | https://raisportjolly1-live.akamaized.net/hls/live/2034072/raisportjolly1/raisportjolly1/raisportjolly1_2400/chunklist.m3u8
-NON RISOLTO | Rai Sport jolly 2 (attivo raramente) | HTTPError: HTTP Error 403: Forbidden | https://raisportjolly2-live.akamaized.net/hls/live/2034073/raisportjolly2/raisportjolly2/raisportjolly2_2400/chunklist.m3u8
+MANTENUTO (fallimento non definitivo) | EQU TV | HTTPError: HTTP Error 403: Forbidden | https://livestream-epiqa.akamaized.net/hls/live/2039453/EQUTV/master.m3u8
+MANTENUTO (fallimento non definitivo) | Rai Sport jolly 1 (attivo raramente) | HTTPError: HTTP Error 403: Forbidden | https://raisportjolly1-live.akamaized.net/hls/live/2034072/raisportjolly1/raisportjolly1/raisportjolly1_2400/chunklist.m3u8
+MANTENUTO (fallimento non definitivo) | Rai Sport jolly 2 (attivo raramente) | HTTPError: HTTP Error 403: Forbidden | https://raisportjolly2-live.akamaized.net/hls/live/2034073/raisportjolly2/raisportjolly2/raisportjolly2_2400/chunklist.m3u8
 OK | Vevo Pop | HLS OK | https://d3lljkiqez7zii.cloudfront.net/playlist.m3u8
 OK | Vevo '90s & '00s | HLS OK | https://d1ncbjs1sfvd8z.cloudfront.net/playlist.m3u8
 OK | That's 90s00s | HLS OK | https://amg01076-amg01076c19-lg-it-10329.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01076-lightning-now90s00s-lgit/playlist.m3u8
-NON RISOLTO | Vevo 2K | URLError: <urlopen error [Errno -2] Name or service not known> | https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00056-vevotv-vevo2kau-samsungau/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Vevo 2K | URLError: <urlopen error [Errno -2] Name or service not known> | https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00056-vevotv-vevo2kau-samsungau/playlist.m3u8
 OK | Vevo '70s & '80s | HLS OK | https://d1n329euzmul63.cloudfront.net/Vevo70sand80s_IT.m3u8
 OK | That's 70s | HLS OK | https://amg01076-lightning-amg01076c1-lg-it-3976.playouts.now.amagi.tv/playlist/amg01076-lightning-now70s-lgit/playlist.m3u8
 OK | That's 80s | HLS OK | https://amg01076-lightning-amg01076c2-lg-it-4091.playouts.now.amagi.tv/playlist/amg01076-lightning-now80s-lgit/playlist.m3u8
@@ -526,7 +527,7 @@ OK | RadioWOW | HLS OK | https://str38.fluid.stream/RadioWOW/livestream/playlist
 OK | Radio Kiss Kiss TV | HLS OK | https://59253971be783.streamlock.net/KissKissTV/KissKissTV.stream/playlist.m3u8
 OK | DJOssoTV | HLS OK | https://djosso.fluid.stream/DJOssoTV/livestream/playlist.m3u8
 OK | PiterPan TV | HLS OK | https://58d921499d3d3.streamlock.net/RadioPiterpanTV/livestream/playlist.m3u8
-NON RISOLTO | Rai Radio 2 | HTTPError: HTTP Error 403: Forbidden | https://visualradiodue3-live.akamaized.net/hls/live/2034078/visualradiodue3/visualradiodue3/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Rai Radio 2 | HTTPError: HTTP Error 403: Forbidden | https://visualradiodue3-live.akamaized.net/hls/live/2034078/visualradiodue3/visualradiodue3/playlist.m3u8
 OK | Radio Studiopiù | HLS OK | https://5a1178b42cc03.streamlock.net/studiopiutv/studiopiutv/playlist.m3u8
 OK | RDS Social TV | HLS OK | https://stream.rdstv.radio/index_9.m3u8
 OK | Radio Zeta TV | HLS OK | https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S9346184/XEx1LqlYbNic/playlist_video.m3u8
@@ -544,7 +545,7 @@ OK | RTL 102.5 NAPULÈ | HLS OK | https://dd782ed59e2a4e86aabf6fc508674b59.msvdn
 OK | RTL 102.5 TRAFFIC | HLS OK | https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S38122967/2lyQRIAAGgRR/playlist_video.m3u8
 OK | Match Music TV | HLS OK | https://5a1178b42cc03.streamlock.net/MATCHMUSIC/MATCHMUSIC/chunklist_w877538410.m3u8
 OK | Radio Norba | HLS OK | https://live02-seg.msr.cdn.mediaset.net/live/ch-u4/u4-clr.isml/index.m3u8
-NON RISOLTO | Babayaga TV | HTTPError: HTTP Error 403: Forbidden | https://stream1.xdevel.com/video0s975770-326/stream/manifest.mpd
+MANTENUTO (fallimento non definitivo) | Babayaga TV | HTTPError: HTTP Error 403: Forbidden | https://stream1.xdevel.com/video0s975770-326/stream/manifest.mpd
 OK | Radio Company TV | HLS OK | https://5929b138b139d.streamlock.net/CompanyTV/smil:CompanyTV.smil/playlist.m3u8
 OK | Radio 51 | HLS OK | https://59d7d6f47d7fc.streamlock.net/canale51/canale51/playlist.m3u8
 OK | Demo 4K | manifest DASH/Smooth OK | https://host1.momentotv.live:28443/cmaf/demo4k/manifest.mpd
@@ -554,7 +555,7 @@ OK | Trace Urban | HLS OK | https://amg01131-tracetv-traceurbanit-samsungit-80rx
 OK | Trace UK | HLS OK | https://amg01131-tracetv-amg01131c5-plex-us-4388.playouts.now.amagi.tv/playlist1080p.m3u8
 OK | Xite | HLS OK | https://xite-germany-lg.amagi.tv/playlist.m3u8
 OK | XITE Hits | HLS OK | https://xite-hitsuk-lg.amagi.tv/playlist.m3u8
-NON RISOLTO | Cool Summer Channel | HTTPError: HTTP Error 502: Bad Gateway | https://d3mza6qljp67l5.cloudfront.net/csts.m3u8
+MANTENUTO (fallimento non definitivo) | Cool Summer Channel | HTTPError: HTTP Error 502: Bad Gateway | https://d3mza6qljp67l5.cloudfront.net/csts.m3u8
 OK | Rock TV | HLS OK | https://chili-rock-tv-1-it.xiaomi.wurl.tv/4300.m3u8
 OK | ZeroUno Tv | HLS OK | https://64b16f23efbee.streamlock.net/zerounotvmusic/zerounotvmusic/playlist.m3u8
 OK | RSO Radio | HLS OK | https://585b674743bbb.streamlock.net/9056/9056/playlist.m3u8
@@ -564,59 +565,59 @@ OK | Studiopiù 60/70/80 | HLS OK | https://5a1178b42cc03.streamlock.net/607080s
 OK | Radio 80 | HLS OK | https://585b674743bbb.streamlock.net/9076/9076/playlist.m3u8
 OK | Radio Bellla e Monella TV | HLS OK | https://58d921499d3d3.streamlock.net/RadioBelllaemonellaTV/livestream/playlist.m3u8
 OK | CasaSanremo | HLS OK | https://router.xdevel.com/video0s975911-633/stream/playlist_dvr.m3u8
-OK | Rai 1 900p | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7&forceUserAgent=tizen
-OK | Rai 2 (hls) | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7&forceUserAgent=raiplayandroidtv
-RIPARATO | Rai 3 (900 dash) | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://raitre2-dash-live.akamaized.net/dash/live/663956/raitre2/manifest.mpd -> https://d3k8wzt41aflvx.cloudfront.net/RAI3/Live.m3u8
-NON RISOLTO | Rete 4 (hls) | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/index.m3u8
-NON RISOLTO | Canale 5 (hls) | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/index.m3u8
-NON RISOLTO | Italia 1 (hls) | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/index.m3u8
-NON RISOLTO | Mediaset 20 (hls) | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/index.m3u8
+PINNED NON SOSTITUITO | Rai 1 900p | HTTPError: HTTP Error 404: Not Found | https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8
+PINNED OK | Rai 2 (hls) | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8
+PINNED NON SOSTITUITO | Rai 3 (900 dash) | HTTPError: HTTP Error 404: Not Found | https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Rete 4 (hls) | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/index.m3u8
+MANTENUTO (fallimento non definitivo) | Canale 5 (hls) | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/index.m3u8
+MANTENUTO (fallimento non definitivo) | Italia 1 (hls) | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/index.m3u8
+MANTENUTO (fallimento non definitivo) | Mediaset 20 (hls) | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/index.m3u8
 OK | Rai 1 HbbTV | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7&forceUserAgent=hbbtv
-RIPARATO | Rai 1 mdp | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiuno1_dash/dash/manifest.mpd -> https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
+MANTENUTO (fallimento non definitivo) | Rai 1 mdp | HTTPError: HTTP Error 403: Forbidden | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiuno1_dash/dash/manifest.mpd
 OK | Rai 2 HbbTV | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7&forceUserAgent=hbbtv
-RIPARATO | Rai 4 HbbTV raiway | Free-TV Italy | HTTPError: HTTP Error 403:  -> stream dati OK (video/mp4) | https://raiquattro1-push.cdn.netrw.it/rai/dash/live/rai4/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forceUserAgent=rainet/4.0.5
+MANTENUTO (fallimento non definitivo) | Rai 4 HbbTV raiway | HTTPError: HTTP Error 403:  | https://raiquattro1-push.cdn.netrw.it/rai/dash/live/rai4/manifest.mpd
 OK | RaiNews 24 (dash) | manifest DASH/Smooth OK | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/rainews1/dash/manifest.mpd
 OK | Rai 3 (hls) | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709&output=7&forceUserAgent=raiplayappletv
-RIPARATO | rai premium HbbTV akamai | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> stream dati OK (video/mp4) | https://raipremium1-dash-live.akamaized.net/dash/live/663979/raipremium1/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746992&output=7&forceUserAgent=rainet/4.0.5
-RIPARATO | Rai Premium hls | Davide Fulgione | HTTPError: HTTP Error 403: Forbidden -> stream dati OK (video/mp4) | https://raipremium3-live.akamaized.net/hls/live/2018013/raipremium3/raipremium3/playlist.m3u8 -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746992&output=7&forceUserAgent=raiplayappletv
-RIPARATO | rai movie HbbTV raiway | Free-TV Italy | HTTPError: HTTP Error 403:  -> stream dati OK (video/mp4) | https://raimovie1-push.cdn.netrw.it/rai/dash/live/raimovie/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002&output=7&forceUserAgent=rainet/4.0.5
-RIPARATO | rai 5 HbbTV raiway | Free-TV Italy | HTTPError: HTTP Error 403:  -> stream dati OK (video/mp4) | https://raicinque1-push.cdn.netrw.it/rai/dash/live/rai5/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276&output=7&forceUserAgent=rainet/4.0.5
-RIPARATO | rai yoyo HbbTV raiway | Free-TV Italy | HTTPError: HTTP Error 403:  -> stream dati OK (video/mp4) | https://raiyoyo1-push.cdn.netrw.it/rai/dash/live/raiyoyo/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746899&output=7&forceUserAgent=rainet/4.0.5
-RIPARATO | rai gulp HbbTV raiway | Free-TV Italy | HTTPError: HTTP Error 403:  -> stream dati OK (video/mp4) | https://raigulp1-push.cdn.netrw.it/rai/dash/live/raigulp/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953&output=7&forceUserAgent=rainet/4.0.5
-RIPARATO | rai scuola HbbTV raiway | Free-TV Italy | HTTPError: HTTP Error 403:  -> HLS OK | https://raiscuola1-push.cdn.netrw.it/rai/dash/live/raiscuola/manifest.mpd -> https://d3k8wzt41aflvx.cloudfront.net/RAIScuola/Live.m3u8
-RIPARATO | rai storia HbbTV raiway | Free-TV Italy | HTTPError: HTTP Error 403:  -> HLS OK | https://raistoria1-push.cdn.netrw.it/rai/dash/live/raistoria/manifest.mpd -> https://d3k8wzt41aflvx.cloudfront.net/RAIStoria/Live.m3u8
-RIPARATO | rai sport HbbTV raiway | Free-TV Italy | HTTPError: HTTP Error 403:  -> stream dati OK (video/mp4) | https://raisport1-push.cdn.netrw.it/rai/dash/live/raisport/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=7&forceUserAgent=rainet/4.0.5
-NON RISOLTO | RaiPlay (eventi) | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay/hls/playlist_mo.m3u8
-NON RISOLTO | RaiPlay 2 (eventi) | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay2/hls/playlist_mo.m3u8
-NON RISOLTO | RaiPlay 3 (eventi) | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay3/hls/playlist_mo.m3u8
-NON RISOLTO | Rai generic1 | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raigeneric1/hls/playlist_mo.m3u8
-NON RISOLTO | Rai generic3 | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raigeneric3/hls/playlist_mo.m3u8
+MANTENUTO (fallimento non definitivo) | rai premium HbbTV akamai | HTTPError: HTTP Error 403: Forbidden | https://raipremium1-dash-live.akamaized.net/dash/live/663979/raipremium1/manifest.mpd
+MANTENUTO (fallimento non definitivo) | Rai Premium hls | HTTPError: HTTP Error 403: Forbidden | https://raipremium3-live.akamaized.net/hls/live/2018013/raipremium3/raipremium3/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | rai movie HbbTV raiway | HTTPError: HTTP Error 403:  | https://raimovie1-push.cdn.netrw.it/rai/dash/live/raimovie/manifest.mpd
+MANTENUTO (fallimento non definitivo) | rai 5 HbbTV raiway | HTTPError: HTTP Error 403:  | https://raicinque1-push.cdn.netrw.it/rai/dash/live/rai5/manifest.mpd
+MANTENUTO (fallimento non definitivo) | rai yoyo HbbTV raiway | HTTPError: HTTP Error 403:  | https://raiyoyo1-push.cdn.netrw.it/rai/dash/live/raiyoyo/manifest.mpd
+MANTENUTO (fallimento non definitivo) | rai gulp HbbTV raiway | HTTPError: HTTP Error 403:  | https://raigulp1-push.cdn.netrw.it/rai/dash/live/raigulp/manifest.mpd
+MANTENUTO (fallimento non definitivo) | rai scuola HbbTV raiway | HTTPError: HTTP Error 403:  | https://raiscuola1-push.cdn.netrw.it/rai/dash/live/raiscuola/manifest.mpd
+MANTENUTO (fallimento non definitivo) | rai storia HbbTV raiway | HTTPError: HTTP Error 403:  | https://raistoria1-push.cdn.netrw.it/rai/dash/live/raistoria/manifest.mpd
+MANTENUTO (fallimento non definitivo) | rai sport HbbTV raiway | HTTPError: HTTP Error 403:  | https://raisport1-push.cdn.netrw.it/rai/dash/live/raisport/manifest.mpd
+MANTENUTO (fallimento non definitivo) | RaiPlay (eventi) | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay/hls/playlist_mo.m3u8
+MANTENUTO (fallimento non definitivo) | RaiPlay 2 (eventi) | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay2/hls/playlist_mo.m3u8
+MANTENUTO (fallimento non definitivo) | RaiPlay 3 (eventi) | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay3/hls/playlist_mo.m3u8
+MANTENUTO (fallimento non definitivo) | Rai generic1 | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raigeneric1/hls/playlist_mo.m3u8
+MANTENUTO (fallimento non definitivo) | Rai generic3 | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raigeneric3/hls/playlist_mo.m3u8
 OK | Rai Sport 900p | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=7&forceUserAgent=tizen
-NON RISOLTO | RaiPlaySport 1 | HTTPError: HTTP Error 403: Forbidden | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay4/hls/raiplay4_2400/chunklist.m3u8
-NON RISOLTO | RaiPlaySport 2 | HTTPError: HTTP Error 403: Forbidden | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay5/hls/raiplay5_2400/chunklist.m3u8
-NON RISOLTO | RaiPlaySport 3 | HTTPError: HTTP Error 403: Forbidden | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay6/hls/raiplay6_2400/chunklist.m3u8
+MANTENUTO (fallimento non definitivo) | RaiPlaySport 1 | HTTPError: HTTP Error 403: Forbidden | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay4/hls/raiplay4_2400/chunklist.m3u8
+MANTENUTO (fallimento non definitivo) | RaiPlaySport 2 | HTTPError: HTTP Error 403: Forbidden | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay5/hls/raiplay5_2400/chunklist.m3u8
+MANTENUTO (fallimento non definitivo) | RaiPlaySport 3 | HTTPError: HTTP Error 403: Forbidden | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay6/hls/raiplay6_2400/chunklist.m3u8
 OK | Rai test1 | HLS OK | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/test1/hls/playlist_mo.m3u8
 OK | Rai test2 | HLS OK | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/test2/hls/playlist_mo.m3u8
-NON RISOLTO | Rai test3 | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/test3/hls/playlist_mo.m3u8
-NON RISOLTO | GFVIP Regia 1 | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b7/b7-clr.isml/index.m3u8
-NON RISOLTO | GFVIP Regia 2 | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b8/b8-clr.isml/index.m3u8
-NON RISOLTO | GFVIP Un'ora fa | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b9/b9-clr.isml/index.m3u8
-NON RISOLTO | GFVIP - Open House | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b1/b1-clr.isml/index.m3u8
-NON RISOLTO | Mediaset b2 | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b2/b2-clr.isml/index.m3u8
-NON RISOLTO | Mediaset b3 | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b3/b3-clr.isml/index.m3u8
-NON RISOLTO | Diretta | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b4/b4-clr.isml/index.m3u8
-OK | Rai 1 | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7
-OK | Rai 2 | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7
-RIPARATO | Rai 3 | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://raisportdue3-live.akamaized.net/hls/live/2018009/raisportdue3/raisportdue3/playlist.m3u8 -> https://d3k8wzt41aflvx.cloudfront.net/RAI3/Live.m3u8
-NON RISOLTO | Rete 4 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest_sd.mpd
-NON RISOLTO | Canale 5 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/manifest_sd.mpd
-NON RISOLTO | Italia 1 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/manifest_sd.mpd
-NON RISOLTO | TV8 SD | HTTPError: HTTP Error 403: Forbidden | https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
-NON RISOLTO | Mediaset 20 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/manifest_sd.mpd
-RIPARATO | Rai 4 | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> stream dati OK (video/mp4) | https://raiquattro3-live.akamaized.net/hls/live/2018003/raiquattro3/raiquattro3/playlist.m3u8 -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forceUserAgent=rainet/4.0.5
-NON RISOLTO | Cielo SD | HTTPError: HTTP Error 403: Forbidden | https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
-RIPARATO | Rai Gulp SD | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> stream dati OK (video/mp4) | https://raigulp2-dash-live.akamaized.net/dash/live/663984/raigulp2/manifest.mpd -> https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953&output=7&forceUserAgent=rainet/4.0.5
-NON RISOLTO | Rai YoYo SD | HTTPError: HTTP Error 403: Forbidden | https://raiyoyo2-dash-live.akamaized.net/dash/live/663946/raiyoyo2/manifest.mpd
+MANTENUTO (fallimento non definitivo) | Rai test3 | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/test3/hls/playlist_mo.m3u8
+MANTENUTO (fallimento non definitivo) | GFVIP Regia 1 | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b7/b7-clr.isml/index.m3u8
+MANTENUTO (fallimento non definitivo) | GFVIP Regia 2 | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b8/b8-clr.isml/index.m3u8
+MANTENUTO (fallimento non definitivo) | GFVIP Un'ora fa | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b9/b9-clr.isml/index.m3u8
+MANTENUTO (fallimento non definitivo) | GFVIP - Open House | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b1/b1-clr.isml/index.m3u8
+MANTENUTO (fallimento non definitivo) | Mediaset b2 | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b2/b2-clr.isml/index.m3u8
+MANTENUTO (fallimento non definitivo) | Mediaset b3 | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b3/b3-clr.isml/index.m3u8
+MANTENUTO (fallimento non definitivo) | Diretta | HTTPError: HTTP Error 403: Forbidden | https://live02-col.msf.cdn.mediaset.net/live/ch-b4/b4-clr.isml/index.m3u8
+PINNED NON SOSTITUITO | Rai 1 | HTTPError: HTTP Error 404: Not Found | https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8
+PINNED OK | Rai 2 | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8
+PINNED NON SOSTITUITO | Rai 3 | HTTPError: HTTP Error 404: Not Found | https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Rete 4 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest_sd.mpd
+MANTENUTO (fallimento non definitivo) | Canale 5 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/manifest_sd.mpd
+MANTENUTO (fallimento non definitivo) | Italia 1 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/manifest_sd.mpd
+MANTENUTO (fallimento non definitivo) | TV8 SD | HTTPError: HTTP Error 403: Forbidden | https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
+MANTENUTO (fallimento non definitivo) | Mediaset 20 | HTTPError: HTTP Error 403: Forbidden | https://live03-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/manifest_sd.mpd
+PINNED OK | Rai 4 | stream dati OK (video/mp4) | https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forceUserAgent=raiplayappletv
+MANTENUTO (fallimento non definitivo) | Cielo SD | HTTPError: HTTP Error 403: Forbidden | https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
+MANTENUTO (fallimento non definitivo) | Rai Gulp SD | HTTPError: HTTP Error 403: Forbidden | https://raigulp2-dash-live.akamaized.net/dash/live/663984/raigulp2/manifest.mpd
+MANTENUTO (fallimento non definitivo) | Rai YoYo SD | HTTPError: HTTP Error 403: Forbidden | https://raiyoyo2-dash-live.akamaized.net/dash/live/663946/raiyoyo2/manifest.mpd
 OK | TT-TELETUTTO BS | HLS OK | https://streamcdng10-3177cee185284d2990021eccc8b06ae6.msvdn.net/live/S55287570/tq6PELOcQoAf/playlist.m3u8
 OK | Radiodueindie | HLS OK | https://radiodueindie-live.akamaized.net/hls/live/2032593/radiodueindie/radiodueindie/playlist.m3u8
 OK | Radio OneDance | stream dati OK (audio/aac) | https://ice04.fluidstream.net/rn1_2.aac
@@ -624,39 +625,39 @@ OK | Radio 906 | stream dati OK (audio/aac) | https://stream.rcs.revma.com/w231b
 OK | Radio 906 Italia | stream dati OK (audio/mpeg) | https://stream.rcs.revma.com/8v44n4fqk2uvv
 OK | Radio Sunbeat | stream dati OK (audio/aac) | https://stream.rcs.revma.com/2vke97f39yuvv
 OK | Radio 906 90/00 | stream dati OK (audio/mpeg) | https://stream.rcs.revma.com/f29yes56dwuvv
-NON RISOLTO | Restart Rete 4 | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/Rete4-Restart.php
-NON RISOLTO | Restart Italia 2 | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/Italia2-Restart.php
-NON RISOLTO | Restart La5 | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/La5-Restart.php
-NON RISOLTO | Restart Cine34 | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/Cine34-Restart.php
-NON RISOLTO | Restart Mediaset Extra | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/MediasetExtra-Restart.php
-NON RISOLTO | Restart Focus | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/Focus-Restart.php
-NON RISOLTO | Restart Iris | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/Iris-Restart.php
-NON RISOLTO | Restart TOPCrime | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/TopCrime-Restart.php
+MANTENUTO (fallimento non definitivo) | Restart Rete 4 | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/Rete4-Restart.php
+MANTENUTO (fallimento non definitivo) | Restart Italia 2 | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/Italia2-Restart.php
+MANTENUTO (fallimento non definitivo) | Restart La5 | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/La5-Restart.php
+MANTENUTO (fallimento non definitivo) | Restart Cine34 | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/Cine34-Restart.php
+MANTENUTO (fallimento non definitivo) | Restart Mediaset Extra | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/MediasetExtra-Restart.php
+MANTENUTO (fallimento non definitivo) | Restart Focus | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/Focus-Restart.php
+MANTENUTO (fallimento non definitivo) | Restart Iris | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/Iris-Restart.php
+MANTENUTO (fallimento non definitivo) | Restart TOPCrime | HTTPError: HTTP Error 403: Forbidden | https://www.mytivu.it/Application/Restart/TopCrime-Restart.php
 OK | Rai 1 Europa | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
-RIPARATO | Rai 1 | Free-TV Italy | HTTPError: HTTP Error 404: Not Found -> HLS OK | https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8 -> https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
+PINNED NON SOSTITUITO | Rai 1 | HTTPError: HTTP Error 404: Not Found | https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8
 OK | Rai 2 Europa | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8
-RIPARATO | Rai 3 | Free-TV Italy | HTTPError: HTTP Error 404: Not Found -> HLS OK | https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8 -> https://d3k8wzt41aflvx.cloudfront.net/RAI3/Live.m3u8
+PINNED NON SOSTITUITO | Rai 3 | HTTPError: HTTP Error 404: Not Found | https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8
 OK | Rai 3 Europa | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAI3/Live.m3u8
-NON RISOLTO | Rete 4 HD Europa | HTTPError: HTTP Error 403: Forbidden | https://live03t-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest_hd.mpd
-NON RISOLTO | Canale 5 HD Europa | HTTPError: HTTP Error 403: Forbidden | https://live03t-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/manifest_hd.mpd
-NON RISOLTO | Italia 1 HD Europa | HTTPError: HTTP Error 403: Forbidden | https://live03t-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | Rete 4 HD Europa | HTTPError: HTTP Error 403: Forbidden | https://live03t-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | Canale 5 HD Europa | HTTPError: HTTP Error 403: Forbidden | https://live03t-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/manifest_hd.mpd
+MANTENUTO (fallimento non definitivo) | Italia 1 HD Europa | HTTPError: HTTP Error 403: Forbidden | https://live03t-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/manifest_hd.mpd
 OK | LA7 HD | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/LA7HD/Live.m3u8
-NON RISOLTO | Mediaset 20 HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/GZdCk7hhCCLE
-NON RISOLTO | Iris HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/IWG_9KyBx_Sp
-RIPARATO | Italia 2 HD Europa | Free-TV Italy | HTTPError: HTTP Error 404: Not Found -> HLS OK | https://link.api.eu.theplatform.com/s/PR1GhC/ZX_ao7M9ynGl -> https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8
-NON RISOLTO | La5 HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/OoDKKSiw4eha
-NON RISOLTO | 27 HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/tzPuEawCE8e4
-NON RISOLTO | Focus HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/O_xPhNCEQLuL
-NON RISOLTO | TOPCrime HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/HObh2oiFcSME
+MANTENUTO (fallimento non definitivo) | Mediaset 20 HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/GZdCk7hhCCLE
+MANTENUTO (fallimento non definitivo) | Iris HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/IWG_9KyBx_Sp
+MANTENUTO (fallimento non definitivo) | Italia 2 HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/ZX_ao7M9ynGl
+MANTENUTO (fallimento non definitivo) | La5 HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/OoDKKSiw4eha
+MANTENUTO (fallimento non definitivo) | 27 HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/tzPuEawCE8e4
+MANTENUTO (fallimento non definitivo) | Focus HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/O_xPhNCEQLuL
+MANTENUTO (fallimento non definitivo) | TOPCrime HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/HObh2oiFcSME
 OK | RAI World Premium | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAIP/Live.m3u8
-NON RISOLTO | Boing HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/EoaTi__ShLVF
+MANTENUTO (fallimento non definitivo) | Boing HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/EoaTi__ShLVF
 OK | Boing 30fps | HLS OK | https://boing.akamaized.net/6380392800112/eu-central-1/6284318116001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0Ijoib3dwbnN1LmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjI4NDMxODExNjAwMSIsImVobiI6ImJvaW5nLmFrYW1haXplZC5uZXQiLCJpc3MiOiJibGl2ZS1wbGF5YmFjay1zb3VyY2UtYXBpIiwic3ViIjoicGF0aG1hcHRva2VuIiwiYXVkIjpbIjYyODQzMTgxMTYwMDEiXSwianRpIjoiNjM4MDM5MjgwMDExMiJ9.0RWQ0yZrauU0cHSnbpBYhgyRPeq1Lyw6nOn_fo7_cg0/playlist-hls.m3u8
-NON RISOLTO | Cartoonito HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/2gLXeKWBkATm
+MANTENUTO (fallimento non definitivo) | Cartoonito HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/2gLXeKWBkATm
 OK | Rai Scuola Europa | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAIScuola/Live.m3u8
 OK | Rai Storia Europa | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAIStoria/Live.m3u8
-NON RISOLTO | Mediaset Extra HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/RpIYZbFXFFK3
+MANTENUTO (fallimento non definitivo) | Mediaset Extra HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/RpIYZbFXFFK3
 OK | TGCOM24 | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/TGCOM24/Live.m3u8
-RIPARATO | TGCOM24 HD Europa | Free-TV Italy | HTTPError: HTTP Error 404: Not Found -> HLS OK | https://link.api.eu.theplatform.com/s/PR1GhC/v79XAXXlVZqO -> https://d3k8wzt41aflvx.cloudfront.net/TGCOM24/Live.m3u8
+MANTENUTO (fallimento non definitivo) | TGCOM24 HD Europa | HTTPError: HTTP Error 404: Not Found | https://link.api.eu.theplatform.com/s/PR1GhC/v79XAXXlVZqO
 OK | RAI News 24 Europa HD | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAINEWS24/Live.m3u8
 OK | Rai Italia Australia | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAIHD/Live.m3u8
 OK | Rai Italia Europa | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RAIEU/Live.m3u8
@@ -665,8 +666,8 @@ OK | Mediaset Italia - Australia e Asia | HLS OK | https://d3k8wzt41aflvx.cloudf
 OK | Mediaset Italia - Europa e Africa | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/MediasetEU/Live.m3u8
 OK | Mediaset Italia - America | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/MediasetUSA/Live.m3u8
 OK | Rete Italia | HLS OK | https://d3k8wzt41aflvx.cloudfront.net/RETEITALIATV/Live.m3u8
-NON RISOLTO | RSI LA1 (VPN Svizzera) | TimeoutError: The read operation timed out | https://viamotionhsi.netplus.ch/live/eds/rsila1hd/browser-HLS8/rsila1hd.m3u8
-NON RISOLTO | RSI LA2 (VPN Svizzera) | TimeoutError: The read operation timed out | https://viamotionhsi.netplus.ch/live/eds/rsila2hd/browser-HLS8/rsila2hd.m3u8
+MANTENUTO (fallimento non definitivo) | RSI LA1 (VPN Svizzera) | TimeoutError: The read operation timed out | https://viamotionhsi.netplus.ch/live/eds/rsila1hd/browser-HLS8/rsila1hd.m3u8
+MANTENUTO (fallimento non definitivo) | RSI LA2 (VPN Svizzera) | TimeoutError: The read operation timed out | https://viamotionhsi.netplus.ch/live/eds/rsila2hd/browser-HLS8/rsila2hd.m3u8
 OK | TGR Abruzzo | manifest DASH/Smooth OK | https://tgrabruzzo-dash-live.akamaized.net/dash/live/2025581/tgrabruzzo/manifest.mpd
 OK | TGR Basilicata | manifest DASH/Smooth OK | https://tgrbasilicata-dash-live.akamaized.net/dash/live/2025582/tgrbasilicata/manifest.mpd
 OK | TGR Calabria | manifest DASH/Smooth OK | https://tgrcalabria-dash-live.akamaized.net/dash/live/2025584/tgrcalabria/manifest.mpd
@@ -694,34 +695,34 @@ OK | TT-TTELETUTTO 24 | HLS OK | https://streamcdnf31-3177cee185284d2990021eccc8
 OK | Più Valli TV | HLS OK | https://5db313b643fd8.streamlock.net/piuvallitv/piuvallitv/playlist.m3u8
 OK | Teleboario | HLS OK | https://router.xdevel.com/video0s976425-1205/stream/playlist_dvr.m3u8
 OK | TeleTicino | HLS OK | https://vstream-cdn.ch/hls/teleticino.m3u8
-NON RISOLTO | GS Channel - TMC | HTTPError: HTTP Error 404: Not Found | https://rst2.saiuzwebnetwork.it:8081/retereggio/tracks-v1a1/mono.ts.m3u8
+MANTENUTO (fallimento non definitivo) | GS Channel - TMC | HTTPError: HTTP Error 404: Not Found | https://rst2.saiuzwebnetwork.it:8081/retereggio/tracks-v1a1/mono.ts.m3u8
 OK | Azzurra TV Italia | HLS OK | https://stream4.xdevel.com/video5s975955-1727/stream/chunks.m3u8
 OK | Sicilia 242 | HLS OK | https://5f22d76e220e1.streamlock.net/sicilia24/sicilia24/playlist.m3u8
 OK | Retemia | HLS OK | https://5db313b643fd8.streamlock.net/rete/rete/playlist.m3u8
 OK | TeleUniverso | HLS OK | https://stream.ets-sistemi.it:19360/teleuniverso/teleuniverso.m3u8
-OK | Tu Day | HLS OK | https://stream.ets-sistemi.it:19360/tuday/tuday.m3u8
-NON RISOLTO | Tele A1 | URLError: <urlopen error timed out> | https://stream.cp.ets-sistemi.it:1936/telea1-live/telea1-live/chunklist_w1103895996.m3u8
-NON RISOLTO | Radio Caserta Tv | HTTPError: HTTP Error 404: Not Found | https://5f22d76e220e1.streamlock.net/radiocasertatv/radiocasertatv/chunklist_w653518225.m3u8
-NON RISOLTO | PrimAntenna | HTTPError: HTTP Error 404: Not Found | https://5f22d76e220e1.streamlock.net/primantenna14/primantenna14/chunklist_w9233971.m3u8
+MANTENUTO (fallimento non definitivo) | Tu Day | HTTPError: HTTP Error 404: Not Found | https://stream.ets-sistemi.it:19360/tuday/tuday.m3u8
+MANTENUTO (fallimento non definitivo) | Tele A1 | URLError: <urlopen error timed out> | https://stream.cp.ets-sistemi.it:1936/telea1-live/telea1-live/chunklist_w1103895996.m3u8
+MANTENUTO (fallimento non definitivo) | Radio Caserta Tv | HTTPError: HTTP Error 404: Not Found | https://5f22d76e220e1.streamlock.net/radiocasertatv/radiocasertatv/chunklist_w653518225.m3u8
+MANTENUTO (fallimento non definitivo) | PrimAntenna | HTTPError: HTTP Error 404: Not Found | https://5f22d76e220e1.streamlock.net/primantenna14/primantenna14/chunklist_w9233971.m3u8
 OK | Canale 10 Lazio | HLS OK | https://nrvideo1.newradio.it:1936/desxcerbht/desxcerbht/chunklist_w566195533.m3u8
-NON RISOLTO | Enjoy Tv | HTTPError: HTTP Error 404: Not Found | https://rst.saiuzwebnetwork.it:8081/enjoytv/index.m3u8
+MANTENUTO (fallimento non definitivo) | Enjoy Tv | HTTPError: HTTP Error 404: Not Found | https://rst.saiuzwebnetwork.it:8081/enjoytv/index.m3u8
 OK | Italia2 Tv | HLS OK | https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8
-NON RISOLTO | E'Tv Rete7 | HTTPError: HTTP Error 404: Not Found | https://live.ipstream.it/etv/etv.stream/chunklist_w869612369.m3u8
+MANTENUTO (fallimento non definitivo) | E'Tv Rete7 | HTTPError: HTTP Error 404: Not Found | https://live.ipstream.it/etv/etv.stream/chunklist_w869612369.m3u8
 OK | Extra Tv | HLS OK | https://rst2.saiuzwebnetwork.it:8081/extratvlive/tracks-v1a1/mono.m3u8
-NON RISOLTO | Fm Tv 75 Marche | URLError: <urlopen error timed out> | https://bbtv.intvstream.net:3988/hybrid/play.m3u8
-NON RISOLTO | La C Tv Calabria | HLS child HTTP 200 | https://f5842579ff984c1c98d63b8d789673eb.msvdn.net/live/S47282891/JWjL3xqPf4bX/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Fm Tv 75 Marche | URLError: <urlopen error timed out> | https://bbtv.intvstream.net:3988/hybrid/play.m3u8
+OK | La C Tv Calabria | HLS OK | https://f5842579ff984c1c98d63b8d789673eb.msvdn.net/live/S47282891/JWjL3xqPf4bX/playlist.m3u8
 OK | Esperia TV | HLS OK | http://wms.shared.streamshow.it/esperiatv/esperiatv/chunklist_w1096393748.m3u8
 OK | Icaro Tv | HLS OK | https://59d7d6f47d7fc.streamlock.net/icarotv/icarotv/playlist.m3u8
-NON RISOLTO | Lazio Tv | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> | https://streaming.softwarecreation.it/LazioTv/LazioTv/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Lazio Tv | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> | https://streaming.softwarecreation.it/LazioTv/LazioTv/playlist.m3u8
 OK | Cronache Lucane Tv | HLS OK | http://77.68.40.210:8888/hls/cronache.m3u8
 OK | La3 Marsala | HLS OK | https://tsw.streamingwebtv24.it:1936/eslife1/eslife1/playlist.m3u8
 OK | L'Altro Corriere Tv | HLS OK | https://52ee6512fee4427889eba89957975fa0.msvdn.net/live/S24350460/BEj8ZmQiQ9UG/playlist.m3u8
 OK | RTI Calabria | HLS OK | https://stream.ets-sistemi.it:8081/rticalabria/tracks-v1a1/mono.m3u8
 OK | Minformo Tv | HLS OK | https://5db313b643fd8.streamlock.net:443/MinformoTV/MinformoTV/playlist.m3u8
-NON RISOLTO | Fascino Tv 168 | HTTPError: HTTP Error 404: Not Found | https://5f22d76e220e1.streamlock.net/lottofascino/lottofascino/chunklist_w491300165.m3u8
-NON RISOLTO | Fascino Tv 169 | HTTPError: HTTP Error 404: Not Found | https://5f22d76e220e1.streamlock.net/fascinotv/fascinotv/chunklist_w1402703843.m3u8
+MANTENUTO (fallimento non definitivo) | Fascino Tv 168 | HTTPError: HTTP Error 404: Not Found | https://5f22d76e220e1.streamlock.net/lottofascino/lottofascino/chunklist_w491300165.m3u8
+MANTENUTO (fallimento non definitivo) | Fascino Tv 169 | HTTPError: HTTP Error 404: Not Found | https://5f22d76e220e1.streamlock.net/fascinotv/fascinotv/chunklist_w1402703843.m3u8
 OK | Nuova Tv1 | HLS OK | https://nuovatv.net:8443/tv/stream.m3u8
-NON RISOLTO | Nuova Tv2 | HTTPError: HTTP Error 404: Not Found | https://nuovatv.net:8443/tv2/stream.m3u8
+MANTENUTO (fallimento non definitivo) | Nuova Tv2 | HTTPError: HTTP Error 404: Not Found | https://nuovatv.net:8443/tv2/stream.m3u8
 OK | Canale Uno Tivù | HLS OK | https://rst.saiuzwebnetwork.it:8081/canaleuno/index.m3u8
 OK | Rieti Channel | HLS OK | https://giatv.bozztv.com/giatv/giatv-centroitalia/centroitalia/playlist.m3u8
 OK | Reggio Tv | HLS OK | https://cdn10.streamshow.it/cloud-reggiotv/reggiotv/playlist.m3u8
@@ -730,28 +731,28 @@ OK | Rete Mia | HLS OK | https://5db313b643fd8.streamlock.net/rete/rete/playlist
 OK | Rtp Sicilia | HLS OK | http://flash2.xdevel.com/rtptv/rtptv/playlist.m3u8
 OK | Stile Tv | HLS OK | https://proxy.media.convergenze.it/stiletv/streams/oQOFd7JglHjO1631525551097.m3u8
 OK | Nora TV | HLS OK | https://57068da1deb21.streamlock.net/noratv/noratv/playlist.m3u8
-NON RISOLTO | Tele A Campania | URLError: <urlopen error [Errno -2] Name or service not known> | https://lostream.it/hls/telea/video.m3u8
-NON RISOLTO | Tele  Norba | HTTPError: HTTP Error 404: Not Found | https://router.xdevel.com/video2s976570-2117/stream/playlist_dvr.m3u8
+MANTENUTO (fallimento non definitivo) | Tele A Campania | URLError: <urlopen error [Errno -2] Name or service not known> | https://lostream.it/hls/telea/video.m3u8
+MANTENUTO (fallimento non definitivo) | Tele  Norba | HTTPError: HTTP Error 404: Not Found | https://router.xdevel.com/video2s976570-2117/stream/playlist_dvr.m3u8
 OK | Tele Bari | HLS OK | https://w1.mediastreaming.it/telebari/livestream/chunklist_w356304146.m3u8
 OK | Telequattro Nordest | HLS OK | http://wms.shared.streamshow.it/telequattro/telequattro/playlist.m3u8
-NON RISOLTO | Telestense | URLError: <urlopen error timed out> | https://5e73cf528f404.streamlock.net/TeleEstense/livestream/chunklist_w530758405.m3u8
+MANTENUTO (fallimento non definitivo) | Telestense | URLError: <urlopen error timed out> | https://5e73cf528f404.streamlock.net/TeleEstense/livestream/chunklist_w530758405.m3u8
 OK | Telemantova | HLS OK | https://5ce9406b73c33.streamlock.net/TeleMantova/livestream/playlist.m3u8
 OK | Telemolise | HLS OK | http://185.202.128.1:1935/Telemolise4K/Telemolise4K/chunklist_w1852576476.m3u8
 OK | Tlt Molise | HLS OK | https://5f22d76e220e1.streamlock.net/tltmolise/tltmolise/chunklist_w341245661.m3u8
-RIPARATO | TG Norba 24 | Free-TV Italy | HTTPError: HTTP Error 404: Not Found -> HLS OK | https://stream3.xdevel.com/video0s976570-1422/stream/playlist_dvr.m3u8 -> https://live-telenorba.cdn.netrw.it/telenorba/hls/ccr/tgnorba/master.m3u8
+MANTENUTO (fallimento non definitivo) | TG Norba 24 | HTTPError: HTTP Error 404: Not Found | https://stream3.xdevel.com/video0s976570-1422/stream/playlist_dvr.m3u8
 OK | TelegranducatoTv | HLS OK | https://www.granducatotv.eu/tv/granducato/hls/index.flashls.m3u8.php?cid=0&m3u8=.m3u8
-NON RISOLTO | Tele Pavia | HTTPError: HTTP Error 404: Not Found | http://wms.shared.streamshow.it/telepavia/mp4:telepavia/chunklist_w1191199540.m3u8
-NON RISOLTO | TR 118 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> | https://streaming.softwarecreation.it/TR118/TR118/playlist.m3u8
+MANTENUTO (fallimento non definitivo) | Tele Pavia | HTTPError: HTTP Error 404: Not Found | http://wms.shared.streamshow.it/telepavia/mp4:telepavia/chunklist_w1191199540.m3u8
+MANTENUTO (fallimento non definitivo) | TR 118 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> | https://streaming.softwarecreation.it/TR118/TR118/playlist.m3u8
 OK | TVA Vicenza | HLS OK | http://fms.tvavicenza.it:1935/live/diretta_1/chunklist_w321092163.m3u8
 OK | Tv1 Sulmona | HLS OK | https://5926fc9c7c5b2.streamlock.net/9114/9114/playlist.m3u8
-NON RISOLTO | VideoNola | HTTPError: HTTP Error 404: Not Found | https://videonola.aswifi.it/videonolaabr/live_hi/index.m3u8
+MANTENUTO (fallimento non definitivo) | VideoNola | HTTPError: HTTP Error 404: Not Found | https://videonola.aswifi.it/videonolaabr/live_hi/index.m3u8
 OK | Bergamo Tv | HLS OK | https://streamcdng10-db142859fd5541b09de25d6507f1f2d3.msvdn.net/live/S17501676/oIxAsgEEA46M/chunklist_DVR.m3u8
-RIPARATO | NOVE backup 🔐 | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://pb-o0zu14lv7kvp9.akamaized.net/index.m3u8 -> https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/NOVE/CMAF/index.m3u8
-RIPARATO | RealTime backup 🔐 | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://pb-96zvdrcpxomf6.akamaized.net/index.m3u8 -> https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/REALTIME/CMAF/index.m3u8
-RIPARATO | FoodNetwork backup 🔐 | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://pb-ikxuqadisnhot.akamaized.net/index.m3u8 -> https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/FOODNETWORK/CMAF/index.m3u8
-RIPARATO | Discovery backup 🔐 | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://pb-n9406rwl5wx1t.akamaized.net/index.m3u8 -> https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/DISCOVERYCHANNEL/CMAF/index.m3u8
-RIPARATO | Giallo backup 🔐 | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://pb-vi6d4mucmrwpo.akamaized.net/index.m3u8 -> https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/GIALLO/CMAF/index.m3u8
-RIPARATO | DMAX backup 🔐 | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://pb-lkmzny7qo98vp.akamaized.net/index.m3u8 -> https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/DMAX/CMAF/index.m3u8
-NON RISOLTO | HGTV backup 🔐 | HTTPError: HTTP Error 403: Forbidden | https://pb-06u3v3mpztvam.akamaized.net/index.m3u8
-RIPARATO | Turbo backup 🔐 | Free-TV Italy | HTTPError: HTTP Error 403: Forbidden -> HLS OK | https://pb-i5a8gbryxtlqs.akamaized.net/index.m3u8 -> https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/TURBO/CMAF/index.m3u8
+MANTENUTO (fallimento non definitivo) | NOVE backup 🔐 | HTTPError: HTTP Error 403: Forbidden | https://pb-o0zu14lv7kvp9.akamaized.net/index.m3u8
+MANTENUTO (fallimento non definitivo) | RealTime backup 🔐 | HTTPError: HTTP Error 403: Forbidden | https://pb-96zvdrcpxomf6.akamaized.net/index.m3u8
+MANTENUTO (fallimento non definitivo) | FoodNetwork backup 🔐 | HTTPError: HTTP Error 403: Forbidden | https://pb-ikxuqadisnhot.akamaized.net/index.m3u8
+MANTENUTO (fallimento non definitivo) | Discovery backup 🔐 | HTTPError: HTTP Error 403: Forbidden | https://pb-n9406rwl5wx1t.akamaized.net/index.m3u8
+MANTENUTO (fallimento non definitivo) | Giallo backup 🔐 | HTTPError: HTTP Error 403: Forbidden | https://pb-vi6d4mucmrwpo.akamaized.net/index.m3u8
+MANTENUTO (fallimento non definitivo) | DMAX backup 🔐 | HTTPError: HTTP Error 403: Forbidden | https://pb-lkmzny7qo98vp.akamaized.net/index.m3u8
+MANTENUTO (fallimento non definitivo) | HGTV backup 🔐 | HTTPError: HTTP Error 403: Forbidden | https://pb-06u3v3mpztvam.akamaized.net/index.m3u8
+MANTENUTO (fallimento non definitivo) | Turbo backup 🔐 | HTTPError: HTTP Error 403: Forbidden | https://pb-i5a8gbryxtlqs.akamaized.net/index.m3u8
 
