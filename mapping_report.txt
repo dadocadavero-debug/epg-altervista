@@ -1,6 +1,6 @@
 Canali sorgente Altervista: 498
 Canali disponibili nell'EPG: 241
-Programmi disponibili nell'EPG: 26491
+Programmi disponibili nell'EPG: 26509
 Canali/righe EXTINF modificate: 60
 Match automatici univoci: 0
 ID già validi preservati: 84
