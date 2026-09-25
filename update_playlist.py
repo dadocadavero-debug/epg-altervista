@@ -3,14 +3,12 @@ import gzip
 import re
 import unicodedata
 import urllib.request
-import time
 from urllib.parse import quote
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
 M3U_URL = "https://inthemix.altervista.org/tv.m3u"
-EPG_SOURCE_URL = "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
-EPG_PLAYER_URL = "https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml"
+EPG_URL = "https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml"
 LOGO_SOURCE_URL = "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u"
 FALLBACK_LOGO_URL = "https://upload.wikimedia.org/wikipedia/commons/a/a0/TV_icon.svg"
 OUT_M3U = Path("tv_epg.m3u")
@@ -21,7 +19,7 @@ UA = {
     "Accept": "*/*",
 }
 
-# tvg-id Altervista -> tvg-id EPGShare verificati sulla playlist che funzionava.
+# tvg-id Altervista -> tvg-id presenti nel nostro epg.xml personalizzato.
 ID_MAP = {
     "Rete4.it": "Rete.4.it", "Canale5.it": "Canale.5.it", "Italia1.it": "Italia.1.it",
     "la7": "LA7.HD.it", "Tv8.it": "TV8.HD.it", "PlutoEuronews.it": "Euronews.it",
@@ -69,12 +67,12 @@ NAME_MAP = {
     "k2": "K2.it",
     "frisbee": "Frisbee.it",
 
-    # Grande Fratello: feed con EPG disponibile in EPGShare
+    # Grande Fratello: feed presenti nel nostro epg.xml personalizzato
     "gfvip regia 1": "GF.VIP.-.Regia.1.it",
     "gfvip regia 2": "GF.VIP.-.Regia.2.it",
     "gfvip un ora fa": "GF.VIP.-.Un’ora.fa.it",
 
-    # Sport: questi ID sono già inclusi dal workflow EPG Altervista.
+    # Sport: questi ID sono inclusi dal workflow EPG Altervista nel nostro epg.xml.
     "sport italia": "Sportitalia.it",
     "equ tv": "EQUtv.it",
     "fifa plus": "IT:.FIFA+.be",
@@ -487,7 +485,7 @@ def main():
     # =========================================================
     # 2. SCARICA E CONTROLLA L'EPG
     # =========================================================
-    epg_raw = fetch(EPG_SOURCE_URL)
+    epg_raw = fetch(EPG_URL)
 
     try:
         epg_xml = gzip.decompress(epg_raw)
@@ -595,14 +593,10 @@ def main():
     # =========================================================
     # 5. HEADER M3U CON EPG AUTOMATICO
     # =========================================================
-    # EPGShare viene usato internamente per validare/correggere i tvg-id.
-    # Il player invece usa l'XML non compresso pubblicato nel repository epg-altervista,
-    # compatibile con la configurazione che mostrava correttamente la guida.
-    # Cache-buster: forza il player a riscaricare l'EPG dopo ogni aggiornamento
-    # evitando di riutilizzare una vecchia risposta/cache fallita.
-    epg_player_url = f"{EPG_PLAYER_URL}?v={int(time.time())}"
+    # Un solo EPG per tutto: mapping e player leggono lo stesso epg.xml.
+    # URL fisso: niente .xml.gz diretto, niente query string/cache-buster.
     out.append(
-        f'#EXTM3U x-tvg-url="{epg_player_url}" url-tvg="{epg_player_url}"'
+        f'#EXTM3U x-tvg-url="{EPG_URL}" url-tvg="{EPG_URL}"'
     )
 
     # =========================================================
@@ -779,20 +773,59 @@ def main():
         out.append(line)
 
     # =========================================================
-    # 7. SCRIVE I FILE FINALI
+    # 7. VALIDAZIONE FINALE PRIMA DI SOVRASCRIVERE LA PLAYLIST
     # =========================================================
-    OUT_M3U.write_text(
-        "\n".join(out) + "\n",
-        encoding="utf-8"
-    )
+    # Se per qualsiasi motivo l'EPG o il mapping risultassero anomali,
+    # NON sostituiamo una tv_epg.m3u gia funzionante.
+    output_extinf = [line for line in out if line.startswith("#EXTINF")]
+    linked_ids = []
+    for extinf in output_extinf:
+        m = re.search(r'tvg-id="([^"]*)"', extinf)
+        cid = m.group(1).strip() if m else ""
+        if cid and cid in epg_ids:
+            linked_ids.append(cid)
 
+    required_ids = {
+        "Rai1.it", "Rai2.it", "Rai3.it",
+        "Rete.4.it", "Canale.5.it", "Italia.1.it",
+    }
+    missing_required_in_epg = sorted(required_ids - epg_ids)
+    missing_required_in_playlist = sorted(required_ids - set(linked_ids))
 
+    if missing_required_in_epg:
+        raise RuntimeError(
+            "EPG personalizzato anomalo: mancano ID fondamentali: "
+            + ", ".join(missing_required_in_epg)
+            + ". Aggiornamento annullato; la playlist precedente resta intatta."
+        )
+
+    if missing_required_in_playlist:
+        raise RuntimeError(
+            "Mapping playlist anomalo: mancano collegamenti EPG fondamentali: "
+            + ", ".join(missing_required_in_playlist)
+            + ". Aggiornamento annullato; la playlist precedente resta intatta."
+        )
+
+    if len(linked_ids) < 30:
+        raise RuntimeError(
+            f"Mapping EPG anomalo: solo {len(linked_ids)} canali risultano collegati all'EPG. "
+            "Aggiornamento annullato; la playlist precedente resta intatta."
+        )
+
+    # Scrittura atomica: prima un file temporaneo, poi sostituzione finale.
+    tmp_m3u = OUT_M3U.with_suffix(OUT_M3U.suffix + ".tmp")
+    tmp_m3u.write_text("\n".join(out) + "\n", encoding="utf-8")
+    tmp_m3u.replace(OUT_M3U)
+
+    # =========================================================
+    # 8. REPORT
+    # =========================================================
     OUT_REPORT.write_text(
         f"Canali sorgente Altervista: {source_channels}\n"
-        f"EPG sorgente mapping: {EPG_SOURCE_URL}\n"
-        f"EPG pubblicato al player: {EPG_PLAYER_URL}\n"
+        f"EPG unico usato per mapping e player: {EPG_URL}\n"
         f"Canali disponibili nell'EPG: {channel_count}\n"
         f"Programmi disponibili nell'EPG: {programme_count}\n"
+        f"Canali della playlist collegati a un ID EPG valido: {len(linked_ids)}\n"
         f"Canali/righe EXTINF modificate: {changed}\n"
         f"Match automatici univoci: {auto}\n"
         f"ID già validi preservati: {preserved}\n"
