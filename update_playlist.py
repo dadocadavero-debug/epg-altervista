@@ -92,9 +92,22 @@ NAME_MAP = {
 }
 
 RAI_WORKING_STREAMS = {
-    "Rai 1": "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8",
-    "Rai 2": "https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8",
-    "Rai 3": "https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8",
+    # Già verificati nella tua configurazione prima del controllo automatico
+    "rai 1": "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8",
+    "rai 2": "https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8",
+    "rai 3": "https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8",
+
+    # Canali Rai secondari: relinker HTTPS
+    "rai 4": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forceUserAgent=raiplayappletv",
+    "rai 5": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276&output=7&forceUserAgent=raiplayappletv",
+    "rai movie": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002&output=7&forceUserAgent=raiplayappletv",
+    "rai premium": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746992&output=7&forceUserAgent=raiplayappletv",
+    "rai storia": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746990&output=7&forceUserAgent=raiplayappletv",
+
+    # Varianti: il nome in Fermata resta invariato, cambia solo lo stream
+    "rai 1 900p": "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8",
+    "rai 2 hls": "https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8",
+    "rai 3 900 dash": "https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8",
 }
 
 
@@ -289,26 +302,35 @@ def set_tvg_id(extinf: str, new_id: str) -> str:
 
 
 def fix_primary_rai_streams(lines):
+    """
+    Forza gli stream Rai elencati in RAI_WORKING_STREAMS.
+    NON modifica il nome mostrato in Fermata.
+    """
     out = []
     i = 0
 
     while i < len(lines):
         line = lines[i]
 
-        if line.startswith("#EXTINF") and 'group-title="Rai"' in line:
+        if line.startswith("#EXTINF"):
             name = line.rsplit(",", 1)[-1].strip() if "," in line else ""
+            key = norm(name)
 
-            if name in RAI_WORKING_STREAMS:
+            if key in RAI_WORKING_STREAMS:
                 out.append(line)
                 i += 1
 
-                # Salta opzioni/URL originali fino alla prossima EXTINF.
+                # Rimuove opzioni e URL originali del blocco.
                 while i < len(lines) and not lines[i].startswith("#EXTINF"):
-                    if lines[i].startswith("#EXTM3U"):
-                        out.append(lines[i])
                     i += 1
 
-                out.append(RAI_WORKING_STREAMS[name])
+                stream_url = RAI_WORKING_STREAMS[key]
+
+                # I relinker Rai funzionano meglio con user-agent rainet.
+                if "mediapolis.rai.it" in stream_url:
+                    out.append("#EXTVLCOPT:http-user-agent=rainet/4.0.5")
+
+                out.append(stream_url)
                 continue
 
         out.append(line)
@@ -600,6 +622,12 @@ def candidate_key(candidate):
 
 
 def candidates_for_block(block, by_id, by_name):
+    """
+    Modalità sicura:
+    - prima stesso tvg-id ESATTO;
+    - poi stesso nome normalizzato ESATTO;
+    - niente matching fuzzy/stripped per cambiare automaticamente lo stream.
+    """
     candidates = []
     seen = set()
 
@@ -611,8 +639,9 @@ def candidates_for_block(block, by_id, by_name):
                 seen.add(key)
                 candidates.append(candidate)
 
-    for name_key in normalized_channel_keys(block_name(block)):
-        for candidate in by_name.get(name_key, []):
+    exact_name = norm(block_name(block))
+    if exact_name:
+        for candidate in by_name.get(exact_name, []):
             key = candidate_key(candidate)
             if key not in seen:
                 seen.add(key)
@@ -638,17 +667,52 @@ def replace_block_stream(block, candidate):
     return [extinf] + opts + [candidate["url"]]
 
 
+
+def is_definitely_dead_stream(detail: str) -> bool:
+    """
+    Decide quando è davvero sicuro sostituire automaticamente uno stream.
+
+    Sostituiamo SOLO casi chiaramente morti:
+    - URL assente;
+    - HTTP 404 / 410;
+    - manifest/risposta vuota in modo strutturale.
+
+    NON sostituiamo automaticamente per:
+    - timeout;
+    - 401/403/451;
+    - 5xx;
+    - errori SSL/rete/DNS;
+    - segmenti HLS momentaneamente non raggiungibili.
+
+    Questi ultimi possono funzionare perfettamente su Fermata anche se il runner
+    GitHub non riesce a provarli.
+    """
+    d = (detail or '').lower()
+
+    hard_markers = (
+        'url mancante',
+        'http 404',
+        'http 410',
+        'risposta vuota',
+    )
+
+    return any(marker in d for marker in hard_markers)
+
+
 def audit_and_repair_streams(lines):
     """
     Controlla TUTTI i canali della playlist finale.
 
-    Se uno stream non risponde:
-      1. cerca un'alternativa con stesso tvg-id;
-      2. poi stesso nome normalizzato;
-      3. usa la prima alternativa che supera il probe.
+    Modalità AUTO-REPAIR SICURA.
 
-    Se non trova una soluzione, NON elimina il canale: lo mantiene e lo
-    segnala nel report, così non perdiamo feed "non sempre attivi".
+    Se uno stream fallisce il test del runner GitHub:
+      - NON viene sostituito automaticamente per timeout/403/5xx/geo-block/SSL;
+      - viene sostituito SOLO se il fallimento è chiaramente definitivo
+        (es. 404/410/URL mancante/risposta vuota) e troviamo un'alternativa
+        esatta che supera il probe.
+
+    In caso di dubbio manteniamo SEMPRE lo stream originale. In questo modo
+    evitiamo regressioni come quella capitata a Rai 1.
     """
     prefix, blocks = parse_m3u_blocks(lines)
 
@@ -687,13 +751,40 @@ def audit_and_repair_streams(lines):
 
     for block in blocks:
         name = block_name(block)
+        name_key = norm(name)
         original_url = block_stream_url(block)
         ok, detail = probe_results.get(original_url, (False, "non testato"))
+
+        # I canali Rai qui sopra sono "pinned":
+        # il controllo automatico può segnalarli, ma NON può più sostituirli.
+        # Questo evita regressioni come quella appena successa a Rai 1.
+        if name_key in RAI_WORKING_STREAMS:
+            repaired.extend(block)
+            if ok:
+                ok_count += 1
+                audit_lines.append(f"PINNED OK | {name} | {detail} | {original_url}")
+            else:
+                unresolved_count += 1
+                audit_lines.append(
+                    f"PINNED NON SOSTITUITO | {name} | {detail} | {original_url}"
+                )
+            continue
 
         if ok:
             ok_count += 1
             repaired.extend(block)
             audit_lines.append(f"OK | {name} | {detail} | {original_url}")
+            continue
+
+        # Se il runner non riesce a verificarlo ma NON è chiaramente morto,
+        # non tocchiamo lo stream. Potrebbe essere un blocco geografico,
+        # un 403 al server GitHub o un problema temporaneo.
+        if not is_definitely_dead_stream(detail):
+            repaired.extend(block)
+            unresolved_count += 1
+            audit_lines.append(
+                f"MANTENUTO (fallimento non definitivo) | {name} | {detail} | {original_url}"
+            )
             continue
 
         chosen = None
@@ -735,8 +826,8 @@ def audit_and_repair_streams(lines):
     report = (
         f"Canali totali: {len(blocks)}\n"
         f"Stream OK originali: {ok_count}\n"
-        f"Stream riparati automaticamente: {repaired_count}\n"
-        f"Stream non risolti: {unresolved_count}\n"
+        f"Stream riparati automaticamente (solo fallimenti definitivi): {repaired_count}\n"
+        f"Stream mantenuti/non risolti: {unresolved_count}\n"
         f"Fonti fallback con errore: {len(fallback_source_errors)}\n\n"
     )
 
@@ -1053,7 +1144,8 @@ def main():
         f"Stream controllati: {stream_stats['total']}\n"
         f"Stream OK originali: {stream_stats['ok']}\n"
         f"Stream riparati automaticamente: {stream_stats['repaired']}\n"
-        f"Stream non risolti: {stream_stats['unresolved']}\n\n"
+        f"Stream mantenuti/non risolti: {stream_stats['unresolved']}\n"
+        f"Modalità riparazione: SICURA (nessuna sostituzione su timeout/403/5xx/rete)\n\n"
         + "\n".join(report)
         + "\n\n===== CONTROLLO STREAM COMPLETO =====\n"
         + stream_audit_text
