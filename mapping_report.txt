@@ -26,7 +26,7 @@ DMAX | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/
 HGTV | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/homegardentv.png
 Rai Sport | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png
 Solocalcio | ITBC4700002CO -> Solocalcio.it.it | id:ITBC4700002CO
-Primavera TV | logo aggiunto -> https://i.imgur.com/0CJGGgd.png
+Primavera TV | logo aggiunto -> https://www.tvdream.net/img/primavera-tv-cover.jpg
 Super Tennis | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
 Radio 105 TV | (vuoto) -> Radio.105.it | nome-verificato
 Deejay TV | logo aggiunto -> https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80
