@@ -1043,11 +1043,17 @@
     <icon src="https://guidatv.sky.it/logo/421super_Light_Fit.png?checksum=306fe7e2-fe34-43a1-9fd5-5967814574eb?tr=n-logo_80" />
     <url>http://www.guidatv.sky.it</url>
   </channel>
-  <channel id="IT:.Juventus.Play.be">
-    <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg" />
-    <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg" />
+  <channel id="IT:.Red.Bull.TV.be">
+    <icon src="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg" />
+    <icon src="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg" />
     <url>http://www.rakuten.tv</url>
-    <display-name lang="en">IT: Juventus Play</display-name>
+    <display-name lang="en">IT: Red Bull TV</display-name>
+  </channel>
+  <channel id="IT:.FIFA+.be">
+    <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png" />
+    <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png" />
+    <url>http://www.rakuten.tv</url>
+    <display-name lang="en">IT: FIFA+</display-name>
   </channel>
   <channel id="IT:.Motoretrò.be">
     <icon src="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/378d216f-0401-485e-b847-52bcc0ee4355.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/378d216f-0401-485e-b847-52bcc0ee4355.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/378d216f-0401-485e-b847-52bcc0ee4355.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/378d216f-0401-485e-b847-52bcc0ee4355.jpeg" />
@@ -1061,27 +1067,21 @@
     <url>http://www.rakuten.tv</url>
     <display-name lang="en">IT: Rally.TV FAST+</display-name>
   </channel>
-  <channel id="IT:.INTER.24/7.be">
-    <icon src="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg" />
-    <icon src="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg" />
+  <channel id="IT:.Juventus.Play.be">
+    <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg" />
+    <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg" />
     <url>http://www.rakuten.tv</url>
-    <display-name lang="en">IT: INTER 24/7</display-name>
-  </channel>
-  <channel id="IT:.Red.Bull.TV.be">
-    <icon src="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg" />
-    <icon src="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg" />
-    <url>http://www.rakuten.tv</url>
-    <display-name lang="en">IT: Red Bull TV</display-name>
+    <display-name lang="en">IT: Juventus Play</display-name>
   </channel>
   <channel id="IT:.Tennis+.be">
     <url>http://www.rakuten.tv</url>
     <display-name lang="en">IT: Tennis+</display-name>
   </channel>
-  <channel id="IT:.FIFA+.be">
-    <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png" />
-    <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png" />
+  <channel id="IT:.INTER.24/7.be">
+    <icon src="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg" />
+    <icon src="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg" />
     <url>http://www.rakuten.tv</url>
-    <display-name lang="en">IT: FIFA+</display-name>
+    <display-name lang="en">IT: INTER 24/7</display-name>
   </channel>
   <channel id="20Mediaset.it">
     <display-name lang="it">20</display-name>
@@ -198470,243 +198470,7 @@
     <country lang="it">FRA</country>
     <episode-num system="onscreen">S1 E12</episode-num>
   </programme>
-<programme channel="IT:.Motoretrò.be" start="20260923000201 -0300" stop="20260923002000 -0300">
-    <title lang="it">Speciale storico</title>
-    <desc lang="it">la storia di Karl Abarth attraverso i modelli 500 più iconici.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923002001 -0300" stop="20260923003600 -0300">
-    <title lang="it">Speciale storico</title>
-    <desc lang="it">la storia di Karl Abarth attraverso i modelli 500 più iconici.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923003601 -0300" stop="20260923005100 -0300">
-    <title lang="it">Pillole storiche</title>
-    <desc lang="it">highligh from the past - storie di auto, moto e persone.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923005101 -0300" stop="20260923010400 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">redbull moto crossmoto Cavallara.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923010401 -0300" stop="20260923012300 -0300">
-    <title lang="it">Pillole storiche</title>
-    <desc lang="it">highligh from the past.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923012301 -0300" stop="20260923013700 -0300">
-    <title lang="it">Speciale storico</title>
-    <desc lang="it">storia della citroen 2 cavalli, auto iconica.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923013701 -0300" stop="20260923015300 -0300">
-    <title lang="it">Speciale storico</title>
-    <desc lang="it">storia della citroen 2 cavalli, auto iconica.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923015301 -0300" stop="20260923020700 -0300">
-    <title lang="it">Speciale storico</title>
-    <desc lang="it">storia mini car epoca 500 lunga giiulietta alpine stratos.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923020701 -0300" stop="20260923022000 -0300">
-    <title lang="it">Speciale storico</title>
-    <desc lang="it">storia mini car epoca 500 lunga giiulietta alpine stratos.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923022001 -0300" stop="20260923023400 -0300">
-    <title lang="it">Pillole storiche</title>
-    <desc lang="it">highligh from the past - storie di auto, moto e persone.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923023401 -0300" stop="20260923025000 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highligh from the past - storie di auto, moto e persone.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923025001 -0300" stop="20260923030600 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highligh from the past - storie di auto, moto e persone.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923030601 -0300" stop="20260923032500 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highligh from the past - storie di auto, moto e persone.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923032501 -0300" stop="20260923034000 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highligh from the past - storie di auto, moto e persone.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923034001 -0300" stop="20260923040600 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923040601 -0300" stop="20260923042200 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923042201 -0300" stop="20260923044000 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past Speciale Targa Florio.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923044001 -0300" stop="20260923050400 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923050401 -0300" stop="20260923052800 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">Le gare Belgio 1981.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923052801 -0300" stop="20260923055600 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">le gare indooor anno 2008.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923055601 -0300" stop="20260923062300 -0300">
-    <title lang="it">speciale storico</title>
-    <desc lang="it">storia honda mad di concorrezzo.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923062301 -0300" stop="20260923065500 -0300">
-    <title lang="it">approfondimento</title>
-    <desc lang="it">storia honda mad di Concorrezzo.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923065501 -0300" stop="20260923071200 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923071201 -0300" stop="20260923072700 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923072701 -0300" stop="20260923074200 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923074201 -0300" stop="20260923080000 -0300">
-    <title lang="it">eventi e raduni</title>
-    <desc lang="it">Expo Trieste a raccolta i modelli della ex Jugoslavia e quelli italiani.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923080001 -0300" stop="20260923082800 -0300">
-    <title lang="it">speciale storico</title>
-    <desc lang="it">La storia del leone francese.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923082801 -0300" stop="20260923085200 -0300">
-    <title lang="it">eventi e raduni</title>
-    <desc lang="it">Il raduno per gli appassionati di Ancillotti.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923085201 -0300" stop="20260923090500 -0300">
-    <title lang="it">Pillole storiche</title>
-    <desc lang="it">highligh from the past - storie di auto, moto e persone.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923090501 -0300" stop="20260923092200 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highligh from the past - storie di auto, moto e persone.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923092201 -0300" stop="20260923093700 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highligh from the past - storie di auto, moto e persone.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923093701 -0300" stop="20260923095700 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highligh from the past - storie di auto, moto e persone.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923095701 -0300" stop="20260923101400 -0300">
-    <title lang="it">collab parc fermè</title>
-    <desc lang="it">Gold classic 2020 curitiba.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923101401 -0300" stop="20260923102500 -0300">
-    <title lang="it">collab parc fermè</title>
-    <desc lang="it">Gold classic 2020 curitiba.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923102501 -0300" stop="20260923105200 -0300">
-    <title lang="it">collab parc fermè</title>
-    <desc lang="it">Gold classic 2020 curitiba.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923105201 -0300" stop="20260923110800 -0300">
-    <title lang="it">collab parc fermè</title>
-    <desc lang="it">Gold classic 2020 curitiba.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923110801 -0300" stop="20260923112400 -0300">
-    <title lang="it">collab parc fermè</title>
-    <desc lang="it">Gold classic 2020 curitiba.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923112401 -0300" stop="20260923114500 -0300">
-    <title lang="it">collab parc fermè</title>
-    <desc lang="it">Gold classic 2020 curitiba.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923114501 -0300" stop="20260923121100 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923121101 -0300" stop="20260923122700 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923122701 -0300" stop="20260923124400 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past Speciale Targa Florio.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923124401 -0300" stop="20260923130800 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923130801 -0300" stop="20260923133300 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">Le gare Belgio 1981.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923133301 -0300" stop="20260923140100 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">le gare indooor anno 2008.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923140101 -0300" stop="20260923142800 -0300">
-    <title lang="it">speciale storico</title>
-    <desc lang="it">storia honda mad di concorrezzo.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923142801 -0300" stop="20260923150000 -0300">
-    <title lang="it">approfondimento</title>
-    <desc lang="it">storia honda mad di Concorrezzo.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923150001 -0300" stop="20260923184400 -0300">
-    <title lang="it">Motoretrò &amp; Parc Fermè</title>
-    <desc lang="it">China GT Championship 2026 - Round 3 Zhuhai - Gara 2 GT3.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923184401 -0300" stop="20260923191100 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">Gran Premio del 1973.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923191101 -0300" stop="20260923193700 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923193701 -0300" stop="20260923194800 -0300">
-    <title lang="it">pillole storiche</title>
-    <desc lang="it">highlights from the past.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923194801 -0300" stop="20260923201400 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">il racconto del motomondiale 1979.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923201401 -0300" stop="20260923203900 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">Gare Shell dal 1906 al 1918.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923203901 -0300" stop="20260923210900 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">Gare Shell dal 1906 al 1918.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923210901 -0300" stop="20260923220700 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">Gare Shell dal 1906 al 1918.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923220701 -0300" stop="20260923224400 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">Gare Shell dal 1906 al 1918.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923224401 -0300" stop="20260923230300 -0300">
-    <title lang="it">eventi e raduni</title>
-    <desc lang="it">Roma raduno collezionisti e mostra scambio.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923230301 -0300" stop="20260923233200 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">sei giorni Francia 1980.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923233201 -0300" stop="20260923235300 -0300">
-    <title lang="it">gare storiche</title>
-    <desc lang="it">regolarità anni 70, europei 1977.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260923235301 -0300" stop="20260924000800 -0300">
-    <title lang="it">Eventi e Raduni Motoristici</title>
-    <desc lang="it">mostra scambio Arezzo più speciale Dakar 2022.</desc>
-  </programme>
-  <programme channel="IT:.Motoretrò.be" start="20260924000801 -0300" stop="20260924002300 -0300">
+<programme channel="IT:.Motoretrò.be" start="20260924000801 -0300" stop="20260924002300 -0300">
     <title lang="it">Eventi e Raduni Motoristici</title>
     <desc lang="it">mostra scambio Arezzo più speciale Dakar 2022.</desc>
   </programme>
@@ -199554,171 +199318,241 @@
     <title lang="it">pillole storiche</title>
     <desc lang="it">highlights from the past.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923000956 -0300" stop="20260923004137 -0300">
-    <title lang="it">Beyond the ROX</title>
-    <sub-title lang="it">FITNESS: Beyond the ROX – Strength in Motion</sub-title>
-    <desc lang="it">Footballer Sadiq Elfitouri and OCR champ Ida Mathilde make a debut, as the sport draws pros from all fields.</desc>
-    <episode-num system="onscreen">S1 E2</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927000801 -0300" stop="20260927002400 -0300">
+    <title lang="it">pillole storiche</title>
+    <desc lang="it">highlights from the past.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923004142 -0300" stop="20260923010000 -0300">
-    <title lang="it">My Last Two Winters</title>
-    <sub-title lang="it">SURF: My Last Two Winters – Chasing Big-wave Dreams</sub-title>
-    <desc lang="it">Conor Maguire’s epic winter takes him to Australia’s massive waves with Russell Bierke and locals, then he returns to Ireland to tackle even bigger surf. Watch him push his limits.</desc>
-    <episode-num system="onscreen">S1 E4</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927002401 -0300" stop="20260927004600 -0300">
+    <title lang="it">pillole storiche</title>
+    <desc lang="it">highlights from the past.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923010005 -0300" stop="20260923025118 -0300">
-    <title lang="it">CLIMBING: Fine Lines – Life Lessons From Adventurers</title>
-    <desc lang="it">Take an introspective journey on the lessons life has taught 20 legends why risk is so vital to their lives.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927004601 -0300" stop="20260927010800 -0300">
+    <title lang="it">pillole storiche</title>
+    <desc lang="it">highlights from the past.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923025123 -0300" stop="20260923033028 -0300">
-    <title lang="it">Beyond the ROX</title>
-    <sub-title lang="it">FITNESS: Beyond the ROX – Strength in Motion</sub-title>
-    <desc lang="it">After years of training, Jake Dearden reaches the Elite 15. Can he prove he belongs in the 2024/25 season.</desc>
-    <episode-num system="onscreen">S1 E5</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927010801 -0300" stop="20260927014300 -0300">
+    <title lang="it">pillole storiche</title>
+    <desc lang="it">highlights from the past.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923033033 -0300" stop="20260923042242 -0300">
-    <title lang="it">More Than Machine</title>
-    <sub-title lang="it">MOTORSPORT: More Than Machine – All-access WRC Show</sub-title>
-    <desc lang="it">The 2025 season concludes with a dramatic double-header in Japan and Saudi Arabia. Who will come out on top.</desc>
-    <episode-num system="onscreen">S1 E7</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927014301 -0300" stop="20260927021700 -0300">
+    <title lang="it">pillole storiche</title>
+    <desc lang="it">highlights from the past.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923042247 -0300" stop="20260923053724 -0300">
-    <title lang="it">BIKE: ANYTIME – Ambitions of Redefining Freeride MTB</title>
-    <desc lang="it">Follow a new generation of elite MTB riders as they attempt to redefine the frontiers of the sport.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927021701 -0300" stop="20260927023200 -0300">
+    <title lang="it">eventi e raduni</title>
+    <desc lang="it">Roma Motodays, il racconto di due giornate.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923053729 -0300" stop="20260923064052 -0300">
-    <title lang="it">ATHLETICS: Resilience – The Els Visser Ironman Story</title>
-    <desc lang="it">When a shipwreck changes everything, the journey from med student to champion triathlete begins.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927023201 -0300" stop="20260927024400 -0300">
+    <title lang="it">eventi e raduni</title>
+    <desc lang="it">Roma Motodays, il racconto di due giornate.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923064057 -0300" stop="20260923065930 -0300">
-    <title lang="it">Skate Tales</title>
-    <sub-title lang="it">SKATE: Skate Tales – Madars Apse's Global Journey</sub-title>
-    <desc lang="it">Madars and Nico Hiraga explore how San Francisco is shaping skateboarding’s new generation.</desc>
-    <episode-num system="onscreen">S5 E1</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927024401 -0300" stop="20260927030000 -0300">
+    <title lang="it">eventi e raduni</title>
+    <desc lang="it">Roma Motodays, il racconto di due giornate.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923065935 -0300" stop="20260923073029 -0300">
-    <title lang="it">Red Bull Flugtag</title>
-    <sub-title lang="it">ACTION: Red Bull Flugtag – Hunting Human-powered Flight</sub-title>
-    <desc lang="it">See who lasts the longest as 50 teams fly homemade machines over Lake Zurich, trying to go the distance.</desc>
-    <episode-num system="onscreen">S2 E3</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927030001 -0300" stop="20260927032500 -0300">
+    <title lang="it">eventi e raduni</title>
+    <desc lang="it">Roma Motodays, il racconto di due giornate.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923073034 -0300" stop="20260923081750 -0300">
-    <title lang="it">BIKE: Matt Jones: The Impossible Gap – Extreme MTB</title>
-    <desc lang="it">MTB rider Matt Jones aims to jump between two moving trucks in a nano-second. Watch him prepare for the feat.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927032501 -0300" stop="20260927035100 -0300">
+    <title lang="it">pillole storiche</title>
+    <desc lang="it">highlights from the past.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923081755 -0300" stop="20260923084117 -0300">
-    <title lang="it">SURF: Munch – Noa Deane's Epic Australian Mission</title>
-    <desc lang="it">Noa Deane hits Australia for heavy slabs, punts and air sections with Ozzy Wrong in an wild surf adventure.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927035101 -0300" stop="20260927040700 -0300">
+    <title lang="it">pillole storiche</title>
+    <desc lang="it">highlights from the past.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923084122 -0300" stop="20260923085859 -0300">
-    <title lang="it">Skate Tales</title>
-    <sub-title lang="it">SKATE: Skate Tales – Madars Apse's Global Journey</sub-title>
-    <desc lang="it">Madars travels to Brazil to uncover Tiago Lemos’s rise from the streets to global skate stardom.</desc>
-    <episode-num system="onscreen">S5 E2</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927040701 -0300" stop="20260927042500 -0300">
+    <title lang="it">pillole storiche</title>
+    <desc lang="it">highlights from the past Speciale Targa Florio.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923085904 -0300" stop="20260923095750 -0300">
-    <title lang="it">BIKE: Women's Red Bull Rampage 2025 Utah – Highlights</title>
-    <desc lang="it">12 female MTB athletes competed in this invitation-only freeride event, showcasing their skill and creativity.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927042501 -0300" stop="20260927044900 -0300">
+    <title lang="it">pillole storiche</title>
+    <desc lang="it">highlights from the past.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923095755 -0300" stop="20260923102640 -0300">
-    <title lang="it">CLIMBING: Natural Heights – Hidden Stories of Big Names</title>
-    <desc lang="it">In Flatanger, Norway, Jakob Schubert tackles the first ascent of 'B.I.G.' (9c) with unyielding resolve.</desc>
-    <episode-num system="onscreen">S1 E1</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927044901 -0300" stop="20260927051400 -0300">
+    <title lang="it">gare storiche</title>
+    <desc lang="it">Le gare Belgio 1981.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923102645 -0300" stop="20260923105705 -0300">
-    <title lang="it">Nazaré: Making Giants</title>
-    <sub-title lang="it">SURF: Nazaré: Making Giants – A Big Wave Challenge</sub-title>
-    <desc lang="it">Meet the next generation of surfers trying to find their place in Nazaré on the coast of Portugal.</desc>
-    <episode-num system="onscreen">S1 E4</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927051401 -0300" stop="20260927054100 -0300">
+    <title lang="it">gare storiche</title>
+    <desc lang="it">le gare indooor anno 2008.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923105710 -0300" stop="20260923112555 -0300">
-    <title lang="it">CLIMBING: Natural Heights – Hidden Stories of Big Names</title>
-    <desc lang="it">Nika Potapova wants to become a pro climber, but no matter the sacrifices the outcome is far from guaranteed.</desc>
-    <episode-num system="onscreen">S1 E1</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927054101 -0300" stop="20260927060800 -0300">
+    <title lang="it">speciale storico</title>
+    <desc lang="it">storia honda mad di concorrezzo.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923112600 -0300" stop="20260923114648 -0300">
-    <title lang="it">No Contest: Off Tour</title>
-    <sub-title lang="it">SURF: No Contest: Off Tour – Raw, Real, Remote</sub-title>
-    <desc lang="it">Japan is known for its mix of tradition and technology, but it's also a surf hotspot with great waves.</desc>
-    <episode-num system="onscreen">S3 E1</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927060801 -0300" stop="20260927064000 -0300">
+    <title lang="it">approfondimento</title>
+    <desc lang="it">storia honda mad di Concorrezzo.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923114653 -0300" stop="20260923124357 -0300">
-    <title lang="it">BIKE: A Biker's Ballad – A Must-see for Every Rider</title>
-    <desc lang="it">Over 7 years, 14 riders honour the birthplace of mountain biking, Crested Butte, to show the sport’s journey.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927064001 -0300" stop="20260927065800 -0300">
+    <title lang="it">collab parc fermè</title>
+    <desc lang="it">Gold classic 2020 curitiba.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923124402 -0300" stop="20260923130121 -0300">
-    <title lang="it">Skate Tales</title>
-    <sub-title lang="it">SKATE: Skate Tales – Madars Apse's Global Journey</sub-title>
-    <desc lang="it">Madars heads to Montréal to experience the chaos and creativity of the legendary Dime Glory Challenge.</desc>
-    <episode-num system="onscreen">S5 E3</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927065801 -0300" stop="20260927070800 -0300">
+    <title lang="it">collab parc fermè</title>
+    <desc lang="it">Gold classic 2020 curitiba.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923130126 -0300" stop="20260923133149 -0300">
-    <title lang="it">Red Bull Flugtag</title>
-    <sub-title lang="it">ACTION: Red Bull Flugtag – Hunting Human-powered Flight</sub-title>
-    <desc lang="it">Forty teams try to avoid dropping into the Ohio River by piloting inventive homemade flying machines.</desc>
-    <episode-num system="onscreen">S2 E4</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927070801 -0300" stop="20260927073600 -0300">
+    <title lang="it">collab parc fermè</title>
+    <desc lang="it">Gold classic 2020 curitiba.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923133154 -0300" stop="20260923141910 -0300">
-    <title lang="it">BIKE: Matt Jones: The Impossible Gap – Extreme MTB</title>
-    <desc lang="it">MTB rider Matt Jones aims to jump between two moving trucks in a nano-second. Watch him prepare for the feat.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927073601 -0300" stop="20260927075200 -0300">
+    <title lang="it">collab parc fermè</title>
+    <desc lang="it">Gold classic 2020 curitiba.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923141915 -0300" stop="20260923144237 -0300">
-    <title lang="it">SURF: Munch – Noa Deane's Epic Australian Mission</title>
-    <desc lang="it">Noa Deane hits Australia for heavy slabs, punts and air sections with Ozzy Wrong in an wild surf adventure.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927075201 -0300" stop="20260927080800 -0300">
+    <title lang="it">collab parc fermè</title>
+    <desc lang="it">Gold classic 2020 curitiba.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923144242 -0300" stop="20260923150019 -0300">
-    <title lang="it">Skate Tales</title>
-    <sub-title lang="it">SKATE: Skate Tales – Madars Apse's Global Journey</sub-title>
-    <desc lang="it">Madars travels to Brazil to uncover Tiago Lemos’s rise from the streets to global skate stardom.</desc>
-    <episode-num system="onscreen">S5 E2</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927080801 -0300" stop="20260927082800 -0300">
+    <title lang="it">collab parc fermè</title>
+    <desc lang="it">Gold classic 2020 curitiba.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923150024 -0300" stop="20260923153100 -0300">
-    <title lang="it">Nazaré: Making Giants</title>
-    <sub-title lang="it">SURF: Nazaré: Making Giants – A Big Wave Challenge</sub-title>
-    <desc lang="it">Nazaré is home to the next generation of surfing pioneers and world record holders.</desc>
-    <episode-num system="onscreen">S1 E3</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927082801 -0300" stop="20260927085700 -0300">
+    <title lang="it">speciale storico</title>
+    <desc lang="it">La storia del leone francese.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923153105 -0300" stop="20260923165955 -0300">
-    <title lang="it">SURF: Against Gravity – Leon Glatzer's story</title>
-    <desc lang="it">The ocean is everything to surf pro Leon Glatzer. Watch and listen as he tells his moving story.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927085701 -0300" stop="20260927092300 -0300">
+    <title lang="it">gare storiche</title>
+    <desc lang="it">il racconto del motomondiale 1979.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923170000 -0300" stop="20260923174712 -0300">
-    <title lang="it">SURF: Chumbo: Made for Big Wave Surfing – Balancing Act</title>
-    <desc lang="it">Big wave surfer Lucas Chianca balances the thrill of surfing with the joys and challenges of being a parent.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927092301 -0300" stop="20260927094100 -0300">
+    <title lang="it">eventi e raduni</title>
+    <desc lang="it">Expo Trieste a raccolta i modelli della ex Jugoslavia e quelli italiani.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923174717 -0300" stop="20260923184431 -0300">
-    <title lang="it">SURFING: Peaches – Celebrating Women Surfers in the 90s</title>
-    <desc lang="it">A favourite of its generation, Peaches spotlights top women surfers in the late 1990s and early 2000s.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927094101 -0300" stop="20260927100600 -0300">
+    <title lang="it">gare storiche</title>
+    <desc lang="it">Gare Shell dal 1906 al 1918.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923184436 -0300" stop="20260923203259 -0300">
-    <title lang="it">ADVENTURE: Dirtbag – The Legend of Fred Beckey</title>
-    <desc lang="it">Uncover the legacy of American mountaineer Fred Beckey, whose name's spoken in hushed tones around campfires.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927100601 -0300" stop="20260927103700 -0300">
+    <title lang="it">gare storiche</title>
+    <desc lang="it">Gare Shell dal 1906 al 1918.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923203304 -0300" stop="20260923210345 -0300">
-    <title lang="it">RED BULL CLIFF DIVING: El Nido 2025 – Carlson and Preda</title>
-    <desc lang="it">Against the stunning natural beauty of El Nido, Molly Carlson and Catalin Preda face their fear to freefall.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927103701 -0300" stop="20260927113400 -0300">
+    <title lang="it">gare storiche</title>
+    <desc lang="it">Gare Shell dal 1906 al 1918.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923210350 -0300" stop="20260923212755 -0300">
-    <title lang="it">Reel Rock</title>
-    <sub-title lang="it">CLIMBING: Reel Rock – Pure Thrills and Defying Limits</sub-title>
-    <desc lang="it">As he chases what may be the world's first E12, James Pearson has a reckoning with self-acceptance.</desc>
-    <episode-num system="onscreen">S11 E7</episode-num>
+  <programme channel="IT:.Motoretrò.be" start="20260927113401 -0300" stop="20260927121100 -0300">
+    <title lang="it">gare storiche</title>
+    <desc lang="it">Gare Shell dal 1906 al 1918.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923212800 -0300" stop="20260923215819 -0300">
-    <title lang="it">CLIMBING: Pro Climbing League 2026 London – Highlights</title>
-    <desc lang="it">Watch highlights from the world's best climbers at the all-new professional head-to-head climbing competition.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927121101 -0300" stop="20260927123900 -0300">
+    <title lang="it">speciale</title>
+    <desc lang="it">La storia del Batiscafo Trieste.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923215824 -0300" stop="20260923222920 -0300">
-    <title lang="it">ADVENTURE: A Baffin Vacation: Love on Ice – Artic Ties</title>
-    <desc lang="it">In the icy wilds, two explorers face extreme conditions over 69 days, but every step is also a step closer.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927123901 -0300" stop="20260927125600 -0300">
+    <title lang="it">eventi e raduni</title>
+    <desc lang="it">Roma Motodays, il racconto di due giornate.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923222925 -0300" stop="20260923224806 -0300">
-    <title lang="it">ACTION: Red Bull Stalen Ros 2024 – Highlights</title>
-    <desc lang="it">This wild water race tests speed, teamwork and balance as riders try to stay dry on a fun and tricky course.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927125601 -0300" stop="20260927131100 -0300">
+    <title lang="it">eventi e raduni</title>
+    <desc lang="it">Roma Motodays, il racconto di due giornate.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260923224811 -0300" stop="20260924001806 -0300">
-    <title lang="it">CLIMBING: Here to Climb – Sasha DiGiulian's Journey</title>
-    <desc lang="it">Follow Sasha DiGiulian’s as she becomes the first woman to climb some of the world’s biggest walls.</desc>
+  <programme channel="IT:.Motoretrò.be" start="20260927131101 -0300" stop="20260927132400 -0300">
+    <title lang="it">eventi e raduni</title>
+    <desc lang="it">Roma Motodays, il racconto di due giornate.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927132401 -0300" stop="20260927133900 -0300">
+    <title lang="it">eventi e raduni</title>
+    <desc lang="it">Roma Motodays, il racconto di due giornate.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927133901 -0300" stop="20260927140400 -0300">
+    <title lang="it">eventi e raduni</title>
+    <desc lang="it">Roma Motodays, il racconto di due giornate.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927140401 -0300" stop="20260927143200 -0300">
+    <title lang="it">speciale</title>
+    <desc lang="it">La storia del Batiscafo Trieste.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927143201 -0300" stop="20260927150000 -0300">
+    <title lang="it">gare</title>
+    <desc lang="it">Rally di Mussolino.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927150001 -0300" stop="20260927152700 -0300">
+    <title lang="it">gare</title>
+    <desc lang="it">Rally di Mussolino.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927152701 -0300" stop="20260927155900 -0300">
+    <title lang="it">gare</title>
+    <desc lang="it">Rally di Mussolino.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927155901 -0300" stop="20260927163500 -0300">
+    <title lang="it">gare</title>
+    <desc lang="it">Rally di Mussolino.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927163501 -0300" stop="20260927164500 -0300">
+    <title lang="it">eventi</title>
+    <desc lang="it">la moto da Gran Premio Ducati.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927164501 -0300" stop="20260927170900 -0300">
+    <title lang="it">gare</title>
+    <desc lang="it">WIW di Misano solo Ducati.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927170901 -0300" stop="20260927173800 -0300">
+    <title lang="it">Approfondimento</title>
+    <desc lang="it">Dal passato tornano protagoniste le custom.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927173801 -0300" stop="20260927174600 -0300">
+    <title lang="it">Raduni</title>
+    <desc lang="it">Quando la sabbia della laguna diventa pista per la sfida del Cioka rally.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927174601 -0300" stop="20260927180900 -0300">
+    <title lang="it">Raduni</title>
+    <desc lang="it">Raduno auto americane e italiane - ed. 2026.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927180901 -0300" stop="20260927185000 -0300">
+    <title lang="it">Approfondimenti</title>
+    <desc lang="it">Speciale moto 70-80.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927185001 -0300" stop="20260927191500 -0300">
+    <title lang="it">Dakar anni '80</title>
+    <desc lang="it">Dakar anni '80.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927191501 -0300" stop="20260927193900 -0300">
+    <title lang="it">Approfondimento</title>
+    <desc lang="it">Tra i motori d'epoca, spazio alla Aston Martin.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927193901 -0300" stop="20260927201100 -0300">
+    <title lang="it">yesterbike moto anni 60, 70</title>
+    <desc lang="it">Le moto anni 60 raccontate da grandi esperti giornalisti.Esposte anche moto della polizia di ieri.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927201101 -0300" stop="20260927203600 -0300">
+    <title lang="it">Approfondimento</title>
+    <desc lang="it">In casa Volkswagen la Tyron sostituisce la Tiguan.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927203601 -0300" stop="20260927211800 -0300">
+    <title lang="it">Gare</title>
+    <desc lang="it">Diretta storica di Nourburing durante l'epica nazista.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927211801 -0300" stop="20260927214300 -0300">
+    <title lang="it">Raduni</title>
+    <desc lang="it">Tra i motori d'epoca del Millenium Roma.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927214301 -0300" stop="20260927221200 -0300">
+    <title lang="it">Approfondimento</title>
+    <desc lang="it">Dal passato tornano protagoniste le custom.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927221201 -0300" stop="20260927222000 -0300">
+    <title lang="it">Raduni</title>
+    <desc lang="it">Quando la sabbia della laguna diventa pista per la sfida del Cioka rally.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927222001 -0300" stop="20260927224200 -0300">
+    <title lang="it">Raduni</title>
+    <desc lang="it">Quando la sabbia della laguna diventa pista per la sfida del Cioka rally.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927224201 -0300" stop="20260927232300 -0300">
+    <title lang="it">Approfondimenti</title>
+    <desc lang="it">Speciale moto 70-80.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927232301 -0300" stop="20260927234800 -0300">
+    <title lang="it">Dakar anni '80</title>
+    <desc lang="it">Dakar anni '80.</desc>
+  </programme>
+  <programme channel="IT:.Motoretrò.be" start="20260927234801 -0300" stop="20260928001200 -0300">
+    <title lang="it">Approfondimento</title>
+    <desc lang="it">Tra i motori d'epoca, spazio alla Aston Martin.</desc>
   </programme>
   <programme channel="IT:.Red.Bull.TV.be" start="20260924001811 -0300" stop="20260924010000 -0300">
     <title lang="it">More Than Machine</title>
@@ -200082,198 +199916,317 @@
     <title lang="it">SURFING: The Modus Mix – Evolution of Women's Surfing</title>
     <desc lang="it">Follow established and new rising women surfers as they progress the sport during the early 2000s.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926015702 -0300" stop="20260926022600 -0300">
-    <title lang="it">ADVENTURE: The Fast Line – Hojac and Brugger’s Record</title>
-    <desc lang="it">Watch Nicolas Hojac and Philipp Brugger set a new record climbing the faces of Eiger, Mönch and Jungfrau.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926015702 -0300" stop="20260926022756 -0300">
+    <title lang="it">Red Bull Flugtag</title>
+    <sub-title lang="it">ACTION: Red Bull Flugtag – Hunting Human-powered Flight</sub-title>
+    <desc lang="it">See who lasts the longest as 50 teams fly homemade machines over Lake Zurich, trying to go the distance.</desc>
+    <episode-num system="onscreen">S2 E3</episode-num>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926022605 -0300" stop="20260926035455 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926022801 -0300" stop="20260926035651 -0300">
     <title lang="it">SURF: Against Gravity – Leon Glatzer's story</title>
     <desc lang="it">The ocean is everything to surf pro Leon Glatzer. Watch and listen as he tells his moving story.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926035500 -0300" stop="20260926045346 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926035656 -0300" stop="20260926045542 -0300">
     <title lang="it">BIKE: Men's Red Bull Rampage 2025 Utah – Highlights</title>
     <desc lang="it">Watch the 18 male mountain bike athletes showcase skill and creativity in this invitation-only freeride event.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926045351 -0300" stop="20260926052441 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926045547 -0300" stop="20260926052638 -0300">
     <title lang="it">PADEL: Premier Padel 2026 Cancun P2 – Highlights</title>
     <desc lang="it">Watch the highlights from Mexico as the Cancun Premier Padel P2 took centre stage.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926052446 -0300" stop="20260926055331 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926052643 -0300" stop="20260926055527 -0300">
     <title lang="it">CLIMBING: Natural Heights – Hidden Stories of Big Names</title>
     <desc lang="it">Nika Potapova wants to become a pro climber, but no matter the sacrifices the outcome is far from guaranteed.</desc>
     <episode-num system="onscreen">S1 E1</episode-num>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926055336 -0300" stop="20260926061740 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926055532 -0300" stop="20260926061937 -0300">
     <title lang="it">Reel Rock</title>
     <sub-title lang="it">CLIMBING: Reel Rock – Pure Thrills and Defying Limits</sub-title>
     <desc lang="it">As he chases what may be the world's first E12, James Pearson has a reckoning with self-acceptance.</desc>
     <episode-num system="onscreen">S11 E7</episode-num>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926061745 -0300" stop="20260926064803 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926061942 -0300" stop="20260926065000 -0300">
     <title lang="it">BIKE: Asa Vermette's Ascent – A Breakout Year in MTB</title>
     <desc lang="it">Follow young rising star Asa Vermette on his debut at Red Bull Hardline, downhill MTB's toughest race.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926064808 -0300" stop="20260926071848 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926065005 -0300" stop="20260926072045 -0300">
     <title lang="it">BIKE: Red Bull Hardline 2026 Tasmania – Highlights</title>
     <desc lang="it">This year’s Red Bull Hardline Tasmania set the stage for another unforgettable chapter in the event’s history.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926071853 -0300" stop="20260926074954 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926072050 -0300" stop="20260926075150 -0300">
     <title lang="it">PADEL: Premier Padel 2026 Miami P1 – Highlights</title>
     <desc lang="it">Watch the highlights from the US as the Miami Premier Padel P1 took centre stage.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926074959 -0300" stop="20260926084300 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926075155 -0300" stop="20260926084456 -0300">
     <title lang="it">BIKE: Saya Sakakibara: Ride to Redemption – BMX Journey</title>
     <desc lang="it">After her brother's big injury, Saya is determined to honour his legacy through BMX success in Paris.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926084305 -0300" stop="20260926093021 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926084501 -0300" stop="20260926093218 -0300">
     <title lang="it">BIKE: Matt Jones: The Impossible Gap – Extreme MTB</title>
     <desc lang="it">MTB rider Matt Jones aims to jump between two moving trucks in a nano-second. Watch him prepare for the feat.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926093026 -0300" stop="20260926100931 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926093223 -0300" stop="20260926101127 -0300">
     <title lang="it">Beyond the ROX</title>
     <sub-title lang="it">FITNESS: Beyond the ROX – Strength in Motion</sub-title>
     <desc lang="it">After years of training, Jake Dearden reaches the Elite 15. Can he prove he belongs in the 2024/25 season.</desc>
     <episode-num system="onscreen">S1 E5</episode-num>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926100936 -0300" stop="20260926103254 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926101132 -0300" stop="20260926103450 -0300">
     <title lang="it">No Contest: Off Tour</title>
     <sub-title lang="it">SURF: No Contest: Off Tour – Raw, Real, Remote</sub-title>
     <desc lang="it">From the Eastern Suburbs to the Northern Beaches, explore the vibrant surfing culture of Sydney.</desc>
     <episode-num system="onscreen">S3 E2</episode-num>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926103259 -0300" stop="20260926114736 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926103455 -0300" stop="20260926114932 -0300">
     <title lang="it">BIKE: ANYTIME – Ambitions of Redefining Freeride MTB</title>
     <desc lang="it">Follow a new generation of elite MTB riders as they attempt to redefine the frontiers of the sport.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926114741 -0300" stop="20260926121751 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926114937 -0300" stop="20260926121947 -0300">
     <title lang="it">ADVENTURE: Jaan Roose – Life on the Line</title>
     <desc lang="it">Jaan Roose makes history walking a 3.6km slackline across the Strait of Messina, from Italy to Sicily.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926121756 -0300" stop="20260926124748 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926121952 -0300" stop="20260926124945 -0300">
     <title lang="it">Red Bull Flugtag</title>
     <desc lang="it">A strong headwind tests homemade flying machines as teams push their skills to the limit, battling both the weather and gravity. Can they make it fly.</desc>
     <episode-num system="onscreen">S2 E5</episode-num>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926124753 -0300" stop="20260926131833 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926124950 -0300" stop="20260926132030 -0300">
     <title lang="it">BIKE: Red Bull Hardline 2026 Tasmania – Highlights</title>
     <desc lang="it">This year’s Red Bull Hardline Tasmania set the stage for another unforgettable chapter in the event’s history.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926131838 -0300" stop="20260926134939 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926132035 -0300" stop="20260926135135 -0300">
     <title lang="it">PADEL: Premier Padel 2026 Miami P1 – Highlights</title>
     <desc lang="it">Watch the highlights from the US as the Miami Premier Padel P1 took centre stage.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926134944 -0300" stop="20260926144245 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926135140 -0300" stop="20260926144441 -0300">
     <title lang="it">BIKE: Saya Sakakibara: Ride to Redemption – BMX Journey</title>
     <desc lang="it">After her brother's big injury, Saya is determined to honour his legacy through BMX success in Paris.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926144250 -0300" stop="20260926150612 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926144446 -0300" stop="20260926150808 -0300">
     <title lang="it">SURF: Munch – Noa Deane's Epic Australian Mission</title>
     <desc lang="it">Noa Deane hits Australia for heavy slabs, punts and air sections with Ozzy Wrong in an wild surf adventure.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926150617 -0300" stop="20260926155609 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926150813 -0300" stop="20260926155805 -0300">
     <title lang="it">BIKE: Encouraged: Building the Future – BMX in Lagos</title>
     <desc lang="it">Courage Adams returns to Nigeria to give local BMX riders a chance to change the sport in their community.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926155614 -0300" stop="20260926174728 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926155810 -0300" stop="20260926174924 -0300">
     <title lang="it">CLIMBING: Fine Lines – Life Lessons From Adventurers</title>
     <desc lang="it">Take an introspective journey on the lessons life has taught 20 legends why risk is so vital to their lives.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926174733 -0300" stop="20260926182559 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926174929 -0300" stop="20260926182755 -0300">
     <title lang="it">Nazaré: Making Giants</title>
     <sub-title lang="it">SURF: Nazaré: Making Giants – A Big Wave Challenge</sub-title>
     <desc lang="it">Nazaré, Portugal: discover a small fishing village that's home to the biggest waves in the world.</desc>
     <episode-num system="onscreen">S1 E1</episode-num>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926182604 -0300" stop="20260926191301 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926182800 -0300" stop="20260926191457 -0300">
     <title lang="it">More Than Machine</title>
     <sub-title lang="it">MOTORSPORT: More Than Machine – All-access WRC Show</sub-title>
     <desc lang="it">The WRC lands in Paraguay for the very first time, bringing fresh challenges and high stakes for co-drivers.</desc>
     <episode-num system="onscreen">S1 E6</episode-num>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926191306 -0300" stop="20260926210129 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926191502 -0300" stop="20260926210326 -0300">
     <title lang="it">ADVENTURE: Dirtbag – The Legend of Fred Beckey</title>
     <desc lang="it">Uncover the legacy of American mountaineer Fred Beckey, whose name's spoken in hushed tones around campfires.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926210134 -0300" stop="20260926214304 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926210331 -0300" stop="20260926214501 -0300">
     <title lang="it">More Than Machine</title>
     <sub-title lang="it">MOTORSPORT: More Than Machine – All-access WRC Show</sub-title>
     <desc lang="it">The 2024 finale proved the real battle is between teams, not just drivers. Can Hyundai finally topple Toyota.</desc>
     <episode-num system="onscreen">S1 E3</episode-num>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926214309 -0300" stop="20260926222305 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926214506 -0300" stop="20260926222502 -0300">
     <title lang="it">More Than Machine</title>
     <sub-title lang="it">MOTORSPORT: More Than Machine – All-access WRC Show</sub-title>
     <desc lang="it">The 2025 WRC season kicks off at Rallye Monte-Carlo and Neuville defends his crown against Ogier and Fourmaux.</desc>
     <episode-num system="onscreen">S1 E1</episode-num>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926222310 -0300" stop="20260926230542 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926222507 -0300" stop="20260926230739 -0300">
     <title lang="it">BIKE: Masters of Dirt - Freestyle Showdown Tour 2025</title>
     <desc lang="it">An unpolished, high-intensity ride straight into the heart of Motocross, MTB, BMX and everything in between.</desc>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926230547 -0300" stop="20260926233728 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926230744 -0300" stop="20260926233925 -0300">
     <title lang="it">CLIMBING: Natural Heights – Hidden Stories of Big Names</title>
     <desc lang="it">With another title in sight Janja Garnbret shifts her focus outdoors, is it new motivation or added pressure.</desc>
     <episode-num system="onscreen">S1 E1</episode-num>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926233733 -0300" stop="20260926235606 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926233930 -0300" stop="20260926235802 -0300">
     <title lang="it">Skate Tales</title>
     <sub-title lang="it">SKATE: Skate Tales – Madars Apse's Global Journey</sub-title>
     <desc lang="it">Madars and Nico Hiraga explore how San Francisco is shaping skateboarding’s new generation.</desc>
     <episode-num system="onscreen">S5 E1</episode-num>
   </programme>
-  <programme channel="IT:.Red.Bull.TV.be" start="20260926235611 -0300" stop="20260927001610 -0300">
+  <programme channel="IT:.Red.Bull.TV.be" start="20260926235807 -0300" stop="20260927001806 -0300">
     <title lang="it">My Last Two Winters</title>
     <sub-title lang="it">SURF: My Last Two Winters – Chasing Big-wave Dreams</sub-title>
     <desc lang="it">Conor Maguire’s epic winter takes him to Australia’s massive waves with Russell Bierke and locals, then he returns to Ireland to tackle even bigger surf. Watch him push his limits.</desc>
     <episode-num system="onscreen">S1 E4</episode-num>
   </programme>
-  <programme channel="IT:.Rally.TV.FAST+.be" start="20260923010005 -0300" stop="20260923030000 -0300">
-    <title lang="it">Rally TV</title>
-    <desc lang="it">Rally TV.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927001811 -0300" stop="20260927010000 -0300">
+    <title lang="it">More Than Machine</title>
+    <sub-title lang="it">MOTORSPORT: More Than Machine – All-access WRC Show</sub-title>
+    <desc lang="it">Mārtiņš Sesks fights to prove his speed and claim his permanent spot in the World Rally Championship.</desc>
+    <episode-num system="onscreen">S1 E4</episode-num>
   </programme>
-  <programme channel="IT:.Rally.TV.FAST+.be" start="20260923030005 -0300" stop="20260923050000 -0300">
-    <title lang="it">Rally TV</title>
-    <desc lang="it">Rally TV.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927010005 -0300" stop="20260927012406 -0300">
+    <title lang="it">MOTORSPORT: Daniel 'Chucky' Sanders: Seeing Double</title>
+    <desc lang="it">From orchards to Dakar’s deserts, Daniel ‘Chucky’ Sanders hunts a back-to-back title while balancing life.</desc>
   </programme>
-  <programme channel="IT:.Rally.TV.FAST+.be" start="20260923050005 -0300" stop="20260923070000 -0300">
-    <title lang="it">Rally TV</title>
-    <desc lang="it">Rally TV.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927012411 -0300" stop="20260927015508 -0300">
+    <title lang="it">BIKE: Red Bull Valparaíso Cerro Abajo 2026 – Highlights</title>
+    <desc lang="it">Relive the action as the world's best MTB riders took on the UNESCO World Heritage port city of Valparaíso.</desc>
   </programme>
-  <programme channel="IT:.Rally.TV.FAST+.be" start="20260923070005 -0300" stop="20260923090000 -0300">
-    <title lang="it">Rally TV</title>
-    <desc lang="it">Rally TV.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927015513 -0300" stop="20260927022534 -0300">
+    <title lang="it">Red Bull Flugtag</title>
+    <sub-title lang="it">ACTION: Red Bull Flugtag – Hunting Human-powered Flight</sub-title>
+    <desc lang="it">See who lasts the longest as 50 teams fly homemade machines over Lake Zurich, trying to go the distance.</desc>
+    <episode-num system="onscreen">S2 E3</episode-num>
   </programme>
-  <programme channel="IT:.Rally.TV.FAST+.be" start="20260923090005 -0300" stop="20260923110000 -0300">
-    <title lang="it">Rally TV</title>
-    <desc lang="it">Rally TV.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927022539 -0300" stop="20260927031807 -0300">
+    <title lang="it">BIKE: Saya Sakakibara: Ride to Redemption – BMX Journey</title>
+    <desc lang="it">After her brother's big injury, Saya is determined to honour his legacy through BMX success in Paris.</desc>
   </programme>
-  <programme channel="IT:.Rally.TV.FAST+.be" start="20260923110005 -0300" stop="20260923130000 -0300">
-    <title lang="it">Rally TV</title>
-    <desc lang="it">Rally TV.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927031812 -0300" stop="20260927040605 -0300">
+    <title lang="it">More Than Machine</title>
+    <sub-title lang="it">MOTORSPORT: More Than Machine – All-access WRC Show</sub-title>
+    <desc lang="it">From Sweden to Kenya, Evans fights for his first WRC title while Toyota teammate Katsuta blocks his path.</desc>
+    <episode-num system="onscreen">S1 E2</episode-num>
   </programme>
-  <programme channel="IT:.Rally.TV.FAST+.be" start="20260923130005 -0300" stop="20260923150000 -0300">
-    <title lang="it">Rally TV</title>
-    <desc lang="it">Rally TV.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927040610 -0300" stop="20260927043632 -0300">
+    <title lang="it">Red Bull Flugtag</title>
+    <sub-title lang="it">ACTION: Red Bull Flugtag – Hunting Human-powered Flight</sub-title>
+    <desc lang="it">See who lasts the longest as 50 teams fly homemade machines over Lake Zurich, trying to go the distance.</desc>
+    <episode-num system="onscreen">S2 E3</episode-num>
   </programme>
-  <programme channel="IT:.Rally.TV.FAST+.be" start="20260923150005 -0300" stop="20260923170000 -0300">
-    <title lang="it">Rally TV</title>
-    <desc lang="it">Rally TV.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927043637 -0300" stop="20260927052958 -0300">
+    <title lang="it">SURF: Good Times – Riding the Momentum</title>
+    <desc lang="it">The Momentum crew is back, watch as they command contests and freesurf sessions with fierce precision.</desc>
   </programme>
-  <programme channel="IT:.Rally.TV.FAST+.be" start="20260923170005 -0300" stop="20260923190000 -0300">
-    <title lang="it">Rally TV</title>
-    <desc lang="it">Rally TV.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927053003 -0300" stop="20260927055815 -0300">
+    <title lang="it">CLIMBING: Natural Heights – Hidden Stories of Big Names</title>
+    <desc lang="it">In Flatanger, Norway, Jakob Schubert tackles the first ascent of 'B.I.G.' (9c) with unyielding resolve.</desc>
+    <episode-num system="onscreen">S1 E1</episode-num>
   </programme>
-  <programme channel="IT:.Rally.TV.FAST+.be" start="20260923190005 -0300" stop="20260923210000 -0300">
-    <title lang="it">Rally TV</title>
-    <desc lang="it">Rally TV.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927055820 -0300" stop="20260927063000 -0300">
+    <title lang="it">ABC of..</title>
+    <sub-title lang="it">ACTION: ABC of… Cliff Diving</sub-title>
+    <desc lang="it">Top divers share how they conquer fear to jump from insane heights, discover what it takes to take the leap.</desc>
+    <episode-num system="onscreen">S1 E18</episode-num>
   </programme>
-  <programme channel="IT:.Rally.TV.FAST+.be" start="20260923210005 -0300" stop="20260923230000 -0300">
-    <title lang="it">Rally TV</title>
-    <desc lang="it">Rally TV.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927063005 -0300" stop="20260927080239 -0300">
+    <title lang="it">LIVE: Red Bull Cliff Diving – Italy</title>
+    <desc lang="it">The stunning cliffs of Polignano a Mare, Italy, set the stage for the penultimate Red Bull Cliff Diving stop.</desc>
   </programme>
-  <programme channel="IT:.Rally.TV.FAST+.be" start="20260923230005 -0300" stop="20260924010000 -0300">
-    <title lang="it">Rally TV</title>
-    <desc lang="it">Rally TV.</desc>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927080244 -0300" stop="20260927085742 -0300">
+    <title lang="it">ACTION: Red Bull Soapbox Race – 50 Craziest Crashes</title>
+    <desc lang="it">Laugh along with our edit of 50 of the craziest crashes from the insane Red Bull Soapbox Race from 2015-2025.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927085747 -0300" stop="20260927100609 -0300">
+    <title lang="it">ACTION: Red Bull Soapbox Race – 50 Crowd Favourites</title>
+    <desc lang="it">Revel in our edit of 50 of the favourite designs and moments from Red Bull Soapbox Races from 2014-2025.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927100614 -0300" stop="20260927110548 -0300">
+    <title lang="it">ACTION: Red Bull Soapbox Race – 50 Fastest Runs</title>
+    <desc lang="it">Laugh along with our edit of 50 of the fastest, most fearless runs from Red Bull Soapbox Race 2014-2025.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927110553 -0300" stop="20260927121120 -0300">
+    <title lang="it">ACTION: Red Bull Soapbox Race – 50 Genius Designs</title>
+    <desc lang="it">Laugh along with our edit of 50 of the most genius designs from the insane Red Bull Soapbox Race 2014-2025.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927121125 -0300" stop="20260927130204 -0300">
+    <title lang="it">Red Bull Soapbox Race</title>
+    <desc lang="it">The judges are waiting to see incredible creativity and speed as racers race their homemade soapbox cars in Iowa, USA. Don’t miss the action.</desc>
+    <episode-num system="onscreen">S10 E1</episode-num>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927130209 -0300" stop="20260927134623 -0300">
+    <title lang="it">SNOWBOARDING: YETI Natural Selection 2026 – Highlights</title>
+    <desc lang="it">See highlights from two days of fierce competition when top snowboarders converged in Revelstoke.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927134628 -0300" stop="20260927140652 -0300">
+    <title lang="it">Reel Rock</title>
+    <sub-title lang="it">CLIMBING: Reel Rock – Pure Thrills and Defying Limits</sub-title>
+    <desc lang="it">Siebe Vanhee, Sean Villanueva O'Driscoll and Nico Favresse attempt an alpine big wall in Patagonia, Argentina.</desc>
+    <episode-num system="onscreen">S11 E4</episode-num>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927140657 -0300" stop="20260927143103 -0300">
+    <title lang="it">KITESURFING: Red Bull King of the Air 2025 Highlights</title>
+    <desc lang="it">Check out the best of the action as Red Bull King of the Air took to the skies in Cape Town, South Africa.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927143108 -0300" stop="20260927153812 -0300">
+    <title lang="it">SURFING: Blue Crush – Women's Surfing in the 1990s</title>
+    <desc lang="it">In a landmark film, Blue Crush charts the rise of women’s surfing in the late 1990s.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927153817 -0300" stop="20260927161813 -0300">
+    <title lang="it">More Than Machine</title>
+    <sub-title lang="it">MOTORSPORT: More Than Machine – All-access WRC Show</sub-title>
+    <desc lang="it">The 2025 WRC season kicks off at Rallye Monte-Carlo and Neuville defends his crown against Ogier and Fourmaux.</desc>
+    <episode-num system="onscreen">S1 E1</episode-num>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927161818 -0300" stop="20260927170550 -0300">
+    <title lang="it">ACTION: True to This – Revolutionising Board Sports</title>
+    <desc lang="it">Celebrate Volcom's fusion of surf, skate and snowboarding in a cinematic journey of rebellious attitude.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927170555 -0300" stop="20260927173614 -0300">
+    <title lang="it">CLIMBING: Pro Climbing League 2026 London – Highlights</title>
+    <desc lang="it">Watch highlights from the world's best climbers at the all-new professional head-to-head climbing competition.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927173619 -0300" stop="20260927180732 -0300">
+    <title lang="it">Reel Rock</title>
+    <sub-title lang="it">CLIMBING: Reel Rock – Pure Thrills and Defying Limits</sub-title>
+    <desc lang="it">Maureen Beck may have been born missing her lower left arm, but that hasn’t stopped her from going hard.</desc>
+    <episode-num system="onscreen">S11 E6</episode-num>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927180737 -0300" stop="20260927182800 -0300">
+    <title lang="it">Reel Rock</title>
+    <sub-title lang="it">CLIMBING: Reel Rock – Pure Thrills and Defying Limits</sub-title>
+    <desc lang="it">Siebe Vanhee, Sean Villanueva O'Driscoll and Nico Favresse attempt an alpine big wall in Patagonia, Argentina.</desc>
+    <episode-num system="onscreen">S11 E4</episode-num>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927182805 -0300" stop="20260927185841 -0300">
+    <title lang="it">Nazaré: Making Giants</title>
+    <sub-title lang="it">SURF: Nazaré: Making Giants – A Big Wave Challenge</sub-title>
+    <desc lang="it">Nazaré is home to the next generation of surfing pioneers and world record holders.</desc>
+    <episode-num system="onscreen">S1 E3</episode-num>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927185846 -0300" stop="20260927195914 -0300">
+    <title lang="it">SURF: Castles in the Sky – Dreams on Water</title>
+    <desc lang="it">Follow top surfers as they explore stunning remote spots across five countries on an epic three-year journey.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927195919 -0300" stop="20260927202437 -0300">
+    <title lang="it">BIKE: Paradigm – Raw MTB Talent Reaching New Heights</title>
+    <desc lang="it">The precision of slopestyle, massive airs of freeride and the raw speed of downhill mean nonstop MTB action.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927202442 -0300" stop="20260927205853 -0300">
+    <title lang="it">Life of Kai</title>
+    <desc lang="it">Kai Lenny surfs huge waves at Jaws and Mavericks, then faces the risks of big wave surfing after a serious injury at Pipeline, the world’s most dangerous wave. Don’t miss his thrilling journey.</desc>
+    <episode-num system="onscreen">S4 E2</episode-num>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927205858 -0300" stop="20260927213031 -0300">
+    <title lang="it">RED BULL CLIFF DIVING: Italy 2025 – Herculano &amp; Paredes</title>
+    <desc lang="it">A breathtaking venue pushes Morgane Herculano and Jonathan Paredes to question their career choices.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927213036 -0300" stop="20260927221733 -0300">
+    <title lang="it">More Than Machine</title>
+    <sub-title lang="it">MOTORSPORT: More Than Machine – All-access WRC Show</sub-title>
+    <desc lang="it">The WRC lands in Paraguay for the very first time, bringing fresh challenges and high stakes for co-drivers.</desc>
+    <episode-num system="onscreen">S1 E6</episode-num>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927221738 -0300" stop="20260927225313 -0300">
+    <title lang="it">BIKE: The Search for Milliseconds – Jackson Goldstone</title>
+    <desc lang="it">On the final day of the World Cup season, downhill MTB rider Jackson Goldstone prepares to risk it all to win.</desc>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927225318 -0300" stop="20260927233631 -0300">
+    <title lang="it">More Than Machine</title>
+    <sub-title lang="it">MOTORSPORT: More Than Machine – All-access WRC Show</sub-title>
+    <desc lang="it">Mārtiņš Sesks fights to prove his speed and claim his permanent spot in the World Rally Championship.</desc>
+    <episode-num system="onscreen">S1 E4</episode-num>
+  </programme>
+  <programme channel="IT:.Red.Bull.TV.be" start="20260927233636 -0300" stop="20260928002638 -0300">
+    <title lang="it">Red Bull Soapbox Race</title>
+    <sub-title lang="it">ACTION: Red Bull Soapbox Race – Crazy Obstacle Courses</sub-title>
+    <desc lang="it">Teams from all over Italy have gathered for this fun-filled spectacle of speed, creativity, and performance.</desc>
+    <episode-num system="onscreen">S5 E4</episode-num>
   </programme>
   <programme channel="IT:.Rally.TV.FAST+.be" start="20260924010005 -0300" stop="20260924030000 -0300">
     <title lang="it">Rally TV</title>
@@ -200419,239 +200372,103 @@
     <title lang="it">Rally TV</title>
     <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923004755 -0300" stop="20260923011724 -0300">
-    <title lang="it">@Smalltalk - S02 - Ep6 - Ospite: Luciano Spalletti</title>
-    <desc lang="it">Puntata specialissima di @SmallTalk!L'allenatore bianconero racconta le sue emozioni appena dopo il rinnovo con la Juve fino al 2028.</desc>
+  <programme channel="IT:.Rally.TV.FAST+.be" start="20260927010005 -0300" stop="20260927030000 -0300">
+    <title lang="it">Rally TV</title>
+    <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923011725 -0300" stop="20260923012904 -0300">
-    <title lang="it">@SmallTalk</title>
-    <desc lang="it">Negli Studi in Juventus Creator Lab, tanti ospiti dialogano con Carlo Pastore.</desc>
+  <programme channel="IT:.Rally.TV.FAST+.be" start="20260927030005 -0300" stop="20260927050000 -0300">
+    <title lang="it">Rally TV</title>
+    <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923012905 -0300" stop="20260923020905 -0300">
-    <title lang="it">@Smalltalk - S02 - Ep4 - Ospite: Giampaolo Sgura</title>
-    <desc lang="it">In occasione del lancio del quarto Kit, puntata speciale di Small Talk con Giampaolo Sgura.</desc>
+  <programme channel="IT:.Rally.TV.FAST+.be" start="20260927050005 -0300" stop="20260927070000 -0300">
+    <title lang="it">Rally TV</title>
+    <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923020906 -0300" stop="20260923035901 -0300">
-    <title lang="it">Juventus Women - Coppa Italia 2025/26 - Cesena-Juventus – Turno 2</title>
-    <desc lang="it">Guarda il match delle bianconere contro le... bianconere cesenati.</desc>
+  <programme channel="IT:.Rally.TV.FAST+.be" start="20260927070005 -0300" stop="20260927090000 -0300">
+    <title lang="it">Rally TV</title>
+    <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923035902 -0300" stop="20260923045603 -0300">
-    <title lang="it">Juventus Creator Lab Original - Dream Like Juventus Women</title>
-    <desc lang="it">Un viaggio davvero inedito nel mondo di un team di campionesse.</desc>
+  <programme channel="IT:.Rally.TV.FAST+.be" start="20260927090005 -0300" stop="20260927110000 -0300">
+    <title lang="it">Rally TV</title>
+    <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923045604 -0300" stop="20260923070415 -0300">
-    <title lang="it">Juventus Women - Amichevole 2026/27 - Juventus-Servette</title>
-    <desc lang="it">Prima uscita syagionale per le ragazze di MIster Guerrero, a Chatillon contro il Servette.</desc>
+  <programme channel="IT:.Rally.TV.FAST+.be" start="20260927110005 -0300" stop="20260927130000 -0300">
+    <title lang="it">Rally TV</title>
+    <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923070416 -0300" stop="20260923073148 -0300">
-    <title lang="it">Press Conference - Luciano Spalletti Presenta la Nuova Stagione</title>
-    <desc lang="it">Le prime parole del Mister alla vigilia dell'amichevole a Basilea.</desc>
+  <programme channel="IT:.Rally.TV.FAST+.be" start="20260927130005 -0300" stop="20260927150000 -0300">
+    <title lang="it">Rally TV</title>
+    <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923073149 -0300" stop="20260923074115 -0300">
-    <title lang="it">Training - First Team Men - 13.07.26</title>
-    <desc lang="it">Welcome back! i bianconeri tornano al lavoro alla Continassa per dare il via alla stagione 26/27.</desc>
+  <programme channel="IT:.Rally.TV.FAST+.be" start="20260927150005 -0300" stop="20260927170000 -0300">
+    <title lang="it">Rally TV</title>
+    <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923074116 -0300" stop="20260923083926 -0300">
-    <title lang="it">@SmallTalk</title>
-    <desc lang="it">Negli Studi in Juventus Creator Lab, tanti ospiti dialogano con Carlo Pastore.</desc>
+  <programme channel="IT:.Rally.TV.FAST+.be" start="20260927170005 -0300" stop="20260927190000 -0300">
+    <title lang="it">Rally TV</title>
+    <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923083927 -0300" stop="20260923111018 -0300">
-    <title lang="it">First Team Men - Amichevole 2026 - Juventus-Inter</title>
-    <desc lang="it">Derby d'Italia Down-Under: a Perth, Juventus-Inter.</desc>
+  <programme channel="IT:.Rally.TV.FAST+.be" start="20260927190005 -0300" stop="20260927210000 -0300">
+    <title lang="it">Rally TV</title>
+    <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923111019 -0300" stop="20260923111605 -0300">
-    <title lang="it">Juventus Creator Lab Original - Still</title>
-    <desc lang="it">La rinascita di Peeters, attraverso una vicenda umana incredibile.</desc>
+  <programme channel="IT:.Rally.TV.FAST+.be" start="20260927210005 -0300" stop="20260927230000 -0300">
+    <title lang="it">Rally TV</title>
+    <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923111606 -0300" stop="20260923112313 -0300">
-    <title lang="it">Juventus Creator Lab Original My Greatest Achievement</title>
-    <desc lang="it">Sara Bjork Gunnarsdottir non ha una storia come le altre. Una vicenda di consapevolezza e diritti, che ci racconta lei stessa.</desc>
+  <programme channel="IT:.Rally.TV.FAST+.be" start="20260927230005 -0300" stop="20260928010000 -0300">
+    <title lang="it">Rally TV</title>
+    <desc lang="it">Rally TV.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923112314 -0300" stop="20260923113002 -0300">
-    <title lang="it">Juventus Creator Lab Original - Freestyle Saved My Life</title>
-    <desc lang="it">La storia di Adonias Fonseca, il Freestyler ufficiale della Juventus.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923113003 -0300" stop="20260923113716 -0300">
-    <title lang="it">Juventus Creator Lab Original - The Best is Yet To Come</title>
-    <desc lang="it">Primavera, Next Gen, Prima Squadra. Il viaggio bianconero di Kenan Yildiz e Dean Huijsen. Le tappe di una strada che il solo talento non basta a percorrere.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923113717 -0300" stop="20260923122156 -0300">
-    <title lang="it">Juventus Creator Lab Original - Fragile</title>
-    <desc lang="it">La storia, umana e sportiva, di Nicolò Fagioli.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923122157 -0300" stop="20260923123548 -0300">
-    <title lang="it">The Training Zone - First Team Men</title>
-    <desc lang="it">Gli allenamenti della Prima Squadra Maschile.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923123549 -0300" stop="20260923124437 -0300">
-    <title lang="it">Tour Diary 2026 Episode 1</title>
-    <desc lang="it">Fra Hong Kong e Australia, la Juve vola dall'altra parte del Mondo.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923124438 -0300" stop="20260923125943 -0300">
-    <title lang="it">Tour Diary 2026 Episode 2</title>
-    <desc lang="it">Fra Hong Kong e Australia, la Juve vola dall'altra parte del Mondo.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923125944 -0300" stop="20260923131214 -0300">
-    <title lang="it">Tour Diary 2026 Episode 3</title>
-    <desc lang="it">Terzo episodio dei diari del tour bianconero dall'altro lato del mondo.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923131215 -0300" stop="20260923132346 -0300">
-    <title lang="it">First Drive - Randal Kolo Muani</title>
-    <desc lang="it">Il primo giorno del ritorno di Kolo Muani in bianconero.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923132347 -0300" stop="20260923133353 -0300">
-    <title lang="it">First Drive - Kerim Alajbegovic</title>
-    <desc lang="it">Il primo giorno del giocatore bosniaco alla Juventus.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923133354 -0300" stop="20260923134425 -0300">
-    <title lang="it">First Drive - Zeki Celik</title>
-    <desc lang="it">Il primo giorno di Zeki in bianconero.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923134426 -0300" stop="20260923135203 -0300">
-    <title lang="it">First Drive - Jeff Ekhator</title>
-    <desc lang="it">Il primo giorno di Jeff alla Juventus.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923135204 -0300" stop="20260923162253 -0300">
-    <title lang="it">Juventus Creator Lab Original - Still</title>
-    <desc lang="it">La rinascita di Peeters, attraverso una vicenda umana incredibile.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923162254 -0300" stop="20260923165026 -0300">
-    <title lang="it">Press Conference - Luciano Spalletti Presenta la Nuova Stagione</title>
-    <desc lang="it">Le prime parole del Mister alla vigilia dell'amichevole a Basilea.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923165027 -0300" stop="20260923170213 -0300">
-    <title lang="it">All Goals - Claudio Marchisio</title>
-    <desc lang="it">Tutti i gol del Principino.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923170214 -0300" stop="20260923175528 -0300">
-    <title lang="it">Under 20 - Primavera 1 2025/26 – Juventus-Cagliari</title>
-    <desc lang="it">Il match dell'Under 20 bianconera contro il Cagliari a Vinovo.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923175529 -0300" stop="20260923181241 -0300">
-    <title lang="it">Best of the Match - First Team Men Highlights</title>
-    <desc lang="it">Le azioni salienti delle partite della Prima Squadra Maschile.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923181242 -0300" stop="20260923181813 -0300">
-    <title lang="it">History - Trezegol E Cr7</title>
-    <desc lang="it">Due incredibili campioni a confronto.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923181814 -0300" stop="20260923182551 -0300">
-    <title lang="it">Vialli - Legacy That Inspires</title>
-    <desc lang="it">Semplicemente, Gianluca Vialli e la sua immensa eredità.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923182552 -0300" stop="20260923184005 -0300">
-    <title lang="it">Chiellini In Dieci Parole</title>
-    <desc lang="it">Bastano dieci parole per un campione come Chiello.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923184006 -0300" stop="20260923184515 -0300">
-    <title lang="it">Del Piero, 20 Anni In 20 Gol</title>
-    <desc lang="it">L'epopea straordinaria di Ale in 20 gol iconici.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923184516 -0300" stop="20260923185447 -0300">
-    <title lang="it">History - Didier Deschamps</title>
-    <desc lang="it">Un campione immenso, un centrocampista su cui si costruì una grande Juve.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923185448 -0300" stop="20260923191352 -0300">
-    <title lang="it">History - Buffon Story</title>
-    <desc lang="it">Semplicemente, SuperGigi.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923191353 -0300" stop="20260923192229 -0300">
-    <title lang="it">Paolo Rossi - Il Gol Con Il Sorriso</title>
-    <desc lang="it">Indimenticabile, Pablito. Riviviamo insieme la sua storia.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923192230 -0300" stop="20260923193740 -0300">
-    <title lang="it">History - Coppie Gol: Boninsegna E Bettega</title>
-    <desc lang="it">Che anni pazzeschi, quelli di Bonimba e Bobby Gol.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923193741 -0300" stop="20260923195740 -0300">
-    <title lang="it">Giorgio Chiellini – My Story</title>
-    <desc lang="it">La leggenda bianconera si racconta ai nostri microfoni.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923195741 -0300" stop="20260923200601 -0300">
-    <title lang="it">Tutti I Gol Di Giorgio Chiellini</title>
-    <desc lang="it">Difensore, ma con il vizio del gol. Alcuni, importantissimi.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923200602 -0300" stop="20260923202042 -0300">
-    <title lang="it">The Great Chi3llo</title>
-    <desc lang="it">La grande celebrazione di Giorgio.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923202043 -0300" stop="20260923221324 -0300">
-    <title lang="it">History - Supercoppa Italiana 2015/16 - Juventus-Lazio</title>
-    <desc lang="it">Supercoppa asiatica per i bianconeri che affrontano la Lazio.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923221325 -0300" stop="20260923222108 -0300">
-    <title lang="it">Speciale - Gateano Scirea</title>
-    <desc lang="it">Uomo, campione. Capitano. Per sempre Gai.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923222109 -0300" stop="20260923223203 -0300">
-    <title lang="it">Lo Scudetto 2002/03</title>
-    <desc lang="it">Un incredibile cavalcata tricolore per un'incredibile Juve.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923223204 -0300" stop="20260923223636 -0300">
-    <title lang="it">Lo Scudetto 1994/95</title>
-    <desc lang="it">Il tricolore torna a sventolare a Torino, dopo un Campionato incredibile.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923223637 -0300" stop="20260923225424 -0300">
-    <title lang="it">Lo Scudetto 1960/61</title>
-    <desc lang="it">La cavalcata dei bianconeri verso lo Scudetto numero 12 della sua storia.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923225425 -0300" stop="20260923225832 -0300">
-    <title lang="it">All Goals - Gonzalo Higuain</title>
-    <desc lang="it">Tutti i gol del Pipa in bianconero.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260923225833 -0300" stop="20260924021429 -0300">
-    <title lang="it">Best of the Match - First Team Men Highlights</title>
-    <desc lang="it">Le azioni salienti delle partite della Prima Squadra Maschile.</desc>
-  </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924021430 -0300" stop="20260924022739 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924021153 -0300" stop="20260924022503 -0300">
     <title lang="it">Speciale - Pietro Anastasi</title>
     <desc lang="it">Vita e giocate di una leggenda: Pietruzzu.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924022740 -0300" stop="20260924024104 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924022504 -0300" stop="20260924023828 -0300">
     <title lang="it">Speciale - Gateano Scirea</title>
     <desc lang="it">Uomo, campione. Capitano. Per sempre Gai.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924024105 -0300" stop="20260924025943 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924023829 -0300" stop="20260924025707 -0300">
     <title lang="it">Black &amp; White Timeline</title>
     <desc lang="it">Le origini, i protagonisti, la storia.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924025944 -0300" stop="20260924045921 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924025708 -0300" stop="20260924045645 -0300">
     <title lang="it">Next Gen - Serie C Girone B 2025/26 - Giornata 27 - Ravenna-Juventus</title>
     <desc lang="it">Il match della Juventus Next Gen, in trasferta a Ravenna.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924045922 -0300" stop="20260924051748 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924045646 -0300" stop="20260924051512 -0300">
     <title lang="it">Best of the Match - Next Gen Highlights</title>
     <desc lang="it">Le azioni salienti dei match della seconda squadra maschile.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924051749 -0300" stop="20260924054818 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924051513 -0300" stop="20260924054542 -0300">
     <title lang="it">The Training Zone - First Team Men</title>
     <desc lang="it">Gli allenamenti della Prima Squadra Maschile.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924054819 -0300" stop="20260924060400 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924054543 -0300" stop="20260924060124 -0300">
     <title lang="it">The Training Zone - First Team Women</title>
     <desc lang="it">Le bianconere si allenano a Vinovo.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924060401 -0300" stop="20260924071951 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924060125 -0300" stop="20260924071715 -0300">
     <title lang="it">History - Giampiero Boniperti, La Juve Nel Cuore</title>
     <desc lang="it">Un'epopea unica, da giocatore prima e da Presidentissimo poi.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924071952 -0300" stop="20260924073753 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924071716 -0300" stop="20260924073517 -0300">
     <title lang="it">History - Milan-Juve</title>
     <desc lang="it">Dagli anni '60 a oggi, la grande storia della sfida ai rossoneri a San Siro.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924073754 -0300" stop="20260924074509 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924073518 -0300" stop="20260924074232 -0300">
     <title lang="it">The Training Zone - First Team Men</title>
     <desc lang="it">Gli allenamenti della Prima Squadra Maschile.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924074510 -0300" stop="20260924075059 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924074233 -0300" stop="20260924074823 -0300">
     <title lang="it">Best of the Match - First Team Men Highlights</title>
     <desc lang="it">Le azioni salienti delle partite della Prima Squadra Maschile.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924075100 -0300" stop="20260924075807 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924074824 -0300" stop="20260924075531 -0300">
     <title lang="it">Juventus Creator Lab Original My Greatest Achievement</title>
     <desc lang="it">Sara Bjork Gunnarsdottir non ha una storia come le altre. Una vicenda di consapevolezza e diritti, che ci racconta lei stessa.</desc>
   </programme>
-  <programme channel="IT:.Juventus.Play.be" start="20260924075808 -0300" stop="20260924100546 -0300">
+  <programme channel="IT:.Juventus.Play.be" start="20260924075532 -0300" stop="20260924100546 -0300">
     <title lang="it">First Team Men - Serie A 2026/27 - Frosinone-Juventus - Giornata 1</title>
     <desc lang="it">Esordio in Serie A per i bianconeri: in campo allo Stirpe contro il Frosinone.</desc>
   </programme>
@@ -201031,137 +200848,245 @@
     <title lang="it">Under 20 - Primavera 1 2025/26 – Juventus-Atalanta</title>
     <desc lang="it">Ultima di campionato Primavera 1: la Juve conclude in casa con l'Atalanta.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923000001 -0300" stop="20260923003155 -0300">
-    <title lang="it">Match Review Serie A 2026/2027 Inter - Napoli</title>
-    <desc lang="it">L'avvicinamento alla gara di San Siro, la rimonta spettacolare, le parole dei protagonisti e di mister Chivu al termine della sfida.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927003348 -0300" stop="20260927004218 -0300">
+    <title lang="it">Juventus Creator Lab Original - Side By Side</title>
+    <desc lang="it">In questo Original firmato Juventus Creator Lab, vi raccontiamo il cammino dell'IUnder 20 verso la FInale di Coppa Italia.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923003156 -0300" stop="20260923010000 -0300">
-    <title lang="it">Thuram Non Si Ferma Mai I Primi 50 Gol Di Thuram Con La Maglia Dell'Inter</title>
-    <desc lang="it">Dalla Fiorentina al Torino, Thuram ha lasciato il segno in nerazzurro tra gol pesanti, accelerazioni devastanti ed esultanze iconiche.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927004219 -0300" stop="20260927024328 -0300">
+    <title lang="it">Juventus Women - Amichevole 2026/27 - Juventus-Servette</title>
+    <desc lang="it">Prima uscita syagionale per le ragazze di MIster Guerrero, a Chatillon contro il Servette.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923010001 -0300" stop="20260923011727 -0300">
-    <title lang="it">Careers Legend Adriano</title>
-    <desc lang="it">Un ritratto intimo e personale a forti tinte nerazzurre.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927024329 -0300" stop="20260927030427 -0300">
+    <title lang="it">Best All Goals Women 2025/26</title>
+    <desc lang="it">Tutti i gol della nostra squadra femminile nella stagione 25/26.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923011728 -0300" stop="20260923013909 -0300">
-    <title lang="it">Off The Pitch Leandro Bolmaro</title>
-    <desc lang="it">Gare, routine, curiosità e aneddoti: Off The Pitch è il format internazionale con ospiti diverse personalità dal mondo dello sport.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927030428 -0300" stop="20260927030907 -0300">
+    <title lang="it">Best All Goals Faticanti 2025/26</title>
+    <desc lang="it">Tutti i gol del giovane talento bianconero nella stagione 25/26.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923013910 -0300" stop="20260923020000 -0300">
-    <title lang="it">Inter Comebacks Bayern Monaco - Inter 2010/11</title>
-    <desc lang="it">Un viaggio che ripercorre le rimonte più emozionanti della storia nerazzurra.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927030908 -0300" stop="20260927031455 -0300">
+    <title lang="it">Best Top 10 goals Juventus Women 2025/26</title>
+    <desc lang="it">Top 10 goals della Prima Squadra femminile nella stagione 2025/26.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923020001 -0300" stop="20260923025246 -0300">
-    <title lang="it">Sintesi Serie A 2026/2027 Cagliari - Inter</title>
-    <desc lang="it">Rivivi le emozioni più belle.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927031456 -0300" stop="20260927032358 -0300">
+    <title lang="it">Best All Goals &amp; Assist McKennie 2025/26</title>
+    <desc lang="it">Le migliori giocate di Wes nella stagione appena conclusa.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923025247 -0300" stop="20260923033000 -0300">
-    <title lang="it">Showreel Eto'O</title>
-    <desc lang="it">Rivedi tutti i goal in nerazzurro di Samuel Eto'o.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927032359 -0300" stop="20260927033054 -0300">
+    <title lang="it">Best Top 10 goals Juventus Under 20 2025/26</title>
+    <desc lang="it">Top 10 goals dell'Under 20 bianconera nella stagione 2025/26.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923033001 -0300" stop="20260923045541 -0300">
-    <title lang="it">Inter Comebacks Bayern Monaco - Inter 2010/11</title>
-    <desc lang="it">Un viaggio che ripercorre le rimonte più emozionanti della storia nerazzurra.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927033055 -0300" stop="20260927033713 -0300">
+    <title lang="it">Best Top 10 goals Juventus Durmisi - Under 20 2025/26</title>
+    <desc lang="it">Top 10 goals dell'attaccante dell'Under 20 bianconera nella stagione 2025/26.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923045542 -0300" stop="20260923051249 -0300">
-    <title lang="it">Uno Di Noi Marco Materazzi</title>
-    <desc lang="it">Uno di Noi è il format in cui una leggenda nerazzurra si racconta a 360°.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927033714 -0300" stop="20260927040142 -0300">
+    <title lang="it">Best All Goals First Team Men 2025/26</title>
+    <desc lang="it">Tutti i gol della Prima Squadra Maschile nella stagione 2025/26.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923051250 -0300" stop="20260923055114 -0300">
-    <title lang="it">Match Review Serie A 2026/2027 Inter - Napoli</title>
-    <desc lang="it">L'avvicinamento alla gara di San Siro, la rimonta spettacolare, le parole dei protagonisti e di mister Chivu al termine della sfida.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927040143 -0300" stop="20260927040916 -0300">
+    <title lang="it">Best All Goals Conceicao</title>
+    <desc lang="it">Una carrellata di gol del nostro esterno portoghese.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923055115 -0300" stop="20260923060000 -0300">
-    <title lang="it">Lights On: Federico Dimarco Mvp Della Stagione Serie A 2025/26</title>
-    <desc lang="it">7 gol, 18 assist e un sinistro magico.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927040917 -0300" stop="20260927042721 -0300">
+    <title lang="it">Best All Time Best Skills</title>
+    <desc lang="it">Godiamoci una carrellata di giocate MOZZAFIATO.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923060001 -0300" stop="20260923070421 -0300">
-    <title lang="it">Serie A Inter - Udinese 2026/2027</title>
-    <desc lang="it">Rivivi la partita di Serie A Inter - Udinese della stagione 2026/2027.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927042722 -0300" stop="20260927043610 -0300">
+    <title lang="it">Tour Diary 2026 Episode 1</title>
+    <desc lang="it">Fra Hong Kong e Australia, la Juve vola dall'altra parte del Mondo.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923070422 -0300" stop="20260923081023 -0300">
-    <title lang="it">Serie A Inter - Udinese 2026/2027</title>
-    <desc lang="it">Rivivi la partita di Serie A Inter - Udinese della stagione 2026/2027.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927043611 -0300" stop="20260927045117 -0300">
+    <title lang="it">Tour Diary 2026 Episode 2</title>
+    <desc lang="it">Fra Hong Kong e Australia, la Juve vola dall'altra parte del Mondo.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923081024 -0300" stop="20260923082115 -0300">
-    <title lang="it">Inter Memories Giuseppe Bergomi</title>
-    <desc lang="it">La terza puntata di Inter Memories: Beppe Bergomi ci racconta il suo rapporto con l'Inter.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927045118 -0300" stop="20260927050347 -0300">
+    <title lang="it">Tour Diary 2026 Episode 3</title>
+    <desc lang="it">Terzo episodio dei diari del tour bianconero dall'altro lato del mondo.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923082116 -0300" stop="20260923100707 -0300">
-    <title lang="it">Inter Legacy Ronaldo Il Fenomeno</title>
-    <desc lang="it">Un viaggio negli anni indimenticabili di Ronaldo con la maglia nerazzurra.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927050348 -0300" stop="20260927051725 -0300">
+    <title lang="it">First Drive - Kerim Alajbegovic</title>
+    <desc lang="it">Il primo giorno del giocatore bosniaco alla Juventus.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923100708 -0300" stop="20260923103813 -0300">
-    <title lang="it">Match Review Serie A 2026/2027 Roma - Inter</title>
-    <desc lang="it">Partita emozionante all'Olimpico: dopo un primo tempo a marca giallorossa l'Inter gioca una grande ripresa, il capitano trascina la squadra di Chivu.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927051726 -0300" stop="20260927052221 -0300">
+    <title lang="it">Lo Scudetto 1996/97</title>
+    <desc lang="it">La Juve Campione d'Europa porta a casa un altro tricolore dopo una cavalcata straordinaria.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923103814 -0300" stop="20260923113034 -0300">
-    <title lang="it">Sintesi Serie A 2026/2027 Inter - Napoli</title>
-    <desc lang="it">Rivivi le emozioni più belle.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927052222 -0300" stop="20260927053657 -0300">
+    <title lang="it">First Drive - Randal Kolo Muani</title>
+    <desc lang="it">Il primo giorno del ritorno di Kolo Muani in bianconero.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923113035 -0300" stop="20260923120000 -0300">
-    <title lang="it">Every Goal Stagione 2000 01</title>
-    <desc lang="it">Occhi puntati su tutti i goal segnati dai campioni nerazzurri in tutte le competizioni della stagione. Quale ti ha fatto emozionare di più.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927053658 -0300" stop="20260927072722 -0300">
+    <title lang="it">Juventus Creator Lab Original - Verso Altrove</title>
+    <desc lang="it">Come nasce il monumento vicino all'Allianz Stadium, dedicato alla memoria dei caduti dell'Heysel.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923120001 -0300" stop="20260923123000 -0300">
-    <title lang="it">Match Review Serie A 2026/2027 Cagliari - Inter</title>
-    <desc lang="it">L'avvicinamento alla gara di Cagliari, il gol decisivo di Calhanoglu, le parole dei protagonisti e di mister Chivu al termine della sfida.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927072723 -0300" stop="20260927081901 -0300">
+    <title lang="it">Juventus Academy World Cup 2026 - Opening Ceremony</title>
+    <desc lang="it">All'Allianz Stadium la cerimonia d'inaugurazione del più grande evento dedicato alle nostre Academy nel mondo.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923123001 -0300" stop="20260923130000 -0300">
-    <title lang="it">Tutti I Gol Dell'Inter Women Stagione 2025/26</title>
-    <desc lang="it">Dai gol spettacolari alle reti decisive, rivivi tutte le marcature che hanno segnato la stagione 2025/26 dell’Inter Women.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927081902 -0300" stop="20260927083925 -0300">
+    <title lang="it">Junior Reporter - Luciano Spalletti - 20.05.26</title>
+    <desc lang="it">Mister Spalletti risponde alle domande dei Junior Member.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923130001 -0300" stop="20260923133135 -0300">
-    <title lang="it">Every Goal Season 2009 10</title>
-    <desc lang="it">Occhi puntati su tutti i goal segnati dai campioni nerazzurri in tutte le competizioni della stagione. Quale ti ha fatto emozionare di più.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927083926 -0300" stop="20260927090004 -0300">
+    <title lang="it">Young Reporter - Pierre Kalulu - 12.02.26</title>
+    <desc lang="it">Pierre Kalulu protagonista di un pomeriggio con i nostri giovani Young Member giornalisti per un giorno.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923133136 -0300" stop="20260923140000 -0300">
-    <title lang="it">I 70 Anni Di Altobelli: Intervista Esclusiva</title>
-    <desc lang="it">Un regalo per tutti i tifosi nerazzurri, che possono rivivere la leggenda di quell'attaccante slanciato con i capelli ricci, in grado di segnare 209 gol con la maglia numero 9 dell'Inter sulle spalle.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927090005 -0300" stop="20260927091642 -0300">
+    <title lang="it">Speciale - L'Intervista Esclusiva a Danilo</title>
+    <desc lang="it">L?ex capitano bianconero si racconta ai nostri microfoni.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923140001 -0300" stop="20260923151142 -0300">
-    <title lang="it">Serie A Inter - Napoli 2026/2027</title>
-    <desc lang="it">Rivivi la partita di Serie A Inter - Napoli della stagione 2026/2027.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927091643 -0300" stop="20260927094238 -0300">
+    <title lang="it">Dentro le difficoltà, con la Juventus nel cuore Stories of Strength 3 feat. Progetto Happiness</title>
+    <desc lang="it">Tterza edizione di Stories of Strength. Tre tifosi internazionali hanno condiviso le loro esperienze di difficoltà e resilienza.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923151143 -0300" stop="20260923162148 -0300">
-    <title lang="it">Serie A Inter - Napoli 2026/2027</title>
-    <desc lang="it">Rivivi la partita di Serie A Inter - Napoli della stagione 2026/2027.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927094239 -0300" stop="20260927100655 -0300">
+    <title lang="it">Juventus Creator Lab Original - One More Game</title>
+    <desc lang="it">Un viaggio in collaborazione con EA Sports che esplora il confine tra calcio e competitivo attraverso la storia di Olle "Ollelito" Arbin, il pro player ufficiale della Juventus.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923162149 -0300" stop="20260923165946 -0300">
-    <title lang="it">Showreel Milito</title>
-    <desc lang="it">Rivedi tutti i goal in nerazzurro di Diego Milito.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927100656 -0300" stop="20260927104119 -0300">
+    <title lang="it">Juventus Creator Lab Original - These Strange Things We Do</title>
+    <desc lang="it">La scena è quella del World Freestyle Football Championship, ospitato nella sede dello Juventus Creator Lab.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923165947 -0300" stop="20260923172045 -0300">
-    <title lang="it">Uno Di Noi Carlo Muraro</title>
-    <desc lang="it">Uno di Noi è il format in cui una leggenda nerazzurra si racconta a 360°.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927104120 -0300" stop="20260927131521 -0300">
+    <title lang="it">First Team Men - Amichevoli Juventus 2026</title>
+    <desc lang="it">A Hong Kong i bianconeri sfidano i Blues! Seguite il match.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923172046 -0300" stop="20260923173000 -0300">
-    <title lang="it">Lights On: Lautaro Martinez Capocannoniere Della Stagione Serie A 2025/26</title>
-    <desc lang="it">17 gol, 30 presenze e una stagione da ricordare.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927131522 -0300" stop="20260927140001 -0300">
+    <title lang="it">Juventus Creator Lab Original - Fragile</title>
+    <desc lang="it">La storia, umana e sportiva, di Nicolò Fagioli.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923173001 -0300" stop="20260923184016 -0300">
-    <title lang="it">Serie A Roma - Inter 2026/2027</title>
-    <desc lang="it">Rivivi la partita di Serie A Roma - Inter della stagione 2026/2027.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927140002 -0300" stop="20260927140618 -0300">
+    <title lang="it">Training - First Team Men - 29.07.26</title>
+    <desc lang="it">Bianconeri in campo poco prima del test con il Nizza.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923184017 -0300" stop="20260923194500 -0300">
-    <title lang="it">Serie A Roma - Inter 2026/2027</title>
-    <desc lang="it">Rivivi la partita di Serie A Roma - Inter della stagione 2026/2027.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927140619 -0300" stop="20260927163710 -0300">
+    <title lang="it">First Team Men - Amichevole 2026 - Juventus-Inter</title>
+    <desc lang="it">Derby d'Italia Down-Under: a Perth, Juventus-Inter.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923194501 -0300" stop="20260923211014 -0300">
-    <title lang="it">Inter Weekly La Preparazione Dei Nerazzurri A Donaueschingen</title>
-    <desc lang="it">Le più belle immagini della preseason.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927163711 -0300" stop="20260927170252 -0300">
+    <title lang="it">Il Film Del Campionato 2019</title>
+    <desc lang="it">Tutta da rivivere la cavalcata scudetto 2019.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923211015 -0300" stop="20260923214550 -0300">
-    <title lang="it">Every Goal Season 2009 10</title>
-    <desc lang="it">Occhi puntati su tutti i goal segnati dai campioni nerazzurri in tutte le competizioni della stagione. Quale ti ha fatto emozionare di più.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927170253 -0300" stop="20260927173159 -0300">
+    <title lang="it">Compilation - I Gol Della Prima Squadra 2022/23</title>
+    <desc lang="it">Rivediamo tutti i gol dei bianconeri nella stagione 22/23.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923214551 -0300" stop="20260923224543 -0300">
-    <title lang="it">Hong Kong Football Festival Manchester City - Inter</title>
-    <desc lang="it">Una preseason di alto livello internazionale per la squadra nerazzurra: appuntamenti affascinanti e di grande prestigio.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927173200 -0300" stop="20260927173750 -0300">
+    <title lang="it">Compilation - Le Migliori Parate Di Di Gregorio</title>
+    <desc lang="it">L'Uomo Digre in azione.</desc>
   </programme>
-  <programme channel="IT:.INTER.24/7.be" start="20260923224544 -0300" stop="20260924000000 -0300">
-    <title lang="it">Hong Kong Football Festival Manchester City - Inter</title>
-    <desc lang="it">Una preseason di alto livello internazionale per la squadra nerazzurra: appuntamenti affascinanti e di grande prestigio.</desc>
+  <programme channel="IT:.Juventus.Play.be" start="20260927173751 -0300" stop="20260927174212 -0300">
+    <title lang="it">Compilation - Thuram, Goal &amp; Assist</title>
+    <desc lang="it">Le grandi giocate bianconere di Kephren.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927174213 -0300" stop="20260927174901 -0300">
+    <title lang="it">Compilation - Tutti I Gol Di Vacca</title>
+    <desc lang="it">Tutte le reti del giovane talento bianconero.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927174902 -0300" stop="20260927175616 -0300">
+    <title lang="it">Compilation - Tutti I Gol Di Cristiana Girelli</title>
+    <desc lang="it">Tutte le reti di Girelli in bianconero.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927175617 -0300" stop="20260927180240 -0300">
+    <title lang="it">Compilation - Top 1' Goals Next Gen 24/25</title>
+    <desc lang="it">Riviviamo le grandi giocate dei bianconeri Next Gen.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927180241 -0300" stop="20260927180759 -0300">
+    <title lang="it">Compilation - Top 10 Goals Under 20 24/25</title>
+    <desc lang="it">I migliori dieci gol della Primavera bianconera.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927180800 -0300" stop="20260927181205 -0300">
+    <title lang="it">Compilation - Yildiz, Goals &amp; Skills</title>
+    <desc lang="it">Tutto il talento di Kenan in questo video.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927181206 -0300" stop="20260927181639 -0300">
+    <title lang="it">Compilation - Best Saves 24/25</title>
+    <desc lang="it">Quando in porta... non si passa.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927181640 -0300" stop="20260927184115 -0300">
+    <title lang="it">Compilation - All Goals, Juventus Women</title>
+    <desc lang="it">Tutti i gol delle campionesse bianconere.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927184116 -0300" stop="20260927184539 -0300">
+    <title lang="it">Compilation - Vlahovic, All Serie A Goals 24/25</title>
+    <desc lang="it">Tutti i gol di Dusan nel campionato 24/25.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927184540 -0300" stop="20260927185008 -0300">
+    <title lang="it">Compilation - Bonansea, All Goals</title>
+    <desc lang="it">Tutti i gol della grande Barbara Bonansea.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927185009 -0300" stop="20260927191918 -0300">
+    <title lang="it">Compilation - All Goals Serie A 24/25</title>
+    <desc lang="it">Tutti ma proprio tutti i gol della Prima Squadra in campionato.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927191919 -0300" stop="20260927195005 -0300">
+    <title lang="it">Compilation - All Goals 23/24</title>
+    <desc lang="it">Tutti i gol bianconeri nella stagione 23/24.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927195006 -0300" stop="20260927195408 -0300">
+    <title lang="it">Compilation - Kenan, The best</title>
+    <desc lang="it">Le più belle giocate di Kenan Yildiz.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927195409 -0300" stop="20260927200909 -0300">
+    <title lang="it">128 goals for 128 years</title>
+    <desc lang="it">Godetevi questa cavalcata di capolavori.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927200910 -0300" stop="20260927201549 -0300">
+    <title lang="it">Vialli - Legacy That Inspires</title>
+    <desc lang="it">Semplicemente, Gianluca Vialli e la sua immensa eredità.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927201550 -0300" stop="20260927203003 -0300">
+    <title lang="it">Chiellini In Dieci Parole</title>
+    <desc lang="it">Bastano dieci parole per un campione come Chiello.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927203004 -0300" stop="20260927203417 -0300">
+    <title lang="it">Del Piero, 20 Anni In 20 Gol</title>
+    <desc lang="it">L'epopea straordinaria di Ale in 20 gol iconici.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927203418 -0300" stop="20260927204349 -0300">
+    <title lang="it">History - Didier Deschamps</title>
+    <desc lang="it">Un campione immenso, un centrocampista su cui si costruì una grande Juve.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927204350 -0300" stop="20260927210254 -0300">
+    <title lang="it">History - Buffon Story</title>
+    <desc lang="it">Semplicemente, SuperGigi.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927210255 -0300" stop="20260927211131 -0300">
+    <title lang="it">Paolo Rossi - Il Gol Con Il Sorriso</title>
+    <desc lang="it">Indimenticabile, Pablito. Riviviamo insieme la sua storia.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927211132 -0300" stop="20260927231323 -0300">
+    <title lang="it">History - Serie A 2023/24 - Fiorentina-Juventus</title>
+    <desc lang="it">La Juventus va a vincere al Franchi. Riviviamo il match del 2023.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927231324 -0300" stop="20260927232100 -0300">
+    <title lang="it">Inside - Juventus-Parma- Serie A 25/26, Giornata 1</title>
+    <desc lang="it">Il dietro le quinte della sfida fra Juventus e Parma.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927232101 -0300" stop="20260927233026 -0300">
+    <title lang="it">Inside - Juventus-Inter - Serie A 25/26, Giornata 3</title>
+    <desc lang="it">Il dietro le quinte della sfida fra Juventus e Inter.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927233027 -0300" stop="20260927233806 -0300">
+    <title lang="it">Inside -Roma-Juventus Serie A 24/25, Giornata 31</title>
+    <desc lang="it">Il dietro le quinte della sfida fra Roma e Juventus.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927233807 -0300" stop="20260927234501 -0300">
+    <title lang="it">Inside -Juventus-Inter - Serie A 24/25, Giornata 25</title>
+    <desc lang="it">Il dietro le quinte della sfida fra Juventus e Inter.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927234502 -0300" stop="20260927235036 -0300">
+    <title lang="it">Inside - Juventus-Psv- Uefa Champions League 24/25, Playoff</title>
+    <desc lang="it">Il dietro le quinte della sfida fra Juventus e PSV.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927235037 -0300" stop="20260927235836 -0300">
+    <title lang="it">Inside -Juventus-Milan - Serie A 24/25, Giornata 21</title>
+    <desc lang="it">Il dietro le quinte della sfida fra Juventus e Milan.</desc>
+  </programme>
+  <programme channel="IT:.Juventus.Play.be" start="20260927235837 -0300" stop="20260928000611 -0300">
+    <title lang="it">10 Motivi Per Amare Gianluca Vialli</title>
+    <desc lang="it">Un campione indimenticato e indimenticabile.</desc>
   </programme>
   <programme channel="IT:.INTER.24/7.be" start="20260924000001 -0300" stop="20260924002802 -0300">
     <title lang="it">Match Review Serie A 2026/2027 Roma - Inter</title>
@@ -201623,69 +201548,141 @@
     <title lang="it">Coppa Italia Lazio - Inter 2025/2026 - Premiazione</title>
     <desc lang="it">Sempre Inter, trionfo all'Olimpico: ecco il Double, è la Decima Coppa Italia.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923000443 -0300" stop="20260923030059 -0300">
-    <title lang="it">Corea del Nord - Olanda Finale Coppa del Mondo Femminile FIFA U-17 Marocco 2025 Match completo</title>
-    <desc lang="it">Guarda la partita tra Corea del Nord e Olanda giocato al Stadio Annesso Principe Moulay Abdellah, Rabat il sabato 8 novembre 2025 alle 20:00 (ora locale).</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927000001 -0300" stop="20260927001713 -0300">
+    <title lang="it">Match Review Serie A 2025/2026 Bologna - Inter</title>
+    <desc lang="it">L'avvicinamento alla gara di Bologna, i tre gol nerazzurri, le parole dei protagonisti e di mister Chivu al termine della sfida.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923030105 -0300" stop="20260923050902 -0300">
-    <title lang="it">Repubblica Popolare Democratica di Corea - Giappone Finale Coppa del Mondo femminile FIFA Under 17 Jordan 2016™ Match completo</title>
-    <desc lang="it">Guarda il match completo tra Repubblica Popolare Democratica di Corea e Giappone giocato alla Coppa del Mondo femminile FIFA Under 17 Jordan 2016™.</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927001714 -0300" stop="20260927010000 -0300">
+    <title lang="it">Festa Scudetto: Da San Siro Al Duomo, Delirio Nerazzurro</title>
+    <desc lang="it">Il racconto di una domenica indimenticabile a tinte nerazzurre: rivivi le più belle immagini dei festeggiamenti.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923050907 -0300" stop="20260923070637 -0300">
-    <title lang="it">Corea del Nord - Francia Finale Coppa del Mondo femminile FIFA Under 20 Papua Nuova Guinea 2016 Match completo</title>
-    <desc lang="it">Guarda il match completo tra Corea del Nord e Francia, giocato al PNG Football Stadium, sabato 3 dicembre 2016.</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927010001 -0300" stop="20260927024551 -0300">
+    <title lang="it">Inter Legacy Ronaldo Il Fenomeno</title>
+    <desc lang="it">Un viaggio negli anni indimenticabili di Ronaldo con la maglia nerazzurra.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923070642 -0300" stop="20260923085539 -0300">
-    <title lang="it">Stati Uniti - Germania Finale Coppa del Mondo femminile FIFA Under 20 Giappone 2012 Match completo</title>
-    <desc lang="it">Guarda il match completo tra Stati Uniti e Germania, giocato al Japan National Stadium, sabato 8 settembre 2012.</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927024552 -0300" stop="20260927031726 -0300">
+    <title lang="it">Every Goal Season 2009 10</title>
+    <desc lang="it">Occhi puntati su tutti i goal segnati dai campioni nerazzurri in tutte le competizioni della stagione. Quale ti ha fatto emozionare di più.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923085545 -0300" stop="20260923092252 -0300">
-    <title lang="it">Le regine Regine della WE</title>
-    <desc lang="it">Seguiamo il viaggio dell'INAC Kobe attraverso gli emozionanti alti e bassi, fino alla vittoria della WE League.</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927031727 -0300" stop="20260927035451 -0300">
+    <title lang="it">Throwback Inter - Roma</title>
+    <desc lang="it">I precedenti più importanti ed emozionanti nelle sfide contro le grandi del nostro calcio.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923092257 -0300" stop="20260923095027 -0300">
-    <title lang="it">Il futuro Regine della WE</title>
-    <desc lang="it">I campioni della WE League, l'INAC Kobe, e i vincitori della Empress Cup, l'Urawa, si affrontano al National Stadium: l'attaccante del Kobe Maika Hamano riflette sulla stagione personale e sulla.</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927035452 -0300" stop="20260927044742 -0300">
+    <title lang="it">Sintesi Serie A 2026/2027 Roma - Inter</title>
+    <desc lang="it">Rivivi le emozioni più belle.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923095033 -0300" stop="20260923124649 -0300">
-    <title lang="it">Corea del Nord - Olanda Finale Coppa del Mondo Femminile FIFA U-17 Marocco 2025 Match completo</title>
-    <desc lang="it">Guarda la partita tra Corea del Nord e Olanda giocato al Stadio Annesso Principe Moulay Abdellah, Rabat il sabato 8 novembre 2025 alle 20:00 (ora locale).</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927044743 -0300" stop="20260927051651 -0300">
+    <title lang="it">Match Review Serie A 2026/2027 Inter - Monza</title>
+    <desc lang="it">L'avvicinamento alla gara di San Siro, le 4 reti nerazzurre, le parole dei protagonisti e di mister Chivu al termine della sfida.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923124655 -0300" stop="20260923145452 -0300">
-    <title lang="it">Repubblica Popolare Democratica di Corea - Giappone Finale Coppa del Mondo femminile FIFA Under 17 Jordan 2016™ Match completo</title>
-    <desc lang="it">Guarda il match completo tra Repubblica Popolare Democratica di Corea e Giappone giocato alla Coppa del Mondo femminile FIFA Under 17 Jordan 2016™.</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927051652 -0300" stop="20260927060912 -0300">
+    <title lang="it">Sintesi Serie A 2026/2027 Inter - Napoli</title>
+    <desc lang="it">Rivivi le emozioni più belle.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923145457 -0300" stop="20260923165227 -0300">
-    <title lang="it">Corea del Nord - Francia Finale Coppa del Mondo femminile FIFA Under 20 Papua Nuova Guinea 2016 Match completo</title>
-    <desc lang="it">Guarda il match completo tra Corea del Nord e Francia, giocato al PNG Football Stadium, sabato 3 dicembre 2016.</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927060913 -0300" stop="20260927062218 -0300">
+    <title lang="it">Festa Scudetto: Da San Siro Al Duomo, Delirio Nerazzurro</title>
+    <desc lang="it">Il racconto di una domenica indimenticabile a tinte nerazzurre: rivivi le più belle immagini dei festeggiamenti.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923165233 -0300" stop="20260923184130 -0300">
-    <title lang="it">Stati Uniti - Germania Finale Coppa del Mondo femminile FIFA Under 20 Giappone 2012 Match completo</title>
-    <desc lang="it">Guarda il match completo tra Stati Uniti e Germania, giocato al Japan National Stadium, sabato 8 settembre 2012.</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927062219 -0300" stop="20260927063310 -0300">
+    <title lang="it">Connessione Argentina: Lautaro Incontra Il Pilota Di F1 Colapinto</title>
+    <desc lang="it">Il pilota argentino, che gareggia in Formula 1 con la Scuderia Alpine, ha visitato l'Inter Training Center e condiviso un momento speciale con Lautaro Martinez.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923184135 -0300" stop="20260923190842 -0300">
-    <title lang="it">Le regine Regine della WE</title>
-    <desc lang="it">Seguiamo il viaggio dell'INAC Kobe attraverso gli emozionanti alti e bassi, fino alla vittoria della WE League.</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927063311 -0300" stop="20260927070445 -0300">
+    <title lang="it">Every Goal Season 2009 10</title>
+    <desc lang="it">Occhi puntati su tutti i goal segnati dai campioni nerazzurri in tutte le competizioni della stagione. Quale ti ha fatto emozionare di più.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923190848 -0300" stop="20260923210214 -0300">
-    <title lang="it">Paris Saint-Germain - Real Madrid C.F. Semifinali FIFA Club World Cup 2025™ Match completo</title>
-    <desc lang="it">Guarda il match completo tra Paris Saint-Germain e Real Madrid C.F. giocato al MetLife Stadium, New York il mercoledì 9 luglio 2025 alle 15:00 (ora locale).</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927070446 -0300" stop="20260927075707 -0300">
+    <title lang="it">Sintesi Serie A 2026/2027 Inter - Napoli</title>
+    <desc lang="it">Rivivi le emozioni più belle.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923210219 -0300" stop="20260923231118 -0300">
-    <title lang="it">Chelsea FC - Paris Saint-Germain Finale FIFA Club World Cup 2025™ Match completo</title>
-    <desc lang="it">Guarda il match completo tra Chelsea FC e Paris Saint-Germain giocato al MetLife Stadium, New York il domenica 13 luglio 2025 alle 15:00 (ora locale).</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927075708 -0300" stop="20260927083000 -0300">
+    <title lang="it">Tutti I Gol Dell'Inter Women Stagione 2025/26</title>
+    <desc lang="it">Dai gol spettacolari alle reti decisive, rivivi tutte le marcature che hanno segnato la stagione 2025/26 dell’Inter Women.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923231124 -0300" stop="20260923233339 -0300">
-    <title lang="it">Tutti i gol Coppa del Mondo per Club FIFA Arabia Saudita 2023™</title>
-    <desc lang="it">Goditi tutti i gol segnati nella ora denominata, Coppa Intercontinentale in Arabia Saudita 2023.</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927083001 -0300" stop="20260927085656 -0300">
+    <title lang="it">Throwback Udinese - Inter</title>
+    <desc lang="it">I precedenti più importanti ed emozionanti nelle sfide contro le grandi del nostro calcio.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923233344 -0300" stop="20260923235340 -0300">
-    <title lang="it">FIFA Club World Cup 2025™: Highlights</title>
-    <desc lang="it">Rivivi gli ultimi Highlights della FIFA Club World Cup 2025™.</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927085657 -0300" stop="20260927090946 -0300">
+    <title lang="it">Inter Legends A Madrid Il Racconto Del Corazón Classic Match</title>
+    <desc lang="it">Dall'arrivo a Madrid all'atmosfera del Bernabéu, passando per i momenti più emozionanti della partita: rivivi una giornata speciale all'insegna del calcio, dei ricordi e della solidarietà.</desc>
   </programme>
-  <programme channel="IT:.FIFA+.be" start="20260923235345 -0300" stop="20260924023505 -0300">
-    <title lang="it">Uruguay v Italia Finale per il terzo posto FIFA Confederations Cup Brasile 2013™ Match completo</title>
-    <desc lang="it">Guarda il match completo tra Uruguay e Italia giocato al Arena Fonte Nova.</desc>
+  <programme channel="IT:.INTER.24/7.be" start="20260927090947 -0300" stop="20260927100102 -0300">
+    <title lang="it">Sintesi Serie A 2026/2027 Inter - Udinese</title>
+    <desc lang="it">Rivivi le emozioni più belle.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927100103 -0300" stop="20260927104321 -0300">
+    <title lang="it">Every Goal Serie A 2023/2024</title>
+    <desc lang="it">Rvivi tutti i goal che hanno portato alla conquista dello Scudetto della Seconda Stella.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927104322 -0300" stop="20260927110000 -0300">
+    <title lang="it">L'Avventura Tedesca Di Zielinski Player Cam</title>
+    <desc lang="it">Tutti gli occhi su Piotr Zielinski nella prima settimana di ritiro in Germania.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927110001 -0300" stop="20260927112803 -0300">
+    <title lang="it">Serie A Roma - Inter 2026/2027</title>
+    <desc lang="it">Rivivi la partita di Serie A Roma - Inter della stagione 2026/2027.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927112804 -0300" stop="20260927123819 -0300">
+    <title lang="it">Serie A Roma - Inter 2026/2027</title>
+    <desc lang="it">Rivivi la partita di Serie A Roma - Inter della stagione 2026/2027.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927123820 -0300" stop="20260927134239 -0300">
+    <title lang="it">Serie A Roma - Inter 2026/2027</title>
+    <desc lang="it">Rivivi la partita di Serie A Roma - Inter della stagione 2026/2027.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927134240 -0300" stop="20260927140908 -0300">
+    <title lang="it">Uno Di Noi Julio Cruz</title>
+    <desc lang="it">Uno di Noi è il format in cui una leggenda nerazzurra si racconta a 360°.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927140909 -0300" stop="20260927143916 -0300">
+    <title lang="it">Inter Memories Giuseppe Bergomi</title>
+    <desc lang="it">La terza puntata di Inter Memories: Beppe Bergomi ci racconta il suo rapporto con l'Inter.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927143917 -0300" stop="20260927150000 -0300">
+    <title lang="it">Inter Women Il Ritiro In Val Di Pejo</title>
+    <desc lang="it">Prende forma la stagione 2026/2027 di Inter Women.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927150001 -0300" stop="20260927161017 -0300">
+    <title lang="it">Serie A Roma - Inter 2026/2027</title>
+    <desc lang="it">Rivivi la partita di Serie A Roma - Inter della stagione 2026/2027.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927161018 -0300" stop="20260927171500 -0300">
+    <title lang="it">Serie A Roma - Inter 2026/2027</title>
+    <desc lang="it">Rivivi la partita di Serie A Roma - Inter della stagione 2026/2027.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927171501 -0300" stop="20260927173000 -0300">
+    <title lang="it">Podcast Del Cielo E Della Notte La Pizza Migliore D'Italia 3 Settembre 2026</title>
+    <desc lang="it">Il podcast prodotto da Inter Media House dove il filo conduttore resta sempre lo stesso: il viaggio senza fine di una squadra e della sua gente, tra storia e futuro.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927173001 -0300" stop="20260927183420 -0300">
+    <title lang="it">Serie A Inter - Udinese 2026/2027</title>
+    <desc lang="it">Rivivi la partita di Serie A Inter - Udinese della stagione 2026/2027.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927183421 -0300" stop="20260927194500 -0300">
+    <title lang="it">Serie A Inter - Udinese 2026/2027</title>
+    <desc lang="it">Rivivi la partita di Serie A Inter - Udinese della stagione 2026/2027.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927194501 -0300" stop="20260927203818 -0300">
+    <title lang="it">Every Goal 2025</title>
+    <desc lang="it">Rivivi tutte le reti segnate dai nerazzurri nell'anno 2025: goal meravigliosi, giocate spettacolari e momenti emozionanti.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927203819 -0300" stop="20260927213434 -0300">
+    <title lang="it">Showreel Vieri</title>
+    <desc lang="it">Rivedi tutti i goal in nerazzurro di Christian Vieri.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927213435 -0300" stop="20260927214959 -0300">
+    <title lang="it">Arena Interista L'Esibizione Dei Campioni D'Italia</title>
+    <desc lang="it">È l'esibizione dei Campioni d'Italia a concludere il meraviglioso pomeriggio di Arena Interista, che ha visto Club e tifosi radunati nello storico impianto per celebrare la fine di questa indimenticabile stagione.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927215000 -0300" stop="20260927225740 -0300">
+    <title lang="it">Serie A Inter - Hellas Verona 2025/2026 - 1T</title>
+    <desc lang="it">I ragazzi sono di nuovo campioni. In un San Siro vestito a festa, l'Inter saluta il suo pubblico con una pari.</desc>
+  </programme>
+  <programme channel="IT:.INTER.24/7.be" start="20260927225741 -0300" stop="20260928000000 -0300">
+    <title lang="it">Serie A Inter - Hellas Verona 2025/2026 - 2T</title>
+    <desc lang="it">I ragazzi sono di nuovo campioni. In un San Siro vestito a festa, l'Inter saluta il suo pubblico con una pari.</desc>
   </programme>
   <programme channel="IT:.FIFA+.be" start="20260924023511 -0300" stop="20260924042953 -0300">
     <title lang="it">USA v Brasile Finale FIFA Confederations Cup Sudafrica 2009™ Match completo</title>
@@ -201838,6 +201835,70 @@
   <programme channel="IT:.FIFA+.be" start="20260926235750 -0300" stop="20260927002511 -0300">
     <title lang="it">Wadi Suzuki Life in Spain</title>
     <desc lang="it">Il calciatore giapponese ha dovuto adattarsi rapidamente a un nuovo paese e a una nuova lingua. Scopriremo come vive a Valencia e come abbraccia nuove affascinanti tradizioni e abitudini.</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927002517 -0300" stop="20260927005022 -0300">
+    <title lang="it">Honoka Yonei Life in Spain</title>
+    <desc lang="it">Honoka Yonei è arrivata all'Eibar nel 2018 ed è entusiasta e ansiosa di affrontare le sfide in Spagna dopo aver superato un duro infortunio.</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927005027 -0300" stop="20260927031229 -0300">
+    <title lang="it">Repubblica Popolare Cinese - Inghilterra Gruppo D Coppa del Mondo femminile FIFA Australia &amp; Nuova Zelanda 2023 Match completo</title>
+    <desc lang="it">Guarda il match completo tra Repubblica Popolare Cinese e Inghilterra giocato all'Hindmarsh Stadium, Adelaide, martedì 1 agosto 2023 alle 20:30 (ora locale).</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927031235 -0300" stop="20260927054524 -0300">
+    <title lang="it">Norvegia - Filippine Gruppo A Coppa del Mondo femminile FIFA Australia &amp; Nuova Zelanda 2023 Match completo</title>
+    <desc lang="it">Guarda il match completo tra Norvegia e Filippine giocato all'Eden Park, Auckland, domenica 30 luglio 2023 alle 19:00 (ora locale).</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927054529 -0300" stop="20260927080206 -0300">
+    <title lang="it">Canada - Australia Gruppo B Coppa del Mondo femminile FIFA Australia &amp; Nuova Zelanda 2023 Match completo</title>
+    <desc lang="it">Guarda il match completo tra Canada e Australia giocato al Melbourne Rectangular Stadium, Melbourne, lunedì 31 luglio 2023 alle 20:00 (ora locale).</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927080212 -0300" stop="20260927102853 -0300">
+    <title lang="it">Francia - Marocco Ottavi di finale Coppa del Mondo femminile FIFA Australia &amp; Nuova Zelanda 2023 Match completo</title>
+    <desc lang="it">Guarda il match completo tra Francia e Marocco giocato all'Hindmarsh Stadium, Adelaide, martedì 8 agosto 2023 alle 20:30 (ora locale).</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927102858 -0300" stop="20260927105619 -0300">
+    <title lang="it">Wadi Suzuki Life in Spain</title>
+    <desc lang="it">Il calciatore giapponese ha dovuto adattarsi rapidamente a un nuovo paese e a una nuova lingua. Scopriremo come vive a Valencia e come abbraccia nuove affascinanti tradizioni e abitudini.</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927105625 -0300" stop="20260927112130 -0300">
+    <title lang="it">Honoka Yonei Life in Spain</title>
+    <desc lang="it">Honoka Yonei è arrivata all'Eibar nel 2018 ed è entusiasta e ansiosa di affrontare le sfide in Spagna dopo aver superato un duro infortunio.</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927112135 -0300" stop="20260927134337 -0300">
+    <title lang="it">Repubblica Popolare Cinese - Inghilterra Gruppo D Coppa del Mondo femminile FIFA Australia &amp; Nuova Zelanda 2023 Match completo</title>
+    <desc lang="it">Guarda il match completo tra Repubblica Popolare Cinese e Inghilterra giocato all'Hindmarsh Stadium, Adelaide, martedì 1 agosto 2023 alle 20:30 (ora locale).</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927134343 -0300" stop="20260927161632 -0300">
+    <title lang="it">Norvegia - Filippine Gruppo A Coppa del Mondo femminile FIFA Australia &amp; Nuova Zelanda 2023 Match completo</title>
+    <desc lang="it">Guarda il match completo tra Norvegia e Filippine giocato all'Eden Park, Auckland, domenica 30 luglio 2023 alle 19:00 (ora locale).</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927161637 -0300" stop="20260927183314 -0300">
+    <title lang="it">Canada - Australia Gruppo B Coppa del Mondo femminile FIFA Australia &amp; Nuova Zelanda 2023 Match completo</title>
+    <desc lang="it">Guarda il match completo tra Canada e Australia giocato al Melbourne Rectangular Stadium, Melbourne, lunedì 31 luglio 2023 alle 20:00 (ora locale).</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927183320 -0300" stop="20260927190041 -0300">
+    <title lang="it">Wadi Suzuki Life in Spain</title>
+    <desc lang="it">Il calciatore giapponese ha dovuto adattarsi rapidamente a un nuovo paese e a una nuova lingua. Scopriremo come vive a Valencia e come abbraccia nuove affascinanti tradizioni e abitudini.</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927190046 -0300" stop="20260927212006 -0300">
+    <title lang="it">Bielorussia - Brasile Finale Coppa del Mondo FIFA di Beach Soccer Seychelles 2025 Match completo</title>
+    <desc lang="it">Guarda la partita tra Bielorussia e Brasile giocato al The Paradise Arena, Victoria il domenica 11 maggio 2025 alle 19:30 (ora locale).</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927212012 -0300" stop="20260927224418 -0300">
+    <title lang="it">Italia - Portogallo Finale FIFA Beach Soccer World Cup Paraguay 2019™ Match completo</title>
+    <desc lang="it">Guarda il match completo tra Italia e Portogallo giocato allo Stadio Los Pynandi, Asunción, domenica 1 dicembre 2019 alle 18:00 (ora locale).</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927224424 -0300" stop="20260927230303 -0300">
+    <title lang="it">Coppa del Mondo FIFA Futsal Femminile Filippine 2025™: Highlights</title>
+    <desc lang="it">Rivivi gli ultimi highlights della Coppa del Mondo FIFA Futsal Femminile Filippine 2025™.</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927230308 -0300" stop="20260927235153 -0300">
+    <title lang="it">Uno Sguardo Al Passato: Finali Della Coppa Del Mondo Fifa Beach Soccer</title>
+    <desc lang="it">Rivivi le emozionanti finali delle passate edizioni della FIFA Beach Soccer World Cup™.</desc>
+  </programme>
+  <programme channel="IT:.FIFA+.be" start="20260927235158 -0300" stop="20260928030204 -0300">
+    <title lang="it">Brasile - Argentina Finale Coppa del Mondo di Futsal della FIFA Uzbekistan 2024™ Match completo</title>
+    <desc lang="it">Guarda la partita tra Brasile e Argentina giocata allo Stadio Humo Arena, Taskent, domenica 6 ottobre 2024 alle 20:00 (ora locale).</desc>
   </programme>
   <programme start="20260924040000 +0000" stop="20260924044900 +0000" channel="20Mediaset.it">
     <title lang="it">Show Reel</title>
