@@ -429,7 +429,7 @@ https://5f11919dca3bd.streamlock.net/almatv/almatv/playlist.m3u8
 #EXTINF:-1 tvg-name="MarcoPolo Travel TV" tvg-id="TravelTV.it" tvg-logo="https://www.grupposciscione.it/wp-content/uploads/2025/07/logo-marcopolo-gruppo-sciscione.png" group-title="Altre tv",MarcoPolo Travel TV
 https://5a1178b42cc03.streamlock.net/travel/travel/playlist.m3u8
 #EXTINF:-1 tvg-name="Donna tv" tvg-id="DonnaTV.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/donnatv.png"  group-title="Altre tv",Donna tv
-https://5f11919dca3bd.streamlock.net/donnatv/donnatv/playlist.m3u8
+https://streaming.softwarecreation.it/DonnaTv/DonnaTv/playlist.m3u8
 #EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=LA7%20eventi%20live" group-title="Altre tv",LA7 eventi live
 https://d15umi5iaezxgx.cloudfront.net/HBBTV/LA7FEED01/DASH/Live.mpd
 #EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=LA7%20agenzie%3F" group-title="Altre tv",LA7 agenzie?
@@ -1012,7 +1012,7 @@ http://wms.shared.streamshow.it/esperiatv/esperiatv/chunklist_w1096393748.m3u8
 #EXTINF:-1 tvg-id="icaro tv" tvg-name="Icaro Tv" tvg-logo="http://odmsto.com/uploads/tv_image/sm/icaro-tv.png" group-title="Regionali",Icaro Tv
 https://59d7d6f47d7fc.streamlock.net/icarotv/icarotv/playlist.m3u8
 #EXTINF:-1 tvg-id="lazio tv" tvg-name="Lazio Tv" tvg-logo="https://www.laziotv.it/wp-content/uploads/2021/02/Logo-Laziotv-1.png" group-title="Regionali",Lazio Tv
-https://5f11919dca3bd.streamlock.net/laziotv/laziotv/playlist.m3u8
+https://streaming.softwarecreation.it/LazioTv/LazioTv/playlist.m3u8
 #EXTINF:-1 tvg-id="cronache lucane tv" tvg-name="Cronache Lucane Tv" tvg-logo="http://odmsto.com/uploads/tv_image/sm/le-cronache-lucane-tv-canale-76.png" group-title="Regionali",Cronache Lucane Tv
 http://77.68.40.210:8888/hls/cronache.m3u8
 #EXTINF:-1 tvg-id="la3 marsala" tvg-name="La3 Marsala" tvg-logo="http://odmsto.com/uploads/tv_image/sm/la3-marsala-latr3.png" group-title="Regionali",La3 Marsala

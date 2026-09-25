@@ -7,9 +7,9 @@ ID già validi preservati: 84
 Loghi aggiunti/sostituiti: 177
 Loghi generici usati come ultima risorsa: 62
 Stream controllati: 498
-Stream OK originali: 335
-Stream riparati automaticamente: 44
-Stream non risolti: 119
+Stream OK originali: 334
+Stream riparati automaticamente: 42
+Stream non risolti: 122
 
 NOVE | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png
 EuroNews Italia | PlutoEuronews.it -> Euronews.it | id:PlutoEuronews.it
@@ -251,9 +251,9 @@ Turbo backup 🔐 | logo aggiunto -> https://api.superguidatv.it/v1/channels/444
 
 ===== CONTROLLO STREAM COMPLETO =====
 Canali totali: 498
-Stream OK originali: 335
-Stream riparati automaticamente: 44
-Stream non risolti: 119
+Stream OK originali: 334
+Stream riparati automaticamente: 42
+Stream non risolti: 122
 Fonti fallback con errore: 0
 
 RIPARATO | Rai 1 | Free-TV Italy | HTTPError: HTTP Error 404: Not Found -> HLS OK | https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8 -> https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
@@ -458,7 +458,7 @@ NON RISOLTO | Inuyasha | HTTPError: HTTP Error 403: Forbidden | https://amg17293
 OK | Inazuma Eleven Collection | HLS OK | https://minerva-pictures-inazumaelevengo-1-it.plex.wurl.tv/4300.m3u8
 RIPARATO | ALMA TV | Free-TV Italy | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> -> HLS OK | https://streaming.softwarecreation.it/AlmaTv/AlmaTv/playlist.m3u8 -> https://5f11919dca3bd.streamlock.net/almatv/almatv/playlist.m3u8
 RIPARATO | MarcoPolo Travel TV | Free-TV Italy | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> -> HLS OK | https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8 -> https://5a1178b42cc03.streamlock.net/travel/travel/playlist.m3u8
-RIPARATO | Donna tv | Free-TV Italy | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> -> HLS OK | https://streaming.softwarecreation.it/DonnaTv/DonnaTv/playlist.m3u8 -> https://5f11919dca3bd.streamlock.net/donnatv/donnatv/playlist.m3u8
+NON RISOLTO | Donna tv | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> | https://streaming.softwarecreation.it/DonnaTv/DonnaTv/playlist.m3u8
 OK | LA7 eventi live | manifest DASH/Smooth OK | https://d15umi5iaezxgx.cloudfront.net/HBBTV/LA7FEED01/DASH/Live.mpd
 OK | LA7 agenzie? | HLS OK | https://d15umi5iaezxgx.cloudfront.net/AGENZIE/HLS/Live.m3u8
 OK | il61 | HLS OK | https://5a1178b42cc03.streamlock.net/travel/travel/playlist.m3u8
@@ -709,11 +709,11 @@ OK | Italia2 Tv | HLS OK | https://59d7d6f47d7fc.streamlock.net/italia2/italia2/
 NON RISOLTO | E'Tv Rete7 | HTTPError: HTTP Error 404: Not Found | https://live.ipstream.it/etv/etv.stream/chunklist_w869612369.m3u8
 OK | Extra Tv | HLS OK | https://rst2.saiuzwebnetwork.it:8081/extratvlive/tracks-v1a1/mono.m3u8
 NON RISOLTO | Fm Tv 75 Marche | URLError: <urlopen error timed out> | https://bbtv.intvstream.net:3988/hybrid/play.m3u8
-OK | La C Tv Calabria | HLS OK | https://f5842579ff984c1c98d63b8d789673eb.msvdn.net/live/S47282891/JWjL3xqPf4bX/playlist.m3u8
+NON RISOLTO | La C Tv Calabria | HLS child HTTP 200 | https://f5842579ff984c1c98d63b8d789673eb.msvdn.net/live/S47282891/JWjL3xqPf4bX/playlist.m3u8
 OK | Esperia TV | HLS OK | http://wms.shared.streamshow.it/esperiatv/esperiatv/chunklist_w1096393748.m3u8
 OK | Icaro Tv | HLS OK | https://59d7d6f47d7fc.streamlock.net/icarotv/icarotv/playlist.m3u8
-RIPARATO | Lazio Tv | Free-TV Italy | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> -> HLS OK | https://streaming.softwarecreation.it/LazioTv/LazioTv/playlist.m3u8 -> https://5f11919dca3bd.streamlock.net/laziotv/laziotv/playlist.m3u8
-NON RISOLTO | Cronache Lucane Tv | segmento HLS non raggiungibile: HTTPError: HTTP Error 404: Not Found | http://77.68.40.210:8888/hls/cronache.m3u8
+NON RISOLTO | Lazio Tv | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1082)> | https://streaming.softwarecreation.it/LazioTv/LazioTv/playlist.m3u8
+OK | Cronache Lucane Tv | HLS OK | http://77.68.40.210:8888/hls/cronache.m3u8
 OK | La3 Marsala | HLS OK | https://tsw.streamingwebtv24.it:1936/eslife1/eslife1/playlist.m3u8
 OK | L'Altro Corriere Tv | HLS OK | https://52ee6512fee4427889eba89957975fa0.msvdn.net/live/S24350460/BEj8ZmQiQ9UG/playlist.m3u8
 OK | RTI Calabria | HLS OK | https://stream.ets-sistemi.it:8081/rticalabria/tracks-v1a1/mono.m3u8
@@ -721,7 +721,7 @@ OK | Minformo Tv | HLS OK | https://5db313b643fd8.streamlock.net:443/MinformoTV/
 NON RISOLTO | Fascino Tv 168 | HTTPError: HTTP Error 404: Not Found | https://5f22d76e220e1.streamlock.net/lottofascino/lottofascino/chunklist_w491300165.m3u8
 NON RISOLTO | Fascino Tv 169 | HTTPError: HTTP Error 404: Not Found | https://5f22d76e220e1.streamlock.net/fascinotv/fascinotv/chunklist_w1402703843.m3u8
 OK | Nuova Tv1 | HLS OK | https://nuovatv.net:8443/tv/stream.m3u8
-OK | Nuova Tv2 | HLS OK | https://nuovatv.net:8443/tv2/stream.m3u8
+NON RISOLTO | Nuova Tv2 | HTTPError: HTTP Error 404: Not Found | https://nuovatv.net:8443/tv2/stream.m3u8
 OK | Canale Uno Tivù | HLS OK | https://rst.saiuzwebnetwork.it:8081/canaleuno/index.m3u8
 OK | Rieti Channel | HLS OK | https://giatv.bozztv.com/giatv/giatv-centroitalia/centroitalia/playlist.m3u8
 OK | Reggio Tv | HLS OK | https://cdn10.streamshow.it/cloud-reggiotv/reggiotv/playlist.m3u8
