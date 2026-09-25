@@ -1,9 +1,11 @@
 Canali sorgente Altervista: 498
+EPG sorgente mapping: https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz
+EPG pubblicato al player: https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml
 Canali disponibili nell'EPG: 193
 Programmi disponibili nell'EPG: 20424
 Canali/righe EXTINF modificate: 109
 Match automatici univoci: 0
-ID già validi preservati: 32
+ID già validi preservati: 34
 Loghi aggiunti/sostituiti: 176
 Loghi generici usati come ultima risorsa: 62
 
