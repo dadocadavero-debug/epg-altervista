@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 M3U_URL = "https://inthemix.altervista.org/tv.m3u"
-EPG_URL = "https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml"
+EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
 OUT_M3U = Path("tv_epg.m3u")
 OUT_REPORT = Path("mapping_report.txt")
 
@@ -66,9 +66,9 @@ NAME_MAP = {
 }
 
 RAI_WORKING_STREAMS = {
-    "Rai 1": "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8",
+    "Rai 1": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7&forceUserAgent=raiplayappletv",
     "Rai 2": "https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8",
-    "Rai 3": "https://dash2.antik.sk/live/test_rai_tre_tizen/playlist.m3u8",
+    "Rai 3": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709&output=7&forceUserAgent=raiplayappletv",
 }
 
 TECH_WORDS = {
@@ -202,7 +202,10 @@ def fix_primary_rai_streams(lines):
                     if lines[i].startswith("#EXTM3U"):
                         out.append(lines[i])
                     i += 1
-                out.append(RAI_WORKING_STREAMS[name])
+                stream_url = RAI_WORKING_STREAMS[name]
+                if "mediapolis.rai.it" in stream_url:
+                    out.append("#EXTVLCOPT:http-user-agent=HbbTV/1.6.1")
+                out.append(stream_url)
                 continue
         out.append(line)
         i += 1
