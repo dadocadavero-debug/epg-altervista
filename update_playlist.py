@@ -3,6 +3,7 @@ import gzip
 import re
 import unicodedata
 import urllib.request
+import time
 from urllib.parse import quote
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -547,8 +548,11 @@ def main():
     # EPGShare viene usato internamente per validare/correggere i tvg-id.
     # Il player invece usa l'XML non compresso pubblicato nel repository epg-altervista,
     # compatibile con la configurazione che mostrava correttamente la guida.
+    # Cache-buster: forza il player a riscaricare l'EPG dopo ogni aggiornamento
+    # evitando di riutilizzare una vecchia risposta/cache fallita.
+    epg_player_url = f"{EPG_PLAYER_URL}?v={int(time.time())}"
     out.append(
-        f'#EXTM3U x-tvg-url="{EPG_PLAYER_URL}" url-tvg="{EPG_PLAYER_URL}"'
+        f'#EXTM3U x-tvg-url="{epg_player_url}" url-tvg="{epg_player_url}"'
     )
 
     # =========================================================
