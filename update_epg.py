@@ -252,6 +252,8 @@ def main():
 
     source_stats = []
     optional_failures = []
+    primary_channel_count = 0
+    primary_programme_count = 0
 
     # ------------------------------------------------------------
     # 3. Merge con priorità.
@@ -270,6 +272,10 @@ def main():
 
         channels = root.findall("channel")
         programmes = root.findall("programme")
+
+        if source["primary"]:
+            primary_channel_count = len(channels)
+            primary_programme_count = len(programmes)
 
         source_channel_by_id = {}
         selected_ids = set()
@@ -378,17 +384,33 @@ def main():
             f"{final_programmes} programmi."
         )
 
-    # Se esiste già un EPG funzionante, non accettiamo un crollo importante
-    # della copertura. Le fonti cambiano naturalmente nel tempo, quindi usiamo
-    # una tolleranza del 10%, ma non permettiamo regressioni pesanti.
-    if old_programme_count >= 1000:
-        minimum_safe = int(old_programme_count * 0.90)
-        if final_programmes < minimum_safe:
-            raise RuntimeError(
-                f"Anti-regressione: nuovo EPG con {final_programmes} programmi, "
-                f"meno del 90% dei {old_programme_count} precedenti. "
-                "Il vecchio epg.xml viene mantenuto."
-            )
+    # Anti-regressione corretta:
+    # NON confrontiamo il numero di programmi col vecchio epg.xml perché la
+    # finestra temporale delle guide cambia durante la giornata e tra un run e
+    # l'altro. Il vecchio file può quindi avere più programmi pur essendo meno
+    # aggiornato.
+    #
+    # Confrontiamo invece il risultato con la fonte primaria DEL RUN CORRENTE:
+    # il merge finale non deve perdere canali/programmi già presenti in IT1.
+    if primary_channel_count < 100 or primary_programme_count < 1000:
+        raise RuntimeError(
+            f"Fonte primaria corrente anomala: {primary_channel_count} canali / "
+            f"{primary_programme_count} programmi. Il vecchio epg.xml viene mantenuto."
+        )
+
+    if final_channels < primary_channel_count:
+        raise RuntimeError(
+            f"Anti-regressione: EPG finale con {final_channels} canali, "
+            f"meno dei {primary_channel_count} della fonte primaria corrente. "
+            "Il vecchio epg.xml viene mantenuto."
+        )
+
+    if final_programmes < primary_programme_count:
+        raise RuntimeError(
+            f"Anti-regressione: EPG finale con {final_programmes} programmi, "
+            f"meno dei {primary_programme_count} della fonte primaria corrente. "
+            "Il vecchio epg.xml viene mantenuto."
+        )
 
     # ------------------------------------------------------------
     # 5. Report dei canali Altervista che ancora non trovano nessun candidato
@@ -436,6 +458,10 @@ def main():
     print()
     print("=== RISULTATO ===")
     print(f"EPG finale: {final_channels} canali / {final_programmes} programmi")
+    print(
+        f"Fonte primaria corrente: {primary_channel_count} canali / "
+        f"{primary_programme_count} programmi"
+    )
     print(f"Canali Altervista ancora senza candidato EPG: {len(unmatched)}")
 
     if unmatched:
