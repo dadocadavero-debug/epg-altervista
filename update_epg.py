@@ -1,207 +1,456 @@
-import gzip
-import urllib.request
+#!/usr/bin/env python3
+"""
+EPG MASTER CUMULATIVO - 2026-09-26
+
+Obiettivo:
+- NON tocca update_playlist.py né gli stream.
+- Mantiene EPGShare IT1 come base/priorità assoluta.
+- Aggiunge guide pertinenti da più fonti FAST/streaming.
+- Non aggiunge alla cieca migliaia di canali estranei: le fonti secondarie
+  vengono filtrate usando la playlist Altervista corrente, gli ID già presenti
+  nel vecchio epg.xml e alcuni ID extra già noti.
+- Se una fonte secondaria fallisce, continua con le altre.
+- Se la fonte primaria o le validazioni fondamentali falliscono, NON
+  sovrascrive il vecchio epg.xml.
+- Scrittura atomica.
+"""
+
 import copy
+import gzip
+import io
+import re
+import unicodedata
+import urllib.request
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
-IT1_SOURCE = "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz"
-RAKUTEN_SOURCE = "https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN1.xml.gz"
+OUT_EPG = Path("epg.xml")
+M3U_URL = "https://inthemix.altervista.org/tv.m3u"
 
-# Canali sportivi italiani presenti nella sorgente Rakuten.
-RAKUTEN_SPORT_IDS = {
-    "IT:.FIFA+.be",
-    "IT:.INTER.24/7.be",
-    "IT:.Juventus.Play.be",
-    "IT:.Motoretrò.be",
-    "IT:.Rally.TV.FAST+.be",
-    "IT:.Red.Bull.TV.be",
-    "IT:.Tennis+.be",
-}
-
-# Sorgente canonica -> alias storici usati dalla tua playlist.
-ALIASES = {
-    "20.it": ["20Mediaset.it"],
-    "RaiSport.it": ["raisport"],
-    "Rete.4.it": ["Rete4.it"],
-    "Canale.5.it": ["Canale5.it"],
-    "Italia.1.it": ["Italia1.it"],
-    "TV8.HD.it": ["Tv8.it"],
-    "RaiPremium.it": ["raipremium.it"],
-    "Italia.2.it": ["Italia2.it"],
-    "Mediaset.Extra.it": ["MediasetExtra.it"],
-    "LA7.HD.it": ["la7"],
-    "Rai4.it": ["rai4.it"],
-    "Iris.it": ["iris.it"],
-    "Rai5.it": ["rai5.it"],
-    "RaiMovie.it": ["raimovie.it"],
-    "27.Twentyseven.it": ["Twentyseven.it"],
-    "LA7.CINEMA.it": ["la7d"],
-    "La.5.it": ["la5"],
-    "Real.Time.it": ["RealTime.it"],
-    "Gambero.Rosso.HD.it": ["GamberoRosso.it"],
-    "Food.Network.it": ["foodnetwork.it"],
-    "Cine34.it": ["cine34.it"],
-    "RTL.102.5.HD.it": ["rtl102.5tv"],
-    "Discovery.Channel.it": ["discovery"],
-    "Giallo.TV.it": ["Giallo.it"],
-    "Top.Crime.it": ["TopCrime.it"],
-    "Super!.it": ["super"],
-    "RaiNews24.it": ["rai news 24"],
-    "TGCom.it": ["TGCom24.it"],
-    "SuperTennis.HD.it": ["SuperTennis.it"],
-    "R101tv.it": ["R101TV"],
-    "Deejay.TV.it": ["DeejayTV.it"],
-    "Radio.Italia.TV.HD.it": ["radioitaliatv"],
-    "Virgin.Radio.it": ["VirginRadioTV.it"],
-    "RMC.it": ["radiomontecarlotv"],
-    "RaiRadio2.it": ["rairadio2"],
-    "cielo.it": ["Cielo.it"],
-    "RaiYoyo.it": ["RaiYoYo.it"],
-    "Motor.Trend.it": ["turbo"],
-    "GF.VIP.-.Regia.1.it": ["GFVIPRegia1"],
-    "GF.VIP.-.Regia.2.it": ["GFVIPRegia2"],
-    "GF.VIP.-.Un’ora.fa.it": ["GFVIPUnOraFa"],
-}
-
-CHECK_IDS = [
-    "RaiSport.it",
-    "Sportitalia.it",
-    "Solocalcio.it.it",
-    "SuperTennis.HD.it",
-    "Inter.TV.it",
-    "ACI.Sport.Tv.it",
-    "BIKE.it",
-    "EQUtv.it",
-    "IT:.FIFA+.be",
-    "IT:.INTER.24/7.be",
-    "IT:.Juventus.Play.be",
-    "IT:.Motoretrò.be",
-    "IT:.Rally.TV.FAST+.be",
-    "IT:.Red.Bull.TV.be",
-    "IT:.Tennis+.be",
+SOURCES = [
+    {
+        "name": "EPGShare IT1",
+        "url": "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz",
+        "required": True,
+        "primary": True,
+    },
+    {
+        "name": "EPGShare Rakuten",
+        "url": "https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN1.xml.gz",
+        "required": False,
+        "primary": False,
+    },
+    {
+        "name": "Samsung TV Plus Italia",
+        "url": "https://i.mjh.nz/SamsungTVPlus/it.xml.gz",
+        "required": False,
+        "primary": False,
+    },
+    {
+        "name": "Pluto TV Italia",
+        "url": "https://i.mjh.nz/PlutoTV/it.xml.gz",
+        "required": False,
+        "primary": False,
+    },
+    {
+        "name": "EPGShare Plex",
+        "url": "https://epgshare01.online/epgshare01/epg_ripper_PLEX1.xml.gz",
+        "required": False,
+        "primary": False,
+    },
 ]
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0",
+# ID che erano già usati nel progetto per canali sport/FAST.
+# Li preserviamo anche se il nome della fonte non coincide perfettamente
+# con il nome visualizzato nella M3U.
+FORCE_SECONDARY_IDS = {
+    "IT:.FIFA+.be",
+    "IT:.INTER.24/7.be",
+    "IT:.Juventus.Play.be",
+    "IT:.Motoretrò.be",
+    "IT:.Rally.TV.FAST+.be",
+    "IT:.Red.Bull.TV.be",
+    "IT:.Tennis+.be",
+}
+
+REQUIRED_CORE_IDS = {
+    "Rai1.it",
+    "Rai2.it",
+    "Rai3.it",
+    "Rete.4.it",
+    "Canale.5.it",
+    "Italia.1.it",
+}
+
+TECH_WORDS = {
+    "hd", "sd", "hls", "dash", "hbbtv", "raiway", "akamai", "backup",
+    "fps", "europa", "900p", "720p", "1080p", "4k", "uhd",
+    "tv", "italia",
+}
+
+UA = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 Chrome/124 Safari/537.36"
+    ),
     "Accept": "*/*",
-    "Referer": "https://epgshare01.online/",
 }
 
-def load_xml_gz(url):
-    req = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=90) as response:
-        data = response.read()
-    return ET.fromstring(gzip.decompress(data).decode("utf-8-sig"))
 
-# 1) Base: EPG Italia completo.
-root = load_xml_gz(IT1_SOURCE)
+def fetch(url: str, timeout: int = 120) -> bytes:
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        return response.read()
 
-# 2) Aggiunge SOLO i canali sportivi italiani utili dalla sorgente Rakuten.
-rakuten_root = load_xml_gz(RAKUTEN_SOURCE)
 
-existing_ids = {c.get("id") for c in root.findall("channel")}
+def decompress_if_needed(data: bytes) -> bytes:
+    if data[:2] == b"\x1f\x8b":
+        return gzip.decompress(data)
+    return data
 
-for channel in rakuten_root.findall("channel"):
-    cid = channel.get("id")
-    if cid in RAKUTEN_SPORT_IDS and cid not in existing_ids:
-        root.append(copy.deepcopy(channel))
-        existing_ids.add(cid)
 
-for programme in rakuten_root.findall("programme"):
-    if programme.get("channel") in RAKUTEN_SPORT_IDS:
-        root.append(copy.deepcopy(programme))
+def norm(value: str) -> str:
+    value = unicodedata.normalize("NFKD", value or "")
+    value = value.encode("ascii", "ignore").decode().lower()
+    value = value.replace("+", " plus ")
+    value = re.sub(r"[^a-z0-9]+", " ", value)
+    return " ".join(value.split())
 
-channels = list(root.findall("channel"))
-programmes = list(root.findall("programme"))
 
-channel_by_id = {c.get("id"): c for c in channels}
-programmes_by_id = {}
-for p in programmes:
-    programmes_by_id.setdefault(p.get("channel"), []).append(p)
+def stripped_norm(value: str) -> str:
+    tokens = [
+        token
+        for token in norm(value).split()
+        if token not in TECH_WORDS and not re.fullmatch(r"\d+p", token)
+    ]
+    return " ".join(tokens)
 
-all_target_ids = {target for targets in ALIASES.values() for target in targets}
 
-# Rigenera sempre i programmi degli alias partendo dalla sorgente canonica.
-final_programmes = [
-    p for p in programmes
-    if p.get("channel") not in all_target_ids
-]
+def get_attr(extinf: str, key: str) -> str:
+    m = re.search(rf'{re.escape(key)}="([^"]*)"', extinf)
+    return m.group(1).strip() if m else ""
 
-warnings = []
-stats = []
 
-for source_id, target_ids in ALIASES.items():
-    source_channel = channel_by_id.get(source_id)
-    source_programmes = programmes_by_id.get(source_id, [])
+def parse_playlist_targets(m3u_text: str):
+    extinf_lines = [line for line in m3u_text.splitlines() if line.startswith("#EXTINF")]
+    if len(extinf_lines) < 50:
+        raise RuntimeError(
+            f"Playlist Altervista incompleta: solo {len(extinf_lines)} righe EXTINF."
+        )
 
-    if source_channel is None:
-        warnings.append(f"SORGENTE NON TROVATA: {source_id}")
-        continue
+    ids = set()
+    names = set()
+    stripped_names = set()
 
-    if not source_programmes:
-        warnings.append(f"NESSUN PROGRAMMA: {source_id}")
-        continue
+    for line in extinf_lines:
+        name = line.rsplit(",", 1)[-1].strip() if "," in line else ""
+        tvg_id = get_attr(line, "tvg-id")
+        tvg_name = get_attr(line, "tvg-name")
 
-    for target_id in target_ids:
-        if target_id not in channel_by_id:
-            alias_channel = copy.deepcopy(source_channel)
-            alias_channel.set("id", target_id)
-            channels.append(alias_channel)
-            channel_by_id[target_id] = alias_channel
+        if tvg_id:
+            ids.add(tvg_id)
 
-        for programme in source_programmes:
-            alias_programme = copy.deepcopy(programme)
-            alias_programme.set("channel", target_id)
-            final_programmes.append(alias_programme)
+        for candidate in (name, tvg_name):
+            if not candidate:
+                continue
+            n = norm(candidate)
+            sn = stripped_norm(candidate)
+            if n:
+                names.add(n)
+            if sn:
+                stripped_names.add(sn)
 
-        stats.append((source_id, target_id, len(source_programmes)))
-        print(f"OK {source_id} -> {target_id}: {len(source_programmes)} programmi")
+    return ids, names, stripped_names, len(extinf_lines)
 
-# XMLTV ordinato: prima channel, poi programme.
-new_root = ET.Element(root.tag, root.attrib)
 
-for child in list(root):
-    if child.tag not in ("channel", "programme"):
-        new_root.append(copy.deepcopy(child))
+def old_epg_info(path: Path):
+    if not path.exists():
+        return set(), 0, 0
 
-seen_channels = set()
-for channel in channels:
-    cid = channel.get("id")
-    if cid and cid not in seen_channels:
-        new_root.append(channel)
-        seen_channels.add(cid)
+    try:
+        root = ET.parse(path).getroot()
+    except Exception:
+        return set(), 0, 0
 
-for programme in final_programmes:
-    new_root.append(programme)
+    ids = {
+        ch.get("id")
+        for ch in root.findall("channel")
+        if ch.get("id")
+    }
+    return ids, len(ids), len(root.findall("programme"))
 
-ET.ElementTree(new_root).write(
-    "epg.xml",
-    encoding="utf-8",
-    xml_declaration=True,
-)
 
-# Report automatico.
-with open("epg_audit.txt", "w", encoding="utf-8") as f:
-    f.write("EPG ALTERVISTA - REPORT AUTOMATICO\n\n")
-    f.write("CONTROLLO SPORT\n")
-    for channel_id in CHECK_IDS:
-        count = len(programmes_by_id.get(channel_id, []))
-        status = "OK" if count else "SENZA PROGRAMMI"
-        f.write(f"{status}: {channel_id} -> {count} programmi\n")
+def channel_names(channel_el):
+    result = []
+    for dn in channel_el.findall("display-name"):
+        if dn.text and dn.text.strip():
+            result.append(dn.text.strip())
+    return result
 
-    f.write("\nALIAS GENERATI\n")
-    for source_id, target_id, count in stats:
-        f.write(f"OK {source_id} -> {target_id}: {count} programmi\n")
 
-    if warnings:
-        f.write("\nAVVISI\n")
-        for warning in warnings:
-            f.write(warning + "\n")
+def programme_key(programme):
+    # Dedup conservativo: stesso canale + stesso intervallo + stesso titolo.
+    title = programme.findtext("title") or ""
+    return (
+        programme.get("channel") or "",
+        programme.get("start") or "",
+        programme.get("stop") or "",
+        norm(title),
+    )
 
-print()
-print(f"Programmi totali scritti: {len(final_programmes)}")
-print(f"Canali sport Rakuten integrati: {len(RAKUTEN_SPORT_IDS)}")
-if warnings:
-    print("AVVISI:")
-    for warning in warnings:
-        print("-", warning)
-print("EPG Altervista completo generato")
+
+def parse_source(source):
+    raw = fetch(source["url"])
+    xml = decompress_if_needed(raw)
+    root = ET.fromstring(xml)
+
+    channels = root.findall("channel")
+    programmes = root.findall("programme")
+
+    if source["required"]:
+        if len(channels) < 100 or len(programmes) < 1000:
+            raise RuntimeError(
+                f'{source["name"]} sembra incompleto: '
+                f"{len(channels)} canali / {len(programmes)} programmi."
+            )
+    elif len(channels) == 0:
+        raise RuntimeError(f'{source["name"]} non contiene canali.')
+
+    return root
+
+
+def main():
+    print("=== EPG MASTER CUMULATIVO ===")
+
+    # ------------------------------------------------------------
+    # 1. Target reali: playlist Altervista + ID già presenti nel vecchio EPG
+    # ------------------------------------------------------------
+    m3u = fetch(M3U_URL).decode("utf-8", errors="replace")
+    target_ids, target_names, target_stripped, playlist_count = parse_playlist_targets(m3u)
+
+    old_ids, old_channel_count, old_programme_count = old_epg_info(OUT_EPG)
+    target_ids |= old_ids
+    target_ids |= FORCE_SECONDARY_IDS
+
+    print(f"Playlist Altervista: {playlist_count} canali")
+    print(
+        f"EPG precedente: {old_channel_count} canali / "
+        f"{old_programme_count} programmi"
+    )
+
+    # ------------------------------------------------------------
+    # 2. Output XMLTV
+    # ------------------------------------------------------------
+    out_root = ET.Element("tv", {
+        "generator-info-name": "epg-altervista-master",
+        "generator-info-url": "https://github.com/dadocadavero-debug/epg-altervista",
+    })
+
+    output_ids = set()
+    output_normalized_names = set()
+    programme_keys = set()
+
+    source_stats = []
+    optional_failures = []
+
+    # ------------------------------------------------------------
+    # 3. Merge con priorità.
+    #    IT1 entra interamente.
+    #    Le secondarie entrano solo se utili alla playlist/progetto.
+    # ------------------------------------------------------------
+    for source in SOURCES:
+        try:
+            root = parse_source(source)
+        except Exception as exc:
+            if source["required"]:
+                raise
+            optional_failures.append(f'{source["name"]}: {exc}')
+            print(f'ATTENZIONE: fonte opzionale saltata: {source["name"]}: {exc}')
+            continue
+
+        channels = root.findall("channel")
+        programmes = root.findall("programme")
+
+        source_channel_by_id = {}
+        selected_ids = set()
+
+        for ch in channels:
+            cid = (ch.get("id") or "").strip()
+            if not cid:
+                continue
+            source_channel_by_id[cid] = ch
+
+            names = channel_names(ch)
+            normalized = {norm(x) for x in names if norm(x)}
+            stripped = {stripped_norm(x) for x in names if stripped_norm(x)}
+
+            if source["primary"]:
+                selected_ids.add(cid)
+                continue
+
+            # Priorità massima agli ID già noti / già usati.
+            if cid in target_ids:
+                selected_ids.add(cid)
+                continue
+
+            exact_name_match = bool(normalized & target_names)
+            stripped_name_match = bool(stripped & target_stripped)
+
+            # Non introduciamo un secondo canale con lo stesso nome di uno già
+            # presente da una fonte più prioritaria, a meno che l'ID sia
+            # esplicitamente richiesto.
+            conflicts = bool(normalized & output_normalized_names)
+
+            if exact_name_match and not conflicts:
+                selected_ids.add(cid)
+            elif stripped_name_match and not conflicts:
+                selected_ids.add(cid)
+
+        # Canali: l'ID già presente vince sempre (fonte precedente/prioritaria).
+        actually_added = set()
+        for cid in selected_ids:
+            if cid in output_ids:
+                continue
+            ch = source_channel_by_id.get(cid)
+            if ch is None:
+                continue
+
+            out_root.append(copy.deepcopy(ch))
+            output_ids.add(cid)
+            actually_added.add(cid)
+
+            for display_name in channel_names(ch):
+                n = norm(display_name)
+                if n:
+                    output_normalized_names.add(n)
+
+        # Programmi: solo per ID effettivamente aggiunti da questa fonte.
+        # Se un ID era già presente da una fonte precedente, la fonte precedente
+        # resta proprietaria della sua guida: niente schedule sovrapposti.
+        added_programmes = 0
+        for programme in programmes:
+            cid = (programme.get("channel") or "").strip()
+            if cid not in actually_added:
+                continue
+
+            key = programme_key(programme)
+            if key in programme_keys:
+                continue
+
+            programme_keys.add(key)
+            out_root.append(copy.deepcopy(programme))
+            added_programmes += 1
+
+        source_stats.append(
+            (
+                source["name"],
+                len(channels),
+                len(programmes),
+                len(actually_added),
+                added_programmes,
+            )
+        )
+
+        print(
+            f'{source["name"]}: sorgente {len(channels)} canali / '
+            f"{len(programmes)} programmi -> aggiunti "
+            f"{len(actually_added)} canali / {added_programmes} programmi"
+        )
+
+        # libera memoria tra una fonte e l'altra
+        del root
+
+    # ------------------------------------------------------------
+    # 4. Validazioni anti-regressione
+    # ------------------------------------------------------------
+    final_channels = len(output_ids)
+    final_programmes = len(programme_keys)
+
+    missing_core = sorted(REQUIRED_CORE_IDS - output_ids)
+    if missing_core:
+        raise RuntimeError(
+            "EPG finale privo di ID fondamentali: " + ", ".join(missing_core)
+        )
+
+    if final_channels < 100 or final_programmes < 1000:
+        raise RuntimeError(
+            f"EPG finale anomalo: {final_channels} canali / "
+            f"{final_programmes} programmi."
+        )
+
+    # Se esiste già un EPG funzionante, non accettiamo un crollo importante
+    # della copertura. Le fonti cambiano naturalmente nel tempo, quindi usiamo
+    # una tolleranza del 10%, ma non permettiamo regressioni pesanti.
+    if old_programme_count >= 1000:
+        minimum_safe = int(old_programme_count * 0.90)
+        if final_programmes < minimum_safe:
+            raise RuntimeError(
+                f"Anti-regressione: nuovo EPG con {final_programmes} programmi, "
+                f"meno del 90% dei {old_programme_count} precedenti. "
+                "Il vecchio epg.xml viene mantenuto."
+            )
+
+    # ------------------------------------------------------------
+    # 5. Report dei canali Altervista che ancora non trovano nessun candidato
+    #    per nome/ID nell'EPG finale.
+    # ------------------------------------------------------------
+    # Ricostruisce un indice nomi finale.
+    final_names = set()
+    final_stripped = set()
+    for ch in out_root.findall("channel"):
+        for dn in channel_names(ch):
+            n = norm(dn)
+            sn = stripped_norm(dn)
+            if n:
+                final_names.add(n)
+            if sn:
+                final_stripped.add(sn)
+
+    unmatched = []
+    for line in m3u.splitlines():
+        if not line.startswith("#EXTINF"):
+            continue
+        name = line.rsplit(",", 1)[-1].strip() if "," in line else ""
+        cid = get_attr(line, "tvg-id")
+        n = norm(name)
+        sn = stripped_norm(name)
+
+        if (
+            (cid and cid in output_ids)
+            or (n and n in final_names)
+            or (sn and sn in final_stripped)
+        ):
+            continue
+        unmatched.append(name)
+
+    # ------------------------------------------------------------
+    # 6. Scrittura atomica
+    # ------------------------------------------------------------
+    ET.indent(out_root, space="  ")
+    tree = ET.ElementTree(out_root)
+
+    tmp = OUT_EPG.with_suffix(".xml.tmp")
+    tree.write(tmp, encoding="utf-8", xml_declaration=True)
+    tmp.replace(OUT_EPG)
+
+    print()
+    print("=== RISULTATO ===")
+    print(f"EPG finale: {final_channels} canali / {final_programmes} programmi")
+    print(f"Canali Altervista ancora senza candidato EPG: {len(unmatched)}")
+
+    if unmatched:
+        print("Primi canali ancora senza EPG:")
+        for name in unmatched[:50]:
+            print(f"  - {name}")
+
+    if optional_failures:
+        print("Fonti opzionali non disponibili in questa esecuzione:")
+        for failure in optional_failures:
+            print(f"  - {failure}")
+
+    print("epg.xml aggiornato atomicamente.")
+    print("update_playlist.py e gli stream NON sono stati modificati.")
+
+
+if __name__ == "__main__":
+    main()
