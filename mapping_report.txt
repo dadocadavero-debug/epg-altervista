@@ -3,7 +3,7 @@ Rai principali: Rai 1/2/3 <- rispettivi feed Europa Altervista
 Canali sorgente Altervista: 498
 EPG unico usato per mapping e player: https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml
 Canali disponibili nell'EPG: 318
-Programmi disponibili nell'EPG: 22922
+Programmi disponibili nell'EPG: 22931
 Canali della playlist collegati a un ID EPG valido: 256
 Canali/righe EXTINF modificate: 193
 Match automatici univoci: 75
