@@ -2,39 +2,134 @@ Versione logica: MASTER CUMULATIVO 2026-09-26
 Rai principali: Rai 1/2/3 <- rispettivi feed Europa Altervista
 Canali sorgente Altervista: 498
 EPG unico usato per mapping e player: https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml
-Canali disponibili nell'EPG: 241
-Programmi disponibili nell'EPG: 26686
-Canali della playlist collegati a un ID EPG valido: 152
-Canali/righe EXTINF modificate: 68
-Match automatici univoci: 0
-ID già validi preservati: 84
+Canali disponibili nell'EPG: 318
+Programmi disponibili nell'EPG: 22922
+Canali della playlist collegati a un ID EPG valido: 256
+Canali/righe EXTINF modificate: 193
+Match automatici univoci: 75
+ID già validi preservati: 63
 Loghi aggiunti/sostituiti: 177
-Loghi generici usati come ultima risorsa: 62
-Canali senza EPG abbinabile: 346
+Loghi generici usati come ultima risorsa: 61
+Canali senza EPG abbinabile: 242
 
+Rete 4 | Rete4.it -> Rete.4.it | id:Rete4.it
+Canale 5 | Canale5.it -> Canale.5.it | id:Canale5.it
+Italia 1 | Italia1.it -> Italia.1.it | id:Italia1.it
+LA7 | la7 -> LA7.HD.it | id:la7
+TV8 SD | Tv8.it -> TV8.HD.it | id:Tv8.it
 NOVE | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png
 EuroNews Italia | PlutoEuronews.it -> Euronews.it | id:PlutoEuronews.it
+Mediaset 20 | 20Mediaset.it -> 20.it | id:20Mediaset.it
+Rai 4 | rai4.it -> Rai4.it | id:rai4.it
+Iris | iris.it -> Iris.it | id:iris.it
+Rai 5 | rai5.it -> Rai5.it | id:rai5.it
+Rai Movie | raimovie.it -> RaiMovie.it | id:raimovie.it
+Rai Premium | raipremium.it -> RaiPremium.it | id:raipremium.it
+TwentySeven | Twentyseven.it -> 27.Twentyseven.it | id:Twentyseven.it
+LA7 Cinema | la7d -> LA7.CINEMA.it | id:la7d
+LA5 | la5 -> La.5.it | id:la5
+Real Time | RealTime.it -> Real.Time.it | id:RealTime.it
 Real Time | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/realtime.png
+Gambero Rosso | GamberoRosso.it -> Gambero.Rosso.HD.it | id:GamberoRosso.it
+Food Network | foodnetwork.it -> Food.Network.it | id:foodnetwork.it
 Food Network | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/foodnetwork.png
+Cine 34 | cine34.it -> Cine34.it | id:cine34.it
+RTL 102.5 TV | rtl102.5tv -> RTL.102.5.HD.it | id:rtl102.5tv
+Discovery | discovery -> Discovery.Channel.it | id:discovery
 Discovery | logo sostituito -> https://i.imgur.com/5IxIFJ0.png
+Giallo | Giallo.it -> Giallo.TV.it | id:Giallo.it
 Giallo | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/giallo.png
+Top Crime | TopCrime.it -> Top.Crime.it | id:TopCrime.it
 K2 🔐 | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/k2.png
 Rai Gulp | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raigulp.png
 Rai YoYo | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raiyoyo.png
 Frisbee 🔐 | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/frisbee.png
+Masha e Orso | IT3800010K1 -> IT2200011IA | nome-esatto
+Super! | super -> Super!.it | id:super
+RaiNews 24 | rai news 24 -> RaiNews24.it | id:rai news 24
+Italia 2 | Italia2.it -> Italia.2.it | id:Italia2.it
 Sky TG24 SD | (vuoto) -> Sky.TG24.it | nome-verificato
 Sky TG24 SD | logo aggiunto -> https://guidatv.sky.it/logo/521skytg24_Light_Fit.png?checksum=da35dbfe-8079-4ba1-adcb-fa9e2cfe3392?tr=n-logo_80
+TGCOM 24 | TGCom24.it -> TGCom.it | id:TGCom24.it
 DMAX | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/dmax.png
+BBC Earth | (vuoto) -> IT3200002L5 | tvg-name-esatto
+Mediaset Extra | MediasetExtra.it -> Mediaset.Extra.it | id:MediasetExtra.it
 HGTV | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/homegardentv.png
+Rai Sport | raisport -> RaiSport.it | id:raisport
 Rai Sport | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png
-Solocalcio | ITBC4700002CO -> Solocalcio.it.it | id:ITBC4700002CO
+Turbo | turbo -> IT900004Y5 | channel-id-verificato
 Primavera TV | logo aggiunto -> https://www.tvdream.net/img/primavera-tv.png
+IL Sole 24 Ore TV | (vuoto) -> IT3300001G3 | nome-esatto
+Super Tennis | SuperTennis.it -> SuperTennis.HD.it | id:SuperTennis.it
 Super Tennis | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
 Radio 105 TV | (vuoto) -> Radio.105.it | nome-verificato
+R101 TV | R101TV -> R101tv.it | id:R101TV
+Deejay TV | DeejayTV.it -> Deejay.TV.it | id:DeejayTV.it
 Deejay TV | logo aggiunto -> https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80
+Radio Italia TV | radioitaliatv -> Radio.Italia.TV.HD.it | id:radioitaliatv
 Radio Italia TV | logo aggiunto -> https://guidatv.sky.it/logo/5454radioitaliatvhd_Light_Fit.png?checksum=9cc02777-f1a0-44f1-a432-a1de036be5b7?tr=n-logo_80
-Elisa di Rivombrosa | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Elisa%20di%20Rivombrosa
+Film Top - Rakuten TV | (vuoto) -> IT2600002F6 | tvg-name-esatto
+Film d'azione - Rakuten TV | (vuoto) -> IT2600003FM | tvg-name-esatto
+Sony One Film d’azione | (vuoto) -> IT300004KM | tvg-name-esatto
+Sony One Film divertenti | (vuoto) -> IT300005J9 | tvg-name-esatto
+Dramma - Rakuten TV | (vuoto) -> IT2600005ZN | tvg-name-esatto
+Fantascienza - Rakuten TV | (vuoto) -> IT260000131 | tvg-name-esatto
+Romance - Rakuten TV | (vuoto) -> IT2600004K9 | tvg-name-esatto
+Commedia - Rakuten TV | (vuoto) -> IT2600007WQ | tvg-name-esatto
+Family - Rakuten TV | (vuoto) -> IT2600010E0 | tvg-name-esatto
+Cine Thriller | RakutenLeViteDegliAltri.it -> ITBD3200002DU | channel-id-verificato
+Adrenaline Movies | (vuoto) -> ITBC11000050E | tvg-name-esatto
+Alta Tensione | (vuoto) -> ITBC1100001G5 | tvg-name-esatto
+Smile | (vuoto) -> ITBC1100002ZU | tvg-name-esatto
+Grandi Nomi | (vuoto) -> ITBC1100003KC | tvg-name-esatto
+Velvet | (vuoto) -> ITBC11000047F | tvg-name-esatto
+Duri a morire | (vuoto) -> IT500002FD | tvg-name-esatto
+Crime Time | (vuoto) -> IT3600001Q1 | nome-esatto
+Brividy Cinema | (vuoto) -> ITBD600001CL | tvg-name-esatto
+Cinemalizia | (vuoto) -> IT300029U3 | tvg-name-esatto
+Cinemadame | (vuoto) -> ITBD1400003D0 | tvgid-verificato
+Romantica | (vuoto) -> IT500004JK | nome-esatto
+Supercinema | (vuoto) -> ITBD3200001VR | tvg-name-esatto
+Cinema Italiano - Pluto | PlutoTvCinemaItaliano.it -> ITBA33000238E | tvg-name-esatto
+Alberto Sordi & Co | (vuoto) -> ITBC1100008L4 | tvg-name-esatto
+CG Cine Mania | (vuoto) -> ITBD140000119 | tvg-name-esatto
+Horror Club | PlutoTvHorrorClub.it -> 66c35c0c92b1af0008c8e83a | nome-esatto
+Cine Paura | (vuoto) -> IT3600005AL | tvg-name-esatto
+Bizzarro Movies | RakutenBizzarroMovies.it -> ITBA3300024IU | tvg-name-esatto
+Action Movie Channel | RakutenDarkMatterItNew.it -> ITBC400001LX | tvg-name-esatto
+The Asylum - Pluto | PlutoTheAsylum.it -> 62e8d5369e48940007fc1dc1 | tvg-name-esatto
+Cine Peplum | RakutenWesternEPeplum.it -> ITBB20000072M | tvg-name-esatto
+Western Time | (vuoto) -> IT3600004TW | tvg-name-esatto
+Sony One Serie da Ridere | (vuoto) -> IT3000035B | nome-esatto
+Sony One Gli imperdibili | (vuoto) -> IT300006W3 | nome-esatto
+Vita da Strega | (vuoto) -> IT2000003B8 | nome-esatto
+Serie Crime - Rakuten TV | RakutenCrimeSeriesItRakutenTv.it -> IT2600008RA | nome-esatto
+Storie Criminali | (vuoto) -> IT1200001Q8 | tvg-name-esatto
+Settimo Cielo - Pluto | PlutoSettimoCielo.it -> 6245d3792792150007e20634 | tvg-name-esatto
+Elisa di Rivombrosa | (vuoto) -> ITBD4100001MG | nome-esatto
+Elisa di Rivombrosa | logo aggiunto -> https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD4100001MG_20251125T102440SQUARE.png
+BBC Series | PlutoBbcSeries.it -> IT2900001B5 | nome-esatto
+Top Gear | (vuoto) -> IT2400001AE | tvg-name-esatto
+Hell's kitchen | (vuoto) -> IT3900003FE | nome-esatto
+NatureTime | (vuoto) -> IT2100001EZ | tvg-name-esatto
+Move - Sportivi in viaggio | (vuoto) -> ITBD300001GI | nome-esatto
+Love the Planet | (vuoto) -> ITBC4700003GR | tvg-name-esatto
+Viaggi & Sapori | (vuoto) -> IT12000029J | tvg-name-esatto
+Viaggi - Pluto | PlutoTvViaggi.it -> 63c923944207be0007fd0887 | tvg-name-esatto
 Fashion TV | RakutenFashionTv.it -> Fashion.TV.it | id:RakutenFashionTv.it
+CAR CITY ADVENTURES | (vuoto) -> IT2000002D1 | nome-esatto
+Mr Bean Animated | (vuoto) -> IT900001A7 | nome-esatto
+Pocoyo | (vuoto) -> IT700004X4 | nome-esatto
+Mattel Junior | PlutoJunior.it -> 686cfe983ffa5e0c91cdb5df | nome-esatto
+Barbie & Friends | PlutoBarbie.it -> 686cfdf894a028da3aac4252 | nome-esatto
+I Puffi | PlutoIPuffi.it -> 68adb5853efb41cd97ce413d | nome-esatto
+Pingu | (vuoto) -> IT2100003OJ | nome-esatto
+Teletubbies | RakutenWbTeletubbies.it -> IT480000143 | tvg-name-esatto
+duckTV | ducktv.it -> ITBC4700001E6 | tvg-name-esatto
+Baby Shark TV | RakutenBabySharkTv.it -> plex.tv.BABY.SHARK.TV.plex | nome-esatto
+SuperToons TV | SupertoonsTV.it -> ITBD51000010V | nome-esatto
+Gormiti | PlutoGormiti.it -> 66a8c64814a2bb00084d09d6 | nome-esatto
+DeAPlaneta Kids | (vuoto) -> ITBD3200007SZ | nome-esatto
 Donna tv | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/donnatv.png
 LA7 eventi live | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=LA7%20eventi%20live
 LA7 agenzie? | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=LA7%20agenzie%3F
@@ -56,6 +151,8 @@ Inter TV | (vuoto) -> Inter.TV.it | nome-verificato
 Inter TV | logo aggiunto -> https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/inter-tv-it.png
 INTER 24/7 | (vuoto) -> IT:.INTER.24/7.be | nome-verificato
 Lazio Style TV | logo aggiunto -> https://www.tvdream.net/img/lazio-style-tv.png
+Italian Fishing TV | (vuoto) -> IT600001L6 | tvg-name-esatto
+SportOutdoor.Tv | (vuoto) -> ITBA3300022EA | tvg-name-esatto
 SportOutdoor.Tv | logo aggiunto -> https://www.google.com/s2/favicons?domain=sportoutdoor.tv&sz=256
 FIFA+ | (vuoto) -> IT:.FIFA+.be | nome-verificato
 F1 TV | logo aggiunto -> https://statics.quattroruote.it/content/dam/quattroruote/it/news/sport/2018/03/02/formula_1_liberty_media_lancia_lo_streaming_online_nasce_f1_tv_/gallery/rsmall/f1-tv-formula-1-3.jpg
@@ -69,31 +166,47 @@ RedBull TV | (vuoto) -> IT:.Red.Bull.TV.be | nome-verificato
 RedBull TV | logo aggiunto -> https://www.redbull.com/cs/RedBull2/images/branding/redbull-tv-logo-2x.png
 BIKE | bikesmartmobility -> BIKE.it | id:bikesmartmobility
 BIKE | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=BIKE
-Solocalcio (25fps) | ITBC4700002CO -> Solocalcio.it.it | id:ITBC4700002CO
+Sportitalia (25fps) | sportitalia -> IT1000002TG | tvg-name-esatto
 Tennis Channel | logo aggiunto -> https://i.imgur.com/tsljAnY.png
+Tennis channel 2 | t2 tennis -> plex.tv.Tennis.Channel.2.plex | nome-esatto
 Tennis channel 2 | logo aggiunto -> https://i.imgur.com/tsljAnY.png
 Tennis+ | (vuoto) -> IT:.Tennis+.be | nome-verificato
+UNBEATEN | (vuoto) -> plex.tv.Unbeaten.plex | nome-esatto
 UNBEATEN | logo aggiunto -> https://i.imgur.com/LmkNt3v.png
 FUBO Sports | logo aggiunto -> https://i.imgur.com/qFNRJLb.png
-Motoretrò | (vuoto) -> IT:.Motoretrò.be | nome-verificato
+Motor1 | (vuoto) -> IT3000282Q | tvg-name-esatto
+Motoretrò | (vuoto) -> IT800002CE | channel-id-verificato
 FF Motorsport | logo aggiunto -> https://www.google.com/s2/favicons?domain=ffmotorsport.it&sz=256
 EQU TV | (vuoto) -> EQUtv.it | nome-verificato
 EQU TV | logo aggiunto -> https://www.google.com/s2/favicons?domain=eqtv.it&sz=256
+Rai Sport jolly 1 (attivo raramente) | raisport -> RaiSport.it | id:raisport
 Rai Sport jolly 1 (attivo raramente) | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png
+Rai Sport jolly 2 (attivo raramente) | raisport -> RaiSport.it | id:raisport
 Rai Sport jolly 2 (attivo raramente) | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png
 Vevo 2K | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Vevo%202K
+Vevo '70s & '80s | (vuoto) -> ITBD1900010JL | nome-esatto
+That's 70s | (vuoto) -> 69ef53e12f4d2b4f9c582e76 | nome-esatto
+That's 80s | (vuoto) -> 69ef54f3c700cf0140272def | nome-esatto
+Virgin Radio TV | VirginRadioTV.it -> Virgin.Radio.it | id:VirginRadioTV.it
+Radio Montecarlo TV | radiomontecarlotv -> RMC.it | id:radiomontecarlotv
+Radio Italia Live | (vuoto) -> ITBA2200008IM | tvg-name-esatto
 RadioWOW | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=RadioWOW
 DJOssoTV | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=DJOssoTV
 PiterPan TV | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=PiterPan%20TV
+Rai Radio 2 | rairadio2 -> RaiRadio2.it | id:rairadio2
 Radio Studiopiù | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Studiopi%C3%B9
 Radio Zeta TV | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/radiozetatv.png
 Radio Freccia | (vuoto) -> RADIOFRECCIA.HD.it | nome-verificato
 Radio Freccia | logo aggiunto -> https://guidatv.sky.it/logo/5465radiofrecciahd_Light_Fit.png?checksum=a2e0135c4b8958cb151b619397abb6a0?tr=n-logo_80
 Radio Capital TV | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/radiocapitaltv.png
 Radio Number ONE | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Number%20ONE
+RTL 102.5 BEST | (vuoto) -> IT3000012PW | nome-esatto
+RTL 102.5 DISCO | (vuoto) -> IT3000014RV | nome-esatto
+RTL 102.5 CALIENTE | (vuoto) -> IT30000132N | nome-esatto
 Radio Norba | (vuoto) -> RADIONORBA.TV.it | nome-verificato
 Demo 4K | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Demo%204K
 Xite | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Xite
+XITE Hits | (vuoto) -> plex.tv.XITE.Hits.plex | nome-esatto
 ZeroUno Tv | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=ZeroUno%20Tv
 RSO Radio | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=RSO%20Radio
 Radio Popizz | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radio%20Popizz
@@ -111,6 +224,7 @@ Canale 5 (hls) | canale5 -> Canale.5.it | id:canale5
 Canale 5 (hls) | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png
 Italia 1 (hls) | italia1 -> Italia.1.it | id:italia1
 Italia 1 (hls) | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i1.png
+Mediaset 20 (hls) | 20Mediaset.it -> 20.it | id:20Mediaset.it
 Mediaset 20 (hls) | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png
 Rai 1 HbbTV | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png
 Rai 1 mdp | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png
@@ -122,6 +236,7 @@ Rai 3 (hls) | rai3 -> Rai3.it | id:rai3
 Rai 3 (hls) | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png
 rai premium HbbTV akamai | (vuoto) -> RaiPremium.it | nome-verificato
 rai premium HbbTV akamai | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637309566388_1579882215002_rai-premium.png
+Rai Premium hls | raipremium.it -> RaiPremium.it | id:raipremium.it
 rai movie HbbTV raiway | (vuoto) -> RaiMovie.it | nome-verificato
 rai movie HbbTV raiway | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637309933509_1579882457761_rai-movie.png
 rai 5 HbbTV raiway | (vuoto) -> Rai5.it | nome-verificato
@@ -164,12 +279,16 @@ Canale 5 | canale 5 -> Canale.5.it | id:canale 5
 Canale 5 | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png
 Italia 1 | italia 1 -> Italia.1.it | id:italia 1
 Italia 1 | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i1.png
+TV8 SD | Tv8.it -> TV8.HD.it | id:Tv8.it
 TV8 SD | logo aggiunto -> https://guidatv.sky.it/logo/260tv8hd_Light_Fit.png?checksum=938addc1e1adaac5be9fdf942d4c7f25?tr=n-logo_80
+Mediaset 20 | 20Mediaset.it -> 20.it | id:20Mediaset.it
 Mediaset 20 | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png
 Rai 4 | rai4 -> Rai4.it | id:rai4
 Rai 4 | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662992107Logo-Rai4.png
+Cielo SD | Cielo.it -> cielo.it | id:Cielo.it
 Cielo SD | logo aggiunto -> https://guidatv.sky.it/logo/120cielo_Light_Fit.png?checksum=0e2ccaf0-752f-44f6-b273-9aad1e4edadf?tr=n-logo_80
 Rai Gulp SD | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raigulp.png
+Rai YoYo SD | RaiYoYo.it -> RaiYoyo.it | id:RaiYoYo.it
 Rai YoYo SD | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raiyoyo.png
 TT-TELETUTTO BS | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TELETUTTO%20BS
 Radiodueindie | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Radiodueindie
@@ -196,13 +315,18 @@ Rai 3 | (vuoto) -> Rai3.it | nome-verificato
 Rai 3 | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png
 Rai 3 Europa | (vuoto) -> Rai3.it | nome-verificato
 Rai 3 Europa | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png
+Rete 4 HD Europa | Rete4.it -> Rete.4.it | id:Rete4.it
 Rete 4 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/r4.png
+Canale 5 HD Europa | Canale5.it -> Canale.5.it | id:Canale5.it
 Canale 5 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png
+Italia 1 HD Europa | Italia1.it -> Italia.1.it | id:Italia1.it
 Italia 1 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i1.png
 LA7 HD | (vuoto) -> LA7.HD.it | nome-verificato
 LA7 HD | logo aggiunto -> https://guidatv.sky.it/logo/407la7hd_Light_Fit.png?checksum=d9bcc8bf-703c-4d33-823d-5171697fe8a5?tr=n-logo_80
+Mediaset 20 HD Europa | 20Mediaset.it -> 20.it | id:20Mediaset.it
 Mediaset 20 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png
 Iris HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/iris.png
+Italia 2 HD Europa | Italia2.it -> Italia.2.it | id:Italia2.it
 Italia 2 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i2.png
 La5 HD Europa | LA5.it -> La.5.it | id:LA5.it
 La5 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la5.png
@@ -218,6 +342,7 @@ Rai Scuola Europa | (vuoto) -> RaiScuola.it | nome-verificato
 Rai Scuola Europa | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637322361853_logo-raiscuola.png
 Rai Storia Europa | (vuoto) -> RaiStoria.it | nome-verificato
 Rai Storia Europa | logo aggiunto -> https://www.raiplay.it/dl/img/2021/11/19/1637309830740_1579882284354_rai-storia.png
+Mediaset Extra HD Europa | MediasetExtra.it -> Mediaset.Extra.it | id:MediasetExtra.it
 Mediaset Extra HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/extra.png
 TGCOM24 | (vuoto) -> TGCom.it | nome-verificato
 TGCOM24 | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/tgcom.png
@@ -263,96 +388,40 @@ Telelombardia | tvg-id=(vuoto) | group=Regionali
 RSI LA2 | tvg-id=rsila2 | group=Altre tv
 Sky Sport (non sempre attivo) | tvg-id=(vuoto) | group=Sport
 Golazo Network (Serie A) | tvg-id=(vuoto) | group=Sport
-Trailers | tvg-id=ITBA3300048YJ | group=Altre tv
 TMC Telemontecarlo | tvg-id=(vuoto) | group=Altre tv
-Giornale Radio Tv | tvg-id=ITBB5000002N0 | group=Notizie
 TV2000 | tvg-id=TV2000.it | group=Altre tv
-Masha e Orso | tvg-id=IT3800010K1 | group=Bambini e ragazzi
-BBC Earth | tvg-id=(vuoto) | group=Documentari
 Sport Italia | tvg-id=sportitalia | group=Sport
 Primavera TV | tvg-id=sportitalia24live | group=Sport
-IL Sole 24 Ore TV | tvg-id=(vuoto) | group=Notizie
 Nokep TV | tvg-id=(vuoto) | group=Musica
 M2O TV | tvg-id=m2otv | group=Musica
-Film Top - Rakuten TV | tvg-id=(vuoto) | group=Film
-Film d'azione - Rakuten TV | tvg-id=(vuoto) | group=Film
-Sony One Film d’azione | tvg-id=(vuoto) | group=Film
-Sony One Film divertenti | tvg-id=(vuoto) | group=Film
-Dramma - Rakuten TV | tvg-id=(vuoto) | group=Film
-Fantascienza - Rakuten TV | tvg-id=(vuoto) | group=Film
-Romance - Rakuten TV | tvg-id=(vuoto) | group=Film
-Commedia - Rakuten TV | tvg-id=(vuoto) | group=Film
-Family - Rakuten TV | tvg-id=(vuoto) | group=Film
 Film - Pluto | tvg-id=PlutoTvFilm.it | group=Film
 Film Azione - Pluto | tvg-id=PlutoTvFilmAzione.it | group=Film
 Film Romantici - Pluto | tvg-id=PlutoTvFilmRomantici.it | group=Film
 Film Thriller - Pluto | tvg-id=PlutoTvFilmThriller.it | group=Film
 Film Commedia - Pluto | tvg-id=PlutoTvFilmCommedia.it | group=Film
-Cine Thriller | tvg-id=RakutenLeViteDegliAltri.it | group=Film
-Adrenaline Movies | tvg-id=(vuoto) | group=Film
-Alta Tensione | tvg-id=(vuoto) | group=Film
-Smile | tvg-id=(vuoto) | group=Film
-Grandi Nomi | tvg-id=(vuoto) | group=Film
-Velvet | tvg-id=(vuoto) | group=Film
-Duri a morire | tvg-id=(vuoto) | group=Film
-Crime Time | tvg-id=(vuoto) | group=Film
-Brividy Cinema | tvg-id=(vuoto) | group=Film
-Cinemalizia | tvg-id=(vuoto) | group=Film
-Film Al Femminile - Wedo Movies | tvg-id=ITBC4700004EQ | group=Film
-Cinemadame | tvg-id=(vuoto) | group=Film
-Romantica | tvg-id=(vuoto) | group=Film
 Legami Letali - Pluto | tvg-id=PlutoTvLegamiLetali.it | group=Film
 Christmas tutto l'anno - Pluto | tvg-id=PlutoTvChristmas.it | group=Film
-Cine Amore | tvg-id=IT3800001XM | group=Film
-Film Ancora Più Romantici - Pluto | tvg-id=699d87093d5dba980705cca8 | group=Film
-Supercinema | tvg-id=(vuoto) | group=Film
-Cinema italiano | tvg-id=ITBA33000238E | group=Film
-Cinema Italiano - Pluto | tvg-id=PlutoTvCinemaItaliano.it | group=Film
-Cinema Orientale - Pluto | tvg-id=6786235bd648bf0008c2780a | group=Film
 CG - TV | tvg-id=RakutenCgCinemaDAutore.it | group=Film
-Alberto Sordi & Co | tvg-id=(vuoto) | group=Film
-CG Cine Mania | tvg-id=(vuoto) | group=Film
 Plus Cinema | tvg-id=(vuoto) | group=Film
 Il grande cinema | tvg-id=(vuoto) | group=Film
 Tutto Bruce Willis | tvg-id=(vuoto) | group=Film
-Totò - Pluto | tvg-id=65253f9881f942000833ccd5 | group=Film
 Horror - Pluto | tvg-id=PlutoTvHorror.it | group=Film
-Horror Club | tvg-id=PlutoTvHorrorClub.it | group=Film
-Cine Paura | tvg-id=(vuoto) | group=Film
-Bizzarro Movies | tvg-id=RakutenBizzarroMovies.it | group=Film
-Action Movie Channel | tvg-id=RakutenDarkMatterItNew.it | group=Film
-The Asylum - Pluto | tvg-id=PlutoTheAsylum.it | group=Film
-Cine Peplum | tvg-id=RakutenWesternEPeplum.it | group=Film
-Western Time | tvg-id=(vuoto) | group=Film
 Western - Pluto | tvg-id=PlutoTvWestern.it | group=Film
 Sony One Serie Thriller | tvg-id=(vuoto) | group=Serie
-Sony One Serie da Ridere | tvg-id=(vuoto) | group=Serie
-Sony One Gli imperdibili | tvg-id=(vuoto) | group=Serie
-Vita da Strega | tvg-id=(vuoto) | group=Serie
 Xena warrior princess | tvg-id=(vuoto) | group=Serie
 Hercules | tvg-id=(vuoto) | group=Serie
-Un medico in famiglia | tvg-id=IT4000061Q | group=Serie
 Serie - Pluto | tvg-id=PlutoTvSerie.it | group=Serie
-True Crime | tvg-id=ITBD1000006RD | group=Serie
-Serie Crime - Rakuten TV | tvg-id=RakutenCrimeSeriesItRakutenTv.it | group=Serie
 Crime - Pluto | tvg-id=PlutoTvCrime.it | group=Serie
 True Crime - Pluto | tvg-id=PlutoTrueCrime.it | group=Serie
-Storie Criminali | tvg-id=(vuoto) | group=Documentari
 Forensic Files - Pluto | tvg-id=PlutoForensicFiles.it | group=Serie
-Settimo Cielo - Pluto | tvg-id=PlutoSettimoCielo.it | group=Serie
 Carabinieri - Pluto | tvg-id=Carabinieri.it | group=Serie
 I soliti idioti - Pluto | tvg-id=ISolitiIdioti.it | group=Serie
 Le sorelle McLeod - Pluto | tvg-id=PlutoLeSorelleMcLeod.it | group=Serie
 Squadra Speciale Cobra 11 - Pluto | tvg-id=PlutoSquadraSpecialeCobra11.it | group=Serie
-Elisa di Rivombrosa | tvg-id=(vuoto) | group=Serie
-BBC Series | tvg-id=PlutoBbcSeries.it | group=Serie
-Gli immortali – Van Damme vs Lundgren | tvg-id=ITBD1100001B7 | group=Serie
 Il Testimone - Pluto | tvg-id=PlutoIlTestimone.it | group=Serie
 Catfish - Pluto | tvg-id=PlutoCatfish.it | group=Serie
 Il Banco dei Pugni - Pluto | tvg-id=PlutoIlBancoDeiPugni.it | group=Serie
 Affare Fatto - Pluto | tvg-id=PlutoAffareFatto.it | group=Serie
-Top Gear | tvg-id=(vuoto) | group=Serie
-Hell's kitchen | tvg-id=(vuoto) | group=Serie
 Sanctuary - Pluto | tvg-id=PlutoSanctuary.it | group=Serie
 Sci-Fi - Pluto | tvg-id=PlutoTvSciFi.it | group=Serie
 Autostop per il cielo - Pluto | tvg-id=PlutoAutostopPerIlcielo.it | group=Serie
@@ -361,48 +430,23 @@ Dynasty - Pluto | tvg-id=PlutoDynasty.it | group=Serie
 Andromeda - Pluto | tvg-id=PlutoAndromeda.it | group=Serie
 Renegade - Pluto | tvg-id=PlutoRenegade.it | group=Serie
 Natura - Pluto | tvg-id=PlutoTvNatura.it | group=Documentari
-NatureTime | tvg-id=(vuoto) | group=Documentari
 Documentari - Pluto | tvg-id=PlutoTvDocumentari.it | group=Documentari
-Move - Sportivi in viaggio | tvg-id=(vuoto) | group=Documentari
 Grandi Documentari - Wedo Big Stories | tvg-id=RakutenWedoBigStories.it | group=Documentari
-Love the Planet | tvg-id=(vuoto) | group=Documentari
-Viaggi & Sapori | tvg-id=(vuoto) | group=Documentari
 Storia - Pluto | tvg-id=PlutoTvStoria.it | group=Documentari
-Viaggi - Pluto | tvg-id=PlutoTvViaggi.it | group=Documentari
 La grande arte | tvg-id=(vuoto) | group=Documentari
 House of docs | tvg-id=(vuoto) | group=Documentari
 I misteri della fede | tvg-id=(vuoto) | group=Documentari
 Tutto musica | tvg-id=(vuoto) | group=Documentari
 STARS Film & Secrets | tvg-id=(vuoto) | group=Documentari
 Opera legends | tvg-id=(vuoto) | group=Documentari
-5-Minuti Creativi | tvg-id=ITBA33000374G | group=Altre tv
-CAR CITY ADVENTURES | tvg-id=(vuoto) | group=Bambini e ragazzi
-Mr Bean Animated | tvg-id=(vuoto) | group=Bambini e ragazzi
-Pocoyo | tvg-id=(vuoto) | group=Bambini e ragazzi
-Mattel Junior | tvg-id=PlutoJunior.it | group=Bambini e ragazzi
 Cartoni Animati - Pluto | tvg-id=PlutoSuperStar.it | group=Bambini e ragazzi
-Barbie & Friends | tvg-id=PlutoBarbie.it | group=Bambini e ragazzi
-I Puffi | tvg-id=PlutoIPuffi.it | group=Bambini e ragazzi
-Pingu | tvg-id=(vuoto) | group=Bambini e ragazzi
-Teletubbies | tvg-id=RakutenWbTeletubbies.it | group=Bambini e ragazzi
-duckTV | tvg-id=ducktv.it | group=Bambini e ragazzi
-Baby Shark TV | tvg-id=RakutenBabySharkTv.it | group=Bambini e ragazzi
-SuperToons TV | tvg-id=SupertoonsTV.it | group=Bambini e ragazzi
 Bejoy.kids | tvg-id=(vuoto) | group=Bambini e ragazzi
 SpongeBob - Pluto | tvg-id=PlutoSuperSpongebob.it | group=Bambini e ragazzi
 Teen Club - Pluto | tvg-id=PlutoSuperPop.it | group=Bambini e ragazzi
-Gormiti | tvg-id=PlutoGormiti.it | group=Bambini e ragazzi
 Kids Classics - Pluto | tvg-id=Pluto.it | group=Bambini e ragazzi
 Teen - Pluto | tvg-id=PlutoTeen.it | group=Bambini e ragazzi
 Teenage Mutant Ninja Turtles - Pluto | tvg-id=PlutoTeenageMutantNinjaTurtles.it | group=Bambini e ragazzi
-Yu-Gi-Oh! - Pluto | tvg-id=63eb82e24e83e70008ab735f | group=Bambini e ragazzi
 South Park - Pluto | tvg-id=PlutoSouthPark.it | group=Serie
-Anime - Pluto | tvg-id=65b90daed77d450008a43345 | group=Bambini e ragazzi
-One Piece | tvg-id=69affcad8940750a23a7231a | group=Bambini e ragazzi
-iCarly | tvg-id=609401db8cf51c00084b592e | group=Bambini e ragazzi
-DeAPlaneta Kids | tvg-id=(vuoto) | group=Bambini e ragazzi
-Inuyasha | tvg-id=IT800001SW | group=Bambini e ragazzi
-Inazuma Eleven Collection | tvg-id=612375086abc84000738fc03 | group=Bambini e ragazzi
 ALMA TV | tvg-id=AlmaTV.it | group=Altre tv
 MarcoPolo Travel TV | tvg-id=TravelTV.it | group=Altre tv
 Donna tv | tvg-id=DonnaTV.it | group=Altre tv
@@ -423,34 +467,20 @@ Supertennis+ 1 | tvg-id=(vuoto) | group=Sport
 Supertennis+ 2 | tvg-id=(vuoto) | group=Sport
 Supertennis+ 3 | tvg-id=(vuoto) | group=Sport
 Supertennis+ 4 | tvg-id=(vuoto) | group=Sport
-Sportface | tvg-id=IT16000070D | group=Sport
 Lazio Style TV | tvg-id=(vuoto) | group=Sport
-Italian Fishing TV | tvg-id=(vuoto) | group=Sport
-SportOutdoor.Tv | tvg-id=(vuoto) | group=Sport
 F1 TV | tvg-id=(vuoto) | group=Sport
 Dolomiti Life TV | tvg-id=(vuoto) | group=Documentari
 Plus TV Sport | tvg-id=MsChannel.it | group=Sport
 Plus TV Motori | tvg-id=MsMotor.it | group=Sport
 ACI Sport LIVE 01 (non sempre attivo) | tvg-id=(vuoto) | group=Sport
 TOP Calcio 24 | tvg-id=(vuoto) | group=Sport
-Sportitalia (25fps) | tvg-id=sportitalia | group=Sport
-LBA Classics | tvg-id=IT4000089R | group=Sport
 Sport - Pluto | tvg-id=PlutoTvSport.it | group=Sport
 Tennis Channel | tvg-id=Tennis Channel | group=Sport
-Tennis channel 2 | tvg-id=t2 tennis | group=Sport
-UNBEATEN | tvg-id=(vuoto) | group=Sport
 FUBO Sports | tvg-id=(vuoto) | group=Sport
 CBS Sports Network | tvg-id=CBSSports.us | group=Sport
-Motor1 | tvg-id=(vuoto) | group=Sport
 FF Motorsport | tvg-id=(vuoto) | group=Sport
-Vevo Pop | tvg-id=ITBC2100001G9 | group=Musica
-Vevo '90s & '00s | tvg-id=ITBC210000200 | group=Musica
 That's 90s00s | tvg-id=(vuoto) | group=Musica
 Vevo 2K | tvg-id=(vuoto) | group=Musica
-Vevo '70s & '80s | tvg-id=(vuoto) | group=Musica
-That's 70s | tvg-id=(vuoto) | group=Musica
-That's 80s | tvg-id=(vuoto) | group=Musica
-Radio Italia Live | tvg-id=(vuoto) | group=Musica
 RadioWOW | tvg-id=(vuoto) | group=Musica
 Radio Kiss Kiss TV | tvg-id=(vuoto) | group=Musica
 DJOssoTV | tvg-id=(vuoto) | group=Musica
@@ -463,9 +493,6 @@ Radio Capital TV | tvg-id=(vuoto) | group=Musica
 Radio Bruno TV | tvg-id=(vuoto) | group=Musica
 Radio Lombardia TV | tvg-id=(vuoto) | group=Musica
 Radio Number ONE | tvg-id=RadioNumberOne.it | group=Musica
-RTL 102.5 BEST | tvg-id=(vuoto) | group=Musica
-RTL 102.5 DISCO | tvg-id=(vuoto) | group=Musica
-RTL 102.5 CALIENTE | tvg-id=(vuoto) | group=Musica
 RTL 102.5 BRO&SIS | tvg-id=(vuoto) | group=Musica
 RTL 102.5 NAPULÈ | tvg-id=(vuoto) | group=Musica
 RTL 102.5 TRAFFIC | tvg-id=(vuoto) | group=Musica
@@ -474,14 +501,8 @@ Babayaga TV | tvg-id=(vuoto) | group=Musica
 Radio Company TV | tvg-id=(vuoto) | group=Musica
 Radio 51 | tvg-id=(vuoto) | group=Musica
 Demo 4K | tvg-id=(vuoto) | group=Musica
-Hip Hop TV | tvg-id=ITBC11000108G | group=Musica
-Trace Latina | tvg-id=ITBA3300042HE | group=Musica
-Trace Urban | tvg-id=ITBA3300041LY | group=Musica
 Trace UK | tvg-id=(vuoto) | group=Musica
 Xite | tvg-id=(vuoto) | group=Musica
-XITE Hits | tvg-id=(vuoto) | group=Musica
-Cool Summer Channel | tvg-id=IT2500001IF | group=Musica
-Rock TV | tvg-id=ITBC1100011RK | group=Musica
 ZeroUno Tv | tvg-id=(vuoto) | group=Musica
 RSO Radio | tvg-id=(vuoto) | group=Musica
 Radio Popizz | tvg-id=(vuoto) | group=Musica
