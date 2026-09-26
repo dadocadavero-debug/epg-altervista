@@ -1,750 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <tv generator-info-name="epg-altervista-master" generator-info-url="https://github.com/dadocadavero-debug/epg-altervista">
-  <channel id="Sky.Uno.+.it">
-    <display-name lang="it">Sky Uno +</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="RaiRadio2.it">
-    <display-name lang="it">RaiRadio2</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="Solocalcio.it.it">
-    <display-name lang="it">Solocalcio</display-name>
-    <icon src="https://www.tivu.tv/_common/images/loghi_epg/logo_4996.png" />
-    <icon src="https://www.tivu.tv/_common/images/loghi_epg/logo_4996.png" />
-    <url>http://www.tivu.tv</url>
-  </channel>
-  <channel id="Sky.Cinema.Uno.it">
-    <display-name lang="it">Sky Cinema Uno</display-name>
-    <icon src="https://guidatv.sky.it/logo/202skycinemauno_Light_Fit.png?checksum=2945a0fc-4fd0-4f78-891d-b4b6e23e4ecf?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/202skycinemauno_Light_Fit.png?checksum=2945a0fc-4fd0-4f78-891d-b4b6e23e4ecf?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="20.it">
-    <display-name lang="it">20</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="Milan.TV.it">
-    <display-name lang="it">Milan TV</display-name>
-    <icon src="https://guidatv.sky.it/logo/261milantv_Light_Fit.png?checksum=b78acf3bc981bb6d87c595b24540e7dc?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/261milantv_Light_Fit.png?checksum=b78acf3bc981bb6d87c595b24540e7dc?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Food.Network.HD..417.it">
-    <display-name lang="it">Food Network HD  417</display-name>
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/foodnetwork-image-656afb80-8eb1-455f-b3db-386928393c3b.png" />
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/foodnetwork-image-656afb80-8eb1-455f-b3db-386928393c3b.png" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="RTL.102.5.HD.it">
-    <display-name lang="it">RTL 102.5 HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/812rtl1025hd_Light_Fit.png?checksum=abbc96b26d53d6eadc8fc7d148e7c3d7?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/812rtl1025hd_Light_Fit.png?checksum=abbc96b26d53d6eadc8fc7d148e7c3d7?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.TG24.it">
-    <display-name lang="it">Sky TG24</display-name>
-    <icon src="https://guidatv.sky.it/logo/521skytg24_Light_Fit.png?checksum=da35dbfe-8079-4ba1-adcb-fa9e2cfe3392?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/521skytg24_Light_Fit.png?checksum=da35dbfe-8079-4ba1-adcb-fa9e2cfe3392?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Italia.1.it">
-    <display-name lang="it">Italia 1</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i1.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i1.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="La.5.it">
-    <display-name lang="it">La 5</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la5.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la5.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
   <channel id="Sky.Sport..253.it">
     <display-name lang="it">Sky Sport  253</display-name>
     <icon src="https://guidatv.sky.it/logo/233233_Light_Fit.png?checksum=cde08272-c3a9-40f5-942d-0c32d01095d1?tr=n-logo_80" />
     <icon src="https://guidatv.sky.it/logo/233233_Light_Fit.png?checksum=cde08272-c3a9-40f5-942d-0c32d01095d1?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Meteo24.it">
-    <display-name lang="it">Sky Meteo24</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Nick.Jr..+1.it">
-    <display-name lang="it">Nick Jr. +1</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Investigation.it">
-    <display-name lang="it">Sky Investigation</display-name>
-    <icon src="https://guidatv.sky.it/logo/686skyinvestigation_Light_Fit.png?checksum=224897bb-44bb-41a3-9691-e19eacc670f0?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/686skyinvestigation_Light_Fit.png?checksum=224897bb-44bb-41a3-9691-e19eacc670f0?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Real.Time.HD..160.it">
-    <display-name lang="it">Real Time HD  160</display-name>
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/realtime-image-478eeded-06d7-40b4-95da-6159158f774f.jpg" />
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/realtime-image-478eeded-06d7-40b4-95da-6159158f774f.jpg" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Frisbee.it">
-    <display-name lang="it">Frisbee</display-name>
-    <url>http://www.guida.tv</url>
-  </channel>
-  <channel id="Sky.Crime.it">
-    <display-name lang="it">Sky Crime</display-name>
-    <icon src="https://guidatv.sky.it/logo/249skycrime_Light_Fit.png?checksum=7d65e0c6-d90b-42d1-a014-46ba4d06b16b?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/249skycrime_Light_Fit.png?checksum=7d65e0c6-d90b-42d1-a014-46ba4d06b16b?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="BIKE.it">
-    <display-name lang="it">BIKE</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Caccia.e.PESCA.it">
-    <display-name lang="it">Caccia e PESCA</display-name>
-    <icon src="https://guidatv.sky.it/logo/350cacciaepesca_Light_Fit.png?checksum=2c27f7a1c4dbecd7801362884f16078d?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/350cacciaepesca_Light_Fit.png?checksum=2c27f7a1c4dbecd7801362884f16078d?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Warner.TV.it">
-    <display-name lang="it">Warner TV</display-name>
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/warnertvit-image-ad904cbb-b41c-477e-8302-1eec6933bf6a.png" />
-    <url>http://www.warnertv.it</url>
-  </channel>
-  <channel id="Rai.Movie..5024.it">
-    <display-name lang="it">Rai Movie  5024</display-name>
-    <icon src="https://guidatv.sky.it/logo/9018raimovie_Light_Fit.png?checksum=92238f13a601f8cf0aa1d45e85117ae3?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/9018raimovie_Light_Fit.png?checksum=92238f13a601f8cf0aa1d45e85117ae3?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Mediaset.Extra.it">
-    <display-name lang="it">Mediaset Extra</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/extra.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/extra.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="Sky.Uno.it">
-    <display-name lang="it">Sky Uno</display-name>
-    <icon src="https://guidatv.sky.it/logo/477skyuno_Light_Fit.png?checksum=cd37fd56-01f7-443e-a62d-ff99bf4c1b1c?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/477skyuno_Light_Fit.png?checksum=cd37fd56-01f7-443e-a62d-ff99bf4c1b1c?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Nick.Jr.it">
-    <display-name lang="it">Nick Jr</display-name>
-    <icon src="https://guidatv.sky.it/logo/424nickjr_Light_Fit.png?checksum=888d7b93d39b68714e414336cdb7ebd5?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/424nickjr_Light_Fit.png?checksum=888d7b93d39b68714e414336cdb7ebd5?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Boomerang.it">
-    <display-name lang="it">Boomerang</display-name>
-    <icon src="https://guidatv.sky.it/logo/367boomerang_Light_Fit.png?checksum=0671910302f4ecae3e6359bf65b54dfe?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/367boomerang_Light_Fit.png?checksum=0671910302f4ecae3e6359bf65b54dfe?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Nature.it">
-    <display-name lang="it">Sky Nature</display-name>
-    <icon src="https://guidatv.sky.it/logo/695skynature_Light_Fit.png?checksum=6a2c90be-bac2-4622-af95-39ec6b75e3b4?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/695skynature_Light_Fit.png?checksum=6a2c90be-bac2-4622-af95-39ec6b75e3b4?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="RADIOFRECCIA.HD.it">
-    <display-name lang="it">RADIOFRECCIA HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/5465radiofrecciahd_Light_Fit.png?checksum=a2e0135c4b8958cb151b619397abb6a0?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5465radiofrecciahd_Light_Fit.png?checksum=a2e0135c4b8958cb151b619397abb6a0?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Uno.+..it">
-    <display-name lang="it">Sky Uno + </display-name>
-    <url>http://www.superguidatv.it</url>
-  </channel>
-  <channel id="Sky.Adventure.it">
-    <display-name lang="it">Sky Adventure</display-name>
-    <icon src="https://guidatv.sky.it/logo/962skyadventure_Light_Fit.png?checksum=7454eb33-b386-4e89-8872-8c32b2fbbc3f?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/962skyadventure_Light_Fit.png?checksum=7454eb33-b386-4e89-8872-8c32b2fbbc3f?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="DMAX.HD..170.it">
-    <display-name lang="it">DMAX HD  170</display-name>
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/dmax-image-6caff319-410d-4a8d-b4d1-4eef4d34ee6a.png" />
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/dmax-image-6caff319-410d-4a8d-b4d1-4eef4d34ee6a.png" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Calcio.10..260.it">
-    <display-name lang="it">Sky Calcio 10  260</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Atlantic.Maratone.it">
-    <display-name lang="it">Sky Atlantic Maratone</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="DAZN.2.it.it">
-    <display-name lang="it">DAZN 2</display-name>
-    <icon src="https://guidatv.sky.it/logo/535dazn2_Light_Fit.png?checksum=af9c8e0f-77ec-4da7-913c-af23e2519823?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/535dazn2_Light_Fit.png?checksum=af9c8e0f-77ec-4da7-913c-af23e2519823?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Cinema.Family.it">
-    <display-name lang="it">Sky Cinema Family</display-name>
-    <icon src="https://guidatv.sky.it/logo/255skycinemafamily_Light_Fit.png?checksum=d1656464-20a9-4f0e-b7f9-49f01c1beea7?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/255skycinemafamily_Light_Fit.png?checksum=d1656464-20a9-4f0e-b7f9-49f01c1beea7?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="SuperTennis.HD.it">
-    <display-name lang="it">SuperTennis HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/5246supertennishd_Light_Fit.png?checksum=13f5cbb1646d848fde3af6fccba8dd4c?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5246supertennishd_Light_Fit.png?checksum=13f5cbb1646d848fde3af6fccba8dd4c?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="RaiGulp.it">
-    <display-name lang="it">RaiGulp</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="TRM.h24.it">
-    <display-name lang="it">TRM h24</display-name>
-    <icon src="https://guidatv.sky.it/logo/5421trmh24_Light_Fit.png?checksum=550c404365a3b09ee9d2cb21d22ab992?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5421trmh24_Light_Fit.png?checksum=550c404365a3b09ee9d2cb21d22ab992?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport..252.it">
-    <display-name lang="it">Sky Sport  252</display-name>
-    <icon src="https://guidatv.sky.it/logo/951skysport_Light_Fit.png?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/951skysport_Light_Fit.png?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Food.Network.it">
-    <display-name lang="it">Food Network</display-name>
-    <url>http://www.warnertv.it</url>
-  </channel>
-  <channel id="27.Twentyseven.it">
-    <display-name lang="it">27 Twentyseven</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ts.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ts.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="TGCom.it">
-    <display-name lang="it">TGCom</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/tgcom.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/tgcom.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="TOPcrime.HD..168.it">
-    <display-name lang="it">TOPcrime HD  168</display-name>
-    <icon src="https://guidatv.sky.it/logo/5445topcrimehd_Light_Fit.png?checksum=edd63a3f-b86f-4e86-bc9d-046db071416a?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5445topcrimehd_Light_Fit.png?checksum=edd63a3f-b86f-4e86-bc9d-046db071416a?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Al.Jazeera.Intl..HD.it">
-    <display-name lang="it">Al Jazeera Intl. HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/5113aljazeeraintlhd_Light_Fit.png?checksum=ed7559f4b200ba2a8c6e0e1980db9e1e?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5113aljazeeraintlhd_Light_Fit.png?checksum=ed7559f4b200ba2a8c6e0e1980db9e1e?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="NHK.World.TV.HD.it">
-    <display-name lang="it">NHK World TV HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/5297nhkworldtvhd_Light_Fit.png?checksum=8fee1659-d5d6-438e-b1d5-2500d47d7966?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5297nhkworldtvhd_Light_Fit.png?checksum=8fee1659-d5d6-438e-b1d5-2500d47d7966?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="CNBC.HD.it">
-    <display-name lang="it">CNBC HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/245cnbchd_Light_Fit.png?checksum=69f69b25-6dac-411c-9061-38a6aa95111e?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/245cnbchd_Light_Fit.png?checksum=69f69b25-6dac-411c-9061-38a6aa95111e?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Cinema.Romance.it">
-    <display-name lang="it">Sky Cinema Romance</display-name>
-    <icon src="https://guidatv.sky.it/logo/231skycinemaromance_Light_Fit.png?checksum=29a51632-5782-41fc-9ece-7019fe0112e5?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/231skycinemaromance_Light_Fit.png?checksum=29a51632-5782-41fc-9ece-7019fe0112e5?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="RaiMovie.it">
-    <display-name lang="it">RaiMovie</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="DAZN4.it">
-    <display-name lang="it">DAZN4</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Radio.Italia.TV.HD.it">
-    <display-name lang="it">Radio Italia TV HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/5454radioitaliatvhd_Light_Fit.png?checksum=9cc02777-f1a0-44f1-a432-a1de036be5b7?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5454radioitaliatvhd_Light_Fit.png?checksum=9cc02777-f1a0-44f1-a432-a1de036be5b7?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="DMAX.it">
-    <display-name lang="it">DMAX</display-name>
-    <url>http://www.warnertv.it</url>
-  </channel>
-  <channel id="Radio.105.it">
-    <display-name lang="it">Radio 105</display-name>
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="DeAKids.+1.it">
-    <display-name lang="it">DeAKids +1</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Cinema.Suspense.it">
-    <display-name lang="it">Sky Cinema Suspense</display-name>
-    <icon src="https://guidatv.sky.it/logo/47skycinemasuspense_Light_Fit.png?checksum=9ee51b22-c9fe-49f3-a7d1-2a22e1948a4d?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/47skycinemasuspense_Light_Fit.png?checksum=9ee51b22-c9fe-49f3-a7d1-2a22e1948a4d?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="BBC.World.News.it">
-    <display-name lang="it">BBC World News</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Arte.it">
-    <display-name lang="it">Sky Arte</display-name>
-    <icon src="https://guidatv.sky.it/logo/74skyarte_Light_Fit.png?checksum=e7a7ddb0-6afa-42c8-93d8-b2a4f5c726e1?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/74skyarte_Light_Fit.png?checksum=e7a7ddb0-6afa-42c8-93d8-b2a4f5c726e1?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="History.it">
-    <display-name lang="it">History</display-name>
-    <icon src="https://guidatv.sky.it/logo/513history_Light_Fit.png?checksum=49ccc5de-9b3e-4cad-86f5-0960f921c901?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/513history_Light_Fit.png?checksum=49ccc5de-9b3e-4cad-86f5-0960f921c901?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="RaiScuola.it">
-    <display-name lang="it">RaiScuola</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="Classica.HD.it">
-    <display-name lang="it">Classica HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/170170_Light_Fit.png?checksum=288e38e2-8835-4ef0-bb84-246dbc2cf492?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/170170_Light_Fit.png?checksum=288e38e2-8835-4ef0-bb84-246dbc2cf492?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="RaiNews24.it">
-    <display-name lang="it">RaiNews24</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="LA7.HD.it">
-    <display-name lang="it">LA7 HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/407la7hd_Light_Fit.png?checksum=d9bcc8bf-703c-4d33-823d-5171697fe8a5?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/407la7hd_Light_Fit.png?checksum=d9bcc8bf-703c-4d33-823d-5171697fe8a5?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Gambero.Rosso.HD.it">
-    <display-name lang="it">Gambero Rosso HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/229gamberorossohd_Light_Fit.png?checksum=8a41e8b81f56528923c0997396d75be5?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/229gamberorossohd_Light_Fit.png?checksum=8a41e8b81f56528923c0997396d75be5?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Comedy.+1.it">
-    <display-name lang="it">Comedy +1</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Cinema.Collection.it">
-    <display-name lang="it">Sky Cinema Collection</display-name>
-    <icon src="https://guidatv.sky.it/logo/204skycinemacollection_Light_Fit.png?checksum=722bd48e-0c75-456a-9222-8d26e65bfde9?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/204skycinemacollection_Light_Fit.png?checksum=722bd48e-0c75-456a-9222-8d26e65bfde9?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Class.CNBC.it">
-    <display-name lang="it">Class CNBC</display-name>
-    <icon src="https://guidatv.sky.it/logo/433classcnbc_Light_Fit.png?checksum=5d79825c-e37a-4e81-8e9a-69ea5593279e?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/433classcnbc_Light_Fit.png?checksum=5d79825c-e37a-4e81-8e9a-69ea5593279e?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Fox.News.it">
-    <display-name lang="it">Fox News</display-name>
-    <icon src="https://guidatv.sky.it/logo/103foxnews_Light_Fit.png?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/103foxnews_Light_Fit.png?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Real.Time.it">
-    <display-name lang="it">Real Time</display-name>
-    <url>http://www.warnertv.it</url>
-  </channel>
-  <channel id="Top.Crime.it">
-    <display-name lang="it">Top Crime</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="Rai.5..5023.it">
-    <display-name lang="it">Rai 5  5023</display-name>
-    <icon src="https://guidatv.sky.it/logo/9019rai5_Light_Fit.png?checksum=50ad2f3fa2824c6892a9034b74fdf481?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/9019rai5_Light_Fit.png?checksum=50ad2f3fa2824c6892a9034b74fdf481?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Cinema.Drama.it">
-    <display-name lang="it">Sky Cinema Drama</display-name>
-    <icon src="https://guidatv.sky.it/logo/769skycinemadrama_Light_Fit.png?checksum=2fc851a5-dcfd-4c55-b42e-60e0ea35642c?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/769skycinemadrama_Light_Fit.png?checksum=2fc851a5-dcfd-4c55-b42e-60e0ea35642c?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Fashion.TV.it">
-    <display-name lang="it">Fashion TV</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="LA7D.it">
-    <display-name lang="it">LA7D</display-name>
-    <icon src="https://guidatv.sky.it/logo/9024la7cinema_Light_Fit.png?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/9024la7cinema_Light_Fit.png?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="GF.VIP.-.Regia.1.it">
-    <display-name lang="it">GF VIP - Regia 1</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b7.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b7.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="TV8.HD.it">
-    <display-name lang="it">TV8 HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/260tv8hd_Light_Fit.png?checksum=938addc1e1adaac5be9fdf942d4c7f25?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/260tv8hd_Light_Fit.png?checksum=938addc1e1adaac5be9fdf942d4c7f25?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport.Arena.it">
-    <display-name lang="it">Sky Sport Arena</display-name>
-    <icon src="https://guidatv.sky.it/logo/24skysportarena_Light_Fit.png?checksum=7e3a6085-0021-4fc2-a4ca-ce8059d18ffb?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/24skysportarena_Light_Fit.png?checksum=7e3a6085-0021-4fc2-a4ca-ce8059d18ffb?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Documentaries.it">
-    <display-name lang="it">Sky Documentaries</display-name>
-    <icon src="https://guidatv.sky.it/logo/697skydocumentaries_Light_Fit.png?checksum=53245dbe-0b73-4190-b492-376dc7d53d2d?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/697skydocumentaries_Light_Fit.png?checksum=53245dbe-0b73-4190-b492-376dc7d53d2d?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Iris.it">
-    <display-name lang="it">Iris</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/iris.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/iris.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="DAZN.1.it.it">
-    <display-name lang="it">DAZN 1</display-name>
-    <icon src="https://guidatv.sky.it/logo/566dazn1_Light_Fit.png?checksum=c755def2-ca8b-4941-a87c-345487727272?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/566dazn1_Light_Fit.png?checksum=c755def2-ca8b-4941-a87c-345487727272?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Rai.2.HD..102.it">
-    <display-name lang="it">Rai 2 HD  102</display-name>
-    <icon src="https://guidatv.sky.it/logo/898rai2hd_Light_Fit.png?checksum=625b50f4-7f5c-4479-8166-5d5986760a34?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/898rai2hd_Light_Fit.png?checksum=625b50f4-7f5c-4479-8166-5d5986760a34?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport.Tennis.it">
-    <display-name lang="it">Sky Sport Tennis</display-name>
-    <icon src="https://guidatv.sky.it/logo/559skysporttennis_Light_Fit.png?checksum=94c5f900-a8d2-497c-8fec-a333a9ad879a?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/559skysporttennis_Light_Fit.png?checksum=94c5f900-a8d2-497c-8fec-a333a9ad879a?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Focus.it">
-    <display-name lang="it">Focus</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/focus.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/focus.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="Sky.Sport..254.it">
-    <display-name lang="it">Sky Sport  254</display-name>
-    <icon src="https://guidatv.sky.it/logo/234skysport_Light_Fit.png?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/234skysport_Light_Fit.png?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport.Calcio.it">
-    <display-name lang="it">Sky Sport Calcio</display-name>
-    <icon src="https://guidatv.sky.it/logo/209skysportcalcio_Light_Fit.png?checksum=f6193dc9-1bcd-4609-a0a3-e13d181464d7?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/209skysportcalcio_Light_Fit.png?checksum=f6193dc9-1bcd-4609-a0a3-e13d181464d7?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="San.Marino.RTV.it">
-    <display-name lang="it">San Marino RTV</display-name>
-    <icon src="https://guidatv.sky.it/logo/5407sanmarinortv_Light_Fit.png?checksum=b427cf09-e93d-4aa9-aea3-1f5ce6a5cade?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5407sanmarinortv_Light_Fit.png?checksum=b427cf09-e93d-4aa9-aea3-1f5ce6a5cade?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="QVC.it">
-    <display-name lang="it">QVC</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Eurosport.2.Italia.it">
-    <display-name lang="it">Eurosport 2 Italia</display-name>
-    <url>http://www.guida.tv</url>
-  </channel>
-  <channel id="Rai.Storia..5054.it">
-    <display-name lang="it">Rai Storia  5054</display-name>
-    <icon src="https://guidatv.sky.it/logo/9037raistoria_Light_Fit.png?checksum=50d4cf25b8eb9ee506f245a1a231b02e?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/9037raistoria_Light_Fit.png?checksum=50d4cf25b8eb9ee506f245a1a231b02e?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Rai5.it">
-    <display-name lang="it">Rai5</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="RMC.it">
-    <display-name lang="it">RMC</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/bb.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/bb.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="MTV.HD.it">
-    <display-name lang="it">MTV HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/763mtvhd_Light_Fit.png?checksum=a680f63a-0d64-4670-afb3-8671652356c2?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/763mtvhd_Light_Fit.png?checksum=a680f63a-0d64-4670-afb3-8671652356c2?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="K2.it">
-    <display-name lang="it">K2</display-name>
-    <url>http://www.guida.tv</url>
-  </channel>
-  <channel id="RADIONORBA.TV.it">
-    <display-name lang="it">RADIONORBA TV</display-name>
-    <icon src="https://guidatv.sky.it/logo/5430radionorbatv_Light_Fit.png?checksum=c7f071b6f964bd33edf77eccdffa06b6?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5430radionorbatv_Light_Fit.png?checksum=c7f071b6f964bd33edf77eccdffa06b6?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport..257.it">
-    <display-name lang="it">Sky Sport  257</display-name>
-    <icon src="https://guidatv.sky.it/logo/775skysport_Light_Fit.png?checksum=5cd2e53d-e3b3-4921-9391-de3e72d6fb81?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/775skysport_Light_Fit.png?checksum=5cd2e53d-e3b3-4921-9391-de3e72d6fb81?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="History.+1.it">
-    <display-name lang="it">History +1</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="RAI.Sport...227.it">
-    <display-name lang="it">RAI Sport   227</display-name>
-    <icon src="https://guidatv.sky.it/logo/807raisport_Light_Fit.png?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/807raisport_Light_Fit.png?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Calcio.11..261.it">
-    <display-name lang="it">Sky Calcio 11  261</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Eurosport.Italia.it">
-    <display-name lang="it">Eurosport Italia</display-name>
-    <url>http://www.guida.tv</url>
-  </channel>
-  <channel id="Rai.4..5021.it">
-    <display-name lang="it">Rai 4  5021</display-name>
-    <icon src="https://guidatv.sky.it/logo/9008rai4_Light_Fit.png?checksum=5bc88a8061538ed670efd52b23713714?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/9008rai4_Light_Fit.png?checksum=5bc88a8061538ed670efd52b23713714?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Nickelodeon.+1.it">
-    <display-name lang="it">Nickelodeon +1</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport..259.it">
-    <display-name lang="it">Sky Sport  259</display-name>
-    <icon src="https://guidatv.sky.it/logo/613skysport_Light_Fit.png?checksum=a039404e-e357-4503-b42c-6e459e9e2511?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="CN.Lego.days.it">
-    <display-name lang="it">CN Lego days</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Rai.Gulp..5042.it">
-    <display-name lang="it">Rai Gulp  5042</display-name>
-    <icon src="https://guidatv.sky.it/logo/9038raigulp_Light_Fit.png?checksum=f8c15ab686a53bd2bee7668cf2afcb49?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/9038raigulp_Light_Fit.png?checksum=f8c15ab686a53bd2bee7668cf2afcb49?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Euronews.it">
-    <display-name lang="it">Euronews</display-name>
-    <icon src="https://guidatv.sky.it/logo/801euronews_Light_Fit.png?checksum=277e1027b916e49f4f386e93321cf63c?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/801euronews_Light_Fit.png?checksum=277e1027b916e49f4f386e93321cf63c?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="DeAKids.it">
-    <display-name lang="it">DeAKids</display-name>
-    <icon src="https://guidatv.sky.it/logo/460deakids_Light_Fit.png?checksum=f2a1c5a2-1292-4b7e-b5bc-cfe2f12fc97f?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/460deakids_Light_Fit.png?checksum=f2a1c5a2-1292-4b7e-b5bc-cfe2f12fc97f?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport..251.it">
-    <display-name lang="it">Sky Sport  251</display-name>
-    <icon src="https://guidatv.sky.it/logo/917skysport_Light_Fit.png?checksum=4f061bab-25db-4c9b-8220-e560abc222b5?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/917skysport_Light_Fit.png?checksum=4f061bab-25db-4c9b-8220-e560abc222b5?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Nickelodeon.it">
-    <display-name lang="it">Nickelodeon</display-name>
-    <icon src="https://guidatv.sky.it/logo/320nickelodeon_Light_Fit.png?checksum=b3341710a4c547732edfcd2773b3be9b?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/320nickelodeon_Light_Fit.png?checksum=b3341710a4c547732edfcd2773b3be9b?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport..255.it">
-    <display-name lang="it">Sky Sport  255</display-name>
-    <icon src="https://guidatv.sky.it/logo/910skysport_Light_Fit.png?checksum=1486554b-09f4-4727-921c-4c9b1655b59e?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/910skysport_Light_Fit.png?checksum=1486554b-09f4-4727-921c-4c9b1655b59e?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="HGTV.HD..418.it">
-    <display-name lang="it">HGTV HD  418</display-name>
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/hgtv-image-c6085fc6-e92f-43ba-b533-b540af9ec457.jpg" />
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/hgtv-image-c6085fc6-e92f-43ba-b533-b540af9ec457.jpg" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Cartoonito.it">
-    <display-name lang="it">Cartoonito</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="cielo.it">
-    <display-name lang="it">cielo</display-name>
-    <icon src="https://guidatv.sky.it/logo/120cielo_Light_Fit.png?checksum=0e2ccaf0-752f-44f6-b273-9aad1e4edadf?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/120cielo_Light_Fit.png?checksum=0e2ccaf0-752f-44f6-b273-9aad1e4edadf?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="NOVE.HD..149.it">
-    <display-name lang="it">NOVE HD  149</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Fox.Business.it">
-    <display-name lang="it">Fox Business</display-name>
-    <icon src="https://guidatv.sky.it/logo/544foxbusiness_Light_Fit.png?checksum=a5000f5a853556b4ec8fa81ba8ebc49d?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/544foxbusiness_Light_Fit.png?checksum=a5000f5a853556b4ec8fa81ba8ebc49d?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Canale.5.it">
-    <display-name lang="it">Canale 5</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="Sky.Serie.it">
-    <display-name lang="it">Sky Serie</display-name>
-    <icon src="https://guidatv.sky.it/logo/684skyserie_Light_Fit.png?checksum=9fa612b4-52c6-4a22-9c98-40495a42475b?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/684skyserie_Light_Fit.png?checksum=9fa612b4-52c6-4a22-9c98-40495a42475b?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="RaiPremium.it">
-    <display-name lang="it">RaiPremium</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="Rai.Premium..5025.it">
-    <display-name lang="it">Rai Premium  5025</display-name>
-    <icon src="https://guidatv.sky.it/logo/9020raipremium_Light_Fit.png?checksum=4c57604572943859fa1e63b7151f2f5c?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/9020raipremium_Light_Fit.png?checksum=4c57604572943859fa1e63b7151f2f5c?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="GIALLO.HD..167.it">
-    <display-name lang="it">GIALLO HD  167</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="TG.NORBA.24.it">
-    <display-name lang="it">TG NORBA 24</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Rai4.it">
-    <display-name lang="it">Rai4</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="CACCIA.e.Pesca.it">
-    <display-name lang="it">CACCIA e Pesca</display-name>
-    <icon src="https://guidatv.sky.it/logo/344cacciaepesca_Light_Fit.png?checksum=26abc2dcd1a555b19172485e63873fa0?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/344cacciaepesca_Light_Fit.png?checksum=26abc2dcd1a555b19172485e63873fa0?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport.Legend.it">
-    <display-name lang="it">Sky Sport Legend</display-name>
-    <icon src="https://guidatv.sky.it/logo/578skysportlegend_Light_Fit.png?checksum=4887b8c8-ab51-46c9-890e-2367de4fa38e?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/578skysportlegend_Light_Fit.png?checksum=4887b8c8-ab51-46c9-890e-2367de4fa38e?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Mediaset.Italia.-.America.it">
-    <display-name lang="it">Mediaset Italia - America</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/mw.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/mw.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="Sky.Sport.Uno.it">
-    <display-name lang="it">Sky Sport Uno</display-name>
-    <icon src="https://guidatv.sky.it/logo/23skysportuno_Light_Fit.png?checksum=fc0371cf-624c-4def-ba61-947712639f2e?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/23skysportuno_Light_Fit.png?checksum=fc0371cf-624c-4def-ba61-947712639f2e?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport..256.it">
-    <display-name lang="it">Sky Sport  256</display-name>
-    <icon src="https://guidatv.sky.it/logo/912skysport_Light_Fit.png?checksum=1c38728d-1774-4c93-a75f-622e062b1c29?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/912skysport_Light_Fit.png?checksum=1c38728d-1774-4c93-a75f-622e062b1c29?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport.NBA.it">
-    <display-name lang="it">Sky Sport NBA</display-name>
-    <icon src="https://guidatv.sky.it/logo/764skysportbasket_Light_Fit.png?checksum=a0aa8bed-e8e7-43bf-b4c7-3c31a62954e7?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/764skysportbasket_Light_Fit.png?checksum=a0aa8bed-e8e7-43bf-b4c7-3c31a62954e7?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="DeAJunior.it">
-    <display-name lang="it">DeAJunior</display-name>
-    <icon src="https://guidatv.sky.it/logo/313deajunior_Light_Fit.png?checksum=e4d97f25-ee48-4b68-be28-434bc11b2ca6?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/313deajunior_Light_Fit.png?checksum=e4d97f25-ee48-4b68-be28-434bc11b2ca6?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Cine34.it">
-    <display-name lang="it">Cine34</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b6.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b6.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="Sky.Sport..258.it">
-    <display-name lang="it">Sky Sport  258</display-name>
-    <icon src="https://guidatv.sky.it/logo/772skysport_Light_Fit.png?checksum=51beb5ec-84fe-4bb1-8252-4269885af3c8?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="France.24.English.HD.it">
-    <display-name lang="it">France 24 English HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/5296france24englishhd_Light_Fit.png?checksum=19a1afb854c82083a56fa52df0314262?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5296france24englishhd_Light_Fit.png?checksum=19a1afb854c82083a56fa52df0314262?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="VALUE.24.TV.it">
-    <display-name lang="it">VALUE 24 TV</display-name>
-    <icon src="https://guidatv.sky.it/logo/5524value24tv_Light_Fit.png?checksum=53fa037b-0987-4bb5-9f15-93ccee609aca?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5524value24tv_Light_Fit.png?checksum=53fa037b-0987-4bb5-9f15-93ccee609aca?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Bloomberg.it">
-    <display-name lang="it">Bloomberg</display-name>
-    <icon src="https://guidatv.sky.it/logo/5256bloomberg_Light_Fit.png?checksum=4dac5d207fbd2d8c7ceb88b478de2a58?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5256bloomberg_Light_Fit.png?checksum=4dac5d207fbd2d8c7ceb88b478de2a58?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Italia.2.it">
-    <display-name lang="it">Italia 2</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i2.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i2.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="HGTV.it">
-    <display-name lang="it">HGTV</display-name>
-    <url>http://www.warnertv.it</url>
-  </channel>
-  <channel id="Boing.it">
-    <display-name lang="it">Boing</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/kb.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/kb.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="RaiYoyo.it">
-    <display-name lang="it">RaiYoyo</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="RaiStoria.it">
-    <display-name lang="it">RaiStoria</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="Inter.TV.it">
-    <display-name lang="it">Inter TV</display-name>
-    <icon src="https://guidatv.sky.it/logo/487intertv_Light_Fit.png?checksum=3e72d3b0f67c78debf143812729c442d?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/487intertv_Light_Fit.png?checksum=3e72d3b0f67c78debf143812729c442d?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Atlantic.it">
-    <display-name lang="it">Sky Atlantic</display-name>
-    <icon src="https://guidatv.sky.it/logo/226skyatlantic_Light_Fit.png?checksum=55e0b430-8ac2-482a-80eb-d79e3678ea49?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/226skyatlantic_Light_Fit.png?checksum=55e0b430-8ac2-482a-80eb-d79e3678ea49?tr=n-logo_80" />
     <url>http://www.guidatv.sky.it</url>
   </channel>
   <channel id="Rai.3.HD..103.it">
@@ -753,234 +12,17 @@
     <icon src="https://guidatv.sky.it/logo/897rai3hd_Light_Fit.png?checksum=09ac6562-d139-4eef-a388-9f06e5368b3c?tr=n-logo_80" />
     <url>http://www.guidatv.sky.it</url>
   </channel>
-  <channel id="Sky.Cinema.Due.it">
-    <display-name lang="it">Sky Cinema Due</display-name>
-    <icon src="https://guidatv.sky.it/logo/564skycinemastories_Light_Fit.png?checksum=3da2307e-7577-4ae1-b1d6-ea940bd2317c?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/564skycinemastories_Light_Fit.png?checksum=3da2307e-7577-4ae1-b1d6-ea940bd2317c?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="ACI.Sport.Tv.it">
-    <display-name lang="it">ACI Sport Tv</display-name>
-    <icon src="https://guidatv.sky.it/logo/445sporttv_Light_Fit.png?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/445sporttv_Light_Fit.png?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Giallo.TV.it">
-    <display-name lang="it">Giallo TV</display-name>
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/giallo-image-12834c8c-1d28-4def-ac91-e86d0d3a16b5.png" />
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/giallo-image-12834c8c-1d28-4def-ac91-e86d0d3a16b5.png" />
-    <url>http://www.warnertv.it</url>
-  </channel>
-  <channel id="Deejay.TV.it">
-    <display-name lang="it">Deejay TV</display-name>
-    <icon src="https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Rai1.it">
-    <display-name lang="it">Rai1</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="GF.VIP.-.Un’ora.fa.it">
-    <display-name lang="it">GF VIP - Un’ora fa</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b9.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b9.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="Horse.TV.HD.it">
-    <display-name lang="it">Horse TV HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/5290horsetvhd_Light_Fit.png?checksum=ea332b454a1f1651548d847506cc7b47?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5290horsetvhd_Light_Fit.png?checksum=ea332b454a1f1651548d847506cc7b47?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="France.24.Francais.HD.it">
-    <display-name lang="it">France 24 Francais HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/5119france24francaishd_Light_Fit.png?checksum=4c392aa5ac1031cf85fac4cf4b221a50?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5119france24francaishd_Light_Fit.png?checksum=4c392aa5ac1031cf85fac4cf4b221a50?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport.24.it">
-    <display-name lang="ru">Sky Sport 24</display-name>
-    <icon src="https://iptvx.one/picons/sky-sport24-it.png" />
-    <icon src="https://iptvx.one/picons/sky-sport24-it.png" />
-    <url>http://www.iptvx.one</url>
-  </channel>
-  <channel id="Rai.Yoyo..5043.it">
-    <display-name lang="it">Rai Yoyo  5043</display-name>
-    <icon src="https://guidatv.sky.it/logo/9016raiyoyo_Light_Fit.png?checksum=94bea23198794542bed166fbf6fa2590?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/9016raiyoyo_Light_Fit.png?checksum=94bea23198794542bed166fbf6fa2590?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="R101tv.it">
-    <display-name lang="it">R101tv</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/er.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/er.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="RaiSport.it">
-    <display-name lang="it">RaiSport</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="Rai.News.24..508.it">
-    <display-name lang="it">Rai News 24  508</display-name>
-    <icon src="https://guidatv.sky.it/logo/895rainews24_Light_Fit.png?checksum=86f8436980494b1ff2dfe36d5437e601?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/895rainews24_Light_Fit.png?checksum=86f8436980494b1ff2dfe36d5437e601?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Serie.Maratone.it">
-    <display-name lang="it">Sky Serie Maratone</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="GF.VIP.-.Regia.2.it">
-    <display-name lang="it">GF VIP - Regia 2</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b8.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b8.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="Rai2.it">
-    <display-name lang="it">Rai2</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="Discovery.+1.it">
-    <display-name lang="it">Discovery +1</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Emilia.Romagna.24.it">
-    <display-name lang="it">Emilia Romagna 24</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport.MotoGP.it">
-    <display-name lang="it">Sky Sport MotoGP</display-name>
-    <icon src="https://guidatv.sky.it/logo/483skysportmotogp_Light_Fit.png?checksum=33c38de9-c5a3-4844-a558-6cac9a44b0ef?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/483skysportmotogp_Light_Fit.png?checksum=33c38de9-c5a3-4844-a558-6cac9a44b0ef?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Cinema.Due.+24.it">
-    <display-name lang="it">Sky Cinema Due +24</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Boomerang.+1.it">
-    <display-name lang="it">Boomerang +1</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Super!.it">
-    <display-name lang="it">Super!</display-name>
-    <icon src="https://guidatv.sky.it/logo/421super_Light_Fit.png?checksum=306fe7e2-fe34-43a1-9fd5-5967814574eb?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/421super_Light_Fit.png?checksum=306fe7e2-fe34-43a1-9fd5-5967814574eb?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Radio.Italia.Trend.Tv.HD.it">
-    <display-name lang="it">Radio Italia Trend Tv HD</display-name>
-    <icon src="https://guidatv.sky.it/logo/5438radioitalialive_Light_Fit.png?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5438radioitalialive_Light_Fit.png?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Virgin.Radio.it">
-    <display-name lang="it">Virgin Radio</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ew.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ew.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="Sky.Investigation.+1.HD.it">
-    <display-name lang="it">Sky Investigation +1 HD</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Discovery.Channel.it">
-    <display-name lang="it">Discovery Channel</display-name>
-    <icon src="https://www.tivu.tv/_common/images/loghi_epg/logo_15212.png" />
-    <icon src="https://www.tivu.tv/_common/images/loghi_epg/logo_15212.png" />
-    <url>http://www.tivu.tv</url>
-  </channel>
-  <channel id="Sky.Sport.Max.it">
-    <display-name lang="it">Sky Sport Max</display-name>
-    <icon src="https://guidatv.sky.it/logo/248skysportmax_Light_Fit.png?checksum=3e774f96-84ba-46f0-a7a8-8e21a825028d?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/248skysportmax_Light_Fit.png?checksum=3e774f96-84ba-46f0-a7a8-8e21a825028d?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Motor.Trend.HD..419.it">
-    <display-name lang="it">Motor Trend HD  419</display-name>
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/motortrend-it-image-e06c95eb-15aa-4bc9-a91e-3736ec7d6612.png" />
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/motortrend-it-image-e06c95eb-15aa-4bc9-a91e-3736ec7d6612.png" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Rai3.it">
-    <display-name lang="it">Rai3</display-name>
-    <url>http://www.raiplay.it</url>
-  </channel>
-  <channel id="Mediaset.Italia.-.Australia.e.Asia.it">
-    <display-name lang="it">Mediaset Italia - Australia e Asia</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/mg.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/mg.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="Sky.Cinema.Action.it">
-    <display-name lang="it">Sky Cinema Action</display-name>
-    <icon src="https://guidatv.sky.it/logo/206skycinemaaction_Light_Fit.png?checksum=18c61378-c967-4828-a506-4fbd8cf6bc1c?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/206skycinemaaction_Light_Fit.png?checksum=18c61378-c967-4828-a506-4fbd8cf6bc1c?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport.Golf.it">
-    <display-name lang="it">Sky Sport Golf</display-name>
-    <icon src="https://guidatv.sky.it/logo/768skysportgolf_Light_Fit.png?checksum=ff599287-1197-42d6-928c-9ea48a970118?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/768skysportgolf_Light_Fit.png?checksum=ff599287-1197-42d6-928c-9ea48a970118?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Sport.Mix.it">
-    <display-name lang="it">Sky Sport Mix</display-name>
-    <icon src="https://guidatv.sky.it/logo/579skysportmix_Light_Fit.png?checksum=68d457d4-ae25-40ec-8198-2be42327d82d?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/579skysportmix_Light_Fit.png?checksum=68d457d4-ae25-40ec-8198-2be42327d82d?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Cartoon.Network.it">
-    <display-name lang="it">Cartoon Network</display-name>
-    <icon src="https://guidatv.sky.it/logo/258cartoonnetwork_Light_Fit.png?checksum=1e2be2fd-68f5-4979-8a3f-3eaaf144c2c8?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/258cartoonnetwork_Light_Fit.png?checksum=1e2be2fd-68f5-4979-8a3f-3eaaf144c2c8?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="DAZN5.it">
-    <display-name lang="it">DAZN5</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Sky.Cinema.Uno.+24.it">
-    <display-name lang="it">Sky Cinema Uno +24</display-name>
-    <icon src="https://guidatv.sky.it/logo/224skycinemauno24_Light_Fit.png?checksum=f37575e8-343d-4e8a-b76d-5b65e442cec9?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/224skycinemauno24_Light_Fit.png?checksum=f37575e8-343d-4e8a-b76d-5b65e442cec9?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="Mediaset.Italia.-.Europa.e.Africa.it">
-    <display-name lang="it">Mediaset Italia - Europa e Africa</display-name>
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/my.png" />
-    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/my.png" />
-    <url>http://www.mediasetplay.mediaset.it</url>
-  </channel>
-  <channel id="Motor.Trend.it">
-    <display-name lang="it">Motor Trend</display-name>
-    <url>http://www.warnertv.it</url>
-  </channel>
-  <channel id="Comedy.Central.it">
-    <display-name lang="it">Comedy Central</display-name>
-    <icon src="https://guidatv.sky.it/logo/404comedycentral_Light_Fit.png?checksum=4358511eb68a75a7115053855c57e91b?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/404comedycentral_Light_Fit.png?checksum=4358511eb68a75a7115053855c57e91b?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="CNN.Intl..it">
-    <display-name lang="it">CNN Intl.</display-name>
-    <icon src="https://guidatv.sky.it/logo/211cnnintl_Light_Fit.png?checksum=9b32c1b66584bbd6a1e1ff740832e9b0?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/211cnnintl_Light_Fit.png?checksum=9b32c1b66584bbd6a1e1ff740832e9b0?tr=n-logo_80" />
-    <url>http://www.guidatv.sky.it</url>
+  <channel id="K2.it">
+    <display-name lang="it">K2</display-name>
+    <url>http://www.guida.tv</url>
   </channel>
   <channel id="Sky.Arte.+1.it">
     <display-name lang="it">Sky Arte +1</display-name>
     <url>http://www.guidatv.sky.it</url>
   </channel>
-  <channel id="MTV.Music.it">
-    <display-name lang="it">MTV Music</display-name>
-    <url>http://www.guidatv.sky.it</url>
-  </channel>
-  <channel id="EQUtv.it">
-    <display-name lang="it">EQUtv</display-name>
-    <icon src="https://guidatv.sky.it/logo/5439equtv_Light_Fit.png?checksum=07447ee2-da21-47d7-83f0-0db7793013b2?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/5439equtv_Light_Fit.png?checksum=07447ee2-da21-47d7-83f0-0db7793013b2?tr=n-logo_80" />
+  <channel id="Sky.Sport..259.it">
+    <display-name lang="it">Sky Sport  259</display-name>
+    <icon src="https://guidatv.sky.it/logo/613skysport_Light_Fit.png?checksum=a039404e-e357-4503-b42c-6e459e9e2511?tr=n-logo_80" />
     <url>http://www.guidatv.sky.it</url>
   </channel>
   <channel id="Rete.4.it">
@@ -989,10 +31,386 @@
     <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/r4.png" />
     <url>http://www.mediasetplay.mediaset.it</url>
   </channel>
-  <channel id="Rai.1.HD..101.it">
-    <display-name lang="it">Rai 1 HD  101</display-name>
-    <icon src="https://guidatv.sky.it/logo/899rai1hd_Light_Fit.png?checksum=a6521fec-8ea7-4c06-a333-0bd5a8a9cb44?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/899rai1hd_Light_Fit.png?checksum=a6521fec-8ea7-4c06-a333-0bd5a8a9cb44?tr=n-logo_80" />
+  <channel id="Virgin.Radio.it">
+    <display-name lang="it">Virgin Radio</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ew.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ew.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Sky.Uno.+.it">
+    <display-name lang="it">Sky Uno +</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="DeAJunior.it">
+    <display-name lang="it">DeAJunior</display-name>
+    <icon src="https://guidatv.sky.it/logo/313deajunior_Light_Fit.png?checksum=e4d97f25-ee48-4b68-be28-434bc11b2ca6?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/313deajunior_Light_Fit.png?checksum=e4d97f25-ee48-4b68-be28-434bc11b2ca6?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Calcio.10..260.it">
+    <display-name lang="it">Sky Calcio 10  260</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Rai.Gulp..5042.it">
+    <display-name lang="it">Rai Gulp  5042</display-name>
+    <icon src="https://guidatv.sky.it/logo/9038raigulp_Light_Fit.png?checksum=f8c15ab686a53bd2bee7668cf2afcb49?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/9038raigulp_Light_Fit.png?checksum=f8c15ab686a53bd2bee7668cf2afcb49?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Radio.105.it">
+    <display-name lang="it">Radio 105</display-name>
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Sky.Sport.4K.it">
+    <display-name lang="it">Sky Sport 4K</display-name>
+    <icon src="https://guidatv.sky.it/logo/628skysport4k_Light_Fit.png?checksum=37f0c69c-afda-4481-a242-c60d1aeb3d3f?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/628skysport4k_Light_Fit.png?checksum=37f0c69c-afda-4481-a242-c60d1aeb3d3f?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Rai.Yoyo..5043.it">
+    <display-name lang="it">Rai Yoyo  5043</display-name>
+    <icon src="https://guidatv.sky.it/logo/9016raiyoyo_Light_Fit.png?checksum=94bea23198794542bed166fbf6fa2590?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/9016raiyoyo_Light_Fit.png?checksum=94bea23198794542bed166fbf6fa2590?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="HGTV.it">
+    <display-name lang="it">HGTV</display-name>
+    <url>http://www.warnertv.it</url>
+  </channel>
+  <channel id="Sky.Sport.F1.it">
+    <display-name lang="it">Sky Sport F1</display-name>
+    <icon src="https://guidatv.sky.it/logo/478skysportf1_Light_Fit.png?checksum=745d5eea-e5ec-41d8-b7d1-3d053bb3aae0?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/478skysportf1_Light_Fit.png?checksum=745d5eea-e5ec-41d8-b7d1-3d053bb3aae0?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Cinema.Drama.it">
+    <display-name lang="it">Sky Cinema Drama</display-name>
+    <icon src="https://guidatv.sky.it/logo/769skycinemadrama_Light_Fit.png?checksum=2fc851a5-dcfd-4c55-b42e-60e0ea35642c?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/769skycinemadrama_Light_Fit.png?checksum=2fc851a5-dcfd-4c55-b42e-60e0ea35642c?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="DAZN4.it">
+    <display-name lang="it">DAZN4</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="CNBC.HD.it">
+    <display-name lang="it">CNBC HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/245cnbchd_Light_Fit.png?checksum=69f69b25-6dac-411c-9061-38a6aa95111e?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/245cnbchd_Light_Fit.png?checksum=69f69b25-6dac-411c-9061-38a6aa95111e?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Canale.5.it">
+    <display-name lang="it">Canale 5</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/c5.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Emilia.Romagna.24.it">
+    <display-name lang="it">Emilia Romagna 24</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="RaiRadio2.it">
+    <display-name lang="it">RaiRadio2</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Sky.Sport.Max.it">
+    <display-name lang="it">Sky Sport Max</display-name>
+    <icon src="https://guidatv.sky.it/logo/248skysportmax_Light_Fit.png?checksum=3e774f96-84ba-46f0-a7a8-8e21a825028d?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/248skysportmax_Light_Fit.png?checksum=3e774f96-84ba-46f0-a7a8-8e21a825028d?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Horse.TV.HD.it">
+    <display-name lang="it">Horse TV HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/5290horsetvhd_Light_Fit.png?checksum=ea332b454a1f1651548d847506cc7b47?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5290horsetvhd_Light_Fit.png?checksum=ea332b454a1f1651548d847506cc7b47?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="DeAKids.+1.it">
+    <display-name lang="it">DeAKids +1</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Rai.Movie..5024.it">
+    <display-name lang="it">Rai Movie  5024</display-name>
+    <icon src="https://guidatv.sky.it/logo/9018raimovie_Light_Fit.png?checksum=92238f13a601f8cf0aa1d45e85117ae3?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/9018raimovie_Light_Fit.png?checksum=92238f13a601f8cf0aa1d45e85117ae3?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Motor.Trend.HD..419.it">
+    <display-name lang="it">Motor Trend HD  419</display-name>
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/motortrend-it-image-e06c95eb-15aa-4bc9-a91e-3736ec7d6612.png" />
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/motortrend-it-image-e06c95eb-15aa-4bc9-a91e-3736ec7d6612.png" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Cartoon.Network.it">
+    <display-name lang="it">Cartoon Network</display-name>
+    <icon src="https://guidatv.sky.it/logo/258cartoonnetwork_Light_Fit.png?checksum=1e2be2fd-68f5-4979-8a3f-3eaaf144c2c8?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/258cartoonnetwork_Light_Fit.png?checksum=1e2be2fd-68f5-4979-8a3f-3eaaf144c2c8?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Arte.it">
+    <display-name lang="it">Sky Arte</display-name>
+    <icon src="https://guidatv.sky.it/logo/74skyarte_Light_Fit.png?checksum=e7a7ddb0-6afa-42c8-93d8-b2a4f5c726e1?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/74skyarte_Light_Fit.png?checksum=e7a7ddb0-6afa-42c8-93d8-b2a4f5c726e1?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport..258.it">
+    <display-name lang="it">Sky Sport  258</display-name>
+    <icon src="https://guidatv.sky.it/logo/772skysport_Light_Fit.png?checksum=51beb5ec-84fe-4bb1-8252-4269885af3c8?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport.Arena.it">
+    <display-name lang="it">Sky Sport Arena</display-name>
+    <icon src="https://guidatv.sky.it/logo/24skysportarena_Light_Fit.png?checksum=7e3a6085-0021-4fc2-a4ca-ce8059d18ffb?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/24skysportarena_Light_Fit.png?checksum=7e3a6085-0021-4fc2-a4ca-ce8059d18ffb?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="TG.NORBA.24.it">
+    <display-name lang="it">TG NORBA 24</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport..256.it">
+    <display-name lang="it">Sky Sport  256</display-name>
+    <icon src="https://guidatv.sky.it/logo/912skysport_Light_Fit.png?checksum=1c38728d-1774-4c93-a75f-622e062b1c29?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/912skysport_Light_Fit.png?checksum=1c38728d-1774-4c93-a75f-622e062b1c29?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Deejay.TV.it">
+    <display-name lang="it">Deejay TV</display-name>
+    <icon src="https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="CACCIA.e.Pesca.it">
+    <display-name lang="it">CACCIA e Pesca</display-name>
+    <icon src="https://guidatv.sky.it/logo/344cacciaepesca_Light_Fit.png?checksum=26abc2dcd1a555b19172485e63873fa0?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/344cacciaepesca_Light_Fit.png?checksum=26abc2dcd1a555b19172485e63873fa0?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="RaiGulp.it">
+    <display-name lang="it">RaiGulp</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Sky.Uno.+..it">
+    <display-name lang="it">Sky Uno + </display-name>
+    <url>http://www.superguidatv.it</url>
+  </channel>
+  <channel id="TV8.HD.it">
+    <display-name lang="it">TV8 HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/260tv8hd_Light_Fit.png?checksum=938addc1e1adaac5be9fdf942d4c7f25?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/260tv8hd_Light_Fit.png?checksum=938addc1e1adaac5be9fdf942d4c7f25?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Meteo24.it">
+    <display-name lang="it">Sky Meteo24</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="DMAX.HD..170.it">
+    <display-name lang="it">DMAX HD  170</display-name>
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/dmax-image-6caff319-410d-4a8d-b4d1-4eef4d34ee6a.png" />
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/dmax-image-6caff319-410d-4a8d-b4d1-4eef4d34ee6a.png" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Bloomberg.it">
+    <display-name lang="it">Bloomberg</display-name>
+    <icon src="https://guidatv.sky.it/logo/5256bloomberg_Light_Fit.png?checksum=4dac5d207fbd2d8c7ceb88b478de2a58?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5256bloomberg_Light_Fit.png?checksum=4dac5d207fbd2d8c7ceb88b478de2a58?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="LA7.HD.it">
+    <display-name lang="it">LA7 HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/407la7hd_Light_Fit.png?checksum=d9bcc8bf-703c-4d33-823d-5171697fe8a5?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/407la7hd_Light_Fit.png?checksum=d9bcc8bf-703c-4d33-823d-5171697fe8a5?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Food.Network.it">
+    <display-name lang="it">Food Network</display-name>
+    <url>http://www.warnertv.it</url>
+  </channel>
+  <channel id="Warner.TV.it">
+    <display-name lang="it">Warner TV</display-name>
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/warnertvit-image-ad904cbb-b41c-477e-8302-1eec6933bf6a.png" />
+    <url>http://www.warnertv.it</url>
+  </channel>
+  <channel id="Eurosport.2.Italia.it">
+    <display-name lang="it">Eurosport 2 Italia</display-name>
+    <url>http://www.guida.tv</url>
+  </channel>
+  <channel id="Cine34.it">
+    <display-name lang="it">Cine34</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b6.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b6.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Sky.Atlantic.Maratone.it">
+    <display-name lang="it">Sky Atlantic Maratone</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Rai.Storia..5054.it">
+    <display-name lang="it">Rai Storia  5054</display-name>
+    <icon src="https://guidatv.sky.it/logo/9037raistoria_Light_Fit.png?checksum=50d4cf25b8eb9ee506f245a1a231b02e?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/9037raistoria_Light_Fit.png?checksum=50d4cf25b8eb9ee506f245a1a231b02e?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="TG24PrimoPiano.it">
+    <display-name lang="it">TG24PrimoPiano</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Euronews.it">
+    <display-name lang="it">Euronews</display-name>
+    <icon src="https://guidatv.sky.it/logo/801euronews_Light_Fit.png?checksum=277e1027b916e49f4f386e93321cf63c?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/801euronews_Light_Fit.png?checksum=277e1027b916e49f4f386e93321cf63c?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Eurosport.Italia.it">
+    <display-name lang="it">Eurosport Italia</display-name>
+    <url>http://www.guida.tv</url>
+  </channel>
+  <channel id="Rai3.it">
+    <display-name lang="it">Rai3</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Boomerang.it">
+    <display-name lang="it">Boomerang</display-name>
+    <icon src="https://guidatv.sky.it/logo/367boomerang_Light_Fit.png?checksum=0671910302f4ecae3e6359bf65b54dfe?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/367boomerang_Light_Fit.png?checksum=0671910302f4ecae3e6359bf65b54dfe?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.TG24.it">
+    <display-name lang="it">Sky TG24</display-name>
+    <icon src="https://guidatv.sky.it/logo/521skytg24_Light_Fit.png?checksum=da35dbfe-8079-4ba1-adcb-fa9e2cfe3392?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/521skytg24_Light_Fit.png?checksum=da35dbfe-8079-4ba1-adcb-fa9e2cfe3392?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="BIKE.it">
+    <display-name lang="it">BIKE</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="DMAX.it">
+    <display-name lang="it">DMAX</display-name>
+    <url>http://www.warnertv.it</url>
+  </channel>
+  <channel id="Discovery.Channel.it">
+    <display-name lang="it">Discovery Channel</display-name>
+    <icon src="https://www.tivu.tv/_common/images/loghi_epg/logo_15212.png" />
+    <icon src="https://www.tivu.tv/_common/images/loghi_epg/logo_15212.png" />
+    <url>http://www.tivu.tv</url>
+  </channel>
+  <channel id="RTL.102.5.HD.it">
+    <display-name lang="it">RTL 102.5 HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/812rtl1025hd_Light_Fit.png?checksum=abbc96b26d53d6eadc8fc7d148e7c3d7?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/812rtl1025hd_Light_Fit.png?checksum=abbc96b26d53d6eadc8fc7d148e7c3d7?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Italia.1.it">
+    <display-name lang="it">Italia 1</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i1.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i1.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Giallo.TV.it">
+    <display-name lang="it">Giallo TV</display-name>
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/giallo-image-12834c8c-1d28-4def-ac91-e86d0d3a16b5.png" />
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/giallo-image-12834c8c-1d28-4def-ac91-e86d0d3a16b5.png" />
+    <url>http://www.warnertv.it</url>
+  </channel>
+  <channel id="Sky.Cinema.Due.+24.it">
+    <display-name lang="it">Sky Cinema Due +24</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Radio.Italia.TV.HD.it">
+    <display-name lang="it">Radio Italia TV HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/5454radioitaliatvhd_Light_Fit.png?checksum=9cc02777-f1a0-44f1-a432-a1de036be5b7?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5454radioitaliatvhd_Light_Fit.png?checksum=9cc02777-f1a0-44f1-a432-a1de036be5b7?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Cinema.Uno.+24.it">
+    <display-name lang="it">Sky Cinema Uno +24</display-name>
+    <icon src="https://guidatv.sky.it/logo/224skycinemauno24_Light_Fit.png?checksum=f37575e8-343d-4e8a-b76d-5b65e442cec9?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/224skycinemauno24_Light_Fit.png?checksum=f37575e8-343d-4e8a-b76d-5b65e442cec9?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="QVC.it">
+    <display-name lang="it">QVC</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Serie.it">
+    <display-name lang="it">Sky Serie</display-name>
+    <icon src="https://guidatv.sky.it/logo/684skyserie_Light_Fit.png?checksum=9fa612b4-52c6-4a22-9c98-40495a42475b?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/684skyserie_Light_Fit.png?checksum=9fa612b4-52c6-4a22-9c98-40495a42475b?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="CNN.Intl..it">
+    <display-name lang="it">CNN Intl.</display-name>
+    <icon src="https://guidatv.sky.it/logo/211cnnintl_Light_Fit.png?checksum=9b32c1b66584bbd6a1e1ff740832e9b0?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/211cnnintl_Light_Fit.png?checksum=9b32c1b66584bbd6a1e1ff740832e9b0?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Nick.Jr..+1.it">
+    <display-name lang="it">Nick Jr. +1</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Classica.HD.it">
+    <display-name lang="it">Classica HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/170170_Light_Fit.png?checksum=288e38e2-8835-4ef0-bb84-246dbc2cf492?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/170170_Light_Fit.png?checksum=288e38e2-8835-4ef0-bb84-246dbc2cf492?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Iris.it">
+    <display-name lang="it">Iris</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/iris.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/iris.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Sky.Sport.24.it">
+    <display-name lang="ru">Sky Sport 24</display-name>
+    <icon src="https://iptvx.one/picons/sky-sport24-it.png" />
+    <icon src="https://iptvx.one/picons/sky-sport24-it.png" />
+    <url>http://www.iptvx.one</url>
+  </channel>
+  <channel id="Gambero.Rosso.HD.it">
+    <display-name lang="it">Gambero Rosso HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/229gamberorossohd_Light_Fit.png?checksum=8a41e8b81f56528923c0997396d75be5?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/229gamberorossohd_Light_Fit.png?checksum=8a41e8b81f56528923c0997396d75be5?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="RaiScuola.it">
+    <display-name lang="it">RaiScuola</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Solocalcio.it.it">
+    <display-name lang="it">Solocalcio</display-name>
+    <icon src="https://www.tivu.tv/_common/images/loghi_epg/logo_4996.png" />
+    <icon src="https://www.tivu.tv/_common/images/loghi_epg/logo_4996.png" />
+    <url>http://www.tivu.tv</url>
+  </channel>
+  <channel id="Sky.Crime.it">
+    <display-name lang="it">Sky Crime</display-name>
+    <icon src="https://guidatv.sky.it/logo/249skycrime_Light_Fit.png?checksum=7d65e0c6-d90b-42d1-a014-46ba4d06b16b?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/249skycrime_Light_Fit.png?checksum=7d65e0c6-d90b-42d1-a014-46ba4d06b16b?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Boing.it">
+    <display-name lang="it">Boing</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/kb.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/kb.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="ACI.Sport.Tv.it">
+    <display-name lang="it">ACI Sport Tv</display-name>
+    <icon src="https://guidatv.sky.it/logo/445sporttv_Light_Fit.png?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/445sporttv_Light_Fit.png?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="DAZN.2.it.it">
+    <display-name lang="it">DAZN 2</display-name>
+    <icon src="https://guidatv.sky.it/logo/535dazn2_Light_Fit.png?checksum=af9c8e0f-77ec-4da7-913c-af23e2519823?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/535dazn2_Light_Fit.png?checksum=af9c8e0f-77ec-4da7-913c-af23e2519823?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport..254.it">
+    <display-name lang="it">Sky Sport  254</display-name>
+    <icon src="https://guidatv.sky.it/logo/234skysport_Light_Fit.png?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/234skysport_Light_Fit.png?tr=n-logo_80" />
     <url>http://www.guidatv.sky.it</url>
   </channel>
   <channel id="LA7.CINEMA.it">
@@ -1001,14 +419,518 @@
     <icon src="https://guidatv.sky.it/logo/9024la7cinema_Light_Fit.png?tr=n-logo_80" />
     <url>http://www.guidatv.sky.it</url>
   </channel>
+  <channel id="Rai.5..5023.it">
+    <display-name lang="it">Rai 5  5023</display-name>
+    <icon src="https://guidatv.sky.it/logo/9019rai5_Light_Fit.png?checksum=50ad2f3fa2824c6892a9034b74fdf481?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/9019rai5_Light_Fit.png?checksum=50ad2f3fa2824c6892a9034b74fdf481?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Super!.it">
+    <display-name lang="it">Super!</display-name>
+    <icon src="https://guidatv.sky.it/logo/421super_Light_Fit.png?checksum=306fe7e2-fe34-43a1-9fd5-5967814574eb?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/421super_Light_Fit.png?checksum=306fe7e2-fe34-43a1-9fd5-5967814574eb?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Comedy.+1.it">
+    <display-name lang="it">Comedy +1</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport..252.it">
+    <display-name lang="it">Sky Sport  252</display-name>
+    <icon src="https://guidatv.sky.it/logo/951skysport_Light_Fit.png?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/951skysport_Light_Fit.png?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Caccia.e.PESCA.it">
+    <display-name lang="it">Caccia e PESCA</display-name>
+    <icon src="https://guidatv.sky.it/logo/350cacciaepesca_Light_Fit.png?checksum=2c27f7a1c4dbecd7801362884f16078d?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/350cacciaepesca_Light_Fit.png?checksum=2c27f7a1c4dbecd7801362884f16078d?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Investigation.it">
+    <display-name lang="it">Sky Investigation</display-name>
+    <icon src="https://guidatv.sky.it/logo/686skyinvestigation_Light_Fit.png?checksum=224897bb-44bb-41a3-9691-e19eacc670f0?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/686skyinvestigation_Light_Fit.png?checksum=224897bb-44bb-41a3-9691-e19eacc670f0?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="LA7D.it">
+    <display-name lang="it">LA7D</display-name>
+    <icon src="https://guidatv.sky.it/logo/9024la7cinema_Light_Fit.png?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/9024la7cinema_Light_Fit.png?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="NOVE.HD..149.it">
+    <display-name lang="it">NOVE HD  149</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport.NBA.it">
+    <display-name lang="it">Sky Sport NBA</display-name>
+    <icon src="https://guidatv.sky.it/logo/764skysportbasket_Light_Fit.png?checksum=a0aa8bed-e8e7-43bf-b4c7-3c31a62954e7?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/764skysportbasket_Light_Fit.png?checksum=a0aa8bed-e8e7-43bf-b4c7-3c31a62954e7?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport..257.it">
+    <display-name lang="it">Sky Sport  257</display-name>
+    <icon src="https://guidatv.sky.it/logo/775skysport_Light_Fit.png?checksum=5cd2e53d-e3b3-4921-9391-de3e72d6fb81?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/775skysport_Light_Fit.png?checksum=5cd2e53d-e3b3-4921-9391-de3e72d6fb81?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Cinema.Romance.it">
+    <display-name lang="it">Sky Cinema Romance</display-name>
+    <icon src="https://guidatv.sky.it/logo/231skycinemaromance_Light_Fit.png?checksum=29a51632-5782-41fc-9ece-7019fe0112e5?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/231skycinemaromance_Light_Fit.png?checksum=29a51632-5782-41fc-9ece-7019fe0112e5?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Comedy.Central.it">
+    <display-name lang="it">Comedy Central</display-name>
+    <icon src="https://guidatv.sky.it/logo/404comedycentral_Light_Fit.png?checksum=4358511eb68a75a7115053855c57e91b?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/404comedycentral_Light_Fit.png?checksum=4358511eb68a75a7115053855c57e91b?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport..255.it">
+    <display-name lang="it">Sky Sport  255</display-name>
+    <icon src="https://guidatv.sky.it/logo/910skysport_Light_Fit.png?checksum=1486554b-09f4-4727-921c-4c9b1655b59e?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/910skysport_Light_Fit.png?checksum=1486554b-09f4-4727-921c-4c9b1655b59e?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="R101tv.it">
+    <display-name lang="it">R101tv</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/er.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/er.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="RaiPremium.it">
+    <display-name lang="it">RaiPremium</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="SuperTennis.HD.it">
+    <display-name lang="it">SuperTennis HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/5246supertennishd_Light_Fit.png?checksum=13f5cbb1646d848fde3af6fccba8dd4c?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5246supertennishd_Light_Fit.png?checksum=13f5cbb1646d848fde3af6fccba8dd4c?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Inter.TV.it">
+    <display-name lang="it">Inter TV</display-name>
+    <icon src="https://guidatv.sky.it/logo/487intertv_Light_Fit.png?checksum=3e72d3b0f67c78debf143812729c442d?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/487intertv_Light_Fit.png?checksum=3e72d3b0f67c78debf143812729c442d?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Investigation.+1.HD.it">
+    <display-name lang="it">Sky Investigation +1 HD</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
   <channel id="Sky.Cinema.Comedy.it">
     <display-name lang="it">Sky Cinema Comedy</display-name>
     <icon src="https://guidatv.sky.it/logo/30skycinemacomedy_Light_Fit.png?checksum=a34e113d-5437-4753-b036-5969ea84dfe0?tr=n-logo_80" />
     <icon src="https://guidatv.sky.it/logo/30skycinemacomedy_Light_Fit.png?checksum=a34e113d-5437-4753-b036-5969ea84dfe0?tr=n-logo_80" />
     <url>http://www.guidatv.sky.it</url>
   </channel>
-  <channel id="TG24PrimoPiano.it">
-    <display-name lang="it">TG24PrimoPiano</display-name>
+  <channel id="EQUtv.it">
+    <display-name lang="it">EQUtv</display-name>
+    <icon src="https://guidatv.sky.it/logo/5439equtv_Light_Fit.png?checksum=07447ee2-da21-47d7-83f0-0db7793013b2?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5439equtv_Light_Fit.png?checksum=07447ee2-da21-47d7-83f0-0db7793013b2?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Italia.2.it">
+    <display-name lang="it">Italia 2</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i2.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i2.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Sky.Documentaries.it">
+    <display-name lang="it">Sky Documentaries</display-name>
+    <icon src="https://guidatv.sky.it/logo/697skydocumentaries_Light_Fit.png?checksum=53245dbe-0b73-4190-b492-376dc7d53d2d?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/697skydocumentaries_Light_Fit.png?checksum=53245dbe-0b73-4190-b492-376dc7d53d2d?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Cinema.Collection.it">
+    <display-name lang="it">Sky Cinema Collection</display-name>
+    <icon src="https://guidatv.sky.it/logo/204skycinemacollection_Light_Fit.png?checksum=722bd48e-0c75-456a-9222-8d26e65bfde9?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/204skycinemacollection_Light_Fit.png?checksum=722bd48e-0c75-456a-9222-8d26e65bfde9?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Nove.it">
+    <display-name lang="it">Nove</display-name>
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/nove-image-cd3bbd59-377e-479d-8abf-49b82f21f527.jpg" />
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/nove-image-cd3bbd59-377e-479d-8abf-49b82f21f527.jpg" />
+    <url>http://www.warnertv.it</url>
+  </channel>
+  <channel id="Sky.Nature.it">
+    <display-name lang="it">Sky Nature</display-name>
+    <icon src="https://guidatv.sky.it/logo/695skynature_Light_Fit.png?checksum=6a2c90be-bac2-4622-af95-39ec6b75e3b4?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/695skynature_Light_Fit.png?checksum=6a2c90be-bac2-4622-af95-39ec6b75e3b4?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="BBC.World.News.it">
+    <display-name lang="it">BBC World News</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Nick.Jr.it">
+    <display-name lang="it">Nick Jr</display-name>
+    <icon src="https://guidatv.sky.it/logo/424nickjr_Light_Fit.png?checksum=888d7b93d39b68714e414336cdb7ebd5?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/424nickjr_Light_Fit.png?checksum=888d7b93d39b68714e414336cdb7ebd5?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Atlantic.it">
+    <display-name lang="it">Sky Atlantic</display-name>
+    <icon src="https://guidatv.sky.it/logo/226skyatlantic_Light_Fit.png?checksum=55e0b430-8ac2-482a-80eb-d79e3678ea49?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/226skyatlantic_Light_Fit.png?checksum=55e0b430-8ac2-482a-80eb-d79e3678ea49?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport.Legend.it">
+    <display-name lang="it">Sky Sport Legend</display-name>
+    <icon src="https://guidatv.sky.it/logo/578skysportlegend_Light_Fit.png?checksum=4887b8c8-ab51-46c9-890e-2367de4fa38e?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/578skysportlegend_Light_Fit.png?checksum=4887b8c8-ab51-46c9-890e-2367de4fa38e?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="History.it">
+    <display-name lang="it">History</display-name>
+    <icon src="https://guidatv.sky.it/logo/513history_Light_Fit.png?checksum=49ccc5de-9b3e-4cad-86f5-0960f921c901?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/513history_Light_Fit.png?checksum=49ccc5de-9b3e-4cad-86f5-0960f921c901?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="TRM.h24.it">
+    <display-name lang="it">TRM h24</display-name>
+    <icon src="https://guidatv.sky.it/logo/5421trmh24_Light_Fit.png?checksum=550c404365a3b09ee9d2cb21d22ab992?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5421trmh24_Light_Fit.png?checksum=550c404365a3b09ee9d2cb21d22ab992?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Frisbee.it">
+    <display-name lang="it">Frisbee</display-name>
+    <url>http://www.guida.tv</url>
+  </channel>
+  <channel id="France.24.Francais.HD.it">
+    <display-name lang="it">France 24 Francais HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/5119france24francaishd_Light_Fit.png?checksum=4c392aa5ac1031cf85fac4cf4b221a50?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5119france24francaishd_Light_Fit.png?checksum=4c392aa5ac1031cf85fac4cf4b221a50?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport.Calcio.it">
+    <display-name lang="it">Sky Sport Calcio</display-name>
+    <icon src="https://guidatv.sky.it/logo/209skysportcalcio_Light_Fit.png?checksum=f6193dc9-1bcd-4609-a0a3-e13d181464d7?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/209skysportcalcio_Light_Fit.png?checksum=f6193dc9-1bcd-4609-a0a3-e13d181464d7?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="CN.Lego.days.it">
+    <display-name lang="it">CN Lego days</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="DeAKids.it">
+    <display-name lang="it">DeAKids</display-name>
+    <icon src="https://guidatv.sky.it/logo/460deakids_Light_Fit.png?checksum=f2a1c5a2-1292-4b7e-b5bc-cfe2f12fc97f?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/460deakids_Light_Fit.png?checksum=f2a1c5a2-1292-4b7e-b5bc-cfe2f12fc97f?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="27.Twentyseven.it">
+    <display-name lang="it">27 Twentyseven</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ts.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/ts.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Sky.Documentaries.+1.it">
+    <display-name lang="it">Sky Documentaries +1</display-name>
+    <icon src="https://guidatv.sky.it/logo/928skydocumentaries1hd_Light_Fit.png?checksum=0d9c1b59-6e0f-4cea-9985-fb9ffc00a6fe?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/928skydocumentaries1hd_Light_Fit.png?checksum=0d9c1b59-6e0f-4cea-9985-fb9ffc00a6fe?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Cinema.Uno.it">
+    <display-name lang="it">Sky Cinema Uno</display-name>
+    <icon src="https://guidatv.sky.it/logo/202skycinemauno_Light_Fit.png?checksum=2945a0fc-4fd0-4f78-891d-b4b6e23e4ecf?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/202skycinemauno_Light_Fit.png?checksum=2945a0fc-4fd0-4f78-891d-b4b6e23e4ecf?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="RADIOFRECCIA.HD.it">
+    <display-name lang="it">RADIOFRECCIA HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/5465radiofrecciahd_Light_Fit.png?checksum=a2e0135c4b8958cb151b619397abb6a0?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5465radiofrecciahd_Light_Fit.png?checksum=a2e0135c4b8958cb151b619397abb6a0?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Nickelodeon.+1.it">
+    <display-name lang="it">Nickelodeon +1</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Radio.Italia.Trend.Tv.HD.it">
+    <display-name lang="it">Radio Italia Trend Tv HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/5438radioitalialive_Light_Fit.png?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5438radioitalialive_Light_Fit.png?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="France.24.English.HD.it">
+    <display-name lang="it">France 24 English HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/5296france24englishhd_Light_Fit.png?checksum=19a1afb854c82083a56fa52df0314262?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5296france24englishhd_Light_Fit.png?checksum=19a1afb854c82083a56fa52df0314262?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="RaiYoyo.it">
+    <display-name lang="it">RaiYoyo</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Sky.Cinema.Due.it">
+    <display-name lang="it">Sky Cinema Due</display-name>
+    <icon src="https://guidatv.sky.it/logo/564skycinemastories_Light_Fit.png?checksum=3da2307e-7577-4ae1-b1d6-ea940bd2317c?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/564skycinemastories_Light_Fit.png?checksum=3da2307e-7577-4ae1-b1d6-ea940bd2317c?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Adventure.it">
+    <display-name lang="it">Sky Adventure</display-name>
+    <icon src="https://guidatv.sky.it/logo/962skyadventure_Light_Fit.png?checksum=7454eb33-b386-4e89-8872-8c32b2fbbc3f?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/962skyadventure_Light_Fit.png?checksum=7454eb33-b386-4e89-8872-8c32b2fbbc3f?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="TOPcrime.HD..168.it">
+    <display-name lang="it">TOPcrime HD  168</display-name>
+    <icon src="https://guidatv.sky.it/logo/5445topcrimehd_Light_Fit.png?checksum=edd63a3f-b86f-4e86-bc9d-046db071416a?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5445topcrimehd_Light_Fit.png?checksum=edd63a3f-b86f-4e86-bc9d-046db071416a?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Mediaset.Italia.-.America.it">
+    <display-name lang="it">Mediaset Italia - America</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/mw.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/mw.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="RaiSport.it">
+    <display-name lang="it">RaiSport</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="MTV.Music.it">
+    <display-name lang="it">MTV Music</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Rai.1.HD..101.it">
+    <display-name lang="it">Rai 1 HD  101</display-name>
+    <icon src="https://guidatv.sky.it/logo/899rai1hd_Light_Fit.png?checksum=a6521fec-8ea7-4c06-a333-0bd5a8a9cb44?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/899rai1hd_Light_Fit.png?checksum=a6521fec-8ea7-4c06-a333-0bd5a8a9cb44?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport.Uno.it">
+    <display-name lang="it">Sky Sport Uno</display-name>
+    <icon src="https://guidatv.sky.it/logo/23skysportuno_Light_Fit.png?checksum=fc0371cf-624c-4def-ba61-947712639f2e?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/23skysportuno_Light_Fit.png?checksum=fc0371cf-624c-4def-ba61-947712639f2e?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Fashion.TV.it">
+    <display-name lang="it">Fashion TV</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Al.Jazeera.Intl..HD.it">
+    <display-name lang="it">Al Jazeera Intl. HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/5113aljazeeraintlhd_Light_Fit.png?checksum=ed7559f4b200ba2a8c6e0e1980db9e1e?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5113aljazeeraintlhd_Light_Fit.png?checksum=ed7559f4b200ba2a8c6e0e1980db9e1e?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="cielo.it">
+    <display-name lang="it">cielo</display-name>
+    <icon src="https://guidatv.sky.it/logo/120cielo_Light_Fit.png?checksum=0e2ccaf0-752f-44f6-b273-9aad1e4edadf?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/120cielo_Light_Fit.png?checksum=0e2ccaf0-752f-44f6-b273-9aad1e4edadf?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Real.Time.it">
+    <display-name lang="it">Real Time</display-name>
+    <url>http://www.warnertv.it</url>
+  </channel>
+  <channel id="NHK.World.TV.HD.it">
+    <display-name lang="it">NHK World TV HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/5297nhkworldtvhd_Light_Fit.png?checksum=8fee1659-d5d6-438e-b1d5-2500d47d7966?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5297nhkworldtvhd_Light_Fit.png?checksum=8fee1659-d5d6-438e-b1d5-2500d47d7966?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="GF.VIP.-.Un’ora.fa.it">
+    <display-name lang="it">GF VIP - Un’ora fa</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b9.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b9.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="HGTV.HD..418.it">
+    <display-name lang="it">HGTV HD  418</display-name>
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/hgtv-image-c6085fc6-e92f-43ba-b533-b540af9ec457.jpg" />
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/hgtv-image-c6085fc6-e92f-43ba-b533-b540af9ec457.jpg" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="La.5.it">
+    <display-name lang="it">La 5</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la5.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la5.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Fox.News.it">
+    <display-name lang="it">Fox News</display-name>
+    <icon src="https://guidatv.sky.it/logo/103foxnews_Light_Fit.png?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/103foxnews_Light_Fit.png?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Class.CNBC.it">
+    <display-name lang="it">Class CNBC</display-name>
+    <icon src="https://guidatv.sky.it/logo/433classcnbc_Light_Fit.png?checksum=5d79825c-e37a-4e81-8e9a-69ea5593279e?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/433classcnbc_Light_Fit.png?checksum=5d79825c-e37a-4e81-8e9a-69ea5593279e?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Cinema.Action.it">
+    <display-name lang="it">Sky Cinema Action</display-name>
+    <icon src="https://guidatv.sky.it/logo/206skycinemaaction_Light_Fit.png?checksum=18c61378-c967-4828-a506-4fbd8cf6bc1c?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/206skycinemaaction_Light_Fit.png?checksum=18c61378-c967-4828-a506-4fbd8cf6bc1c?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Rai1.it">
+    <display-name lang="it">Rai1</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Mediaset.Italia.-.Europa.e.Africa.it">
+    <display-name lang="it">Mediaset Italia - Europa e Africa</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/my.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/my.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Rai5.it">
+    <display-name lang="it">Rai5</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="GF.VIP.-.Regia.2.it">
+    <display-name lang="it">GF VIP - Regia 2</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b8.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b8.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="GF.VIP.-.Regia.1.it">
+    <display-name lang="it">GF VIP - Regia 1</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b7.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/b7.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Sky.Calcio.11..261.it">
+    <display-name lang="it">Sky Calcio 11  261</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Fox.Business.it">
+    <display-name lang="it">Fox Business</display-name>
+    <icon src="https://guidatv.sky.it/logo/544foxbusiness_Light_Fit.png?checksum=a5000f5a853556b4ec8fa81ba8ebc49d?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/544foxbusiness_Light_Fit.png?checksum=a5000f5a853556b4ec8fa81ba8ebc49d?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="TGCom.it">
+    <display-name lang="it">TGCom</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/tgcom.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/tgcom.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="RADIONORBA.TV.it">
+    <display-name lang="it">RADIONORBA TV</display-name>
+    <icon src="https://guidatv.sky.it/logo/5430radionorbatv_Light_Fit.png?checksum=c7f071b6f964bd33edf77eccdffa06b6?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5430radionorbatv_Light_Fit.png?checksum=c7f071b6f964bd33edf77eccdffa06b6?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Rai.2.HD..102.it">
+    <display-name lang="it">Rai 2 HD  102</display-name>
+    <icon src="https://guidatv.sky.it/logo/898rai2hd_Light_Fit.png?checksum=625b50f4-7f5c-4479-8166-5d5986760a34?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/898rai2hd_Light_Fit.png?checksum=625b50f4-7f5c-4479-8166-5d5986760a34?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="RaiMovie.it">
+    <display-name lang="it">RaiMovie</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Discovery.+1.it">
+    <display-name lang="it">Discovery +1</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Rai.Premium..5025.it">
+    <display-name lang="it">Rai Premium  5025</display-name>
+    <icon src="https://guidatv.sky.it/logo/9020raipremium_Light_Fit.png?checksum=4c57604572943859fa1e63b7151f2f5c?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/9020raipremium_Light_Fit.png?checksum=4c57604572943859fa1e63b7151f2f5c?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Rai4.it">
+    <display-name lang="it">Rai4</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Sky.Serie.Maratone.it">
+    <display-name lang="it">Sky Serie Maratone</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="San.Marino.RTV.it">
+    <display-name lang="it">San Marino RTV</display-name>
+    <icon src="https://guidatv.sky.it/logo/5407sanmarinortv_Light_Fit.png?checksum=b427cf09-e93d-4aa9-aea3-1f5ce6a5cade?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5407sanmarinortv_Light_Fit.png?checksum=b427cf09-e93d-4aa9-aea3-1f5ce6a5cade?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="20.it">
+    <display-name lang="it">20</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="VALUE.24.TV.it">
+    <display-name lang="it">VALUE 24 TV</display-name>
+    <icon src="https://guidatv.sky.it/logo/5524value24tv_Light_Fit.png?checksum=53fa037b-0987-4bb5-9f15-93ccee609aca?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/5524value24tv_Light_Fit.png?checksum=53fa037b-0987-4bb5-9f15-93ccee609aca?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Rai.News.24..508.it">
+    <display-name lang="it">Rai News 24  508</display-name>
+    <icon src="https://guidatv.sky.it/logo/895rainews24_Light_Fit.png?checksum=86f8436980494b1ff2dfe36d5437e601?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/895rainews24_Light_Fit.png?checksum=86f8436980494b1ff2dfe36d5437e601?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="DAZN.1.it.it">
+    <display-name lang="it">DAZN 1</display-name>
+    <icon src="https://guidatv.sky.it/logo/566dazn1_Light_Fit.png?checksum=c755def2-ca8b-4941-a87c-345487727272?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/566dazn1_Light_Fit.png?checksum=c755def2-ca8b-4941-a87c-345487727272?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport.MotoGP.it">
+    <display-name lang="it">Sky Sport MotoGP</display-name>
+    <icon src="https://guidatv.sky.it/logo/483skysportmotogp_Light_Fit.png?checksum=33c38de9-c5a3-4844-a558-6cac9a44b0ef?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/483skysportmotogp_Light_Fit.png?checksum=33c38de9-c5a3-4844-a558-6cac9a44b0ef?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Mediaset.Extra.it">
+    <display-name lang="it">Mediaset Extra</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/extra.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/extra.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Sky.Cinema.Suspense.it">
+    <display-name lang="it">Sky Cinema Suspense</display-name>
+    <icon src="https://guidatv.sky.it/logo/47skycinemasuspense_Light_Fit.png?checksum=9ee51b22-c9fe-49f3-a7d1-2a22e1948a4d?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/47skycinemasuspense_Light_Fit.png?checksum=9ee51b22-c9fe-49f3-a7d1-2a22e1948a4d?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="MTV.HD.it">
+    <display-name lang="it">MTV HD</display-name>
+    <icon src="https://guidatv.sky.it/logo/763mtvhd_Light_Fit.png?checksum=a680f63a-0d64-4670-afb3-8671652356c2?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/763mtvhd_Light_Fit.png?checksum=a680f63a-0d64-4670-afb3-8671652356c2?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Nickelodeon.it">
+    <display-name lang="it">Nickelodeon</display-name>
+    <icon src="https://guidatv.sky.it/logo/320nickelodeon_Light_Fit.png?checksum=b3341710a4c547732edfcd2773b3be9b?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/320nickelodeon_Light_Fit.png?checksum=b3341710a4c547732edfcd2773b3be9b?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="RMC.it">
+    <display-name lang="it">RMC</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/bb.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/bb.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Mediaset.Italia.-.Australia.e.Asia.it">
+    <display-name lang="it">Mediaset Italia - Australia e Asia</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/mg.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/mg.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="RaiNews24.it">
+    <display-name lang="it">RaiNews24</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Explorer.HD.Channel.it">
+    <display-name lang="it">Explorer HD Channel</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Uno.it">
+    <display-name lang="it">Sky Uno</display-name>
+    <icon src="https://guidatv.sky.it/logo/477skyuno_Light_Fit.png?checksum=cd37fd56-01f7-443e-a62d-ff99bf4c1b1c?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/477skyuno_Light_Fit.png?checksum=cd37fd56-01f7-443e-a62d-ff99bf4c1b1c?tr=n-logo_80" />
     <url>http://www.guidatv.sky.it</url>
   </channel>
   <channel id="Sky.News.it">
@@ -1017,33 +939,111 @@
     <icon src="https://guidatv.sky.it/logo/108skynews_Light_Fit.png?checksum=7aed4b47-0ec3-443a-9bfd-df84af1ad880?tr=n-logo_80" />
     <url>http://www.guidatv.sky.it</url>
   </channel>
-  <channel id="Explorer.HD.Channel.it">
-    <display-name lang="it">Explorer HD Channel</display-name>
+  <channel id="Boomerang.+1.it">
+    <display-name lang="it">Boomerang +1</display-name>
     <url>http://www.guidatv.sky.it</url>
   </channel>
-  <channel id="Sky.Sport.F1.it">
-    <display-name lang="it">Sky Sport F1</display-name>
-    <icon src="https://guidatv.sky.it/logo/478skysportf1_Light_Fit.png?checksum=745d5eea-e5ec-41d8-b7d1-3d053bb3aae0?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/478skysportf1_Light_Fit.png?checksum=745d5eea-e5ec-41d8-b7d1-3d053bb3aae0?tr=n-logo_80" />
+  <channel id="History.+1.it">
+    <display-name lang="it">History +1</display-name>
     <url>http://www.guidatv.sky.it</url>
   </channel>
-  <channel id="Sky.Sport.4K.it">
-    <display-name lang="it">Sky Sport 4K</display-name>
-    <icon src="https://guidatv.sky.it/logo/628skysport4k_Light_Fit.png?checksum=37f0c69c-afda-4481-a242-c60d1aeb3d3f?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/628skysport4k_Light_Fit.png?checksum=37f0c69c-afda-4481-a242-c60d1aeb3d3f?tr=n-logo_80" />
+  <channel id="Focus.it">
+    <display-name lang="it">Focus</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/focus.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/focus.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Rai.4..5021.it">
+    <display-name lang="it">Rai 4  5021</display-name>
+    <icon src="https://guidatv.sky.it/logo/9008rai4_Light_Fit.png?checksum=5bc88a8061538ed670efd52b23713714?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/9008rai4_Light_Fit.png?checksum=5bc88a8061538ed670efd52b23713714?tr=n-logo_80" />
     <url>http://www.guidatv.sky.it</url>
   </channel>
-  <channel id="Sky.Documentaries.+1.it">
-    <display-name lang="it">Sky Documentaries +1</display-name>
-    <icon src="https://guidatv.sky.it/logo/928skydocumentaries1hd_Light_Fit.png?checksum=0d9c1b59-6e0f-4cea-9985-fb9ffc00a6fe?tr=n-logo_80" />
-    <icon src="https://guidatv.sky.it/logo/928skydocumentaries1hd_Light_Fit.png?checksum=0d9c1b59-6e0f-4cea-9985-fb9ffc00a6fe?tr=n-logo_80" />
+  <channel id="Rai2.it">
+    <display-name lang="it">Rai2</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Sky.Sport.Golf.it">
+    <display-name lang="it">Sky Sport Golf</display-name>
+    <icon src="https://guidatv.sky.it/logo/768skysportgolf_Light_Fit.png?checksum=ff599287-1197-42d6-928c-9ea48a970118?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/768skysportgolf_Light_Fit.png?checksum=ff599287-1197-42d6-928c-9ea48a970118?tr=n-logo_80" />
     <url>http://www.guidatv.sky.it</url>
   </channel>
-  <channel id="Nove.it">
-    <display-name lang="it">Nove</display-name>
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/nove-image-cd3bbd59-377e-479d-8abf-49b82f21f527.jpg" />
-    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/nove-image-cd3bbd59-377e-479d-8abf-49b82f21f527.jpg" />
+  <channel id="Sky.Cinema.Family.it">
+    <display-name lang="it">Sky Cinema Family</display-name>
+    <icon src="https://guidatv.sky.it/logo/255skycinemafamily_Light_Fit.png?checksum=d1656464-20a9-4f0e-b7f9-49f01c1beea7?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/255skycinemafamily_Light_Fit.png?checksum=d1656464-20a9-4f0e-b7f9-49f01c1beea7?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Cartoonito.it">
+    <display-name lang="it">Cartoonito</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="RAI.Sport...227.it">
+    <display-name lang="it">RAI Sport   227</display-name>
+    <icon src="https://guidatv.sky.it/logo/807raisport_Light_Fit.png?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/807raisport_Light_Fit.png?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Real.Time.HD..160.it">
+    <display-name lang="it">Real Time HD  160</display-name>
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/realtime-image-478eeded-06d7-40b4-95da-6159158f774f.jpg" />
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/realtime-image-478eeded-06d7-40b4-95da-6159158f774f.jpg" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Food.Network.HD..417.it">
+    <display-name lang="it">Food Network HD  417</display-name>
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/foodnetwork-image-656afb80-8eb1-455f-b3db-386928393c3b.png" />
+    <icon src="https://s3.eu-west-1.amazonaws.com/loma-media-it/foodnetwork-image-656afb80-8eb1-455f-b3db-386928393c3b.png" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport.Mix.it">
+    <display-name lang="it">Sky Sport Mix</display-name>
+    <icon src="https://guidatv.sky.it/logo/579skysportmix_Light_Fit.png?checksum=68d457d4-ae25-40ec-8198-2be42327d82d?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/579skysportmix_Light_Fit.png?checksum=68d457d4-ae25-40ec-8198-2be42327d82d?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="GIALLO.HD..167.it">
+    <display-name lang="it">GIALLO HD  167</display-name>
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Sky.Sport.Tennis.it">
+    <display-name lang="it">Sky Sport Tennis</display-name>
+    <icon src="https://guidatv.sky.it/logo/559skysporttennis_Light_Fit.png?checksum=94c5f900-a8d2-497c-8fec-a333a9ad879a?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/559skysporttennis_Light_Fit.png?checksum=94c5f900-a8d2-497c-8fec-a333a9ad879a?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Milan.TV.it">
+    <display-name lang="it">Milan TV</display-name>
+    <icon src="https://guidatv.sky.it/logo/261milantv_Light_Fit.png?checksum=b78acf3bc981bb6d87c595b24540e7dc?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/261milantv_Light_Fit.png?checksum=b78acf3bc981bb6d87c595b24540e7dc?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="RaiStoria.it">
+    <display-name lang="it">RaiStoria</display-name>
+    <url>http://www.raiplay.it</url>
+  </channel>
+  <channel id="Top.Crime.it">
+    <display-name lang="it">Top Crime</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Sky.Sport..251.it">
+    <display-name lang="it">Sky Sport  251</display-name>
+    <icon src="https://guidatv.sky.it/logo/917skysport_Light_Fit.png?checksum=4f061bab-25db-4c9b-8220-e560abc222b5?tr=n-logo_80" />
+    <icon src="https://guidatv.sky.it/logo/917skysport_Light_Fit.png?checksum=4f061bab-25db-4c9b-8220-e560abc222b5?tr=n-logo_80" />
+    <url>http://www.guidatv.sky.it</url>
+  </channel>
+  <channel id="Motor.Trend.it">
+    <display-name lang="it">Motor Trend</display-name>
     <url>http://www.warnertv.it</url>
+  </channel>
+  <channel id="DAZN5.it">
+    <display-name lang="it">DAZN5</display-name>
+    <url>http://www.guidatv.sky.it</url>
   </channel>
   <programme start="20260925065500 +0000" stop="20260925080500 +0000" channel="Sky.Uno.it">
     <title lang="it">Alessandro Borghese - 4 Ristoranti</title>
@@ -198186,18 +198186,6 @@
     <country lang="it">FRA</country>
     <episode-num system="onscreen">S1 E14</episode-num>
   </programme>
-  <channel id="IT:.Rally.TV.FAST+.be">
-    <icon src="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg" />
-    <icon src="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg" />
-    <url>http://www.rakuten.tv</url>
-    <display-name lang="en">IT: Rally.TV FAST+</display-name>
-  </channel>
-  <channel id="IT:.FIFA+.be">
-    <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png" />
-    <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png" />
-    <url>http://www.rakuten.tv</url>
-    <display-name lang="en">IT: FIFA+</display-name>
-  </channel>
   <channel id="IT:.Tennis+.be">
     <url>http://www.rakuten.tv</url>
     <display-name lang="en">IT: Tennis+</display-name>
@@ -198208,11 +198196,11 @@
     <url>http://www.rakuten.tv</url>
     <display-name lang="en">IT: Motoretrò</display-name>
   </channel>
-  <channel id="IT:.Red.Bull.TV.be">
-    <icon src="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg" />
-    <icon src="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg" />
+  <channel id="IT:.FIFA+.be">
+    <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png" />
+    <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/55d93065-d22a-4fe2-9ed5-961ac23cae81.png" />
     <url>http://www.rakuten.tv</url>
-    <display-name lang="en">IT: Red Bull TV</display-name>
+    <display-name lang="en">IT: FIFA+</display-name>
   </channel>
   <channel id="IT:.INTER.24/7.be">
     <icon src="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg|https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/140a6ce2-d2d9-4d5c-ae6e-55249b647730.jpeg" />
@@ -198220,11 +198208,23 @@
     <url>http://www.rakuten.tv</url>
     <display-name lang="en">IT: INTER 24/7</display-name>
   </channel>
+  <channel id="IT:.Rally.TV.FAST+.be">
+    <icon src="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg" />
+    <icon src="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ae3344c-16ea-4c6d-8c5d-37aceec4b8f7.jpeg" />
+    <url>http://www.rakuten.tv</url>
+    <display-name lang="en">IT: Rally.TV FAST+</display-name>
+  </channel>
   <channel id="IT:.Juventus.Play.be">
     <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg" />
     <icon src="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg|https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/0a5304d3-8cac-40a1-9807-5e86d97717d0.jpeg" />
     <url>http://www.rakuten.tv</url>
     <display-name lang="en">IT: Juventus Play</display-name>
+  </channel>
+  <channel id="IT:.Red.Bull.TV.be">
+    <icon src="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg" />
+    <icon src="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg|https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/ad9f8b07-f695-4447-8c5b-6ccdfa96fba4.jpeg" />
+    <url>http://www.rakuten.tv</url>
+    <display-name lang="en">IT: Red Bull TV</display-name>
   </channel>
   <programme channel="IT:.Motoretrò.be" start="20260925000501 -0300" stop="20260925002900 -0300">
     <title lang="it">approfondimento</title>
@@ -201634,385 +201634,385 @@
     <title lang="it">Croazia: la definizione di una nazione</title>
     <desc lang="it">Il risultato della Croazia, arrivata terza ai Mondiali del 1998 in Francia, è stato sbalorditivo. Una nazione a malapena affermata che ha affrontato e battuto le nazioni più potenti del mondo, arrivando a un soffio dalla conquista del trofeo. Ma questa è molto più di una semplice storia su una squadra di calcio di talento: è la storia di una nazione che emerge dalle macerie della guerra balcanica e dalla disintegrazione della Jugoslavia per ergersi orgogliosamente come un paese indipendente sul palcoscenico più grande del calcio.</desc>
   </programme>
-  <channel id="IT3000282Q">
-    <display-name>Motor1</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3000282Q_20260407T040326SQUARE.png" />
-  </channel>
-  <channel id="IT3600004TW">
-    <display-name>Western Time</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3600004TW_20250211T014017SQUARE.png" />
+  <channel id="IT3900003FE">
+    <display-name>Hell's Kitchen</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3900003FE_20250211T014001SQUARE.png" />
   </channel>
   <channel id="ITBA3300024IU">
     <display-name>Bizzarro Movies</display-name>
     <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA3300024IU_20260609T044158SQUARE.png" />
   </channel>
-  <channel id="IT3100001FT">
-    <display-name>INTER 24/7</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3100001FT_20260421T125918SQUARE.png" />
-  </channel>
-  <channel id="ITBC11000050E">
-    <display-name>Adrenaline Movies</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC11000050E_20260707T052519SQUARE.png" />
-  </channel>
-  <channel id="IT3800001XM">
-    <display-name>Cine Amore</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3800001XM_20260622T064232SQUARE.png" />
-  </channel>
-  <channel id="ITBD600001CL">
-    <display-name>Brividy Cinema</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD600001CL_20251111T012425SQUARE.png" />
-  </channel>
-  <channel id="IT3000010NB">
-    <display-name>RTL 102.5</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3000010NB_20260901T055014SQUARE.png" />
-  </channel>
-  <channel id="IT3000012PW">
-    <display-name>RTL 102.5 BEST</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3000012PW_20260804T052248SQUARE.png" />
-  </channel>
-  <channel id="IT500002FD">
-    <display-name>Duri a morire</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT500002FD_20241106T142411SQUARE.png" />
-  </channel>
-  <channel id="IT3200005F4">
-    <display-name>Inazuma Eleven Collection</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3200005F4_20250527T014834SQUARE.png" />
-  </channel>
-  <channel id="ITBA3300041LY">
-    <display-name>Trace Urban</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA3300041LY_20241022T043644SQUARE.png" />
-  </channel>
-  <channel id="IT1000002TG">
-    <display-name>Sportitalia</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT1000002TG_20260707T053001SQUARE.png" />
-  </channel>
-  <channel id="ITBA2200008IM">
-    <display-name>Radio Italia Live</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA2200008IM_20251111T012413SQUARE.png" />
-  </channel>
-  <channel id="IT480000143">
-    <display-name>Teletubbies</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT480000143_20250819T032309SQUARE.png" />
-  </channel>
-  <channel id="ITBC4700004EQ">
-    <display-name>Film Al Femminile - Wedo Movies</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC4700004EQ_20260915T041803SQUARE.png" />
-  </channel>
-  <channel id="IT30000132N">
-    <display-name>RTL 102.5 Caliente</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT30000132N_20260707T052626SQUARE.png" />
-  </channel>
-  <channel id="ITBC11000047F">
-    <display-name>Velvet</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC11000047F_20260915T041853SQUARE.png" />
-  </channel>
-  <channel id="ITBA33000238E">
-    <display-name>Cinema italiano</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA33000238E_20260721T040306SQUARE.png" />
-  </channel>
-  <channel id="IT2100001EZ">
-    <display-name>NatureTime</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2100001EZ_20251111T012436SQUARE.png" />
-  </channel>
   <channel id="IT500011RG">
     <display-name>Gambero Rosso</display-name>
     <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT500011RG_20260804T052236SQUARE.png" />
-  </channel>
-  <channel id="IT2600008RA">
-    <display-name>Serie Crime - Rakuten TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600008RA_20241210T052906SQUARE.png" />
-  </channel>
-  <channel id="IT800002CE">
-    <display-name>Motoretrò</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT800002CE_20250520T045026SQUARE.png" />
-  </channel>
-  <channel id="ITBC4700003GR">
-    <display-name>Love the Planet</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC4700003GR_20250811T173008SQUARE.png" />
-  </channel>
-  <channel id="ITBD1100001B7">
-    <display-name>Gli Immortali</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1100001B7_20260721T040300SQUARE.png" />
-  </channel>
-  <channel id="IT20000053A">
-    <display-name>Tennis+</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT20000053A_20250729T045608SQUARE.png" />
-  </channel>
-  <channel id="IT900004Y5">
-    <display-name>Turbo</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT900004Y5_20260622T101609SQUARE.png" />
-  </channel>
-  <channel id="ITBA33000374G">
-    <display-name>5-Minuti Creativi</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA33000374G_20241022T043949SQUARE.png" />
-  </channel>
-  <channel id="IT4000061Q">
-    <display-name>Un medico in famiglia</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT4000061Q_20260528T053725SQUARE.png" />
-  </channel>
-  <channel id="IT2600007WQ">
-    <display-name>Commedia - Rakuten TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600007WQ_20241022T051556SQUARE.png" />
-  </channel>
-  <channel id="IT9000081B">
-    <display-name>Giallo</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT9000081B_20260622T101540SQUARE.png" />
-  </channel>
-  <channel id="ITBB20000072M">
-    <display-name>CineWestern</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBB20000072M_20260421T125848SQUARE.png" />
-  </channel>
-  <channel id="ITBC1100008L4">
-    <display-name>Alberto Sordi &amp; Co</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100008L4_20260721T040333SQUARE.png" />
-  </channel>
-  <channel id="IT12000029J">
-    <display-name>Viaggi &amp; Sapori</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT12000029J_20241105T025401SQUARE.png" />
-  </channel>
-  <channel id="IT2600002F6">
-    <display-name>Film Top - Rakuten TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600002F6_20260707T052548SQUARE.png" />
-  </channel>
-  <channel id="IT16000070D">
-    <display-name>Sportface</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT16000070D_20260528T053649SQUARE.png" />
   </channel>
   <channel id="IT800001SW">
     <display-name>Inuyasha</display-name>
     <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT800001SW_20251013T054512SQUARE.png" />
   </channel>
-  <channel id="ITBC11000108G">
-    <display-name>Hip Hop TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC11000108G_20241022T051632SQUARE.png" />
-  </channel>
-  <channel id="ITBD1400003D0">
-    <display-name>Cinemadame</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1400003D0_20260818T051105SQUARE.png" />
-  </channel>
-  <channel id="ITBD3200002DU">
-    <display-name>Cine Thriller</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD3200002DU_20250708T031020SQUARE.png" />
-  </channel>
-  <channel id="IT260000131">
-    <display-name>Fantascienza - Rakuten TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT260000131_20250121T012628SQUARE.png" />
-  </channel>
-  <channel id="ITBC2100001G9">
-    <display-name>Vevo Pop</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC2100001G9_20241022T043927SQUARE.png" />
-  </channel>
-  <channel id="IT3900003FE">
-    <display-name>Hell's Kitchen</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3900003FE_20250211T014001SQUARE.png" />
-  </channel>
-  <channel id="IT2900001B5">
-    <display-name>BBC Series</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2900001B5_20250916T003606SQUARE.png" />
-  </channel>
-  <channel id="IT900001A7">
-    <display-name>Mr Bean Animated</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT900001A7_20250923T010547SQUARE.png" />
-  </channel>
-  <channel id="ITBD300001GI">
-    <display-name>Move - Sportivi in Viaggio</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD300001GI_20241022T044111SQUARE.png" />
-  </channel>
-  <channel id="IT3300001G3">
-    <display-name>Il Sole 24 Ore TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3300001G3_20251125T102453SQUARE.png" />
-  </channel>
-  <channel id="ITBD3200007SZ">
-    <display-name>DeAPlaneta Kids</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD3200007SZ_20251028T011522SQUARE.png" />
-  </channel>
-  <channel id="ITBA3300048YJ">
-    <display-name>Trailers</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA3300048YJ_20250715T004402SQUARE.png" />
-  </channel>
-  <channel id="ITBA3300022EA">
-    <display-name>SportOutdoor.tv</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA3300022EA_20260113T032817SQUARE.png" />
-  </channel>
-  <channel id="IT2000002D1">
-    <display-name>CAR CITY ADVENTURES</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2000002D1_20241210T052846SQUARE.png" />
-  </channel>
-  <channel id="ITBC210000200">
-    <display-name>Vevo '90s &amp; '00s</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC210000200_20241022T043924SQUARE.png" />
-  </channel>
-  <channel id="ITBC4700002CO">
-    <display-name>Solocalcio</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC4700002CO_20241022T043828SQUARE.png" />
-  </channel>
-  <channel id="ITBC400001LX">
-    <display-name>Action Movie Channel</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC400001LX_20250107T022411SQUARE.png" />
-  </channel>
-  <channel id="ITBD3200001VR">
-    <display-name>Supercinema</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD3200001VR_20260210T035236SQUARE.png" />
-  </channel>
-  <channel id="ITBA3300042HE">
-    <display-name>Trace Latina</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA3300042HE_20241022T043641SQUARE.png" />
-  </channel>
-  <channel id="IT2600003FM">
-    <display-name>Film d'azione - Rakuten TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600003FM_20260707T052556SQUARE.png" />
-  </channel>
-  <channel id="IT31000026G">
-    <display-name>Discovery</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT31000026G_20260622T101526SQUARE.png" />
-  </channel>
-  <channel id="ITAJ3800002PN">
-    <display-name>iCarly</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITAJ3800002PN_20260721T041156SQUARE.png" />
-  </channel>
-  <channel id="IT500004JK">
-    <display-name>Romantica</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT500004JK_20260528T053632SQUARE.png" />
-  </channel>
-  <channel id="IT3200004WU">
-    <display-name>Rai News 24</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3200004WU_20260707T052631SQUARE.png" />
-  </channel>
-  <channel id="ITBC1100002ZU">
-    <display-name>Smile</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100002ZU_20241022T043826SQUARE.png" />
-  </channel>
-  <channel id="ITBC1100001G5">
-    <display-name>Alta Tensione</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100001G5_20260901T054951SQUARE.png" />
-  </channel>
-  <channel id="IT4000089R">
-    <display-name>LBA Classics</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT4000089R_20260622T064242SQUARE.png" />
-  </channel>
-  <channel id="ITBD1900010JL">
-    <display-name>Vevo '70s &amp; '80s</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1900010JL_20241022T043922SQUARE.png" />
-  </channel>
-  <channel id="IT3000014RV">
-    <display-name>RTL 102.5 DISCO</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3000014RV_20260804T052303SQUARE.png" />
-  </channel>
-  <channel id="IT700004X4">
-    <display-name>Pocoyo</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT700004X4_20241022T051711SQUARE.png" />
-  </channel>
-  <channel id="IT3000035B">
-    <display-name>Sony One Serie da Ridere</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3000035B_20260421T124019SQUARE.png" />
-  </channel>
-  <channel id="ITBC1100003KC">
-    <display-name>Grandi Nomi</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100003KC_20250527T014831SQUARE.png" />
-  </channel>
-  <channel id="IT1200001Q8">
-    <display-name>Storie Criminali</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT1200001Q8_20241022T043854SQUARE.png" />
-  </channel>
-  <channel id="ITBD4100001MG">
-    <display-name>Elisa di Rivombrosa</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD4100001MG_20251125T102440SQUARE.png" />
-  </channel>
-  <channel id="ITBD140000119">
-    <display-name>CG Cine Mania</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD140000119_20260818T051118SQUARE.png" />
-  </channel>
-  <channel id="ITBD1000002HF">
-    <display-name>FIFA+</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1000002HF_20250513T010658SQUARE.png" />
-  </channel>
-  <channel id="IT300029U3">
-    <display-name>Cinemalizia</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT300029U3_20250415T022336SQUARE.png" />
-  </channel>
-  <channel id="ITBC1100011RK">
-    <display-name>Rock TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100011RK_20241022T043817SQUARE.png" />
-  </channel>
-  <channel id="IT3600005AL">
-    <display-name>Cine Paura</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3600005AL_20250722T005609SQUARE.png" />
-  </channel>
-  <channel id="IT2200011IA">
-    <display-name>Masha e Orso</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2200011IA_20260721T040356SQUARE.png" />
-  </channel>
-  <channel id="ITBB5000002N0">
-    <display-name>Giornale Radio TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBB5000002N0_20260407T040316SQUARE.png" />
-  </channel>
-  <channel id="IT2600005ZN">
-    <display-name>Dramma - Rakuten TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600005ZN_20260707T052536SQUARE.png" />
-  </channel>
-  <channel id="IT300005J9">
-    <display-name>Sony One Film divertenti</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT300005J9_20260421T124025SQUARE.png" />
-  </channel>
-  <channel id="IT2100003OJ">
-    <display-name>Pingu</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2100003OJ_20260901T055006SQUARE.png" />
-  </channel>
-  <channel id="IT600001L6">
-    <display-name>Italian Fishing TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT600001L6_20241022T051638SQUARE.png" />
-  </channel>
-  <channel id="IT2000003B8">
-    <display-name>Vita Da Strega</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2000003B8_20260804T052340SQUARE.png" />
-  </channel>
-  <channel id="IT3600001Q1">
-    <display-name>Crime Time</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3600001Q1_20241112T093246SQUARE.png" />
-  </channel>
-  <channel id="IT300004KM">
-    <display-name>Sony One Film d’azione</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT300004KM_20260721T041136SQUARE.png" />
-  </channel>
-  <channel id="IT2600010E0">
-    <display-name>Family - Rakuten TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600010E0_20251230T031311SQUARE.png" />
-  </channel>
-  <channel id="ITBD1000006RD">
-    <display-name>True Crime</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1000006RD_20250624T021752SQUARE.png" />
-  </channel>
-  <channel id="IT2400001AE">
-    <display-name>Top Gear</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2400001AE_20260818T051145SQUARE.png" />
-  </channel>
-  <channel id="IT90001094">
-    <display-name>Foodnetwork</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT90001094_20260622T101533SQUARE.png" />
-  </channel>
-  <channel id="ITBD51000010V">
-    <display-name>SuperToons TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD51000010V_20260210T040126SQUARE.png" />
-  </channel>
-  <channel id="IT300006W3">
-    <display-name>Sony One Gli imperdibili</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT300006W3_20260421T124028SQUARE.png" />
-  </channel>
-  <channel id="IT2600004K9">
-    <display-name>Romance - Rakuten TV</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600004K9_20250121T012551SQUARE.png" />
-  </channel>
-  <channel id="IT2500001IF">
-    <display-name>Cool Summer Channel</display-name>
-    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2500001IF_20241022T051559SQUARE.png" />
+  <channel id="ITBC1100008L4">
+    <display-name>Alberto Sordi &amp; Co</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100008L4_20260721T040333SQUARE.png" />
   </channel>
   <channel id="IT3200002L5">
     <display-name>BBC Earth</display-name>
     <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3200002L5_20260804T052218SQUARE.png" />
   </channel>
+  <channel id="IT3000014RV">
+    <display-name>RTL 102.5 DISCO</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3000014RV_20260804T052303SQUARE.png" />
+  </channel>
+  <channel id="IT3300001G3">
+    <display-name>Il Sole 24 Ore TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3300001G3_20251125T102453SQUARE.png" />
+  </channel>
+  <channel id="ITBC400001LX">
+    <display-name>Action Movie Channel</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC400001LX_20250107T022411SQUARE.png" />
+  </channel>
+  <channel id="ITBD1000006RD">
+    <display-name>True Crime</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1000006RD_20250624T021752SQUARE.png" />
+  </channel>
+  <channel id="ITBD3200001VR">
+    <display-name>Supercinema</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD3200001VR_20260210T035236SQUARE.png" />
+  </channel>
+  <channel id="ITBD1900010JL">
+    <display-name>Vevo '70s &amp; '80s</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1900010JL_20241022T043922SQUARE.png" />
+  </channel>
+  <channel id="IT90001094">
+    <display-name>Foodnetwork</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT90001094_20260622T101533SQUARE.png" />
+  </channel>
+  <channel id="IT1200001Q8">
+    <display-name>Storie Criminali</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT1200001Q8_20241022T043854SQUARE.png" />
+  </channel>
+  <channel id="ITBC2100001G9">
+    <display-name>Vevo Pop</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC2100001G9_20241022T043927SQUARE.png" />
+  </channel>
+  <channel id="ITBA3300022EA">
+    <display-name>SportOutdoor.tv</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA3300022EA_20260113T032817SQUARE.png" />
+  </channel>
+  <channel id="ITBC210000200">
+    <display-name>Vevo '90s &amp; '00s</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC210000200_20241022T043924SQUARE.png" />
+  </channel>
+  <channel id="IT300029U3">
+    <display-name>Cinemalizia</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT300029U3_20250415T022336SQUARE.png" />
+  </channel>
+  <channel id="ITBB5000002N0">
+    <display-name>Giornale Radio TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBB5000002N0_20260407T040316SQUARE.png" />
+  </channel>
+  <channel id="IT3000282Q">
+    <display-name>Motor1</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3000282Q_20260407T040326SQUARE.png" />
+  </channel>
+  <channel id="ITBD1400003D0">
+    <display-name>Cinemadame</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1400003D0_20260818T051105SQUARE.png" />
+  </channel>
+  <channel id="IT31000026G">
+    <display-name>Discovery</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT31000026G_20260622T101526SQUARE.png" />
+  </channel>
+  <channel id="IT2000002D1">
+    <display-name>CAR CITY ADVENTURES</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2000002D1_20241210T052846SQUARE.png" />
+  </channel>
+  <channel id="IT300004KM">
+    <display-name>Sony One Film d’azione</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT300004KM_20260721T041136SQUARE.png" />
+  </channel>
+  <channel id="IT900004Y5">
+    <display-name>Turbo</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT900004Y5_20260622T101609SQUARE.png" />
+  </channel>
+  <channel id="IT500004JK">
+    <display-name>Romantica</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT500004JK_20260528T053632SQUARE.png" />
+  </channel>
+  <channel id="IT2900001B5">
+    <display-name>BBC Series</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2900001B5_20250916T003606SQUARE.png" />
+  </channel>
+  <channel id="ITBA33000374G">
+    <display-name>5-Minuti Creativi</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA33000374G_20241022T043949SQUARE.png" />
+  </channel>
+  <channel id="IT260000131">
+    <display-name>Fantascienza - Rakuten TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT260000131_20250121T012628SQUARE.png" />
+  </channel>
+  <channel id="IT800002CE">
+    <display-name>Motoretrò</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT800002CE_20250520T045026SQUARE.png" />
+  </channel>
+  <channel id="IT300006W3">
+    <display-name>Sony One Gli imperdibili</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT300006W3_20260421T124028SQUARE.png" />
+  </channel>
+  <channel id="IT600001L6">
+    <display-name>Italian Fishing TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT600001L6_20241022T051638SQUARE.png" />
+  </channel>
+  <channel id="ITBC11000050E">
+    <display-name>Adrenaline Movies</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC11000050E_20260707T052519SQUARE.png" />
+  </channel>
+  <channel id="IT3200004WU">
+    <display-name>Rai News 24</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3200004WU_20260707T052631SQUARE.png" />
+  </channel>
+  <channel id="IT2600010E0">
+    <display-name>Family - Rakuten TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600010E0_20251230T031311SQUARE.png" />
+  </channel>
+  <channel id="IT2500001IF">
+    <display-name>Cool Summer Channel</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2500001IF_20241022T051559SQUARE.png" />
+  </channel>
+  <channel id="ITBC1100011RK">
+    <display-name>Rock TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100011RK_20241022T043817SQUARE.png" />
+  </channel>
+  <channel id="ITBA2200008IM">
+    <display-name>Radio Italia Live</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA2200008IM_20251111T012413SQUARE.png" />
+  </channel>
+  <channel id="IT2600008RA">
+    <display-name>Serie Crime - Rakuten TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600008RA_20241210T052906SQUARE.png" />
+  </channel>
+  <channel id="IT16000070D">
+    <display-name>Sportface</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT16000070D_20260528T053649SQUARE.png" />
+  </channel>
+  <channel id="IT4000089R">
+    <display-name>LBA Classics</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT4000089R_20260622T064242SQUARE.png" />
+  </channel>
+  <channel id="IT3200005F4">
+    <display-name>Inazuma Eleven Collection</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3200005F4_20250527T014834SQUARE.png" />
+  </channel>
+  <channel id="ITBA33000238E">
+    <display-name>Cinema italiano</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA33000238E_20260721T040306SQUARE.png" />
+  </channel>
+  <channel id="IT12000029J">
+    <display-name>Viaggi &amp; Sapori</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT12000029J_20241105T025401SQUARE.png" />
+  </channel>
+  <channel id="IT2600004K9">
+    <display-name>Romance - Rakuten TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600004K9_20250121T012551SQUARE.png" />
+  </channel>
+  <channel id="IT2600007WQ">
+    <display-name>Commedia - Rakuten TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600007WQ_20241022T051556SQUARE.png" />
+  </channel>
+  <channel id="ITAJ3800002PN">
+    <display-name>iCarly</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITAJ3800002PN_20260721T041156SQUARE.png" />
+  </channel>
+  <channel id="IT2600002F6">
+    <display-name>Film Top - Rakuten TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600002F6_20260707T052548SQUARE.png" />
+  </channel>
+  <channel id="ITBC4700004EQ">
+    <display-name>Film Al Femminile - Wedo Movies</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC4700004EQ_20260915T041803SQUARE.png" />
+  </channel>
+  <channel id="IT9000081B">
+    <display-name>Giallo</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT9000081B_20260622T101540SQUARE.png" />
+  </channel>
+  <channel id="IT2000003B8">
+    <display-name>Vita Da Strega</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2000003B8_20260804T052340SQUARE.png" />
+  </channel>
+  <channel id="ITBA3300041LY">
+    <display-name>Trace Urban</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA3300041LY_20241022T043644SQUARE.png" />
+  </channel>
+  <channel id="IT3600005AL">
+    <display-name>Cine Paura</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3600005AL_20250722T005609SQUARE.png" />
+  </channel>
+  <channel id="IT20000053A">
+    <display-name>Tennis+</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT20000053A_20250729T045608SQUARE.png" />
+  </channel>
+  <channel id="IT4000061Q">
+    <display-name>Un medico in famiglia</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT4000061Q_20260528T053725SQUARE.png" />
+  </channel>
+  <channel id="ITBC1100002ZU">
+    <display-name>Smile</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100002ZU_20241022T043826SQUARE.png" />
+  </channel>
+  <channel id="IT2600003FM">
+    <display-name>Film d'azione - Rakuten TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600003FM_20260707T052556SQUARE.png" />
+  </channel>
+  <channel id="ITBC4700003GR">
+    <display-name>Love the Planet</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC4700003GR_20250811T173008SQUARE.png" />
+  </channel>
+  <channel id="ITBD1000002HF">
+    <display-name>FIFA+</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1000002HF_20250513T010658SQUARE.png" />
+  </channel>
+  <channel id="ITBD600001CL">
+    <display-name>Brividy Cinema</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD600001CL_20251111T012425SQUARE.png" />
+  </channel>
+  <channel id="IT3800001XM">
+    <display-name>Cine Amore</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3800001XM_20260622T064232SQUARE.png" />
+  </channel>
   <channel id="ITBC4700001E6">
     <display-name>duckTV</display-name>
     <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC4700001E6_20241022T051716SQUARE.png" />
+  </channel>
+  <channel id="ITBB20000072M">
+    <display-name>CineWestern</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBB20000072M_20260421T125848SQUARE.png" />
+  </channel>
+  <channel id="ITBD140000119">
+    <display-name>CG Cine Mania</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD140000119_20260818T051118SQUARE.png" />
+  </channel>
+  <channel id="ITBD3200007SZ">
+    <display-name>DeAPlaneta Kids</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD3200007SZ_20251028T011522SQUARE.png" />
+  </channel>
+  <channel id="ITBC1100001G5">
+    <display-name>Alta Tensione</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100001G5_20260901T054951SQUARE.png" />
+  </channel>
+  <channel id="IT3000035B">
+    <display-name>Sony One Serie da Ridere</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3000035B_20260421T124019SQUARE.png" />
+  </channel>
+  <channel id="IT900001A7">
+    <display-name>Mr Bean Animated</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT900001A7_20250923T010547SQUARE.png" />
+  </channel>
+  <channel id="IT30000132N">
+    <display-name>RTL 102.5 Caliente</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT30000132N_20260707T052626SQUARE.png" />
+  </channel>
+  <channel id="IT480000143">
+    <display-name>Teletubbies</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT480000143_20250819T032309SQUARE.png" />
+  </channel>
+  <channel id="IT3600001Q1">
+    <display-name>Crime Time</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3600001Q1_20241112T093246SQUARE.png" />
+  </channel>
+  <channel id="IT3000012PW">
+    <display-name>RTL 102.5 BEST</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3000012PW_20260804T052248SQUARE.png" />
+  </channel>
+  <channel id="IT1000002TG">
+    <display-name>Sportitalia</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT1000002TG_20260707T053001SQUARE.png" />
+  </channel>
+  <channel id="IT3100001FT">
+    <display-name>INTER 24/7</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3100001FT_20260421T125918SQUARE.png" />
+  </channel>
+  <channel id="IT2100003OJ">
+    <display-name>Pingu</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2100003OJ_20260901T055006SQUARE.png" />
+  </channel>
+  <channel id="ITBA3300048YJ">
+    <display-name>Trailers</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA3300048YJ_20250715T004402SQUARE.png" />
+  </channel>
+  <channel id="IT300005J9">
+    <display-name>Sony One Film divertenti</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT300005J9_20260421T124025SQUARE.png" />
+  </channel>
+  <channel id="IT500002FD">
+    <display-name>Duri a morire</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT500002FD_20241106T142411SQUARE.png" />
+  </channel>
+  <channel id="IT2200011IA">
+    <display-name>Masha e Orso</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2200011IA_20260721T040356SQUARE.png" />
+  </channel>
+  <channel id="ITBD300001GI">
+    <display-name>Move - Sportivi in Viaggio</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD300001GI_20241022T044111SQUARE.png" />
+  </channel>
+  <channel id="IT700004X4">
+    <display-name>Pocoyo</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT700004X4_20241022T051711SQUARE.png" />
+  </channel>
+  <channel id="IT3600004TW">
+    <display-name>Western Time</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3600004TW_20250211T014017SQUARE.png" />
+  </channel>
+  <channel id="ITBC11000047F">
+    <display-name>Velvet</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC11000047F_20260915T041853SQUARE.png" />
+  </channel>
+  <channel id="ITBA3300042HE">
+    <display-name>Trace Latina</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA3300042HE_20241022T043641SQUARE.png" />
+  </channel>
+  <channel id="ITBC11000108G">
+    <display-name>Hip Hop TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC11000108G_20241022T051632SQUARE.png" />
+  </channel>
+  <channel id="ITBD1100001B7">
+    <display-name>Gli Immortali</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1100001B7_20260721T040300SQUARE.png" />
+  </channel>
+  <channel id="IT3000010NB">
+    <display-name>RTL 102.5</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3000010NB_20260901T055014SQUARE.png" />
+  </channel>
+  <channel id="ITBD51000010V">
+    <display-name>SuperToons TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD51000010V_20260210T040126SQUARE.png" />
+  </channel>
+  <channel id="ITBC4700002CO">
+    <display-name>Solocalcio</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC4700002CO_20241022T043828SQUARE.png" />
+  </channel>
+  <channel id="ITBD4100001MG">
+    <display-name>Elisa di Rivombrosa</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD4100001MG_20251125T102440SQUARE.png" />
+  </channel>
+  <channel id="ITBC1100003KC">
+    <display-name>Grandi Nomi</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100003KC_20250527T014831SQUARE.png" />
+  </channel>
+  <channel id="ITBD3200002DU">
+    <display-name>Cine Thriller</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD3200002DU_20250708T031020SQUARE.png" />
+  </channel>
+  <channel id="IT2600005ZN">
+    <display-name>Dramma - Rakuten TV</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600005ZN_20260707T052536SQUARE.png" />
+  </channel>
+  <channel id="IT2400001AE">
+    <display-name>Top Gear</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2400001AE_20260818T051145SQUARE.png" />
+  </channel>
+  <channel id="IT2100001EZ">
+    <display-name>NatureTime</display-name>
+    <icon src="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2100001EZ_20251111T012436SQUARE.png" />
   </channel>
   <programme channel="IT2600010E0" start="20260926070200 +0000" stop="20260926071618 +0000">
     <title>Bernard</title>
@@ -208514,81 +208514,81 @@
       <value>12</value>
     </rating>
   </programme>
-  <channel id="68adb5853efb41cd97ce413d">
-    <display-name>I Puffi</display-name>
-    <icon src="https://images.pluto.tv/channels/68adb5853efb41cd97ce413d/colorLogoPNG_1759447100016.png" />
-  </channel>
-  <channel id="62e8d5369e48940007fc1dc1">
-    <display-name>The Asylum</display-name>
-    <icon src="https://images.pluto.tv/channels/62e8d5369e48940007fc1dc1/colorLogoPNG.png" />
-  </channel>
-  <channel id="69ef54f3c700cf0140272def">
-    <display-name>That's 80s</display-name>
-    <icon src="https://images.pluto.tv/channels/69ef54f3c700cf0140272def/colorLogoPNG_1779094967843.png" />
-  </channel>
-  <channel id="686cfdf894a028da3aac4252">
-    <display-name>Barbie &amp; Friends</display-name>
-    <icon src="https://images.pluto.tv/channels/686cfdf894a028da3aac4252/colorLogoPNG_1765896833779.png" />
-  </channel>
-  <channel id="6245d3792792150007e20634">
-    <display-name>Settimo Cielo</display-name>
-    <icon src="https://images.pluto.tv/channels/6245d3792792150007e20634/colorLogoPNG.png" />
-  </channel>
-  <channel id="63c923944207be0007fd0887">
-    <display-name>Pluto TV Viaggi</display-name>
-    <icon src="https://images.pluto.tv/channels/63c923944207be0007fd0887/colorLogoPNG_1774882201565.png" />
-  </channel>
-  <channel id="69ef53e12f4d2b4f9c582e76">
-    <display-name>That's 70s</display-name>
-    <icon src="https://images.pluto.tv/channels/69ef53e12f4d2b4f9c582e76/colorLogoPNG_1779094999764.png" />
-  </channel>
-  <channel id="63eb82e24e83e70008ab735f">
-    <display-name>Yu-Gi-Oh!</display-name>
-    <icon src="https://images.pluto.tv/channels/63eb82e24e83e70008ab735f/colorLogoPNG.png" />
-  </channel>
-  <channel id="699d87093d5dba980705cca8">
-    <display-name>Pluto TV Film Ancora Più Romantici</display-name>
-    <icon src="https://images.pluto.tv/channels/699d87093d5dba980705cca8/colorLogoPNG_1777274173528.png" />
-  </channel>
   <channel id="66a8c64814a2bb00084d09d6">
     <display-name>Gormiti</display-name>
     <icon src="https://images.pluto.tv/channels/66a8c64814a2bb00084d09d6/colorLogoPNG.png" />
-  </channel>
-  <channel id="65253f9881f942000833ccd5">
-    <display-name>Pluto TV Totò</display-name>
-    <icon src="https://images.pluto.tv/channels/65253f9881f942000833ccd5/colorLogoPNG_1774617972809.png" />
-  </channel>
-  <channel id="65b90daed77d450008a43345">
-    <display-name>Pluto TV Anime</display-name>
-    <icon src="https://images.pluto.tv/channels/65b90daed77d450008a43345/colorLogoPNG_1747395522672.png" />
   </channel>
   <channel id="696e0fe49ba4ac18057433ac">
     <display-name>Rally TV</display-name>
     <icon src="https://images.pluto.tv/channels/696e0fe49ba4ac18057433ac/colorLogoPNG_1770893941495.png" />
   </channel>
-  <channel id="66c35c0c92b1af0008c8e83a">
-    <display-name>Horror Club</display-name>
-    <icon src="https://images.pluto.tv/channels/66c35c0c92b1af0008c8e83a/colorLogoPNG.png" />
+  <channel id="65b90daed77d450008a43345">
+    <display-name>Pluto TV Anime</display-name>
+    <icon src="https://images.pluto.tv/channels/65b90daed77d450008a43345/colorLogoPNG_1747395522672.png" />
   </channel>
-  <channel id="6786235bd648bf0008c2780a">
-    <display-name>Pluto TV Cinema Orientale</display-name>
-    <icon src="https://images.pluto.tv/channels/6786235bd648bf0008c2780a/colorLogoPNG.png" />
+  <channel id="63c923944207be0007fd0887">
+    <display-name>Pluto TV Viaggi</display-name>
+    <icon src="https://images.pluto.tv/channels/63c923944207be0007fd0887/colorLogoPNG_1774882201565.png" />
+  </channel>
+  <channel id="686cfdf894a028da3aac4252">
+    <display-name>Barbie &amp; Friends</display-name>
+    <icon src="https://images.pluto.tv/channels/686cfdf894a028da3aac4252/colorLogoPNG_1765896833779.png" />
+  </channel>
+  <channel id="68adb5853efb41cd97ce413d">
+    <display-name>I Puffi</display-name>
+    <icon src="https://images.pluto.tv/channels/68adb5853efb41cd97ce413d/colorLogoPNG_1759447100016.png" />
+  </channel>
+  <channel id="69affcad8940750a23a7231a">
+    <display-name>One Piece</display-name>
+    <icon src="https://images.pluto.tv/channels/69affcad8940750a23a7231a/colorLogoPNG_1783322322648.png" />
+  </channel>
+  <channel id="63eb82e24e83e70008ab735f">
+    <display-name>Yu-Gi-Oh!</display-name>
+    <icon src="https://images.pluto.tv/channels/63eb82e24e83e70008ab735f/colorLogoPNG.png" />
   </channel>
   <channel id="612375086abc84000738fc03">
     <display-name>Inazuma Eleven</display-name>
     <icon src="https://images.pluto.tv/channels/612375086abc84000738fc03/colorLogoPNG-1668928583258.png" />
   </channel>
+  <channel id="6245d3792792150007e20634">
+    <display-name>Settimo Cielo</display-name>
+    <icon src="https://images.pluto.tv/channels/6245d3792792150007e20634/colorLogoPNG.png" />
+  </channel>
   <channel id="686cfe983ffa5e0c91cdb5df">
     <display-name>Mattel Junior</display-name>
     <icon src="https://images.pluto.tv/channels/686cfe983ffa5e0c91cdb5df/colorLogoPNG_1765897494203.png" />
+  </channel>
+  <channel id="65253f9881f942000833ccd5">
+    <display-name>Pluto TV Totò</display-name>
+    <icon src="https://images.pluto.tv/channels/65253f9881f942000833ccd5/colorLogoPNG_1774617972809.png" />
   </channel>
   <channel id="609401db8cf51c00084b592e">
     <display-name>iCarly</display-name>
     <icon src="https://images.pluto.tv/channels/609401db8cf51c00084b592e/colorLogoPNG_1784270441871.png" />
   </channel>
-  <channel id="69affcad8940750a23a7231a">
-    <display-name>One Piece</display-name>
-    <icon src="https://images.pluto.tv/channels/69affcad8940750a23a7231a/colorLogoPNG_1783322322648.png" />
+  <channel id="6786235bd648bf0008c2780a">
+    <display-name>Pluto TV Cinema Orientale</display-name>
+    <icon src="https://images.pluto.tv/channels/6786235bd648bf0008c2780a/colorLogoPNG.png" />
+  </channel>
+  <channel id="69ef54f3c700cf0140272def">
+    <display-name>That's 80s</display-name>
+    <icon src="https://images.pluto.tv/channels/69ef54f3c700cf0140272def/colorLogoPNG_1779094967843.png" />
+  </channel>
+  <channel id="69ef53e12f4d2b4f9c582e76">
+    <display-name>That's 70s</display-name>
+    <icon src="https://images.pluto.tv/channels/69ef53e12f4d2b4f9c582e76/colorLogoPNG_1779094999764.png" />
+  </channel>
+  <channel id="62e8d5369e48940007fc1dc1">
+    <display-name>The Asylum</display-name>
+    <icon src="https://images.pluto.tv/channels/62e8d5369e48940007fc1dc1/colorLogoPNG.png" />
+  </channel>
+  <channel id="699d87093d5dba980705cca8">
+    <display-name>Pluto TV Film Ancora Più Romantici</display-name>
+    <icon src="https://images.pluto.tv/channels/699d87093d5dba980705cca8/colorLogoPNG_1777274173528.png" />
+  </channel>
+  <channel id="66c35c0c92b1af0008c8e83a">
+    <display-name>Horror Club</display-name>
+    <icon src="https://images.pluto.tv/channels/66c35c0c92b1af0008c8e83a/colorLogoPNG.png" />
   </channel>
   <programme channel="609401db8cf51c00084b592e" start="20260926045400 +0000" stop="20260926051900 +0000">
     <title>iCarly: Lo show senza Sam</title>
@@ -215371,10 +215371,10 @@ Da Megalopoli A Citta - Giardino</title>
     <category>Series</category>
     <category>Music</category>
   </programme>
-  <channel id="plex.tv.Tennis.Channel.2.plex">
-    <display-name lang="en">Tennis Channel 2</display-name>
-    <icon src="https://provider-static.plex.tv/epg/cms/production/e68f0fa7-4f80-4b75-ba0f-7ff7b912e17f/TC2_Plex_2000X3000_Vertical_Art_.jpg" />
-    <icon src="https://provider-static.plex.tv/epg/cms/production/e68f0fa7-4f80-4b75-ba0f-7ff7b912e17f/TC2_Plex_2000X3000_Vertical_Art_.jpg" />
+  <channel id="plex.tv.BABY.SHARK.TV.plex">
+    <display-name lang="en">BABY SHARK TV</display-name>
+    <icon src="https://provider-static.plex.tv/epg/cms/production/c0d601b3-28bc-4b6f-9e8b-0748d2026f65/Plex_Vertical-Default-Art_-_2000x3000.jpg" />
+    <icon src="https://provider-static.plex.tv/epg/cms/production/c0d601b3-28bc-4b6f-9e8b-0748d2026f65/Plex_Vertical-Default-Art_-_2000x3000.jpg" />
     <url>http://www.plex.tv</url>
   </channel>
   <channel id="plex.tv.XITE.Hits.plex">
@@ -215383,10 +215383,10 @@ Da Megalopoli A Citta - Giardino</title>
     <icon src="https://provider-static.plex.tv/epg/cms/production/c33f5f5b-8d38-4a46-bd98-f8bf09ff9c47/xitehits_artwork_vertical_-_Arlette_Firan.jpg" />
     <url>http://www.plex.tv</url>
   </channel>
-  <channel id="plex.tv.BABY.SHARK.TV.plex">
-    <display-name lang="en">BABY SHARK TV</display-name>
-    <icon src="https://provider-static.plex.tv/epg/cms/production/c0d601b3-28bc-4b6f-9e8b-0748d2026f65/Plex_Vertical-Default-Art_-_2000x3000.jpg" />
-    <icon src="https://provider-static.plex.tv/epg/cms/production/c0d601b3-28bc-4b6f-9e8b-0748d2026f65/Plex_Vertical-Default-Art_-_2000x3000.jpg" />
+  <channel id="plex.tv.Tennis.Channel.2.plex">
+    <display-name lang="en">Tennis Channel 2</display-name>
+    <icon src="https://provider-static.plex.tv/epg/cms/production/e68f0fa7-4f80-4b75-ba0f-7ff7b912e17f/TC2_Plex_2000X3000_Vertical_Art_.jpg" />
+    <icon src="https://provider-static.plex.tv/epg/cms/production/e68f0fa7-4f80-4b75-ba0f-7ff7b912e17f/TC2_Plex_2000X3000_Vertical_Art_.jpg" />
     <url>http://www.plex.tv</url>
   </channel>
   <channel id="plex.tv.Unbeaten.plex">
