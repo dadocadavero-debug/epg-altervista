@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-EPG MASTER CUMULATIVO V5 - 2026-09-28
+EPG MASTER CUMULATIVO V6 - 2026-09-28
 
 Obiettivo:
 - NON tocca update_playlist.py né gli stream.
@@ -30,7 +30,12 @@ M3U_URL = "https://inthemix.altervista.org/tv.m3u"
 # Fonte supplementare specifica per la guida Mediaset.
 # Viene usata in modo mirato per 20 Mediaset, senza sovrascrivere
 # le guide già funzionanti degli altri canali.
-MEDIASET_EPG_URL = "https://iptv-org.github.io/epg/guides/it/mediaset.it.xml"
+MEDIASET_EPG_URLS = [
+    "https://iptv-org.github.io/epg/guides/it/mediaset.it.xml",
+    "https://iptv-org.github.io/epg/guides/it/mediaset.it.epg.xml",
+    "https://iptv-org.github.io/epg/guides/it/superguidatv.it.xml",
+    "https://iptv-org.github.io/epg/guides/it/tivu.tv.xml",
+]
 
 # Entrambi gli ID vengono pubblicati con la stessa guida, così la playlist
 # funziona indipendentemente dal fatto che usi 20.it o 20Mediaset.it.
@@ -273,81 +278,97 @@ def ensure_channel_alias(out_root, source_channel, alias_id):
 
 def hydrate_mediaset20(out_root, output_ids, programme_keys):
     """
-    Integra la guida di 20 Mediaset da una fonte dedicata.
+    Integra la guida di 20 Mediaset in modo resiliente.
 
-    Punto importante: il vecchio merge poteva avere un <channel> valido
-    ma ZERO <programme> per quell'ID. In quel caso il player vedeva il canale
-    ma non mostrava alcuna guida.
-
-    Qui troviamo la guida reale per 20 Mediaset e la pubblichiamo sotto
-    ENTRAMBI gli ID usati nel progetto: 20.it e 20Mediaset.it.
+    Prova più fonti in ordine. Se una URL dà 404/non risponde/non contiene
+    20 Mediaset, passa alla successiva. Se nessuna fonte è disponibile,
+    NON blocca l'intero EPG: restituisce available=False e lascia intatto
+    tutto il merge già costruito (incluse le guide sport/FAST).
     """
-    raw = fetch(MEDIASET_EPG_URL)
-    root = ET.fromstring(decompress_if_needed(raw))
+    errors = []
 
-    channels = root.findall("channel")
-    programmes = root.findall("programme")
+    for source_url in MEDIASET_EPG_URLS:
+        try:
+            raw = fetch(source_url)
+            root = ET.fromstring(decompress_if_needed(raw))
+        except Exception as exc:
+            errors.append(f"{source_url} -> {exc}")
+            continue
 
-    source_channel = None
-    source_id = ""
+        channels = root.findall("channel")
+        programmes = root.findall("programme")
 
-    # Prima proviamo gli ID noti.
-    for ch in channels:
-        cid = (ch.get("id") or "").strip()
-        if cid in MEDIASET20_ALIAS_IDS:
-            source_channel = ch
-            source_id = cid
-            break
+        source_channel = None
+        source_id = ""
 
-    # Se la fonte usa un ID differente, troviamo il canale per display-name.
-    if source_channel is None:
+        # Prima gli ID noti.
         for ch in channels:
-            names = {norm(x) for x in channel_names(ch)}
-            if names & MEDIASET20_NAMES:
+            cid = (ch.get("id") or "").strip()
+            if cid in MEDIASET20_ALIAS_IDS:
                 source_channel = ch
-                source_id = (ch.get("id") or "").strip()
+                source_id = cid
                 break
 
-    if source_channel is None or not source_id:
-        raise RuntimeError(
-            "Fonte Mediaset disponibile ma canale 20 Mediaset non trovato."
-        )
+        # Poi il nome visualizzato.
+        if source_channel is None:
+            for ch in channels:
+                names = {norm(x) for x in channel_names(ch)}
+                if names & MEDIASET20_NAMES:
+                    source_channel = ch
+                    source_id = (ch.get("id") or "").strip()
+                    break
 
-    source_programmes = [
-        p for p in programmes
-        if (p.get("channel") or "").strip() == source_id
-    ]
+        if source_channel is None or not source_id:
+            errors.append(f"{source_url} -> 20 Mediaset non trovato")
+            continue
 
-    if not source_programmes:
-        raise RuntimeError(
-            f"Fonte Mediaset: trovato {source_id}, ma senza programmi."
-        )
+        source_programmes = [
+            p for p in programmes
+            if (p.get("channel") or "").strip() == source_id
+        ]
 
-    aliases_added = 0
-    programmes_added = 0
+        if not source_programmes:
+            errors.append(f"{source_url} -> {source_id} trovato ma senza programmi")
+            continue
 
-    for alias_id in MEDIASET20_ALIAS_IDS:
-        if ensure_channel_alias(out_root, source_channel, alias_id):
-            output_ids.add(alias_id)
-            aliases_added += 1
+        aliases_added = 0
+        programmes_added = 0
 
-        for source_programme in source_programmes:
-            cloned = copy.deepcopy(source_programme)
-            cloned.set("channel", alias_id)
+        for alias_id in MEDIASET20_ALIAS_IDS:
+            if ensure_channel_alias(out_root, source_channel, alias_id):
+                output_ids.add(alias_id)
+                aliases_added += 1
 
-            key = programme_key(cloned)
-            if key in programme_keys:
-                continue
+            for source_programme in source_programmes:
+                cloned = copy.deepcopy(source_programme)
+                cloned.set("channel", alias_id)
 
-            programme_keys.add(key)
-            out_root.append(cloned)
-            programmes_added += 1
+                key = programme_key(cloned)
+                if key in programme_keys:
+                    continue
+
+                programme_keys.add(key)
+                out_root.append(cloned)
+                programmes_added += 1
+
+        return {
+            "available": True,
+            "source_url": source_url,
+            "source_id": source_id,
+            "source_programmes": len(source_programmes),
+            "aliases_added": aliases_added,
+            "programmes_added": programmes_added,
+            "errors": errors,
+        }
 
     return {
-        "source_id": source_id,
-        "source_programmes": len(source_programmes),
-        "aliases_added": aliases_added,
-        "programmes_added": programmes_added,
+        "available": False,
+        "source_url": "",
+        "source_id": "",
+        "source_programmes": 0,
+        "aliases_added": 0,
+        "programmes_added": 0,
+        "errors": errors,
     }
 
 
@@ -584,12 +605,21 @@ def main():
         programme_keys,
     )
 
-    print(
-        "20 Mediaset: "
-        f"fonte={mediaset20_stats['source_id']} / "
-        f"{mediaset20_stats['source_programmes']} programmi sorgente -> "
-        f"{mediaset20_stats['programmes_added']} programmi alias aggiunti"
-    )
+    if mediaset20_stats["available"]:
+        print(
+            "20 Mediaset: "
+            f"fonte={mediaset20_stats['source_url']} | "
+            f"id={mediaset20_stats['source_id']} | "
+            f"{mediaset20_stats['source_programmes']} programmi sorgente -> "
+            f"{mediaset20_stats['programmes_added']} programmi alias aggiunti"
+        )
+    else:
+        print(
+            "ATTENZIONE: nessuna fonte dedicata 20 Mediaset disponibile. "
+            "Il merge generale viene comunque mantenuto."
+        )
+        for err in mediaset20_stats["errors"]:
+            print(f"  20 MEDIASET FALLBACK | {err}")
 
     # Riallinea i conteggi dopo le integrazioni mirate.
     programme_count_by_id = programme_counts_by_channel(out_root)
@@ -661,18 +691,21 @@ def main():
         )
 
     # Validazione specifica Mediaset 20:
-    # non pubblichiamo un nuovo EPG se uno dei due ID resta senza programmi.
+    # se la fonte dedicata è stata trovata, entrambi gli alias devono avere
+    # programmi. Se invece tutte le fonti Mediaset sono indisponibili, NON
+    # blocchiamo l'intero EPG: così non perdiamo le guide sport/FAST già raccolte.
     final_programme_counts = programme_counts_by_channel(out_root)
-    mediaset20_missing = [
-        cid for cid in MEDIASET20_ALIAS_IDS
-        if final_programme_counts.get(cid, 0) == 0
-    ]
-    if mediaset20_missing:
-        raise RuntimeError(
-            "Guida 20 Mediaset ancora assente per: "
-            + ", ".join(mediaset20_missing)
-            + ". Il vecchio epg.xml viene mantenuto."
-        )
+    if mediaset20_stats["available"]:
+        mediaset20_missing = [
+            cid for cid in MEDIASET20_ALIAS_IDS
+            if final_programme_counts.get(cid, 0) == 0
+        ]
+        if mediaset20_missing:
+            raise RuntimeError(
+                "Guida 20 Mediaset ancora assente per: "
+                + ", ".join(mediaset20_missing)
+                + ". Il vecchio epg.xml viene mantenuto."
+            )
 
     # ------------------------------------------------------------
     # 5. Report dei canali Altervista che ancora non trovano nessun candidato
@@ -732,6 +765,7 @@ def main():
             f"{cid}={final_programme_counts.get(cid, 0)} programmi"
             for cid in MEDIASET20_ALIAS_IDS
         )
+        + (" | fonte dedicata OK" if mediaset20_stats["available"] else " | fonte dedicata non disponibile")
     )
 
     sport_with_guide = {
