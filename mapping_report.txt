@@ -3,15 +3,15 @@ Rai principali: Rai 1/2/3 <- rispettivi feed Europa Altervista
 Canali sorgente Altervista: 498
 EPG unico usato per mapping e player: https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml
 Canali disponibili nell'EPG: 369
-Programmi disponibili nell'EPG: 27981
-ID EPG con almeno un programma: 324
-Canali della playlist collegati a un ID EPG con programmi: 238
-Canali/righe EXTINF modificate: 173
-Match automatici univoci: 64
+Programmi disponibili nell'EPG: 27946
+ID EPG con almeno un programma: 323
+Canali della playlist collegati a un ID EPG con programmi: 239
+Canali/righe EXTINF modificate: 174
+Match automatici univoci: 65
 ID già validi preservati: 65
 Loghi aggiunti/sostituiti: 178
 Loghi generici usati come ultima risorsa: 61
-Canali senza EPG abbinabile: 260
+Canali senza EPG abbinabile: 259
 
 Rete 4 | Rete4.it -> Rete.4.it | id:Rete4.it
 Canale 5 | Canale5.it -> Canale.5.it | id:Canale5.it
@@ -140,6 +140,7 @@ Inter TV | (vuoto) -> Inter.TV.it | nome-verificato
 Inter TV | logo aggiunto -> https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/inter-tv-it.png
 INTER 24/7 | (vuoto) -> IT:.INTER.24/7.be | nome-verificato
 Lazio Style TV | logo aggiunto -> https://www.tvdream.net/img/lazio-style-tv.png
+Italian Fishing TV | (vuoto) -> Italian.Fishing.TV.be | tvg-name-esatto
 SportOutdoor.Tv | (vuoto) -> ITBA3300022EA | tvg-name-esatto
 SportOutdoor.Tv | logo aggiunto -> https://www.google.com/s2/favicons?domain=sportoutdoor.tv&sz=256
 FIFA+ | (vuoto) -> IT:.FIFA+.be | nome-verificato
@@ -464,7 +465,6 @@ Supertennis+ 2 | tvg-id=(vuoto) | group=Sport
 Supertennis+ 3 | tvg-id=(vuoto) | group=Sport
 Supertennis+ 4 | tvg-id=(vuoto) | group=Sport
 Lazio Style TV | tvg-id=(vuoto) | group=Sport
-Italian Fishing TV | tvg-id=(vuoto) | group=Sport
 F1 TV | tvg-id=(vuoto) | group=Sport
 Dolomiti Life TV | tvg-id=(vuoto) | group=Documentari
 Plus TV Sport | tvg-id=MsChannel.it | group=Sport
