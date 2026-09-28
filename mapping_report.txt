@@ -8,7 +8,7 @@ Canali della playlist collegati a un ID EPG valido: 256
 Canali/righe EXTINF modificate: 193
 Match automatici univoci: 75
 ID già validi preservati: 63
-Loghi aggiunti/sostituiti: 177
+Loghi aggiunti/sostituiti: 178
 Loghi generici usati come ultima risorsa: 61
 Canali senza EPG abbinabile: 242
 
@@ -20,6 +20,7 @@ TV8 SD | Tv8.it -> TV8.HD.it | id:Tv8.it
 NOVE | logo sostituito -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png
 EuroNews Italia | PlutoEuronews.it -> Euronews.it | id:PlutoEuronews.it
 Mediaset 20 | 20Mediaset.it -> 20.it | id:20Mediaset.it
+Mediaset 20 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/20mediaset.png
 Rai 4 | rai4.it -> Rai4.it | id:rai4.it
 Iris | iris.it -> Iris.it | id:iris.it
 Rai 5 | rai5.it -> Rai5.it | id:rai5.it
@@ -225,7 +226,7 @@ Canale 5 (hls) | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Media
 Italia 1 (hls) | italia1 -> Italia.1.it | id:italia1
 Italia 1 (hls) | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i1.png
 Mediaset 20 (hls) | 20Mediaset.it -> 20.it | id:20Mediaset.it
-Mediaset 20 (hls) | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png
+Mediaset 20 (hls) | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/20mediaset.png
 Rai 1 HbbTV | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png
 Rai 1 mdp | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png
 Rai 2 HbbTV | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png
@@ -282,7 +283,7 @@ Italia 1 | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_It
 TV8 SD | Tv8.it -> TV8.HD.it | id:Tv8.it
 TV8 SD | logo aggiunto -> https://guidatv.sky.it/logo/260tv8hd_Light_Fit.png?checksum=938addc1e1adaac5be9fdf942d4c7f25?tr=n-logo_80
 Mediaset 20 | 20Mediaset.it -> 20.it | id:20Mediaset.it
-Mediaset 20 | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png
+Mediaset 20 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/20mediaset.png
 Rai 4 | rai4 -> Rai4.it | id:rai4
 Rai 4 | logo aggiunto -> https://www.raiplay.it/dl/img/2016/09/1473662992107Logo-Rai4.png
 Cielo SD | Cielo.it -> cielo.it | id:Cielo.it
@@ -324,7 +325,7 @@ Italia 1 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/M
 LA7 HD | (vuoto) -> LA7.HD.it | nome-verificato
 LA7 HD | logo aggiunto -> https://guidatv.sky.it/logo/407la7hd_Light_Fit.png?checksum=d9bcc8bf-703c-4d33-823d-5171697fe8a5?tr=n-logo_80
 Mediaset 20 HD Europa | 20Mediaset.it -> 20.it | id:20Mediaset.it
-Mediaset 20 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/20.png
+Mediaset 20 HD Europa | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/20mediaset.png
 Iris HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/iris.png
 Italia 2 HD Europa | Italia2.it -> Italia.2.it | id:Italia2.it
 Italia 2 HD Europa | logo aggiunto -> https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/i2.png
