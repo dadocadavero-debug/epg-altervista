@@ -36,7 +36,7 @@ UA = {
 ID_MAP = {
     "Rete4.it": "Rete.4.it", "Canale5.it": "Canale.5.it", "Italia1.it": "Italia.1.it",
     "la7": "LA7.HD.it", "Tv8.it": "TV8.HD.it", "PlutoEuronews.it": "Euronews.it",
-    "20Mediaset.it": "20.it", "rai4.it": "Rai4.it", "iris.it": "Iris.it",
+    "20Mediaset.it": "20.it", "Mediaset20.it": "20.it", "rai4.it": "Rai4.it", "iris.it": "Iris.it",
     "rai5.it": "Rai5.it", "raimovie.it": "RaiMovie.it", "raipremium.it": "RaiPremium.it",
     "Twentyseven.it": "27.Twentyseven.it", "TwentySeven.it": "27.Twentyseven.it",
     "la7d": "LA7.CINEMA.it", "la5": "La.5.it", "LA5.it": "La.5.it",
@@ -54,6 +54,15 @@ ID_MAP = {
     "rai4": "Rai4.it", "rai3": "Rai3.it", "rai 1": "Rai1.it", "rai 2": "Rai2.it", "rai 3": "Rai3.it",
     "rete 4": "Rete.4.it", "canale 5": "Canale.5.it", "italia 1": "Italia.1.it", "Cielo.it": "cielo.it",
     "RaiYoYo.it": "RaiYoyo.it", "tg norba 24": "TG.NORBA.24.it",
+}
+
+# ID EPG alternativi: scegliamo dinamicamente quello che esiste DAVVERO
+# nell'epg.xml corrente, senza imporre un ID che potrebbe cambiare tra fonti.
+EPG_ID_CANDIDATES = {
+    "mediaset 20": ("20Mediaset.it", "20.it"),
+    "mediaset 20 hls": ("20Mediaset.it", "20.it"),
+    "20 mediaset": ("20Mediaset.it", "20.it"),
+    "20 mediaset hls": ("20Mediaset.it", "20.it"),
 }
 
 # Nomi Altervista con ID mancante ma corrispondenza EPG sicura.
@@ -126,6 +135,8 @@ TECH_WORDS = {
 # Loghi manuali per canali/varianti che spesso arrivano senza tvg-logo.
 # Gli URL sono centralizzati qui per poterli aggiornare facilmente.
 LOGO_MAP = {
+    "mediaset 20": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/20mediaset.png",
+    "20 mediaset": "https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/20mediaset.png",
     "rai 1": "https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png",
     "rai 2": "https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png",
     "rai 3": "https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png",
@@ -638,14 +649,25 @@ def main():
                 new_id = alt_id
                 reason = f"{alt_key}-verificato"
 
-        # 4) Mappa nome verificata (soprattutto ID vuoti/HbbTV).
+        # 4) Mapping dinamico per nomi con più ID EPG possibili.
+        # Esempio: Mediaset 20 può comparire come 20Mediaset.it oppure 20.it
+        # a seconda della fonte EPG. Usiamo SOLO l'ID presente nell'epg.xml corrente.
+        if not new_id and not (old_id and old_id in epg_ids):
+            candidate_ids = EPG_ID_CANDIDATES.get(norm(name), ())
+            for candidate_id in candidate_ids:
+                if candidate_id in epg_ids:
+                    new_id = candidate_id
+                    reason = "nome-candidato-verificato"
+                    break
+
+        # 5) Mappa nome verificata (soprattutto ID vuoti/HbbTV).
         if not new_id and not (old_id and old_id in epg_ids):
             mapped_name = NAME_MAP.get(norm(name), "")
             if mapped_name and mapped_name in epg_ids:
                 new_id = mapped_name
                 reason = "nome-verificato"
 
-        # 5) Prova anche tvg-name se presente.
+        # 6) Prova anche tvg-name se presente.
         if not new_id and not (old_id and old_id in epg_ids) and tvg_name:
             candidates = names_to_ids.get(norm(tvg_name), set())
             if len(candidates) == 1:
@@ -660,7 +682,7 @@ def main():
                     reason = "tvg-name-ripulito"
                     auto += 1
 
-        # 6) Match automatico SOLO se univoco sul nome visualizzato.
+        # 7) Match automatico SOLO se univoco sul nome visualizzato.
         if not new_id and not (old_id and old_id in epg_ids):
             candidates = names_to_ids.get(norm(name), set())
 
@@ -857,7 +879,20 @@ def main():
                     "logo diverso dal mapping manuale. Aggiornamento annullato."
                 )
 
-    # 4) L'header deve continuare a puntare all'EPG unico del repository.
+    # 4) Mediaset 20 (normale/HLS), se presente, deve essere collegato
+    # a un ID che esiste davvero nell'EPG corrente.
+    for extinf in output_extinf:
+        cname = norm(channel_name_from_extinf(extinf))
+        if cname in EPG_ID_CANDIDATES:
+            cid = get_attr(extinf, "tvg-id")
+            if not cid or cid not in epg_ids:
+                raise RuntimeError(
+                    f"Regressione EPG {channel_name_from_extinf(extinf)}: "
+                    f"tvg-id {cid or '(vuoto)'} non presente nell'EPG. "
+                    "Aggiornamento annullato."
+                )
+
+    # 5) L'header deve continuare a puntare all'EPG unico del repository.
     expected_header = f'x-tvg-url="{EPG_URL}"'
     expected_header_alt = f'url-tvg="{EPG_URL}"'
     if not out or expected_header not in out[0] or expected_header_alt not in out[0]:
