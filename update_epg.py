@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-EPG MASTER CUMULATIVO V4 - 2026-09-28
+EPG MASTER CUMULATIVO V5 - 2026-09-28
 
 Obiettivo:
 - NON tocca update_playlist.py né gli stream.
@@ -30,7 +30,7 @@ M3U_URL = "https://inthemix.altervista.org/tv.m3u"
 # Fonte supplementare specifica per la guida Mediaset.
 # Viene usata in modo mirato per 20 Mediaset, senza sovrascrivere
 # le guide già funzionanti degli altri canali.
-MEDIASET_EPG_URL = "https://iptv-org.github.io/epg/guides/it/mediaset.it.epg.xml"
+MEDIASET_EPG_URL = "https://iptv-org.github.io/epg/guides/it/mediaset.it.xml"
 
 # Entrambi gli ID vengono pubblicati con la stessa guida, così la playlist
 # funziona indipendentemente dal fatto che usi 20.it o 20Mediaset.it.
