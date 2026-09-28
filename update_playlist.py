@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ============================================================
-# MASTER CUMULATIVO V3 GUIDE-AWARE 2026-09-28
+# MASTER CUMULATIVO V4 ALIAS-STABILI 2026-09-28
 # Regole da NON regredire:
 # - tutti gli altri stream seguono automaticamente Altervista;
 # - Rai 1/2/3 copiano dinamicamente Rai 1/2/3 Europa;
@@ -97,14 +97,14 @@ NAME_MAP = {
     # Sport: questi ID sono inclusi dal workflow EPG Altervista nel nostro epg.xml.
     "sport italia": "Sportitalia.it",
     "equ tv": "EQUtv.it",
-    "fifa plus": "IT:.FIFA+.be",
-    "inter 24 7": "IT:.INTER.24/7.be",
-    "juventus play": "IT:.Juventus.Play.be",
-    "motoretro": "IT:.Motoretrò.be",
-    "rally tv": "IT:.Rally.TV.FAST+.be",
-    "redbull tv": "IT:.Red.Bull.TV.be",
-    "red bull tv": "IT:.Red.Bull.TV.be",
-    "tennis plus": "IT:.Tennis+.be",
+    "fifa plus": "RakutenFifaPlus.it",
+    "inter 24 7": "RakutenInter247.it",
+    "juventus play": "RakutenJuventusPlay.it",
+    "motoretro": "RakutenMotoretro.it",
+    "rally tv": "RakutenRallyTV.it",
+    "redbull tv": "RakutenRedBullTV.it",
+    "red bull tv": "RakutenRedBullTV.it",
+    "tennis plus": "RakutenTennisPlus.it",
 
     # HbbTV Rai: stessa programmazione del canale lineare.
     "rai premium hbbtv akamai": "RaiPremium.it",
@@ -975,9 +975,10 @@ def main():
 
     debug_ids = (
         "20.it", "20Mediaset.it",
-        "IT:.FIFA+.be", "IT:.INTER.24/7.be", "IT:.Juventus.Play.be",
-        "IT:.Motoretrò.be", "IT:.Rally.TV.FAST+.be",
-        "IT:.Red.Bull.TV.be", "IT:.Tennis+.be",
+        "RakutenFifaPlus.it", "RakutenInter247.it", "RakutenJuventusPlay.it",
+        "RakutenMotoretro.it", "RakutenRallyTV.it",
+        "RakutenRedBullTV.it", "RakutenTennisPlus.it",
+        "raisport", "sportitalia", "SuperTennis.it",
     )
     print("Diagnostica guide importanti:")
     for cid in debug_ids:
