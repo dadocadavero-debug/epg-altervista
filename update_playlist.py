@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ============================================================
-# MASTER CUMULATIVO 2026-09-26
+# MASTER CUMULATIVO V3 GUIDE-AWARE 2026-09-28
 # Regole da NON regredire:
 # - tutti gli altri stream seguono automaticamente Altervista;
 # - Rai 1/2/3 copiano dinamicamente Rai 1/2/3 Europa;
@@ -523,6 +523,18 @@ def main():
     # 3. INDICIZZA GLI ID E I NOMI PRESENTI NELL'EPG
     # =========================================================
     epg_ids = set()
+
+    # ID che hanno DAVVERO almeno un <programme>.
+    # Un semplice <channel id="..."> non basta: Fermata mostra la guida
+    # solo se esistono programmi associati a quell'ID.
+    programme_counts_by_id = {}
+    for programme in root.findall("programme"):
+        cid = (programme.get("channel") or "").strip()
+        if cid:
+            programme_counts_by_id[cid] = programme_counts_by_id.get(cid, 0) + 1
+
+    epg_programme_ids = set(programme_counts_by_id)
+
     names_to_ids = {}
     stripped_to_ids = {}
     epg_icons_by_id = {}
@@ -630,21 +642,23 @@ def main():
         new_id = None
         reason = ""
 
-        # 1) ID già valido nell'EPG: lascialo.
-        if old_id and old_id in epg_ids:
+        # 1) ID già valido E con programmi: lascialo.
+        # Prima bastava che esistesse <channel>; questo poteva collegare
+        # il canale a un ID con ZERO programmi e quindi Fermata mostrava niente.
+        if old_id and old_id in epg_programme_ids:
             preserved += 1
 
         # 2) Alias ID verificato.
         elif old_id:
-            mapped_old = valid_epg_id(old_id, epg_ids)
+            mapped_old = valid_epg_id(old_id, epg_programme_ids)
             if mapped_old:
                 new_id = mapped_old
                 reason = f"id:{old_id}"
 
         # 3) Recupera attributi alternativi/malformati della sorgente
         #    (tvgid=, vg-id=, channel-id=...), ma SOLO se validi nell'EPG.
-        if not new_id and not (old_id and old_id in epg_ids):
-            alt_id, alt_key = alternate_epg_id(line, epg_ids)
+        if not new_id and not (old_id and old_id in epg_programme_ids):
+            alt_id, alt_key = alternate_epg_id(line, epg_programme_ids)
             if alt_id:
                 new_id = alt_id
                 reason = f"{alt_key}-verificato"
@@ -652,39 +666,51 @@ def main():
         # 4) Mapping dinamico per nomi con più ID EPG possibili.
         # Esempio: Mediaset 20 può comparire come 20Mediaset.it oppure 20.it
         # a seconda della fonte EPG. Usiamo SOLO l'ID presente nell'epg.xml corrente.
-        if not new_id and not (old_id and old_id in epg_ids):
+        if not new_id and not (old_id and old_id in epg_programme_ids):
             candidate_ids = EPG_ID_CANDIDATES.get(norm(name), ())
             for candidate_id in candidate_ids:
-                if candidate_id in epg_ids:
+                if candidate_id in epg_programme_ids:
                     new_id = candidate_id
                     reason = "nome-candidato-verificato"
                     break
 
         # 5) Mappa nome verificata (soprattutto ID vuoti/HbbTV).
-        if not new_id and not (old_id and old_id in epg_ids):
+        if not new_id and not (old_id and old_id in epg_programme_ids):
             mapped_name = NAME_MAP.get(norm(name), "")
-            if mapped_name and mapped_name in epg_ids:
+            if mapped_name and mapped_name in epg_programme_ids:
                 new_id = mapped_name
                 reason = "nome-verificato"
 
         # 6) Prova anche tvg-name se presente.
-        if not new_id and not (old_id and old_id in epg_ids) and tvg_name:
-            candidates = names_to_ids.get(norm(tvg_name), set())
+        if not new_id and not (old_id and old_id in epg_programme_ids) and tvg_name:
+            candidates = {
+                cid for cid in names_to_ids.get(norm(tvg_name), set())
+                if cid in epg_programme_ids
+            }
             if len(candidates) == 1:
                 new_id = next(iter(candidates))
                 reason = "tvg-name-esatto"
                 auto += 1
             else:
                 sn_tvg = stripped_norm(tvg_name)
-                candidates = stripped_to_ids.get(sn_tvg, set()) if len(sn_tvg) >= 4 else set()
+                candidates = (
+                    {
+                        cid for cid in stripped_to_ids.get(sn_tvg, set())
+                        if cid in epg_programme_ids
+                    }
+                    if len(sn_tvg) >= 4 else set()
+                )
                 if len(candidates) == 1:
                     new_id = next(iter(candidates))
                     reason = "tvg-name-ripulito"
                     auto += 1
 
         # 7) Match automatico SOLO se univoco sul nome visualizzato.
-        if not new_id and not (old_id and old_id in epg_ids):
-            candidates = names_to_ids.get(norm(name), set())
+        if not new_id and not (old_id and old_id in epg_programme_ids):
+            candidates = {
+                cid for cid in names_to_ids.get(norm(name), set())
+                if cid in epg_programme_ids
+            }
 
             if len(candidates) == 1:
                 new_id = next(iter(candidates))
@@ -694,7 +720,13 @@ def main():
             else:
                 # Match tecnico ripulito solo se univoco e nome base non troppo corto.
                 sn = stripped_norm(name)
-                candidates = stripped_to_ids.get(sn, set()) if len(sn) >= 4 else set()
+                candidates = (
+                    {
+                        cid for cid in stripped_to_ids.get(sn, set())
+                        if cid in epg_programme_ids
+                    }
+                    if len(sn) >= 4 else set()
+                )
 
                 if len(candidates) == 1:
                     new_id = next(iter(candidates))
@@ -740,7 +772,7 @@ def main():
         effective_id_match = re.search(r'tvg-id="([^"]*)"', line)
         effective_id = effective_id_match.group(1).strip() if effective_id_match else ""
 
-        if not effective_id or effective_id not in epg_ids:
+        if not effective_id or effective_id not in epg_programme_ids:
             unmatched_epg.append(
                 f"{name} | tvg-id={effective_id or '(vuoto)'} | group={get_attr(line, 'group-title') or '(vuoto)'}"
             )
@@ -807,7 +839,7 @@ def main():
     for extinf in output_extinf:
         m = re.search(r'tvg-id="([^"]*)"', extinf)
         cid = m.group(1).strip() if m else ""
-        if cid and cid in epg_ids:
+        if cid and cid in epg_programme_ids:
             linked_ids.append(cid)
 
     required_ids = {
@@ -885,10 +917,10 @@ def main():
         cname = norm(channel_name_from_extinf(extinf))
         if cname in EPG_ID_CANDIDATES:
             cid = get_attr(extinf, "tvg-id")
-            if not cid or cid not in epg_ids:
+            if not cid or cid not in epg_programme_ids:
                 raise RuntimeError(
                     f"Regressione EPG {channel_name_from_extinf(extinf)}: "
-                    f"tvg-id {cid or '(vuoto)'} non presente nell'EPG. "
+                    f"tvg-id {cid or '(vuoto)'} senza programmi nell'EPG. "
                     "Aggiornamento annullato."
                 )
 
@@ -916,7 +948,8 @@ def main():
         f"EPG unico usato per mapping e player: {EPG_URL}\n"
         f"Canali disponibili nell'EPG: {channel_count}\n"
         f"Programmi disponibili nell'EPG: {programme_count}\n"
-        f"Canali della playlist collegati a un ID EPG valido: {len(linked_ids)}\n"
+        f"ID EPG con almeno un programma: {len(epg_programme_ids)}\n"
+        f"Canali della playlist collegati a un ID EPG con programmi: {len(linked_ids)}\n"
         f"Canali/righe EXTINF modificate: {changed}\n"
         f"Match automatici univoci: {auto}\n"
         f"ID già validi preservati: {preserved}\n"
@@ -936,8 +969,20 @@ def main():
         f"({generic_logos} generici)"
     )
     print(
-        f"EPG: {channel_count} canali, {programme_count} programmi"
+        f"EPG: {channel_count} canali, {programme_count} programmi "
+        f"({len(epg_programme_ids)} ID con programmi)"
     )
+
+    debug_ids = (
+        "20.it", "20Mediaset.it",
+        "IT:.FIFA+.be", "IT:.INTER.24/7.be", "IT:.Juventus.Play.be",
+        "IT:.Motoretrò.be", "IT:.Rally.TV.FAST+.be",
+        "IT:.Red.Bull.TV.be", "IT:.Tennis+.be",
+    )
+    print("Diagnostica guide importanti:")
+    for cid in debug_ids:
+        print(f"  {cid}: {programme_counts_by_id.get(cid, 0)} programmi")
+
     print(f"Report: {OUT_REPORT}")
 
 
