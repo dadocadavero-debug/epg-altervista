@@ -128,7 +128,7 @@ https://live03-col.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/manifest_hd.mpd
 https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/HGTV/CMAF/index.m3u8
 #EXTINF:-1 tvg-name="Rai Scuola" tvg-id="RaiScuola.it" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637322361853_logo-raiscuola.png" tvg-chno="57" group-title="Rai" mediapolis="",Rai Scuola
 https://d3k8wzt41aflvx.cloudfront.net/RAIScuola/Live.m3u8
-#EXTINF:-1 tvg-name="Rai Sport" tvg-id="RaiSport.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" tvg-chno="58" group-title="Sport" mediapolis="358025",Rai Sport
+#EXTINF:-1 tvg-name="Rai Sport" tvg-id="raisport" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" tvg-chno="58" group-title="Sport" mediapolis="358025",Rai Sport
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=16&forceUserAgent=raiplayappletv
@@ -143,7 +143,7 @@ https://distribution.sportitalialive.it/sportitalia/sisolocalcio_abr/playlist.m3
 https://distribution.sportitalialive.it/sportitalia/silive24_abr/playlist.m3u8
 #EXTINF:-1 tvg-name="" tvg-id="IT3300001G3" tvg-logo="https://provider-static.plex.tv/epg/cms/production/81e4bfb2-79b6-433f-9501-7e93698aa587/251113_IlSole24OreTV_logoKWHT_REALLYRDX.png" group-title="Notizie" tvg-chno="63" channel-number="63",IL Sole 24 Ore TV
 https://amg14891-amg14891c8-amgplt0395.playout.now3.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-name="Super Tennis" tvg-id="SuperTennis.HD.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png" tvg-chno="64" group-title="Sport", Super Tennis
+#EXTINF:-1 tvg-name="Super Tennis" tvg-id="SuperTennis.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png" tvg-chno="64" group-title="Sport", Super Tennis
 https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
 #EXTINF:-1 tvg-logo="https://nokeptv.it/wp-content/uploads/2022/03/LOGONOKEPPP@4x.png" tvg-chno="65" group-title="Musica",Nokep TV
 https://streamer2.premio.link/nokep_hd/playlist.m3u8
@@ -471,11 +471,11 @@ https://streamcdng1-421b2081187a40368f24e4fb496bfc26.msvdn.net/channel3/manifest
 https://streamcdng1-421b2081187a40368f24e4fb496bfc26.msvdn.net/channel4/manifest.mpd
 #EXTINF:-1 channel-id="IT16000070D" tvg-id="IT16000070D" tvg-name="Sportface" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT16000070D_20260528T053649SQUARE.png" group-title="Sport",Sportface
 https://9b7788ca.wurl.com/U2Ftc3VuZy1pdF9TcG9ydEZhY2VfSExT/playlist.m3u8
-#EXTINF:-1 tvg-id="IT:.Juventus.Play.be" group-title="Sport" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork-negative/e17ab6db-7f70-4523-8c8c-4f7f919f04e7-width300-quality90.png",Juventus Play
+#EXTINF:-1 tvg-id="RakutenJuventusPlay.it" group-title="Sport" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork-negative/e17ab6db-7f70-4523-8c8c-4f7f919f04e7-width300-quality90.png",Juventus Play
 https://amg27604-amg27604c3-amgplt0148.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg27604-amg27604c3-amgplt0148/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/inter-tv-it.png" tvg-id="Inter.TV.it" group-title="Sport",Inter TV
 https://d3k8wzt41aflvx.cloudfront.net/INTERTV/Live.m3u8
-#EXTINF:-1 tvg-id="IT:.INTER.24/7.be" group-title="Sport" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork-negative/bb49ed71-bf84-480e-9336-4cfaba55d253-width200-quality90.png",INTER 24/7
+#EXTINF:-1 tvg-id="RakutenInter247.it" group-title="Sport" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork-negative/bb49ed71-bf84-480e-9336-4cfaba55d253-width200-quality90.png",INTER 24/7
 https://amg27604-amg27604c2-amgplt0148.playout.now3.amagi.tv/playlist/amg27604-amg27604c2-amgplt0148/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.tvdream.net/img/lazio-style-tv.png" group-title="Sport",Lazio Style TV
 https://livesg.sslazio.hiway.media/restreamer/sslazio_client/gpu-a-c0-7/restreamer/outgest/a4bacde5-20de-4555-9664-939a1794b963/manifest.m3u8
@@ -483,7 +483,7 @@ https://livesg.sslazio.hiway.media/restreamer/sslazio_client/gpu-a-c0-7/restream
 https://d2n1ucuifwse4q.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5nki8b8udz6dm/index.m3u8?ads.device_did=%7BPSID%7D&ads.device_dnt=0&ads.app_domain=0&ads.app_name=0&ads.consent=0&ads.ssai_vendor=SSSLIVE
 #EXTINF:-1 tvg-id="ITBA3300022EA" tvg-name="SportOutdoor.tv" tvg-logo="https://www.google.com/s2/favicons?domain=sportoutdoor.tv&sz=256" group-title="Sport",SportOutdoor.Tv
 https://gto2000-sportoutdoortv-1-eu.rlaxxtv.wurl.tv/4300.m3u8
-#EXTINF:-1 tvg-id="IT:.FIFA+.be" tvg-name="FIFA+" tvgid="RakutenFifaPlus.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1000002HF_20230712T021218SQUARE.png_20230712021219.png" group-title="Sport",FIFA+
+#EXTINF:-1 tvg-id="RakutenFifaPlus.it" tvg-name="FIFA+" tvgid="RakutenFifaPlus.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1000002HF_20230712T021218SQUARE.png_20230712021219.png" group-title="Sport",FIFA+
 https://5d95f7d7.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWl0X0ZJRkFQbHVzSXRhbGlhbl9ITFM/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://statics.quattroruote.it/content/dam/quattroruote/it/news/sport/2018/03/02/formula_1_liberty_media_lancia_lo_streaming_online_nasce_f1_tv_/gallery/rsmall/f1-tv-formula-1-3.jpg" group-title="Sport",F1 TV
 https://jmp2.uk/plu-65c69ee3d77d450008c80438.m3u8
@@ -493,15 +493,15 @@ https://stream.mariatvcdn.com/teledolomiti/a66b8b8ac2baee06f136e87b9805774d.sdp/
 https://jr7yvkmwda4v-hls-live.mariatvcdn.it/liveu/9aa7fdc4068e56587206b298b423cb82.sdp/chunks.m3u8
 #EXTINF:-1 tvg-name="Plus TV Motori" tvg-id="MsMotor.it" tvg-logo="https://channels.zappr.stream/logos/plustvmotori.png" group-title="Sport", Plus TV Motori
 https://6zklxkbbdw9b-hls-live.mariatvcdn.it/msmotor/2f759512164fc6fe4acbed6a5648993a.sdp/chunks.m3u8
-#EXTINF:-1 tvg-name="ACI Sport TV" tvg-id="ACI.Sport.Tv.it" tvg-logo="https://i.imgur.com/U8cHMOt.png" group-title="Sport" bck="https://webstream.multistream.it/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8", ACI Sport TV
+#EXTINF:-1 tvg-name="ACI Sport TV" tvg-id="AciSportTV.it" tvg-logo="https://i.imgur.com/U8cHMOt.png" group-title="Sport" bck="https://webstream.multistream.it/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8", ACI Sport TV
 https://live-acisport-tv.acisport.tv/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8
 #EXTINF:-1 tvg-name="ACI Sport LIVE 01" tvg-id="" tvg-logo="https://i.imgur.com/U8cHMOt.png" group-title="Sport", ACI Sport LIVE 01 (non sempre attivo)
 https://webstream.multistream.it/memfs/10d16cc8-251a-413f-afe7-550b5bf8e87d.m3u8
-#EXTINF:-1 tvg-id="IT:.Rally.TV.FAST+.be" group-title="Sport" tvg-logo="https://i.postimg.cc/WtLq2C7c/logo-Rally-Tv1.png",Rally TV
+#EXTINF:-1 tvg-id="RakutenRallyTV.it" group-title="Sport" tvg-logo="https://i.postimg.cc/WtLq2C7c/logo-Rally-Tv1.png",Rally TV
 https://rally-tv-live.akamaized.net/hls/live/2117704/RallyTV-Pri/master.m3u8
 #EXTINF:-1 group-title="Sport" tvg-logo="https://i.imgur.com/DnVPKPE.png",TOP Calcio 24
 https://vercel-api.zappr.stream/api?https://telelombardia.video/video/viewlivestreaming?rel=2497&cntr=0
-#EXTINF:-1 tvg-logo="https://www.redbull.com/cs/RedBull2/images/branding/redbull-tv-logo-2x.png" tvg-id="IT:.Red.Bull.TV.be" group-title="Sport",RedBull TV
+#EXTINF:-1 tvg-logo="https://www.redbull.com/cs/RedBull2/images/branding/redbull-tv-logo-2x.png" tvg-id="RakutenRedBullTV.it" group-title="Sport",RedBull TV
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 #EXTINF:-1 tvg-name="BIKE" tvg-id="bikesmartmobility" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=BIKE" group-title="Sport", BIKE
 https://edge-004.streamup.eu/origin/bike_abr/playlist.m3u8
@@ -533,9 +533,9 @@ https://amg14891-amg14891c2-amgplt0165.playout.now3.amagi.tv/playlist/amg14891-a
 https://host1.momentotv.live:28443/cmaf/ffmotorsport/playlist.m3u8
 #EXTINF:-1 tvg-name="" tvg-id="EQUtv.it" tvg-logo="https://www.google.com/s2/favicons?domain=eqtv.it&sz=256" group-title="Sport",EQU TV
 https://livestream-epiqa.akamaized.net/hls/live/2039453/EQUTV/master.m3u8
-#EXTINF:-1 tvg-name="Rai Sport jolly" tvg-id="RaiSport.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" group-title="Sport" mediapolis="22590",Rai Sport jolly 1 (attivo raramente)
+#EXTINF:-1 tvg-name="Rai Sport jolly" tvg-id="raisport" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" group-title="Sport" mediapolis="22590",Rai Sport jolly 1 (attivo raramente)
 https://raisportjolly1-live.akamaized.net/hls/live/2034072/raisportjolly1/raisportjolly1/raisportjolly1_2400/chunklist.m3u8
-#EXTINF:-1 tvg-name="Rai Sport jolly" tvg-id="RaiSport.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" group-title="Sport" mediapolis="35259",Rai Sport jolly 2 (attivo raramente)
+#EXTINF:-1 tvg-name="Rai Sport jolly" tvg-id="raisport" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" group-title="Sport" mediapolis="35259",Rai Sport jolly 2 (attivo raramente)
 https://raisportjolly2-live.akamaized.net/hls/live/2034073/raisportjolly2/raisportjolly2/raisportjolly2_2400/chunklist.m3u8
 #EXTINF:-1 tvg-id="ITBC2100001G9" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC2100001G9_20230412T042542SQUARE.png_20230412042543.png" group-title="Musica" ,Vevo Pop
 https://d3lljkiqez7zii.cloudfront.net/playlist.m3u8
