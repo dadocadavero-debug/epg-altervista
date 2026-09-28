@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-EPG MASTER CUMULATIVO - 2026-09-26
+EPG MASTER CUMULATIVO V4 - 2026-09-28
 
 Obiettivo:
 - NON tocca update_playlist.py né gli stream.
@@ -27,6 +27,21 @@ from pathlib import Path
 OUT_EPG = Path("epg.xml")
 M3U_URL = "https://inthemix.altervista.org/tv.m3u"
 
+# Fonte supplementare specifica per la guida Mediaset.
+# Viene usata in modo mirato per 20 Mediaset, senza sovrascrivere
+# le guide già funzionanti degli altri canali.
+MEDIASET_EPG_URL = "https://iptv-org.github.io/epg/guides/it/mediaset.it.epg.xml"
+
+# Entrambi gli ID vengono pubblicati con la stessa guida, così la playlist
+# funziona indipendentemente dal fatto che usi 20.it o 20Mediaset.it.
+MEDIASET20_ALIAS_IDS = ("20.it", "20Mediaset.it")
+MEDIASET20_NAMES = {
+    "20 mediaset",
+    "mediaset 20",
+    "canale 20",
+    "20",
+}
+
 SOURCES = [
     {
         "name": "EPGShare IT1",
@@ -35,8 +50,26 @@ SOURCES = [
         "primary": True,
     },
     {
-        "name": "EPGShare Rakuten",
-        "url": "https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN1.xml.gz",
+        "name": "EPGShare Rakuten Italia",
+        "url": "https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_IT1.xml.gz",
+        "required": False,
+        "primary": False,
+    },
+    {
+        "name": "EPGShare Rally TV",
+        "url": "https://epgshare01.online/epgshare01/epg_ripper_RALLY_TV1.xml.gz",
+        "required": False,
+        "primary": False,
+    },
+    {
+        "name": "EPGShare Tennis",
+        "url": "https://epgshare01.online/epgshare01/epg_ripper_TENNIS1.xml.gz",
+        "required": False,
+        "primary": False,
+    },
+    {
+        "name": "EPGShare BE2 FAST/Sport",
+        "url": "https://epgshare01.online/epgshare01/epg_ripper_BE2.xml.gz",
         "required": False,
         "primary": False,
     },
@@ -71,6 +104,13 @@ FORCE_SECONDARY_IDS = {
     "IT:.Rally.TV.FAST+.be",
     "IT:.Red.Bull.TV.be",
     "IT:.Tennis+.be",
+    "IT:.Sport.Italia.be",
+    "IT:.Motorsport.tv.be",
+    "IT:.MOTORVISION.TV.be",
+    "IT:.RACER.International.be",
+    "IT:.PFL.MMA.be",
+    "IT:.GLORY.Kickboxing.be",
+    "IT:.TOP.Barça.be",
 }
 
 REQUIRED_CORE_IDS = {
@@ -165,19 +205,26 @@ def parse_playlist_targets(m3u_text: str):
 
 def old_epg_info(path: Path):
     if not path.exists():
-        return set(), 0, 0
+        return set(), 0, 0, {}
 
     try:
         root = ET.parse(path).getroot()
     except Exception:
-        return set(), 0, 0
+        return set(), 0, 0, {}
 
     ids = {
         ch.get("id")
         for ch in root.findall("channel")
         if ch.get("id")
     }
-    return ids, len(ids), len(root.findall("programme"))
+
+    counts = {}
+    for programme in root.findall("programme"):
+        cid = (programme.get("channel") or "").strip()
+        if cid:
+            counts[cid] = counts.get(cid, 0) + 1
+
+    return ids, len(ids), len(root.findall("programme")), counts
 
 
 def channel_names(channel_el):
@@ -197,6 +244,111 @@ def programme_key(programme):
         programme.get("stop") or "",
         norm(title),
     )
+
+
+def programme_counts_by_channel(root):
+    counts = {}
+    for programme in root.findall("programme"):
+        cid = (programme.get("channel") or "").strip()
+        if cid:
+            counts[cid] = counts.get(cid, 0) + 1
+    return counts
+
+
+def ensure_channel_alias(out_root, source_channel, alias_id):
+    """
+    Garantisce che esista <channel id="alias_id">.
+    Se esiste già, lo preserva. Altrimenti clona il canale sorgente
+    cambiando soltanto l'ID.
+    """
+    for ch in out_root.findall("channel"):
+        if (ch.get("id") or "").strip() == alias_id:
+            return False
+
+    cloned = copy.deepcopy(source_channel)
+    cloned.set("id", alias_id)
+    out_root.append(cloned)
+    return True
+
+
+def hydrate_mediaset20(out_root, output_ids, programme_keys):
+    """
+    Integra la guida di 20 Mediaset da una fonte dedicata.
+
+    Punto importante: il vecchio merge poteva avere un <channel> valido
+    ma ZERO <programme> per quell'ID. In quel caso il player vedeva il canale
+    ma non mostrava alcuna guida.
+
+    Qui troviamo la guida reale per 20 Mediaset e la pubblichiamo sotto
+    ENTRAMBI gli ID usati nel progetto: 20.it e 20Mediaset.it.
+    """
+    raw = fetch(MEDIASET_EPG_URL)
+    root = ET.fromstring(decompress_if_needed(raw))
+
+    channels = root.findall("channel")
+    programmes = root.findall("programme")
+
+    source_channel = None
+    source_id = ""
+
+    # Prima proviamo gli ID noti.
+    for ch in channels:
+        cid = (ch.get("id") or "").strip()
+        if cid in MEDIASET20_ALIAS_IDS:
+            source_channel = ch
+            source_id = cid
+            break
+
+    # Se la fonte usa un ID differente, troviamo il canale per display-name.
+    if source_channel is None:
+        for ch in channels:
+            names = {norm(x) for x in channel_names(ch)}
+            if names & MEDIASET20_NAMES:
+                source_channel = ch
+                source_id = (ch.get("id") or "").strip()
+                break
+
+    if source_channel is None or not source_id:
+        raise RuntimeError(
+            "Fonte Mediaset disponibile ma canale 20 Mediaset non trovato."
+        )
+
+    source_programmes = [
+        p for p in programmes
+        if (p.get("channel") or "").strip() == source_id
+    ]
+
+    if not source_programmes:
+        raise RuntimeError(
+            f"Fonte Mediaset: trovato {source_id}, ma senza programmi."
+        )
+
+    aliases_added = 0
+    programmes_added = 0
+
+    for alias_id in MEDIASET20_ALIAS_IDS:
+        if ensure_channel_alias(out_root, source_channel, alias_id):
+            output_ids.add(alias_id)
+            aliases_added += 1
+
+        for source_programme in source_programmes:
+            cloned = copy.deepcopy(source_programme)
+            cloned.set("channel", alias_id)
+
+            key = programme_key(cloned)
+            if key in programme_keys:
+                continue
+
+            programme_keys.add(key)
+            out_root.append(cloned)
+            programmes_added += 1
+
+    return {
+        "source_id": source_id,
+        "source_programmes": len(source_programmes),
+        "aliases_added": aliases_added,
+        "programmes_added": programmes_added,
+    }
 
 
 def parse_source(source):
@@ -227,8 +379,9 @@ def main():
     # ------------------------------------------------------------
     m3u = fetch(M3U_URL).decode("utf-8", errors="replace")
     target_ids, target_names, target_stripped, playlist_count = parse_playlist_targets(m3u)
+    playlist_tvg_ids = set(target_ids)
 
-    old_ids, old_channel_count, old_programme_count = old_epg_info(OUT_EPG)
+    old_ids, old_channel_count, old_programme_count, old_programme_counts = old_epg_info(OUT_EPG)
     target_ids |= old_ids
     target_ids |= FORCE_SECONDARY_IDS
 
@@ -248,7 +401,9 @@ def main():
 
     output_ids = set()
     output_normalized_names = set()
+    output_name_to_ids = {}
     programme_keys = set()
+    programme_count_by_id = {}
 
     source_stats = []
     optional_failures = []
@@ -279,73 +434,125 @@ def main():
 
         source_channel_by_id = {}
         selected_ids = set()
+        channel_names_by_id = {}
 
         for ch in channels:
             cid = (ch.get("id") or "").strip()
             if not cid:
                 continue
+
             source_channel_by_id[cid] = ch
 
             names = channel_names(ch)
             normalized = {norm(x) for x in names if norm(x)}
             stripped = {stripped_norm(x) for x in names if stripped_norm(x)}
+            channel_names_by_id[cid] = (normalized, stripped)
 
             if source["primary"]:
                 selected_ids.add(cid)
                 continue
 
-            # Priorità massima agli ID già noti / già usati.
+            # ID già noto/necessario: includilo sempre come candidato.
             if cid in target_ids:
                 selected_ids.add(cid)
                 continue
 
-            exact_name_match = bool(normalized & target_names)
-            stripped_name_match = bool(stripped & target_stripped)
-
-            # Non introduciamo un secondo canale con lo stesso nome di uno già
-            # presente da una fonte più prioritaria, a meno che l'ID sia
-            # esplicitamente richiesto.
-            conflicts = bool(normalized & output_normalized_names)
-
-            if exact_name_match and not conflicts:
-                selected_ids.add(cid)
-            elif stripped_name_match and not conflicts:
+            # Altrimenti selezioniamo solo canali che corrispondono davvero
+            # a un nome presente nella playlist Altervista.
+            if (normalized & target_names) or (stripped & target_stripped):
                 selected_ids.add(cid)
 
-        # Canali: l'ID già presente vince sempre (fonte precedente/prioritaria).
+        # Mappa ID sorgente -> ID destinazione programmi.
+        # La novità V4 è che una fonte secondaria può RIEMPIRE una guida vuota
+        # già creata da una fonte più prioritaria, invece di essere scartata.
+        programme_target = {}
         actually_added = set()
+
         for cid in selected_ids:
-            if cid in output_ids:
-                continue
             ch = source_channel_by_id.get(cid)
             if ch is None:
                 continue
 
+            normalized, stripped = channel_names_by_id.get(cid, (set(), set()))
+
+            if cid in output_ids:
+                # Stesso ID già presente.
+                # Se non ha ancora programmi, permettiamo alla fonte corrente
+                # di fornire la guida.
+                if programme_count_by_id.get(cid, 0) == 0:
+                    programme_target[cid] = cid
+                continue
+
+            # Se una fonte usa un ID diverso ma il nome coincide con un canale
+            # già presente, possiamo usare la sua guida per riempire SOLO
+            # un canale esistente rimasto a zero programmi.
+            matching_existing_ids = set()
+            for n in normalized:
+                matching_existing_ids |= output_name_to_ids.get(n, set())
+
+            empty_existing_ids = [
+                existing_id
+                for existing_id in matching_existing_ids
+                if programme_count_by_id.get(existing_id, 0) == 0
+            ]
+
+            if len(empty_existing_ids) == 1:
+                programme_target[cid] = empty_existing_ids[0]
+                continue
+
+            # Nessun conflitto utile: aggiungiamo il canale come nuovo ID.
             out_root.append(copy.deepcopy(ch))
             output_ids.add(cid)
             actually_added.add(cid)
+            programme_target[cid] = cid
+            programme_count_by_id.setdefault(cid, 0)
 
             for display_name in channel_names(ch):
                 n = norm(display_name)
                 if n:
                     output_normalized_names.add(n)
+                    output_name_to_ids.setdefault(n, set()).add(cid)
 
-        # Programmi: solo per ID effettivamente aggiunti da questa fonte.
-        # Se un ID era già presente da una fonte precedente, la fonte precedente
-        # resta proprietaria della sua guida: niente schedule sovrapposti.
+        # Programmi:
+        # - primaria: normali;
+        # - secondarie: possono riempire ID già presenti ma ancora SENZA guida;
+        # - se un ID ha già programmi da una fonte prioritaria, non li sovrapponiamo.
         added_programmes = 0
         for programme in programmes:
-            cid = (programme.get("channel") or "").strip()
-            if cid not in actually_added:
+            source_cid = (programme.get("channel") or "").strip()
+            target_cid = programme_target.get(source_cid)
+            if not target_cid:
                 continue
 
-            key = programme_key(programme)
+            # Per una sorgente secondaria smettiamo di riempire se il target
+            # aveva già una guida prima di questa fonte.
+            cloned = copy.deepcopy(programme)
+            if target_cid != source_cid:
+                cloned.set("channel", target_cid)
+
+            key = programme_key(cloned)
             if key in programme_keys:
                 continue
 
             programme_keys.add(key)
-            out_root.append(copy.deepcopy(programme))
+            out_root.append(cloned)
+            programme_count_by_id[target_cid] = programme_count_by_id.get(target_cid, 0) + 1
             added_programmes += 1
+
+        # Ricostruisce/aggiorna l'indice nomi dei canali output.
+        # Serve alle fonti successive per riempire guide vuote usando anche
+        # un ID differente ma lo stesso display-name.
+        for ch in out_root.findall("channel"):
+            cid = (ch.get("id") or "").strip()
+            if not cid:
+                continue
+            output_ids.add(cid)
+            programme_count_by_id.setdefault(cid, 0)
+            for display_name in channel_names(ch):
+                n = norm(display_name)
+                if n:
+                    output_normalized_names.add(n)
+                    output_name_to_ids.setdefault(n, set()).add(cid)
 
         source_stats.append(
             (
@@ -365,6 +572,27 @@ def main():
 
         # libera memoria tra una fonte e l'altra
         del root
+
+    # ------------------------------------------------------------
+    # 3B. INTEGRAZIONE MIRATA MEDIASET 20
+    # ------------------------------------------------------------
+    # Non sostituisce le guide Mediaset già funzionanti:
+    # aggiunge soltanto la guida di 20 Mediaset sotto entrambi gli alias ID.
+    mediaset20_stats = hydrate_mediaset20(
+        out_root,
+        output_ids,
+        programme_keys,
+    )
+
+    print(
+        "20 Mediaset: "
+        f"fonte={mediaset20_stats['source_id']} / "
+        f"{mediaset20_stats['source_programmes']} programmi sorgente -> "
+        f"{mediaset20_stats['programmes_added']} programmi alias aggiunti"
+    )
+
+    # Riallinea i conteggi dopo le integrazioni mirate.
+    programme_count_by_id = programme_counts_by_channel(out_root)
 
     # ------------------------------------------------------------
     # 4. Validazioni anti-regressione
@@ -410,6 +638,40 @@ def main():
             f"Anti-regressione: EPG finale con {final_programmes} programmi, "
             f"meno dei {primary_programme_count} della fonte primaria corrente. "
             "Il vecchio epg.xml viene mantenuto."
+        )
+
+    # Anti-regressione PER CANALE:
+    # se una guida presente nel vecchio EPG per un canale realmente usato
+    # dalla playlist (o per uno degli ID sport/FAST protetti) sparisce del tutto,
+    # NON pubblichiamo il nuovo EPG.
+    protected_guide_ids = playlist_tvg_ids | FORCE_SECONDARY_IDS
+    disappeared_guides = sorted(
+        cid
+        for cid in protected_guide_ids
+        if old_programme_counts.get(cid, 0) > 0
+        and programme_count_by_id.get(cid, 0) == 0
+    )
+
+    if disappeared_guides:
+        raise RuntimeError(
+            "Anti-regressione guide: sono sparite guide che prima esistevano per: "
+            + ", ".join(disappeared_guides[:20])
+            + (f" (+{len(disappeared_guides) - 20} altri)" if len(disappeared_guides) > 20 else "")
+            + ". Il vecchio epg.xml viene mantenuto."
+        )
+
+    # Validazione specifica Mediaset 20:
+    # non pubblichiamo un nuovo EPG se uno dei due ID resta senza programmi.
+    final_programme_counts = programme_counts_by_channel(out_root)
+    mediaset20_missing = [
+        cid for cid in MEDIASET20_ALIAS_IDS
+        if final_programme_counts.get(cid, 0) == 0
+    ]
+    if mediaset20_missing:
+        raise RuntimeError(
+            "Guida 20 Mediaset ancora assente per: "
+            + ", ".join(mediaset20_missing)
+            + ". Il vecchio epg.xml viene mantenuto."
         )
 
     # ------------------------------------------------------------
@@ -463,6 +725,26 @@ def main():
         f"{primary_programme_count} programmi"
     )
     print(f"Canali Altervista ancora senza candidato EPG: {len(unmatched)}")
+    final_programme_counts = programme_counts_by_channel(out_root)
+    print(
+        "20 Mediaset guide: "
+        + ", ".join(
+            f"{cid}={final_programme_counts.get(cid, 0)} programmi"
+            for cid in MEDIASET20_ALIAS_IDS
+        )
+    )
+
+    sport_with_guide = {
+        cid: final_programme_counts.get(cid, 0)
+        for cid in sorted(FORCE_SECONDARY_IDS)
+        if final_programme_counts.get(cid, 0) > 0
+    }
+    print(
+        f"Guide sport/FAST protette presenti: {len(sport_with_guide)}/"
+        f"{len(FORCE_SECONDARY_IDS)}"
+    )
+    for cid, count in sport_with_guide.items():
+        print(f"  SPORT/FAST | {cid} | {count} programmi")
 
     if unmatched:
         print("Primi canali ancora senza EPG:")
