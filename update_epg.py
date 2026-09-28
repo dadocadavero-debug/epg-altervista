@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-EPG MASTER CUMULATIVO V6 - 2026-09-28
+EPG MASTER CUMULATIVO V7 - 2026-09-28
 
 Obiettivo:
 - NON tocca update_playlist.py né gli stream.
@@ -258,6 +258,89 @@ def programme_counts_by_channel(root):
         if cid:
             counts[cid] = counts.get(cid, 0) + 1
     return counts
+
+
+def carry_forward_missing_guides(
+    out_root,
+    old_epg_path,
+    protected_ids,
+    programme_keys,
+    output_ids,
+):
+    """
+    Anti-regressione reale.
+
+    Se una guida che esisteva nel precedente epg.xml sparisce dalle fonti
+    correnti, NON blocchiamo immediatamente l'intero aggiornamento:
+    preserviamo il <channel> e i <programme> del vecchio EPG SOLO per
+    quell'ID protetto.
+
+    Questo permette di:
+    - pubblicare le guide nuove trovate oggi;
+    - non perdere FIFA+, Inter 24/7, Juventus Play, Motoretrò, Rally TV,
+      Red Bull TV, ecc. quando una fonte EPGShare cambia/sposta temporaneamente
+      quei canali;
+    - mantenere comunque il controllo finale: se nemmeno il vecchio EPG
+      contiene programmi per l'ID, l'anti-regressione successiva può ancora
+      bloccare il file.
+    """
+    if not old_epg_path.exists():
+        return {}
+
+    try:
+        old_root = ET.parse(old_epg_path).getroot()
+    except Exception:
+        return {}
+
+    current_counts = programme_counts_by_channel(out_root)
+
+    old_channels = {}
+    for ch in old_root.findall("channel"):
+        cid = (ch.get("id") or "").strip()
+        if cid:
+            old_channels[cid] = ch
+
+    old_programmes = {}
+    for programme in old_root.findall("programme"):
+        cid = (programme.get("channel") or "").strip()
+        if cid in protected_ids:
+            old_programmes.setdefault(cid, []).append(programme)
+
+    carried = {}
+
+    for cid in sorted(protected_ids):
+        # Se il nuovo merge ha già una guida, non tocchiamo nulla.
+        if current_counts.get(cid, 0) > 0:
+            continue
+
+        previous = old_programmes.get(cid, [])
+        if not previous:
+            continue
+
+        # Se il canale non esiste più nel nuovo XML, preserviamo anche
+        # il suo elemento <channel>.
+        if cid not in output_ids:
+            old_channel = old_channels.get(cid)
+            if old_channel is not None:
+                out_root.append(copy.deepcopy(old_channel))
+                output_ids.add(cid)
+
+        added = 0
+        for old_programme in previous:
+            cloned = copy.deepcopy(old_programme)
+            key = programme_key(cloned)
+
+            if key in programme_keys:
+                continue
+
+            programme_keys.add(key)
+            out_root.append(cloned)
+            added += 1
+
+        if added:
+            carried[cid] = added
+
+    return carried
 
 
 def ensure_channel_alias(out_root, source_channel, alias_id):
@@ -621,7 +704,28 @@ def main():
         for err in mediaset20_stats["errors"]:
             print(f"  20 MEDIASET FALLBACK | {err}")
 
-    # Riallinea i conteggi dopo le integrazioni mirate.
+    # ------------------------------------------------------------
+    # 3C. PRESERVA LE GUIDE CHE ESISTEVANO NEL VECCHIO EPG
+    # ------------------------------------------------------------
+    # Non disattiviamo la protezione: la rendiamo utile.
+    # Se una fonte ha temporaneamente perso/spostato un canale, recuperiamo
+    # quella guida dal precedente epg.xml invece di far fallire tutto il run.
+    protected_guide_ids = playlist_tvg_ids | FORCE_SECONDARY_IDS
+
+    carried_guides = carry_forward_missing_guides(
+        out_root=out_root,
+        old_epg_path=OUT_EPG,
+        protected_ids=protected_guide_ids,
+        programme_keys=programme_keys,
+        output_ids=output_ids,
+    )
+
+    if carried_guides:
+        print("Guide preservate dal precedente epg.xml:")
+        for cid, count in carried_guides.items():
+            print(f"  PRESERVATA | {cid} | {count} programmi")
+
+    # Riallinea i conteggi dopo tutte le integrazioni/fallback.
     programme_count_by_id = programme_counts_by_channel(out_root)
 
     # ------------------------------------------------------------
@@ -674,7 +778,6 @@ def main():
     # se una guida presente nel vecchio EPG per un canale realmente usato
     # dalla playlist (o per uno degli ID sport/FAST protetti) sparisce del tutto,
     # NON pubblichiamo il nuovo EPG.
-    protected_guide_ids = playlist_tvg_ids | FORCE_SECONDARY_IDS
     disappeared_guides = sorted(
         cid
         for cid in protected_guide_ids
@@ -767,6 +870,12 @@ def main():
         )
         + (" | fonte dedicata OK" if mediaset20_stats["available"] else " | fonte dedicata non disponibile")
     )
+
+    if carried_guides:
+        print(
+            f"Guide recuperate dal precedente epg.xml: "
+            f"{len(carried_guides)} canali / {sum(carried_guides.values())} programmi"
+        )
 
     sport_with_guide = {
         cid: final_programme_counts.get(cid, 0)
