@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-EPG MASTER CUMULATIVO V8 - 2026-09-28
+EPG MASTER CUMULATIVO V9 ALIAS-STABILI - 2026-09-28
 
 Obiettivo:
 - NON tocca update_playlist.py né gli stream.
@@ -106,6 +106,34 @@ FORCE_SECONDARY_IDS = {
     "IT:.PFL.MMA.be",
     "IT:.GLORY.Kickboxing.be",
     "IT:.TOP.Barça.be",
+}
+
+# Alias STABILI uguali agli ID usati dalla playlist Altervista.
+# Non costringiamo più Fermata a usare gli ID interni EPGShare tipo IT:.xxx.be.
+# Copiamo invece la stessa programmazione sotto ID semplici/stabili.
+STABLE_EPG_ALIASES = {
+    # Mediaset 20: questo era il comportamento del vecchio EPG funzionante.
+    "20.it": (
+        "20Mediaset.it",
+        "Mediaset20.it",
+    ),
+
+    # Sport lineari / IT1
+    "RaiSport.it": ("raisport",),
+    "Sportitalia.it": ("sportitalia",),
+    "Solocalcio.it.it": ("ITBC4700002CO",),
+    "SuperTennis.HD.it": ("SuperTennis.it",),
+    "ACI.Sport.Tv.it": ("AciSportTV.it",),
+    "BIKE.it": ("bikesmartmobility",),
+
+    # Rakuten / FAST: alias semplici, senza ':' '/' '+' nell'ID finale.
+    "IT:.FIFA+.be": ("RakutenFifaPlus.it",),
+    "IT:.INTER.24/7.be": ("RakutenInter247.it",),
+    "IT:.Juventus.Play.be": ("RakutenJuventusPlay.it",),
+    "IT:.Motoretrò.be": ("RakutenMotoretro.it",),
+    "IT:.Rally.TV.FAST+.be": ("RakutenRallyTV.it",),
+    "IT:.Red.Bull.TV.be": ("RakutenRedBullTV.it",),
+    "IT:.Tennis+.be": ("RakutenTennisPlus.it",),
 }
 
 REQUIRED_CORE_IDS = {
@@ -331,6 +359,71 @@ def carry_forward_missing_guides(
             carried[cid] = added
 
     return carried
+
+
+def copy_epg_aliases(out_root, alias_map, programme_keys, output_ids):
+    """
+    Duplica canale + programmi da un ID canonico a uno o più ID stabili.
+
+    Importante:
+    - il source ID resta nell'EPG;
+    - l'alias riceve gli stessi programmi;
+    - se l'alias esiste già, non viene eliminato: gli aggiungiamo i programmi;
+    - deduplica con programme_key().
+    """
+    channel_by_id = {
+        (ch.get("id") or "").strip(): ch
+        for ch in out_root.findall("channel")
+        if (ch.get("id") or "").strip()
+    }
+
+    programmes_by_id = {}
+    for p in out_root.findall("programme"):
+        cid = (p.get("channel") or "").strip()
+        if cid:
+            programmes_by_id.setdefault(cid, []).append(p)
+
+    stats = {}
+
+    for source_id, aliases in alias_map.items():
+        source_channel = channel_by_id.get(source_id)
+        source_programmes = programmes_by_id.get(source_id, [])
+
+        for alias_id in aliases:
+            if source_channel is None or not source_programmes:
+                stats[alias_id] = {
+                    "source": source_id,
+                    "source_programmes": len(source_programmes),
+                    "added": 0,
+                }
+                continue
+
+            # channel alias
+            if alias_id not in channel_by_id:
+                cloned_channel = copy.deepcopy(source_channel)
+                cloned_channel.set("id", alias_id)
+                out_root.append(cloned_channel)
+                channel_by_id[alias_id] = cloned_channel
+                output_ids.add(alias_id)
+
+            added = 0
+            for p in source_programmes:
+                cloned = copy.deepcopy(p)
+                cloned.set("channel", alias_id)
+                key = programme_key(cloned)
+                if key in programme_keys:
+                    continue
+                programme_keys.add(key)
+                out_root.append(cloned)
+                added += 1
+
+            stats[alias_id] = {
+                "source": source_id,
+                "source_programmes": len(source_programmes),
+                "added": added,
+            }
+
+    return stats
 
 
 def ensure_channel_alias(out_root, source_channel, alias_id):
@@ -668,31 +761,36 @@ def main():
         del root
 
     # ------------------------------------------------------------
-    # 3B. INTEGRAZIONE MIRATA MEDIASET 20
+    # 3B. ALIAS STABILI PER MEDIASET 20 + SPORT
     # ------------------------------------------------------------
-    # Non sostituisce le guide Mediaset già funzionanti:
-    # aggiunge soltanto la guida di 20 Mediaset sotto entrambi gli alias ID.
-    mediaset20_stats = hydrate_mediaset20(
-        out_root,
-        output_ids,
-        programme_keys,
+    # Torniamo al principio che aveva funzionato in precedenza:
+    # la programmazione viene COPIATA sugli ID della playlist, invece di
+    # costringere la playlist a cambiare ID verso quelli interni EPGShare.
+    alias_stats = copy_epg_aliases(
+        out_root=out_root,
+        alias_map=STABLE_EPG_ALIASES,
+        programme_keys=programme_keys,
+        output_ids=output_ids,
     )
 
-    if mediaset20_stats["available"]:
+    print("Alias EPG stabili:")
+    for alias_id, stat in alias_stats.items():
         print(
-            "20 Mediaset: "
-            f"fonte={mediaset20_stats['source_url']} | "
-            f"id={mediaset20_stats['source_id']} | "
-            f"{mediaset20_stats['source_programmes']} programmi sorgente -> "
-            f"{mediaset20_stats['programmes_added']} programmi alias aggiunti"
+            f"  ALIAS | {stat['source']} -> {alias_id} | "
+            f"sorgente={stat['source_programmes']} / aggiunti={stat['added']}"
         )
-    else:
-        print(
-            "ATTENZIONE: nessuna fonte dedicata 20 Mediaset disponibile. "
-            "Il merge generale viene comunque mantenuto."
-        )
-        for err in mediaset20_stats["errors"]:
-            print(f"  20 MEDIASET FALLBACK | {err}")
+
+    # Mediaset 20 è considerato disponibile se 20.it ha programmi:
+    # non dipendiamo più da URL Mediaset esterni che davano 404.
+    mediaset20_stats = {
+        "available": alias_stats.get("20Mediaset.it", {}).get("source_programmes", 0) > 0,
+        "source_url": "EPGShare IT1 / 20.it",
+        "source_id": "20.it",
+        "source_programmes": alias_stats.get("20Mediaset.it", {}).get("source_programmes", 0),
+        "aliases_added": 0,
+        "programmes_added": alias_stats.get("20Mediaset.it", {}).get("added", 0),
+        "errors": [],
+    }
 
     # ------------------------------------------------------------
     # 3C. PRESERVA LE GUIDE CHE ESISTEVANO NEL VECCHIO EPG
@@ -783,6 +881,24 @@ def main():
             + ". Il vecchio epg.xml viene mantenuto."
         )
 
+    # Validazione alias stabili:
+    # se la sorgente canonica ha programmi, ogni alias deve averne.
+    final_programme_counts = programme_counts_by_channel(out_root)
+    broken_aliases = []
+    for source_id, aliases in STABLE_EPG_ALIASES.items():
+        src_count = final_programme_counts.get(source_id, 0)
+        if src_count <= 0:
+            continue
+        for alias_id in aliases:
+            if final_programme_counts.get(alias_id, 0) <= 0:
+                broken_aliases.append(f"{source_id}->{alias_id}")
+
+    if broken_aliases:
+        raise RuntimeError(
+            "Alias EPG non popolati: " + ", ".join(broken_aliases)
+            + ". Il vecchio epg.xml viene mantenuto."
+        )
+
     # Validazione specifica Mediaset 20:
     # se la fonte dedicata è stata trovata, entrambi gli alias devono avere
     # programmi. Se invece tutte le fonti Mediaset sono indisponibili, NON
@@ -868,13 +984,16 @@ def main():
         )
 
     core_sport_ids = (
-        "IT:.FIFA+.be",
-        "IT:.INTER.24/7.be",
-        "IT:.Juventus.Play.be",
-        "IT:.Motoretrò.be",
-        "IT:.Rally.TV.FAST+.be",
-        "IT:.Red.Bull.TV.be",
-        "IT:.Tennis+.be",
+        "RakutenFifaPlus.it",
+        "RakutenInter247.it",
+        "RakutenJuventusPlay.it",
+        "RakutenMotoretro.it",
+        "RakutenRallyTV.it",
+        "RakutenRedBullTV.it",
+        "RakutenTennisPlus.it",
+        "raisport",
+        "sportitalia",
+        "SuperTennis.it",
     )
     print(
         "Guide sport principali: "
