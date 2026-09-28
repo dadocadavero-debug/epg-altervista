@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-EPG MASTER CUMULATIVO V7 - 2026-09-28
+EPG MASTER CUMULATIVO V8 - 2026-09-28
 
 Obiettivo:
 - NON tocca update_playlist.py né gli stream.
@@ -31,10 +31,12 @@ M3U_URL = "https://inthemix.altervista.org/tv.m3u"
 # Viene usata in modo mirato per 20 Mediaset, senza sovrascrivere
 # le guide già funzionanti degli altri canali.
 MEDIASET_EPG_URLS = [
-    "https://iptv-org.github.io/epg/guides/it/mediaset.it.xml",
+    # Fonte XMLTV italiana attiva usata come fallback mirato per 20 Mediaset.
+    "https://www.open-epg.com/files/italy3.xml.gz",
+
+    # Altre fonti: se tornano disponibili vengono provate automaticamente.
     "https://iptv-org.github.io/epg/guides/it/mediaset.it.epg.xml",
-    "https://iptv-org.github.io/epg/guides/it/superguidatv.it.xml",
-    "https://iptv-org.github.io/epg/guides/it/tivu.tv.xml",
+    "https://iptv-org.github.io/epg/guides/it/guidatv.sky.it.epg.xml",
 ]
 
 # Entrambi gli ID vengono pubblicati con la stessa guida, così la playlist
@@ -55,20 +57,8 @@ SOURCES = [
         "primary": True,
     },
     {
-        "name": "EPGShare Rakuten Italia",
-        "url": "https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_IT1.xml.gz",
-        "required": False,
-        "primary": False,
-    },
-    {
-        "name": "EPGShare Rally TV",
-        "url": "https://epgshare01.online/epgshare01/epg_ripper_RALLY_TV1.xml.gz",
-        "required": False,
-        "primary": False,
-    },
-    {
-        "name": "EPGShare Tennis",
-        "url": "https://epgshare01.online/epgshare01/epg_ripper_TENNIS1.xml.gz",
+        "name": "EPGShare Rakuten",
+        "url": "https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN1.xml.gz",
         "required": False,
         "primary": False,
     },
@@ -98,7 +88,7 @@ SOURCES = [
     },
 ]
 
-# ID che erano già usati nel progetto per canali sport/FAST.
+# ID sport/FAST usati dalla playlist e presenti nella sorgente EPGShare RAKUTEN1.
 # Li preserviamo anche se il nome della fonte non coincide perfettamente
 # con il nome visualizzato nella M3U.
 FORCE_SECONDARY_IDS = {
@@ -876,6 +866,23 @@ def main():
             f"Guide recuperate dal precedente epg.xml: "
             f"{len(carried_guides)} canali / {sum(carried_guides.values())} programmi"
         )
+
+    core_sport_ids = (
+        "IT:.FIFA+.be",
+        "IT:.INTER.24/7.be",
+        "IT:.Juventus.Play.be",
+        "IT:.Motoretrò.be",
+        "IT:.Rally.TV.FAST+.be",
+        "IT:.Red.Bull.TV.be",
+        "IT:.Tennis+.be",
+    )
+    print(
+        "Guide sport principali: "
+        + ", ".join(
+            f"{cid}={final_programme_counts.get(cid, 0)}"
+            for cid in core_sport_ids
+        )
+    )
 
     sport_with_guide = {
         cid: final_programme_counts.get(cid, 0)
