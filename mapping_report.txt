@@ -4,13 +4,14 @@ Canali sorgente Altervista: 498
 EPG unico usato per mapping e player: https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml
 Canali disponibili nell'EPG: 369
 Programmi disponibili nell'EPG: 27981
-Canali della playlist collegati a un ID EPG valido: 246
-Canali/righe EXTINF modificate: 179
-Match automatici univoci: 65
-ID già validi preservati: 67
+ID EPG con almeno un programma: 324
+Canali della playlist collegati a un ID EPG con programmi: 238
+Canali/righe EXTINF modificate: 173
+Match automatici univoci: 64
+ID già validi preservati: 65
 Loghi aggiunti/sostituiti: 178
 Loghi generici usati come ultima risorsa: 61
-Canali senza EPG abbinabile: 252
+Canali senza EPG abbinabile: 260
 
 Rete 4 | Rete4.it -> Rete.4.it | id:Rete4.it
 Canale 5 | Canale5.it -> Canale.5.it | id:Canale5.it
@@ -61,7 +62,6 @@ Primavera TV | logo aggiunto -> https://www.tvdream.net/img/primavera-tv.png
 IL Sole 24 Ore TV | (vuoto) -> IT3300001G3 | nome-esatto
 Super Tennis | SuperTennis.it -> SuperTennis.HD.it | id:SuperTennis.it
 Super Tennis | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png
-Radio 105 TV | (vuoto) -> Radio.105.it | nome-verificato
 R101 TV | R101TV -> R101tv.it | id:R101TV
 Deejay TV | DeejayTV.it -> Deejay.TV.it | id:DeejayTV.it
 Deejay TV | logo aggiunto -> https://guidatv.sky.it/logo/304deejaytv_Light_Fit.png?checksum=11b1a939093a39a925ebb98ed7b44990?tr=n-logo_80
@@ -106,9 +106,7 @@ Elisa di Rivombrosa | logo aggiunto -> https://tvpnlogopeu.samsungcloud.tv/platf
 NatureTime | (vuoto) -> IT2100001EZ | tvg-name-esatto
 Move - Sportivi in viaggio | (vuoto) -> ITBD300001GI | nome-esatto
 Love the Planet | (vuoto) -> ITBC4700003GR | tvg-name-esatto
-Viaggi & Sapori | (vuoto) -> IT12000029J | tvg-name-esatto
 Viaggi - Pluto | PlutoTvViaggi.it -> 63c923944207be0007fd0887 | tvg-name-esatto
-Fashion TV | RakutenFashionTv.it -> Fashion.TV.it | id:RakutenFashionTv.it
 CAR CITY ADVENTURES | (vuoto) -> IT2000002D1 | nome-esatto
 Mr Bean Animated | (vuoto) -> IT900001A7 | nome-esatto
 Pocoyo | (vuoto) -> IT700004X4 | nome-esatto
@@ -154,13 +152,11 @@ Rally TV | logo aggiunto -> https://i.postimg.cc/WtLq2C7c/logo-Rally-Tv1.png
 TOP Calcio 24 | logo aggiunto -> https://i.imgur.com/DnVPKPE.png
 RedBull TV | (vuoto) -> IT:.Red.Bull.TV.be | nome-verificato
 RedBull TV | logo aggiunto -> https://www.redbull.com/cs/RedBull2/images/branding/redbull-tv-logo-2x.png
-BIKE | bikesmartmobility -> BIKE.it | id:bikesmartmobility
 BIKE | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=BIKE
 Sportitalia (25fps) | sportitalia -> IT1000002TG | tvg-name-esatto
 Tennis Channel | logo aggiunto -> https://i.imgur.com/tsljAnY.png
 Tennis channel 2 | t2 tennis -> plex.tv.Tennis.Channel.2.plex | nome-esatto
 Tennis channel 2 | logo aggiunto -> https://i.imgur.com/tsljAnY.png
-Tennis+ | (vuoto) -> IT:.Tennis+.be | nome-verificato
 UNBEATEN | (vuoto) -> plex.tv.Unbeaten.plex | nome-esatto
 UNBEATEN | logo aggiunto -> https://i.imgur.com/LmkNt3v.png
 FUBO Sports | logo aggiunto -> https://i.imgur.com/qFNRJLb.png
@@ -352,7 +348,6 @@ TeleTicino | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFF
 Azzurra TV Italia | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Azzurra%20TV%20Italia
 Sicilia 242 | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Sicilia%20242
 Retemia | logo generico aggiunto -> https://placehold.co/256x256/202020/FFFFFF.png?text=Retemia
-TG Norba 24 | tg norba 24 -> TG.NORBA.24.it | id:tg norba 24
 NOVE backup 🔐 | (vuoto) -> Nove.it | nome-verificato
 NOVE backup 🔐 | logo aggiunto -> https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png
 RealTime backup 🔐 | (vuoto) -> Real.Time.it | nome-verificato
@@ -377,10 +372,13 @@ Sky Sport (non sempre attivo) | tvg-id=(vuoto) | group=Sport
 Golazo Network (Serie A) | tvg-id=(vuoto) | group=Sport
 TMC Telemontecarlo | tvg-id=(vuoto) | group=Altre tv
 TV2000 | tvg-id=TV2000.it | group=Altre tv
+K2 🔐 | tvg-id=K2.it | group=Discovery
+Frisbee 🔐 | tvg-id=Frisbee.it | group=Discovery
 BBC Earth | tvg-id=(vuoto) | group=Documentari
 Sport Italia | tvg-id=sportitalia | group=Sport
 Primavera TV | tvg-id=sportitalia24live | group=Sport
 Nokep TV | tvg-id=(vuoto) | group=Musica
+Radio 105 TV | tvg-id=(vuoto) | group=Musica
 M2O TV | tvg-id=m2otv | group=Musica
 Film - Pluto | tvg-id=PlutoTvFilm.it | group=Film
 Film Azione - Pluto | tvg-id=PlutoTvFilmAzione.it | group=Film
@@ -427,6 +425,7 @@ Renegade - Pluto | tvg-id=PlutoRenegade.it | group=Serie
 Natura - Pluto | tvg-id=PlutoTvNatura.it | group=Documentari
 Documentari - Pluto | tvg-id=PlutoTvDocumentari.it | group=Documentari
 Grandi Documentari - Wedo Big Stories | tvg-id=RakutenWedoBigStories.it | group=Documentari
+Viaggi & Sapori | tvg-id=(vuoto) | group=Documentari
 Storia - Pluto | tvg-id=PlutoTvStoria.it | group=Documentari
 La grande arte | tvg-id=(vuoto) | group=Documentari
 House of docs | tvg-id=(vuoto) | group=Documentari
@@ -434,6 +433,7 @@ I misteri della fede | tvg-id=(vuoto) | group=Documentari
 Tutto musica | tvg-id=(vuoto) | group=Documentari
 STARS Film & Secrets | tvg-id=(vuoto) | group=Documentari
 Opera legends | tvg-id=(vuoto) | group=Documentari
+Fashion TV | tvg-id=RakutenFashionTv.it | group=Altre tv
 Cartoni Animati - Pluto | tvg-id=PlutoSuperStar.it | group=Bambini e ragazzi
 Teletubbies | tvg-id=RakutenWbTeletubbies.it | group=Bambini e ragazzi
 Bejoy.kids | tvg-id=(vuoto) | group=Bambini e ragazzi
@@ -471,8 +471,10 @@ Plus TV Sport | tvg-id=MsChannel.it | group=Sport
 Plus TV Motori | tvg-id=MsMotor.it | group=Sport
 ACI Sport LIVE 01 (non sempre attivo) | tvg-id=(vuoto) | group=Sport
 TOP Calcio 24 | tvg-id=(vuoto) | group=Sport
+BIKE | tvg-id=bikesmartmobility | group=Sport
 Sport - Pluto | tvg-id=PlutoTvSport.it | group=Sport
 Tennis Channel | tvg-id=Tennis Channel | group=Sport
+Tennis+ | tvg-id=(vuoto) | group=Sport
 FUBO Sports | tvg-id=(vuoto) | group=Sport
 CBS Sports Network | tvg-id=CBSSports.us | group=Sport
 FF Motorsport | tvg-id=(vuoto) | group=Sport
@@ -616,6 +618,7 @@ Telestense | tvg-id=telestense | group=Regionali
 Telemantova | tvg-id=telemantova | group=Regionali
 Telemolise | tvg-id=telemolise | group=Regionali
 Tlt Molise | tvg-id=tlt molise | group=Regionali
+TG Norba 24 | tvg-id=tg norba 24 | group=Regionali
 TelegranducatoTv | tvg-id=telegranducatotv | group=Regionali
 Tele Pavia | tvg-id=tele pavia | group=Regionali
 TR 118 | tvg-id=tr 118 | group=Regionali

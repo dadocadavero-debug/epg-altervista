@@ -147,7 +147,7 @@ https://amg14891-amg14891c8-amgplt0395.playout.now3.amagi.tv/playlist.m3u8
 https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
 #EXTINF:-1 tvg-logo="https://nokeptv.it/wp-content/uploads/2022/03/LOGONOKEPPP@4x.png" tvg-chno="65" group-title="Musica",Nokep TV
 https://streamer2.premio.link/nokep_hd/playlist.m3u8
-#EXTINF:-1 tvg-name="Radio 105 TV" tvg-id="Radio.105.it" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/172940883-5a20c129-c0c3-468d-a054-0fe52a97defe.png" tvg-chno="66" group-title="Musica",Radio 105 TV
+#EXTINF:-1 tvg-name="Radio 105 TV" tvg-id="" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/172940883-5a20c129-c0c3-468d-a054-0fe52a97defe.png" tvg-chno="66" group-title="Musica",Radio 105 TV
 https://live02-col.msr.cdn.mediaset.net/live/ch-ec/ec-clr.isml/index.m3u8
 #EXTINF:-1 tvg-name="R101 TV" tvg-id="R101tv.it"tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/173157520-772bf963-ba70-405a-87aa-0ebee29adef8.png" tvg-chno="67" group-title="Musica",R101 TV
 https://live02-col.msr.cdn.mediaset.net/live/ch-er/er-clr.isml/index.m3u8
@@ -344,7 +344,7 @@ https://d3i87cms5m5yjq.cloudfront.net/mov_720.m3u8
 https://videosolutions-wedobigstories-rakuten.amagi.tv/playlist1080p.m3u8
 #EXTINF:-1 tvg-id="ITBC4700003GR" tvg-name="Love the Planet" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC4700003GR_20230412T042555SQUARE.png_20230412042556.png" group-title="Documentari", Love the Planet
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01821-lovetvchannels-lovetheplanetitsamsung-samsungit/playlist.m3u8
-#EXTINF:-1 tvg-id="IT12000029J" tvg-name="Viaggi & Sapori" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT12000029J_20240911T163049SQUARE.png" group-title="Documentari", Viaggi & Sapori
+#EXTINF:-1 tvg-name="Viaggi & Sapori" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT12000029J_20240911T163049SQUARE.png" group-title="Documentari", Viaggi & Sapori
 https://amg01821-amg01821c18-samsung-it-3198.playouts.now.amagi.tv/1080p/index.m3u8
 #EXTINF:-1 tvg-id="PlutoTvStoria.it" tvg-logo="https://images.pluto.tv/channels/65253fdf3fd33c00080214a3/colorLogoPNG.png" group-title="Documentari", Storia - Pluto
 https://jmp2.uk/plu-65253fdf3fd33c00080214a3.m3u8
@@ -365,7 +365,7 @@ https://nexoapp.d-dr.com/api/live/opera-legends/live.m3u8
 
 #EXTINF:-1 tvg-id="ITBA33000374G" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA33000374G_20230208T013146SQUARE.png_20230208013147.png" group-title="Altre tv", 5-Minuti Creativi
 https://d266mze7uh4wuz.cloudfront.net/playlist/amg02051-amg02051c7-274/playlist.m3u8
-#EXTINF:-1 tvg-id="Fashion.TV.it" tvg-logo="https://images.pluto.tv/channels/60c88130ab4a9800074e5f87/colorLogoPNG.png" group-title="Altre tv", Fashion TV
+#EXTINF:-1 tvg-id="RakutenFashionTv.it" tvg-logo="https://images.pluto.tv/channels/60c88130ab4a9800074e5f87/colorLogoPNG.png" group-title="Altre tv", Fashion TV
 https://ftv1.b-cdn.net/bfdbb576-83f7-11f0-9f89-0200170e3e04_1000028043_HLS/manifest.m3u8
 
 
@@ -503,7 +503,7 @@ https://rally-tv-live.akamaized.net/hls/live/2117704/RallyTV-Pri/master.m3u8
 https://vercel-api.zappr.stream/api?https://telelombardia.video/video/viewlivestreaming?rel=2497&cntr=0
 #EXTINF:-1 tvg-logo="https://www.redbull.com/cs/RedBull2/images/branding/redbull-tv-logo-2x.png" tvg-id="IT:.Red.Bull.TV.be" group-title="Sport",RedBull TV
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
-#EXTINF:-1 tvg-name="BIKE" tvg-id="BIKE.it" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=BIKE" group-title="Sport", BIKE
+#EXTINF:-1 tvg-name="BIKE" tvg-id="bikesmartmobility" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=BIKE" group-title="Sport", BIKE
 https://edge-004.streamup.eu/origin/bike_abr/playlist.m3u8
 #EXTINF:-1 tvg-name="Sportitalia" channel-id="ITBA2200010O1" tvg-id="IT1000002TG" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA2200010O1_20230412T042536SQUARE.png_20230412042536.png" group-title="Sport",Sportitalia (25fps)
 https://sportsitalia-samsungitaly.amagi.tv/playlist1080p.m3u8
@@ -517,7 +517,7 @@ https://jmp2.uk/plu-608030eff4b6f70007e1684c.m3u8
 https://amg01444-tennischannelth-tennischde-samsungch-jp1l8.amagi.tv/playlist/amg01444-tennischannelth-tennischde-samsungch/playlist.m3u8
 #EXTINF:-1 tvg-id="plex.tv.Tennis.Channel.2.plex" tvg-name="T2 Tennis Channel" tvg-logo="https://i.imgur.com/tsljAnY.png" group-title="Sport",Tennis channel 2
 https://amg01444-tennischannel-amg01444c2-lg-us-959.playouts.now.amagi.tv/playlist/amg01444-tennischannelfast-tennischannelus-lgus/playlist.m3u8
-#EXTINF:-1 tvg-id="IT:.Tennis+.be" group-title="Sport" tvg-logo="https://images.plex.tv/photo?url=https%3A%2F%2Fprovider-static.plex.tv%2Fepg%2Fcms%2Fproduction%2Fd8dd29ce-8968-4a90-a21c-37af62c48e54%2F5_Tennis_Plus__Horizontal_Default_Art__3840x2160px_v4.jpg", Tennis+
+#EXTINF:-1 group-title="Sport" tvg-logo="https://images.plex.tv/photo?url=https%3A%2F%2Fprovider-static.plex.tv%2Fepg%2Fcms%2Fproduction%2Fd8dd29ce-8968-4a90-a21c-37af62c48e54%2F5_Tennis_Plus__Horizontal_Default_Art__3840x2160px_v4.jpg", Tennis+
 https://amg01935-amg01935c1-amgplt0020.playout.now3.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-name="" tvg-id="plex.tv.Unbeaten.plex" tvg-logo="https://i.imgur.com/LmkNt3v.png" group-title="Sport",UNBEATEN
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00721-inverleigh-unbeaten-lges/playlist.m3u8
@@ -1063,7 +1063,7 @@ https://5ce9406b73c33.streamlock.net/TeleMantova/livestream/playlist.m3u8
 http://185.202.128.1:1935/Telemolise4K/Telemolise4K/chunklist_w1852576476.m3u8
 #EXTINF:-1 tvg-id="tlt molise" tvg-name="Tlt Molise" tvg-logo="http://tv.10dailythings.com/images/channels/IT/tlt-molise/normal.png" group-title="Regionali",Tlt Molise
 https://5f22d76e220e1.streamlock.net/tltmolise/tltmolise/chunklist_w341245661.m3u8
-#EXTINF:-1 tvg-id="TG.NORBA.24.it" tvg-name="TG Norba 24" tvg-logo="http://odmsto.com/uploads/tv_image/sm/tele-norba-tg-norba-24.png" group-title="Regionali",TG Norba 24
+#EXTINF:-1 tvg-id="tg norba 24" tvg-name="TG Norba 24" tvg-logo="http://odmsto.com/uploads/tv_image/sm/tele-norba-tg-norba-24.png" group-title="Regionali",TG Norba 24
 https://stream3.xdevel.com/video0s976570-1422/stream/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="telegranducatotv" tvg-name="TelegranducatoTv" tvg-logo="https://www.telegranducato.it/wp-content/uploads/img_struttura_sito/logo_granducato_ridotto.png" group-title="Regionali",TelegranducatoTv
 https://www.granducatotv.eu/tv/granducato/hls/index.flashls.m3u8.php?cid=0&m3u8=.m3u8
