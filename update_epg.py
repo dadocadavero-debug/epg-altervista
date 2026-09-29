@@ -51,7 +51,7 @@ EPG_URL_BASE = "https://raw.githubusercontent.com/dadocadavero-debug/epg-altervi
 # One-time compatibility/cache revision for Fermata.
 # The actual GitHub file remains epg.xml.  The query only gives the player
 # a fresh EPG URL after the tvg-id migration to dv.* IDs.
-FERMATA_EPG_REV = "20260929-final"
+FERMATA_EPG_REV = "20260929-sportfix1"
 EPG_URL = f"{EPG_URL_BASE}?v={FERMATA_EPG_REV}"
 LOGO_SOURCE_URL = "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u"
 
@@ -96,6 +96,7 @@ ID_MAP = {'20Mediaset.it': '20.it',
  'Twentyseven.it': '27.Twentyseven.it',
  'VirginRadioTV.it': 'Virgin.Radio.it',
  'bikesmartmobility': 'BIKE.it',
+ 'sportitalia24live': 'PrimaveraTv.it',
  'canale 5': 'Canale.5.it',
  'canale5': 'Canale.5.it',
  'cine34.it': 'Cine34.it',
@@ -128,6 +129,45 @@ ID_MAP = {'20Mediaset.it': '20.it',
  'sportitalia': 'Sportitalia.it',
  'super': 'Super!.it',
  'tg norba 24': 'TG.NORBA.24.it'}
+PREFERRED_EPG_IDS = {
+    "primavera tv": (
+        "PrimaveraTv.it",
+        "PrimaveraTV.it",
+        "sportitalia24live",
+    ),
+    "sky sport non sempre attivo": (
+        "SkySportF1.it",
+        "SkySportF1.it@HD",
+    ),
+    "lazio style tv": (
+        "LazioStyleTV.it",
+        "LazioStyleChannel.it",
+    ),
+    "inter tv": (
+        "InterTV.it",
+        "Inter.TV.it",
+        "InterChannel.it",
+    ),
+}
+
+PREFERRED_EPG_NAMES = {
+    "primavera tv": (
+        "Primavera TV",
+    ),
+    "sky sport non sempre attivo": (
+        "Sky Sport F1",
+        "Sky Sport F1 HD",
+    ),
+    "lazio style tv": (
+        "Lazio Style TV",
+        "Lazio Style Channel",
+    ),
+    "inter tv": (
+        "Inter TV",
+        "Inter Channel",
+    ),
+}
+
 NAME_MAP = {'20 mediaset': '20.it',
  '27 twentyseven': '27.Twentyseven.it',
  'aci sport tv': 'ACI.Sport.Tv.it',
@@ -149,7 +189,7 @@ NAME_MAP = {'20 mediaset': '20.it',
  'glory kickboxing': 'IT:.GLORY.Kickboxing.be',
  'hgtv backup': 'HGTV.it',
  'inter 24 7': 'IT:.INTER.24/7.be',
- 'inter tv': 'Inter.TV.it',
+ 'inter tv': 'InterTV.it',
  'italia 1': 'Italia.1.it',
  'italia 2': 'Italia.2.it',
  'juventus play': 'IT:.Juventus.Play.be',
@@ -158,6 +198,9 @@ NAME_MAP = {'20 mediaset': '20.it',
  'mediaset 20': '20.it',
  'mediaset extra': 'Mediaset.Extra.it',
  'motoretro': 'IT:.Motoretrò.be',
+ 'primavera tv': 'https://raw.githubusercontent.com/nicolofajette/Canali/main/logos/primaveratv.webp',
+ 'sky sport non sempre attivo': 'SkySportF1.it',
+ 'lazio style tv': 'LazioStyleTV.it',
  'motorvision tv': 'IT:.MOTORVISION.TV.be',
  'nove 720p 50fps': 'Nove.it',
  'nove backup': 'Nove.it',
@@ -191,8 +234,8 @@ NAME_MAP = {'20 mediaset': '20.it',
  'rai yoyo hbbtv raiway': 'RaiYoyo.it',
  'rally tv': 'IT:.Rally.TV.FAST+.be',
  'realtime backup': 'Real.Time.it',
- 'red bull tv': 'IT:.Red.Bull.TV.be',
- 'redbull tv': 'IT:.Red.Bull.TV.be',
+ 'red bull tv': 'https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/red-bull-tv-int.png',
+ 'redbull tv': 'https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/red-bull-tv-int.png',
  'rete 4': 'Rete.4.it',
  'sky tg24 sd': 'Sky.TG24.it',
  'solocalcio': 'Solocalcio.it.it',
@@ -306,6 +349,12 @@ SOURCES = [
         "required": True,
     },
     {
+        "name": "IPTV-org Sky Italia",
+        "urls": ["https://iptv-org.github.io/epg/guides/it/guidatv.sky.it.epg.xml"],
+        "priority": 99,
+        "required": False,
+    },
+    {
         "name": "EPG Italia",
         "urls": ["https://www.epgitalia.tv/gzip"],
         "priority": 97,
@@ -357,6 +406,9 @@ CORE_NAMES = {
 FORCE_MANUAL_LOGO_PREFIXES = (
     "supertennis",
     "super tennis",
+    "primavera tv",
+    "redbull tv",
+    "red bull tv",
 )
 
 class SafeSkipUpdate(Exception):
@@ -578,7 +630,12 @@ def name_keys(block: M3uBlock):
     return keys
 
 def canonical_hint(block: M3uBlock):
-    # Known name mapping first.
+    # Surgical per-channel preferred identifier first.
+    preferred = PREFERRED_EPG_IDS.get(norm(block.name))
+    if preferred:
+        return preferred[0]
+
+    # Known name mapping.
     for key in name_keys(block):
         if key in NAME_MAP:
             return NAME_MAP[key]
@@ -604,6 +661,19 @@ def relevance_for_blocks(blocks):
     stripped = set()
 
     for b in blocks:
+        exact_name = norm(b.name)
+
+        for preferred_id in PREFERRED_EPG_IDS.get(exact_name, ()):
+            ids.add(preferred_id)
+
+        for alias_name in PREFERRED_EPG_NAMES.get(exact_name, ()):
+            alias_n = norm(alias_name)
+            alias_sn = stripped_norm(alias_name)
+            if alias_n:
+                names.add(alias_n)
+            if alias_sn:
+                stripped.add(alias_sn)
+
         if b.old_id:
             ids.add(b.old_id)
             mapped = ID_MAP.get(b.old_id)
@@ -769,6 +839,33 @@ def candidates(block: M3uBlock, sources):
     keys = name_keys(block)
 
     for src in sources:
+        exact_name = norm(block.name)
+
+        # Per-channel preferred IDs. Missing/no-programme IDs are skipped
+        # automatically, so the next verified fallback can win.
+        preferred_ids = PREFERRED_EPG_IDS.get(exact_name, ())
+        for rank, preferred_id in enumerate(preferred_ids):
+            add_candidate(
+                bucket,
+                src,
+                preferred_id,
+                125 - rank,
+                f"preferred-id:{preferred_id}",
+            )
+
+        # Per-channel exact display-name aliases for sources that use a
+        # different XMLTV id but the correct channel name.
+        for alias_name in PREFERRED_EPG_NAMES.get(exact_name, ()):
+            alias_n = norm(alias_name)
+            for cid in src.exact_names.get(alias_n, set()):
+                add_candidate(
+                    bucket,
+                    src,
+                    cid,
+                    121,
+                    f"preferred-name:{alias_n}",
+                )
+
         # Explicit canonical name mapping.
         for key in keys:
             mapped = NAME_MAP.get(key)
@@ -1310,6 +1407,7 @@ def run_update():
         "mediaset 20", "rai sport", "sport italia", "solocalcio",
         "super tennis", "supertennis", "juventus play", "inter tv",
         "inter 24 7", "fifa plus", "motoretro", "rally tv", "redbull tv",
+        "primavera tv", "lazio style tv", "sky sport",
     )
     print("Diagnostica canali chiave:")
     for b, (cand, stable_id) in zip(blocks, matches):
