@@ -51,7 +51,7 @@ EPG_URL_BASE = "https://raw.githubusercontent.com/dadocadavero-debug/epg-altervi
 # One-time compatibility/cache revision for Fermata.
 # The actual GitHub file remains epg.xml.  The query only gives the player
 # a fresh EPG URL after the tvg-id migration to dv.* IDs.
-FERMATA_EPG_REV = "20260929-sportfix1"
+FERMATA_EPG_REV = "20260929-sportfix2"
 EPG_URL = f"{EPG_URL_BASE}?v={FERMATA_EPG_REV}"
 LOGO_SOURCE_URL = "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u"
 
@@ -148,6 +148,14 @@ PREFERRED_EPG_IDS = {
         "Inter.TV.it",
         "InterChannel.it",
     ),
+    "redbull tv": (
+        "IT:.Red.Bull.TV.be",
+        "RedBullTV.at",
+    ),
+    "red bull tv": (
+        "IT:.Red.Bull.TV.be",
+        "RedBullTV.at",
+    ),
 }
 
 PREFERRED_EPG_NAMES = {
@@ -165,6 +173,12 @@ PREFERRED_EPG_NAMES = {
     "inter tv": (
         "Inter TV",
         "Inter Channel",
+    ),
+    "redbull tv": (
+        "Red Bull TV",
+    ),
+    "red bull tv": (
+        "Red Bull TV",
     ),
 }
 
@@ -198,7 +212,7 @@ NAME_MAP = {'20 mediaset': '20.it',
  'mediaset 20': '20.it',
  'mediaset extra': 'Mediaset.Extra.it',
  'motoretro': 'IT:.Motoretrò.be',
- 'primavera tv': 'https://raw.githubusercontent.com/nicolofajette/Canali/main/logos/primaveratv.webp',
+ 'primavera tv': 'PrimaveraTv.it',
  'sky sport non sempre attivo': 'SkySportF1.it',
  'lazio style tv': 'LazioStyleTV.it',
  'motorvision tv': 'IT:.MOTORVISION.TV.be',
@@ -234,8 +248,8 @@ NAME_MAP = {'20 mediaset': '20.it',
  'rai yoyo hbbtv raiway': 'RaiYoyo.it',
  'rally tv': 'IT:.Rally.TV.FAST+.be',
  'realtime backup': 'Real.Time.it',
- 'red bull tv': 'https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/red-bull-tv-int.png',
- 'redbull tv': 'https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/red-bull-tv-int.png',
+ 'red bull tv': 'IT:.Red.Bull.TV.be',
+ 'redbull tv': 'IT:.Red.Bull.TV.be',
  'rete 4': 'Rete.4.it',
  'sky tg24 sd': 'Sky.TG24.it',
  'solocalcio': 'Solocalcio.it.it',
@@ -275,7 +289,7 @@ LOGO_MAP = {'20 mediaset': 'https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logo
  'mediaset 20': 'https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/20mediaset.png',
  'motor trend': 'https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/motortrend.png',
  'nove': 'https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png',
- 'primavera tv': 'https://www.tvdream.net/img/primavera-tv.png',
+ 'primavera tv': 'https://raw.githubusercontent.com/nicolofajette/Canali/refs/heads/main/logos/primaveratv.webp',
  'rai 1': 'https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png',
  'rai 2': 'https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png',
  'rai 3': 'https://www.raiplay.it/dl/img/2016/09/1473662801274Logo-Rai3.png',
@@ -291,8 +305,8 @@ LOGO_MAP = {'20 mediaset': 'https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logo
  'rally tv': 'https://i.postimg.cc/WtLq2C7c/logo-Rally-Tv1.png',
  'real time': 'https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/realtime.png',
  'realtime': 'https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/realtime.png',
- 'red bull tv': 'https://www.redbull.com/cs/RedBull2/images/branding/redbull-tv-logo-2x.png',
- 'redbull tv': 'https://www.redbull.com/cs/RedBull2/images/branding/redbull-tv-logo-2x.png',
+ 'red bull tv': 'https://images.pluto.tv/channels/5e7cb84a172a0f0007da69e4/colorLogoPNG.png',
+ 'redbull tv': 'https://images.pluto.tv/channels/5e7cb84a172a0f0007da69e4/colorLogoPNG.png',
  'sportoutdoor': 'https://www.google.com/s2/favicons?domain=sportoutdoor.tv&sz=256',
  'sportoutdoor tv': 'https://www.google.com/s2/favicons?domain=sportoutdoor.tv&sz=256',
  'super tennis': 'https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/supertennis.png',
@@ -350,7 +364,7 @@ SOURCES = [
     },
     {
         "name": "IPTV-org Sky Italia",
-        "urls": ["https://iptv-org.github.io/epg/guides/it/guidatv.sky.it.epg.xml"],
+        "urls": ["https://iptv-org.github.io/epg/guides/it/guidatv.sky.it.xml"],
         "priority": 99,
         "required": False,
     },
@@ -358,6 +372,24 @@ SOURCES = [
         "name": "EPG Italia",
         "urls": ["https://www.epgitalia.tv/gzip"],
         "priority": 97,
+        "required": False,
+    },
+    {
+        "name": "Rytec Italia Sky",
+        "urls": [
+            "http://www.xmltvepg.nl/rytecIT_Sky.xz",
+            "http://rytecepg.wanwizard.eu/rytecIT_Sky.xz",
+        ],
+        "priority": 72,
+        "required": False,
+    },
+    {
+        "name": "Rytec Italia Sport/Film",
+        "urls": [
+            "http://www.xmltvepg.nl/rytecIT_SportMovies.xz",
+            "http://rytecepg.wanwizard.eu/rytecIT_SportMovies.xz",
+        ],
+        "priority": 71,
         "required": False,
     },
     {
@@ -397,6 +429,15 @@ SOURCES = [
         "required": False,
     },
 ]
+
+STRICT_PREFERRED_CHANNELS = {
+    "primavera tv",
+    "sky sport non sempre attivo",
+    "lazio style tv",
+    "inter tv",
+    "redbull tv",
+    "red bull tv",
+}
 
 CORE_NAMES = {
     "rai 1", "rai 2", "rai 3", "rete 4", "canale 5", "italia 1"
@@ -865,6 +906,12 @@ def candidates(block: M3uBlock, sources):
                     121,
                     f"preferred-name:{alias_n}",
                 )
+
+        # For surgical targets, NEVER fall back to fuzzy/stripped matches.
+        # This prevents e.g. "Sky Sport (non sempre attivo)" from receiving
+        # the schedule of Sky Sport 4K when Sky Sport F1 is unavailable.
+        if exact_name in STRICT_PREFERRED_CHANNELS:
+            continue
 
         # Explicit canonical name mapping.
         for key in keys:
@@ -1415,7 +1462,7 @@ def run_update():
             if cand:
                 print(
                     f"  OK | {b.name} | {stable_id} <- {cand.source_id} | "
-                    f"{cand.source.name} | "
+                    f"{cand.source.name} | {cand.reason} | "
                     f"{len(cand.source.programmes[cand.source_id])} programmi | "
                     f"now={cand.source.has_now.get(cand.source_id, False)}"
                 )
