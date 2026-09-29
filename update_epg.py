@@ -46,7 +46,13 @@ from pathlib import Path
 from urllib.parse import quote
 
 M3U_URL = "https://inthemix.altervista.org/tv.m3u"
-EPG_URL = "https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml"
+EPG_URL_BASE = "https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml"
+
+# One-time compatibility/cache revision for Fermata.
+# The actual GitHub file remains epg.xml.  The query only gives the player
+# a fresh EPG URL after the tvg-id migration to dv.* IDs.
+FERMATA_EPG_REV = "20260929-final"
+EPG_URL = f"{EPG_URL_BASE}?v={FERMATA_EPG_REV}"
 LOGO_SOURCE_URL = "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u"
 
 OUT_M3U = Path("tv_epg.m3u")
@@ -894,6 +900,57 @@ def choose_logo(block, cand, extlogos):
     label = quote((block.name or "TV")[:24], safe="")
     return f"https://placehold.co/256x256/202020/FFFFFF.png?text={label}"
 
+def sanitize_xmltv_metadata(root: ET.Element):
+    """
+    Make optional XMLTV image metadata conservative for strict clients.
+
+    - A few upstream Rakuten channel icons contain several URLs joined by "|".
+      XML itself is well-formed, but that value is not a single usable URI.
+      Keep only the first http(s) URL.
+    - Remove duplicate <icon> elements with the same src.
+    - Do NOT touch channel IDs, programme IDs, times, titles, descriptions
+      or playlist logos/streams.
+    """
+    fixed_pipe_icons = 0
+    removed_duplicate_icons = 0
+    removed_invalid_icons = 0
+
+    for parent in list(root.findall("channel")) + list(root.findall("programme")):
+        seen_src = set()
+
+        for icon in list(parent.findall("icon")):
+            src = (icon.get("src") or "").strip()
+
+            if "|" in src:
+                parts = [
+                    p.strip()
+                    for p in src.split("|")
+                    if p.strip().startswith(("http://", "https://"))
+                ]
+                if parts:
+                    src = parts[0]
+                    icon.set("src", src)
+                    fixed_pipe_icons += 1
+                else:
+                    parent.remove(icon)
+                    removed_invalid_icons += 1
+                    continue
+
+            if not src.startswith(("http://", "https://")):
+                parent.remove(icon)
+                removed_invalid_icons += 1
+                continue
+
+            if src in seen_src:
+                parent.remove(icon)
+                removed_duplicate_icons += 1
+                continue
+
+            seen_src.add(src)
+
+    return fixed_pipe_icons, removed_duplicate_icons, removed_invalid_icons
+
+
 def append_epg_channel(out_root, output_ids, programme_keys, stable_id, block, cand):
     if stable_id not in output_ids:
         src_ch = copy.deepcopy(cand.source.channels[cand.source_id])
@@ -1028,9 +1085,20 @@ def run_update():
                 "XMLTV non valido: trovato <channel> dopo <programme>."
             )
 
+    # Pulisce solo metadata XMLTV opzionale potenzialmente indigesta.
+    (
+        fixed_pipe_icons,
+        removed_duplicate_icons,
+        removed_invalid_icons,
+    ) = sanitize_xmltv_metadata(epg_root)
+
     # 6) M3U built from the same IDs.
     out_lines = [
-        f'#EXTM3U x-tvg-url="{EPG_URL}" url-tvg="{EPG_URL}"'
+        (
+            f'#EXTM3U x-tvg-url="{EPG_URL}" '
+            f'url-epg="{EPG_URL}" '
+            f'url-tvg="{EPG_URL}"'
+        )
     ]
 
     for idx, (b, payload, match) in enumerate(zip(blocks, wanted_payloads, matches)):
@@ -1080,6 +1148,19 @@ def run_update():
     if broken:
         raise RuntimeError(
             "M3U/EPG non allineati: " + ", ".join(broken[:20])
+        )
+
+    # XMLTV optional metadata must not contain concatenated URI lists.
+    bad_pipe_icons = []
+    for node in list(epg_root.findall("channel")) + list(epg_root.findall("programme")):
+        for icon in node.findall("icon"):
+            src = icon.get("src") or ""
+            if "|" in src:
+                bad_pipe_icons.append(src)
+
+    if bad_pipe_icons:
+        raise RuntimeError(
+            f"XMLTV contiene ancora {len(bad_pipe_icons)} icon URI concatenate con '|'."
         )
 
     # Core sanity.
@@ -1207,6 +1288,14 @@ def run_update():
     print(f"Programmi: {len(epg_root.findall('programme'))}")
     print("M3U ed EPG generati dalla STESSA mappa.")
     print("XMLTV: tutti i <channel> sono prima di tutti i <programme>.")
+    print(
+        "XMLTV metadata puliti: "
+        f"pipe-icon corretti={fixed_pipe_icons}, "
+        f"icon duplicati rimossi={removed_duplicate_icons}, "
+        f"icon invalidi rimossi={removed_invalid_icons}"
+    )
+    print(f"EPG Fermata URL: {EPG_URL}")
+    print("Header EPG: x-tvg-url + url-epg + url-tvg.")
     print("Stream non modificati, tranne Rai 1/2/3 <- rispettivi Europa.")
 
     print("Copertura per categoria:")
