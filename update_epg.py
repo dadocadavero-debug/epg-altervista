@@ -1008,6 +1008,26 @@ def run_update():
             f"programmi={len(cand.source.programmes[cand.source_id])}"
         )
 
+    # XMLTV compatibile: il DTD prevede prima tutti i <channel>,
+    # poi tutti i <programme>. Il vecchio MASTER li intercalava.
+    channel_nodes = [x for x in list(epg_root) if x.tag == "channel"]
+    programme_nodes = [x for x in list(epg_root) if x.tag == "programme"]
+    other_nodes = [
+        x for x in list(epg_root)
+        if x.tag not in {"channel", "programme"}
+    ]
+    epg_root[:] = channel_nodes + programme_nodes + other_nodes
+
+    # Validazione: nessun <channel> può comparire dopo il primo <programme>.
+    seen_programme = False
+    for child in list(epg_root):
+        if child.tag == "programme":
+            seen_programme = True
+        elif child.tag == "channel" and seen_programme:
+            raise RuntimeError(
+                "XMLTV non valido: trovato <channel> dopo <programme>."
+            )
+
     # 6) M3U built from the same IDs.
     out_lines = [
         f'#EXTM3U x-tvg-url="{EPG_URL}" url-tvg="{EPG_URL}"'
@@ -1186,6 +1206,7 @@ def run_update():
     print(f"Con guida: {matched}")
     print(f"Programmi: {len(epg_root.findall('programme'))}")
     print("M3U ed EPG generati dalla STESSA mappa.")
+    print("XMLTV: tutti i <channel> sono prima di tutti i <programme>.")
     print("Stream non modificati, tranne Rai 1/2/3 <- rispettivi Europa.")
 
     print("Copertura per categoria:")
