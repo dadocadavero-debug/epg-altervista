@@ -344,7 +344,7 @@ https://d3i87cms5m5yjq.cloudfront.net/mov_720.m3u8
 https://videosolutions-wedobigstories-rakuten.amagi.tv/playlist1080p.m3u8
 #EXTINF:-1 tvg-id="ITBC4700003GR" tvg-name="Love the Planet" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC4700003GR_20230412T042555SQUARE.png_20230412042556.png" group-title="Documentari", Love the Planet
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01821-lovetvchannels-lovetheplanetitsamsung-samsungit/playlist.m3u8
-#EXTINF:-1 tvg-name="Viaggi & Sapori" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT12000029J_20240911T163049SQUARE.png" group-title="Documentari", Viaggi & Sapori
+#EXTINF:-1 tvg-id="IT12000029J" tvg-name="Viaggi & Sapori" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT12000029J_20240911T163049SQUARE.png" group-title="Documentari", Viaggi & Sapori
 https://amg01821-amg01821c18-samsung-it-3198.playouts.now.amagi.tv/1080p/index.m3u8
 #EXTINF:-1 tvg-id="PlutoTvStoria.it" tvg-logo="https://images.pluto.tv/channels/65253fdf3fd33c00080214a3/colorLogoPNG.png" group-title="Documentari", Storia - Pluto
 https://jmp2.uk/plu-65253fdf3fd33c00080214a3.m3u8
@@ -479,7 +479,7 @@ https://d3k8wzt41aflvx.cloudfront.net/INTERTV/Live.m3u8
 https://amg27604-amg27604c2-amgplt0148.playout.now3.amagi.tv/playlist/amg27604-amg27604c2-amgplt0148/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.tvdream.net/img/lazio-style-tv.png" group-title="Sport",Lazio Style TV
 https://livesg.sslazio.hiway.media/restreamer/sslazio_client/gpu-a-c0-7/restreamer/outgest/a4bacde5-20de-4555-9664-939a1794b963/manifest.m3u8
-#EXTINF:-1 tvg-name="Italian Fishing TV" tvg-id="Italian.Fishing.TV.be" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork_negative/8488cf6a-bb6a-4df1-adf4-d66ff4b621ca-italian-fishing-tv-1643371244-quality100.png" group-title="Sport",Italian Fishing TV
+#EXTINF:-1 tvg-name="Italian Fishing TV" tvg-id="" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork_negative/8488cf6a-bb6a-4df1-adf4-d66ff4b621ca-italian-fishing-tv-1643371244-quality100.png" group-title="Sport",Italian Fishing TV
 https://d2n1ucuifwse4q.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5nki8b8udz6dm/index.m3u8?ads.device_did=%7BPSID%7D&ads.device_dnt=0&ads.app_domain=0&ads.app_name=0&ads.consent=0&ads.ssai_vendor=SSSLIVE
 #EXTINF:-1 tvg-id="ITBA3300022EA" tvg-name="SportOutdoor.tv" tvg-logo="https://www.google.com/s2/favicons?domain=sportoutdoor.tv&sz=256" group-title="Sport",SportOutdoor.Tv
 https://gto2000-sportoutdoortv-1-eu.rlaxxtv.wurl.tv/4300.m3u8

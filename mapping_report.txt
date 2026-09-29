@@ -3,8 +3,8 @@ Rai principali: Rai 1/2/3 <- rispettivi feed Europa Altervista
 Canali sorgente Altervista: 498
 EPG unico usato per mapping e player: https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml
 Canali disponibili nell'EPG: 379
-Programmi disponibili nell'EPG: 29075
-ID EPG con almeno un programma: 333
+Programmi disponibili nell'EPG: 29154
+ID EPG con almeno un programma: 330
 Canali della playlist collegati a un ID EPG con programmi: 239
 Canali/righe EXTINF modificate: 169
 Match automatici univoci: 65
@@ -104,6 +104,7 @@ Elisa di Rivombrosa | logo aggiunto -> https://tvpnlogopeu.samsungcloud.tv/platf
 NatureTime | (vuoto) -> IT2100001EZ | tvg-name-esatto
 Move - Sportivi in viaggio | (vuoto) -> ITBD300001GI | nome-esatto
 Love the Planet | (vuoto) -> ITBC4700003GR | tvg-name-esatto
+Viaggi & Sapori | (vuoto) -> IT12000029J | tvg-name-esatto
 Viaggi - Pluto | PlutoTvViaggi.it -> 63c923944207be0007fd0887 | tvg-name-esatto
 CAR CITY ADVENTURES | (vuoto) -> IT2000002D1 | nome-esatto
 Mr Bean Animated | (vuoto) -> IT900001A7 | nome-esatto
@@ -138,7 +139,6 @@ Inter TV | (vuoto) -> Inter.TV.it | nome-verificato
 Inter TV | logo aggiunto -> https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/inter-tv-it.png
 INTER 24/7 | (vuoto) -> RakutenInter247.it | nome-verificato
 Lazio Style TV | logo aggiunto -> https://www.tvdream.net/img/lazio-style-tv.png
-Italian Fishing TV | (vuoto) -> Italian.Fishing.TV.be | tvg-name-esatto
 SportOutdoor.Tv | (vuoto) -> ITBA3300022EA | tvg-name-esatto
 SportOutdoor.Tv | logo aggiunto -> https://www.google.com/s2/favicons?domain=sportoutdoor.tv&sz=256
 FIFA+ | (vuoto) -> RakutenFifaPlus.it | tvgid-verificato
@@ -421,7 +421,6 @@ Renegade - Pluto | tvg-id=PlutoRenegade.it | group=Serie
 Natura - Pluto | tvg-id=PlutoTvNatura.it | group=Documentari
 Documentari - Pluto | tvg-id=PlutoTvDocumentari.it | group=Documentari
 Grandi Documentari - Wedo Big Stories | tvg-id=RakutenWedoBigStories.it | group=Documentari
-Viaggi & Sapori | tvg-id=(vuoto) | group=Documentari
 Storia - Pluto | tvg-id=PlutoTvStoria.it | group=Documentari
 La grande arte | tvg-id=(vuoto) | group=Documentari
 House of docs | tvg-id=(vuoto) | group=Documentari
@@ -460,6 +459,7 @@ Supertennis+ 2 | tvg-id=(vuoto) | group=Sport
 Supertennis+ 3 | tvg-id=(vuoto) | group=Sport
 Supertennis+ 4 | tvg-id=(vuoto) | group=Sport
 Lazio Style TV | tvg-id=(vuoto) | group=Sport
+Italian Fishing TV | tvg-id=(vuoto) | group=Sport
 F1 TV | tvg-id=(vuoto) | group=Sport
 Dolomiti Life TV | tvg-id=(vuoto) | group=Documentari
 Plus TV Sport | tvg-id=MsChannel.it | group=Sport
