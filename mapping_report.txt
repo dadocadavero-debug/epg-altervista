@@ -1,20 +1,20 @@
 DAVIDE EPG + PLAYLIST SYNC MASTER
-Generato UTC: 2026-09-29T11:24:46+00:00
+Generato UTC: 2026-09-29T11:42:04+00:00
 Canali Altervista: 498
-Canali con guida reale/fresca: 261
-EPG channel IDs: 187
-Programmi XMLTV: 9974
+Canali con guida reale/fresca: 263
+EPG channel IDs: 189
+Programmi XMLTV: 10342
 
 COPERTURA PER CATEGORIA
 Regionali: guida=3/80 | programma-adesso=3/80
 Musica: guida=24/57 | programma-adesso=24/57
 Film: guida=38/51 | programma-adesso=38/51
-Sport: guida=26/44 | programma-adesso=26/44
+Sport: guida=27/44 | programma-adesso=27/44
 Rai: guida=30/41 | programma-adesso=30/41
 Bambini e ragazzi: guida=25/35 | programma-adesso=25/35
 Estero: guida=28/35 | programma-adesso=28/35
 Serie: guida=12/35 | programma-adesso=12/35
-Altre tv: guida=11/26 | programma-adesso=11/26
+Altre tv: guida=12/26 | programma-adesso=12/26
 Mediaset: guida=19/23 | programma-adesso=19/23
 Discovery: guida=18/18 | programma-adesso=18/18
 Documentari: guida=7/18 | programma-adesso=7/18
@@ -24,82 +24,84 @@ RESTART Mediaset: guida=0/8 | programma-adesso=0/8
 Radio: guida=0/6 | programma-adesso=0/6
 
 FONTI USATE
-EPGShare IT1: 137 canali
+EPGShare IT1: 135 canali
 Samsung TV Plus Italia: 74 canali
 Pluto TV Italia: 23 canali
 EPG Italia: 13 canali
+EPGShare Rakuten: 6 canali
 EPGShare BE2 FAST/Sport: 5 canali
-EPGShare Rakuten: 5 canali
 EPGShare Plex: 4 canali
+Rytec Italia Sport/Film: 2 canali
+Rytec Italia Sky: 1 canali
 
 MAPPING
 OK | Rai | Rai 1 | dv.rai1-it.3f79da6d <- Rai1.it | EPGShare IT1 | name-map:rai 1 | now=True | programmi=84
-OK | Rai | Rai 2 | dv.rai2-it.9ff87f5f <- Rai2.it | EPGShare IT1 | old-id | now=True | programmi=97
+OK | Rai | Rai 2 | dv.rai2-it.9ff87f5f <- Rai2.it | EPGShare IT1 | old-id | now=True | programmi=96
 OK | Rai | Rai 3 | dv.rai3-it.a817d204 <- Rai3.it | EPGShare IT1 | name-map:rai 3 | now=True | programmi=104
 OK | Mediaset | Rete 4 | dv.rete-4-it.bfb9abf8 <- Rete.4.it | EPGShare IT1 | name-map:rete 4 | now=True | programmi=65
 OK | Mediaset | Canale 5 | dv.canale-5-it.b8e12e70 <- Canale.5.it | EPGShare IT1 | name-map:canale 5 | now=True | programmi=96
 OK | Mediaset | Italia 1 | dv.italia-1-it.1f8cae2c <- Italia.1.it | EPGShare IT1 | name-map:italia 1 | now=True | programmi=92
 OK | Altre tv | LA7 | dv.la7-hd-it.4d7d76b6 <- la7 | EPG Italia | old-id | now=True | programmi=65
 OK | Altre tv | TV8 SD | dv.tv8-hd-it.6088dda3 <- TV8.HD.it | EPGShare IT1 | id-map:Tv8.it | now=True | programmi=77
-OK | Discovery | NOVE | dv.nove-it.a79c1a91 <- Nove.it | EPGShare IT1 | old-id | now=True | programmi=72
+OK | Discovery | NOVE | dv.nove-it.a79c1a91 <- Nove.it | EPGShare IT1 | old-id | now=True | programmi=71
 OK | Regionali | Telelombardia | dv.telelombardia.61def6ac <- Telelombardia | EPG Italia | name-exact:telelombardia | now=True | programmi=34
 OK | Altre tv | RSI LA2 | dv.rsila2.27fd167b <- Rsi La2 | EPG Italia | name-exact:rsi la2 | now=True | programmi=54
-OK | Sport | Sky Sport (non sempre attivo) | dv.skysportf1-it.94ff5126 <- Sky.Sport.F1.it | EPGShare IT1 | preferred-name:sky sport f1 | now=True | programmi=110
+OK | Sport | Sky Sport (non sempre attivo) | dv.skysportf1-it.94ff5126 <- SkySportF1.it | Rytec Italia Sport/Film | preferred-id:SkySportF1.it | now=True | programmi=164
 NO_GUIDE | Sport | Golazo Network (Serie A) | old-id=(vuoto)
 OK | Rai | Rai 1 4K hls | dv.rai1-it.3f79da6d <- Rai1.it | EPGShare IT1 | name-map:rai 1 | now=True | programmi=84
 OK | Rai | Rai 1 4K dash | dv.rai1-it.3f79da6d <- Rai1.it | EPGShare IT1 | name-map:rai 1 | now=True | programmi=84
 OK | Altre tv | Trailers | dv.itba3300048yj.b1e6d6ce <- ITBA3300048YJ | Samsung TV Plus Italia | old-id | now=True | programmi=13
 NO_GUIDE | Altre tv | TMC Telemontecarlo | old-id=(vuoto)
-OK | Notizie | EuroNews Italia | dv.euronews-it.1ee0cde4 <- Euronews.it | EPGShare IT1 | id-map:PlutoEuronews.it | now=True | programmi=143
+OK | Notizie | EuroNews Italia | dv.euronews-it.1ee0cde4 <- Euronews.it | EPGShare IT1 | id-map:PlutoEuronews.it | now=True | programmi=142
 OK | Notizie | Giornale Radio Tv | dv.itbb5000002n0.c0ff10e0 <- ITBB5000002N0 | Samsung TV Plus Italia | old-id | now=True | programmi=4
 OK | Mediaset | Mediaset 20 | dv.20-it.877b911c <- 20.it | EPGShare IT1 | name-map:mediaset 20 | now=True | programmi=83
-OK | Rai | Rai 4 | dv.rai4-it.9bb6f923 <- Rai4.it | EPGShare IT1 | name-map:rai 4 | now=True | programmi=80
-OK | Mediaset | Iris | dv.iris-it.ad21a5b8 <- Iris.it | EPGShare IT1 | id-map:iris.it | now=True | programmi=45
+OK | Rai | Rai 4 | dv.rai4-it.9bb6f923 <- Rai4.it | EPGShare IT1 | name-map:rai 4 | now=True | programmi=79
+OK | Mediaset | Iris | dv.iris-it.ad21a5b8 <- Iris.it | EPGShare IT1 | id-map:iris.it | now=True | programmi=44
 OK | Rai | Rai 5 | dv.rai5-it.17d2fce4 <- Rai5.it | EPGShare IT1 | name-map:rai 5 | now=True | programmi=80
 OK | Rai | Rai Movie | dv.raimovie-it.9afc9bf9 <- RaiMovie.it | EPGShare IT1 | name-map:rai movie | now=True | programmi=36
 OK | Rai | Rai Premium | dv.raipremium-it.0459cbba <- RaiPremium.it | EPGShare IT1 | name-map:rai premium | now=True | programmi=67
-OK | Altre tv | Cielo SD | dv.cielo-it.c951354a <- cielo.it | EPGShare IT1 | old-id | now=True | programmi=86
+OK | Altre tv | Cielo SD | dv.cielo-it.c951354a <- cielo.it | EPGShare IT1 | old-id | now=True | programmi=85
 OK | Mediaset | TwentySeven | dv.27-twentyseven-it.91217bde <- 27.Twentyseven.it | EPGShare IT1 | name-map:twentyseven | now=True | programmi=68
 OK | Altre tv | TV2000 | dv.tv2000-it.73f037c2 <- TV2000 | EPG Italia | name-exact:tv2000 | now=True | programmi=73
 OK | Altre tv | LA7 Cinema | dv.la7-cinema-it.2322d8be <- la7d | EPG Italia | old-id | now=True | programmi=41
 OK | Mediaset | LA5 | dv.la-5-it.bfee058e <- La.5.it | EPGShare IT1 | id-map:la5 | now=True | programmi=70
-OK | Discovery | Real Time | dv.real-time-it.266aea07 <- Real.Time.it | EPGShare IT1 | id-map:RealTime.it | now=True | programmi=70
-OK | Altre tv | Gambero Rosso | dv.gambero-rosso-hd-it.72d7df88 <- Gambero.Rosso.HD.it | EPGShare IT1 | id-map:GamberoRosso.it | now=True | programmi=148
-OK | Discovery | Food Network | dv.food-network-it.63412027 <- Food.Network.it | EPGShare IT1 | id-map:foodnetwork.it | now=True | programmi=103
+OK | Discovery | Real Time | dv.real-time-it.266aea07 <- Real.Time.it | EPGShare IT1 | id-map:RealTime.it | now=True | programmi=69
+OK | Altre tv | Gambero Rosso | dv.gambero-rosso-hd-it.72d7df88 <- GamberoRosso.it | Rytec Italia Sky | old-id | now=True | programmi=349
+OK | Discovery | Food Network | dv.food-network-it.63412027 <- Food.Network.it | EPGShare IT1 | id-map:foodnetwork.it | now=True | programmi=102
 OK | Mediaset | Cine 34 | dv.cine34-it.5bdd3521 <- Cine34.it | EPGShare IT1 | name-map:cine 34 | now=True | programmi=41
 OK | Mediaset | Focus | dv.focus-it.746fde42 <- Focus.it | EPGShare IT1 | name-map:focus | now=True | programmi=75
 OK | Musica | RTL 102.5 TV | dv.rtl-102-5-hd-it.4a2de1e5 <- RTL.102.5.HD.it | EPGShare IT1 | id-map:rtl102.5tv | now=True | programmi=31
-OK | Discovery | Discovery | dv.discovery-channel-it.54893863 <- Discovery.Channel.it | EPGShare IT1 | id-map:discovery | now=True | programmi=74
+OK | Discovery | Discovery | dv.discovery-channel-it.54893863 <- Discovery.Channel.it | EPGShare IT1 | id-map:discovery | now=True | programmi=73
 OK | Discovery | Giallo | dv.giallo-tv-it.b579f6e2 <- Giallo.TV.it | EPGShare IT1 | id-map:Giallo.it | now=True | programmi=50
 OK | Mediaset | Top Crime | dv.top-crime-it.4fb10b54 <- Top.Crime.it | EPGShare IT1 | name-map:top crime | now=True | programmi=82
-OK | Bambini e ragazzi | Boing | dv.boing-it.78458d71 <- Boing.it | EPGShare IT1 | old-id | now=True | programmi=326
-OK | Discovery | K2 🔐 | dv.k2-it.5fce1fc1 <- k2 | EPG Italia | name-exact:k2 | now=True | programmi=160
-OK | Bambini e ragazzi | Rai Gulp | dv.raigulp-it.b19697b9 <- RaiGulp.it | EPGShare IT1 | old-id | now=True | programmi=230
-OK | Bambini e ragazzi | Rai YoYo | dv.raiyoyo-it.2bad80dd <- RaiYoyo.it | EPGShare IT1 | old-id | now=True | programmi=466
-OK | Discovery | Frisbee 🔐 | dv.frisbee-it.a2ea1039 <- FRISBEE | EPG Italia | name-exact:frisbee | now=True | programmi=176
+OK | Bambini e ragazzi | Boing | dv.boing-it.78458d71 <- Boing.it | EPGShare IT1 | old-id | now=True | programmi=324
+OK | Discovery | K2 🔐 | dv.k2-it.5fce1fc1 <- K2 | EPG Italia | name-exact:k2 | now=True | programmi=160
+OK | Bambini e ragazzi | Rai Gulp | dv.raigulp-it.b19697b9 <- RaiGulp.it | EPGShare IT1 | old-id | now=True | programmi=229
+OK | Bambini e ragazzi | Rai YoYo | dv.raiyoyo-it.2bad80dd <- RaiYoyo.it | EPGShare IT1 | old-id | now=True | programmi=463
+OK | Discovery | Frisbee 🔐 | dv.frisbee-it.a2ea1039 <- Frisbee | EPG Italia | name-exact:frisbee | now=True | programmi=176
 OK | Bambini e ragazzi | Masha e Orso | dv.it3800010k1.9e9eb6a2 <- IT2200011IA | Samsung TV Plus Italia | name-exact:masha e orso | now=True | programmi=51
-OK | Bambini e ragazzi | Cartoonito | dv.cartoonito-it.098743ca <- Cartoonito.it | EPGShare IT1 | old-id | now=True | programmi=357
-OK | Bambini e ragazzi | Super! | dv.super-it.176fbc05 <- Super!.it | EPGShare IT1 | id-map:super | now=True | programmi=197
-OK | Notizie | RaiNews 24 | dv.rainews24-it.970cce36 <- RaiNews24.it | EPGShare IT1 | name-map:rai news 24 | now=True | programmi=227
+OK | Bambini e ragazzi | Cartoonito | dv.cartoonito-it.098743ca <- Cartoonito.it | EPGShare IT1 | old-id | now=True | programmi=354
+OK | Bambini e ragazzi | Super! | dv.super-it.176fbc05 <- Super!.it | EPGShare IT1 | id-map:super | now=True | programmi=196
+OK | Notizie | RaiNews 24 | dv.rainews24-it.970cce36 <- RaiNews24.it | EPGShare IT1 | name-map:rai news 24 | now=True | programmi=226
 OK | Mediaset | Italia 2 | dv.italia-2-it.80d30d6b <- Italia.2.it | EPGShare IT1 | name-map:italia 2 | now=True | programmi=138
-OK | Notizie | Sky TG24 SD | dv.sky-tg24-it.fb74376a <- Sky.TG24.it | EPGShare IT1 | name-map:sky tg24 sd | now=True | programmi=194
-OK | Notizie | TGCOM 24 | dv.tgcom-it.7d360ee2 <- TGCom.it | EPGShare IT1 | id-map:TGCom24.it | now=True | programmi=138
-OK | Discovery | DMAX | dv.dmax-it.3ef98c6d <- DMAX.it | EPGShare IT1 | old-id | now=True | programmi=73
+OK | Notizie | Sky TG24 SD | dv.sky-tg24-it.fb74376a <- Sky.TG24.it | EPGShare IT1 | name-map:sky tg24 sd | now=True | programmi=193
+OK | Notizie | TGCOM 24 | dv.tgcom-it.7d360ee2 <- TGCom.it | EPGShare IT1 | id-map:TGCom24.it | now=True | programmi=137
+OK | Discovery | DMAX | dv.dmax-it.3ef98c6d <- DMAX.it | EPGShare IT1 | old-id | now=True | programmi=72
 OK | Documentari | BBC Earth | dv.bbc-earth.99266189 <- IT3200002L5 | Samsung TV Plus Italia | name-exact:bbc earth | now=True | programmi=12
-OK | Rai | Rai Storia | dv.raistoria-it.c0aa556f <- RaiStoria.it | EPGShare IT1 | old-id | now=True | programmi=96
+OK | Rai | Rai Storia | dv.raistoria-it.c0aa556f <- RaiStoria.it | EPGShare IT1 | old-id | now=True | programmi=95
 OK | Mediaset | Mediaset Extra | dv.mediaset-extra-it.1b280759 <- Mediaset.Extra.it | EPGShare IT1 | name-map:mediaset extra | now=True | programmi=28
-OK | Discovery | HGTV | dv.hgtv-it.fceceba9 <- HGTV.it | EPGShare IT1 | old-id | now=True | programmi=88
-OK | Rai | Rai Scuola | dv.raiscuola-it.3270e9e9 <- RaiScuola.it | EPGShare IT1 | old-id | now=True | programmi=91
+OK | Discovery | HGTV | dv.hgtv-it.fceceba9 <- HGTV.it | EPGShare IT1 | old-id | now=True | programmi=87
+OK | Rai | Rai Scuola | dv.raiscuola-it.3270e9e9 <- RaiScuola.it | EPGShare IT1 | old-id | now=True | programmi=90
 OK | Sport | Rai Sport | dv.raisport-it.e37d1c70 <- RaiSport.it | EPGShare IT1 | name-map:rai sport | now=True | programmi=40
-OK | Discovery | Turbo | dv.motor-trend-it.501e8804 <- Motor.Trend.it | EPGShare IT1 | name-map:turbo | now=True | programmi=64
+OK | Discovery | Turbo | dv.motor-trend-it.501e8804 <- Motor.Trend.it | EPGShare IT1 | name-map:turbo | now=True | programmi=63
 OK | Sport | Sport Italia | dv.sportitalia-it.086c3872 <- SPORT ITALIA | EPG Italia | name-exact:sport italia | now=True | programmi=47
-OK | Sport | Solocalcio | dv.solocalcio-it-it.42f82b85 <- Solocalcio.it.it | EPGShare IT1 | name-map:solocalcio | now=True | programmi=77
+OK | Sport | Solocalcio | dv.solocalcio-it-it.42f82b85 <- Solocalcio.it.it | EPGShare IT1 | name-map:solocalcio | now=True | programmi=76
 NO_GUIDE | Sport | Primavera TV | old-id=sportitalia24live
 OK | Notizie | IL Sole 24 Ore TV | dv.il-sole-24-ore.53c1bb10 <- IT3300001G3 | Samsung TV Plus Italia | name-exact:il sole 24 ore tv | now=True | programmi=13
-OK | Sport | Super Tennis | dv.supertennis-hd-it.62d43847 <- SuperTennis.HD.it | EPGShare IT1 | name-map:super tennis | now=True | programmi=40
+OK | Sport | Super Tennis | dv.supertennis-hd-it.62d43847 <- SuperTennis.HD.it | EPGShare IT1 | name-map:super tennis | now=True | programmi=39
 NO_GUIDE | Musica | Nokep TV | old-id=(vuoto)
 NO_GUIDE | Musica | Radio 105 TV | old-id=(vuoto)
-OK | Musica | R101 TV | dv.r101tv-it.23cc0ee8 <- R101tv.it | EPGShare IT1 | id-map:R101TV | now=True | programmi=395
+OK | Musica | R101 TV | dv.r101tv-it.23cc0ee8 <- R101tv.it | EPGShare IT1 | id-map:R101TV | now=True | programmi=394
 NO_GUIDE | Musica | M2O TV | old-id=m2otv
 OK | Musica | Deejay TV | dv.deejay-tv-it.98708a12 <- Deejay.TV.it | EPGShare IT1 | id-map:DeejayTV.it | now=True | programmi=36
 OK | Musica | Radio Italia TV | dv.radio-italia-tv-hd-it.4f9e40bc <- Radio.Italia.TV.HD.it | EPGShare IT1 | id-map:radioitaliatv | now=True | programmi=28
@@ -124,7 +126,7 @@ OK | Film | Smile | dv.smile.26f580ae <- ITBC1100002ZU | Samsung TV Plus Italia 
 OK | Film | Grandi Nomi | dv.grandi-nomi.4d9b46cb <- ITBC1100003KC | Samsung TV Plus Italia | name-exact:grandi nomi | now=True | programmi=5
 OK | Film | Velvet | dv.velvet.9e9db140 <- ITBC11000047F | Samsung TV Plus Italia | name-exact:velvet | now=True | programmi=4
 OK | Film | Duri a morire | dv.duri-a-morire.64b78aff <- 65f865a62873090008d06382 | Pluto TV Italia | name-exact:duri a morire | now=True | programmi=33
-OK | Film | Crime Time | dv.crime-time.07d1fba6 <- Crime.Time.be | EPGShare BE2 FAST/Sport | name-exact:crime time | now=True | programmi=89
+OK | Film | Crime Time | dv.crime-time.07d1fba6 <- Crime.Time.be | EPGShare BE2 FAST/Sport | name-exact:crime time | now=True | programmi=88
 OK | Film | Brividy Cinema | dv.brividy-cinema.4198ab8a <- ITBD600001CL | Samsung TV Plus Italia | name-exact:brividy cinema | now=True | programmi=4
 OK | Film | Cinemalizia | dv.cinemalizia.567f8171 <- IT300029U3 | Samsung TV Plus Italia | name-exact:cinemalizia | now=True | programmi=4
 OK | Film | Film Al Femminile - Wedo Movies | dv.itbc4700004eq.a9f28f43 <- ITBC4700004EQ | Samsung TV Plus Italia | old-id | now=True | programmi=4
@@ -216,7 +218,7 @@ OK | Bambini e ragazzi | I Puffi | dv.plutoipuffi-it.eb9c7549 <- 68adb5853efb41c
 OK | Bambini e ragazzi | Pingu | dv.pingu.8b47330c <- IT2100003OJ | Samsung TV Plus Italia | name-exact:pingu | now=True | programmi=19
 OK | Bambini e ragazzi | Teletubbies | dv.rakutenwbteletubbies-it.33432530 <- IT480000143 | Samsung TV Plus Italia | name-exact:teletubbies | now=True | programmi=13
 OK | Bambini e ragazzi | duckTV | dv.ducktv-it.8618eb0c <- ITBC4700001E6 | Samsung TV Plus Italia | name-exact:ducktv | now=True | programmi=4
-OK | Bambini e ragazzi | Baby Shark TV | dv.rakutenbabysharktv-it.03d17918 <- plex.tv.BABY.SHARK.TV.plex | EPGShare Plex | name-exact:baby shark tv | now=True | programmi=179
+OK | Bambini e ragazzi | Baby Shark TV | dv.rakutenbabysharktv-it.03d17918 <- plex.tv.BABY.SHARK.TV.plex | EPGShare Plex | name-exact:baby shark tv | now=True | programmi=178
 OK | Bambini e ragazzi | SuperToons TV | dv.supertoonstv-it.c32d2ae5 <- ITBD51000010V | Samsung TV Plus Italia | name-exact:supertoons tv | now=True | programmi=71
 NO_GUIDE | Bambini e ragazzi | Bejoy.kids | old-id=(vuoto)
 NO_GUIDE | Bambini e ragazzi | SpongeBob - Pluto | old-id=PlutoSuperSpongebob.it
@@ -238,7 +240,7 @@ NO_GUIDE | Altre tv | MarcoPolo Travel TV | old-id=TravelTV.it
 NO_GUIDE | Altre tv | Donna tv | old-id=DonnaTV.it
 NO_GUIDE | Altre tv | LA7 eventi live | old-id=(vuoto)
 NO_GUIDE | Altre tv | LA7 agenzie? | old-id=(vuoto)
-NO_GUIDE | Altre tv | il61 | old-id=il61
+OK | Altre tv | il61 | dv.il61.db68c9ac <- IL61.it | Rytec Italia Sport/Film | name-exact:il61 | now=True | programmi=44
 NO_GUIDE | Bambini e ragazzi | Iunior TV | old-id=iuniortv
 NO_GUIDE | Bambini e ragazzi | MAN-GA | old-id=manga
 NO_GUIDE | Bambini e ragazzi | Anime Channel (Coming soon) | old-id=(vuoto)
@@ -258,11 +260,11 @@ NO_GUIDE | Sport | Supertennis+ 4 | old-id=(vuoto)
 OK | Sport | Sportface | dv.it16000070d.40e7fbeb <- IT16000070D | Samsung TV Plus Italia | old-id | now=True | programmi=5
 OK | Sport | Juventus Play | dv.it-juventus-play-be.cb2ee934 <- IT:.Juventus.Play.be | EPGShare Rakuten | name-map:juventus play | now=True | programmi=123
 OK | Sport | Inter TV | dv.intertv-it.24eaa77b <- Inter.TV.it | EPGShare IT1 | preferred-id:Inter.TV.it | now=True | programmi=100
-OK | Sport | INTER 24/7 | dv.it-inter-24-7-be.eda54c0a <- IT:.INTER.24/7.be | EPGShare Rakuten | name-map:inter 24 7 | now=True | programmi=119
+OK | Sport | INTER 24/7 | dv.it-inter-24-7-be.eda54c0a <- IT:.INTER.24/7.be | EPGShare Rakuten | name-map:inter 24 7 | now=True | programmi=118
 NO_GUIDE | Sport | Lazio Style TV | old-id=(vuoto)
-OK | Sport | Italian Fishing TV | dv.italian-fishing.49e60afc <- Italian.Fishing.TV.be | EPGShare BE2 FAST/Sport | name-exact:italian fishing tv | now=True | programmi=209
+OK | Sport | Italian Fishing TV | dv.italian-fishing.49e60afc <- Italian.Fishing.TV.be | EPGShare BE2 FAST/Sport | name-exact:italian fishing tv | now=True | programmi=208
 OK | Sport | SportOutdoor.Tv | dv.sportoutdoor.d26e5bf5 <- ITBA3300022EA | Samsung TV Plus Italia | name-exact:sportoutdoor tv | now=True | programmi=13
-OK | Sport | FIFA+ | dv.it-fifa-plus-be.dc6ababf <- IT:.FIFA+.be | EPGShare Rakuten | name-map:fifa plus | now=True | programmi=53
+OK | Sport | FIFA+ | dv.it-fifa-plus-be.dc6ababf <- IT:.FIFA+.be | EPGShare Rakuten | name-map:fifa plus | now=True | programmi=52
 NO_GUIDE | Sport | F1 TV | old-id=(vuoto)
 NO_GUIDE | Documentari | Dolomiti Life TV | old-id=(vuoto)
 NO_GUIDE | Sport | Plus TV Sport | old-id=MsChannel.it
@@ -271,10 +273,10 @@ OK | Sport | ACI Sport TV | dv.aci-sport-tv-it.5ee832bf <- ACI.Sport.Tv.it | EPG
 NO_GUIDE | Sport | ACI Sport LIVE 01 (non sempre attivo) | old-id=(vuoto)
 OK | Sport | Rally TV | dv.it-rally-tv-fast-plus-be.ade715f7 <- IT:.Rally.TV.FAST+.be | EPGShare Rakuten | name-map:rally tv | now=True | programmi=37
 OK | Sport | TOP Calcio 24 | dv.top-calcio-24.cbb297ed <- Top Calcio 24 | EPG Italia | name-exact:top calcio 24 | now=True | programmi=25
-NO_GUIDE | Sport | RedBull TV | old-id=(vuoto)
+OK | Sport | RedBull TV | dv.it-red-bull-tv-be.63c4c060 <- IT:.Red.Bull.TV.be | EPGShare Rakuten | preferred-id:IT:.Red.Bull.TV.be | now=True | programmi=107
 NO_GUIDE | Sport | BIKE | old-id=bikesmartmobility
-OK | Sport | Sportitalia (25fps) | dv.sportitalia-it.086c3872 <- Sportitalia | EPG Italia | name-exact:sportitalia | now=True | programmi=47
-OK | Sport | Solocalcio (25fps) | dv.solocalcio-it-it.42f82b85 <- Solocalcio.it.it | EPGShare IT1 | name-map:solocalcio | now=True | programmi=77
+OK | Sport | Sportitalia (25fps) | dv.sportitalia-it.086c3872 <- SportItalia | EPG Italia | name-exact:sportitalia | now=True | programmi=47
+OK | Sport | Solocalcio (25fps) | dv.solocalcio-it-it.42f82b85 <- Solocalcio.it.it | EPGShare IT1 | name-map:solocalcio | now=True | programmi=76
 OK | Sport | LBA Classics | dv.it4000089r.bc626fec <- IT4000089R | Samsung TV Plus Italia | old-id | now=True | programmi=4
 NO_GUIDE | Sport | Sport - Pluto | old-id=PlutoTvSport.it
 NO_GUIDE | Sport | Tennis Channel | old-id=Tennis Channel
@@ -284,7 +286,7 @@ OK | Sport | UNBEATEN | dv.unbeaten.2a46727a <- plex.tv.Unbeaten.plex | EPGShare
 NO_GUIDE | Sport | FUBO Sports | old-id=(vuoto)
 NO_GUIDE | Sport | CBS Sports Network | old-id=CBSSports.us
 OK | Sport | Motor1 | dv.motor1.6c115b61 <- IT3000282Q | Samsung TV Plus Italia | name-exact:motor1 | now=True | programmi=23
-OK | Sport | Motoretrò | dv.it-motoretro-be.27973612 <- IT:.Motoretrò.be | EPGShare Rakuten | name-map:motoretro | now=True | programmi=134
+OK | Sport | Motoretrò | dv.it-motoretro-be.27973612 <- IT:.Motoretrò.be | EPGShare Rakuten | name-map:motoretro | now=True | programmi=133
 NO_GUIDE | Sport | FF Motorsport | old-id=(vuoto)
 OK | Sport | EQU TV | dv.equtv-it.2c3dcfe7 <- EQUtv.it | EPGShare IT1 | name-map:equ tv | now=True | programmi=26
 OK | Sport | Rai Sport jolly 1 (attivo raramente) | dv.raisport-it.e37d1c70 <- RaiSport.it | EPGShare IT1 | id-map:raisport | now=True | programmi=40
@@ -342,7 +344,7 @@ NO_GUIDE | Musica | Radio 80 | old-id=(vuoto)
 NO_GUIDE | Musica | Radio Bellla e Monella TV | old-id=bellla e monella tv
 NO_GUIDE | Altre tv | CasaSanremo | old-id=(vuoto)
 OK | Rai | Rai 1 900p | dv.rai1-it.3f79da6d <- Rai1.it | EPGShare IT1 | name-map:rai 1 | now=True | programmi=84
-OK | Rai | Rai 2 (hls) | dv.rai2-it.9ff87f5f <- Rai2.it | EPGShare IT1 | old-id | now=True | programmi=97
+OK | Rai | Rai 2 (hls) | dv.rai2-it.9ff87f5f <- Rai2.it | EPGShare IT1 | old-id | now=True | programmi=96
 OK | Rai | Rai 3 (900 dash) | dv.rai3-it.a817d204 <- Rai3.it | EPGShare IT1 | name-map:rai 3 | now=True | programmi=104
 OK | Mediaset | Rete 4 (hls) | dv.rete-4-it.bfb9abf8 <- Rete.4.it | EPGShare IT1 | name-map:rete 4 | now=True | programmi=65
 OK | Mediaset | Canale 5 (hls) | dv.canale-5-it.b8e12e70 <- Canale.5.it | EPGShare IT1 | name-map:canale 5 | now=True | programmi=96
@@ -350,18 +352,18 @@ OK | Mediaset | Italia 1 (hls) | dv.italia-1-it.1f8cae2c <- Italia.1.it | EPGSha
 OK | Mediaset | Mediaset 20 (hls) | dv.20-it.877b911c <- 20.it | EPGShare IT1 | name-map:mediaset 20 | now=True | programmi=83
 OK | Rai | Rai 1 HbbTV | dv.rai1-it.3f79da6d <- Rai1.it | EPGShare IT1 | name-map:rai 1 | now=True | programmi=84
 OK | Rai | Rai 1 mdp | dv.rai1-it.3f79da6d <- Rai1.it | EPGShare IT1 | name-map:rai 1 | now=True | programmi=84
-OK | Rai | Rai 2 HbbTV | dv.rai2-it.9ff87f5f <- Rai2.it | EPGShare IT1 | old-id | now=True | programmi=97
-OK | Rai | Rai 4 HbbTV raiway | dv.rai4-it.9bb6f923 <- Rai4.it | EPGShare IT1 | name-map:rai 4 | now=True | programmi=80
-OK | Notizie | RaiNews 24 (dash) | dv.rainews24-it.970cce36 <- RaiNews24.it | EPGShare IT1 | name-map:rai news 24 | now=True | programmi=227
+OK | Rai | Rai 2 HbbTV | dv.rai2-it.9ff87f5f <- Rai2.it | EPGShare IT1 | old-id | now=True | programmi=96
+OK | Rai | Rai 4 HbbTV raiway | dv.rai4-it.9bb6f923 <- Rai4.it | EPGShare IT1 | name-map:rai 4 | now=True | programmi=79
+OK | Notizie | RaiNews 24 (dash) | dv.rainews24-it.970cce36 <- RaiNews24.it | EPGShare IT1 | name-map:rai news 24 | now=True | programmi=226
 OK | Rai | Rai 3 (hls) | dv.rai3-it.a817d204 <- Rai3.it | EPGShare IT1 | name-map:rai 3 | now=True | programmi=104
 OK | Rai | rai premium HbbTV akamai | dv.raipremium-it.0459cbba <- RaiPremium.it | EPGShare IT1 | name-map:rai premium hbbtv akamai | now=True | programmi=67
 OK | Rai | Rai Premium hls | dv.raipremium-it.0459cbba <- RaiPremium.it | EPGShare IT1 | name-map:rai premium | now=True | programmi=67
 OK | Rai | rai movie HbbTV raiway | dv.raimovie-it.9afc9bf9 <- RaiMovie.it | EPGShare IT1 | name-map:rai movie hbbtv raiway | now=True | programmi=36
 OK | Rai | rai 5 HbbTV raiway | dv.rai5-it.17d2fce4 <- Rai5.it | EPGShare IT1 | name-map:rai 5 hbbtv raiway | now=True | programmi=80
-OK | Rai | rai yoyo HbbTV raiway | dv.raiyoyo-it.2bad80dd <- RaiYoyo.it | EPGShare IT1 | name-map:rai yoyo hbbtv raiway | now=True | programmi=466
-OK | Rai | rai gulp HbbTV raiway | dv.raigulp-it.b19697b9 <- RaiGulp.it | EPGShare IT1 | name-map:rai gulp hbbtv raiway | now=True | programmi=230
-OK | Rai | rai scuola HbbTV raiway | dv.raiscuola-it.3270e9e9 <- RaiScuola.it | EPGShare IT1 | name-map:rai scuola hbbtv raiway | now=True | programmi=91
-OK | Rai | rai storia HbbTV raiway | dv.raistoria-it.c0aa556f <- RaiStoria.it | EPGShare IT1 | name-map:rai storia hbbtv raiway | now=True | programmi=96
+OK | Rai | rai yoyo HbbTV raiway | dv.raiyoyo-it.2bad80dd <- RaiYoyo.it | EPGShare IT1 | name-map:rai yoyo hbbtv raiway | now=True | programmi=463
+OK | Rai | rai gulp HbbTV raiway | dv.raigulp-it.b19697b9 <- RaiGulp.it | EPGShare IT1 | name-map:rai gulp hbbtv raiway | now=True | programmi=229
+OK | Rai | rai scuola HbbTV raiway | dv.raiscuola-it.3270e9e9 <- RaiScuola.it | EPGShare IT1 | name-map:rai scuola hbbtv raiway | now=True | programmi=90
+OK | Rai | rai storia HbbTV raiway | dv.raistoria-it.c0aa556f <- RaiStoria.it | EPGShare IT1 | name-map:rai storia hbbtv raiway | now=True | programmi=95
 OK | Rai | rai sport HbbTV raiway | dv.raisport-it.e37d1c70 <- RaiSport.it | EPGShare IT1 | name-map:rai sport hbbtv raiway | now=True | programmi=40
 NO_GUIDE | Rai | RaiPlay (eventi) | old-id=(vuoto)
 NO_GUIDE | Rai | RaiPlay 2 (eventi) | old-id=(vuoto)
@@ -383,17 +385,17 @@ NO_GUIDE | Mediaset | Mediaset b2 | old-id=(vuoto)
 NO_GUIDE | Mediaset | Mediaset b3 | old-id=(vuoto)
 NO_GUIDE | Mediaset | Diretta | old-id=(vuoto)
 OK | Connessioni a giga | Rai 1 | dv.rai1-it.3f79da6d <- Rai1.it | EPGShare IT1 | name-map:rai 1 | now=True | programmi=84
-OK | Connessioni a giga | Rai 2 | dv.rai2-it.9ff87f5f <- Rai2.it | EPGShare IT1 | id-map:rai 2 | now=True | programmi=97
+OK | Connessioni a giga | Rai 2 | dv.rai2-it.9ff87f5f <- Rai2.it | EPGShare IT1 | id-map:rai 2 | now=True | programmi=96
 OK | Connessioni a giga | Rai 3 | dv.rai3-it.a817d204 <- Rai3.it | EPGShare IT1 | name-map:rai 3 | now=True | programmi=104
 OK | Connessioni a giga | Rete 4 | dv.rete-4-it.bfb9abf8 <- Rete.4.it | EPGShare IT1 | name-map:rete 4 | now=True | programmi=65
 OK | Connessioni a giga | Canale 5 | dv.canale-5-it.b8e12e70 <- Canale.5.it | EPGShare IT1 | name-map:canale 5 | now=True | programmi=96
 OK | Connessioni a giga | Italia 1 | dv.italia-1-it.1f8cae2c <- Italia.1.it | EPGShare IT1 | name-map:italia 1 | now=True | programmi=92
 OK | Connessioni a giga | TV8 SD | dv.tv8-hd-it.6088dda3 <- TV8.HD.it | EPGShare IT1 | id-map:Tv8.it | now=True | programmi=77
 OK | Connessioni a giga | Mediaset 20 | dv.20-it.877b911c <- 20.it | EPGShare IT1 | name-map:mediaset 20 | now=True | programmi=83
-OK | Connessioni a giga | Rai 4 | dv.rai4-it.9bb6f923 <- Rai4.it | EPGShare IT1 | name-map:rai 4 | now=True | programmi=80
-OK | Connessioni a giga | Cielo SD | dv.cielo-it.c951354a <- cielo.it | EPGShare IT1 | id-map:Cielo.it | now=True | programmi=86
-OK | Connessioni a giga | Rai Gulp SD | dv.raigulp-it.b19697b9 <- RaiGulp.it | EPGShare IT1 | old-id | now=True | programmi=230
-OK | Connessioni a giga | Rai YoYo SD | dv.raiyoyo-it.2bad80dd <- RaiYoyo.it | EPGShare IT1 | id-map:RaiYoYo.it | now=True | programmi=466
+OK | Connessioni a giga | Rai 4 | dv.rai4-it.9bb6f923 <- Rai4.it | EPGShare IT1 | name-map:rai 4 | now=True | programmi=79
+OK | Connessioni a giga | Cielo SD | dv.cielo-it.c951354a <- cielo.it | EPGShare IT1 | id-map:Cielo.it | now=True | programmi=85
+OK | Connessioni a giga | Rai Gulp SD | dv.raigulp-it.b19697b9 <- RaiGulp.it | EPGShare IT1 | old-id | now=True | programmi=229
+OK | Connessioni a giga | Rai YoYo SD | dv.raiyoyo-it.2bad80dd <- RaiYoyo.it | EPGShare IT1 | id-map:RaiYoYo.it | now=True | programmi=463
 NO_GUIDE | Altre tv | TT-TELETUTTO BS | old-id=(vuoto)
 NO_GUIDE | Radio | Radiodueindie | old-id=(vuoto)
 NO_GUIDE | Radio | Radio OneDance | old-id=(vuoto)
@@ -411,34 +413,34 @@ NO_GUIDE | RESTART Mediaset | Restart Iris | old-id=(vuoto)
 NO_GUIDE | RESTART Mediaset | Restart TOPCrime | old-id=(vuoto)
 OK | Estero | Rai 1 Europa | dv.rai1-it.3f79da6d <- Rai1.it | EPGShare IT1 | name-map:rai 1 europa | now=True | programmi=84
 OK | Estero | Rai 1 | dv.rai1-it.3f79da6d <- Rai1.it | EPGShare IT1 | name-map:rai 1 | now=True | programmi=84
-OK | Estero | Rai 2 Europa | dv.rai2-it.9ff87f5f <- Rai2.it | EPGShare IT1 | name-map:rai 2 europa | now=True | programmi=97
+OK | Estero | Rai 2 Europa | dv.rai2-it.9ff87f5f <- Rai2.it | EPGShare IT1 | name-map:rai 2 europa | now=True | programmi=96
 OK | Estero | Rai 3 | dv.rai3-it.a817d204 <- Rai3.it | EPGShare IT1 | name-map:rai 3 | now=True | programmi=104
 OK | Estero | Rai 3 Europa | dv.rai3-it.a817d204 <- Rai3.it | EPGShare IT1 | name-map:rai 3 europa | now=True | programmi=104
 OK | Estero | Rete 4 HD Europa | dv.rete-4-it.bfb9abf8 <- Rete.4.it | EPGShare IT1 | name-map:rete 4 | now=True | programmi=65
 OK | Estero | Canale 5 HD Europa | dv.canale-5-it.b8e12e70 <- Canale.5.it | EPGShare IT1 | name-map:canale 5 | now=True | programmi=96
 OK | Estero | Italia 1 HD Europa | dv.italia-1-it.1f8cae2c <- Italia.1.it | EPGShare IT1 | id-map:Italia1.it | now=True | programmi=92
-OK | Estero | LA7 HD | dv.la7-hd-it.4d7d76b6 <- LA7.HD.it | EPGShare IT1 | name-map:la7 hd | now=True | programmi=112
+OK | Estero | LA7 HD | dv.la7-hd-it.4d7d76b6 <- LA7.HD.it | EPGShare IT1 | name-map:la7 hd | now=True | programmi=111
 OK | Estero | Mediaset 20 HD Europa | dv.20-it.877b911c <- 20.it | EPGShare IT1 | name-map:mediaset 20 | now=True | programmi=83
-OK | Estero | Iris HD Europa | dv.iris-it.ad21a5b8 <- Iris.it | EPGShare IT1 | old-id | now=True | programmi=45
+OK | Estero | Iris HD Europa | dv.iris-it.ad21a5b8 <- Iris.it | EPGShare IT1 | old-id | now=True | programmi=44
 OK | Estero | Italia 2 HD Europa | dv.italia-2-it.80d30d6b <- Italia.2.it | EPGShare IT1 | id-map:Italia2.it | now=True | programmi=138
 OK | Estero | La5 HD Europa | dv.la-5-it.bfee058e <- La.5.it | EPGShare IT1 | id-map:LA5.it | now=True | programmi=70
 OK | Estero | 27 HD Europa | dv.27-twentyseven-it.91217bde <- 27.Twentyseven.it | EPGShare IT1 | id-map:TwentySeven.it | now=True | programmi=68
 OK | Estero | Focus HD Europa | dv.focus-it.746fde42 <- Focus.it | EPGShare IT1 | name-map:focus | now=True | programmi=75
 OK | Estero | TOPCrime HD Europa | dv.top-crime-it.4fb10b54 <- Top.Crime.it | EPGShare IT1 | id-map:TOPCrime.it | now=True | programmi=82
 NO_GUIDE | Estero | RAI World Premium | old-id=RaiWorldPremium.it
-OK | Estero | Boing HD Europa | dv.boing-it.78458d71 <- Boing.it | EPGShare IT1 | old-id | now=True | programmi=326
-OK | Estero | Boing 30fps | dv.boing-it.78458d71 <- Boing.it | EPGShare IT1 | old-id | now=True | programmi=326
-OK | Estero | Cartoonito HD Europa | dv.cartoonito-it.098743ca <- Cartoonito.it | EPGShare IT1 | old-id | now=True | programmi=357
-OK | Estero | Rai Scuola Europa | dv.raiscuola-it.3270e9e9 <- RaiScuola.it | EPGShare IT1 | name-map:rai scuola europa | now=True | programmi=91
-OK | Estero | Rai Storia Europa | dv.raistoria-it.c0aa556f <- RaiStoria.it | EPGShare IT1 | name-map:rai storia europa | now=True | programmi=96
+OK | Estero | Boing HD Europa | dv.boing-it.78458d71 <- Boing.it | EPGShare IT1 | old-id | now=True | programmi=324
+OK | Estero | Boing 30fps | dv.boing-it.78458d71 <- Boing.it | EPGShare IT1 | old-id | now=True | programmi=324
+OK | Estero | Cartoonito HD Europa | dv.cartoonito-it.098743ca <- Cartoonito.it | EPGShare IT1 | old-id | now=True | programmi=354
+OK | Estero | Rai Scuola Europa | dv.raiscuola-it.3270e9e9 <- RaiScuola.it | EPGShare IT1 | name-map:rai scuola europa | now=True | programmi=90
+OK | Estero | Rai Storia Europa | dv.raistoria-it.c0aa556f <- RaiStoria.it | EPGShare IT1 | name-map:rai storia europa | now=True | programmi=95
 OK | Estero | Mediaset Extra HD Europa | dv.mediaset-extra-it.1b280759 <- Mediaset.Extra.it | EPGShare IT1 | name-map:mediaset extra | now=True | programmi=28
-OK | Estero | TGCOM24 | dv.tgcom-it.7d360ee2 <- TGCom.it | EPGShare IT1 | name-map:tgcom24 | now=True | programmi=138
-OK | Estero | TGCOM24 HD Europa | dv.tgcom-it.7d360ee2 <- TGCom.it | EPGShare IT1 | name-map:tgcom24 hd europa | now=True | programmi=138
-OK | Estero | RAI News 24 Europa HD | dv.rainews24-it.970cce36 <- RaiNews24.it | EPGShare IT1 | name-map:rai news 24 europa hd | now=True | programmi=227
+OK | Estero | TGCOM24 | dv.tgcom-it.7d360ee2 <- TGCom.it | EPGShare IT1 | name-map:tgcom24 | now=True | programmi=137
+OK | Estero | TGCOM24 HD Europa | dv.tgcom-it.7d360ee2 <- TGCom.it | EPGShare IT1 | name-map:tgcom24 hd europa | now=True | programmi=137
+OK | Estero | RAI News 24 Europa HD | dv.rainews24-it.970cce36 <- RaiNews24.it | EPGShare IT1 | name-map:rai news 24 europa hd | now=True | programmi=226
 NO_GUIDE | Estero | Rai Italia Australia | old-id=(vuoto)
 NO_GUIDE | Estero | Rai Italia Europa | old-id=(vuoto)
 NO_GUIDE | Estero | Rai Italia America | old-id=(vuoto)
-OK | Estero | Mediaset Italia - Australia e Asia | dv.mediaset-italia-australia-e-asia-it.1c2c9ef4 <- Mediaset.Italia.-.Australia.e.Asia.it | EPGShare IT1 | old-id | now=True | programmi=70
+OK | Estero | Mediaset Italia - Australia e Asia | dv.mediaset-italia-australia-e-asia-it.1c2c9ef4 <- Mediaset.Italia.-.Australia.e.Asia.it | EPGShare IT1 | old-id | now=True | programmi=69
 OK | Estero | Mediaset Italia - Europa e Africa | dv.mediaset-italia-europa-e-africa-it.a3051b18 <- Mediaset.Italia.-.Europa.e.Africa.it | EPGShare IT1 | old-id | now=True | programmi=71
 OK | Estero | Mediaset Italia - America | dv.mediaset-italia-america-it.2acac568 <- Mediaset.Italia.-.America.it | EPGShare IT1 | old-id | now=True | programmi=71
 NO_GUIDE | Estero | Rete Italia | old-id=(vuoto)
@@ -523,15 +525,15 @@ NO_GUIDE | Regionali | TVA Vicenza | old-id=tva vicenza
 NO_GUIDE | Regionali | Tv1 Sulmona | old-id=tv1 sulmona
 NO_GUIDE | Regionali | VideoNola | old-id=videonola
 NO_GUIDE | Regionali | Bergamo Tv | old-id=(vuoto)
-OK | Discovery | NOVE backup 🔐 | dv.nove-it.a79c1a91 <- Nove.it | EPGShare IT1 | name-map:nove backup | now=True | programmi=72
-OK | Discovery | RealTime backup 🔐 | dv.real-time-it.266aea07 <- Real.Time.it | EPGShare IT1 | name-map:realtime backup | now=True | programmi=70
-OK | Discovery | FoodNetwork backup 🔐 | dv.food-network-it.63412027 <- Food.Network.it | EPGShare IT1 | name-map:foodnetwork backup | now=True | programmi=103
-OK | Discovery | Discovery backup 🔐 | dv.discovery-channel-it.54893863 <- Discovery.Channel.it | EPGShare IT1 | name-map:discovery backup | now=True | programmi=74
+OK | Discovery | NOVE backup 🔐 | dv.nove-it.a79c1a91 <- Nove.it | EPGShare IT1 | name-map:nove backup | now=True | programmi=71
+OK | Discovery | RealTime backup 🔐 | dv.real-time-it.266aea07 <- Real.Time.it | EPGShare IT1 | name-map:realtime backup | now=True | programmi=69
+OK | Discovery | FoodNetwork backup 🔐 | dv.food-network-it.63412027 <- Food.Network.it | EPGShare IT1 | name-map:foodnetwork backup | now=True | programmi=102
+OK | Discovery | Discovery backup 🔐 | dv.discovery-channel-it.54893863 <- Discovery.Channel.it | EPGShare IT1 | name-map:discovery backup | now=True | programmi=73
 OK | Discovery | Giallo backup 🔐 | dv.giallo-tv-it.b579f6e2 <- Giallo.TV.it | EPGShare IT1 | name-map:giallo backup | now=True | programmi=50
-OK | Discovery | DMAX backup 🔐 | dv.dmax-it.3ef98c6d <- DMAX.it | EPGShare IT1 | name-map:dmax backup | now=True | programmi=73
-OK | Discovery | HGTV backup 🔐 | dv.hgtv-it.fceceba9 <- HGTV.it | EPGShare IT1 | name-map:hgtv backup | now=True | programmi=88
-OK | Discovery | Turbo backup 🔐 | dv.motor-trend-it.501e8804 <- Motor.Trend.it | EPGShare IT1 | name-map:turbo backup | now=True | programmi=64
+OK | Discovery | DMAX backup 🔐 | dv.dmax-it.3ef98c6d <- DMAX.it | EPGShare IT1 | name-map:dmax backup | now=True | programmi=72
+OK | Discovery | HGTV backup 🔐 | dv.hgtv-it.fceceba9 <- HGTV.it | EPGShare IT1 | name-map:hgtv backup | now=True | programmi=87
+OK | Discovery | Turbo backup 🔐 | dv.motor-trend-it.501e8804 <- Motor.Trend.it | EPGShare IT1 | name-map:turbo backup | now=True | programmi=63
 
 FONTI OPZIONALI NON DISPONIBILI
-IPTV-org Sky Italia: https://iptv-org.github.io/epg/guides/it/guidatv.sky.it.epg.xml -> HTTP Error 404: Not Found
+IPTV-org Sky Italia: https://iptv-org.github.io/epg/guides/it/guidatv.sky.it.xml -> HTTP Error 404: Not Found
 TVIT Italia: https://tvit.leicaflorianrobert.dev/epg/list.xml -> 0 programmi freschi pertinenti
