@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=20260929-sportfix2" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=20260929-sportfix2" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=20260929-sportfix2"
-#EXTINF:-1 tvg-id="dv.rai1-it.3f79da6d" tvg-name="Rai 1" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-chno="1" channel-number="1" group-title="Rai",Rai 1
+#EXTINF:-1 tvg-id="dv.rai1-it.3f79da6d" tvg-name="Rai 1" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-chno="1" channel-number="1" group-title="Rai" mediapolis="2606803",Rai 1
 https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
 #EXTINF:-1 tvg-name="Rai 2" tvg-id="dv.rai2-it.9ff87f5f" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png" tvg-chno="2" channel-number="2" group-title="Rai" mediapolis="308718",Rai 2
 https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8
@@ -126,7 +126,7 @@ https://live03-col.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/manifest_hd.mpd
 #EXTINF:-1 tvg-name="HGTV" tvg-id="dv.hgtv-it.fceceba9" channel-id="IT900003FU" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/homegardentv.png" tvg-chno="56" group-title="Discovery",HGTV
 #EXTVLCOPT:http-referrer=https://homegardentv.it/
 https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/HGTV/CMAF/index.m3u8
-#EXTINF:-1 tvg-name="Rai Scuola" tvg-id="dv.raiscuola-it.3270e9e9" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637322361853_logo-raiscuola.png" tvg-chno="57" group-title="Rai" mediapolis="",Rai Scuola
+#EXTINF:-1 tvg-name="Rai Scuola" tvg-id="dv.raiscuola-it.3270e9e9" tvg-logo="https://www.raiplay.it/dl/img/2026/09/21/1789997932018_Logo_trasparente_Logo_Italiana.png" tvg-chno="57" group-title="Rai" mediapolis="",Italiana
 https://d3k8wzt41aflvx.cloudfront.net/RAIScuola/Live.m3u8
 #EXTINF:-1 tvg-name="Rai Sport" tvg-id="dv.raisport-it.e37d1c70" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637310367694_1579883330343_rai-sport.png" tvg-chno="58" group-title="Sport" mediapolis="358025",Rai Sport
 #KODIPROP:inputstream.adaptive.manifest_type=hls
