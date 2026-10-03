@@ -621,7 +621,7 @@ https://amg01131-tracetv-amg01131c5-plex-us-4388.playouts.now.amagi.tv/playlist1
 https://xite-germany-lg.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="dv.xite-hits.3a5df19a" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEBA2200007V6_20220323T075230SQUARE.png_20220323075233.png" group-title="Musica",XITE Hits
 https://xite-hitsuk-lg.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="IT2500001IF" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2500001IF_20240813T160038SQUARE.png" group-title="Musica" , Cool Summer Channel
+#EXTINF:-1 tvg-id="dv.it2500001if.e5ed6286" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2500001IF_20240813T160038SQUARE.png" group-title="Musica" , Cool Summer Channel
 https://d3mza6qljp67l5.cloudfront.net/csts.m3u8
 #EXTINF:-1 tvg-id="dv.itbc1100011rk.658fa4b2" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100011RK_20230208T013201SQUARE.png_20230208013201.png" group-title="Musica",Rock TV
 https://chili-rock-tv-1-it.xiaomi.wurl.tv/4300.m3u8
@@ -695,7 +695,7 @@ https://raicinque1-push.cdn.netrw.it/rai/dash/live/rai5/manifest.mpd
 https://raiyoyo1-push.cdn.netrw.it/rai/dash/live/raiyoyo/manifest.mpd
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raigulp.png" tvg-id="dv.raigulp-it.b19697b9" group-title="Rai",rai gulp HbbTV raiway
 https://raigulp1-push.cdn.netrw.it/rai/dash/live/raigulp/manifest.mpd
-#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raiscuola.png" tvg-id="dv.raiscuola-it.3270e9e9" group-title="Rai",rai scuola HbbTV raiway
+#EXTINF:-1 tvg-logo="http://dtil.tmsimg.com/assets/s102112_ll_h15_ab.png?w=360&h=270" tvg-id="dv.raiscuola-it.3270e9e9" group-title="Rai",rai scuola HbbTV raiway
 https://raiscuola1-push.cdn.netrw.it/rai/dash/live/raiscuola/manifest.mpd
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raistoria.png" tvg-id="dv.raistoria-it.c0aa556f" group-title="Rai",rai storia HbbTV raiway
 https://raistoria1-push.cdn.netrw.it/rai/dash/live/raistoria/manifest.mpd
@@ -885,7 +885,7 @@ https://boing.akamaized.net/6380392800112/eu-central-1/6284318116001/eyJhbGciOiJ
 #EXTINF:-1 tvg-logo="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/la.png" tvg-id="dv.cartoonito-it.098743ca" group-title="Estero",Cartoonito HD Europa
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 https://link.api.eu.theplatform.com/s/PR1GhC/2gLXeKWBkATm
-#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raiscuola.png" tvg-id="dv.raiscuola-it.3270e9e9" group-title="Estero",Rai Scuola Europa
+#EXTINF:-1 tvg-logo="http://dtil.tmsimg.com/assets/s102112_ll_h15_ab.png?w=360&h=270" tvg-id="dv.raiscuola-it.3270e9e9" group-title="Estero",Rai Scuola Europa
 https://d3k8wzt41aflvx.cloudfront.net/RAIScuola/Live.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raistoria.png" tvg-id="dv.raistoria-it.c0aa556f" group-title="Estero",Rai Storia Europa
 https://d3k8wzt41aflvx.cloudfront.net/RAIStoria/Live.m3u8
