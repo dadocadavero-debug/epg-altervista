@@ -434,7 +434,7 @@ https://streaming.softwarecreation.it/DonnaTv/DonnaTv/playlist.m3u8
 https://d15umi5iaezxgx.cloudfront.net/HBBTV/LA7FEED01/DASH/Live.mpd
 #EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=LA7%20agenzie%3F" group-title="Altre tv",LA7 agenzie?
 https://d15umi5iaezxgx.cloudfront.net/AGENZIE/HLS/Live.m3u8
-#EXTINF:-1 tvg-name="il61" tvg-id="dv.il61.db68c9ac" tvg-logo="https://www.grupposciscione.it/wp-content/uploads/2025/07/IL-61-CANALE.png"  group-title="Altre tv",il61
+#EXTINF:-1 tvg-name="il61" tvg-id="il61" tvg-logo="https://www.grupposciscione.it/wp-content/uploads/2025/07/IL-61-CANALE.png"  group-title="Altre tv",il61
 https://5a1178b42cc03.streamlock.net/travel/travel/playlist.m3u8
 #EXTINF:-1 tvg-name="Iunior TV" tvg-id="iuniortv" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Iunior%20TV" group-title="Bambini e ragazzi",Iunior TV
 https://5f22d76e220e1.streamlock.net/iuniortv/iuniortv/playlist.m3u8
