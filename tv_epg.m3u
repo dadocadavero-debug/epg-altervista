@@ -15,7 +15,7 @@ https://live03-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/manifest_hd.mpd
 https://d1chghleocc9sm.cloudfront.net/Live_1280x720_.m3u8
 #EXTINF:-1 tvg-name="Tv8" tvg-id="dv.tv8-hd-it.6088dda3" tvg-logo="https://api.superguidatv.it/v1/channels/237/logo?width=300" tvg-chno="8" channel-number="8" group-title="Altre tv",TV8 SD
 https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
-#EXTINF:-1 tvg-name="NOVE" tvg-id="dv.nove-it.a79c1a91" channel-id="IT9000060Q" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/nove.png" tvg-chno="9" channel-number="9" group-title="Discovery",NOVE
+#EXTINF:-1 tvg-name="NOVE" tvg-id="dv.nove-it.a79c1a91" channel-id="IT9000060Q" tvg-logo="https://images.cdn.prd.api.discomax.com/e50d/3937ca964288.png" tvg-chno="9" channel-number="9" group-title="Discovery",NOVE
 #EXTVLCOPT:http-referrer=https://nove.tv/
 https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/NOVE/CMAF/index.m3u8
 #EXTINF:-1 tvg-id="dv.telelombardia.61def6ac" group-title="Regionali" tvg-chno="10" channel-number="10" tvg-logo="https://www.mediapason.it/wp-content/uploads/2016/09/lLOGO-TL-MENU.png",Telelombardia
@@ -114,7 +114,7 @@ https://live03-col.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/manifest_hd.mpd
 https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/12221/web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
 #EXTINF:-1 tvg-name="TgCom 24" tvg-id="dv.tgcom-it.7d360ee2" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/172718055-1ace4a32-2ded-45bd-b545-a02691db50e8.png" tvg-chno="51" group-title="Notizie",TGCOM 24
 https://live03-col.msf.cdn.mediaset.net/live/ch-kf/kf-clr.isml/manifest_hd.mpd
-#EXTINF:-1 tvg-name="Dmax" tvg-id="dv.dmax-it.3ef98c6d" channel-id="IT9000113W" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/dmax.png" tvg-chno="52" group-title="Discovery",DMAX
+#EXTINF:-1 tvg-name="Dmax" tvg-id="dv.dmax-it.3ef98c6d" channel-id="IT9000113W" tvg-logo="https://images.cdn.prd.api.discomax.com/07b5/0fc0588dd0c3.png" tvg-chno="52" group-title="Discovery",DMAX
 #EXTVLCOPT:http-referrer=https://dmax.it/
 https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/DMAX/CMAF/index.m3u8
 #EXTINF:-1 tvg-id="dv.bbc-earth.99266189" tvg-name="BBC Earth" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3200002L5_20240925T141635SQUARE.png" tvg-chno="53" group-title="Documentari",BBC Earth
@@ -132,7 +132,7 @@ https://d3k8wzt41aflvx.cloudfront.net/RAIScuola/Live.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=16&forceUserAgent=raiplayappletv
-#EXTINF:-1 tvg-name="Turbo" tvg-id="dv.motor-trend-it.501e8804" channel-id="IT900004Y5" tvg-logo="https://api.superguidatv.it/v1/channels/444/logo?width=300" tvg-chno="59" group-title="Discovery",Turbo
+#EXTINF:-1 tvg-name="Turbo" tvg-id="dv.motor-trend-it.501e8804" channel-id="IT900004Y5" tvg-logo="https://images.cdn.prd.api.discomax.com/652e/a5aaeab1bd2f.png" tvg-chno="59" group-title="Discovery",Turbo
 #EXTVLCOPT:http-referrer=https://discoveryturbo.it/
 https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/TURBO/CMAF/index.m3u8
 #EXTINF:-1 tvg-name="Sport Italia" tvg-id="dv.sportitalia-it.086c3872" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA2200010O1_20240313T073324SQUARE.png" tvg-chno="60" group-title="Sport",Sport Italia
