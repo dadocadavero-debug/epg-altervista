@@ -18,8 +18,8 @@ https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?h
 #EXTINF:-1 tvg-name="NOVE" tvg-id="dv.nove-it.a79c1a91" channel-id="IT9000060Q" tvg-logo="https://images.cdn.prd.api.discomax.com/e50d/3937ca964288.png" tvg-chno="9" channel-number="9" group-title="Discovery",NOVE
 #EXTVLCOPT:http-referrer=https://nove.tv/
 https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/NOVE/CMAF/index.m3u8
-#EXTINF:-1 tvg-id="dv.telelombardia.61def6ac" group-title="Regionali" tvg-chno="10" channel-number="10" tvg-logo="https://www.mediapason.it/wp-content/uploads/2016/09/lLOGO-TL-MENU.png",Telelombardia
-https://vercel-api.zappr.stream/api?https://telelombardia.video/video/viewlivestreaming?rel=66074&cntr=0
+#EXTINF:-1 tvg-name="Rai Italia EU" tvg-id="RaiItalia.it" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/1814/CH_LOGO/160/160/0/0/668028540729.png" group-title="Estero" tvg-chno="10" channel-number="10", Rai Italia Europa (La giostra del GOL)
+https://d3k8wzt41aflvx.cloudfront.net/RAIEU/Live.m3u8
 #EXTINF:-1 tvg-id="dv.sport-1.ddc92941" tvg-name="" tvg-logo="https://antexplus.cz/wp-content/uploads/Sport1-logo-.png" group-title="Sport" tvg-chno="11" channel-number="11",SPORT 1
 https://antik.zappr.stream/test_sport1_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://antexplus.cz/wp-content/uploads/sport2_cz.png" group-title="Sport" tvg-chno="12" channel-number="12",SPORT 2
@@ -902,8 +902,6 @@ https://link.api.eu.theplatform.com/s/PR1GhC/v79XAXXlVZqO
 https://d3k8wzt41aflvx.cloudfront.net/RAINEWS24/Live.m3u8
 #EXTINF:-1 tvg-name="RaiItalia.it" tvg-id="" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/1814/CH_LOGO/160/160/0/0/668028540729.png" group-title="Estero", Rai Italia Australia
 https://d3k8wzt41aflvx.cloudfront.net/RAIHD/Live.m3u8
-#EXTINF:-1 tvg-name="RaiItalia.it" tvg-id="" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/1814/CH_LOGO/160/160/0/0/668028540729.png" group-title="Estero", Rai Italia Europa
-https://d3k8wzt41aflvx.cloudfront.net/RAIEU/Live.m3u8
 #EXTINF:-1 tvg-name="RaiItalia.it" tvg-id="" tvg-logo="https://geo.edge.pontiscloud.com:9002/images/1814/CH_LOGO/160/160/0/0/668028540729.png" group-title="Estero", Rai Italia America
 https://d3k8wzt41aflvx.cloudfront.net/RAIUSA/Live.m3u8
 #EXTINF:-1 tvg-logo="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/mg.png" group-title="Estero" tvg-id="dv.mediaset-italia-australia-e-asia-it.1c2c9ef4",Mediaset Italia - Australia e Asia
@@ -963,7 +961,8 @@ https://tgrveneto-dash-live.akamaized.net/dash/live/2025616/tgrveneto/manifest.m
 #EXTINF:-1 group-title="Regionali" tvg-logo="https://i1.wp.com/livornopress.it/wp-content/uploads/2021/11/TGR_logo.jpg",TGR Valle d'Aosta
 https://tgrvaldaosta-dash-live.akamaized.net/dash/live/2025615/tgrvaldaosta/manifest.mpd
 
-
+#EXTINF:-1 tvg-id="dv.telelombardia.61def6ac" group-title="Regionali" tvg-logo="https://www.mediapason.it/wp-content/uploads/2016/09/lLOGO-TL-MENU.png",Telelombardia
+https://vercel-api.zappr.stream/api?https://telelombardia.video/video/viewlivestreaming?rel=66074&cntr=0
 #EXTINF:-1 group-title="Regionali" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TTELETUTTO",TT-TTELETUTTO
 https://streamcdnf29-3177cee185284d2990021eccc8b06ae6.msvdn.net/live/S55287570/tq6PELOcQoAf/playlist.m3u8
 #EXTINF:-1 group-title="Regionali" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TTELETUTTO%202",TT-TTELETUTTO 2
