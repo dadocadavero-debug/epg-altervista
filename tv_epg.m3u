@@ -506,6 +506,8 @@ https://vercel-api.zappr.stream/api?https://telelombardia.video/video/viewlivest
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 #EXTINF:-1 tvg-name="BIKE" tvg-id="bikesmartmobility" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=BIKE%20channel" group-title="Sport",BIKE channel
 https://018e1901ad234f04ae16388eda6778e5.msvdn.net/live/S94763187/reFXDHQfBndw/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Golf%20channel" group-title="Sport",Golf channel
+https://dash4.antik.sk/live/test_golf_channel/playlist.m3u8
 #EXTINF:-1 tvg-name="Sportitalia" channel-id="ITBA2200010O1" tvg-id="dv.sportitalia-it.086c3872" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA2200010O1_20230412T042536SQUARE.png_20230412042536.png" group-title="Sport",Sportitalia (25fps)
 https://sportsitalia-samsungitaly.amagi.tv/playlist1080p.m3u8
 #EXTINF:-1 channel-id="ITBC4700002CO" tvg-id="dv.solocalcio-it-it.42f82b85" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC4700002CO_20230412T042559SQUARE.png_20230412042559.png" group-title="Sport",Solocalcio (25fps)
@@ -696,17 +698,16 @@ https://raicinque1-push.cdn.netrw.it/rai/dash/live/rai5/manifest.mpd
 https://raiyoyo1-push.cdn.netrw.it/rai/dash/live/raiyoyo/manifest.mpd
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raigulp.png" tvg-id="dv.raigulp-it.b19697b9" group-title="Rai",rai gulp HbbTV raiway
 https://raigulp1-push.cdn.netrw.it/rai/dash/live/raigulp/manifest.mpd
-#EXTINF:-1 tvg-logo="http://dtil.tmsimg.com/assets/s102112_ll_h15_ab.png?w=360&h=270" tvg-id="dv.raiscuola-it.3270e9e9" group-title="Rai",rai scuola HbbTV raiway
+#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Italiana%20HbbTV%20raiway" group-title="Rai",Italiana HbbTV raiway
 https://raiscuola1-push.cdn.netrw.it/rai/dash/live/raiscuola/manifest.mpd
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raistoria.png" tvg-id="dv.raistoria-it.c0aa556f" group-title="Rai",rai storia HbbTV raiway
 https://raistoria1-push.cdn.netrw.it/rai/dash/live/raistoria/manifest.mpd
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raisport+hd.png" tvg-id="dv.raisport-it.e37d1c70" group-title="Rai",rai sport HbbTV raiway
-#KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=dafa5c04201f59fa9a022dae97b0af7e:8bfa33d706bca7135d150bb3d4fa4388
 https://raisport1-push.cdn.netrw.it/rai/dash/live/raisport/manifest.mpd
-#EXTINF:-1 tvg-name="RaiPlay (eventi)" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=RaiPlay%20%28eventi%29" group-title="Rai" mediapolis="4761838",RaiPlay (eventi)
-https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay/hls/playlist_mo.m3u8
+#EXTINF:-1 tvg-name="Rai Play" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Rai%20Play%20%28eventi%29" group-title="Rai" mediapolis="4761838",Rai Play (eventi)
+https://raigeneric5-live.akamaized.net/hls/live/619177/raigeneric5/raigeneric5/generic5_2400/chunklist.m3u8
 #EXTINF:-1 tvg-name="RaiPlay 2 (eventi)" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=RaiPlay%202%20%28eventi%29" group-title="Rai" mediapolis="4752979",RaiPlay 2 (eventi)
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay2/hls/playlist_mo.m3u8
 #EXTINF:-1 tvg-name="RaiPlay 3 (eventi)" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=RaiPlay%203%20%28eventi%29" group-title="Rai" mediapolis="4761993",RaiPlay 3 (eventi)
@@ -721,9 +722,9 @@ https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raigeneric3/hls/playlist_mo.m
 #EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=7&forceUserAgent=tizen
 #EXTINF:-1 tvg-name="RaiPlaySport 1" tvg-id="" tvg-logo="https://www.raiplay.it/dl/img/2024/04/30/1714492163377_Canale3x.png" group-title="Rai" mediapolis="5569668",RaiPlaySport 1
-https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay4/hls/raiplay4_2400/chunklist.m3u8
+https://raievent1-live.akamaized.net/hls/live/619178/raievent1/raievent1/raievent1_2400/chunklist.m3u8
 #EXTINF:-1 tvg-name="RaiPlaySport 2" tvg-id="" tvg-logo="https://www.raiplay.it/dl/img/2024/04/30/1714492217998_Canale%20non-optimized3x.png" group-title="Rai" mediapolis="4061955",RaiPlaySport 2
-https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay5/hls/raiplay5_2400/chunklist.m3u8
+https://raievent4-live.akamaized.net/hls/live/619181/raievent4/raievent4/raievent4_2400/chunklist.m3u8
 #EXTINF:-1 tvg-name="RaiPlaySport 3" tvg-id="" tvg-logo="https://www.raiplay.it/dl/img/2024/04/30/1714492239159_Canale3x.png" group-title="Rai",RaiPlaySport 3
 https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiplay6/hls/raiplay6_2400/chunklist.m3u8
 #EXTINF:-1 tvg-name="Rai test1" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Rai%20test1" group-title="Rai",Rai test1
