@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/radio-lazio/epg.xml" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/radio-lazio/epg.xml"
-#EXTINF:-1 tvg-id="Radiosei.it" tvg-name="Radiosei" tvg-logo="https://images.weserv.nl/?url=is1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2F36%2F20%2F08%2F36200868-2df6-7f83-4bef-e047563fe975%2FAppIcon-0-0-1x_U007epad-0-1-85-220.png%2F512x512bb.jpg%26trim=10%26w=512%26h=512%26fit=cover" group-title="Radio Lazio" radio="true",Radiosei 98.1 FM
+#EXTINF:-1 tvg-id="Radiosei.it" tvg-name="Radiosei" tvg-logo="https://images.weserv.nl/?url=is1-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple211%2Fv4%2F36%2F20%2F08%2F36200868-2df6-7f83-4bef-e047563fe975%2FAppIcon-0-0-1x_U007epad-0-1-85-220.png%2F512x512bb.jpg%26trim=10%26w=512%26h=512%26fit=cover" radio="true",Radiosei 98.1 FM
 https://icecast.ithost.it/radiosei.ogg
-#EXTINF:-1 tvg-id="RadioLaziale.it" tvg-name="Radio Laziale" tvg-logo="https://net-storage.tcccdn.com/storage/lalaziosiamonoi.it/img_notizie/thumb3/52/52af2619fc09678cade82d281c86b864-40902-377o281o1248o1152z0bf2.jpeg" group-title="Radio Lazio" radio="true",Radio Laziale 88.1 FM
+#EXTINF:-1 tvg-id="RadioLaziale.it" tvg-name="Radio Laziale" tvg-logo="https://net-storage.tcccdn.com/storage/lalaziosiamonoi.it/img_notizie/thumb3/52/52af2619fc09678cade82d281c86b864-40902-377o281o1248o1152z0bf2.jpeg" radio="true",Radio Laziale 88.1 FM
 https://stream9.xdevel.com/audio3s975363-2397/stream/icecast.audio
