@@ -453,12 +453,34 @@ SOURCES = [
         "priority": 64,
         "required": False,
     },
+    # Open-EPG public Italian listings. Supplements only: never override
+    # an already validated programme from the established providers.
+    # These are optional and gracefully skipped if offline or out of date.
+    {
+        "name": "Open EPG Italia 3",
+        "urls": ["https://www.open-epg.com/files/italy3.xml.gz"],
+        "priority": 63,
+        "required": False,
+    },
+    {
+        "name": "Open EPG Italia 8",
+        "urls": ["https://www.open-epg.com/files/italy8.xml.gz"],
+        "priority": 62,
+        "required": False,
+    },
+    {
+        "name": "Open EPG Italia 2",
+        "urls": ["https://www.open-epg.com/files/italy2.xml.gz"],
+        "priority": 61,
+        "required": False,
+    },
 ]
 
 # Never replace an established matching guide with a lower-priority
 # supplementary source. New sources may fill gaps only.
 FALLBACK_SOURCE_NAMES = {
-    "IPTV-EPG Italia", "IPTV-EPG Svizzera", "NZXMLTV Pluto"
+    "IPTV-EPG Italia", "IPTV-EPG Svizzera", "NZXMLTV Pluto",
+    "Open EPG Italia 3", "Open EPG Italia 8", "Open EPG Italia 2",
 }
 
 STRICT_PREFERRED_CHANNELS = {
@@ -613,7 +635,30 @@ def parse_xmltv_time(value: str):
     except Exception:
         return None
 
+# A number of public EPG feeds expose hourly "No Data" dummy entries.
+# Such blocks are not programmes. Do not count, cache or publish them.
+NO_PROGRAMME_TITLES = {
+    "no data", "no epg", "no information", "no programme information",
+    "no program information", "no listings", "no schedule",
+    "nessuna informazione", "nessun dato", "guida non disponibile",
+    "programmazione non disponibile", "programmi non disponibili",
+    "epg unavailable", "programme not available", "program not available",
+    "information not available",
+}
+
+
+def has_real_title(p: ET.Element) -> bool:
+    titles = [
+        norm(node.text or "") for node in p.findall("title")
+    ]
+    # Never invent a title. A guide without a genuine programme
+    # title is as unusable to Fermata Auto as a missing EPG.
+    return any(title and title not in NO_PROGRAMME_TITLES for title in titles)
+
+
 def fresh_programme(p: ET.Element, now: datetime) -> bool:
+    if not has_real_title(p):
+        return False
     start = parse_xmltv_time(p.get("start", ""))
     stop = parse_xmltv_time(p.get("stop", ""))
     if not start:
