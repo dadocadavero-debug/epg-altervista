@@ -130,6 +130,8 @@ ID_MAP = {'20Mediaset.it': '20.it',
  'super': 'Super!.it',
  'tg norba 24': 'TG.NORBA.24.it'}
 PREFERRED_EPG_IDS = {
+    "rsi la1 vpn svizzera": ("RSI.La.1.ch", "RSILa1.ch", "RSI1.ch"),
+    "rsi la2 vpn svizzera": ("RSI.La.2.ch", "RSILa2.ch", "RSI2.ch"),
     "primavera tv": (
         "PrimaveraTv.it",
         "PrimaveraTV.it",
@@ -159,6 +161,8 @@ PREFERRED_EPG_IDS = {
 }
 
 PREFERRED_EPG_NAMES = {
+    "rsi la1 vpn svizzera": ("RSI La 1", "RSI La1", "RSI LA 1 HD"),
+    "rsi la2 vpn svizzera": ("RSI La 2", "RSI La2", "RSI LA 2 HD"),
     "primavera tv": (
         "Primavera TV",
     ),
@@ -428,7 +432,32 @@ SOURCES = [
         "priority": 76,
         "required": False,
     },
+    # Optional extra sources, only used for channels not covered above.
+    {
+        "name": "IPTV-EPG Italia",
+        "urls": ["https://iptv-epg.org/files/epg-it.xml.gz"],
+        "priority": 68,
+        "required": False,
+    },
+    {
+        "name": "IPTV-EPG Svizzera",
+        "urls": ["https://iptv-epg.org/files/epg-ch.xml.gz"],
+        "priority": 66,
+        "required": False,
+    },
+    {
+        "name": "NZXMLTV Pluto",
+        "urls": ["https://nzxmltv.com/iptv/plutotv-static.xml.gz"],
+        "priority": 64,
+        "required": False,
+    },
 ]
+
+# Never replace an established matching guide with a lower-priority
+# supplementary source. New sources may fill gaps only.
+FALLBACK_SOURCE_NAMES = {
+    "IPTV-EPG Italia", "IPTV-EPG Svizzera", "NZXMLTV Pluto"
+}
 
 STRICT_PREFERRED_CHANNELS = {
     "primavera tv",
@@ -637,6 +666,22 @@ def parse_m3u(text: str):
 
     return prefix, parsed
 
+def pluto_stream_id(block: M3uBlock) -> str:
+    """Use the actual Pluto stream's channel UUID, not a possibly stale tvg-id.
+
+    Restrict the lookup to this block's streaming payload. In particular, do
+    not take the next channel's UUID or just a possibly misleading logo.
+    """
+    for line in block.payload:
+        m = re.search(
+            r"(?:jmp2\.uk/plu-|r\.mjh\.nz/PlutoTV/)([a-f0-9]{24})(?:[/?._-]|$)",
+            line,
+            flags=re.IGNORECASE,
+        )
+        if m:
+            return m.group(1).lower()
+    return ""
+
 def target_payloads(blocks: list[M3uBlock]):
     by_name = defaultdict(list)
     for b in blocks:
@@ -703,6 +748,12 @@ def relevance_for_blocks(blocks):
 
     for b in blocks:
         exact_name = norm(b.name)
+
+        # Pluto XMLTV IDs are the same 24-character UUIDs as the stream URL.
+        # Include these in the relevance filter before parsing EPG programmes.
+        stream_uuid = pluto_stream_id(b)
+        if stream_uuid:
+            ids.add(stream_uuid)
 
         for preferred_id in PREFERRED_EPG_IDS.get(exact_name, ()):
             ids.add(preferred_id)
@@ -879,8 +930,17 @@ def candidates(block: M3uBlock, sources):
     bucket = {}
     keys = name_keys(block)
 
+    stream_uuid = pluto_stream_id(block)
     for src in sources:
         exact_name = norm(block.name)
+
+        # Authoritative match: same Pluto channel UUID in stream and XMLTV.
+        # Restrict to the Italian Pluto source: another provider's equal ID
+        # would not be enough proof that its programme schedule is the same.
+        if stream_uuid and src.name == "Pluto TV Italia":
+            add_candidate(
+                bucket, src, stream_uuid, 140, "pluto-stream-uuid"
+            )
 
         # Per-channel preferred IDs. Missing/no-programme IDs are skipped
         # automatically, so the next verified fallback can win.
@@ -951,8 +1011,15 @@ def candidates(block: M3uBlock, sources):
     return sorted(bucket.values(), key=lambda x: x.score(), reverse=True)
 
 def choose_candidate(block, sources):
-    cands = candidates(block, sources)
-    return cands[0] if cands else None
+    # Preserve all previously available provider matches. Optional sources
+    # can only add missing EPGs, never displace existing ones.
+    established = [s for s in sources if s.name not in FALLBACK_SOURCE_NAMES]
+    cands = candidates(block, established)
+    if cands:
+        return cands[0]
+    extras = [s for s in sources if s.name in FALLBACK_SOURCE_NAMES]
+    fallbacks = candidates(block, extras)
+    return fallbacks[0] if fallbacks else None
 
 def epg_icon(ch):
     icon = ch.find("icon")
