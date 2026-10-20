@@ -48,10 +48,10 @@ from urllib.parse import quote
 M3U_URL = "https://inthemix.altervista.org/tv.m3u"
 EPG_URL_BASE = "https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml"
 
-# One-time compatibility/cache revision for Fermata.
-# The actual GitHub file remains epg.xml.  The query only gives the player
-# a fresh EPG URL after the tvg-id migration to dv.* IDs.
-FERMATA_EPG_REV = "20260929-sportfix2"
+# Cache-busting EPG revision for Fermata Auto.  Playlist and XMLTV are
+# generated together, and each scheduled regeneration gets a new EPG URL.
+# This avoids continuing to reuse a cached September version of epg.xml.
+FERMATA_EPG_REV = datetime.now(timezone.utc).strftime("%Y%m%d%H%M")
 EPG_URL = f"{EPG_URL_BASE}?v={FERMATA_EPG_REV}"
 LOGO_SOURCE_URL = "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u"
 

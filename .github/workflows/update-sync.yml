@@ -3,7 +3,7 @@ name: Aggiorna EPG + Playlist
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 */4 * * *"
+    - cron: "17 4,16 * * *"
 
 permissions:
   contents: write
