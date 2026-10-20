@@ -32,6 +32,7 @@ from __future__ import annotations
 import copy
 import gzip
 import hashlib
+import json
 import lzma
 import re
 import shutil
@@ -59,6 +60,7 @@ OUT_M3U = Path("tv_epg.m3u")
 OUT_EPG = Path("epg.xml")
 OUT_EPG_REPORT = Path("epg_report.txt")
 OUT_MAPPING_REPORT = Path("mapping_report.txt")
+OUT_AUTO_MATCHES = Path("epg_auto_matches.json")
 
 UA = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36",
@@ -503,6 +505,7 @@ class SourceData:
     programmes: dict[str, list[ET.Element]]
     exact_names: dict[str, set[str]]
     stripped_names: dict[str, set[str]]
+    normalized_ids: dict[str, set[str]]
     has_now: dict[str, bool]
     horizon: dict[str, datetime]
     raw_channel_count: int
@@ -741,13 +744,75 @@ def safe_epg_id(block: M3uBlock):
     digest = hashlib.sha1(hint.encode("utf-8", errors="ignore")).hexdigest()[:8]
     return f"dv.{slug}.{digest}"
 
-def relevance_for_blocks(blocks):
+def auto_match_key(block: M3uBlock) -> str:
+    """A channel identity for verified EPG associations, without stream URLs."""
+    label = stripped_norm(block.name)
+    if len(label) < 4 or label in {
+        "diretta", "stream", "test", "channel", "canale", "live",
+    }:
+        return ""
+    pluto_id = pluto_stream_id(block)
+    if pluto_id:
+        return f"pluto:{pluto_id}"
+
+    group = norm(block.group)
+    source_id = norm(block.old_id)
+    if source_id and not block.old_id.startswith("dv."):
+        return f"id:{group}:{label}:{source_id}"
+    return f"name:{group}:{label}"
+
+
+def load_auto_matches(now: datetime) -> dict:
+    """Read only reasonably recent, well-formed matches from previous runs."""
+    if not OUT_AUTO_MATCHES.exists():
+        return {}
+    try:
+        data = json.loads(OUT_AUTO_MATCHES.read_text(encoding="utf-8"))
+        if not isinstance(data, dict) or data.get("version") != 1:
+            return {}
+        records = data.get("matches", {})
+        if not isinstance(records, dict):
+            return {}
+        allowed_sources = {spec["name"] for spec in SOURCES}
+        valid = {}
+        for key, item in records.items():
+            if not isinstance(key, str) or not isinstance(item, dict):
+                continue
+            source, cid = item.get("source"), item.get("source_id")
+            if source not in allowed_sources or not isinstance(cid, str) or not cid:
+                continue
+            try:
+                last_seen = datetime.fromisoformat(item["last_seen"])
+                if last_seen.tzinfo is None:
+                    continue
+                age = now - last_seen.astimezone(timezone.utc)
+                if age < timedelta(days=-1) or age > timedelta(days=120):
+                    continue
+            except (KeyError, ValueError, TypeError):
+                continue
+            valid[key] = {
+                "source": source,
+                "source_id": cid,
+                "last_seen": item["last_seen"],
+            }
+        return valid
+    except (OSError, ValueError, TypeError) as exc:
+        print(f"ATTENZIONE: cache EPG ignorata: {exc}")
+        return {}
+
+
+def relevance_for_blocks(blocks, saved_matches=None):
     ids = set()
     names = set()
     stripped = set()
 
     for b in blocks:
         exact_name = norm(b.name)
+
+        # Previously verified matches must survive the source prefilter.
+        saved = (saved_matches or {}).get(auto_match_key(b))
+        if saved:
+            ids.add(saved['source_id'])
 
         # Pluto XMLTV IDs are the same 24-character UUIDs as the stream URL.
         # Include these in the relevance filter before parsing EPG programmes.
@@ -802,6 +867,10 @@ def build_source(spec, raw: bytes, now: datetime, relevance):
     channels = {}
     exact_names = defaultdict(set)
     stripped_names = defaultdict(set)
+    normalized_ids = defaultdict(set)
+    wanted_normalized_ids = {
+        norm(cid) for cid in wanted_ids if len(norm(cid)) >= 5
+    }
 
     for ch in all_channels:
         cid = (ch.get("id") or "").strip()
@@ -814,12 +883,15 @@ def build_source(spec, raw: bytes, now: datetime, relevance):
 
         if not (
             cid in wanted_ids
+            or (len(norm(cid)) >= 5 and norm(cid) in wanted_normalized_ids)
             or bool(nset & wanted_names)
             or bool(sset & wanted_stripped)
         ):
             continue
 
         channels[cid] = ch
+        if len(norm(cid)) >= 5:
+            normalized_ids[norm(cid)].add(cid)
         for n in nset:
             exact_names[n].add(cid)
         for s in sset:
@@ -855,6 +927,7 @@ def build_source(spec, raw: bytes, now: datetime, relevance):
         programmes=dict(programmes),
         exact_names=dict(exact_names),
         stripped_names=dict(stripped_names),
+        normalized_ids=dict(normalized_ids),
         has_now=dict(has_now),
         horizon=horizon,
         raw_channel_count=len(all_channels),
@@ -926,13 +999,21 @@ def add_candidate(bucket, source, cid, quality, reason):
     if key not in bucket or cand.score() > bucket[key].score():
         bucket[key] = cand
 
-def candidates(block: M3uBlock, sources):
+def candidates(block: M3uBlock, sources, saved_matches=None):
     bucket = {}
+    saved = (saved_matches or {}).get(auto_match_key(block))
     keys = name_keys(block)
 
     stream_uuid = pluto_stream_id(block)
     for src in sources:
         exact_name = norm(block.name)
+
+        # Remember a verified association only if its source still contains
+        # real, fresh programmes. New exact matches can outrank saved entries.
+        if saved and src.name == saved["source"]:
+            add_candidate(
+                bucket, src, saved["source_id"], 90, "saved-verified-id"
+            )
 
         # Authoritative match: same Pluto channel UUID in stream and XMLTV.
         # Restrict to the Italian Pluto source: another provider's equal ID
@@ -987,6 +1068,18 @@ def candidates(block: M3uBlock, sources):
             if mapped:
                 add_candidate(bucket, src, mapped, 103, f"id-map:{block.old_id}")
 
+        # Automatically handle XMLTV ID punctuation/case differences.
+        # A normalized ID must be unique inside the source.
+        if block.old_id:
+            norm_old_id = norm(block.old_id)
+            if len(norm_old_id) >= 5:
+                alias_ids = src.normalized_ids.get(norm_old_id, set())
+                if len(alias_ids) == 1:
+                    add_candidate(
+                        bucket, src, next(iter(alias_ids)), 101,
+                        "auto-normalized-id",
+                    )
+
         # Canonical hint.
         hint = canonical_hint(block)
         if hint:
@@ -1010,15 +1103,15 @@ def candidates(block: M3uBlock, sources):
 
     return sorted(bucket.values(), key=lambda x: x.score(), reverse=True)
 
-def choose_candidate(block, sources):
+def choose_candidate(block, sources, saved_matches=None):
     # Preserve all previously available provider matches. Optional sources
     # can only add missing EPGs, never displace existing ones.
     established = [s for s in sources if s.name not in FALLBACK_SOURCE_NAMES]
-    cands = candidates(block, established)
+    cands = candidates(block, established, saved_matches)
     if cands:
         return cands[0]
     extras = [s for s in sources if s.name in FALLBACK_SOURCE_NAMES]
-    fallbacks = candidates(block, extras)
+    fallbacks = candidates(block, extras, saved_matches)
     return fallbacks[0] if fallbacks else None
 
 def epg_icon(ch):
@@ -1210,8 +1303,24 @@ def run_update():
 
     wanted_payloads = target_payloads(blocks)
 
+    # Identify genuinely new Altervista channels against the last playlist.
+    previous_channels = set()
+    if OUT_M3U.exists():
+        try:
+            _, previous_blocks = parse_m3u(OUT_M3U.read_text(encoding="utf-8"))
+            previous_channels = {
+                (norm(p.group), norm(p.name)) for p in previous_blocks
+            }
+        except (OSError, ValueError) as exc:
+            print(f"ATTENZIONE: confronto nuovi canali non disponibile: {exc}")
+    new_channels = [
+        b for b in blocks
+        if previous_channels and (norm(b.group), norm(b.name)) not in previous_channels
+    ]
+    saved_matches = load_auto_matches(now)
+
     # 2) EPG sources selected specifically for the current Altervista list.
-    relevance = relevance_for_blocks(blocks)
+    relevance = relevance_for_blocks(blocks, saved_matches)
     sources, failures = load_sources(now, relevance)
 
     # 3) External logo catalogue (optional).
@@ -1220,7 +1329,7 @@ def run_update():
     # 4) One mapping drives BOTH files.
     matches = []
     for b in blocks:
-        cand = choose_candidate(b, sources)
+        cand = choose_candidate(b, sources, saved_matches)
         stable_id = safe_epg_id(b) if cand else ""
         matches.append((cand, stable_id))
 
@@ -1230,6 +1339,34 @@ def run_update():
             f"Mapping EPG anomalo: solo {matched}/{len(blocks)} canali con guida. "
             "Output precedente mantenuto."
         )
+
+    # Retain recent verified associations, update only unique channel keys.
+    # No channel or streaming URL is stored in the cache.
+    next_matches = dict(saved_matches)
+    key_count = defaultdict(int)
+    for block in blocks:
+        key = auto_match_key(block)
+        if key:
+            key_count[key] += 1
+    for block, (cand, _) in zip(blocks, matches):
+        key = auto_match_key(block)
+        if cand and key and key_count[key] == 1:
+            next_matches[key] = {
+                "source": cand.source.name,
+                "source_id": cand.source_id,
+                "last_seen": now.isoformat(timespec="seconds"),
+            }
+    next_matches = dict(
+        sorted(
+            next_matches.items(),
+            key=lambda item: item[1]["last_seen"],
+            reverse=True,
+        )[:1500]
+    )
+    auto_matches_text = json.dumps(
+        {"version": 1, "matches": next_matches},
+        ensure_ascii=False, indent=2, sort_keys=True,
+    ) + "\n"
 
     # 5) EPG.
     epg_root = ET.Element(
@@ -1417,6 +1554,21 @@ def run_update():
     for src, count in sorted(source_usage.items(), key=lambda x: (-x[1], x[0])):
         report.append(f"{src}: {count} canali")
 
+    report += [
+        "", "AUTOMATCH NUOVI CANALI",
+        f"Canali nuovi rispetto alla playlist precedente: {len(new_channels)}",
+        f"Associazioni EPG verificate memorizzate: {len(next_matches)}",
+        f"Canali nuovi con guida: {sum(1 for b, (cand, _) in zip(blocks, matches) if b in new_channels and cand)}",
+    ]
+    for block, (cand, _) in zip(blocks, matches):
+        if block in new_channels:
+            report.append(
+                f"NEW_{'EPG' if cand else 'NO_EPG'} | {block.group} | "
+                f"{block.name} | " + (
+                    f"{cand.source.name}:{cand.source_id}" if cand else "guida non verificata"
+                )
+            )
+
     report += ["", "MAPPING"]
     report.extend(report_lines)
 
@@ -1434,6 +1586,7 @@ def run_update():
     m3u_tmp = OUT_M3U.with_suffix(".m3u.tmp")
     epg_report_tmp = OUT_EPG_REPORT.with_suffix(".txt.tmp")
     mapping_report_tmp = OUT_MAPPING_REPORT.with_suffix(".txt.tmp")
+    auto_matches_tmp = OUT_AUTO_MATCHES.with_suffix(".json.tmp")
 
     ET.ElementTree(epg_root).write(
         epg_tmp, encoding="utf-8", xml_declaration=True
@@ -1441,9 +1594,13 @@ def run_update():
     m3u_tmp.write_text("\n".join(out_lines) + "\n", encoding="utf-8")
     epg_report_tmp.write_text(report_text, encoding="utf-8")
     mapping_report_tmp.write_text(report_text, encoding="utf-8")
+    auto_matches_tmp.write_text(auto_matches_text, encoding="utf-8")
 
     # Validazione finale dei file temporanei.
     ET.parse(epg_tmp)
+    saved_test = json.loads(auto_matches_tmp.read_text(encoding="utf-8"))
+    if saved_test.get("version") != 1 or not isinstance(saved_test.get("matches"), dict):
+        raise RuntimeError("Archivio associazioni EPG automatiche non valido.")
     tmp_m3u_text = m3u_tmp.read_text(encoding="utf-8", errors="strict")
     if not tmp_m3u_text.startswith("#EXTM3U "):
         raise RuntimeError("M3U temporanea non valida: header mancante.")
@@ -1458,6 +1615,7 @@ def run_update():
         (m3u_tmp, OUT_M3U),
         (epg_report_tmp, OUT_EPG_REPORT),
         (mapping_report_tmp, OUT_MAPPING_REPORT),
+        (auto_matches_tmp, OUT_AUTO_MATCHES),
     ]
     backups = {}
     published = []

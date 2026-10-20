@@ -65,7 +65,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add epg.xml tv_epg.m3u epg_report.txt mapping_report.txt
+          git add epg.xml tv_epg.m3u epg_report.txt mapping_report.txt epg_auto_matches.json
 
           if git diff --cached --quiet; then
             echo "Nessuna modifica da pubblicare."
