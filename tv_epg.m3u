@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610200755" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610200755" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610200755"
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610210923" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610210923" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610210923"
 #EXTINF:-1 tvg-id="dv.rai1-it.3f79da6d" tvg-name="Rai 1" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-chno="1" channel-number="1" group-title="Rai" mediapolis="2606803",Rai 1
 https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
 #EXTINF:-1 tvg-name="Rai 2" tvg-id="dv.rai2-it.9ff87f5f" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png" tvg-chno="2" channel-number="2" group-title="Rai" mediapolis="308718",Rai 2
@@ -424,16 +424,16 @@ https://amg17293-dynit-amg17293c1-rlaxx-gb-9740.playouts.now.amagi.tv/playlist.m
 https://minerva-pictures-inazumaelevengo-1-it.plex.wurl.tv/4300.m3u8
 
 #EXTINF:-1 tvg-name="ALMA TV" tvg-id="dv.almatv-it.681bba72" tvg-logo="https://www.grupposciscione.it/wp-content/uploads/2023/02/ALMA-tv-nuovo-022023-LOGHI-1080x650.ai-1080-%C3%97-650-px.png" group-title="Altre tv",ALMA TV
-https://streaming.softwarecreation.it/AlmaTv/AlmaTv/playlist.m3u8
+https://5f11919dca3bd.streamlock.net/almatv/_definst_/almatv/playlist.m3u8
 #EXTINF:-1 tvg-name="MarcoPolo Travel TV" tvg-id="TravelTV.it" tvg-logo="https://www.grupposciscione.it/wp-content/uploads/2025/07/logo-marcopolo-gruppo-sciscione.png" group-title="Altre tv",MarcoPolo Travel TV
-https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8
-#EXTINF:-1 tvg-name="Donna tv" tvg-id="DonnaTV.it" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/donnatv.png"  group-title="Altre tv",Donna tv
-https://streaming.softwarecreation.it/DonnaTv/DonnaTv/playlist.m3u8
+https://5f11919dca3bd.streamlock.net/marcopolotravel/_definst_/marcopolotravel/playlist.m3u8
+#EXTINF:-1 tvg-name="Donna tv" tvg-id="dv.donnatv-it.0917ba9f" tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/donnatv.png"  group-title="Altre tv",Donna tv
+https://5f11919dca3bd.streamlock.net/donnatv/_definst_/donnatv/playlist.m3u8
 #EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=LA7%20eventi%20live" group-title="Altre tv",LA7 eventi live
 https://d15umi5iaezxgx.cloudfront.net/HBBTV/LA7FEED01/DASH/Live.mpd
 #EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=LA7%20agenzie%3F" group-title="Altre tv",LA7 agenzie?
 https://d15umi5iaezxgx.cloudfront.net/AGENZIE/HLS/Live.m3u8
-#EXTINF:-1 tvg-name="il61" tvg-id="il61" tvg-logo="https://www.grupposciscione.it/wp-content/uploads/2025/07/IL-61-CANALE.png"  group-title="Altre tv",il61
+#EXTINF:-1 tvg-name="Club TV" tvg-id="il61" tvg-logo="https://www.grupposciscione.it/wp-content/uploads/2025/07/IL-61-CANALE.png"  group-title="Altre tv",Club TV
 https://5a1178b42cc03.streamlock.net/travel/travel/playlist.m3u8
 #EXTINF:-1 tvg-name="Iunior TV" tvg-id="iuniortv" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Iunior%20TV" group-title="Bambini e ragazzi",Iunior TV
 https://5f22d76e220e1.streamlock.net/iuniortv/iuniortv/playlist.m3u8
@@ -474,7 +474,7 @@ https://streamcdng1-421b2081187a40368f24e4fb496bfc26.msvdn.net/channel4/manifest
 https://9b7788ca.wurl.com/U2Ftc3VuZy1pdF9TcG9ydEZhY2VfSExT/playlist.m3u8
 #EXTINF:-1 tvg-id="dv.it-juventus-play-be.cb2ee934" group-title="Sport" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork-negative/e17ab6db-7f70-4523-8c8c-4f7f919f04e7-width300-quality90.png",Juventus Play
 https://amg27604-amg27604c3-amgplt0148.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg27604-amg27604c3-amgplt0148/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/inter-tv-it.png" tvg-id="dv.intertv-it.24eaa77b" group-title="Sport",Inter TV
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/inter-tv-it.png" group-title="Sport",Inter TV
 https://d3k8wzt41aflvx.cloudfront.net/INTERTV/Live.m3u8
 #EXTINF:-1 tvg-id="dv.it-inter-24-7-be.eda54c0a" group-title="Sport" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork-negative/bb49ed71-bf84-480e-9336-4cfaba55d253-width200-quality90.png",INTER 24/7
 https://amg27604-amg27604c2-amgplt0148.playout.now3.amagi.tv/playlist/amg27604-amg27604c2-amgplt0148/playlist.m3u8
@@ -504,7 +504,7 @@ https://rally-tv-live.akamaized.net/hls/live/2117704/RallyTV-Pri/master.m3u8
 https://vercel-api.zappr.stream/api?https://telelombardia.video/video/viewlivestreaming?rel=2497&cntr=0
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5e7cb84a172a0f0007da69e4/colorLogoPNG.png" tvg-id="dv.it-red-bull-tv-be.63c4c060" group-title="Sport",RedBull TV
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
-#EXTINF:-1 tvg-name="BIKE" tvg-id="dv.bike-it.4f28a60c" tvg-logo="https://iptv-epg.org/images/E8JawlE1csdwQjPSUU8ItMMllisEL55ozUBoS-AFuSYn0gbWVD8BUs6NBHD5JUOxyIRtYr8Sai4dapKCPvlfw1CHE6S3sT2lEoGx4w" group-title="Sport",BIKE channel
+#EXTINF:-1 tvg-name="BIKE" tvg-id="bikesmartmobility" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=BIKE%20channel" group-title="Sport",BIKE channel
 https://018e1901ad234f04ae16388eda6778e5.msvdn.net/live/S94763187/reFXDHQfBndw/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Golf%20channel" group-title="Sport",Golf channel
 https://dash4.antik.sk/live/test_golf_channel/playlist.m3u8
@@ -964,6 +964,8 @@ https://tgrvaldaosta-dash-live.akamaized.net/dash/live/2025615/tgrvaldaosta/mani
 
 #EXTINF:-1 group-title="Regionali" tvg-logo="https://www.mediapason.it/wp-content/uploads/2016/09/lLOGO-TL-MENU.png",Telelombardia
 https://vercel-api.zappr.stream/api?https://telelombardia.video/video/viewlivestreaming?rel=66074&cntr=0
+#EXTINF:-1 group-title="Regionali" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Telecity%20lombardia",Telecity lombardia
+https://64b16f23efbee.streamlock.net/telecitylombardia/telecitylombardia/playlist.m3u8
 #EXTINF:-1 group-title="Regionali" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TTELETUTTO",TT-TTELETUTTO
 https://streamcdnf29-3177cee185284d2990021eccc8b06ae6.msvdn.net/live/S55287570/tq6PELOcQoAf/playlist.m3u8
 #EXTINF:-1 group-title="Regionali" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=TT-TTELETUTTO%202",TT-TTELETUTTO 2
