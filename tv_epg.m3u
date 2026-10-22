@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610220925" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610220925" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610220925"
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610222008" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610222008" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610222008"
 #EXTINF:-1 tvg-id="dv.rai1-it.3f79da6d" tvg-name="Rai 1" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-chno="1" channel-number="1" group-title="Rai" mediapolis="2606803",Rai 1
 https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
 #EXTINF:-1 tvg-name="Rai 2" tvg-id="dv.rai2-it.9ff87f5f" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png" tvg-chno="2" channel-number="2" group-title="Rai" mediapolis="308718",Rai 2
@@ -37,8 +37,8 @@ https://amg01821-amg01821c3-plex-italy-5433.playouts.now.amagi.tv/playlist.m3u8
 https://stream10.xdevel.com/video17s975955-2173/stream/playlist.m3u8
 #EXTINF:-1 tvg-name="EuroNews Italia" tvg-id="dv.euronews-it.1ee0cde4" tvg-logo="https://images.pluto.tv/channels/61b86ea479a4390007c6d5fc/colorLogoPNG.png" group-title="Notizie" tvg-chno="18" channel-number="18",EuroNews Italia
 https://amg00882-amg00882c4-wedotv-eu-4536.playouts.now.amagi.tv/playlist1080p.m3u8
-#EXTINF:-1 tvg-name="Giornale Radio Tv" channel-id="ITBB5000002N0" tvg-id="dv.itbb5000002n0.c0ff10e0" tvg-logo="https://giornaleradio.fm/wp-content/uploads/2023/03/Giornale-Radio-logo-2-1.png" group-title="Notizie" tvg-chno="19" channel-number="19",Giornale Radio Tv
-https://5f204aff97bee.streamlock.net/GR_tv/livestream/chunklist_w1819045153.m3u8
+#EXTINF:-1 channel-id="IT700005C9" tvg-id="dv.it700005c9.63cfb4c3" tvg-name="Studio Uno" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT700005C9_20261013T054248SQUARE.png" group-title="Rai" tvg-chno="19" channel-number="19",Studio Uno
+https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-js3yow7yn117l.m3u8
 #EXTINF:-1 tvg-name="Mediaset 20" tvg-id="dv.20-it.877b911c" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/170100285-6e222810-ae86-45c1-ad6d-8804b2f87963.png" tvg-chno="20" channel-number="20" group-title="Mediaset",Mediaset 20
 https://live03-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/manifest_hd.mpd
 #EXTINF:-1 tvg-name="Rai 4" tvg-id="dv.rai4-it.9bb6f923" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662992107Logo-Rai4.png" tvg-chno="21" channel-number="21" group-title="Rai",Rai 4
@@ -106,7 +106,7 @@ https://495c5a85d9074f29acffeaea9e0215eb.msvdn.net/super/super_main/super_main_h
 #EXTINF:-1 tvg-name="Rai News 24" tvg-id="dv.rainews24-it.970cce36" tvg-logo="https://www.raiplay.it/dl/img/2016/07/1468515028111Rainews24-logo.png" tvg-chno="48" group-title="Notizie" mediapolis="1",RaiNews 24
 #EXTVLCOPT:http-user-agent=rainet/8.0.0 (Linux;Android 16) ExoPlayerLib/2.18.0
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1&output=23
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1&output=7
 #EXTINF:-1 tvg-name="Italia 2" tvg-id="dv.italia-2-it.80d30d6b" tvg-logo="https://static2.mediasetplay.mediaset.it/mam/2021/03/30/170519488-02d50d65-cc5f-432e-acf5-83288c3a93ae.png" tvg-chno="49" group-title="Mediaset",Italia 2
 https://live03-col.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/manifest_hd.mpd
 #EXTINF:-1 tvg-name="Sky TG24" tvg-id="dv.sky-tg24-it.fb74376a" tvg-logo="https://guidatv.sky.it/logo/521skytg24_Light_Fit.png?checksum=da35dbfe-8079-4ba1-adcb-fa9e2cfe3392?tr=n-logo_80" tvg-chno="50" group-title="Notizie",Sky TG24 SD
@@ -130,7 +130,7 @@ https://d3k8wzt41aflvx.cloudfront.net/RAIScuola/Live.m3u8
 #EXTINF:-1 tvg-name="Rai Sport" tvg-id="dv.raisport-it.e37d1c70" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637310367694_1579883330343_rai-sport.png" tvg-chno="58" group-title="Sport" mediapolis="358025",Rai Sport
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=16&forceUserAgent=raiplayappletv
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=7&forceUserAgent=raiplayappletv
 #EXTINF:-1 tvg-name="Turbo" tvg-id="dv.motor-trend-it.501e8804" channel-id="IT900004Y5" tvg-logo="https://images.cdn.prd.api.discomax.com/652e/a5aaeab1bd2f.png" tvg-chno="59" group-title="Discovery",Turbo
 #EXTVLCOPT:http-referrer=https://discoveryturbo.it/
 https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/TURBO/CMAF/index.m3u8
@@ -455,6 +455,8 @@ https://qrg.akamaized.net/hls/live/2017383/lsqvc1itcln/master.m3u8
 https://604e46ac2bdee.streamlock.net:1936/marcorenzi/marcorenzi/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://8da6b7972c.clvaw-cdnwnd.com/be7080dae791f33bfe816c65a7e8b2d9/200000052-b0c44b0c46/700/sposi%20tv%20logo%20trasoarente.webp" group-title="Altre tv",Sposi TV
 https://stream10.xdevel.com/video4s978704-3076/stream/playlist.m3u8
+#EXTINF:-1 tvg-name="Giornale Radio Tv" channel-id="ITBB5000002N0" tvg-id="dv.itbb5000002n0.c0ff10e0" tvg-logo="https://giornaleradio.fm/wp-content/uploads/2023/03/Giornale-Radio-logo-2-1.png" group-title="Notizie",Giornale Radio Tv
+https://5f204aff97bee.streamlock.net/GR_tv/livestream/chunklist_w1819045153.m3u8
 #EXTINF:-1 tvg-name="Class CNBC" tvg-id="dv.class-cnbc-it.218daddf" tvg-logo="https://guidatv.sky.it/logo/433classcnbc_Light_Fit.png?checksum=5d79825c-e37a-4e81-8e9a-69ea5593279e?tr=n-logo_80" group-title="Notizie",Class CNBC
 https://www.dailymotion.com/cdn/live/video/x91c8ww.m3u8?sec=D9OwEfHs-e7O6pQ-qlnROg
 #EXTINF:-1 tvg-name="Zerouno Tv News" tvg-id="" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Zerouno%20Tv%20News" group-title="Notizie",Zerouno Tv News
@@ -474,7 +476,7 @@ https://streamcdng1-421b2081187a40368f24e4fb496bfc26.msvdn.net/channel4/manifest
 https://9b7788ca.wurl.com/U2Ftc3VuZy1pdF9TcG9ydEZhY2VfSExT/playlist.m3u8
 #EXTINF:-1 tvg-id="dv.it-juventus-play-be.cb2ee934" group-title="Sport" tvg-logo="https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork-negative/e17ab6db-7f70-4523-8c8c-4f7f919f04e7-width300-quality90.png",Juventus Play
 https://amg27604-amg27604c3-amgplt0148.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg27604-amg27604c3-amgplt0148/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/inter-tv-it.png" group-title="Sport",Inter TV
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/inter-tv-it.png" tvg-id="dv.intertv-it.24eaa77b" group-title="Sport",Inter TV
 https://d3k8wzt41aflvx.cloudfront.net/INTERTV/Live.m3u8
 #EXTINF:-1 tvg-id="dv.it-inter-24-7-be.eda54c0a" group-title="Sport" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork-negative/bb49ed71-bf84-480e-9336-4cfaba55d253-width200-quality90.png",INTER 24/7
 https://amg27604-amg27604c2-amgplt0148.playout.now3.amagi.tv/playlist/amg27604-amg27604c2-amgplt0148/playlist.m3u8
