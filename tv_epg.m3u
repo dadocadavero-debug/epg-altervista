@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610250910" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610250910" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610250910"
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610251904" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610251904" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202610251904"
 #EXTINF:-1 tvg-id="dv.rai1-it.3f79da6d" tvg-name="Rai 1" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-chno="1" channel-number="1" group-title="Rai" mediapolis="2606803",Rai 1
 https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
 #EXTINF:-1 tvg-name="Rai 2" tvg-id="dv.rai2-it.9ff87f5f" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png" tvg-chno="2" channel-number="2" group-title="Rai" mediapolis="308718",Rai 2
@@ -700,7 +700,7 @@ https://raicinque1-push.cdn.netrw.it/rai/dash/live/rai5/manifest.mpd
 https://raiyoyo1-push.cdn.netrw.it/rai/dash/live/raiyoyo/manifest.mpd
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raigulp.png" tvg-id="dv.raigulp-it.b19697b9" group-title="Rai",rai gulp HbbTV raiway
 https://raigulp1-push.cdn.netrw.it/rai/dash/live/raigulp/manifest.mpd
-#EXTINF:-1 tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=Italiana%20HbbTV%20raiway" group-title="Rai",Italiana HbbTV raiway
+#EXTINF:-1 tvg-logo="https://api.superguidatv.it/v1/channels/230/logo?width=120&theme=dark" tvg-id="dv.italiana.87753b88" group-title="Rai",Italiana HbbTV raiway
 https://raiscuola1-push.cdn.netrw.it/rai/dash/live/raiscuola/manifest.mpd
 #EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/Tundrak/IPTV-Italia/logos/raistoria.png" tvg-id="dv.raistoria-it.c0aa556f" group-title="Rai",rai storia HbbTV raiway
 https://raistoria1-push.cdn.netrw.it/rai/dash/live/raistoria/manifest.mpd
