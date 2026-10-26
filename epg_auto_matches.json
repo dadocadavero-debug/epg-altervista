@@ -1,527 +1,527 @@
 {
   "matches": {
     "id:altre tv:5 minuti creativi:itba33000374g": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBA33000374G"
     },
     "id:altre tv:alma:almatv it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
-      "source": "IPTV-EPG Italia",
-      "source_id": "AlmaTV.it"
+      "last_seen": "2026-10-26T10:09:21+00:00",
+      "source": "EPG Italia",
+      "source_id": "ALMA TV"
     },
     "id:altre tv:cielo:cielo it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "cielo.it"
     },
     "id:altre tv:donna:donnatv it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Open EPG Italia 3",
       "source_id": "DonnaTv.it"
     },
     "id:altre tv:gambero rosso:gamberorosso it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Rytec Italia Sky",
       "source_id": "GamberoRosso.it"
     },
     "id:altre tv:la7 cinema:la7d": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
-      "source": "TVIT Italia",
+      "last_seen": "2026-10-26T10:09:21+00:00",
+      "source": "EPG Italia",
       "source_id": "la7d"
     },
     "id:altre tv:trailers:itba3300048yj": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBA3300048YJ"
     },
     "id:altre tv:tv2000:tv2000 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
-      "source": "IPTV-EPG Italia",
-      "source_id": "TV2000.it"
+      "last_seen": "2026-10-26T10:09:21+00:00",
+      "source": "EPG Italia",
+      "source_id": "TV2000"
     },
     "id:bambini e ragazzi:baby shark:rakutenbabysharktv it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare Plex",
       "source_id": "plex.tv.BABY.SHARK.TV.plex"
     },
     "id:bambini e ragazzi:boing:boing it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Boing.it"
     },
     "id:bambini e ragazzi:cartoonito:cartoonito it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Cartoonito.it"
     },
     "id:bambini e ragazzi:ducktv:ducktv it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC4700001E6"
     },
     "id:bambini e ragazzi:inazuma eleven collection:612375086abc84000738fc03": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "612375086abc84000738fc03"
     },
     "id:bambini e ragazzi:inuyasha:it800001sw": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT800001SW"
     },
     "id:bambini e ragazzi:masha e orso:it3800010k1": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2200011IA"
     },
     "id:bambini e ragazzi:rai gulp:raigulp it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiGulp.it"
     },
     "id:bambini e ragazzi:rai yoyo:raiyoyo it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiYoyo.it"
     },
     "id:bambini e ragazzi:super:super": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
-      "source": "EPGShare IT1",
+      "last_seen": "2026-10-26T10:09:21+00:00",
+      "source": "IPTV-EPG Italia",
       "source_id": "Super!.it"
     },
     "id:bambini e ragazzi:supertoons:supertoonstv it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBD51000010V"
     },
     "id:bambini e ragazzi:teletubbies:rakutenwbteletubbies it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT480000143"
     },
     "id:connessioni a giga:canale 5:canale 5": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Canale.5.it"
     },
     "id:connessioni a giga:cielo:cielo it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "cielo.it"
     },
     "id:connessioni a giga:mediaset 20:20mediaset it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "20.it"
     },
     "id:connessioni a giga:rai 1:rai 1": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai1.it"
     },
     "id:connessioni a giga:rai 2:rai 2": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai2.it"
     },
     "id:connessioni a giga:rai 3:rai 3": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai3.it"
     },
     "id:connessioni a giga:rai 4:rai4": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai4.it"
     },
     "id:connessioni a giga:rai gulp:raigulp it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiGulp.it"
     },
     "id:connessioni a giga:rai yoyo:raiyoyo it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiYoyo.it"
     },
     "id:connessioni a giga:rete 4:rete 4": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rete.4.it"
     },
     "id:discovery:discovery:discovery": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Discovery.Channel.it"
     },
     "id:discovery:dmax:dmax it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "DMAX.it"
     },
     "id:discovery:food network:foodnetwork it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Food.Network.it"
     },
     "id:discovery:frisbee:frisbee it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
-      "source": "TVIT Italia",
-      "source_id": "frisbee"
+      "last_seen": "2026-10-26T10:09:21+00:00",
+      "source": "EPG Italia",
+      "source_id": "-Frisbee-"
     },
     "id:discovery:giallo:giallo it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Giallo.TV.it"
     },
     "id:discovery:hgtv:hgtv it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "HGTV.it"
     },
     "id:discovery:nove:nove it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Nove.it"
     },
     "id:discovery:real time:realtime it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Real.Time.it"
     },
     "id:discovery:turbo:turbo": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Motor.Trend.it"
     },
     "id:estero:canale 5:canale5 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Canale.5.it"
     },
     "id:estero:cartoonito:cartoonito it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Cartoonito.it"
     },
     "id:estero:focus:focus it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Focus.it"
     },
     "id:estero:iris:iris it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Iris.it"
     },
     "id:estero:mediaset 20:20mediaset it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "20.it"
     },
     "id:estero:mediaset america:mediaset italia america it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Mediaset.Italia.-.America.it"
     },
     "id:estero:mediaset australia e asia:mediaset italia australia e asia it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Mediaset.Italia.-.Australia.e.Asia.it"
     },
     "id:estero:mediaset e africa:mediaset italia europa e africa it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Mediaset.Italia.-.Europa.e.Africa.it"
     },
     "id:estero:mediaset extra:mediasetextra it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Mediaset.Extra.it"
     },
     "id:estero:rete 4:rete4 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rete.4.it"
     },
     "id:estero:topcrime:topcrime it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Top.Crime.it"
     },
     "id:film:action movie channel:rakutendarkmatteritnew it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC400001LX"
     },
     "id:film:bizzarro movies:rakutenbizzarromovies it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBA3300024IU"
     },
     "id:film:cine amore:it3800001xm": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT3800001XM"
     },
     "id:film:cine peplum:rakutenwesternepeplum it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBB20000072M"
     },
     "id:film:cine thriller:rakutenlevitedeglialtri it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBD3200002DU"
     },
     "id:film:cinema italiano:itba33000238e": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBA33000238E"
     },
     "id:film:film al femminile wedo movies:itbc4700004eq": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC4700004EQ"
     },
     "id:film:horror club:plutotvhorrorclub it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "66c35c0c92b1af0008c8e83a"
     },
     "id:mediaset:canale 5:canale5": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Canale.5.it"
     },
     "id:mediaset:canale 5:canale5 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Canale.5.it"
     },
     "id:mediaset:cine 34:cine34 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Cine34.it"
     },
     "id:mediaset:focus:focus it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Focus.it"
     },
     "id:mediaset:iris:iris it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Iris.it"
     },
     "id:mediaset:mediaset extra:mediasetextra it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Mediaset.Extra.it"
     },
     "id:mediaset:rete 4:rete4": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rete.4.it"
     },
     "id:mediaset:rete 4:rete4 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rete.4.it"
     },
     "id:mediaset:top crime:topcrime it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Top.Crime.it"
     },
     "id:mediaset:twentyseven:twentyseven it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "27.Twentyseven.it"
     },
     "id:musica:cool summer channel:it2500001if": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2500001IF"
     },
     "id:musica:deejay:deejaytv it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Deejay.TV.it"
     },
     "id:musica:hip hop:itbc11000108g": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC11000108G"
     },
     "id:musica:r101:r101tv": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "R101tv.it"
     },
     "id:musica:radio montecarlo:radiomontecarlotv": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RMC.it"
     },
     "id:musica:radio:radioitaliatv": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Radio.Italia.TV.HD.it"
     },
     "id:musica:rock:itbc1100011rk": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC1100011RK"
     },
     "id:musica:rtl 102 5:rtl102 5tv": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RTL.102.5.HD.it"
     },
     "id:musica:trace latina:itba3300042he": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBA3300042HE"
     },
     "id:musica:trace urban:itba3300041ly": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBA3300041LY"
     },
     "id:musica:vevo 90s 00s:itbc210000200": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC210000200"
     },
     "id:musica:vevo pop:itbc2100001g9": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC2100001G9"
     },
     "id:musica:virgin radio:virginradiotv it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Virgin.Radio.it"
     },
     "id:notizie:euronews:plutoeuronews it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Euronews.it"
     },
     "id:notizie:giornale radio:itbb5000002n0": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBB5000002N0"
     },
     "id:notizie:rainews 24:rai news 24": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiNews24.it"
     },
     "id:notizie:rainews 24:rainews24 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiNews24.it"
     },
     "id:notizie:tgcom 24:tgcom24 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "TGCom.it"
     },
     "id:rai:italiana:raiscuola it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
-      "source": "TVIT Italia",
-      "source_id": "italiana"
+      "last_seen": "2026-10-26T10:09:21+00:00",
+      "source": "EPG Italia",
+      "source_id": "Rai Scuola"
     },
     "id:rai:rai 1 mdp:rai1 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai1.it"
     },
     "id:rai:rai 3 900:rai3 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai3.it"
     },
     "id:rai:rai 3:rai3": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai3.it"
     },
     "id:rai:rai 3:rai3 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai3.it"
     },
     "id:rai:rai 4:rai4": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai4.it"
     },
     "id:rai:rai 4:rai4 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai4.it"
     },
     "id:rai:rai 5:rai5 it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai5.it"
     },
     "id:rai:rai movie:raimovie it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiMovie.it"
     },
     "id:rai:rai radio 2:rairadio2": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiRadio2.it"
     },
     "id:rai:rai storia:raistoria it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiStoria.it"
     },
     "id:rai:studio uno:it700005c9": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT700005C9"
     },
     "id:regionali:italia2:italia2 tv": {
-      "last_seen": "2026-10-24T18:48:27+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPG Italia",
       "source_id": "Italia2"
     },
     "id:serie:bbc series:plutobbcseries it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "62e7fa5ab5062e0007dcf97d"
     },
     "id:serie:gli immortali van damme vs lundgren:itbd1100001b7": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBD1100001B7"
     },
     "id:serie:serie crime rakuten:rakutencrimeseriesitrakutentv it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2600008RA"
     },
     "id:serie:true crime:itbd1000006rd": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBD1000006RD"
     },
     "id:serie:un medico in famiglia:it4000061q": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT4000061Q"
     },
     "id:sport:aci sport:acisporttv it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "ACI.Sport.Tv.it"
     },
@@ -531,807 +531,807 @@
       "source_id": "BIKE.it"
     },
     "id:sport:lba classics:it4000089r": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT4000089R"
     },
     "id:sport:rai sport jolly 1:raisport": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiSport.it"
     },
     "id:sport:rai sport jolly 2:raisport": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiSport.it"
     },
     "id:sport:rai sport:raisport": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiSport.it"
     },
     "id:sport:sport:sportitalia": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
-      "source": "IPTV-EPG Italia",
-      "source_id": "Sportitalia.it"
+      "last_seen": "2026-10-26T10:09:21+00:00",
+      "source": "EPG Italia",
+      "source_id": "SPORT ITALIA"
     },
     "id:sport:sportface:it16000070d": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT16000070D"
     },
     "id:sport:sportitalia:sportitalia": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
-      "source": "Samsung TV Plus Italia",
-      "source_id": "IT1000002TG"
+      "last_seen": "2026-10-26T10:09:21+00:00",
+      "source": "EPG Italia",
+      "source_id": "SportItalia"
     },
     "id:sport:super tennis:supertennis it": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "SuperTennis.HD.it"
     },
     "id:sport:tennis channel 2:t2 tennis": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare Plex",
       "source_id": "plex.tv.Tennis.Channel.2.plex"
     },
     "name:bambini e ragazzi:car city adventures": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2000002D1"
     },
     "name:bambini e ragazzi:deaplaneta kids": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBD3200007SZ"
     },
     "name:bambini e ragazzi:mr bean animated": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT900001A7"
     },
     "name:bambini e ragazzi:pingu": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2100003OJ"
     },
     "name:bambini e ragazzi:pocoyo": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT700004X4"
     },
     "name:discovery:discovery": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Discovery.Channel.it"
     },
     "name:discovery:dmax": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "DMAX.it"
     },
     "name:discovery:foodnetwork": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Food.Network.it"
     },
     "name:discovery:giallo": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Giallo.TV.it"
     },
     "name:discovery:hgtv": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "HGTV.it"
     },
     "name:discovery:nove": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Nove.it"
     },
     "name:discovery:realtime": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Real.Time.it"
     },
     "name:discovery:turbo": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Motor.Trend.it"
     },
     "name:documentari:bbc earth": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT3200002L5"
     },
     "name:documentari:love the planet": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC4700003GR"
     },
     "name:documentari:move sportivi in viaggio": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBD300001GI"
     },
     "name:documentari:naturetime": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2100001EZ"
     },
     "name:documentari:storie criminali": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "66177d18c8311c0008d077d0"
     },
     "name:documentari:viaggi sapori": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT12000029J"
     },
     "name:estero:rai 2": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai2.it"
     },
     "name:estero:rai news 24": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiNews24.it"
     },
     "name:estero:rai scuola": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
-      "source": "EPGShare BE2 FAST/Sport",
-      "source_id": "Rai.Scuola.HD.be"
+      "last_seen": "2026-10-26T10:09:21+00:00",
+      "source": "EPG Italia",
+      "source_id": "Rai Scuola"
     },
     "name:estero:rai storia": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiStoria.it"
     },
     "name:estero:rsi la1 vpn svizzera": {
-      "last_seen": "2026-10-24T18:48:27+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPG Italia",
       "source_id": "RSI La 1"
     },
     "name:estero:rsi la2 vpn svizzera": {
-      "last_seen": "2026-10-24T18:48:27+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPG Italia",
       "source_id": "RSI La 2"
     },
     "name:film:adrenaline movies": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC11000050E"
     },
     "name:film:alberto sordi co": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC1100008L4"
     },
     "name:film:alta tensione": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC1100001G5"
     },
     "name:film:brividy cinema": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBD600001CL"
     },
     "name:film:cg cine mania": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBD140000119"
     },
     "name:film:cine paura": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT3600005AL"
     },
     "name:film:cinemadame": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBD1400003D0"
     },
     "name:film:cinemalizia": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT300029U3"
     },
     "name:film:commedia rakuten": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2600007WQ"
     },
     "name:film:crime time": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare BE2 FAST/Sport",
       "source_id": "Crime.Time.be"
     },
     "name:film:dramma rakuten": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2600005ZN"
     },
     "name:film:duri a morire": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "65f865a62873090008d06382"
     },
     "name:film:family rakuten": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2600010E0"
     },
     "name:film:fantascienza rakuten": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT260000131"
     },
     "name:film:film d azione rakuten": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2600003FM"
     },
     "name:film:film top rakuten": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2600002F6"
     },
     "name:film:grandi nomi": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC1100003KC"
     },
     "name:film:romance rakuten": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2600004K9"
     },
     "name:film:romantica": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT500004JK"
     },
     "name:film:smile": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC1100002ZU"
     },
     "name:film:sony one film dazione": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT300004KM"
     },
     "name:film:sony one film divertenti": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT300005J9"
     },
     "name:film:supercinema": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBD3200001VR"
     },
     "name:film:velvet": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBC11000047F"
     },
     "name:film:western time": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT3600004TW"
     },
     "name:mediaset:gfvip regia 1": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "GF.VIP.-.Regia.1.it"
     },
     "name:mediaset:gfvip regia 2": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "GF.VIP.-.Regia.2.it"
     },
     "name:mediaset:gfvip un ora fa": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "GF.VIP.-.Un’ora.fa.it"
     },
     "name:musica:radio 105": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "TVIT Italia",
       "source_id": "radio-105"
     },
     "name:musica:radio freccia": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RADIOFRECCIA.HD.it"
     },
     "name:musica:radio live": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare BE2 FAST/Sport",
       "source_id": "Radio.Italia.Live.be"
     },
     "name:musica:radio norba": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RADIONORBA.TV.it"
     },
     "name:musica:radio zeta": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare BE2 FAST/Sport",
       "source_id": "Radio.Zeta.be"
     },
     "name:musica:rtl 102 5 best": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT3000012PW"
     },
     "name:musica:rtl 102 5 caliente": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT30000132N"
     },
     "name:musica:rtl 102 5 disco": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT3000014RV"
     },
     "name:musica:that s 70s": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "69ef53e12f4d2b4f9c582e76"
     },
     "name:musica:that s 80s": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "69ef54f3c700cf0140272def"
     },
     "name:musica:vevo 2k": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "NZXMLTV Pluto",
       "source_id": "5fd7bca3e0a4ee0007a38e8c"
     },
     "name:musica:vevo 70s 80s": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBD1900010JL"
     },
     "name:musica:xite hits": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare Plex",
       "source_id": "plex.tv.XITE.Hits.plex"
     },
     "name:notizie:class cnbc": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Class.CNBC.it"
     },
     "name:notizie:il sole 24 ore": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT3300001G3"
     },
     "name:notizie:sky tg24": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Sky.TG24.it"
     },
     "name:rai:italiana": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "TVIT Italia",
       "source_id": "italiana"
     },
     "name:rai:rai 5": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Rai5.it"
     },
     "name:rai:rai gulp": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiGulp.it"
     },
     "name:rai:rai movie": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiMovie.it"
     },
     "name:rai:rai premium": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiPremium.it"
     },
     "name:rai:rai storia": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiStoria.it"
     },
     "name:rai:rai yoyo": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "RaiYoyo.it"
     },
     "name:regionali:telelombardia": {
-      "last_seen": "2026-10-24T18:48:27+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPG Italia",
       "source_id": "Telelombardia"
     },
     "name:regionali:teleticino": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
-      "source": "Rytec Italia Sky",
-      "source_id": "TeleTicino.ch"
+      "last_seen": "2026-10-26T10:09:21+00:00",
+      "source": "EPG Italia",
+      "source_id": "TeleTicino"
     },
     "name:serie:elisa di rivombrosa": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBD4100001MG"
     },
     "name:serie:hell s kitchen": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "664f0ddbf78a8500092dcffa"
     },
     "name:serie:sony one gli imperdibili": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT300006W3"
     },
     "name:serie:sony one serie da ridere": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT3000035B"
     },
     "name:serie:top gear": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "64c109a4798def0008a6e03e"
     },
     "name:serie:vita da strega": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT2000003B8"
     },
     "name:sport:fifa plus": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare Rakuten",
       "source_id": "IT:.FIFA+.be"
     },
     "name:sport:inter": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare IT1",
       "source_id": "Inter.TV.it"
     },
     "name:sport:inter 24 7": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare Rakuten",
       "source_id": "IT:.INTER.24/7.be"
     },
     "name:sport:italian fishing": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare BE2 FAST/Sport",
       "source_id": "Italian.Fishing.TV.be"
     },
     "name:sport:juventus play": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare Rakuten",
       "source_id": "IT:.Juventus.Play.be"
     },
     "name:sport:motor1": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "IT3000282Q"
     },
     "name:sport:motoretro": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare Rakuten",
       "source_id": "IT:.Motoretrò.be"
     },
     "name:sport:rally": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare Rakuten",
       "source_id": "IT:.Rally.TV.FAST+.be"
     },
     "name:sport:redbull": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare Rakuten",
       "source_id": "IT:.Red.Bull.TV.be"
     },
     "name:sport:sky sport": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Rytec Italia Sport/Film",
       "source_id": "SkySportF1.it"
     },
     "name:sport:sport 1": {
-      "last_seen": "2026-10-24T18:48:27+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPG Italia",
       "source_id": "Sport 1 HD"
     },
     "name:sport:sportoutdoor": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Samsung TV Plus Italia",
       "source_id": "ITBA3300022EA"
     },
     "name:sport:tennis plus": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare Rakuten",
       "source_id": "IT:.Tennis+.be"
     },
     "name:sport:top calcio 24": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
-      "source": "Rytec Italia Sport/Film",
-      "source_id": "TopCalcio24.it"
+      "last_seen": "2026-10-26T10:09:21+00:00",
+      "source": "EPG Italia",
+      "source_id": "Top Calcio 24"
     },
     "name:sport:unbeaten": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "EPGShare Plex",
       "source_id": "plex.tv.Unbeaten.plex"
     },
     "pluto:60802b37709d6b0007b0c549": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "60802b37709d6b0007b0c549"
     },
     "pluto:60802d37ee238e0007c94e64": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "60802d37ee238e0007c94e64"
     },
     "pluto:608030eff4b6f70007e1684c": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "608030eff4b6f70007e1684c"
     },
     "pluto:608aa17fb9f4490007e6419a": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "608aa17fb9f4490007e6419a"
     },
     "pluto:608aa20a2e7f270007c4878d": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "608aa20a2e7f270007c4878d"
     },
     "pluto:608aa4a4cc92820007b663af": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "608aa4a4cc92820007b663af"
     },
     "pluto:608aa512d67fd900072323db": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "608aa512d67fd900072323db"
     },
     "pluto:608aa5e995132a00075f7005": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "608aa5e995132a00075f7005"
     },
     "pluto:608aa777b907770007e5d05d": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "608aa777b907770007e5d05d"
     },
     "pluto:608aa7d8359b270007861489": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "608aa7d8359b270007861489"
     },
     "pluto:608aa8a5709d6b0007b132fe": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "608aa8a5709d6b0007b132fe"
     },
     "pluto:6093f6f8351eb0000754afb8": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "6093f6f8351eb0000754afb8"
     },
     "pluto:6093f7b5bb49b90007cecaad": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "6093f7b5bb49b90007cecaad"
     },
     "pluto:6093f9281db477000759fce0": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "6093f9281db477000759fce0"
     },
     "pluto:6093f9ed2c75660007322bb7": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "6093f9ed2c75660007322bb7"
     },
     "pluto:609401db8cf51c00084b592e": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "609401db8cf51c00084b592e"
     },
     "pluto:60a2837f8154ab0007c4dcdf": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "60a2837f8154ab0007c4dcdf"
     },
     "pluto:60b9ff2722bfa400072676ef": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "60b9ff2722bfa400072676ef"
     },
     "pluto:60e4507a06171800072339a3": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "60e4507a06171800072339a3"
     },
     "pluto:612e05b885183d0007958101": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "612e05b885183d0007958101"
     },
     "pluto:61728bb9ee3773000840c1fa": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "61728bb9ee3773000840c1fa"
     },
     "pluto:61c09e3ac210ed0007606620": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "61c09e3ac210ed0007606620"
     },
     "pluto:61fbd3f0733df400076c9a2d": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "61fbd3f0733df400076c9a2d"
     },
     "pluto:6245d3792792150007e20634": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "6245d3792792150007e20634"
     },
     "pluto:62619405c733e8000732d1fe": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "62619405c733e8000732d1fe"
     },
     "pluto:62bc1f502b70e3000706298e": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "62bc1f502b70e3000706298e"
     },
     "pluto:62e7fb67478a5b0007e6c50c": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "62e7fb67478a5b0007e6c50c"
     },
     "pluto:62e8d5369e48940007fc1dc1": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "62e8d5369e48940007fc1dc1"
     },
     "pluto:634926e4b51d2d00077819a2": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "634926e4b51d2d00077819a2"
     },
     "pluto:6349279ed5023700078f2bc2": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "6349279ed5023700078f2bc2"
     },
     "pluto:638f286445264d00084ec6dc": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "638f286445264d00084ec6dc"
     },
     "pluto:63a0e33a45264d000850ed7e": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "NZXMLTV Pluto",
       "source_id": "63a0e33a45264d000850ed7e"
     },
     "pluto:63c923944207be0007fd0887": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "63c923944207be0007fd0887"
     },
     "pluto:63eb573ba99571000897135b": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "63eb573ba99571000897135b"
     },
     "pluto:63eb57d6c111bc0008fe2658": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "63eb57d6c111bc0008fe2658"
     },
     "pluto:63eb82e24e83e70008ab735f": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "63eb82e24e83e70008ab735f"
     },
     "pluto:64808a8c536e0c0008a276d1": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "64808a8c536e0c0008a276d1"
     },
     "pluto:64ec5c6644fe100009d114ae": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "64ec5c6644fe100009d114ae"
     },
     "pluto:64ec5cf50f73a800081310a5": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "64ec5cf50f73a800081310a5"
     },
     "pluto:65253f9881f942000833ccd5": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "65253f9881f942000833ccd5"
     },
     "pluto:65253fdf3fd33c00080214a3": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "65253fdf3fd33c00080214a3"
     },
     "pluto:65b90daed77d450008a43345": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "65b90daed77d450008a43345"
     },
     "pluto:65cb76ea11ced70008206b66": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "65cb76ea11ced70008206b66"
     },
     "pluto:6602acadb2abe500081cf28a": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "6602acadb2abe500081cf28a"
     },
     "pluto:66a0eea88561260008b1c5d0": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "66a0eea88561260008b1c5d0"
     },
     "pluto:66a8c64814a2bb00084d09d6": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "66a8c64814a2bb00084d09d6"
     },
     "pluto:66d9ab4bf0f17500084e9b7e": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "66d9ab4bf0f17500084e9b7e"
     },
     "pluto:6786235bd648bf0008c2780a": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "6786235bd648bf0008c2780a"
     },
     "pluto:67f4f99729b03f18cb36647e": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "67f4f99729b03f18cb36647e"
     },
     "pluto:686cfdf894a028da3aac4252": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "686cfdf894a028da3aac4252"
     },
     "pluto:686cfe983ffa5e0c91cdb5df": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "686cfe983ffa5e0c91cdb5df"
     },
     "pluto:68adb5853efb41cd97ce413d": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "68adb5853efb41cd97ce413d"
     },
     "pluto:69affcad8940750a23a7231a": {
-      "last_seen": "2026-10-25T19:04:11+00:00",
+      "last_seen": "2026-10-26T10:09:21+00:00",
       "source": "Pluto TV Italia",
       "source_id": "69affcad8940750a23a7231a"
     }
