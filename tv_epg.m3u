@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611011117" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611011117" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611011117"
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611012030" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611012030" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611012030"
 #EXTINF:-1 tvg-id="dv.rai1-it.3f79da6d" tvg-name="Rai 1" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-chno="1" channel-number="1" group-title="Rai" mediapolis="2606803",Rai 1
 https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
 #EXTINF:-1 tvg-name="Rai 2" tvg-id="dv.rai2-it.9ff87f5f" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png" tvg-chno="2" channel-number="2" group-title="Rai" mediapolis="308718",Rai 2
@@ -268,6 +268,8 @@ https://d31z6rt9j0idgz.cloudfront.net/playlist_1.m3u8
 https://d112rgcjjnn6rd.cloudfront.net/playlist_1.m3u8
 #EXTINF:-1 tvg-id="dv.vita-da-strega.9b02b475" tvg-logo="https://static.frequency.com/studio/sony/channels/IT_LG_FAST_Bewitched_ChannelLogo_400x200_Horizontal.png" group-title="Serie",Vita da Strega
 https://d2f01y6xj9g6n4.cloudfront.net/playlist_1.m3u8
+#EXTINF:-1 channel-id="67b482d52f8d3da5924857c6" tvg-id="dv.67b482d52f8d3da5924857c6.93addab8" tvg-name="Streghe" tvg-logo="https://images.pluto.tv/channels/67b482d52f8d3da5924857c6/colorLogoPNG.png" group-title="Serie",Streghe
+https://jmp2.uk/plu-67b482d52f8d3da5924857c6.m3u8
 #EXTINF:-1 tvg-logo="https://image.xumo.com/v1/channels/channel/99992605/600x200.png?type=white_cropped" group-title="Serie",Xena warrior princess
 https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992605
 #EXTINF:-1 tvg-logo="https://image.xumo.com/v1/channels/channel/99992603/600x200.png?type=white_cropped" group-title="Serie",Hercules
