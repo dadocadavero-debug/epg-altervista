@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611172331" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611172331" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611172331"
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611181304" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611181304" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611181304"
 #EXTINF:-1 tvg-id="dv.rai1-it.3f79da6d" tvg-name="Rai 1" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-chno="1" channel-number="1" group-title="Rai" mediapolis="2606803",Rai 1
 https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
 #EXTINF:-1 tvg-name="Rai 2" tvg-id="dv.rai2-it.9ff87f5f" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png" tvg-chno="2" channel-number="2" group-title="Rai" mediapolis="308718",Rai 2
@@ -394,7 +394,7 @@ https://dxvpcwoxxgnqg.cloudfront.net/playlist.m3u8
 https://newidco-babysharktv-1-eu.rakuten.wurl.tv/3000.m3u8
 #EXTINF:-1 tvg-id="dv.supertoonstv-it.c32d2ae5" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD51000010V_20250729T045549SQUARE.png" group-title="Bambini e ragazzi" , SuperToons TV
 https://d1b18rn1fy7w7s.cloudfront.net/feed/samsung/streams/SUPERTOONS_IT/master.m3u8?token=737aa2c3f17862a448f403cd2ac2b5ef1a0c413e1cf080a13a19cea99119221f
-#EXTINF:-1 tvg-logo="https://bejoy.kids/wp-content/uploads/2025/09/Logo_Bejoy-1.png" group-title="Bambini e ragazzi",Bejoy.kids
+#EXTINF:-1 tvg-id="dv.bejoy-kids.12e8ec26" tvg-logo="https://bejoy.kids/wp-content/uploads/2025/09/Logo_Bejoy-1.png" group-title="Bambini e ragazzi",Bejoy.kids
 https://stream.paroledivita.org/bejoy.m3u8
 #EXTINF:-1 tvg-id="dv.plutosuperspongebob-it.7f09c558" tvg-logo="https://images.pluto.tv/channels/6093f9281db477000759fce0/colorLogoPNG_1784271002457.png" group-title="Bambini e ragazzi",SpongeBob - Pluto
 https://jmp2.uk/plu-6093f9281db477000759fce0.m3u8
