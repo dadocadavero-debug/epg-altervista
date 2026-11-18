@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611181304" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611181304" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611181304"
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611182257" url-epg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611182257" url-tvg="https://raw.githubusercontent.com/dadocadavero-debug/epg-altervista/main/epg.xml?v=202611182257"
 #EXTINF:-1 tvg-id="dv.rai1-it.3f79da6d" tvg-name="Rai 1" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473661951374Logo-Rai1.png" tvg-chno="1" channel-number="1" group-title="Rai" mediapolis="2606803",Rai 1
 https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
 #EXTINF:-1 tvg-name="Rai 2" tvg-id="dv.rai2-it.9ff87f5f" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662585214Logo-Rai2.png" tvg-chno="2" channel-number="2" group-title="Rai" mediapolis="308718",Rai 2
@@ -158,9 +158,9 @@ https://streamcdnb4-4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sM
 https://radioitaliatv.akamaized.net/hls/live/2093117-b/RadioitaliaTV/stream03/streamPlaylist.m3u8
 
 #EXTINF:-1 tvg-id="dv.film-top-rakuten.8919ba4a" tvg-name="Film Top - Rakuten TV" tvgid="RakutenTopFreeItRakutenTv.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100007FN_20221012T021057SQUARE.png_20221012021057.png" group-title="Film",Film Top - Rakuten TV
-https://top-movies-rakuten-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5984/master.m3u8
+https://top-movies-rakuten-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-rtv-5984-playout/master.m3u8
 #EXTINF:-1 tvg-id="dv.film-d-azione-rakuten.3b82c76e" tvg-name="Film d'azione - Rakuten TV" tvgid="RakutenActionItRakutenTv.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITAJ45000188Z_20220404T010000SQUARE.png_20220404010000.png" group-title="Film",Film d'azione - Rakuten TV
-https://action-rakuten-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6067/master.m3u8
+https://action-rakuten-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-rtv-6067-playout/master.m3u8
 #EXTINF:-1 tvg-id="dv.sony-one-film-dazione.2aa163b6" tvg-name="Sony One Film d’azione" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT300004KM_20241022T043833SQUARE.png" group-title="Film",Sony One Film d’azione
 https://d1avfx1nmjmkde.cloudfront.net/playlist_1.m3u8
 #EXTINF:-1 tvg-id="dv.sony-one-film-divertenti.e3c6e7c1" tvg-name="Sony One Film divertenti" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT300005J9_20250114T063446SQUARE.png" group-title="Film",Sony One Film divertenti
@@ -172,8 +172,8 @@ https://sci-fi-rakuten-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b74
 #EXTINF:-1 tvg-id="dv.romance-rakuten.af5d2514" tvg-name="Romance - Rakuten TV" tvgid="RakutenRomanceItRakutenTv.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC1100009AL_20240507T093332SQUARE.png" group-title="Film",Romance - Rakuten TV
 https://romance-rakuten-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6193/master.m3u8
 #EXTINF:-1 tvg-id="dv.commedia-rakuten.d7ac11f6" tvg-name="Commedia - Rakuten TV" tvgid="RakutenComedyItRakutenTv.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITAJ4500019R9_20240507T093310SQUARE.png" group-title="Film",Commedia - Rakuten TV
-https://comedy-rakuten-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6184/master.m3u8
-#EXTINF:-1 tvg-id="dv.family-rakuten.96358f23" tvg-name="Family - Rakuten TV" channel-id="ITBA14000043B" vg-id="RakutenFamilyItRakutenTv.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600010E0_20251230T031311SQUARE.png" group-title="Film",Family - Rakuten TV
+https://comedy-rakuten-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-rtv-6184-playout/master.m3u8
+#EXTINF:-1 tvg-name="Natale - Rakuten TV" channel-id="ITBA14000043B" vg-id="RakutenFamilyItRakutenTv.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2600010E0_20251230T031311SQUARE.png" group-title="Film",Natale - Rakuten TV
 https://family-rakuten-tv-it.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6215/master.m3u8
 #EXTINF:-1 tvg-id="dv.plutotvfilm-it.c4117925" tvg-name="Film - Pluto" tvg-logo="https://images.pluto.tv/channels/608aa17fb9f4490007e6419a/colorLogoPNG.png" group-title="Film",Film - Pluto
 https://jmp2.uk/plu-608aa17fb9f4490007e6419a.m3u8
@@ -209,13 +209,11 @@ https://amg02512-amg02512c6-samsung-it-5137.playouts.now.amagi.tv/playlist.m3u8
 https://amg00735-videosolutionsa-wedomoviesit-ono-c0mvz.amagi.tv/playlist/amg00735-videosolutionsa-wedomoviesit-ono/playlist.m3u8
 #EXTINF:-1 tvg-id="dv.cinemadame.88b76f24" tvg-name="Cinemadame" tvgid="ITBD1400003D0" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1400003D0_20250307T152334SQUARE.png" group-title="Film",Cinemadame
 https://plaionpictures-cinemadame-1-it.samsung.wurl.tv/3000.m3u8
-#EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT500004JK_20241112T093250SQUARE.png" group-title="Film",Romantica
-https://amg00069-amg00069c3-samsung-it-5223.playouts.now.amagi.tv/1080p/index.m3u8
 #EXTINF:-1 tvg-id="dv.plutotvlegamiletali-it.cab47edd" tvg-name="Legami Letali" tvg-logo="https://images.pluto.tv/channels/64808a8c536e0c0008a276d1/colorLogoPNG.png" group-title="Film",Legami Letali - Pluto
 https://jmp2.uk/plu-64808a8c536e0c0008a276d1.m3u8
 #EXTINF:-1 tvg-id="dv.plutotvchristmas-it.0caf1fd6" tvg-name="Pluto TV Christmas" tvg-logo="https://images.pluto.tv/channels/612e05b885183d0007958101/colorLogoPNG.png" group-title="Film",Christmas tutto l'anno - Pluto
 https://jmp2.uk/plu-612e05b885183d0007958101.m3u8
-#EXTINF:-1 tvg-id="dv.it3800001xm.ffb52433" tvg-name="Cine Amore" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3800001XM_20260310T031936SQUARE.png" group-title="Film", Cine Amore
+#EXTINF:-1 tvg-id="dv.it3800001xm.ffb52433" tvg-name="Cine Natale" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3800001XM_20260310T031936SQUARE.png" group-title="Film", Cine Natale
 https://6df924b6.wurl.com/4300.m3u8
 #EXTINF:-1 channel-id="699d87093d5dba980705cca8" tvg-id="699d87093d5dba980705cca8" tvg-name="Film Ancora Più Romantici" tvg-logo="https://images.pluto.tv/channels/699d87093d5dba980705cca8/colorLogoPNG_1777274173528.png" group-title="Film",Film Ancora Più Romantici - Pluto
 https://jmp2.uk/plu-699d87093d5dba980705cca8.m3u8
@@ -247,8 +245,8 @@ https://jmp2.uk/plu-61c09e3ac210ed0007606620.m3u8
 https://mnp-hor.otteravision.com/mnp/hor/hor_720.m3u8
 #EXTINF:-1 tvg-id="dv.cine-paura.93d2789b" tvg-name="Cine paura" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT3600005AL_20250722T005609SQUARE.png" group-title="Film",Cine Paura
 https://amg02512-amg02512c7-samsung-it-5138.playouts.now.amagi.tv/playlist/amg02512-nexodigital-comedytime-samsungit/playlist.m3u8
-#EXTINF:-1 tvg-name="Bizzarro Movies" tvg-id="dv.rakutenbizzarromovies-it.8e924bfd" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA3300024IU_20251013T054509SQUARE.png" group-title="Film",Bizzarro Movies
-https://55b36922.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9CaXp6YXJyb01vdmllc19ITFM/playlist.m3u8
+#EXTINF:-1 tvg-name="CineAliens" tvg-id="RakutenBizzarroMovies.it" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA3300024IU_20251013T054509SQUARE.png" group-title="Film",CineAliens
+https://f949e295.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWl0X0JpenphcnJvTW92aWVzLTFfSExT/playlist.m3u8
 #EXTINF:-1 tvg-name="Action Movie Channel" tvg-id="dv.rakutendarkmatteritnew-it.593babd4" tvg-logo="https://image.xumo.com/v1/channels/channel/99992210/600x200.png?type=white_cropped" group-title="Film",Action Movie Channel
 https://d29h829bjuxghm.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992210
 #EXTINF:-1 tvg-name="The Asylum" tvg-id="dv.plutotheasylum-it.269860fe" tvg-logo="https://images.pluto.tv/channels/62e8d5369e48940007fc1dc1/colorLogoPNG.png" group-title="Film",The Asylum - Pluto
@@ -681,7 +679,7 @@ https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raiuno1_dash/dash/manifest.mp
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=9d6230eb6bea5babb0720bdee82485c1:e95577bd61616d760b5d4c259fdcad46
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7&forceUserAgent=hbbtv
+https://raidue1-dash-live.akamaized.net/dash/live/662448/raidue1/manifest.mpd
 #EXTINF:-1 tvg-name="Rai 4" tvg-id="dv.rai4-it.9bb6f923" tvg-logo="https://www.raiplay.it/dl/img/2016/09/1473662992107Logo-Rai4.png" tvg-chno="" group-title="Rai",Rai 4 HbbTV raiway
 https://raiquattro1-push.cdn.netrw.it/rai/dash/live/rai4/manifest.mpd
 #EXTINF:-1 tvg-name="Rai News 24 HD" tvg-id="dv.rainews24-it.970cce36" tvg-logo="https://placehold.co/256x256/202020/FFFFFF.png?text=RaiNews%2024%20%28dash%29" tvg-chno="" group-title="Notizie",RaiNews 24 (dash)
@@ -690,7 +688,7 @@ https://8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/rainews1/dash/manifest.mpd
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=AppleCoreMedia/1.0.0.22K557
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709&output=7&forceUserAgent=raiplayappletv
-#EXTINF:-1 tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637309566388_1579882215002_rai-premium.png" tvg-id="dv.raipremium-it.0459cbba" group-title="Rai",rai premium HbbTV raiway
+#EXTINF:-1 tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637309566388_1579882215002_rai-premium.png" tvg-id="dv.raipremium-it.0459cbba" group-title="Rai",rai premium 720p raiway
 https://raipremium1-push.cdn.netrw.it/rai/dash/live/raipremium/manifest.mpd
 #EXTINF:-1 tvg-name="Rai Premium" tvg-id="dv.raipremium-it.0459cbba" tvg-logo="https://www.raiplay.it/dl/img/2021/11/19/1637309566388_1579882215002_rai-premium.png" group-title="Rai" mediapolis="746992",Rai Premium hls
 https://raipremium3-live.akamaized.net/hls/live/2018013/raipremium3/raipremium3/playlist.m3u8
